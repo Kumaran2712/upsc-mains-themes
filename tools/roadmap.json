@@ -1,0 +1,245 @@
+[
+ {
+  "name": "Constitution & polity: the base for every GS2 answer",
+  "why": "Most governance, social justice and IR answers cite constitutional provisions, so start here.",
+  "themes": [
+   "making",
+   "preamble",
+   "rights",
+   "speech",
+   "ucc",
+   "basicstructure",
+   "parliament",
+   "committees",
+   "speaker",
+   "executive",
+   "governor",
+   "judiciary",
+   "activism",
+   "constmorality",
+   "coopfed",
+   "specialprov",
+   "localgov",
+   "elections",
+   "cag",
+   "tribunals",
+   "regulators",
+   "pressure",
+   "parties",
+   "comparative"
+  ]
+ },
+ {
+  "name": "Modern India & world history",
+  "why": "The story of how present India was shaped; feeds society, polity and IR answers.",
+  "themes": [
+   "brexpansion",
+   "coloneco",
+   "colonadmin",
+   "revolt",
+   "reform",
+   "earlynat",
+   "gandhi",
+   "ideologies",
+   "finalphase",
+   "statesreorg",
+   "consolidation",
+   "earlyfp",
+   "revolutions",
+   "industrialrev",
+   "worldwars",
+   "decolon"
+  ]
+ },
+ {
+  "name": "Indian society",
+  "why": "GS1 society, and the social lens UPSC expects in GS2 and GS3 answers.",
+  "themes": [
+   "diversity",
+   "family",
+   "caste",
+   "tribal",
+   "population",
+   "migration",
+   "urbsoc",
+   "newurban",
+   "smartcity",
+   "globsoc",
+   "techsoc",
+   "secularism",
+   "communalism",
+   "regionalism",
+   "womenhist",
+   "gender",
+   "sexratio",
+   "ageing"
+  ]
+ },
+ {
+  "name": "Physical geography & hazards",
+  "why": "Processes first; disaster management and environment build on them.",
+  "themes": [
+   "tectonics",
+   "landslides",
+   "quakes",
+   "atmosphere",
+   "monsoon",
+   "cyclones",
+   "cloudburst",
+   "oceans",
+   "coastal",
+   "glaciers",
+   "polar"
+  ]
+ },
+ {
+  "name": "Indian economy",
+  "why": "Concepts you need before agriculture, infrastructure and inclusive growth.",
+  "themes": [
+   "growth",
+   "planning",
+   "employment",
+   "budget",
+   "fiscalfed",
+   "inflation",
+   "fininc",
+   "digieco",
+   "poverty",
+   "inclusive",
+   "manufacturing",
+   "fdi",
+   "infra",
+   "transport"
+  ]
+ },
+ {
+  "name": "Resources, water & agriculture",
+  "why": "Economic geography and agriculture are one story; water links them.",
+  "themes": [
+   "mining",
+   "oil",
+   "industryloc",
+   "landdeg",
+   "water",
+   "groundwater",
+   "irrigation",
+   "riverlink",
+   "greenrev",
+   "cropping",
+   "agrimarket",
+   "agritech",
+   "subsidies",
+   "pds",
+   "foodproc",
+   "landreform",
+   "allied",
+   "hunger"
+  ]
+ },
+ {
+  "name": "Governance & social justice",
+  "why": "Applies polity and society to policy, welfare and delivery.",
+  "themes": [
+   "policy",
+   "civilsoc",
+   "shg",
+   "anticorrupt",
+   "citizen",
+   "egov",
+   "dbt",
+   "civilservices",
+   "health",
+   "pandemic",
+   "education",
+   "skills",
+   "affirmative",
+   "disability",
+   "commissions",
+   "children",
+   "womenpol",
+   "womeneco"
+  ]
+ },
+ {
+  "name": "Environment, energy & disaster management",
+  "why": "Builds on geography and economy; heavy on current affairs.",
+  "themes": [
+   "forests",
+   "wetlands",
+   "fragile",
+   "airpoll",
+   "riverpoll",
+   "waste",
+   "eia",
+   "envconst",
+   "climateimpact",
+   "climateregime",
+   "renewables",
+   "energysec",
+   "nuclear",
+   "urbfloods",
+   "dmframe"
+  ]
+ },
+ {
+  "name": "International relations",
+  "why": "Needs modern history, economy and geography as background.",
+  "themes": [
+   "neighbourhood",
+   "pakistan",
+   "china",
+   "indopacific",
+   "greatpower",
+   "westasia",
+   "centralasia",
+   "africa",
+   "groupings",
+   "diaspora",
+   "un",
+   "wto"
+  ]
+ },
+ {
+  "name": "Internal security",
+  "why": "Draws on polity, IR and society; do it after them.",
+  "themes": [
+   "lwe",
+   "northeast",
+   "terror",
+   "terrorfin",
+   "organised",
+   "border",
+   "maritime",
+   "cyber",
+   "dataprot",
+   "socialmedia",
+   "forces"
+  ]
+ },
+ {
+  "name": "Science & technology",
+  "why": "Mostly current-affairs driven; easier once the rest is in place.",
+  "themes": [
+   "space",
+   "aitech",
+   "biotech",
+   "healthtech",
+   "ipr",
+   "sciday"
+  ]
+ },
+ {
+  "name": "Art & culture",
+  "why": "Self-contained. Many aspirants run it in parallel with any stage above.",
+  "themes": [
+   "harappan",
+   "vedic",
+   "sources",
+   "buddhistart",
+   "temple",
+   "sculpture",
+   "bhakti",
+   "patronage"
+  ]
+ }
+]

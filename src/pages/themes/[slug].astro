@@ -1,14 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
 import QuestionItem from '../../components/QuestionItem.astro';
-import { themes, byN, syllabus, themeUrl, yearSpan, u, clip, paperName, shortTitle, type Theme } from '../../lib/data';
+import { themes, byN, byStep, stages, roadmap, syllabus, themeUrl, yearSpan, u, clip, paperName, shortTitle, type Theme } from '../../lib/data';
 export function getStaticPaths() { return themes.map((t) => ({ params: { slug: t.slug }, props: { t } })); }
 const { t } = Astro.props as { t: Theme };
 const paperList = Object.entries(t.papers).filter(([, v]) => v).map(([k]) => k);
 const title = `${shortTitle(t)} – UPSC Mains PYQs`;
 const desc = clip(`${t.count} UPSC GS Mains PYQs (${yearSpan(t)}) on ${t.title.split(':')[0].toLowerCase()}. ${t.asks}`);
 const syl = syllabus.filter((s) => t.syllabus.includes(s.id));
-const idx = themes.indexOf(t); const prev = themes[idx - 1]; const next = themes[idx + 1];
+const prev = byStep.get(t.step - 1); const next = byStep.get(t.step + 1);
+const stage = stages[t.stage - 1];
+const linked = t.links.map((n) => byN.get(n)!);
+const buildsOn = linked.filter((l) => l.step < t.step).sort((a, b) => a.step - b.step);
+const comesBack = linked.filter((l) => l.step > t.step).sort((a, b) => a.step - b.step);
 const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: t.title, description: desc,
   url: new URL(themeUrl(t), Astro.site).href, inLanguage: 'en-IN', learningResourceType: 'Previous year questions and study guide',
   educationalLevel: 'UPSC Civil Services (Main) Examination', teaches: t.checklist.slice(0, 6),
@@ -25,6 +29,15 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
     <div><b>{yearSpan(t)}</b><span>{t.years.length} distinct years</span></div>
     {t.recent > 0 && <div><b>{t.recent}</b><span>asked 2024–26</span></div>}
   </div>
+  <div class="panel rmbar">
+    <p class="eyebrow">Roadmap · step {t.step} of {roadmap.length} · Stage {stage.n}: {stage.name.split(':')[0]}</p>
+    <div class="rmbtns">
+      {prev && <a class="btn" href={themeUrl(prev)} data-umami-event="roadmap-prev">← Step {prev.step}</a>}
+      <button class="btn rm-mark" type="button" data-n={t.n} aria-pressed="false">Mark as done</button>
+      {next && <a class="btn" href={themeUrl(next)} data-umami-event="roadmap-next">Step {next.step} →</a>}
+      <a class="small" href={u('/roadmap/')}>See the full roadmap</a>
+    </div>
+  </div>
   <p><button class="btn" type="button" data-share>Share this theme</button></p>
 
   <h2>What UPSC asks</h2>
@@ -37,10 +50,17 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <ul>{t.answer.map((x) => <li>{x}</li>)}</ul>
   {t.directives.length > 0 && <p class="lead">Directive words in these PYQs: {t.directives.map(([d, c]) => `${d} (${c})`).join(', ')}.</p>}
 
-  {t.links.length > 0 && <>
+  {linked.length > 0 && <>
     <h2>Linked themes</h2>
     <p class="lead">Questions here often need understanding from these themes too.</p>
-    <div class="chips">{t.links.map((n) => { const l = byN.get(n)!; return <a class="chip" href={themeUrl(l)} data-umami-event="linked-theme-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`T${n}`}>T{n} {l.title}</a>; })}</div>
+    {buildsOn.length > 0 && <>
+      <h3>Builds on (earlier in the roadmap)</h3>
+      <div class="chips">{buildsOn.map((l) => <a class="chip" href={themeUrl(l)} data-umami-event="linked-theme-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`T${l.n}`}>Step {l.step}: {l.title}</a>)}</div>
+    </>}
+    {comesBack.length > 0 && <>
+      <h3>Comes back later in</h3>
+      <div class="chips">{comesBack.map((l) => <a class="chip" href={themeUrl(l)} data-umami-event="linked-theme-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`T${l.n}`}>Step {l.step}: {l.title}</a>)}</div>
+    </>}
   </>}
 
   <h2>Syllabus lines covered</h2>
@@ -49,8 +69,33 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <h2>All {t.count} PYQs, newest first</h2>
   <ol class="qs">{t.questions.map((q) => <QuestionItem q={q} />)}</ol>
 
-  <nav class="chips" aria-label="More themes" style="margin-top:28px">
-    {prev && <a class="chip" href={themeUrl(prev)}>← T{prev.n} {prev.title.split(':')[0]}</a>}
-    {next && <a class="chip" href={themeUrl(next)}>T{next.n} {next.title.split(':')[0]} →</a>}
+  <nav class="panel rmnext" aria-label="Roadmap">
+    <p class="eyebrow">Next on the roadmap</p>
+    {next ? <a href={themeUrl(next)} data-umami-event="roadmap-next">Step {next.step}: {next.title} →</a> : <a href={u('/roadmap/')}>You've reached the last step. Back to the roadmap</a>}
+    {prev && <a class="small" href={themeUrl(prev)}>← Step {prev.step}: {prev.title.split(':')[0]}</a>}
   </nav>
+  <style>
+    .rmbar { margin: 12px 0; display: grid; gap: 8px; } .rmbar p { margin: 0; }
+    .rmbtns { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .rmbtns .btn { text-decoration: none; }
+    .rm-mark[aria-pressed="true"] { background: var(--gs1); border-color: var(--gs1); color: var(--surface); }
+    .rmnext { margin-top: 28px; display: grid; gap: 6px; } .rmnext p { margin: 0; }
+    .rmnext > a:first-of-type { font-weight: 700; font-size: 1.05rem; }
+    .small { font-size: .86rem; }
+  </style>
+  <script is:inline>
+    (function () {
+      var b = document.querySelector('.rm-mark'); if (!b) return;
+      var n = Number(b.dataset.n), done = [];
+      try { done = JSON.parse(localStorage.getItem('upscthemes-done') || '[]'); } catch (e) {}
+      function paint() { var on = done.indexOf(n) > -1; b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? 'Done ✓' : 'Mark as done'; }
+      paint();
+      b.addEventListener('click', function () {
+        var i = done.indexOf(n); if (i > -1) done.splice(i, 1); else done.push(n);
+        try { localStorage.setItem('upscthemes-done', JSON.stringify(done)); } catch (e) {}
+        paint();
+        if (window.__track) window.__track(i > -1 ? 'roadmap-undone' : 'roadmap-done', { theme: 'T' + n });
+      });
+    })();
+  </script>
 </Base>

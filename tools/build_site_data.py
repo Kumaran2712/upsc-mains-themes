@@ -16,6 +16,13 @@ for f in ["guide1", "guide2", "guide3", "guide4", "guide5"]:
     exec(open(os.path.join(HERE, f + ".py")).read().replace("G = {}", ""))
 # Theme map: each theme lists its questions by repo question ID.
 C = json.load(open(os.path.join(HERE, "theme_map.json")))
+# Roadmap: ordered stages for newcomers; every theme exactly once.
+ROADMAP = json.load(open(os.path.join(HERE, "roadmap.json")))
+_order = [k for s in ROADMAP for k in s["themes"]]
+if sorted(_order) != sorted(t["key"] for t in C) or len(_order) != len(set(_order)):
+    sys.exit("tools/roadmap.json must list every theme exactly once.")
+STEP = {k: i + 1 for i, k in enumerate(_order)}
+STAGE = {k: si + 1 for si, s in enumerate(ROADMAP) for k in s["themes"]}
 
 syllabus = {s["id"]: s["text"] for s in yaml.safe_load(open(os.path.join(DATA, "syllabus.yaml")))}
 questions = yaml.safe_load(open(os.path.join(DATA, "questions.yaml")))
@@ -90,6 +97,7 @@ for t in C:
     asks, checklist, answer = G[t["key"]]
     themes.append(dict(
         n=num[t["key"]], key=t["key"], slug=slugs[t["key"]], title=t["title"],
+        step=STEP[t["key"]], stage=STAGE[t["key"]],
         cluster=t["cluster"], clusterSlug=cluster_slug[t["cluster"]],
         papers={p: papers.get(p, 0) for p in ["GS1", "GS2", "GS3"]},
         cross=sum(1 for p in papers if papers[p]) > 1,
@@ -102,6 +110,7 @@ assert len(seen) == len(questions), (len(seen), len(questions))
 data = dict(
     themes=themes,
     clusters=[dict(name=c, slug=cluster_slug[c]) for c in clusters],
+    stages=[dict(n=i + 1, name=s["name"], why=s["why"], themes=[num[k] for k in s["themes"]]) for i, s in enumerate(ROADMAP)],
     syllabus=[dict(id=k, text=v, paper=k.split("-")[0]) for k, v in syllabus.items()],
     source=dict(official="https://www.upsc.gov.in/examinations/previous-question-papers"),
 )

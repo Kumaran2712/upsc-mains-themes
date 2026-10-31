@@ -5,6 +5,8 @@
    "key": "harappan",
    "slug": "harappan-civilisation-early-urbanism-and-civilisational-continuity",
    "title": "Harappan civilisation, early urbanism & civilisational continuity",
+   "step": 164,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -110,6 +112,8 @@
    "key": "vedic",
    "slug": "vedic-society-and-its-legacy-in-today-s-society",
    "title": "Vedic society & its legacy in today's society",
+   "step": 165,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -175,6 +179,8 @@
    "key": "sources",
    "slug": "sources-of-history",
    "title": "Sources of history: inscriptions, rock-cut caves, travellers, Sangam & Persian texts",
+   "step": 166,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -283,6 +289,8 @@
    "key": "buddhistart",
    "slug": "buddhist-art-and-sculpture-schools-stupa-gandhara-pala",
    "title": "Buddhist art & sculpture schools: stupa, Gandhara, Pala",
+   "step": 167,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -366,6 +374,8 @@
    "key": "temple",
    "slug": "temple-architecture-and-regional-dynasties",
    "title": "Temple architecture & regional dynasties: Pallava, Chola, Chandela, Vijayanagara, Gupta",
+   "step": 168,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -497,6 +507,8 @@
    "key": "sculpture",
    "slug": "sculpture-painting-motifs-coins-and-safeguarding-art-heritage",
    "title": "Sculpture, painting, motifs, coins & safeguarding art heritage",
+   "step": 169,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -613,6 +625,8 @@
    "key": "bhakti",
    "slug": "bhakti-sufi-movements-and-religious-syncretism",
    "title": "Bhakti–Sufi movements & religious syncretism",
+   "step": 170,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -715,6 +729,8 @@
    "key": "patronage",
    "slug": "patronage-learning-centres-and-medieval-technology",
    "title": "Patronage, learning centres & medieval technology",
+   "step": 171,
+   "stage": 12,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
    "papers": {
@@ -792,6 +808,8 @@
    "key": "brexpansion",
    "slug": "british-expansion",
    "title": "British expansion: fragmented polity, Panipat, why the Company won, Dalhousie",
+   "step": 25,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -882,6 +900,8 @@
    "key": "coloneco",
    "slug": "colonial-economy",
    "title": "Colonial economy: drain, deindustrialisation, famines, economic policy",
+   "step": 26,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -983,6 +1003,8 @@
    "key": "colonadmin",
    "slug": "colonial-administration-and-education-policy-macaulay-curzon",
    "title": "Colonial administration & education policy: Macaulay, Curzon",
+   "step": 27,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1054,6 +1076,8 @@
    "key": "revolt",
    "slug": "1857-and-tribal-peasant-resistance-to-colonial-rule",
    "title": "1857 and tribal–peasant resistance to colonial rule",
+   "step": 28,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1121,6 +1145,8 @@
    "key": "reform",
    "slug": "socio-religious-reform-brahmo-samaj-young-bengal-phule",
    "title": "Socio-religious reform: Brahmo Samaj, Young Bengal, Phule",
+   "step": 29,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1190,6 +1216,8 @@
    "key": "earlynat",
    "slug": "early-nationalism-moderates-and-foreign-contributors",
    "title": "Early nationalism: Moderates & foreign contributors",
+   "step": 30,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1275,6 +1303,8 @@
    "key": "gandhi",
    "slug": "gandhi",
    "title": "Gandhi: mass movements, constructive programme, ideas & contemporaries",
+   "step": 31,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1412,6 +1442,8 @@
    "key": "ideologies",
    "slug": "widening-of-the-national-movement",
    "title": "Widening of the national movement: ideological strands & global influences",
+   "step": 32,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1493,6 +1525,8 @@
    "key": "finalphase",
    "slug": "final-phase-quit-india-naval-mutiny-maulana-azad",
    "title": "Final phase: Quit India, Naval mutiny, Maulana Azad",
+   "step": 33,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1565,6 +1599,8 @@
    "key": "making",
    "slug": "making-of-the-constitution",
    "title": "Making of the Constitution: Government of India Act 1935 to Constituent Assembly",
+   "step": 1,
+   "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1632,6 +1668,8 @@
    "key": "statesreorg",
    "slug": "integration-and-reorganisation-of-states",
    "title": "Integration & reorganisation of states: princely states, linguistic states, new & smaller states",
+   "step": 34,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1757,6 +1795,8 @@
    "key": "consolidation",
    "slug": "post-independence-consolidation",
    "title": "Post-independence consolidation: polity, economy, Jai Jawan Jai Kisan",
+   "step": 35,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1825,6 +1865,8 @@
    "key": "earlyfp",
    "slug": "early-foreign-policy-and-wars",
    "title": "Early foreign policy & wars: Tashkent, Bangladesh 1971, Gujral doctrine",
+   "step": 36,
+   "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
    "papers": {
@@ -1915,6 +1957,8 @@
    "key": "revolutions",
    "slug": "american-and-french-revolutions-and-their-legacy",
    "title": "American & French Revolutions and their legacy",
+   "step": 37,
+   "stage": 2,
    "cluster": "World History",
    "clusterSlug": "world-history",
    "papers": {
@@ -1981,6 +2025,8 @@
    "key": "industrialrev",
    "slug": "industrial-revolution-and-its-spread",
    "title": "Industrial Revolution and its spread: England, Japan, railways",
+   "step": 38,
+   "stage": 2,
    "cluster": "World History",
    "clusterSlug": "world-history",
    "papers": {
@@ -2074,6 +2120,8 @@
    "key": "worldwars",
    "slug": "world-wars-interwar-crisis-great-depression-and-ideologies",
    "title": "World Wars, interwar crisis, Great Depression & ideologies",
+   "step": 39,
+   "stage": 2,
    "cluster": "World History",
    "clusterSlug": "world-history",
    "papers": {
@@ -2176,6 +2224,8 @@
    "key": "decolon",
    "slug": "colonisation-and-decolonisation-africa-malaya-suez",
    "title": "Colonisation & decolonisation: Africa, Malaya, Suez",
+   "step": 40,
+   "stage": 2,
    "cluster": "World History",
    "clusterSlug": "world-history",
    "papers": {
@@ -2268,6 +2318,8 @@
    "key": "tectonics",
    "slug": "earth-s-interior-plate-tectonics-mountains-islands-and-landforms",
    "title": "Earth's interior, plate tectonics, mountains, islands & landforms",
+   "step": 59,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -2447,6 +2499,8 @@
    "key": "landslides",
    "slug": "landslides-in-the-himalayas-and-western-ghats",
    "title": "Landslides in the Himalayas & Western Ghats",
+   "step": 60,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -2557,6 +2611,8 @@
    "key": "quakes",
    "slug": "earthquakes-tsunamis-and-volcanoes-science-to-preparedness",
    "title": "Earthquakes, tsunamis & volcanoes: science to preparedness",
+   "step": 61,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -2684,6 +2740,8 @@
    "key": "atmosphere",
    "slug": "atmosphere-air-masses-winds-inversion-deserts-and-auroras",
    "title": "Atmosphere, air masses, winds, inversion, deserts & auroras",
+   "step": 62,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -2812,6 +2870,8 @@
    "key": "monsoon",
    "slug": "monsoon-el-ni-o-and-drought",
    "title": "Monsoon, El Niño & drought",
+   "step": 63,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -2933,6 +2993,8 @@
    "key": "cyclones",
    "slug": "tropical-cyclones-twisters-and-cyclone-warnings",
    "title": "Tropical cyclones, twisters & cyclone warnings",
+   "step": 64,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -3043,6 +3105,8 @@
    "key": "cloudburst",
    "slug": "cloudbursts-and-extreme-rainfall",
    "title": "Cloudbursts & extreme rainfall",
+   "step": 65,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -3127,6 +3191,8 @@
    "key": "oceans",
    "slug": "oceans-and-marine-environment",
    "title": "Oceans & marine environment: currents, salinity, dead zones, oil pollution, marine resources",
+   "step": 66,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -3259,6 +3325,8 @@
    "key": "coastal",
    "slug": "coastal-zone-resources-erosion-and-hazard-preparedness",
    "title": "Coastal zone: resources, erosion & hazard preparedness",
+   "step": 67,
+   "stage": 4,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
    "papers": {
@@ -3334,6 +3402,8 @@
    "key": "mining",
    "slug": "minerals-and-mining-resource-vs-environment",
    "title": "Minerals & mining: resource vs environment",
+   "step": 84,
+   "stage": 6,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3445,6 +3515,8 @@
    "key": "oil",
    "slug": "oil-and-gas-global-distribution-shale-refineries",
    "title": "Oil & gas: global distribution, shale, refineries",
+   "step": 85,
+   "stage": 6,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3542,6 +3614,8 @@
    "key": "polar",
    "slug": "polar-regions-arctic-resources-tundra-and-india-s-interest",
    "title": "Polar regions: Arctic resources, tundra & India's interest",
+   "step": 69,
+   "stage": 4,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3625,6 +3699,8 @@
    "key": "glaciers",
    "slug": "glaciers-cryosphere-and-sea-level-rise",
    "title": "Glaciers, cryosphere & sea-level rise",
+   "step": 68,
+   "stage": 4,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3748,6 +3824,8 @@
    "key": "industryloc",
    "slug": "location-of-industries",
    "title": "Location of industries: steel, refineries, sugar, textiles, tea, rubber, corridors",
+   "step": 86,
+   "stage": 6,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3891,6 +3969,8 @@
    "key": "landdeg",
    "slug": "desertification-land-degradation-and-land-use-change",
    "title": "Desertification, land degradation & land-use change",
+   "step": 87,
+   "stage": 6,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -3993,6 +4073,8 @@
    "key": "forests",
    "slug": "forests-natural-vegetation-and-biodiversity",
    "title": "Forests, natural vegetation & biodiversity",
+   "step": 120,
+   "stage": 8,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -4099,6 +4181,8 @@
    "key": "wetlands",
    "slug": "wetlands-and-ramsar-sites",
    "title": "Wetlands & Ramsar sites",
+   "step": 121,
+   "stage": 8,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -4165,6 +4249,8 @@
    "key": "fragile",
    "slug": "fragile-himalayan-ecosystems-tourism-and-infrastructure",
    "title": "Fragile Himalayan ecosystems: tourism & infrastructure",
+   "step": 122,
+   "stage": 8,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
    "papers": {
@@ -4241,6 +4327,8 @@
    "key": "water",
    "slug": "water-security-scarcity-conservation-and-management",
    "title": "Water security: scarcity, conservation & management",
+   "step": 88,
+   "stage": 6,
    "cluster": "Water",
    "clusterSlug": "water",
    "papers": {
@@ -4385,6 +4473,8 @@
    "key": "groundwater",
    "slug": "groundwater-depletion-and-seawater-intrusion",
    "title": "Groundwater depletion & seawater intrusion",
+   "step": 89,
+   "stage": 6,
    "cluster": "Water",
    "clusterSlug": "water",
    "papers": {
@@ -4465,6 +4555,8 @@
    "key": "irrigation",
    "slug": "irrigation-and-water-use-efficiency",
    "title": "Irrigation & water-use efficiency",
+   "step": 90,
+   "stage": 6,
    "cluster": "Water",
    "clusterSlug": "water",
    "papers": {
@@ -4570,6 +4662,8 @@
    "key": "riverlink",
    "slug": "river-interlinking-and-water-disputes",
    "title": "River interlinking & water disputes: inter-state and transboundary",
+   "step": 91,
+   "stage": 6,
    "cluster": "Water",
    "clusterSlug": "water",
    "papers": {
@@ -4685,6 +4779,8 @@
    "key": "diversity",
    "slug": "diversity-and-national-unity",
    "title": "Diversity & national unity",
+   "step": 41,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -4800,6 +4896,8 @@
    "key": "family",
    "slug": "family-marriage-traditions-and-social-values",
    "title": "Family, marriage, traditions & social values",
+   "step": 42,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -4898,6 +4996,8 @@
    "key": "caste",
    "slug": "caste-continuity-change-mobility-and-dalit-assertion",
    "title": "Caste: continuity, change, mobility & Dalit assertion",
+   "step": 43,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5027,6 +5127,8 @@
    "key": "tribal",
    "slug": "tribal-identity-rights-and-development",
    "title": "Tribal identity, rights & development",
+   "step": 44,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5155,6 +5257,8 @@
    "key": "population",
    "slug": "population-and-demographic-transition",
    "title": "Population & demographic transition",
+   "step": 45,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5268,6 +5372,8 @@
    "key": "ageing",
    "slug": "ageing-population-and-elderly-care",
    "title": "Ageing population & elderly care",
+   "step": 58,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5353,6 +5459,8 @@
    "key": "migration",
    "slug": "migration-internal-international-and-illegal",
    "title": "Migration: internal, international & illegal",
+   "step": 46,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5435,6 +5543,8 @@
    "key": "urbsoc",
    "slug": "urbanisation-social-problems-segregation-and-urban-poverty",
    "title": "Urbanisation: social problems, segregation & urban poverty",
+   "step": 47,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5510,6 +5620,8 @@
    "key": "newurban",
    "slug": "new-urban-economy-it-hubs-tier-2-cities-and-new",
    "title": "New urban economy: IT hubs, tier-2 cities & new middle class",
+   "step": 48,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5584,6 +5696,8 @@
    "key": "smartcity",
    "slug": "smart-cities-rural-urban-integration-and-urban-transport",
    "title": "Smart cities, rural–urban integration & urban transport",
+   "step": 49,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5680,6 +5794,8 @@
    "key": "urbfloods",
    "slug": "urban-floods",
    "title": "Urban floods",
+   "step": 133,
+   "stage": 8,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5793,6 +5909,8 @@
    "key": "globsoc",
    "slug": "globalisation-and-indian-society-and-culture",
    "title": "Globalisation & Indian society and culture",
+   "step": 50,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -5910,6 +6028,8 @@
    "key": "techsoc",
    "slug": "technology-and-social-change",
    "title": "Technology & social change: mobiles, WFH, fast food, crypto, digital education",
+   "step": 51,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -6059,6 +6179,8 @@
    "key": "secularism",
    "slug": "secularism-indian-vs-western-models",
    "title": "Secularism: Indian vs Western models",
+   "step": 52,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -6168,6 +6290,8 @@
    "key": "communalism",
    "slug": "communalism-sect-and-radicalisation",
    "title": "Communalism, sect & radicalisation",
+   "step": 53,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -6283,6 +6407,8 @@
    "key": "regionalism",
    "slug": "regionalism-and-regional-disparity",
    "title": "Regionalism & regional disparity",
+   "step": 54,
+   "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
    "papers": {
@@ -6383,6 +6509,8 @@
    "key": "womenhist",
    "slug": "women-s-question-in-history",
    "title": "Women's question in history: 19th-century reform & freedom struggle",
+   "step": 55,
+   "stage": 3,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -6460,6 +6588,8 @@
    "key": "gender",
    "slug": "gender-concepts-patriarchy-and-women-s-social-status",
    "title": "Gender concepts, patriarchy & women's social status",
+   "step": 56,
+   "stage": 3,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -6599,6 +6729,8 @@
    "key": "sexratio",
    "slug": "sex-ratio-and-gender-gaps-across-communities-and-regions",
    "title": "Sex ratio & gender gaps across communities and regions",
+   "step": 57,
+   "stage": 3,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -6667,6 +6799,8 @@
    "key": "womeneco",
    "slug": "women-and-the-economy",
    "title": "Women & the economy: gig work, feminisation of agriculture, care economy, gender budgeting, migration",
+   "step": 119,
+   "stage": 7,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -6795,6 +6929,8 @@
    "key": "womenpol",
    "slug": "women-in-politics-law-and-institutions",
    "title": "Women in politics, law & institutions: reservation, judiciary, NCW, gender justice",
+   "step": 118,
+   "stage": 7,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -6942,6 +7078,8 @@
    "key": "shg",
    "slug": "shgs-and-microfinance",
    "title": "SHGs & microfinance",
+   "step": 104,
+   "stage": 7,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
    "papers": {
@@ -7075,6 +7213,8 @@
    "key": "affirmative",
    "slug": "affirmative-action-and-welfare-schemes-for-vulnerable-sections",
    "title": "Affirmative action & welfare schemes for vulnerable sections",
+   "step": 114,
+   "stage": 7,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7176,6 +7316,8 @@
    "key": "disability",
    "slug": "disability-and-inclusion-rpwd-act-2016",
    "title": "Disability & inclusion: RPwD Act 2016",
+   "step": 115,
+   "stage": 7,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7257,6 +7399,8 @@
    "key": "commissions",
    "slug": "commissions-for-social-justice-and-human-rights",
    "title": "Commissions for social justice & human rights: NCSC, NCST, NCBC, NHRC",
+   "step": 116,
+   "stage": 7,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7381,6 +7525,8 @@
    "key": "children",
    "slug": "children-s-rights-and-child-policy",
    "title": "Children's rights & child policy: NCPCR, National Child Policy",
+   "step": 117,
+   "stage": 7,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7451,6 +7597,8 @@
    "key": "poverty",
    "slug": "poverty-measurement-causes-and-alleviation",
    "title": "Poverty: measurement, causes & alleviation",
+   "step": 78,
+   "stage": 5,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7601,6 +7749,8 @@
    "key": "hunger",
    "slug": "hunger-malnutrition-and-food-security-law",
    "title": "Hunger, malnutrition & food security law: NFSA, Mid-Day Meal, millets",
+   "step": 101,
+   "stage": 6,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7746,6 +7896,8 @@
    "key": "inclusive",
    "slug": "inclusive-growth-and-human-development",
    "title": "Inclusive growth & human development: HDI/IHDI, social spending, equity, CSR",
+   "step": 79,
+   "stage": 5,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
    "papers": {
@@ -7928,6 +8080,8 @@
    "key": "preamble",
    "slug": "preamble-features-and-the-living-constitution",
    "title": "Preamble, features & the 'living' Constitution",
+   "step": 2,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -7996,6 +8150,8 @@
    "key": "rights",
    "slug": "fundamental-rights",
    "title": "Fundamental Rights: privacy, Art 21, movement, transgender rights",
+   "step": 3,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8096,6 +8252,8 @@
    "key": "speech",
    "slug": "freedom-of-speech-and-expression",
    "title": "Freedom of speech & expression: hate speech, films, Section 66A",
+   "step": 4,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8164,6 +8322,8 @@
    "key": "envconst",
    "slug": "environment-courts-and-civil-society",
    "title": "Environment, courts & civil society: Art 21, environmental PILs, green NGOs & pressure groups",
+   "step": 127,
+   "stage": 8,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8276,6 +8436,8 @@
    "key": "ucc",
    "slug": "dpsp-uniform-civil-code-and-extra-constitutional-bodies-khaps",
    "title": "DPSP, Uniform Civil Code & extra-constitutional bodies (khaps)",
+   "step": 5,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8344,6 +8506,8 @@
    "key": "basicstructure",
    "slug": "amending-power-and-basic-structure",
    "title": "Amending power & basic structure",
+   "step": 6,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8441,6 +8605,8 @@
    "key": "activism",
    "slug": "judicial-activism-pil-judicial-legislation-and-separation-of-powers",
    "title": "Judicial activism, PIL, judicial legislation & separation of powers",
+   "step": 13,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8553,6 +8719,8 @@
    "key": "constmorality",
    "slug": "constitutional-morality",
    "title": "Constitutional morality",
+   "step": 14,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8617,6 +8785,8 @@
    "key": "judiciary",
    "slug": "judicial-appointments-and-independence-collegium-njac",
    "title": "Judicial appointments & independence: collegium, NJAC",
+   "step": 12,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8705,6 +8875,8 @@
    "key": "tribunals",
    "slug": "tribunals-lok-adalats-arbitration-and-legal-aid",
    "title": "Tribunals, Lok Adalats, arbitration & legal aid",
+   "step": 20,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8831,6 +9003,8 @@
    "key": "coopfed",
    "slug": "centre-state-relations",
    "title": "Centre–State relations: cooperative, competitive & confrontational federalism",
+   "step": 15,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8988,6 +9162,8 @@
    "key": "governor",
    "slug": "governor-president-s-rule-and-emergency-provisions",
    "title": "Governor, President's Rule & emergency provisions",
+   "step": 11,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9079,6 +9255,8 @@
    "key": "specialprov",
    "slug": "special-provisions-and-asymmetric-federalism",
    "title": "Special provisions & asymmetric federalism: J&K, Delhi, Art 371A",
+   "step": 16,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9224,6 +9402,8 @@
    "key": "parties",
    "slug": "party-system-national-vs-regional-parties",
    "title": "Party system: national vs regional parties",
+   "step": 23,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9291,6 +9471,8 @@
    "key": "fiscalfed",
    "slug": "fiscal-federalism-finance-commission-gst-and-state-finances",
    "title": "Fiscal federalism: Finance Commission, GST & state finances",
+   "step": 74,
+   "stage": 5,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9443,6 +9625,8 @@
    "key": "localgov",
    "slug": "local-self-government",
    "title": "Local self-government: 73rd/74th Amendments, functions, funds & functionaries",
+   "step": 17,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9598,6 +9782,8 @@
    "key": "parliament",
    "slug": "parliament",
    "title": "Parliament: role of MPs, executive accountability, Rajya Sabha, privileges",
+   "step": 7,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9763,6 +9949,8 @@
    "key": "committees",
    "slug": "parliamentary-committees-and-financial-accountability",
    "title": "Parliamentary committees & financial accountability: PAC, Estimates, DRSCs",
+   "step": 8,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9869,6 +10057,8 @@
    "key": "speaker",
    "slug": "presiding-officers-and-anti-defection",
    "title": "Presiding officers & anti-defection",
+   "step": 9,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -9952,6 +10142,8 @@
    "key": "executive",
    "slug": "executive-cabinet-ordinances-and-pardon",
    "title": "Executive: cabinet, ordinances & pardon",
+   "step": 10,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10057,6 +10249,8 @@
    "key": "comparative",
    "slug": "comparative-constitutions-uk-usa-france",
    "title": "Comparative constitutions: UK, USA, France",
+   "step": 24,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10185,6 +10379,8 @@
    "key": "elections",
    "slug": "elections-and-electoral-reforms-rpa-eci-mcc-onoe-evms",
    "title": "Elections & electoral reforms: RPA, ECI, MCC, ONOE, EVMs",
+   "step": 18,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10357,6 +10553,8 @@
    "key": "cag",
    "slug": "cag-and-attorney-general",
    "title": "CAG & Attorney General",
+   "step": 19,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10462,6 +10660,8 @@
    "key": "regulators",
    "slug": "regulatory-and-quasi-judicial-bodies",
    "title": "Regulatory & quasi-judicial bodies: CCI, SEBI–IRDA, tariff authorities",
+   "step": 21,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10567,6 +10767,8 @@
    "key": "pressure",
    "slug": "pressure-groups-and-interest-representation",
    "title": "Pressure groups & interest representation",
+   "step": 22,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10679,6 +10881,8 @@
    "key": "policy",
    "slug": "policy-design-implementation-and-people-s-participation",
    "title": "Policy design, implementation & people's participation",
+   "step": 102,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -10840,6 +11044,8 @@
    "key": "civilsoc",
    "slug": "civil-society-ngos-charitable-trusts-and-donor-agencies",
    "title": "Civil society, NGOs, charitable trusts & donor agencies",
+   "step": 103,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -10983,6 +11189,8 @@
    "key": "anticorrupt",
    "slug": "transparency-accountability-and-anti-corruption",
    "title": "Transparency, accountability & anti-corruption: RTI, whistleblowers, Lokpal, corporate governance",
+   "step": 105,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11107,6 +11315,8 @@
    "key": "citizen",
    "slug": "citizens-charter-and-citizen-centric-administration",
    "title": "Citizens' Charter & citizen-centric administration",
+   "step": 106,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11191,6 +11401,8 @@
    "key": "egov",
    "slug": "e-governance-and-the-digital-divide",
    "title": "E-governance & the digital divide",
+   "step": 107,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11314,6 +11526,8 @@
    "key": "dbt",
    "slug": "dbt-aadhaar-and-digital-welfare-delivery",
    "title": "DBT, Aadhaar & digital welfare delivery",
+   "step": 108,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11414,6 +11628,8 @@
    "key": "civilservices",
    "slug": "civil-services-in-a-democracy-ethos-neutrality-reforms",
    "title": "Civil services in a democracy: ethos, neutrality, reforms",
+   "step": 109,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11559,6 +11775,8 @@
    "key": "health",
    "slug": "public-health-system-and-universal-health-coverage",
    "title": "Public health system & universal health coverage",
+   "step": 110,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11680,6 +11898,8 @@
    "key": "pandemic",
    "slug": "pandemics-and-global-health-covid-19-who-vaccines",
    "title": "Pandemics & global health: COVID-19, WHO, vaccines",
+   "step": 111,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11760,6 +11980,8 @@
    "key": "education",
    "slug": "education-policy-nep-rte-higher-education-exams",
    "title": "Education policy: NEP, RTE, higher education, exams",
+   "step": 112,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -11903,6 +12125,8 @@
    "key": "skills",
    "slug": "skills-hrd-and-the-demographic-dividend",
    "title": "Skills, HRD & the demographic dividend",
+   "step": 113,
+   "stage": 7,
    "cluster": "Governance",
    "clusterSlug": "governance",
    "papers": {
@@ -12035,6 +12259,8 @@
    "key": "pakistan",
    "slug": "pakistan-and-afghanistan",
    "title": "Pakistan & Afghanistan: terror, distrust, soft power, surgical strikes, ISAF withdrawal",
+   "step": 136,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12121,6 +12347,8 @@
    "key": "china",
    "slug": "china-bri-cpec-string-of-pearls-and-economic-leverage",
    "title": "China: BRI, CPEC, String of Pearls & economic leverage",
+   "step": 137,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12245,6 +12473,8 @@
    "key": "neighbourhood",
    "slug": "neighbourhood",
    "title": "Neighbourhood: Sri Lanka, Maldives, Bangladesh, Project Mausam",
+   "step": 135,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12356,6 +12586,8 @@
    "key": "indopacific",
    "slug": "indo-pacific-quad-aukus-and-sea-lanes",
    "title": "Indo-Pacific, Quad, AUKUS & sea lanes: straits, South China Sea, trade shift",
+   "step": 138,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12516,6 +12748,8 @@
    "key": "greatpower",
    "slug": "great-power-politics",
    "title": "Great-power politics: US–China rivalry, NATO, China+1, Indo-US vs Indo-Russian defence",
+   "step": 139,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12624,6 +12858,8 @@
    "key": "westasia",
    "slug": "west-asia-energy-security-israel-iran-i2u2",
    "title": "West Asia: energy security, Israel, Iran, I2U2",
+   "step": 140,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12725,6 +12961,8 @@
    "key": "centralasia",
    "slug": "central-asia-connectivity-and-strategic-presence",
    "title": "Central Asia: connectivity & strategic presence",
+   "step": 141,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12799,6 +13037,8 @@
    "key": "africa",
    "slug": "india-and-africa-resources-digital-partnership-influence",
    "title": "India & Africa: resources, digital partnership, influence",
+   "step": 142,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -12895,6 +13135,8 @@
    "key": "groupings",
    "slug": "regional-and-multilateral-groupings",
    "title": "Regional & multilateral groupings: SCO, BRICS, NDB/AIIB, BIMSTEC, SAARC",
+   "step": 143,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -13023,6 +13265,8 @@
    "key": "diaspora",
    "slug": "indian-diaspora-from-indentured-labour-to-strategic-asset",
    "title": "Indian diaspora: from indentured labour to strategic asset",
+   "step": 144,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -13138,6 +13382,8 @@
    "key": "wto",
    "slug": "wto-trade-wars-and-protectionism",
    "title": "WTO, trade wars & protectionism",
+   "step": 146,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -13290,6 +13536,8 @@
    "key": "un",
    "slug": "un-reform-bretton-woods-and-global-governance",
    "title": "UN reform, Bretton Woods & global governance",
+   "step": 145,
+   "stage": 9,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -13419,6 +13667,8 @@
    "key": "climateregime",
    "slug": "global-climate-regime-and-india-s-commitments",
    "title": "Global climate regime & India's commitments: Kyoto, Paris, COP26, ISA, CCUS",
+   "step": 129,
+   "stage": 8,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
    "papers": {
@@ -13551,6 +13801,8 @@
    "key": "growth",
    "slug": "growth",
    "title": "Growth: GDP measurement, potential GDP, savings, structure of growth",
+   "step": 70,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -13652,6 +13904,8 @@
    "key": "planning",
    "slug": "planning-nehruvian-planning-soviet-influence-niti-aayog",
    "title": "Planning: Nehruvian planning, Soviet influence, NITI Aayog",
+   "step": 71,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -13738,6 +13992,8 @@
    "key": "employment",
    "slug": "employment",
    "title": "Employment: jobless growth, informality, unemployment measurement, labour productivity",
+   "step": 72,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -13842,6 +14098,8 @@
    "key": "manufacturing",
    "slug": "manufacturing-msmes-startups-and-industrial-policy",
    "title": "Manufacturing, MSMEs, startups & industrial policy: PLI, SEZs, labour codes",
+   "step": 80,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -13979,6 +14237,8 @@
    "key": "fdi",
    "slug": "liberalisation-and-fdi-retail-defence-indian-firms-vs-mncs",
    "title": "Liberalisation & FDI: retail, defence, Indian firms vs MNCs",
+   "step": 81,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14080,6 +14340,8 @@
    "key": "digieco",
    "slug": "digital-economy-and-digital-currency-digitalisation-cbdc",
    "title": "Digital economy & digital currency: digitalisation, CBDC",
+   "step": 77,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14152,6 +14414,8 @@
    "key": "fininc",
    "slug": "financial-inclusion-and-rural-credit",
    "title": "Financial inclusion & rural credit",
+   "step": 76,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14241,6 +14505,8 @@
    "key": "inflation",
    "slug": "inflation-monetary-policy-and-the-poor",
    "title": "Inflation, monetary policy & the poor",
+   "step": 75,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14312,6 +14578,8 @@
    "key": "budget",
    "slug": "budgeting-and-fiscal-policy",
    "title": "Budgeting & fiscal policy: capital vs revenue, FRBM, tax expenditure, budgets",
+   "step": 73,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14428,6 +14696,8 @@
    "key": "infra",
    "slug": "infrastructure-and-investment-models",
    "title": "Infrastructure & investment models: PPP, Gati Shakti, concession agreements",
+   "step": 82,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14565,6 +14835,8 @@
    "key": "transport",
    "slug": "transport-connectivity",
    "title": "Transport connectivity: tolling, UDAN, inland waterways, urban transport",
+   "step": 83,
+   "stage": 5,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
    "papers": {
@@ -14661,6 +14933,8 @@
    "key": "greenrev",
    "slug": "green-revolution-and-food-self-sufficiency",
    "title": "Green Revolution & food self-sufficiency: rice–wheat system, technology missions",
+   "step": 92,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -14787,6 +15061,8 @@
    "key": "cropping",
    "slug": "cropping-patterns-and-crop-diversification",
    "title": "Cropping patterns & crop diversification: horticulture, pulses, millets",
+   "step": 93,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -14937,6 +15213,8 @@
    "key": "agrimarket",
    "slug": "agricultural-marketing-and-supply-chains-apmc-intermediaries",
    "title": "Agricultural marketing & supply chains: APMC, intermediaries",
+   "step": 94,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15059,6 +15337,8 @@
    "key": "agritech",
    "slug": "technology-in-agriculture",
    "title": "Technology in agriculture: e-technology, Digital India, nano, satellites",
+   "step": 95,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15169,6 +15449,8 @@
    "key": "subsidies",
    "slug": "farm-subsidies-msp-and-crop-insurance-incl-wto-agreement",
    "title": "Farm subsidies, MSP & crop insurance (incl. WTO Agreement on Agriculture)",
+   "step": 96,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15294,6 +15576,8 @@
    "key": "pds",
    "slug": "pds-and-buffer-stocks",
    "title": "PDS & buffer stocks",
+   "step": 97,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15363,6 +15647,8 @@
    "key": "foodproc",
    "slug": "food-processing-industry",
    "title": "Food processing industry",
+   "step": 98,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15500,6 +15786,8 @@
    "key": "landreform",
    "slug": "land-reforms-tenancy-and-land-acquisition",
    "title": "Land reforms, tenancy & land acquisition: from Bhoodan to the 2013 Act",
+   "step": 99,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15653,6 +15941,8 @@
    "key": "allied",
    "slug": "allied-and-sustainable-farming",
    "title": "Allied & sustainable farming: livestock, fisheries, integrated & organic farming",
+   "step": 100,
+   "stage": 6,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
    "papers": {
@@ -15746,6 +16036,8 @@
    "key": "space",
    "slug": "space-and-geospatial-technology",
    "title": "Space & geospatial technology: Chandrayaan, JWST, NavIC, asteroids, GIS",
+   "step": 158,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -15908,6 +16200,8 @@
    "key": "aitech",
    "slug": "ai-semiconductors-robotics-and-emerging-digital-tech",
    "title": "AI, semiconductors, robotics & emerging digital tech",
+   "step": 159,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16021,6 +16315,8 @@
    "key": "biotech",
    "slug": "biotechnology-applications-biopharma-microbes-for-fuel",
    "title": "Biotechnology: applications, biopharma, microbes for fuel",
+   "step": 160,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16101,6 +16397,8 @@
    "key": "healthtech",
    "slug": "health-technology-and-pharma",
    "title": "Health technology & pharma: AMR, FDCs, stem cells, nanomedicine",
+   "step": 161,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16210,6 +16508,8 @@
    "key": "ipr",
    "slug": "intellectual-property-rights",
    "title": "Intellectual property rights: patents, 3(d), TKDL, life forms",
+   "step": 162,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16305,6 +16605,8 @@
    "key": "nuclear",
    "slug": "nuclear-and-fusion-energy-fbr-iter-raw-materials",
    "title": "Nuclear & fusion energy: FBR, ITER, raw materials",
+   "step": 132,
+   "stage": 8,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16416,6 +16718,8 @@
    "key": "sciday",
    "slug": "science-in-everyday-life-and-indian-scientific-achievement",
    "title": "Science in everyday life & Indian scientific achievement",
+   "step": 163,
+   "stage": 11,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
    "papers": {
@@ -16547,6 +16851,8 @@
    "key": "renewables",
    "slug": "renewable-energy-transition",
    "title": "Renewable energy transition: solar, wind, EVs, green corridor",
+   "step": 130,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -16708,6 +17014,8 @@
    "key": "energysec",
    "slug": "energy-security-and-energy-independence",
    "title": "Energy security & energy independence",
+   "step": 131,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -16793,6 +17101,8 @@
    "key": "airpoll",
    "slug": "air-pollution-smog-who-guidelines-ncap",
    "title": "Air pollution: smog, WHO guidelines, NCAP",
+   "step": 123,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -16899,6 +17209,8 @@
    "key": "riverpoll",
    "slug": "river-pollution-and-ganga-cleaning",
    "title": "River pollution & Ganga cleaning",
+   "step": 124,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -16978,6 +17290,8 @@
    "key": "waste",
    "slug": "solid-and-hazardous-waste-management",
    "title": "Solid & hazardous waste management",
+   "step": 125,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -17046,6 +17360,8 @@
    "key": "eia",
    "slug": "environmental-impact-assessment-and-project-displacement",
    "title": "Environmental Impact Assessment & project displacement",
+   "step": 126,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -17143,6 +17459,8 @@
    "key": "climateimpact",
    "slug": "climate-change-impacts-on-india",
    "title": "Climate change impacts on India: food security, Himalayan & coastal states",
+   "step": 128,
+   "stage": 8,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
    "papers": {
@@ -17208,6 +17526,8 @@
    "key": "dmframe",
    "slug": "disaster-management-frameworks",
    "title": "Disaster management frameworks: DM Act, Sendai, resilience, community, dam safety",
+   "step": 134,
+   "stage": 8,
    "cluster": "Disaster Management",
    "clusterSlug": "disaster-management",
    "papers": {
@@ -17334,6 +17654,8 @@
    "key": "lwe",
    "slug": "left-wing-extremism-development-security-linkage",
    "title": "Left Wing Extremism: development–security linkage",
+   "step": 147,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17460,6 +17782,8 @@
    "key": "northeast",
    "slug": "north-east-insurgency-and-peace-accords",
    "title": "North-East insurgency & peace accords",
+   "step": 148,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17523,6 +17847,8 @@
    "key": "terror",
    "slug": "terrorism-and-external-state-non-state-actors",
    "title": "Terrorism & external state/non-state actors",
+   "step": 149,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17663,6 +17989,8 @@
    "key": "terrorfin",
    "slug": "terror-financing-and-money-laundering-fatf-nmft-pmla",
    "title": "Terror financing & money laundering: FATF, NMFT, PMLA",
+   "step": 150,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17759,6 +18087,8 @@
    "key": "cyber",
    "slug": "cyber-security-and-cyber-warfare",
    "title": "Cyber security & cyber warfare",
+   "step": 154,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17897,6 +18227,8 @@
    "key": "dataprot",
    "slug": "data-protection-dpdp-act-2023-srikrishna-committee",
    "title": "Data protection: DPDP Act 2023, Srikrishna Committee",
+   "step": 155,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -17965,6 +18297,8 @@
    "key": "socialmedia",
    "slug": "social-media-disinformation-and-public-order",
    "title": "Social media, disinformation & public order: mob violence, IT Rules",
+   "step": 156,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -18078,6 +18412,8 @@
    "key": "border",
    "slug": "border-management",
    "title": "Border management: China & Pakistan borders, BADP, drones, airspace, Ladakh",
+   "step": 152,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -18232,6 +18568,8 @@
    "key": "organised",
    "slug": "organised-crime-and-narco-terrorism",
    "title": "Organised crime & narco-terrorism",
+   "step": 151,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -18319,6 +18657,8 @@
    "key": "maritime",
    "slug": "maritime-and-coastal-security-piracy-imo",
    "title": "Maritime & coastal security: piracy, IMO",
+   "step": 153,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -18411,6 +18751,8 @@
    "key": "forces",
    "slug": "security-forces-intelligence-agencies-and-afspa",
    "title": "Security forces, intelligence agencies & AFSPA",
+   "step": 157,
+   "stage": 10,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
    "papers": {
@@ -18554,6 +18896,263 @@
   {
    "name": "Internal Security",
    "slug": "internal-security"
+  }
+ ],
+ "stages": [
+  {
+   "n": 1,
+   "name": "Constitution & polity: the base for every GS2 answer",
+   "why": "Most governance, social justice and IR answers cite constitutional provisions, so start here.",
+   "themes": [
+    18,
+    77,
+    78,
+    79,
+    81,
+    82,
+    93,
+    94,
+    95,
+    96,
+    88,
+    85,
+    83,
+    84,
+    87,
+    89,
+    92,
+    98,
+    99,
+    86,
+    100,
+    101,
+    90,
+    97
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Modern India & world history",
+   "why": "The story of how present India was shaped; feeds society, polity and IR answers.",
+   "themes": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Indian society",
+   "why": "GS1 society, and the social lens UPSC expects in GS2 and GS3 answers.",
+   "themes": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    54,
+    55,
+    56,
+    57,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    53
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Physical geography & hazards",
+   "why": "Processes first; disaster management and environment build on them.",
+   "themes": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    38,
+    37
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Indian economy",
+   "why": "Concepts you need before agriculture, infrastructure and inclusive growth.",
+   "themes": [
+    126,
+    127,
+    128,
+    134,
+    91,
+    133,
+    132,
+    131,
+    74,
+    76,
+    129,
+    130,
+    135,
+    136
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Resources, water & agriculture",
+   "why": "Economic geography and agriculture are one story; water links them.",
+   "themes": [
+    35,
+    36,
+    39,
+    40,
+    44,
+    45,
+    46,
+    47,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    75
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Governance & social justice",
+   "why": "Applies polity and society to policy, welfare and delivery.",
+   "themes": [
+    102,
+    103,
+    69,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    70,
+    71,
+    72,
+    73,
+    68,
+    67
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Environment, energy & disaster management",
+   "why": "Builds on geography and economy; heavy on current affairs.",
+   "themes": [
+    41,
+    42,
+    43,
+    155,
+    156,
+    157,
+    158,
+    80,
+    159,
+    125,
+    153,
+    154,
+    151,
+    58,
+    160
+   ]
+  },
+  {
+   "n": 9,
+   "name": "International relations",
+   "why": "Needs modern history, economy and geography as background.",
+   "themes": [
+    115,
+    113,
+    114,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    124,
+    123
+   ]
+  },
+  {
+   "n": 10,
+   "name": "Internal security",
+   "why": "Draws on polity, IR and society; do it after them.",
+   "themes": [
+    161,
+    162,
+    163,
+    164,
+    169,
+    168,
+    170,
+    165,
+    166,
+    167,
+    171
+   ]
+  },
+  {
+   "n": 11,
+   "name": "Science & technology",
+   "why": "Mostly current-affairs driven; easier once the rest is in place.",
+   "themes": [
+    146,
+    147,
+    148,
+    149,
+    150,
+    152
+   ]
+  },
+  {
+   "n": 12,
+   "name": "Art & culture",
+   "why": "Self-contained. Many aspirants run it in parallel with any stage above.",
+   "themes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
   }
  ],
  "syllabus": [

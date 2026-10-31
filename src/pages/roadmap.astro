@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import { stages, byN, themeUrl, yearSpan, u, roadmap } from '../lib/data';
+const desc = `A step-by-step UPSC GS Mains roadmap for beginners: ${roadmap.length} themes in ${stages.length} stages, from polity and modern history to IR, security and S&T, each with PYQs and prep notes.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC GS Mains roadmap for beginners',
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  itemListElement: roadmap.map((t) => ({ '@type': 'ListItem', position: t.step, name: t.title, url: new URL(themeUrl(t), Astro.site).href })) }];
+---
+<Base title="UPSC GS Mains roadmap for beginners" description={desc} jsonld={ld} crumbs={[{ name: 'Roadmap', href: u('/roadmap/') }]}>
+  <p class="eyebrow">New to Mains? Start here</p>
+  <h1>A step-by-step roadmap through GS Mains</h1>
+  <p class="lead">All {roadmap.length} themes in an order that builds up: the Constitution and modern history first, then society and geography, then economy, governance, environment, IR and security. Each theme shows what it builds on and where it comes back later. If you already know an area, jump to any step.</p>
+
+  <div class="panel rm-progress" id="rm-progress">
+    <div class="rm-bar" aria-hidden="true"><span id="rm-fill"></span></div>
+    <p id="rm-status">Tick "Mark as done" on a theme page and your progress shows here. It is saved on this device only.</p>
+    <p><a class="chip rm-go" id="rm-continue" href={themeUrl(roadmap[0])} data-umami-event="roadmap-continue">Start with step 1: {roadmap[0].title.split(':')[0]}</a></p>
+  </div>
+
+  <nav class="chips rm-jump" aria-label="Stages">
+    {stages.map((s) => <a class="chip" href={`#stage-${s.n}`}>{s.n}. {s.name.split(':')[0]}</a>)}
+  </nav>
+
+  {stages.map((s) => (
+    <section class="rm-stage" id={`stage-${s.n}`}>
+      <h2><span class="rm-sn">Stage {s.n}</span> {s.name}</h2>
+      <p class="lead">{s.why} <span class="rm-count" data-stage={s.n} data-total={s.themes.length}>{s.themes.length} themes</span></p>
+      <ol class="rm-steps">
+        {s.themes.map((n) => { const t = byN.get(n)!; return (
+          <li class="rm-step" data-n={t.n}>
+            <span class="rm-num" aria-hidden="true">{t.step}</span>
+            <div class="rm-body">
+              <a href={themeUrl(t)}>{t.title}</a>
+              <span class="rm-meta">
+                {Object.entries(t.papers).filter(([, v]) => v).map(([k, v]) => <span class={`pc ${k.toLowerCase()}`}>{k} · {v}</span>)}
+                <span>{t.count} PYQs · {yearSpan(t)}</span>
+                <span class="rm-done-tag" hidden>Done</span>
+              </span>
+            </div>
+          </li>
+        ); })}
+      </ol>
+    </section>
+  ))}
+
+  <style>
+    .rm-progress { margin: 16px 0; display: grid; gap: 6px; }
+    .rm-progress p { margin: 0; }
+    .rm-bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; }
+    .rm-bar span { display: block; height: 100%; width: 0; background: var(--accent); }
+    .rm-go { font-weight: 700; }
+    .rm-jump { margin: 8px 0 4px; }
+    .rm-sn { display: block; font-family: var(--f-body); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+    .rm-count { white-space: nowrap; font-weight: 600; }
+    .rm-steps { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); margin-left: 15px; }
+    .rm-step { position: relative; display: grid; grid-template-columns: auto 1fr; gap: 12px; padding: 8px 0 10px; }
+    .rm-num { width: 30px; height: 30px; margin-left: -16px; border-radius: 50%; background: var(--surface); border: 2px solid var(--line); display: grid; place-items: center; font-size: .78rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); }
+    .rm-body { min-width: 0; display: grid; gap: 3px; padding-top: 3px; }
+    .rm-body a { font-weight: 700; color: var(--ink); text-decoration: none; } .rm-body a:hover { color: var(--accent); text-decoration: underline; }
+    .rm-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .8rem; color: var(--muted); }
+    .rm-done-tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--gs1); }
+    .rm-step.done .rm-num { background: var(--gs1); border-color: var(--gs1); color: var(--surface); }
+    .rm-step.done .rm-body a { color: var(--muted); }
+  </style>
+  <script is:inline define:vars={{ order: roadmap.map((t) => ({ n: t.n, step: t.step, url: themeUrl(t), title: t.title.split(':')[0] })) }}>
+    (function () {
+      var done = [];
+      try { done = JSON.parse(localStorage.getItem('upscthemes-done') || '[]'); } catch (e) {}
+      var set = {}; done.forEach(function (n) { set[n] = true; });
+      document.querySelectorAll('.rm-step').forEach(function (li) {
+        if (set[li.dataset.n]) { li.classList.add('done'); li.querySelector('.rm-done-tag').hidden = false; }
+      });
+      document.querySelectorAll('.rm-count').forEach(function (c) {
+        var sec = c.closest('.rm-stage'), d = sec.querySelectorAll('.rm-step.done').length;
+        if (d) c.textContent = d + ' of ' + c.dataset.total + ' done';
+      });
+      var count = order.filter(function (o) { return set[o.n]; }).length;
+      if (!count) return;
+      var next = order.find(function (o) { return !set[o.n]; });
+      document.getElementById('rm-fill').style.width = Math.round(count / order.length * 100) + '%';
+      document.getElementById('rm-status').textContent = count + ' of ' + order.length + ' themes done (' + Math.round(count / order.length * 100) + '%). Saved on this device.';
+      var a = document.getElementById('rm-continue');
+      if (next) { a.href = next.url; a.textContent = 'Continue with step ' + next.step + ': ' + next.title; }
+      else { a.textContent = 'All steps done. Revise from step 1'; }
+    })();
+  </script>
+</Base>

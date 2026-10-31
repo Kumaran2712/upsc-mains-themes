@@ -1,7 +1,7 @@
 import raw from '../data/site.json';
 
 export type Question = { id: string; paper: string; year: number; marks: number | null; words: number | null; text: string; verified: boolean; also: number[] };
-export type Theme = { n: number; key: string; slug: string; title: string; cluster: string; clusterSlug: string;
+export type Theme = { n: number; key: string; slug: string; title: string; step: number; stage: number; cluster: string; clusterSlug: string;
   papers: Record<string, number>; cross: boolean; count: number; years: number[]; recent: number;
   syllabus: string[]; links: number[]; directives: [string, number][]; asks: string; checklist: string[]; answer: string[]; questions: Question[] };
 
@@ -13,6 +13,10 @@ export const source = raw.source;
 export const repoUrl = (import.meta.env.PUBLIC_REPO_URL || '').replace(/\/$/, '');
 export const issueUrl = (title = '', body = '') => repoUrl ? `${repoUrl}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}` : '';
 export const byN = new Map(themes.map((t) => [t.n, t]));
+export type Stage = { n: number; name: string; why: string; themes: number[] };
+export const stages = raw.stages as Stage[];
+export const roadmap = [...themes].sort((a, b) => a.step - b.step);
+export const byStep = new Map(roadmap.map((t) => [t.step, t]));
 export const totalQuestions = themes.reduce((s, t) => s + t.count, 0);
 export const papers = ['GS1', 'GS2', 'GS3'] as const;
 export const paperName: Record<string, string> = {

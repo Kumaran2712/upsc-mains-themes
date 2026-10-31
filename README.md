@@ -2,7 +2,7 @@
 
 A free, non-commercial site that regroups 810 UPSC GS1–GS3 Mains PYQs (2013–2026) into 171 cross-paper themes, with what UPSC asks, what to prepare, answer-writing pointers, syllabus lines and every question.
 
-Static site built with [Astro](https://astro.build). 290 pages: home, 171 theme pages, 18 area pages, paper and paper-year pages, 52 syllabus-line pages, search, about.
+Static site built with [Astro](https://astro.build). 291 pages: home, a beginner roadmap, 171 theme pages, 18 area pages, paper and paper-year pages, 52 syllabus-line pages, search, about.
 
 ## Launch checklist
 
@@ -32,7 +32,10 @@ A domain of your own builds search ranking you keep if you ever move hosts. Buy 
 
 | Event | When it fires | Extra data |
 | --- | --- | --- |
-| `home-cta` | A start button on the home page | `target`: themes / search / syllabus |
+| `home-cta` | A start button on the home page | `target`: roadmap / themes / search / syllabus |
+| `roadmap-continue` | Start / Continue button on the roadmap page | — |
+| `roadmap-next`, `roadmap-prev` | Step navigation on a theme page | — |
+| `roadmap-done`, `roadmap-undone` | Mark as done toggled on a theme page | `theme` |
 | `linked-theme-click` | A "Linked themes" chip on a theme page | `from`, `to` theme numbers |
 | `also-needs-click` | An "Also needs" chip on a question | `from` question ID, `to` theme |
 | `search` | A search settles or is submitted | `term` (first 40 chars), `results` |
@@ -53,6 +56,7 @@ All data lives in this repo:
 - `data/syllabus.yaml` — the 52 GS1–GS3 syllabus lines
 - `tools/theme_map.json` — the 171 themes, each listing its questions by ID, plus per-question "also needs" links
 - `tools/guide*.py` — the prep notes for each theme
+- `tools/roadmap.json` — the beginner roadmap: 12 stages, each listing its themes in study order (every theme exactly once)
 
 ```bash
 pip install pyyaml
