@@ -1,7 +1,8 @@
 ---
 import { maps } from '../../lib/maps';
-interface Props { id: string; labels?: boolean; extras?: boolean; title?: string }
-const { id, labels = true, extras = true, title = 'Map of India with state boundaries' } = Astro.props;
+interface Props { id: string; labels?: boolean; extras?: boolean; rivers?: boolean; title?: string }
+const { id, labels = true, extras = true, rivers = false, title = 'Map of India with state boundaries' } = Astro.props;
+const R = rivers ? maps.drainage.rivers : [];
 const m = maps.india;
 const big = m.states.filter((s: any) => s.area > 2.5);
 ---
@@ -10,6 +11,8 @@ const big = m.states.filter((s: any) => s.area > 2.5);
   {extras && <path class="grat" d={m.graticule} />}
   <g class="states">{m.states.map((s: any) => <path class="st" data-name={s.name} d={s.d}><title>{s.name}</title></path>)}</g>
   <path class="ol" d={m.outline} />
+  {rivers && <g class="rvs">{R.map((r: any) => <path class="rv" data-name={r.name} data-group={r.group} data-flows={r.flows} d={r.d}><title>{r.name}</title></path>)}</g>}
+  {rivers && <g class="rvlab">{R.map((r: any) => <text x={r.cx} y={r.cy} data-for={r.name}>{r.name}</text>)}</g>}
   {extras && <>
     <g class="tropic"><path d={m.tropic} /><text x={m.tropicLabel.x} y={m.tropicLabel.y}>Tropic of Cancer</text></g>
     <g class="meridian"><path d={m.meridian} /><text x={m.meridianLabel.x} y={m.meridianLabel.y}>82°30′E</text></g>

@@ -1,0 +1,87 @@
+---
+import Base from '../../layouts/Base.astro';
+import IndiaMap from '../../components/maps/IndiaMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import MapExplorer from '../../components/maps/MapExplorer.astro';
+import { maps, modules, ATTRIBUTION, themeKey, themeChips, lab } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const R = maps.drainage.rivers;
+const mod = modules[2];
+const NOTES: Record<string, string> = {
+  'Indus': 'Rises in Tibet and flows through Ladakh; the 1960 Indus Waters Treaty gives Pakistan the western rivers.',
+  'Ganga': 'Largest river basin in India and home to over 40% of its people; cleaned under Namami Gange.',
+  'Brahmaputra': 'Rises in Tibet as the Yarlung Tsangpo; braided and flood-prone in Assam; China’s dams upstream are a concern.',
+  'Kosi (Sapt Kosi)': 'Called the “Sorrow of Bihar” because it shifts its course and floods.',
+  'Teesta': 'Water sharing with Bangladesh is still unsettled.',
+  'Chambal': 'Known for its ravines (badlands); flows north to join the Yamuna.',
+  'Son': 'Rises at Amarkantak and flows north to join the Ganga.',
+  'Mahanadi': 'Hirakud dam; the water dispute between Odisha and Chhattisgarh.',
+  'Godavari': 'Largest peninsular river, called the “Dakshin Ganga”.',
+  'Krishna': 'Shared by Maharashtra, Karnataka, Telangana and Andhra Pradesh; long-running water dispute.',
+  'Kaveri': 'Karnataka–Tamil Nadu water dispute, settled by the Supreme Court in 2018 with a management authority.',
+  'Narmada': 'Flows west through a rift valley; the Sardar Sarovar dam drew the Narmada Bachao Andolan.',
+  'Tapi': 'Flows west through a rift valley parallel to the Narmada.',
+  'Betwa': 'Part of the Ken–Betwa link, India’s first river-interlinking project.',
+};
+const groupText: Record<string, string> = { himalayan: 'Himalayan river: perennial, fed by snow and glaciers as well as the monsoon.', peninsular: 'Peninsular river: rain-fed and seasonal, flowing over the old, stable plateau.' };
+const flowText: Record<string, string> = { east: 'Drains into the Bay of Bengal', west: 'Drains into the Arabian Sea', north: 'Flows north to join the Ganga system' };
+const items = R.map((r: any) => ({ name: r.name, sub: `${r.group === 'himalayan' ? 'Himalayan' : 'Peninsular'} · ${flowText[r.flows]}`,
+  text: (NOTES[r.name] ? NOTES[r.name] + ' ' : '') + groupText[r.group], themes: themeChips(r.themes) }));
+const labCards = lab.filter((c) => c.base === 'drainage');
+const desc = 'Rivers of India map for UPSC Mains: Himalayan vs peninsular rivers, east- and west-flowing rivers, the Indus system and inter-state disputes, with a tap-the-river quiz and PYQ sketch drills.';
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'Rivers of India map for UPSC Mains', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/drainage/'), Astro.site).href }];
+---
+<Base title="Rivers of India map for UPSC Mains" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'Drainage', href: u('/maps/drainage/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module {mod.n}</p>
+  <h1>Drainage: rivers of India</h1>
+  <p class="lead">Water questions recur across all three papers: river linking, the Indus Waters Treaty, inter-state disputes, floods and groundwater. Learn the {R.length} main rivers, then colour them by origin or by where they drain to see the pattern behind the answers.</p>
+  <div class="maptools" role="group" aria-label="Colour the rivers">
+    <button class="tog" type="button" data-mode="" aria-pressed="true">Plain</button>
+    <button class="tog" type="button" data-mode="by-group" aria-pressed="false">Himalayan vs peninsular</button>
+    <button class="tog" type="button" data-mode="by-flow" aria-pressed="false">Where they drain</button>
+    <button class="tog" type="button" id="rv-names" aria-pressed="false">River names</button>
+  </div>
+  <div class="legend" id="rv-legend"></div>
+  <div class="mapbox"><IndiaMap id="m2" labels={false} extras={false} rivers title="India map with major rivers" /></div>
+  <p class="attrib">{ATTRIBUTION} Rivers: Natural Earth (public domain), generalised.</p>
+  <MapExplorer svgId="m2" items={items} quizName="rivers" quizCount={10} quizLabel="tap the river" track="drainage" />
+
+  <h2>The pattern to remember</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Group</th><th>Drains into</th><th>Rivers</th></tr></thead>
+    <tbody>
+      {[['himalayan','west'],['himalayan','east'],['peninsular','north'],['peninsular','east'],['peninsular','west']].map(([g, f]) => {
+        const rs = R.filter((r: any) => r.group === g && r.flows === f).map((r: any) => r.name);
+        return rs.length ? <tr><td>{g === 'himalayan' ? 'Himalayan' : 'Peninsular'}</td><td>{flowText[f].replace('Drains into ', '').replace('Flows north to join ', 'North, to ')}</td><td>{rs.join(', ')}</td></tr> : null;
+      })}
+    </tbody>
+  </table></div>
+
+  {labCards.length > 0 && <>
+    <h2>Practise in the sketch lab</h2>
+    <div class="chips">{labCards.map((c) => <a class="chip" href={`${u('/maps/lab/')}#${c.id}`}>{c.q.paper} {c.q.year}: {c.q.text.slice(0, 70)}…</a>)}</div>
+  </>}
+  <h2>Themes that use this map</h2>
+  <div class="chips">{(mod.themes || []).map((k) => themeKey(k)).filter(Boolean).sort((a, b) => a!.n - b!.n).map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+  <style is:global>
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .85rem; margin: 4px 0 8px; }
+    .legend span::before { content: ""; display: inline-block; width: 14px; height: 4px; border-radius: 2px; margin-right: 6px; vertical-align: 3px; background: var(--c); }
+  </style>
+  <script is:inline>
+    (function () {
+      var svg = document.getElementById('m2'), lg = document.getElementById('rv-legend');
+      var L = { 'by-group': [['Himalayan', 'var(--gs1)'], ['Peninsular', 'var(--gs3)']], 'by-flow': [['Bay of Bengal', 'var(--gs2)'], ['Arabian Sea', 'var(--gs3)'], ['North, to the Ganga', 'var(--gs1)']] };
+      document.querySelectorAll('.tog[data-mode]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          document.querySelectorAll('.tog[data-mode]').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          svg.classList.remove('by-group', 'by-flow'); if (b.dataset.mode) svg.classList.add(b.dataset.mode);
+          lg.innerHTML = (L[b.dataset.mode] || []).map(function (x) { return '<span style="--c:' + x[1] + '">' + x[0] + '</span>'; }).join('');
+        });
+      });
+      var nb = document.getElementById('rv-names');
+      nb.addEventListener('click', function () { var on = nb.getAttribute('aria-pressed') !== 'true'; nb.setAttribute('aria-pressed', on ? 'true' : 'false'); svg.classList.toggle('show-rvlab', on); });
+    })();
+  </script>
+</Base>

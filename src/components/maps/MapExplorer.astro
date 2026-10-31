@@ -1,0 +1,64 @@
+---
+// Tap-to-learn card + locate quiz for one map. Items are matched by data-name inside the svg.
+interface Item { name: string; sub?: string; text: string; themes: { n: number; title: string; url: string }[] }
+interface Props { svgId: string; items: Item[]; quizName: string; quizCount?: number; quizLabel: string; hideLabelsInQuiz?: boolean; track: string }
+const { svgId, items, quizName, quizCount = 8, quizLabel, hideLabelsInQuiz = true, track } = Astro.props;
+const data = Object.fromEntries(items.map((i) => [i.name, i]));
+const cardId = `${svgId}-card`, qid = `${svgId}-quiz`;
+---
+<div class="panel infocard" id={cardId} aria-live="polite"><p class="lead" style="margin:0">Tap a feature on the map to learn why it matters.</p></div>
+<section class="panel quiz" id={qid} aria-live="polite">
+  <p class="eyebrow">Quiz · {quizLabel}</p>
+  <p class="ask">Tap Start, then tap each one on the map.</p>
+  <p class="fb"></p>
+  <p><button class="btn qstart" type="button">Start: {Math.min(quizCount, items.length)} questions</button> <span class="eyebrow qbest"></span></p>
+</section>
+<script is:inline define:vars={{ svgId, data, cardId, qid, quizName, quizCount, hideLabelsInQuiz, track }}>
+  (function () {
+    var svg = document.getElementById(svgId), card = document.getElementById(cardId), q = document.getElementById(qid);
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function sel(n) { return svg.querySelectorAll('[data-name="' + CSS.escape(n) + '"]'); }
+    function label(n, on) { var t = svg.querySelector('text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.toggle('show', on); }
+    var round = null, last = null;
+    svg.addEventListener('click', function (e) {
+      var el = e.target.closest('[data-name]'); if (!el) return;
+      var n = el.getAttribute('data-name'); if (!data[n]) return;
+      if (round) { answer(n); return; }
+      if (last) { sel(last).forEach(function (x) { x.classList.remove('sel'); }); label(last, false); }
+      sel(n).forEach(function (x) { x.classList.add('sel'); }); label(n, true); last = n;
+      var d = data[n];
+      card.innerHTML = '<h3>' + esc(n) + '</h3>' + (d.sub ? '<p class="eyebrow">' + esc(d.sub) + '</p>' : '') + '<p>' + esc(d.text) + '</p>' +
+        (d.themes.length ? '<div class="chips">' + d.themes.map(function (t) { return '<a class="chip" href="' + t.url + '">T' + t.n + ' ' + esc(t.title) + '</a>'; }).join('') + '</div>' : '');
+      if (window.__track) window.__track('map-tap', { map: track, name: n });
+    });
+    var ask = q.querySelector('.ask'), fb = q.querySelector('.fb'), start = q.querySelector('.qstart'), bestEl = q.querySelector('.qbest');
+    var KEY = 'upscthemes-quiz-' + quizName, best = 0, total = Math.min(quizCount, Object.keys(data).length);
+    try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
+    function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/' + total : ''; } showBest();
+    function next() {
+      if (round.i >= round.list.length) {
+        ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
+        fb.className = 'fb ' + (round.score >= Math.ceil(total * .75) ? 'ok' : 'no'); fb.textContent = 'Tap Start for a new round.';
+        if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+        if (window.__track) window.__track('map-quiz-done', { quiz: quizName, score: round.score });
+        round = null; if (hideLabelsInQuiz) svg.classList.remove('quizzing'); start.textContent = 'Start again'; return;
+      }
+      ask.textContent = 'Tap: ' + round.list[round.i] + ' (' + (round.i + 1) + '/' + round.list.length + ')';
+    }
+    function answer(got) {
+      var want = round.list[round.i], ok = got === want;
+      sel(want).forEach(function (x) { x.classList.add('on1'); });
+      setTimeout(function () { sel(want).forEach(function (x) { x.classList.remove('on1'); }); }, 1300);
+      fb.textContent = ok ? 'Correct: ' + want : 'That was ' + got + '. ' + want + ' is highlighted in green.';
+      fb.className = 'fb ' + (ok ? 'ok' : 'no'); if (ok) round.score++;
+      round.i++; setTimeout(next, ok ? 500 : 1300);
+    }
+    start.addEventListener('click', function () {
+      if (last) { sel(last).forEach(function (x) { x.classList.remove('sel'); }); label(last, false); last = null; }
+      var pool = Object.keys(data); for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
+      round = { list: pool.slice(0, total), i: 0, score: 0 }; fb.textContent = '';
+      if (hideLabelsInQuiz) svg.classList.add('quizzing'); next();
+      svg.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
+  })();
+</script>

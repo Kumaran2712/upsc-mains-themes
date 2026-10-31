@@ -28,6 +28,46 @@
   .map-region .nb { fill: var(--surface); stroke: var(--muted); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
   .map-region .nb:hover, .map-region .nb.sel { fill: var(--gs3-bg); stroke: var(--gs3); }
   .map-region .lab text { font-size: 26px; font-weight: 600; pointer-events: none; } .map-region .lab .in { fill: var(--gs2); font-size: 32px; letter-spacing: .12em; }
+  /* India rivers */
+  .map-india .rv { fill: none; stroke: #3b82c4; stroke-width: 2; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-india .rvs .rv:hover { stroke-width: 4; }
+  .map-india .rvlab text { font-size: 22px; font-weight: 600; fill: #2a6aa8; display: none; pointer-events: none; }
+  .map-india.show-rvlab .rvlab text, .map-india .rvlab text.show { display: inline; }
+  .map-india.by-group .rv[data-group="himalayan"] { stroke: var(--gs1); } .map-india.by-group .rv[data-group="peninsular"] { stroke: var(--gs3); }
+  .map-india.by-flow .rv[data-flows="east"] { stroke: var(--gs2); } .map-india.by-flow .rv[data-flows="west"] { stroke: var(--gs3); } .map-india.by-flow .rv[data-flows="north"] { stroke: var(--gs1); }
+  /* World physical */
+  .map-phys .sea, .map-hist .sea { fill: var(--accent-soft); }
+  .map-phys .land { fill: var(--surface); stroke: var(--muted); stroke-width: .6; }
+  .map-phys .sf { fill: transparent; cursor: pointer; }
+  .map-phys .lines path { fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 5 4; vector-effect: non-scaling-stroke; pointer-events: none; }
+  .map-phys .lines .eq { stroke: var(--ink); }
+  .map-phys .ft { cursor: pointer; stroke-width: .8; }
+  .map-phys .k-range { fill: #a0714f; stroke: #7c5133; } .map-phys .k-desert { fill: #e8c46a; stroke: #b8902f; }
+  .map-phys .k-plateau { fill: #c49c7a; stroke: #946b4a; } .map-phys .k-plain, .map-phys .k-basin { fill: #9bc489; stroke: #5f9050; }
+  .map-phys .rv { fill: none; stroke: #3b82c4; stroke-width: 1.6; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-phys .india, .map-hist .india { fill: none; stroke: var(--gs2); stroke-width: 1.4; vector-effect: non-scaling-stroke; pointer-events: none; }
+  .map-phys .lab text, .map-hist .lab text { font-size: 17px; font-weight: 600; display: none; pointer-events: none; }
+  .map-phys .lab text.show, .map-hist .lab text.show, .show-lab .lab text { display: inline; }
+  .off-range .k-range, .off-desert .k-desert, .off-plateau .k-plateau, .off-plain .k-plain, .off-plain .k-basin, .off-rivers .wrv, .off-lines .lines { display: none; }
+  .map-phys .sf.sel, .map-phys .sf.on1 { fill: var(--gs1-bg); stroke: var(--gs1); stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .map-phys .sf.on2 { fill: var(--gs3-bg); stroke: var(--gs3); stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .map-phys .ft.sel, .map-phys .ft.on1 { fill: var(--gs1); stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .map-phys .ft.on2 { fill: var(--gs3); stroke: var(--ink); stroke-width: 2; vector-effect: non-scaling-stroke; }
+  .map-phys .rv.sel, .map-phys .rv.on1 { stroke: var(--gs1); stroke-width: 3.5; }
+  /* World history */
+  .map-hist .ct { fill: var(--surface); stroke: var(--line); stroke-width: .6; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-hist .ct.on1, .map-hist .ct.sel { fill: var(--gs1-bg); stroke: var(--gs1); stroke-width: 1.4; }
+  .map-hist .ct.on2 { fill: var(--gs3-bg); stroke: var(--gs3); stroke-width: 1.4; }
+  .map-hist .pt { cursor: pointer; } .map-hist .pt .hit { fill: transparent; } .map-hist .pt .dot { fill: var(--gs3); stroke: var(--surface); stroke-width: 1.5; }
+  .map-hist .pt.sel .dot, .map-hist .pt.on1 .dot, .map-hist .pt.on2 .dot { fill: var(--gs1); stroke-width: 3; }
+  /* Lab mode: hide pins and labels until reveal */
+  .labonly .pt { display: none; } .labonly .pt.on1, .labonly .pt.on2 { display: inline; }
+  .labonly .lab text, .labonly .rvlab text { display: none; } .labonly .lab text.show, .labonly .rvlab text.show { display: inline; }
+  .map-india .rv.on1 { stroke: var(--gs1); stroke-width: 4; } .map-india .rv.on2 { stroke: var(--gs3); stroke-width: 4; }
+  .labonly .rv, .labonly .ft { display: none; } .labonly .rv.on1, .labonly .rv.on2, .labonly .ft.on1, .labonly .ft.on2 { display: inline; }
+  .quizzing .lab text, .quizzing .rvlab text { display: none !important; }
+  .mapbox.zoomed { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .mapbox.zoomed > svg { width: 230%; max-width: none; max-height: none; }
   .hide-grid .grat, .hide-grid .gratlab, .hide-tropic .tropic, .hide-meridian .meridian, .hide-ext .ext, .hide-lab .lab { display: none; }
   .maptools { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
   .tog { font: inherit; font-size: .82rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }

@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import PhysicalMap from '../../components/maps/PhysicalMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import MapExplorer from '../../components/maps/MapExplorer.astro';
+import { maps, modules, themeKey, themeChips, lab } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const P = maps.physical;
+const mod = modules[4];
+const KIND: Record<string, string> = { range: 'Mountain range', desert: 'Desert', plateau: 'Plateau', plain: 'Plain / grassland', basin: 'River basin' };
+const items = [
+  ...P.features.map((f: any) => ({ name: f.name, sub: KIND[f.kind], text: f.why, themes: themeChips(f.themes) })),
+  ...P.seas.map((f: any) => ({ name: f.name, sub: 'Sea', text: f.why, themes: themeChips(f.themes) })),
+  ...P.rivers.map((f: any) => ({ name: f.name, sub: 'River', text: f.why, themes: themeChips(f.themes) })),
+];
+const count = (k: string) => P.features.filter((f: any) => f.kind === k).length;
+const labCards = lab.filter((c) => c.base === 'physical');
+const desc = 'World physical map for UPSC Mains GS1: major mountain ranges, hot and cold deserts, plateaus and plains, cyclone seas and great rivers, with a locate quiz and PYQ sketch drills.';
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'World physical map for UPSC Mains', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/world-physical/'), Astro.site).href }];
+---
+<Base title="World physical map for UPSC Mains" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'World physical', href: u('/maps/world-physical/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module {mod.n}</p>
+  <h1>World physical framework</h1>
+  <p class="lead">"Salient features of world's physical geography" is a GS1 syllabus line, and PYQs keep asking <em>why things are where they are</em>: fold mountains on continental edges, hot deserts on western margins near the Tropics, cyclones over warm seas. Switch layers on and off, tap a feature, then test yourself.</p>
+  <div class="maptools" role="group" aria-label="Layers">
+    <button class="tog" type="button" data-off="off-range" aria-pressed="true">Mountains ({count('range')})</button>
+    <button class="tog" type="button" data-off="off-desert" aria-pressed="true">Deserts ({count('desert')})</button>
+    <button class="tog" type="button" data-off="off-plateau" aria-pressed="true">Plateaus ({count('plateau')})</button>
+    <button class="tog" type="button" data-off="off-plain" aria-pressed="true">Plains & basins ({count('plain') + count('basin')})</button>
+    <button class="tog" type="button" data-off="off-rivers" aria-pressed="true">Rivers ({P.rivers.length})</button>
+    <button class="tog" type="button" data-off="off-lines" aria-pressed="true">Equator & Tropics</button>
+    <button class="tog" type="button" id="w-names" aria-pressed="false">Names</button>
+  </div>
+  <p class="maptools"><button class="tog zoombtn" type="button" aria-pressed="false" data-for="m4">Bigger map (swipe to move)</button></p>
+  <div class="mapbox"><PhysicalMap id="m4" /></div>
+  <p class="attrib">Physical features, seas, rivers and land: Natural Earth (public domain), generalised. India outline: Survey of India–based data. Seas are invisible until tapped: tap the Bay of Bengal, Arabian Sea, South China Sea, Gulf of Mexico, Persian Gulf, Red Sea or Mediterranean.</p>
+  <MapExplorer svgId="m4" items={items} quizName="world-physical" quizCount={10} quizLabel="locate the feature" track="world-physical" />
+
+  <h2>Patterns UPSC asks about</h2>
+  <ul>
+    <li><b>Young fold mountains sit on continental margins</b> (Andes, Rockies, Alps–Zagros–Himalaya) where plates collide or subduct, so earthquakes and volcanoes follow the same belts. The Urals and Appalachians are old exceptions inside continents.</li>
+    <li><b>Hot deserts lie at about 20–30° on the western sides of continents</b> (Sahara, Arabian, Thar, Sonoran, Atacama, Namib, Australian): subtropical high pressure, offshore trade winds and cold ocean currents keep them dry.</li>
+    <li><b>Tropical cyclones form over warm seas</b> (above about 26–27°C) between about 5° and 30° from the Equator: Bay of Bengal, South China Sea, Gulf of Mexico.</li>
+    <li><b>Mountain alignment shapes weather</b>: north–south ranges create rain shadows on their leeward side; the east–west Himalayas trap the monsoon over India.</li>
+  </ul>
+  {labCards.length > 0 && <>
+    <h2>Practise in the sketch lab</h2>
+    <div class="chips">{labCards.map((c) => <a class="chip" href={`${u('/maps/lab/')}#${c.id}`}>{c.q.paper} {c.q.year}: {c.q.text.slice(0, 70)}…</a>)}</div>
+  </>}
+  <h2>Themes that use this map</h2>
+  <div class="chips">{(mod.themes || []).map((k) => themeKey(k)).filter(Boolean).sort((a, b) => a!.n - b!.n).map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+  <script is:inline>
+    (function () {
+      var svg = document.getElementById('m4');
+      document.querySelectorAll('.tog[data-off]').forEach(function (b) {
+        b.addEventListener('click', function () { var on = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', on ? 'true' : 'false'); svg.classList.toggle(b.dataset.off, !on); });
+      });
+      var nb = document.getElementById('w-names');
+      nb.addEventListener('click', function () { var on = nb.getAttribute('aria-pressed') !== 'true'; nb.setAttribute('aria-pressed', on ? 'true' : 'false'); svg.classList.toggle('show-lab', on); });
+    })();
+  </script>
+</Base>

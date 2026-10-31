@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import HistoryMap from '../../components/maps/HistoryMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import MapExplorer from '../../components/maps/MapExplorer.astro';
+import { maps, modules, themeKey, themeChips, lab } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const H = maps.history;
+const mod = modules[8];
+const items = H.pins.map((p: any) => ({ name: p.name, text: p.event, themes: themeChips(p.themes) }));
+const labCards = lab.filter((c) => c.base === 'history');
+const desc = 'World history map for UPSC Mains GS1: the American and French Revolutions, the Industrial Revolution, the World Wars, decolonisation in Africa and Malaya, and the Suez crisis, with a locate quiz and PYQ sketch drills.';
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'World history on the map for UPSC Mains', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/history/'), Astro.site).href }];
+---
+<Base title="World history map for UPSC Mains" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'History on the map', href: u('/maps/history/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module {mod.n}</p>
+  <h1>History on the map: the world</h1>
+  <p class="lead">GS1 world history runs from the 18th century: revolutions, industrialisation, the World Wars, colonisation and decolonisation. Placing each event on the map makes the links visible, from the Atlantic world of 1776–1789 to the Africa and Asia of the 1950s. Tap a pin, then test yourself.</p>
+  <p class="maptools"><button class="tog zoombtn" type="button" aria-pressed="false" data-for="m8">Bigger map (swipe to move)</button></p>
+  <div class="mapbox"><HistoryMap id="m8" /></div>
+  <p class="attrib">Countries: Natural Earth, India point-of-view edition (public domain), shown with <b>today's borders</b> as a guide; historical borders differed. India: Survey of India–based data. Pins are approximate.</p>
+  <MapExplorer svgId="m8" items={items} quizName="world-history" quizCount={8} quizLabel="locate the event" hideLabelsInQuiz={false} track="history" />
+
+  <h2>Timeline on this map</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Place</th><th>What happened</th></tr></thead>
+    <tbody>{H.pins.map((p: any) => <tr><td>{p.name}</td><td>{p.event}</td></tr>)}</tbody>
+  </table></div>
+  <p class="lead">India history places (Harappan sites, 1857 centres, freedom-struggle movements) come next in this module.</p>
+  {labCards.length > 0 && <>
+    <h2>Practise in the sketch lab</h2>
+    <div class="chips">{labCards.map((c) => <a class="chip" href={`${u('/maps/lab/')}#${c.id}`}>{c.q.paper} {c.q.year}: {c.q.text.slice(0, 70)}…</a>)}</div>
+  </>}
+  <h2>Themes that use this map</h2>
+  <div class="chips">{(mod.themes || []).map((k) => themeKey(k)).filter(Boolean).sort((a, b) => a!.n - b!.n).map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+</Base>

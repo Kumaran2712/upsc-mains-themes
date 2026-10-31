@@ -166,10 +166,97 @@ for c in P["chokepoints"]:
                        minor=bool(c.get("minor")), dx=c.get("dx", 9), dy=c.get("dy", -9), anchor=c.get("anchor", "start")))
 world_map = dict(viewBox=f"0 0 {WW} {WH}", land=path(proj(land_g, eqe), fw, prec=1, min_len=3), india=path(proj(india_small, eqe), fw, prec=1), chokepoints=chokes)
 
-data = dict(india=india_map, region=region_map, world=world_map, boundaryChecks=list(CHECKS))
+# ---------- World physical, world history, India drainage ----------
+WD = json.load(open(os.path.join(HERE, "maps_world.json")))
+eq0 = Transformer.from_crs("EPSG:4326", "+proj=eqearth +lon_0=10 +datum=WGS84", always_xy=True)
+WFRAME = box(-170, -56, 189.99, 80)
+def to_frame(g):  # shift western-hemisphere longitudes < -170 to the east so the Pacific is not split
+    return g.intersection(WFRAME)
+land50 = json.load(open(os.path.join(GEO, "ne_50m_land.geojson")))
+land_w = unary_union([shape(f["geometry"]).buffer(0) for f in land50["features"]]).intersection(box(-180, -56, 180, 80)).simplify(0.12, preserve_topology=True)
+fp, PW, PH = fitter(proj(land_w, eq0), 1000, pad=6)
+def lines_at(lat):
+    return path(proj(LineString([(x, lat) for x in range(-180, 181, 2)]), eq0), fp, prec=1)
+geo_lines = dict(equator=lines_at(0), tropicN=lines_at(23.4365), tropicS=lines_at(-23.4365), arctic=lines_at(66.5634))
+def label_at(g):
+    rp = (max(getattr(g, "geoms", [g]), key=lambda q: q.area) if hasattr(g, "geoms") else g)
+    rp = rp.representative_point() if rp.geom_type in ("Polygon", "MultiPolygon") else rp.interpolate(0.5, normalized=True)
+    x, y = fp(*eq0.transform(rp.x, rp.y)); return round(x, 1), round(y, 1)
+regions = json.load(open(os.path.join(GEO, "ne_50m_geography_regions_polys.geojson")))
+by_region = {}
+for f in regions["features"]:
+    by_region.setdefault(f["properties"]["NAME"], []).append(shape(f["geometry"]).buffer(0))
+phys = []
+for it in WD["physical"]:
+    assert it["ne"] in by_region, ("missing region", it["ne"])
+    g = unary_union(by_region[it["ne"]]).simplify(0.08, preserve_topology=True)
+    cx, cy = label_at(g)
+    phys.append(dict(name=it["name"], kind=it["kind"], why=it["why"], themes=it["themes"], d=path(proj(g, eq0), fp, prec=0), cx=cx, cy=cy))
+marine = json.load(open(os.path.join(GEO, "ne_50m_geography_marine_polys.geojson")))
+by_sea = {}
+for f in marine["features"]:
+    if f["properties"].get("name"): by_sea.setdefault(f["properties"]["name"], []).append(shape(f["geometry"]).buffer(0))
+seas = []
+for it in WD["seas"]:
+    assert it["ne"] in by_sea, ("missing sea", it["ne"])
+    g = unary_union(by_sea[it["ne"]]).simplify(0.08, preserve_topology=True)
+    cx, cy = label_at(g)
+    seas.append(dict(name=it["name"], why=it["why"], themes=it["themes"], d=path(proj(g, eq0), fp, prec=1), cx=cx, cy=cy))
+rv = json.load(open(os.path.join(GEO, "ne_10m_rivers_lake_centerlines.geojson")))
+by_river = {}
+for f in rv["features"]:
+    if not f["geometry"]: continue
+    for key in {f["properties"].get("name"), f["properties"].get("name_en")}:
+        if key: by_river.setdefault(key, []).append(shape(f["geometry"]))
+wrivers = []
+for it in WD["rivers"]:
+    assert it["ne"] in by_river, ("missing river", it["ne"])
+    g = unary_union(by_river[it["ne"]]).simplify(0.05)
+    cx, cy = label_at(g)
+    wrivers.append(dict(name=it["name"], why=it["why"], themes=it["themes"], d=path(proj(g, eq0), fp, prec=1), cx=cx, cy=cy))
+india_w = india.simplify(0.06, preserve_topology=True)
+physical_map = dict(viewBox=f"0 0 {PW} {PH}", land=path(proj(land_w, eq0), fp, prec=0, min_len=2.5), india=path(proj(india_w, eq0), fp, prec=1),
+                    lines=geo_lines, features=phys, seas=seas, rivers=wrivers)
+
+# World history: countries in Natural Earth's India point-of-view edition, with India itself from Survey of India-based data.
+cind = json.load(open(os.path.join(GEO, "ne_10m_admin_0_countries_ind.geojson")))
+cshape = {f["properties"]["ADMIN"]: shape(f["geometry"]).buffer(0) for f in cind["features"]}
+cont = {f["properties"]["ADMIN"]: f["properties"].get("CONTINENT") for f in cind["features"]}
+for nm, (la, lo) in {"Gilgit": (35.92, 74.31), "Muzaffarabad": (34.37, 73.47), "Aksai Chin": (35.3, 79.2), "Tawang": (27.59, 91.87)}.items():
+    if not cshape["India"].contains(Point(lo, la)):
+        sys.exit(f"BOUNDARY CHECK FAILED in world countries file at {nm}. Use Natural Earth's India point-of-view edition.")
+india_clip = india.buffer(0.02)
+countries = []
+for nm, g in cshape.items():
+    if nm == "India" or g.is_empty: continue
+    g2 = g.difference(india_clip).intersection(box(-180, -56, 180, 80)).simplify(0.22, preserve_topology=True)
+    if g2.is_empty or g2.area < 0.15: continue
+    countries.append(dict(name=nm, cont=cont.get(nm), d=path(proj(g2, eq0), fp, prec=0, min_len=2.5)))
+pins = []
+for pn in WD["history_pins"]:
+    x, y = fp(*eq0.transform(pn["lon"], pn["lat"]))
+    pins.append(dict(name=pn["name"], event=pn["event"], themes=pn["themes"], x=round(x, 1), y=round(y, 1)))
+history_map = dict(viewBox=f"0 0 {PW} {PH}", countries=countries, india=path(proj(india_w, eq0), fp, prec=1), pins=pins)
+
+# India drainage on the India map frame.
+river_items = []
+india_buf = india.buffer(0.15)
+for it in WD["india_rivers"]:
+    parts = [g for k in it["ne"] for g in by_river.get(k, [])]
+    assert parts, ("missing Indian river", it["ne"])
+    g = unary_union(parts).intersection(india_buf).simplify(0.01)
+    if g.is_empty: sys.exit(f"River {it['name']} has no course inside India")
+    gp = proj(g, lcc)
+    mid = max(getattr(g, "geoms", [g]), key=lambda q: q.length).interpolate(0.5, normalized=True)
+    cx, cy = pt(mid.x, mid.y)
+    river_items.append(dict(name=it["name"], group=it["group"], flows=it["flows"], themes=it["themes"], d=path(gp, fi), cx=round(cx, 1), cy=round(cy, 1)))
+rivers_map = dict(rivers=river_items)
+
+data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, drainage=rivers_map, boundaryChecks=list(CHECKS))
 json.dump(data, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 print("India map", W, "x", H, "| states", len(state_items), "| tropic states:", tropic_states)
 print("meridian states:", meridian_states)
 print("extremes:", [(e["label"], e["lat"], e["lon"], e["state"]) for e in extremes])
 print("neighbours drawn:", [n["name"] for n in neighbours], "| world chokepoints:", len(chokes))
+print("physical:", len(phys), "features,", len(seas), "seas,", len(wrivers), "rivers | history:", len(countries), "countries,", len(pins), "pins | india rivers:", len(river_items))
 print("maps.json size:", os.path.getsize(OUT) // 1024, "KB")

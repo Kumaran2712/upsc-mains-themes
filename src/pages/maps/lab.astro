@@ -1,7 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import IndiaMap from '../../components/maps/IndiaMap.astro';
-import WorldMap from '../../components/maps/WorldMap.astro';
 import MapStyles from '../../components/maps/MapStyles.astro';
 import { lab, ATTRIBUTION } from '../../lib/maps';
 import { u, themeUrl } from '../../lib/data';
@@ -9,9 +7,13 @@ const FREE = { id: 'free-india', base: 'india', title: 'Free practice: draw Indi
   groups: [], checklist: ['Kutch bulge on the west, near the Tropic of Cancer', 'Peninsula narrowing to Kanyakumari at about 8°N', 'Himalayan arc across the top, including Ladakh and Jammu & Kashmir', 'North-East bulging east, joined by a narrow Siliguri corridor', 'Andaman & Nicobar and Lakshadweep marked'] };
 const cards = [FREE, ...lab.map((c) => ({ id: c.id, base: c.base, title: c.q.text, paper: c.q.paper, year: c.q.year, marks: c.q.marks,
   theme: { n: c.q.theme.n, title: c.q.theme.title, url: themeUrl(c.q.theme) }, groups: c.groups, checklist: c.checklist }))];
-const india = cards.filter((c: any) => c.base === 'india' && c.id !== 'free-india');
-const world = cards.filter((c: any) => c.base === 'world');
-const desc = `Practise UPSC Mains map sketches on ${lab.length} real PYQs: draw on a blank India or world outline against a 90-second timer, reveal the answer, and track your score.`;
+const SECTIONS = [
+  { title: 'India map: states', base: 'india' }, { title: 'India map: rivers', base: 'drainage' },
+  { title: 'World: physical geography', base: 'physical' }, { title: 'World: sea routes & chokepoints', base: 'world' },
+  { title: 'World history', base: 'history' },
+].map((sec) => ({ ...sec, cards: cards.filter((c: any) => c.base === sec.base && c.id !== 'free-india') })).filter((sec) => sec.cards.length);
+const baseUrl = u('/maps/base/');
+const desc = `Practise UPSC Mains map sketches on ${lab.length} real PYQs: draw on a blank India or world outline (states, rivers, physical features, sea routes, world history) against a 90-second timer, reveal the answer, and track your score.`;
 const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'UPSC Mains PYQ sketch lab', description: desc,
   educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Practice exercise', interactivityType: 'active', url: new URL(u('/maps/lab/'), Astro.site).href }];
 ---
@@ -33,11 +35,10 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       <button class="btn reveal" type="button" id="b-reveal">Reveal answer</button>
     </div>
     <div class="mapbox stage" id="stage">
-      <div class="base" data-base="india"><IndiaMap id="lab-india" labels={false} extras={false} title="Blank India outline for sketching" /></div>
-      <div class="base" data-base="world" hidden><WorldMap id="lab-world" title="Blank world outline for sketching" /></div>
+      <div class="base" id="base-slot"><p class="lead" id="base-loading">Loading map…</p></div>
       <canvas id="pad" aria-label="Drawing area. Draw with your finger or mouse."></canvas>
     </div>
-    <p class="attrib">{ATTRIBUTION}</p>
+    <p class="attrib">India’s boundaries: Survey of India–based data via DataMeet (CC BY-SA 2.5 / ODbL). World land, countries (India point-of-view edition), physical features and rivers: Natural Earth (public domain). All generalised for teaching; pins are approximate.</p>
     <div id="result" hidden>
       <div id="legend" class="legend"></div>
       <p class="eyebrow">Score your sketch</p>
@@ -50,11 +51,10 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <h2>Warm-up</h2>
   <ul class="cards"><li><button type="button" class="card" data-id="free-india"><b>{FREE.title}</b><span class="best" data-best="free-india"></span></button></li></ul>
 
-  <h2>India map PYQs</h2>
-  <ul class="cards">{india.map((c: any) => <li id={`c-${c.id}`}><button type="button" class="card" data-id={c.id}><span class="eyebrow">{c.paper} · {c.year}</span><span>{c.title}</span><span class="best" data-best={c.id}></span></button></li>)}</ul>
-
-  <h2>World map PYQs</h2>
-  <ul class="cards">{world.map((c: any) => <li><button type="button" class="card" data-id={c.id}><span class="eyebrow">{c.paper} · {c.year}</span><span>{c.title}</span><span class="best" data-best={c.id}></span></button></li>)}</ul>
+  {SECTIONS.map((sec) => <>
+    <h2>{sec.title} <span class="eyebrow">· {sec.cards.length} PYQs</span></h2>
+    <ul class="cards">{sec.cards.map((c: any) => <li><button type="button" class="card" data-id={c.id}><span class="eyebrow">{c.paper} · {c.year}</span><span>{c.title}</span><span class="best" data-best={c.id}></span></button></li>)}</ul>
+  </>)}
   <p class="lead">More lab questions arrive as each map module is built.</p>
 
   <style is:global>
@@ -85,7 +85,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
     .best { font-size: .8rem; font-weight: 700; color: var(--gs1); }
   </style>
 
-  <script is:inline define:vars={{ cards }}>
+  <script is:inline define:vars={{ cards, baseUrl }}>
     (function () {
       var byId = {}; cards.forEach(function (c) { byId[c.id] = c; });
       var KEY = 'upscthemes-lab';
@@ -104,13 +104,23 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       paintBest();
 
       var work = document.getElementById('work'), stage = document.getElementById('stage'), pad = document.getElementById('pad'), ctx = pad.getContext('2d');
-      var bases = { india: stage.querySelector('[data-base="india"]'), world: stage.querySelector('[data-base="world"]') };
-      var svgs = { india: document.getElementById('lab-india'), world: document.getElementById('lab-world') };
+      var slot = document.getElementById('base-slot'), svgs = {}, loading = {};
       var cur = null, strokes = [], drawing = null, timer = null, left = 90, started = 0, guide = true;
-
+      function loadBase(b) {
+        if (svgs[b]) return Promise.resolve(svgs[b]);
+        if (!loading[b]) loading[b] = fetch(baseUrl + b + '/').then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (html) {
+          var doc = new DOMParser().parseFromString(html, 'text/html'), svg = doc.querySelector('svg');
+          svg = document.importNode(svg, true); svg.classList.add('labonly'); svgs[b] = svg; return svg;
+        });
+        return loading[b];
+      }
+      function showBase(b) {
+        slot.innerHTML = '<p class="lead">Loading map…</p>';
+        return loadBase(b).then(function (svg) { slot.innerHTML = ''; slot.appendChild(svg); fitPad(); }).catch(function () { slot.innerHTML = '<p class="lead">The map could not load. Check your connection and tap the question again.</p>'; });
+      }
       function activeSvg() { return svgs[cur.base]; }
       function fitPad() {
-        if (!cur) return;
+        if (!cur || !activeSvg() || !activeSvg().isConnected) return;
         var s = activeSvg(), r = s.getBoundingClientRect(), pr = stage.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
         pad.style.left = (r.left - pr.left) + 'px'; pad.style.top = (r.top - pr.top) + 'px';
         pad.style.width = r.width + 'px'; pad.style.height = r.height + 'px';
@@ -144,22 +154,21 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       gBtn.addEventListener('click', function () { guide = !guide; applyGuide(); });
 
       function clearHighlights() {
-        svgs.india.querySelectorAll('.st').forEach(function (p) { p.classList.remove('on1', 'on2'); });
-        svgs.world.querySelectorAll('.pt').forEach(function (p) { p.classList.remove('on1'); });
-        svgs.world.querySelectorAll('.lab text').forEach(function (t) { t.classList.remove('show'); });
+        Object.keys(svgs).forEach(function (k) {
+          svgs[k].querySelectorAll('.on1, .on2').forEach(function (p) { p.classList.remove('on1', 'on2'); });
+          svgs[k].querySelectorAll('text.show').forEach(function (t) { t.classList.remove('show'); });
+        });
       }
       function open(id, scroll) {
         var c = byId[id]; if (!c) return;
         cur = c; strokes = []; stopTimer(); left = 90; started = 0; showTime();
         clearHighlights(); stage.classList.remove('revealed');
-        bases.india.hidden = c.base !== 'india'; bases.world.hidden = c.base !== 'world';
-        svgs.world.classList.add('labonly');
+        showBase(c.base);
         document.getElementById('w-meta').textContent = c.paper ? c.paper + ' · ' + c.year + (c.marks ? ' · ' + c.marks + ' marks' : '') : 'Warm-up';
         document.getElementById('w-title').textContent = c.title;
         document.getElementById('w-theme').innerHTML = c.theme ? 'Theme: <a href="' + c.theme.url + '">T' + c.theme.n + ' ' + esc(c.theme.title) + '</a>' : '';
         document.getElementById('result').hidden = true; document.getElementById('saved').textContent = '';
         work.hidden = false; applyGuide();
-        requestAnimationFrame(fitPad);
         paintHist();
         if (scroll) work.scrollIntoView({ block: 'start', behavior: 'smooth' });
         try { history.replaceState(null, '', '#' + id); } catch (e) {}
@@ -170,17 +179,19 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
         document.getElementById('hist').textContent = a.length ? 'Your attempts: ' + a.slice(-5).map(function (x) { return x.s + '/' + x.n; }).join(', ') + (a.length > 5 ? ' (last 5)' : '') : '';
       }
       document.getElementById('b-reveal').addEventListener('click', function () {
-        if (!cur) return; stopTimer();
+        if (!cur || !activeSvg()) return; stopTimer();
+        var svg = activeSvg();
         clearHighlights(); stage.classList.add('revealed');
         var legend = [];
         cur.groups.forEach(function (g, i) {
           var cls = i === 0 ? 'on1' : 'on2';
-          (g.states || []).forEach(function (n) { var p = svgs.india.querySelector('.st[data-name="' + CSS.escape(n) + '"]'); if (p) p.classList.add(cls); });
-          (g.points || []).forEach(function (n) {
-            var p = svgs.world.querySelector('.pt[data-name="' + CSS.escape(n) + '"]'); if (p) p.classList.add('on1');
-            var t = svgs.world.querySelector('.lab text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.add('show');
+          g.items.forEach(function (n) {
+            var els = n.charAt(0) === '@' ? svg.querySelectorAll('[data-cont="' + CSS.escape(n.slice(1)) + '"]') : svg.querySelectorAll('[data-name="' + CSS.escape(n) + '"]');
+            els.forEach(function (p) { p.classList.add(cls); });
+            var t = svg.querySelector('text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.add('show');
           });
-          legend.push('<span class="' + (i === 0 ? 'l1' : 'l2') + '">' + esc(g.label) + (g.states ? ': ' + esc(g.states.join(', ')) : g.points ? ': ' + esc(g.points.join(', ')) : '') + '</span>');
+          var shown = g.items.map(function (n) { return n.charAt(0) === '@' ? 'all of ' + n.slice(1) : n; });
+          legend.push('<span class="' + (i === 0 ? 'l1' : 'l2') + '">' + esc(g.label) + ': ' + esc(shown.join(', ')) + '</span>');
         });
         document.getElementById('legend').innerHTML = legend.join('');
         document.getElementById('check').innerHTML = cur.checklist.map(function (x, i) { return '<li><label><input type="checkbox" id="ck-' + i + '"> <span>' + esc(x) + '</span></label></li>'; }).join('');

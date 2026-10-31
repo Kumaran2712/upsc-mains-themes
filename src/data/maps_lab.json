@@ -1,48 +1,800 @@
 [
-  {"id": "GS1-GEO-05-M2022-Q07", "base": "india",
-   "groups": [{"label": "Leading wind-energy states", "states": ["Gujarat", "Tamil Nadu", "Karnataka", "Maharashtra", "Rajasthan", "Andhra Pradesh", "Madhya Pradesh"]}],
-   "checklist": ["Marked Gujarat and Tamil Nadu as the leaders", "Showed the cluster along the western coast, the southern tip and Rajasthan", "Showed that most of the country has little installed wind capacity (the limited spread)", "Kept the outline palm-sized with only a few labels"]},
-  {"id": "GS1-GEO-05-M2020-S02", "base": "india",
-   "groups": [{"label": "Leading solar states", "states": ["Rajasthan", "Gujarat", "Karnataka", "Tamil Nadu", "Maharashtra", "Telangana", "Andhra Pradesh", "Madhya Pradesh"]}],
-   "checklist": ["Marked Rajasthan and Gujarat (Thar, high sunshine) as the top region", "Showed the southern cluster: Karnataka, Tamil Nadu, Telangana, Andhra Pradesh", "Indicated weaker development in the North-East and Himalayan states", "Kept labels to a handful"]},
-  {"id": "GS1-GEO-06-M2014-S02", "base": "india",
-   "groups": [{"label": "Green Revolution core", "states": ["Punjab", "Haryana"]},
-              {"label": "Eastern region it bypassed", "states": ["Bihar", "West Bengal", "Odisha", "Assam", "Jharkhand"]}],
-   "checklist": ["Marked the north-western core (Punjab, Haryana, western Uttar Pradesh)", "Marked the eastern states it bypassed", "Contrasted the two regions in one sketch", "Kept the sketch small"]},
-  {"id": "GS1-GEO-06-M2020-S01", "base": "india",
-   "groups": [{"label": "Iron ore and coal belt", "states": ["Jharkhand", "Odisha", "Chhattisgarh"]},
-              {"label": "Coastal or market-based plants", "states": ["Andhra Pradesh", "Gujarat", "Maharashtra"]}],
-   "checklist": ["Marked the raw-material belt in the east", "Marked coastal plants such as Visakhapatnam and Hazira", "Showed the shift towards ports and markets", "Kept to a few labels"]},
-  {"id": "GS1-GEO-05-M2017-S01", "base": "india",
-   "groups": [{"label": "Major coal-producing states", "states": ["Jharkhand", "Odisha", "Chhattisgarh", "West Bengal", "Madhya Pradesh", "Telangana", "Maharashtra"]}],
-   "checklist": ["Marked the Gondwana coal belt in eastern and central India", "Included Telangana and Maharashtra in the south-central belt", "Linked the coal states to forest and tribal areas (the environmental cost)", "Kept the sketch small"]},
-  {"id": "GS1-GEO-01-M2021-S01", "base": "india",
-   "groups": [{"label": "Himalayan states", "states": ["Jammu & Kashmir", "Himachal Pradesh", "Uttarakhand", "Sikkim", "Arunachal Pradesh"]},
-              {"label": "Western Ghats states", "states": ["Kerala", "Karnataka", "Goa", "Maharashtra", "Tamil Nadu"]}],
-   "checklist": ["Marked the Himalayan arc from Jammu & Kashmir to Arunachal Pradesh", "Marked the Western Ghats running down the west coast", "Contrasted the two belts in one sketch", "Kept labels short"]},
-  {"id": "GS3-SEC-01-M2020-S01", "base": "india",
-   "groups": [{"label": "Most affected in recent years", "states": ["Chhattisgarh", "Jharkhand", "Odisha"]},
-              {"label": "Earlier spread or lower intensity", "states": ["Bihar", "West Bengal", "Maharashtra", "Telangana", "Andhra Pradesh"]}],
-   "checklist": ["Marked the core belt: Bastar (Chhattisgarh), Jharkhand, Odisha", "Showed the wider 'Red Corridor' of the past", "Linked the belt to forested, mineral-rich tribal areas", "Kept the sketch small"]},
-  {"id": "GS3-SEC-01-M2025-Q19", "base": "india",
-   "groups": [{"label": "North-Eastern states", "states": ["Assam", "Arunachal Pradesh", "Nagaland", "Manipur", "Mizoram", "Tripura", "Meghalaya"]}],
-   "checklist": ["Marked the seven North-Eastern states", "Showed the narrow Siliguri corridor linking them to the rest of India", "Showed the international borders with Myanmar, Bangladesh, China and Bhutan", "Kept labels to state names only"]},
-  {"id": "GS1-GEO-07-M2015-S02", "base": "india",
-   "groups": [{"label": "States named in the question", "states": ["Jammu & Kashmir", "Himachal Pradesh", "Uttarakhand"]}],
-   "checklist": ["Marked the three Himalayan states (Ladakh is now a separate Union Territory)", "Placed a few tourist hotspots or pilgrimage routes", "Kept the sketch to the Himalayan arc", "Kept it small"]},
-  {"id": "GS1-HIS-08-M2018-S01", "base": "india",
-   "groups": [{"label": "States formed since 2000", "states": ["Chhattisgarh", "Jharkhand", "Uttarakhand", "Telangana"]}],
-   "checklist": ["Marked Chhattisgarh, Jharkhand and Uttarakhand (2000)", "Marked Telangana (2014)", "Showed the parent states they were carved from", "Kept labels short"]},
-  {"id": "GS1-GEO-03-M2022-Q16", "base": "world",
-   "groups": [{"label": "Key straits and canals", "points": ["Suez Canal", "Panama Canal", "Strait of Malacca", "Strait of Hormuz", "Bab-el-Mandeb", "Strait of Gibraltar"]}],
-   "checklist": ["Marked the two great canals: Suez and Panama", "Marked Malacca, Hormuz and Bab-el-Mandeb on India's trade routes", "Drew one arrow for the Europe–Asia route through Suez", "Kept the world outline rough and small"]},
-  {"id": "GS3-SEC-04-M2025-Q20", "base": "world",
-   "groups": [{"label": "Chokepoints on India's sea trade", "points": ["Strait of Hormuz", "Bab-el-Mandeb", "Strait of Malacca", "Six Degree Channel", "Nine Degree Channel"]}],
-   "checklist": ["Marked Hormuz and Bab-el-Mandeb to the west", "Marked Malacca and the Six Degree Channel to the east", "Showed India sitting between these chokepoints", "Kept it rough and small"]},
-  {"id": "GS2-IR-02-M2024-Q20", "base": "world",
-   "groups": [{"label": "Sea lanes around the Maldives", "points": ["Eight Degree Channel", "Nine Degree Channel", "Strait of Hormuz", "Strait of Malacca"]}],
-   "checklist": ["Placed the Maldives just south-west of India", "Marked the Eight and Nine Degree Channels", "Showed the east–west shipping lane from Hormuz to Malacca passing nearby", "Kept it rough and small"]},
-  {"id": "GS2-IR-03-M2025-Q19", "base": "world",
-   "groups": [{"label": "Energy routes from West Asia", "points": ["Strait of Hormuz", "Bab-el-Mandeb", "Suez Canal"]}],
-   "checklist": ["Marked the Gulf and the Strait of Hormuz", "Marked the Red Sea route via Bab-el-Mandeb and Suez", "Drew arrows for oil and gas flows towards India's west coast", "Kept it rough and small"]}
+ {
+  "id": "GS1-GEO-05-M2022-Q07",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Leading wind-energy states",
+    "items": [
+     "Gujarat",
+     "Tamil Nadu",
+     "Karnataka",
+     "Maharashtra",
+     "Rajasthan",
+     "Andhra Pradesh",
+     "Madhya Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Gujarat and Tamil Nadu as the leaders",
+   "Showed the cluster along the western coast, the southern tip and Rajasthan",
+   "Showed that most of the country has little installed wind capacity (the limited spread)",
+   "Kept the outline palm-sized with only a few labels"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2020-S02",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Leading solar states",
+    "items": [
+     "Rajasthan",
+     "Gujarat",
+     "Karnataka",
+     "Tamil Nadu",
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh",
+     "Madhya Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Rajasthan and Gujarat (Thar, high sunshine) as the top region",
+   "Showed the southern cluster: Karnataka, Tamil Nadu, Telangana, Andhra Pradesh",
+   "Indicated weaker development in the North-East and Himalayan states",
+   "Kept labels to a handful"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2014-S02",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Green Revolution core",
+    "items": [
+     "Punjab",
+     "Haryana"
+    ]
+   },
+   {
+    "label": "Eastern region it bypassed",
+    "items": [
+     "Bihar",
+     "West Bengal",
+     "Odisha",
+     "Assam",
+     "Jharkhand"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the north-western core (Punjab, Haryana, western Uttar Pradesh)",
+   "Marked the eastern states it bypassed",
+   "Contrasted the two regions in one sketch",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2020-S01",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Iron ore and coal belt",
+    "items": [
+     "Jharkhand",
+     "Odisha",
+     "Chhattisgarh"
+    ]
+   },
+   {
+    "label": "Coastal or market-based plants",
+    "items": [
+     "Andhra Pradesh",
+     "Gujarat",
+     "Maharashtra"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the raw-material belt in the east",
+   "Marked coastal plants such as Visakhapatnam and Hazira",
+   "Showed the shift towards ports and markets",
+   "Kept to a few labels"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2017-S01",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Major coal-producing states",
+    "items": [
+     "Jharkhand",
+     "Odisha",
+     "Chhattisgarh",
+     "West Bengal",
+     "Madhya Pradesh",
+     "Telangana",
+     "Maharashtra"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Gondwana coal belt in eastern and central India",
+   "Included Telangana and Maharashtra in the south-central belt",
+   "Linked the coal states to forest and tribal areas (the environmental cost)",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-01-M2021-S01",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Himalayan states",
+    "items": [
+     "Jammu & Kashmir",
+     "Himachal Pradesh",
+     "Uttarakhand",
+     "Sikkim",
+     "Arunachal Pradesh"
+    ]
+   },
+   {
+    "label": "Western Ghats states",
+    "items": [
+     "Kerala",
+     "Karnataka",
+     "Goa",
+     "Maharashtra",
+     "Tamil Nadu"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Himalayan arc from Jammu & Kashmir to Arunachal Pradesh",
+   "Marked the Western Ghats running down the west coast",
+   "Contrasted the two belts in one sketch",
+   "Kept labels short"
+  ]
+ },
+ {
+  "id": "GS3-SEC-01-M2020-S01",
+  "base": "india",
+  "groups": [
+   {
+    "label": "Most affected in recent years",
+    "items": [
+     "Chhattisgarh",
+     "Jharkhand",
+     "Odisha"
+    ]
+   },
+   {
+    "label": "Earlier spread or lower intensity",
+    "items": [
+     "Bihar",
+     "West Bengal",
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the core belt: Bastar (Chhattisgarh), Jharkhand, Odisha",
+   "Showed the wider 'Red Corridor' of the past",
+   "Linked the belt to forested, mineral-rich tribal areas",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-01-M2025-Q19",
+  "base": "india",
+  "groups": [
+   {
+    "label": "North-Eastern states",
+    "items": [
+     "Assam",
+     "Arunachal Pradesh",
+     "Nagaland",
+     "Manipur",
+     "Mizoram",
+     "Tripura",
+     "Meghalaya"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the seven North-Eastern states",
+   "Showed the narrow Siliguri corridor linking them to the rest of India",
+   "Showed the international borders with Myanmar, Bangladesh, China and Bhutan",
+   "Kept labels to state names only"
+  ]
+ },
+ {
+  "id": "GS1-GEO-07-M2015-S02",
+  "base": "india",
+  "groups": [
+   {
+    "label": "States named in the question",
+    "items": [
+     "Jammu & Kashmir",
+     "Himachal Pradesh",
+     "Uttarakhand"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the three Himalayan states (Ladakh is now a separate Union Territory)",
+   "Placed a few tourist hotspots or pilgrimage routes",
+   "Kept the sketch to the Himalayan arc",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-HIS-08-M2018-S01",
+  "base": "india",
+  "groups": [
+   {
+    "label": "States formed since 2000",
+    "items": [
+     "Chhattisgarh",
+     "Jharkhand",
+     "Uttarakhand",
+     "Telangana"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Chhattisgarh, Jharkhand and Uttarakhand (2000)",
+   "Marked Telangana (2014)",
+   "Showed the parent states they were carved from",
+   "Kept labels short"
+  ]
+ },
+ {
+  "id": "GS1-GEO-03-M2022-Q16",
+  "base": "world",
+  "groups": [
+   {
+    "label": "Key straits and canals",
+    "items": [
+     "Suez Canal",
+     "Panama Canal",
+     "Strait of Malacca",
+     "Strait of Hormuz",
+     "Bab-el-Mandeb",
+     "Strait of Gibraltar"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the two great canals: Suez and Panama",
+   "Marked Malacca, Hormuz and Bab-el-Mandeb on India's trade routes",
+   "Drew one arrow for the Europe–Asia route through Suez",
+   "Kept the world outline rough and small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2025-Q20",
+  "base": "world",
+  "groups": [
+   {
+    "label": "Chokepoints on India's sea trade",
+    "items": [
+     "Strait of Hormuz",
+     "Bab-el-Mandeb",
+     "Strait of Malacca",
+     "Six Degree Channel",
+     "Nine Degree Channel"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Hormuz and Bab-el-Mandeb to the west",
+   "Marked Malacca and the Six Degree Channel to the east",
+   "Showed India sitting between these chokepoints",
+   "Kept it rough and small"
+  ]
+ },
+ {
+  "id": "GS2-IR-02-M2024-Q20",
+  "base": "world",
+  "groups": [
+   {
+    "label": "Sea lanes around the Maldives",
+    "items": [
+     "Eight Degree Channel",
+     "Nine Degree Channel",
+     "Strait of Hormuz",
+     "Strait of Malacca"
+    ]
+   }
+  ],
+  "checklist": [
+   "Placed the Maldives just south-west of India",
+   "Marked the Eight and Nine Degree Channels",
+   "Showed the east–west shipping lane from Hormuz to Malacca passing nearby",
+   "Kept it rough and small"
+  ]
+ },
+ {
+  "id": "GS2-IR-03-M2025-Q19",
+  "base": "world",
+  "groups": [
+   {
+    "label": "Energy routes from West Asia",
+    "items": [
+     "Strait of Hormuz",
+     "Bab-el-Mandeb",
+     "Suez Canal"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Gulf and the Strait of Hormuz",
+   "Marked the Red Sea route via Bab-el-Mandeb and Suez",
+   "Drew arrows for oil and gas flows towards India's west coast",
+   "Kept it rough and small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-01-M2021-S03",
+  "base": "physical",
+  "groups": [
+   {
+    "label": "North–south ranges",
+    "items": [
+     "Andes",
+     "Rocky Mountains",
+     "Ural Mountains",
+     "Great Dividing Range",
+     "Appalachians"
+    ]
+   },
+   {
+    "label": "East–west ranges",
+    "items": [
+     "Himalayas",
+     "Alps"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Andes and Rockies along the western edges of the Americas",
+   "Drew the Himalayas and Alps running east–west across Eurasia",
+   "Marked one rain-shadow example (e.g. Great Plains east of the Rockies, Patagonia east of the Andes)",
+   "Kept the world outline rough and small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-02-M2013-S02",
+  "base": "physical",
+  "groups": [
+   {
+    "label": "Hot deserts at 20–30°N",
+    "items": [
+     "Sahara",
+     "Arabian Desert (Rub' al Khali)",
+     "Thar Desert",
+     "Sonoran Desert",
+     "Chihuahuan Desert"
+    ]
+   },
+   {
+    "label": "Same pattern south of the Equator",
+    "items": [
+     "Atacama Desert",
+     "Namib Desert",
+     "Kalahari",
+     "Great Victoria Desert",
+     "Great Sandy Desert"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Tropic of Cancer and placed the deserts along it",
+   "Showed they sit on the western sides of continents",
+   "Linked them to cold currents off the west coasts (Canaries, California)",
+   "Showed the mirror pattern south of the Equator"
+  ]
+ },
+ {
+  "id": "GS1-GEO-01-M2014-S01",
+  "base": "physical",
+  "groups": [
+   {
+    "label": "Young fold mountains on continental margins",
+    "items": [
+     "Andes",
+     "Rocky Mountains",
+     "Alps",
+     "Atlas Mountains",
+     "Himalayas",
+     "Zagros Mountains"
+    ]
+   },
+   {
+    "label": "Older ranges inside continents",
+    "items": [
+     "Ural Mountains",
+     "Appalachians"
+    ]
+   }
+  ],
+  "checklist": [
+   "Placed the Andes and Rockies on the Pacific margins",
+   "Placed the Alps–Zagros–Himalaya belt along the Africa/India–Eurasia collision",
+   "Showed that earthquakes and volcanoes follow the same belts",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-02-M2014-S02",
+  "base": "physical",
+  "groups": [
+   {
+    "label": "The three basins in the question",
+    "items": [
+     "Bay of Bengal",
+     "South China Sea",
+     "Gulf of Mexico"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked all three seas",
+   "Placed them between about 5° and 30° from the Equator",
+   "Noted warm water above about 26–27°C in each",
+   "Kept the outline rough"
+  ]
+ },
+ {
+  "id": "GS1-WH-02-M2013-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "Africa's states today",
+    "items": [
+     "@Africa"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Berlin Conference (1884–85) as the starting point",
+   "Pointed to straight-line borders, e.g. Egypt–Sudan, Libya, Mali",
+   "Gave one example of a border splitting an ethnic group",
+   "Kept the sketch to Africa"
+  ]
+ },
+ {
+  "id": "GS1-WH-02-M2016-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "West African states",
+    "items": [
+     "Ghana",
+     "Nigeria",
+     "Senegal",
+     "Ivory Coast",
+     "Guinea",
+     "Sierra Leone",
+     "Mali"
+    ]
+   },
+   {
+    "label": "Key places",
+    "items": [
+     "Accra"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Ghana (Gold Coast) as the first to win independence, in 1957",
+   "Added Nigeria and Senegal as other leading cases",
+   "Named one Western-educated leader (Nkrumah, Azikiwe or Senghor)",
+   "Kept the sketch to West Africa"
+  ]
+ },
+ {
+  "id": "GS1-WH-02-M2017-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "Malaya",
+    "items": [
+     "Malaysia"
+    ]
+   },
+   {
+    "label": "Key places",
+    "items": [
+     "Kuala Lumpur"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Malay Peninsula and Kuala Lumpur",
+   "Noted Singapore at the southern tip (separate from 1965)",
+   "Showed the Malacca Strait trade route next to it",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS1-WH-02-M2014-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "Egypt and Israel",
+    "items": [
+     "Egypt",
+     "Israel"
+    ]
+   },
+   {
+    "label": "Britain, France and the canal",
+    "items": [
+     "United Kingdom",
+     "France",
+     "Suez"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Suez Canal linking the Mediterranean and the Red Sea",
+   "Marked Egypt (Nasser nationalised the canal) and Israel",
+   "Showed Britain and France as the invading powers",
+   "Drew the Europe–Asia route through Suez"
+  ]
+ },
+ {
+  "id": "GS1-WH-01-M2013-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "Japan",
+    "items": [
+     "Japan",
+     "Tokyo"
+    ]
+   },
+   {
+    "label": "Britain, the first industrial nation",
+    "items": [
+     "United Kingdom",
+     "Manchester"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Japan and Tokyo (Meiji Restoration, 1868)",
+   "Marked Britain as the early industrialiser to contrast with",
+   "Kept the world outline rough",
+   "Used labels only for the two cases"
+  ]
+ },
+ {
+  "id": "GS1-WH-01-M2013-S02",
+  "base": "history",
+  "groups": [
+   {
+    "label": "The colonies",
+    "items": [
+     "Boston",
+     "Philadelphia"
+    ]
+   },
+   {
+    "label": "The mercantilist power",
+    "items": [
+     "United Kingdom"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Thirteen Colonies on the US east coast (Boston, Philadelphia)",
+   "Marked Britain across the Atlantic",
+   "Drew the Atlantic trade link controlled by Britain",
+   "Kept it rough and small"
+  ]
+ },
+ {
+  "id": "GS1-WH-03-M2015-S01",
+  "base": "history",
+  "groups": [
+   {
+    "label": "Germany",
+    "items": [
+     "Germany",
+     "Berlin"
+    ]
+   },
+   {
+    "label": "Key places of the wars",
+    "items": [
+     "Sarajevo",
+     "Versailles"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Germany (today's borders as a guide)",
+   "Marked Sarajevo, where the First World War began",
+   "Marked Versailles, where the 1919 treaty was signed",
+   "Kept the sketch to Europe"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2016-S02",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Western rivers (mostly to Pakistan)",
+    "items": [
+     "Indus",
+     "Jhelum",
+     "Chenab"
+    ]
+   },
+   {
+    "label": "Eastern rivers (to India)",
+    "items": [
+     "Ravi",
+     "Beas",
+     "Sutlej"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew all six rivers of the Indus system",
+   "Separated the western rivers from the eastern rivers",
+   "Showed the rivers flowing towards Pakistan",
+   "Kept the sketch to north-west India"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2020-S01",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Himalayan component",
+    "items": [
+     "Ganga",
+     "Brahmaputra",
+     "Gandak",
+     "Ghaghara",
+     "Kosi (Sapt Kosi)"
+    ]
+   },
+   {
+    "label": "Peninsular component",
+    "items": [
+     "Mahanadi",
+     "Godavari",
+     "Krishna",
+     "Penner",
+     "Kaveri"
+    ]
+   }
+  ],
+  "checklist": [
+   "Showed the Himalayan rivers in the north",
+   "Showed the peninsular chain from Mahanadi down to Kaveri",
+   "Drew one example link with an arrow (e.g. Ken–Betwa or Godavari–Krishna)",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-AGR-01-M2017-S03",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Ken–Betwa area",
+    "items": [
+     "Betwa"
+    ]
+   },
+   {
+    "label": "Peninsular links",
+    "items": [
+     "Godavari",
+     "Krishna",
+     "Mahanadi"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Ken–Betwa link in Bundelkhand",
+   "Showed one peninsular link (Godavari–Krishna)",
+   "Marked one environmental concern, e.g. Panna Tiger Reserve",
+   "Kept labels to a few"
+  ]
+ },
+ {
+  "id": "GS1-GEO-07-M2020-S02",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Glacier-fed Himalayan rivers",
+    "items": [
+     "Indus",
+     "Ganga",
+     "Yamuna",
+     "Brahmaputra",
+     "Sutlej",
+     "Ghaghara",
+     "Gandak",
+     "Kosi (Sapt Kosi)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Himalayan arc",
+   "Showed the main glacier-fed rivers flowing out of it",
+   "Marked the Indo-Gangetic plain that depends on them",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-SOC-03-M2025-Q17",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Ganga and its tributaries",
+    "items": [
+     "Ganga",
+     "Yamuna",
+     "Ghaghara",
+     "Gandak",
+     "Kosi (Sapt Kosi)",
+     "Son",
+     "Chambal",
+     "Betwa"
+    ]
+   },
+   {
+    "label": "Densely populated basin states",
+    "items": [
+     "Uttar Pradesh",
+     "Bihar",
+     "West Bengal"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Ganga with its main tributaries",
+   "Shaded the densest part of the basin (Uttar Pradesh, Bihar, West Bengal)",
+   "Contrasted it with the hilly upper basin",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS2-POL-04-M2013-S03",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Rivers with inter-state disputes",
+    "items": [
+     "Kaveri",
+     "Krishna",
+     "Godavari",
+     "Narmada",
+     "Mahanadi",
+     "Ravi",
+     "Beas"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Kaveri (Karnataka–Tamil Nadu)",
+   "Marked Krishna and Godavari (Maharashtra, Karnataka, Telangana, Andhra Pradesh)",
+   "Marked Mahanadi (Odisha–Chhattisgarh) or Narmada",
+   "Kept labels to a few"
+  ]
+ }
 ]

@@ -1,0 +1,17 @@
+---
+import { maps } from '../../lib/maps';
+interface Props { id: string; title?: string }
+const { id, title = 'World physical map: mountain ranges, deserts, plateaus, seas and rivers' } = Astro.props;
+const m = maps.physical;
+---
+<svg id={id} class="map map-phys" viewBox={m.viewBox} role="img" aria-label={title} preserveAspectRatio="xMidYMid meet">
+  <title>{title}</title>
+  <rect class="sea" x="0" y="0" width="100%" height="100%" />
+  <g class="seas">{m.seas.map((s: any) => <path class="sf" data-name={s.name} d={s.d}><title>{s.name}</title></path>)}</g>
+  <path class="land" d={m.land} />
+  <g class="lines"><path class="eq" d={m.lines.equator} /><path class="tr" d={m.lines.tropicN} /><path class="tr" d={m.lines.tropicS} /><path class="ac" d={m.lines.arctic} /></g>
+  <g class="fts">{m.features.map((f: any) => <path class={`ft k-${f.kind}`} data-name={f.name} d={f.d}><title>{f.name}</title></path>)}</g>
+  <g class="wrv">{m.rivers.map((r: any) => <path class="rv" data-name={r.name} d={r.d}><title>{r.name}</title></path>)}</g>
+  <path class="india" d={m.india} />
+  <g class="lab">{[...m.features, ...m.seas, ...m.rivers].map((f: any) => <text x={f.cx} y={f.cy} text-anchor="middle" data-for={f.name}>{f.name}</text>)}</g>
+</svg>

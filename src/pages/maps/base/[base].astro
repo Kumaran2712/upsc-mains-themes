@@ -1,0 +1,18 @@
+---
+// Bare base maps fetched by the sketch lab on demand. Not linked, not indexed, not in the sitemap.
+import IndiaMap from '../../../components/maps/IndiaMap.astro';
+import WorldMap from '../../../components/maps/WorldMap.astro';
+import PhysicalMap from '../../../components/maps/PhysicalMap.astro';
+import HistoryMap from '../../../components/maps/HistoryMap.astro';
+export function getStaticPaths() { return ['india', 'world', 'physical', 'history', 'drainage'].map((base) => ({ params: { base } })); }
+const { base } = Astro.params;
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="robots" content="noindex" /><title>Base map</title></head>
+<body>
+  {base === 'india' && <IndiaMap id="lab-india" labels={false} extras={false} title="Blank India outline for sketching" />}
+  {base === 'drainage' && <IndiaMap id="lab-drainage" labels={false} extras={false} rivers title="Blank India outline for sketching rivers" />}
+  {base === 'world' && <WorldMap id="lab-world" title="Blank world outline for sketching" />}
+  {base === 'physical' && <PhysicalMap id="lab-physical" title="Blank world outline for sketching physical features" />}
+  {base === 'history' && <HistoryMap id="lab-history" title="World map with today's borders for sketching history" />}
+</body></html>

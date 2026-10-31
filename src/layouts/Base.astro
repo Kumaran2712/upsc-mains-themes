@@ -106,6 +106,13 @@ const ld = [...crumbLd, ...jsonld];
           track('share', { page: location.pathname });
         }
       });
+      document.addEventListener('click', function (e) {
+        var z = e.target.closest('.zoombtn'); if (!z) return;
+        var svg = document.getElementById(z.getAttribute('data-for')); if (!svg) return;
+        var box = svg.parentElement, on = z.getAttribute('aria-pressed') !== 'true';
+        z.setAttribute('aria-pressed', on ? 'true' : 'false'); box.classList.toggle('zoomed', on);
+        if (on) box.scrollLeft = (box.scrollWidth - box.clientWidth) * 0.55;
+      });
       window.__track = track;
     })();
   </script>
