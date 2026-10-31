@@ -13,7 +13,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   url: new URL(themeUrl(t), Astro.site).href, inLanguage: 'en-IN', learningResourceType: 'Previous year questions and study guide',
   educationalLevel: 'UPSC Civil Services (Main) Examination', teaches: t.checklist.slice(0, 6),
   about: paperList.map((p) => ({ '@type': 'Thing', name: `${p}: ${paperName[p]}` })),
-  isPartOf: { '@type': 'WebSite', name: 'GS Mains Theme Atlas', url: new URL(u('/'), Astro.site).href } }];
+  isPartOf: { '@type': 'WebSite', name: 'UPSC Themes', url: new URL(u('/'), Astro.site).href } }];
 ---
 <Base title={title} description={desc} jsonld={ld} brand={title.length <= 50}
   crumbs={[{ name: t.cluster, href: u(`/topics/${t.clusterSlug}/`) }, { name: `T${t.n}`, href: themeUrl(t) }]}>

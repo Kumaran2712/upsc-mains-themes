@@ -5,11 +5,11 @@ import { themes, clusters, totalQuestions, syllabus, u, themeUrl } from '../lib/
 const cross = themes.filter((t) => t.cross).length;
 const top = [...themes].sort((a, b) => b.count - a.count || b.recent - a.recent || a.n - b.n).slice(0, 12);
 const desc = `Prepare UPSC GS Mains by theme, not by paper. ${totalQuestions} GS1, GS2 and GS3 PYQs (2013–2026) grouped into ${themes.length} cross-paper themes with what UPSC asks and how to prepare.`;
-const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'GS Mains Theme Atlas', url: new URL(u('/'), Astro.site).href,
+const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'UPSC Themes', alternateName: 'Theme-wise UPSC Mains PYQs', url: new URL(u('/'), Astro.site).href,
   description: desc, inLanguage: 'en-IN',
   potentialAction: { '@type': 'SearchAction', target: new URL(u('/search/'), Astro.site).href + '?q={query}', 'query-input': 'required name=query' } }];
 ---
-<Base title="GS Mains Theme Atlas" description={desc} jsonld={ld}>
+<Base title="UPSC Themes: theme-wise UPSC GS Mains PYQs" description={desc} jsonld={ld} brand={false}>
   <p class="eyebrow">UPSC Civil Services · GS Mains PYQs</p>
   <h1>Prepare GS Mains by theme, not by paper</h1>
   <p class="lead">The GS syllabus is interlinked: women's empowerment shows up in GS1 society, GS2 governance and GS3 economy. This atlas groups every GS1–GS3 Mains PYQ from 2013 to 2026 into themes that cut across papers, then shows what UPSC keeps asking, what to prepare, and how to write the answer.</p>

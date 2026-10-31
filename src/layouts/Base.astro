@@ -5,12 +5,12 @@ interface Props {
   description: string;
   jsonld?: object[];
   noindex?: boolean;
-  brand?: boolean;          // append ' | Theme Atlas' to the <title>
+  brand?: boolean;          // append ' | UPSC Themes' to the <title>
   crumbs?: { name: string; href: string }[];
 }
 const { title, description, jsonld = [], noindex = false, crumbs = [], brand = true } = Astro.props;
-const SITE_NAME = 'GS Mains Theme Atlas';
-const fullTitle = title === SITE_NAME || !brand ? title : `${title} | Theme Atlas`;
+const SITE_NAME = 'UPSC Themes';
+const fullTitle = !brand ? title : `${title} | ${SITE_NAME}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(u('/og.png'), Astro.site).href;
 const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
@@ -56,7 +56,7 @@ const ld = [...crumbLd, ...jsonld];
   <a class="skip" href="#main">Skip to content</a>
   <header class="top">
     <div class="wrap topin">
-      <a class="brand" href={u('/')}>GS Mains <span>Theme Atlas</span></a>
+      <a class="brand" href={u('/')}>UPSC <span>Themes</span></a>
       <nav aria-label="Main">
         <a href={u('/themes/')}>Themes</a>
         <a href={u('/papers/gs1/')}>Papers</a>

@@ -1,4 +1,4 @@
-# GS Mains Theme Atlas
+# UPSC Themes
 
 A free, non-commercial site that regroups 810 UPSC GS1–GS3 Mains PYQs (2013–2026) into 171 cross-paper themes, with what UPSC asks, what to prepare, answer-writing pointers, syllabus lines and every question.
 
