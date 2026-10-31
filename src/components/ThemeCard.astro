@@ -1,0 +1,13 @@
+---
+import { themeUrl, yearSpan, type Theme } from '../lib/data';
+const { t } = Astro.props as { t: Theme };
+---
+<li class="tcard">
+  <span class="tn">T{t.n}</span>
+  <a class="tt" href={themeUrl(t)}>{t.title}</a>
+  <span class="meta">
+    {Object.entries(t.papers).filter(([, v]) => v).map(([k, v]) => <span class={`pc ${k.toLowerCase()}`}>{k} · {v}</span>)}
+    <span>{t.count} PYQs · {yearSpan(t)}</span>
+    {t.cross && <span class="xp">Cross-paper</span>}
+  </span>
+</li>

@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import { syllabus, syllabusThemes, papers, paperName, u } from '../../lib/data';
+const desc = 'The official UPSC GS Mains syllabus (GS1, GS2, GS3), line by line, with the cross-paper themes and PYQs that fall under each line.';
+---
+<Base title="UPSC GS Mains syllabus, line by line" description={desc} crumbs={[{ name: 'Syllabus', href: u('/syllabus/') }]}>
+  <h1>GS Mains syllabus, line by line</h1>
+  <p class="lead">Text as in the Civil Services Examination notification. Line IDs are this site's own labels. Each line links to the themes whose questions fall under it.</p>
+  {papers.map((p) => <section>
+    <h2>{p} — {paperName[p]}</h2>
+    <ul>{syllabus.filter((s) => s.paper === p).map((s) => <li><a href={u(`/syllabus/${s.id.toLowerCase()}/`)}>{s.id}</a> — {s.text} <span class="eyebrow">· {syllabusThemes(s.id).length} themes</span></li>)}</ul>
+  </section>)}
+</Base>

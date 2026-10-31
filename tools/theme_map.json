@@ -1,0 +1,3254 @@
+[
+ {
+  "key": "harappan",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Harappan civilisation, early urbanism & civilisational continuity",
+  "links": [
+   "smartcity"
+  ],
+  "questions": [
+   "GS1-CUL-01-M2025-Q01",
+   "GS1-CUL-01-M2014-S01",
+   "GS1-CUL-07-M2015-S01",
+   "GS1-CUL-07-M2023-Q01"
+  ],
+  "also": {
+   "GS1-CUL-01-M2014-S01": [
+    "smartcity",
+    "urbsoc"
+   ],
+   "GS1-CUL-07-M2023-Q01": [
+    "tectonics"
+   ]
+  }
+ },
+ {
+  "key": "vedic",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Vedic society & its legacy in today's society",
+  "links": [
+   "family",
+   "caste"
+  ],
+  "questions": [
+   "GS1-CUL-07-M2024-Q01",
+   "GS1-CUL-07-M2023-Q11"
+  ],
+  "also": {}
+ },
+ {
+  "key": "sources",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Sources of history: inscriptions, rock-cut caves, travellers, Sangam & Persian texts",
+  "links": [],
+  "questions": [
+   "GS1-CUL-01-M2026-S01",
+   "GS1-CUL-01-M2020-S01",
+   "GS1-CUL-07-M2018-S01",
+   "GS1-CUL-06-M2020-S02",
+   "GS1-CUL-06-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "buddhistart",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Buddhist art & sculpture schools: stupa, Gandhara, Pala",
+  "links": [
+   "sculpture"
+  ],
+  "questions": [
+   "GS1-CUL-04-M2016-S01",
+   "GS1-CUL-04-M2014-S01",
+   "GS1-CUL-06-M2020-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "temple",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Temple architecture & regional dynasties: Pallava, Chola, Chandela, Vijayanagara, Gupta",
+  "links": [
+   "sculpture"
+  ],
+  "questions": [
+   "GS1-CUL-02-M2026-S01",
+   "GS1-CUL-02-M2025-Q03",
+   "GS1-CUL-02-M2024-Q02",
+   "GS1-CUL-02-M2024-Q11",
+   "GS1-CUL-02-M2013-S01",
+   "GS1-CUL-02-M2020-S01",
+   "GS1-CUL-07-M2022-Q12"
+  ],
+  "also": {}
+ },
+ {
+  "key": "sculpture",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Sculpture, painting, motifs, coins & safeguarding art heritage",
+  "links": [],
+  "questions": [
+   "GS1-CUL-04-M2022-Q01",
+   "GS1-CUL-04-M2022-Q13",
+   "GS1-CUL-04-M2017-S01",
+   "GS1-CUL-04-M2015-S01",
+   "GS1-CUL-04-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "bhakti",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Bhakti–Sufi movements & religious syncretism",
+  "links": [
+   "secularism"
+  ],
+  "questions": [
+   "GS1-CUL-06-M2025-Q02",
+   "GS1-CUL-06-M2021-S01",
+   "GS1-CUL-06-M2018-S01",
+   "GS1-CUL-06-M2014-S01"
+  ],
+  "also": {
+   "GS1-CUL-06-M2025-Q02": [
+    "secularism"
+   ]
+  }
+ },
+ {
+  "key": "patronage",
+  "cluster": "Heritage, Art & Culture",
+  "title": "Patronage, learning centres & medieval technology",
+  "links": [
+   "education"
+  ],
+  "questions": [
+   "GS1-CUL-06-M2016-S01",
+   "GS1-CUL-07-M2014-S01",
+   "GS1-CUL-07-M2023-Q12"
+  ],
+  "also": {
+   "GS1-CUL-07-M2014-S01": [
+    "education"
+   ]
+  }
+ },
+ {
+  "key": "brexpansion",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "British expansion: fragmented polity, Panipat, why the Company won, Dalhousie",
+  "links": [],
+  "questions": [
+   "GS1-HIS-01-M2022-Q02",
+   "GS1-HIS-01-M2017-S01",
+   "GS1-HIS-01-M2014-S01",
+   "GS1-HIS-01-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "coloneco",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Colonial economy: drain, deindustrialisation, famines, economic policy",
+  "links": [
+   "industrialrev"
+  ],
+  "questions": [
+   "GS1-HIS-02-M2024-Q13",
+   "GS1-HIS-02-M2022-Q03",
+   "GS1-HIS-02-M2017-S01",
+   "GS1-HIS-02-M2014-S01"
+  ],
+  "also": {
+   "GS1-HIS-02-M2024-Q13": [
+    "industrialrev"
+   ]
+  }
+ },
+ {
+  "key": "colonadmin",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Colonial administration & education policy: Macaulay, Curzon",
+  "links": [
+   "education",
+   "earlynat"
+  ],
+  "questions": [
+   "GS1-HIS-01-M2026-S01",
+   "GS1-HIS-05-M2020-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "revolt",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "1857 and tribal–peasant resistance to colonial rule",
+  "links": [
+   "tribal"
+  ],
+  "questions": [
+   "GS1-HIS-04-M2016-S01",
+   "GS1-HIS-04-M2023-Q13"
+  ],
+  "also": {
+   "GS1-HIS-04-M2023-Q13": [
+    "tribal"
+   ]
+  }
+ },
+ {
+  "key": "reform",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Socio-religious reform: Brahmo Samaj, Young Bengal, Phule",
+  "links": [
+   "caste",
+   "womenhist"
+  ],
+  "questions": [
+   "GS1-HIS-03-M2025-Q11",
+   "GS1-HIS-03-M2021-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "earlynat",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Early nationalism: Moderates & foreign contributors",
+  "links": [],
+  "questions": [
+   "GS1-HIS-05-M2021-S01",
+   "GS1-HIS-05-M2017-S01",
+   "GS1-HIS-05-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "gandhi",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Gandhi: mass movements, constructive programme, ideas & contemporaries",
+  "links": [
+   "caste",
+   "education"
+  ],
+  "questions": [
+   "GS1-HIS-06-M2026-S01",
+   "GS1-HIS-06-M2023-Q02",
+   "GS1-HIS-06-M2021-S01",
+   "GS1-HIS-06-M2018-S01",
+   "GS1-HIS-06-M2015-S01",
+   "GS1-HIS-06-M2015-S02",
+   "GS1-HIS-07-M2016-S01"
+  ],
+  "also": {
+   "GS1-HIS-06-M2015-S02": [
+    "caste",
+    "affirmative"
+   ],
+   "GS1-HIS-06-M2023-Q02": [
+    "education"
+   ]
+  }
+ },
+ {
+  "key": "ideologies",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Widening of the national movement: ideological strands & global influences",
+  "links": [
+   "worldwars"
+  ],
+  "questions": [
+   "GS1-HIS-06-M2020-S01",
+   "GS1-HIS-06-M2017-S01",
+   "GS1-HIS-06-M2014-S01"
+  ],
+  "also": {
+   "GS1-HIS-06-M2014-S01": [
+    "worldwars",
+    "decolon"
+   ]
+  }
+ },
+ {
+  "key": "finalphase",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Final phase: Quit India, Naval mutiny, Maulana Azad",
+  "links": [],
+  "questions": [
+   "GS1-HIS-07-M2024-Q03",
+   "GS1-HIS-07-M2014-S01",
+   "GS1-HIS-07-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "making",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Making of the Constitution: Government of India Act 1935 to Constituent Assembly",
+  "links": [
+   "coopfed"
+  ],
+  "questions": [
+   "GS1-HIS-07-M2015-S01",
+   "GS2-POL-01-M2016-S01"
+  ],
+  "also": {
+   "GS2-POL-01-M2016-S01": [
+    "coopfed"
+   ]
+  }
+ },
+ {
+  "key": "statesreorg",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Integration & reorganisation of states: princely states, linguistic states, new & smaller states",
+  "links": [
+   "regionalism",
+   "coopfed"
+  ],
+  "questions": [
+   "GS1-HIS-08-M2026-S01",
+   "GS1-HIS-08-M2022-Q11",
+   "GS1-HIS-08-M2021-S01",
+   "GS1-HIS-08-M2018-S01",
+   "GS1-HIS-08-M2016-S01",
+   "GS2-POL-04-M2013-S01"
+  ],
+  "also": {
+   "GS1-HIS-08-M2018-S01": [
+    "regionalism"
+   ],
+   "GS2-POL-04-M2013-S01": [
+    "coopfed",
+    "localgov"
+   ]
+  }
+ },
+ {
+  "key": "consolidation",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Post-independence consolidation: polity, economy, Jai Jawan Jai Kisan",
+  "links": [
+   "planning",
+   "greenrev"
+  ],
+  "questions": [
+   "GS1-HIS-08-M2025-Q12",
+   "GS1-HIS-08-M2013-S02"
+  ],
+  "also": {
+   "GS1-HIS-08-M2013-S02": [
+    "greenrev"
+   ]
+  }
+ },
+ {
+  "key": "earlyfp",
+  "cluster": "Modern India & Freedom Struggle",
+  "title": "Early foreign policy & wars: Tashkent, Bangladesh 1971, Gujral doctrine",
+  "links": [
+   "neighbourhood",
+   "pakistan"
+  ],
+  "questions": [
+   "GS1-HIS-08-M2013-S03",
+   "GS1-HIS-08-M2013-S04",
+   "GS2-IR-02-M2013-S04"
+  ],
+  "also": {}
+ },
+ {
+  "key": "revolutions",
+  "cluster": "World History",
+  "title": "American & French Revolutions and their legacy",
+  "links": [],
+  "questions": [
+   "GS1-WH-01-M2025-Q13",
+   "GS1-WH-01-M2013-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "industrialrev",
+  "cluster": "World History",
+  "title": "Industrial Revolution and its spread: England, Japan, railways",
+  "links": [
+   "coloneco"
+  ],
+  "questions": [
+   "GS1-WH-01-M2015-S01",
+   "GS1-WH-01-M2013-S01",
+   "GS1-WH-01-M2023-Q03"
+  ],
+  "also": {
+   "GS1-WH-01-M2015-S01": [
+    "coloneco"
+   ]
+  }
+ },
+ {
+  "key": "worldwars",
+  "cluster": "World History",
+  "title": "World Wars, interwar crisis, Great Depression & ideologies",
+  "links": [
+   "budget"
+  ],
+  "questions": [
+   "GS1-WH-03-M2024-Q12",
+   "GS1-WH-03-M2021-S01",
+   "GS1-WH-03-M2015-S01",
+   "GS1-WH-03-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "decolon",
+  "cluster": "World History",
+  "title": "Colonisation & decolonisation: Africa, Malaya, Suez",
+  "links": [
+   "africa"
+  ],
+  "questions": [
+   "GS1-WH-02-M2017-S01",
+   "GS1-WH-02-M2016-S01",
+   "GS1-WH-02-M2014-S01",
+   "GS1-WH-02-M2013-S01"
+  ],
+  "also": {
+   "GS1-WH-02-M2013-S01": [
+    "africa"
+   ]
+  }
+ },
+ {
+  "key": "tectonics",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Earth's interior, plate tectonics, mountains, islands & landforms",
+  "links": [
+   "atmosphere"
+  ],
+  "questions": [
+   "GS1-GEO-01-M2025-Q16",
+   "GS1-GEO-01-M2018-S01",
+   "GS1-GEO-01-M2017-S01",
+   "GS1-GEO-01-M2014-S01",
+   "GS1-GEO-01-M2014-S02",
+   "GS1-GEO-01-M2013-S01",
+   "GS1-GEO-01-M2021-S02",
+   "GS1-GEO-01-M2021-S03",
+   "GS1-GEO-01-M2023-Q06",
+   "GS1-GEO-01-M2022-Q04"
+  ],
+  "also": {
+   "GS1-GEO-01-M2021-S03": [
+    "atmosphere"
+   ],
+   "GS1-GEO-01-M2013-S01": [
+    "cyclones"
+   ],
+   "GS1-GEO-01-M2017-S01": [
+    "space"
+   ]
+  }
+ },
+ {
+  "key": "landslides",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Landslides in the Himalayas & Western Ghats",
+  "links": [
+   "dmframe",
+   "fragile"
+  ],
+  "questions": [
+   "GS1-GEO-01-M2021-S01",
+   "GS1-GEO-01-M2016-S01",
+   "GS1-GEO-01-M2013-S02",
+   "GS3-DM-01-M2021-S02"
+  ],
+  "also": {
+   "GS3-DM-01-M2021-S02": [
+    "dmframe"
+   ]
+  }
+ },
+ {
+  "key": "quakes",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Earthquakes, tsunamis & volcanoes: science to preparedness",
+  "links": [
+   "tectonics",
+   "dmframe"
+  ],
+  "questions": [
+   "GS1-GEO-04-M2025-Q07",
+   "GS1-GEO-04-M2021-S01",
+   "GS1-GEO-04-M2020-S01",
+   "GS3-DM-01-M2021-S01",
+   "GS3-DM-01-M2017-S01",
+   "GS3-DM-01-M2015-S01"
+  ],
+  "also": {
+   "GS3-DM-01-M2021-S01": [
+    "dmframe"
+   ],
+   "GS3-DM-01-M2017-S01": [
+    "dmframe"
+   ],
+   "GS3-DM-01-M2015-S01": [
+    "dmframe"
+   ]
+  }
+ },
+ {
+  "key": "atmosphere",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Atmosphere, air masses, winds, inversion, deserts & auroras",
+  "links": [
+   "urbfloods"
+  ],
+  "questions": [
+   "GS1-GEO-02-M2026-S02",
+   "GS1-GEO-02-M2022-Q17",
+   "GS1-GEO-02-M2016-S01",
+   "GS1-GEO-02-M2013-S01",
+   "GS1-GEO-02-M2013-S02",
+   "GS1-GEO-02-M2024-Q15"
+  ],
+  "also": {
+   "GS1-GEO-02-M2013-S01": [
+    "urbsoc"
+   ]
+  }
+ },
+ {
+  "key": "monsoon",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Monsoon, El Niño & drought",
+  "links": [
+   "dmframe",
+   "climateimpact"
+  ],
+  "questions": [
+   "GS1-GEO-02-M2023-Q07",
+   "GS1-GEO-02-M2017-S01",
+   "GS1-GEO-02-M2015-S02",
+   "GS1-GEO-02-M2014-S01",
+   "GS3-DM-01-M2014-S01"
+  ],
+  "also": {
+   "GS3-DM-01-M2014-S01": [
+    "dmframe",
+    "irrigation"
+   ],
+   "GS1-GEO-02-M2015-S02": [
+    "landdeg"
+   ]
+  }
+ },
+ {
+  "key": "cyclones",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Tropical cyclones, twisters & cyclone warnings",
+  "links": [
+   "dmframe",
+   "climateimpact"
+  ],
+  "questions": [
+   "GS1-GEO-02-M2026-S01",
+   "GS1-GEO-02-M2024-Q04",
+   "GS1-GEO-02-M2022-Q05",
+   "GS1-GEO-02-M2014-S02",
+   "GS1-GEO-02-M2024-Q16"
+  ],
+  "also": {
+   "GS1-GEO-02-M2022-Q05": [
+    "dmframe"
+   ]
+  }
+ },
+ {
+  "key": "cloudburst",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Cloudbursts & extreme rainfall",
+  "links": [
+   "dmframe",
+   "fragile"
+  ],
+  "questions": [
+   "GS1-GEO-02-M2024-Q06",
+   "GS3-DM-01-M2022-Q08",
+   "GS3-DM-01-M2016-S02"
+  ],
+  "also": {
+   "GS3-DM-01-M2016-S02": [
+    "dmframe",
+    "fragile"
+   ]
+  }
+ },
+ {
+  "key": "oceans",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Oceans & marine environment: currents, salinity, dead zones, oil pollution, marine resources",
+  "links": [
+   "coastal"
+  ],
+  "questions": [
+   "GS1-GEO-03-M2022-Q14",
+   "GS1-GEO-03-M2017-S01",
+   "GS1-GEO-03-M2015-S01",
+   "GS1-GEO-03-M2018-S01",
+   "GS1-GEO-05-M2014-S01",
+   "GS3-ENV-02-M2023-Q08"
+  ],
+  "also": {}
+ },
+ {
+  "key": "coastal",
+  "cluster": "Physical Geography & Hazards",
+  "title": "Coastal zone: resources, erosion & hazard preparedness",
+  "links": [
+   "dmframe",
+   "allied"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2023-Q14",
+   "GS3-DM-01-M2022-Q18"
+  ],
+  "also": {}
+ },
+ {
+  "key": "mining",
+  "cluster": "Resources & Economic Geography",
+  "title": "Minerals & mining: resource vs environment",
+  "links": [
+   "eia"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2022-Q06",
+   "GS1-GEO-05-M2021-S01",
+   "GS1-GEO-05-M2017-S01",
+   "GS3-ENV-02-M2025-Q17",
+   "GS3-ENV-02-M2013-S01"
+  ],
+  "also": {
+   "GS1-GEO-05-M2017-S01": [
+    "renewables"
+   ],
+   "GS3-ENV-02-M2013-S01": [
+    "eia"
+   ]
+  }
+ },
+ {
+  "key": "oil",
+  "cluster": "Resources & Economic Geography",
+  "title": "Oil & gas: global distribution, shale, refineries",
+  "links": [
+   "energysec"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2025-Q14",
+   "GS1-GEO-05-M2021-S02",
+   "GS1-GEO-05-M2013-S02",
+   "GS1-GEO-06-M2017-S01"
+  ],
+  "also": {
+   "GS1-GEO-05-M2021-S02": [
+    "energysec",
+    "westasia"
+   ]
+  }
+ },
+ {
+  "key": "polar",
+  "cluster": "Resources & Economic Geography",
+  "title": "Polar regions: Arctic resources, tundra & India's interest",
+  "links": [
+   "glaciers"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2018-S01",
+   "GS1-GEO-05-M2015-S01",
+   "GS1-GEO-07-M2026-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "glaciers",
+  "cluster": "Resources & Economic Geography",
+  "title": "Glaciers, cryosphere & sea-level rise",
+  "links": [
+   "climateimpact",
+   "water"
+  ],
+  "questions": [
+   "GS1-GEO-07-M2025-Q04",
+   "GS1-GEO-07-M2021-S02",
+   "GS1-GEO-07-M2017-S02",
+   "GS1-GEO-07-M2020-S02",
+   "GS1-GEO-07-M2014-S01",
+   "GS3-ENV-03-M2023-Q18"
+  ],
+  "also": {
+   "GS1-GEO-07-M2020-S02": [
+    "water"
+   ],
+   "GS3-ENV-03-M2023-Q18": [
+    "coastal"
+   ]
+  }
+ },
+ {
+  "key": "industryloc",
+  "cluster": "Resources & Economic Geography",
+  "title": "Location of industries: steel, refineries, sugar, textiles, tea, rubber, corridors",
+  "links": [
+   "manufacturing"
+  ],
+  "questions": [
+   "GS1-GEO-06-M2020-S01",
+   "GS1-GEO-06-M2014-S03",
+   "GS1-GEO-06-M2013-S01",
+   "GS1-GEO-06-M2014-S01",
+   "GS1-GEO-06-M2022-Q15",
+   "GS1-GEO-06-M2018-S03",
+   "GS1-GEO-06-M2025-Q05"
+  ],
+  "also": {
+   "GS1-GEO-06-M2018-S03": [
+    "infra",
+    "manufacturing"
+   ]
+  }
+ },
+ {
+  "key": "landdeg",
+  "cluster": "Resources & Economic Geography",
+  "title": "Desertification, land degradation & land-use change",
+  "links": [
+   "wetlands",
+   "urbsoc"
+  ],
+  "questions": [
+   "GS1-GEO-01-M2026-S01",
+   "GS1-GEO-07-M2020-S01",
+   "GS1-GEO-07-M2026-S03",
+   "GS1-GEO-07-M2021-S01"
+  ],
+  "also": {
+   "GS1-GEO-07-M2021-S01": [
+    "wetlands"
+   ]
+  }
+ },
+ {
+  "key": "forests",
+  "cluster": "Resources & Economic Geography",
+  "title": "Forests, natural vegetation & biodiversity",
+  "links": [
+   "climateregime"
+  ],
+  "questions": [
+   "GS1-GEO-07-M2023-Q15",
+   "GS1-GEO-07-M2020-S03",
+   "GS3-ENV-01-M2026-S01",
+   "GS3-ENV-01-M2018-S02"
+  ],
+  "also": {
+   "GS3-ENV-01-M2026-S01": [
+    "climateregime"
+   ]
+  }
+ },
+ {
+  "key": "wetlands",
+  "cluster": "Resources & Economic Geography",
+  "title": "Wetlands & Ramsar sites",
+  "links": [],
+  "questions": [
+   "GS3-ENV-01-M2023-Q17",
+   "GS3-ENV-01-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "fragile",
+  "cluster": "Resources & Economic Geography",
+  "title": "Fragile Himalayan ecosystems: tourism & infrastructure",
+  "links": [
+   "dmframe",
+   "climateimpact"
+  ],
+  "questions": [
+   "GS1-GEO-07-M2015-S02",
+   "GS3-DM-01-M2026-S01"
+  ],
+  "also": {
+   "GS3-DM-01-M2026-S01": [
+    "dmframe",
+    "infra"
+   ]
+  }
+ },
+ {
+  "key": "water",
+  "cluster": "Water",
+  "title": "Water security: scarcity, conservation & management",
+  "links": [
+   "irrigation",
+   "groundwater"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2023-Q05",
+   "GS1-GEO-07-M2015-S01",
+   "GS1-GEO-05-M2016-S01",
+   "GS1-GEO-07-M2018-S01",
+   "GS1-GEO-07-M2016-S01",
+   "GS3-AGR-01-M2020-S03",
+   "GS3-SCI-01-M2024-Q15"
+  ],
+  "also": {
+   "GS1-GEO-07-M2018-S01": [
+    "urbsoc"
+   ],
+   "GS3-SCI-01-M2024-Q15": [
+    "sciday"
+   ]
+  }
+ },
+ {
+  "key": "groundwater",
+  "cluster": "Water",
+  "title": "Groundwater depletion & seawater intrusion",
+  "links": [
+   "irrigation",
+   "climateimpact"
+  ],
+  "questions": [
+   "GS1-GEO-07-M2024-Q14",
+   "GS3-AGR-01-M2025-Q13",
+   "GS3-ENV-02-M2025-Q08"
+  ],
+  "also": {
+   "GS1-GEO-07-M2024-Q14": [
+    "climateimpact",
+    "greenrev"
+   ]
+  }
+ },
+ {
+  "key": "irrigation",
+  "cluster": "Water",
+  "title": "Irrigation & water-use efficiency",
+  "links": [
+   "water"
+  ],
+  "questions": [
+   "GS3-AGR-01-M2024-Q13",
+   "GS3-AGR-01-M2021-S01",
+   "GS3-AGR-01-M2020-S02",
+   "GS3-AGR-01-M2016-S01",
+   "GS1-GEO-05-M2017-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "riverlink",
+  "cluster": "Water",
+  "title": "River interlinking & water disputes: inter-state and transboundary",
+  "links": [
+   "coopfed",
+   "pakistan",
+   "neighbourhood"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2020-S01",
+   "GS3-AGR-01-M2017-S03",
+   "GS1-GEO-05-M2016-S02",
+   "GS1-GEO-05-M2026-S01",
+   "GS2-POL-04-M2013-S03"
+  ],
+  "also": {
+   "GS1-GEO-05-M2016-S02": [
+    "pakistan"
+   ],
+   "GS2-POL-04-M2013-S03": [
+    "coopfed"
+   ],
+   "GS1-GEO-05-M2026-S01": [
+    "neighbourhood"
+   ]
+  }
+ },
+ {
+  "key": "diversity",
+  "cluster": "Indian Society",
+  "title": "Diversity & national unity",
+  "links": [
+   "regionalism",
+   "communalism"
+  ],
+  "questions": [
+   "GS1-SOC-01-M2026-S01",
+   "GS1-SOC-01-M2024-Q20",
+   "GS1-SOC-01-M2017-S01",
+   "GS1-SOC-01-M2017-S03",
+   "GS1-SOC-01-M2015-S01"
+  ],
+  "also": {
+   "GS1-SOC-01-M2024-Q20": [
+    "affirmative"
+   ]
+  }
+ },
+ {
+  "key": "family",
+  "cluster": "Indian Society",
+  "title": "Family, marriage, traditions & social values",
+  "links": [
+   "vedic"
+  ],
+  "questions": [
+   "GS1-SOC-01-M2023-Q08",
+   "GS1-SOC-01-M2021-S02",
+   "GS1-SOC-01-M2020-S02",
+   "GS1-SOC-01-M2014-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "caste",
+  "cluster": "Indian Society",
+  "title": "Caste: continuity, change, mobility & Dalit assertion",
+  "links": [
+   "affirmative",
+   "urbsoc"
+  ],
+  "questions": [
+   "GS1-SOC-01-M2026-S02",
+   "GS1-SOC-01-M2023-Q19",
+   "GS1-SOC-01-M2020-S01",
+   "GS1-SOC-01-M2018-S01",
+   "GS1-SOC-01-M2015-S02",
+   "GS1-SOC-01-M2024-Q09"
+  ],
+  "also": {
+   "GS1-SOC-01-M2026-S02": [
+    "urbsoc"
+   ]
+  }
+ },
+ {
+  "key": "tribal",
+  "cluster": "Indian Society",
+  "title": "Tribal identity, rights & development",
+  "links": [
+   "lwe",
+   "eia"
+  ],
+  "questions": [
+   "GS1-SOC-01-M2025-Q20",
+   "GS1-SOC-01-M2022-Q10",
+   "GS1-SOC-01-M2021-S01",
+   "GS1-SOC-01-M2017-S02",
+   "GS1-SOC-01-M2016-S01",
+   "GS2-GOV-03-M2026-S01"
+  ],
+  "also": {
+   "GS1-SOC-01-M2025-Q20": [
+    "eia",
+    "landreform"
+   ],
+   "GS2-GOV-03-M2026-S01": [
+    "affirmative"
+   ]
+  }
+ },
+ {
+  "key": "population",
+  "cluster": "Indian Society",
+  "title": "Population & demographic transition",
+  "links": [
+   "skills",
+   "poverty"
+  ],
+  "questions": [
+   "GS1-SOC-03-M2026-S01",
+   "GS1-SOC-03-M2025-Q17",
+   "GS1-SOC-03-M2024-Q07",
+   "GS1-SOC-03-M2021-S01",
+   "GS1-SOC-03-M2015-S01"
+  ],
+  "also": {
+   "GS1-SOC-03-M2015-S01": [
+    "poverty"
+   ]
+  }
+ },
+ {
+  "key": "ageing",
+  "cluster": "Indian Society",
+  "title": "Ageing population & elderly care",
+  "links": [
+   "health",
+   "population"
+  ],
+  "questions": [
+   "GS1-SOC-06-M2013-S01",
+   "GS3-SCI-04-M2022-Q05",
+   "GS2-GOV-04-M2020-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "migration",
+  "cluster": "Indian Society",
+  "title": "Migration: internal, international & illegal",
+  "links": [
+   "urbsoc",
+   "border"
+  ],
+  "questions": [
+   "GS1-SOC-05-M2024-Q05",
+   "GS1-SOC-03-M2015-S02",
+   "GS3-SEC-04-M2014-S02"
+  ],
+  "also": {
+   "GS3-SEC-04-M2014-S02": [
+    "border"
+   ]
+  }
+ },
+ {
+  "key": "urbsoc",
+  "cluster": "Indian Society",
+  "title": "Urbanisation: social problems, segregation & urban poverty",
+  "links": [
+   "smartcity",
+   "poverty"
+  ],
+  "questions": [
+   "GS1-SOC-05-M2023-Q18",
+   "GS1-SOC-05-M2013-S01",
+   "GS1-SOC-05-M2025-Q08"
+  ],
+  "also": {}
+ },
+ {
+  "key": "newurban",
+  "cluster": "Indian Society",
+  "title": "New urban economy: IT hubs, tier-2 cities & new middle class",
+  "links": [
+   "globsoc"
+  ],
+  "questions": [
+   "GS1-SOC-05-M2022-Q09",
+   "GS1-SOC-05-M2021-S01",
+   "GS1-SOC-05-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "smartcity",
+  "cluster": "Indian Society",
+  "title": "Smart cities, rural–urban integration & urban transport",
+  "links": [
+   "urbsoc",
+   "localgov"
+  ],
+  "questions": [
+   "GS1-SOC-05-M2016-S01",
+   "GS1-SOC-05-M2015-S01",
+   "GS3-ECO-07-M2016-S01",
+   "GS2-GOV-01-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "urbfloods",
+  "cluster": "Indian Society",
+  "title": "Urban floods",
+  "links": [
+   "dmframe",
+   "smartcity",
+   "wetlands"
+  ],
+  "questions": [
+   "GS1-SOC-05-M2020-S01",
+   "GS1-SOC-05-M2016-S02",
+   "GS3-DM-01-M2024-Q18",
+   "GS3-DM-01-M2016-S01"
+  ],
+  "also": {
+   "GS1-SOC-05-M2020-S01": [
+    "smartcity"
+   ],
+   "GS3-DM-01-M2024-Q18": [
+    "dmframe"
+   ],
+   "GS3-DM-01-M2016-S01": [
+    "dmframe"
+   ]
+  }
+ },
+ {
+  "key": "globsoc",
+  "cluster": "Indian Society",
+  "title": "Globalisation & Indian society and culture",
+  "links": [
+   "diversity"
+  ],
+  "questions": [
+   "GS1-SOC-06-M2026-S01",
+   "GS1-SOC-06-M2025-Q10",
+   "GS1-SOC-06-M2020-S01",
+   "GS1-SOC-06-M2018-S01",
+   "GS1-SOC-06-M2016-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "techsoc",
+  "cluster": "Indian Society",
+  "title": "Technology & social change: mobiles, WFH, fast food, crypto, digital education",
+  "links": [
+   "globsoc",
+   "digieco"
+  ],
+  "questions": [
+   "GS1-SOC-06-M2025-Q18",
+   "GS1-SOC-06-M2023-Q10",
+   "GS1-SOC-06-M2022-Q08",
+   "GS1-SOC-06-M2022-Q20",
+   "GS1-SOC-06-M2021-S01",
+   "GS1-SOC-06-M2020-S02",
+   "GS1-SOC-07-M2026-S02"
+  ],
+  "also": {
+   "GS1-SOC-06-M2021-S01": [
+    "digieco"
+   ],
+   "GS1-SOC-06-M2020-S02": [
+    "education",
+    "egov"
+   ],
+   "GS1-SOC-07-M2026-S02": [
+    "egov"
+   ]
+  }
+ },
+ {
+  "key": "secularism",
+  "cluster": "Indian Society",
+  "title": "Secularism: Indian vs Western models",
+  "links": [
+   "comparative"
+  ],
+  "questions": [
+   "GS1-SOC-07-M2018-S01",
+   "GS1-SOC-07-M2014-S01",
+   "GS1-SOC-07-M2022-Q19",
+   "GS2-POL-09-M2024-Q15",
+   "GS2-POL-09-M2019-S01"
+  ],
+  "also": {
+   "GS2-POL-09-M2024-Q15": [
+    "comparative"
+   ],
+   "GS2-POL-09-M2019-S01": [
+    "comparative"
+   ]
+  }
+ },
+ {
+  "key": "communalism",
+  "cluster": "Indian Society",
+  "title": "Communalism, sect & radicalisation",
+  "links": [
+   "secularism",
+   "terror"
+  ],
+  "questions": [
+   "GS1-SOC-07-M2018-S02",
+   "GS1-SOC-07-M2017-S01",
+   "GS1-SOC-07-M2023-Q20",
+   "GS1-SOC-07-M2022-Q18",
+   "GS3-SEC-02-M2014-S01"
+  ],
+  "also": {
+   "GS3-SEC-02-M2014-S01": [
+    "terror"
+   ],
+   "GS1-SOC-07-M2023-Q20": [
+    "globsoc"
+   ]
+  }
+ },
+ {
+  "key": "regionalism",
+  "cluster": "Indian Society",
+  "title": "Regionalism & regional disparity",
+  "links": [
+   "statesreorg",
+   "coopfed"
+  ],
+  "questions": [
+   "GS1-SOC-07-M2020-S01",
+   "GS1-SOC-07-M2016-S01",
+   "GS1-SOC-07-M2013-S01",
+   "GS1-SOC-07-M2024-Q17"
+  ],
+  "also": {
+   "GS1-SOC-07-M2013-S01": [
+    "statesreorg"
+   ]
+  }
+ },
+ {
+  "key": "womenhist",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "Women's question in history: 19th-century reform & freedom struggle",
+  "links": [
+   "reform",
+   "gandhi"
+  ],
+  "questions": [
+   "GS1-HIS-03-M2017-S01",
+   "GS1-HIS-06-M2016-S01",
+   "GS1-HIS-06-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "gender",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "Gender concepts, patriarchy & women's social status",
+  "links": [
+   "womenpol"
+  ],
+  "questions": [
+   "GS1-SOC-02-M2024-Q08",
+   "GS1-SOC-02-M2014-S01",
+   "GS1-SOC-02-M2018-S01",
+   "GS2-GOV-03-M2021-S01",
+   "GS1-SOC-02-M2013-S01",
+   "GS1-SOC-02-M2023-Q09",
+   "GS2-GOV-03-M2025-Q06"
+  ],
+  "also": {
+   "GS1-SOC-02-M2024-Q08": [
+    "policy"
+   ]
+  }
+ },
+ {
+  "key": "sexratio",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "Sex ratio & gender gaps across communities and regions",
+  "links": [
+   "tribal",
+   "population"
+  ],
+  "questions": [
+   "GS1-SOC-02-M2015-S01",
+   "GS1-SOC-02-M2014-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "womeneco",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "Women & the economy: gig work, feminisation of agriculture, care economy, gender budgeting, migration",
+  "links": [
+   "employment",
+   "budget",
+   "globsoc"
+  ],
+  "questions": [
+   "GS1-SOC-02-M2021-S01",
+   "GS1-SOC-02-M2014-S03",
+   "GS3-ECO-02-M2023-Q12",
+   "GS3-ECO-04-M2016-S01",
+   "GS1-SOC-02-M2015-S02",
+   "GS1-SOC-02-M2024-Q19"
+  ],
+  "also": {
+   "GS3-ECO-04-M2016-S01": [
+    "budget"
+   ],
+   "GS3-ECO-02-M2023-Q12": [
+    "inclusive"
+   ],
+   "GS1-SOC-02-M2024-Q19": [
+    "migration"
+   ]
+  }
+ },
+ {
+  "key": "womenpol",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "Women in politics, law & institutions: reservation, judiciary, NCW, gender justice",
+  "links": [
+   "localgov",
+   "judiciary",
+   "commissions",
+   "rights"
+  ],
+  "questions": [
+   "GS2-POL-02-M2026-S02",
+   "GS2-POL-06-M2019-S01",
+   "GS2-GOV-02-M2023-Q14",
+   "GS2-POL-12-M2021-S01",
+   "GS2-POL-14-M2020-S01",
+   "GS2-GOV-03-M2017-S01",
+   "GS2-POL-02-M2023-Q12"
+  ],
+  "also": {
+   "GS2-POL-06-M2019-S01": [
+    "localgov"
+   ],
+   "GS2-POL-12-M2021-S01": [
+    "judiciary"
+   ],
+   "GS2-POL-14-M2020-S01": [
+    "commissions"
+   ],
+   "GS2-GOV-02-M2023-Q14": [
+    "civilsoc"
+   ]
+  }
+ },
+ {
+  "key": "shg",
+  "cluster": "Women & Gender (cross-paper)",
+  "title": "SHGs & microfinance",
+  "links": [
+   "womeneco",
+   "poverty",
+   "fininc"
+  ],
+  "questions": [
+   "GS2-GOV-02-M2021-S01",
+   "GS2-GOV-02-M2020-S01",
+   "GS2-GOV-02-M2015-S02",
+   "GS2-GOV-02-M2017-S01",
+   "GS2-GOV-02-M2014-S01",
+   "GS2-GOV-02-M2013-S01"
+  ],
+  "also": {
+   "GS2-GOV-02-M2021-S01": [
+    "hunger",
+    "gender"
+   ]
+  }
+ },
+ {
+  "key": "affirmative",
+  "cluster": "Social Justice & Welfare",
+  "title": "Affirmative action & welfare schemes for vulnerable sections",
+  "links": [
+   "caste",
+   "coopfed"
+  ],
+  "questions": [
+   "GS1-SOC-07-M2024-Q18",
+   "GS2-GOV-03-M2023-Q17",
+   "GS2-GOV-03-M2014-S01",
+   "GS2-GOV-03-M2013-S01"
+  ],
+  "also": {
+   "GS2-GOV-03-M2013-S01": [
+    "coopfed"
+   ]
+  }
+ },
+ {
+  "key": "disability",
+  "cluster": "Social Justice & Welfare",
+  "title": "Disability & inclusion: RPwD Act 2016",
+  "links": [],
+  "questions": [
+   "GS1-SOC-07-M2026-S01",
+   "GS2-GOV-03-M2022-Q07",
+   "GS2-GOV-03-M2017-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "commissions",
+  "cluster": "Social Justice & Welfare",
+  "title": "Commissions for social justice & human rights: NCSC, NCST, NCBC, NHRC",
+  "links": [
+   "affirmative"
+  ],
+  "questions": [
+   "GS2-GOV-03-M2026-S02",
+   "GS2-POL-14-M2018-S01",
+   "GS2-POL-14-M2022-Q05",
+   "GS2-POL-15-M2018-S01",
+   "GS2-POL-15-M2021-S01",
+   "GS2-POL-15-M2014-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "children",
+  "cluster": "Social Justice & Welfare",
+  "title": "Children's rights & child policy: NCPCR, National Child Policy",
+  "links": [
+   "cyber"
+  ],
+  "questions": [
+   "GS2-GOV-03-M2016-S01",
+   "GS2-POL-15-M2025-Q18"
+  ],
+  "also": {
+   "GS2-POL-15-M2025-Q18": [
+    "cyber"
+   ]
+  }
+ },
+ {
+  "key": "poverty",
+  "cluster": "Social Justice & Welfare",
+  "title": "Poverty: measurement, causes & alleviation",
+  "links": [
+   "inclusive",
+   "hunger"
+  ],
+  "questions": [
+   "GS2-GOV-06-M2020-S01",
+   "GS2-GOV-06-M2015-S01",
+   "GS2-GOV-06-M2025-Q16",
+   "GS1-SOC-04-M2020-S01",
+   "GS1-SOC-04-M2016-S01",
+   "GS1-SOC-04-M2018-S02",
+   "GS2-GOV-06-M2017-S01",
+   "GS2-GOV-06-M2017-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "hunger",
+  "cluster": "Social Justice & Welfare",
+  "title": "Hunger, malnutrition & food security law: NFSA, Mid-Day Meal, millets",
+  "links": [
+   "pds",
+   "health",
+   "wto"
+  ],
+  "questions": [
+   "GS2-GOV-06-M2026-S01",
+   "GS2-GOV-06-M2024-Q07",
+   "GS2-GOV-06-M2018-S01",
+   "GS2-GOV-06-M2013-S01",
+   "GS3-AGR-03-M2021-S01",
+   "GS3-AGR-03-M2013-S02",
+   "GS3-AGR-03-M2024-Q04"
+  ],
+  "also": {
+   "GS3-AGR-03-M2013-S02": [
+    "wto"
+   ],
+   "GS3-AGR-03-M2024-Q04": [
+    "cropping"
+   ]
+  }
+ },
+ {
+  "key": "inclusive",
+  "cluster": "Social Justice & Welfare",
+  "title": "Inclusive growth & human development: HDI/IHDI, social spending, equity, CSR",
+  "links": [
+   "poverty",
+   "fininc"
+  ],
+  "questions": [
+   "GS1-SOC-04-M2023-Q16",
+   "GS3-ECO-02-M2025-Q01",
+   "GS3-ECO-02-M2024-Q01",
+   "GS3-ECO-02-M2017-S01",
+   "GS3-ECO-02-M2016-S01",
+   "GS3-ECO-02-M2014-S01",
+   "GS3-ECO-03-M2022-Q02",
+   "GS3-ECO-02-M2020-S01",
+   "GS1-SOC-04-M2025-Q19",
+   "GS3-ECO-02-M2013-S01"
+  ],
+  "also": {
+   "GS3-ECO-03-M2022-Q02": [
+    "fininc"
+   ],
+   "GS1-SOC-04-M2025-Q19": [
+    "climateimpact"
+   ],
+   "GS3-ECO-02-M2020-S01": [
+    "climateregime"
+   ]
+  }
+ },
+ {
+  "key": "preamble",
+  "cluster": "Constitution & Polity",
+  "title": "Preamble, features & the 'living' Constitution",
+  "links": [
+   "rights"
+  ],
+  "questions": [
+   "GS2-POL-02-M2016-S01",
+   "GS2-POL-02-M2023-Q11"
+  ],
+  "also": {}
+ },
+ {
+  "key": "rights",
+  "cluster": "Constitution & Polity",
+  "title": "Fundamental Rights: privacy, Art 21, movement, transgender rights",
+  "links": [
+   "dataprot"
+  ],
+  "questions": [
+   "GS2-POL-02-M2026-S01",
+   "GS2-POL-02-M2024-Q12",
+   "GS2-POL-02-M2017-S01",
+   "GS2-POL-02-M2022-Q02"
+  ],
+  "also": {
+   "GS2-POL-02-M2017-S01": [
+    "dataprot"
+   ]
+  }
+ },
+ {
+  "key": "speech",
+  "cluster": "Constitution & Polity",
+  "title": "Freedom of speech & expression: hate speech, films, Section 66A",
+  "links": [
+   "socialmedia"
+  ],
+  "questions": [
+   "GS2-POL-02-M2014-S01",
+   "GS2-POL-02-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "envconst",
+  "cluster": "Constitution & Polity",
+  "title": "Environment, courts & civil society: Art 21, environmental PILs, green NGOs & pressure groups",
+  "links": [
+   "activism",
+   "civilsoc",
+   "airpoll"
+  ],
+  "questions": [
+   "GS2-POL-02-M2015-S02",
+   "GS2-POL-07-M2022-Q01",
+   "GS2-POL-11-M2025-Q15",
+   "GS2-GOV-02-M2015-S03",
+   "GS2-GOV-01-M2018-S01"
+  ],
+  "also": {
+   "GS2-POL-02-M2015-S02": [
+    "airpoll"
+   ],
+   "GS2-GOV-02-M2015-S03": [
+    "civilsoc"
+   ],
+   "GS2-POL-11-M2025-Q15": [
+    "pressure"
+   ]
+  }
+ },
+ {
+  "key": "ucc",
+  "cluster": "Constitution & Polity",
+  "title": "DPSP, Uniform Civil Code & extra-constitutional bodies (khaps)",
+  "links": [
+   "secularism",
+   "gender"
+  ],
+  "questions": [
+   "GS2-POL-03-M2015-S01",
+   "GS2-POL-02-M2015-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "basicstructure",
+  "cluster": "Constitution & Polity",
+  "title": "Amending power & basic structure",
+  "links": [
+   "activism"
+  ],
+  "questions": [
+   "GS2-POL-03-M2025-Q12",
+   "GS2-POL-03-M2019-S01",
+   "GS2-POL-03-M2016-S01",
+   "GS2-POL-03-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "activism",
+  "cluster": "Constitution & Polity",
+  "title": "Judicial activism, PIL, judicial legislation & separation of powers",
+  "links": [
+   "basicstructure"
+  ],
+  "questions": [
+   "GS2-POL-07-M2026-S01",
+   "GS2-POL-07-M2024-Q14",
+   "GS2-POL-07-M2020-S01",
+   "GS2-POL-07-M2019-S01",
+   "GS2-POL-07-M2014-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "constmorality",
+  "cluster": "Constitution & Polity",
+  "title": "Constitutional morality",
+  "links": [
+   "judiciary"
+  ],
+  "questions": [
+   "GS2-POL-07-M2021-S01",
+   "GS2-POL-07-M2025-Q11"
+  ],
+  "also": {}
+ },
+ {
+  "key": "judiciary",
+  "cluster": "Constitution & Polity",
+  "title": "Judicial appointments & independence: collegium, NJAC",
+  "links": [
+   "comparative"
+  ],
+  "questions": [
+   "GS2-POL-12-M2025-Q13",
+   "GS2-POL-12-M2017-S01",
+   "GS2-POL-12-M2023-Q01"
+  ],
+  "also": {
+   "GS2-POL-12-M2025-Q13": [
+    "comparative"
+   ]
+  }
+ },
+ {
+  "key": "tribunals",
+  "cluster": "Constitution & Polity",
+  "title": "Tribunals, Lok Adalats, arbitration & legal aid",
+  "links": [],
+  "questions": [
+   "GS2-POL-08-M2025-Q02",
+   "GS2-POL-08-M2024-Q02",
+   "GS2-POL-08-M2023-Q02",
+   "GS2-POL-08-M2019-S01",
+   "GS2-POL-08-M2018-S01",
+   "GS2-POL-08-M2015-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "coopfed",
+  "cluster": "Constitution & Polity",
+  "title": "Centre–State relations: cooperative, competitive & confrontational federalism",
+  "links": [
+   "governor",
+   "fiscalfed"
+  ],
+  "questions": [
+   "GS2-POL-04-M2024-Q13",
+   "GS2-POL-04-M2020-S01",
+   "GS2-POL-04-M2020-S02",
+   "GS2-POL-04-M2014-S01",
+   "GS2-POL-04-M2015-S01",
+   "GS2-POL-04-M2019-S01",
+   "GS2-POL-04-M2021-S01",
+   "GS2-POL-04-M2026-S02"
+  ],
+  "also": {
+   "GS2-POL-04-M2020-S02": [
+    "dmframe"
+   ],
+   "GS2-POL-04-M2026-S02": [
+    "specialprov",
+    "regionalism"
+   ]
+  }
+ },
+ {
+  "key": "governor",
+  "cluster": "Constitution & Polity",
+  "title": "Governor, President's Rule & emergency provisions",
+  "links": [
+   "executive"
+  ],
+  "questions": [
+   "GS2-POL-04-M2026-S01",
+   "GS2-POL-04-M2023-Q13",
+   "GS2-POL-04-M2018-S01",
+   "GS2-POL-11-M2022-Q12"
+  ],
+  "also": {}
+ },
+ {
+  "key": "specialprov",
+  "cluster": "Constitution & Polity",
+  "title": "Special provisions & asymmetric federalism: J&K, Delhi, Art 371A",
+  "links": [
+   "terror",
+   "coopfed"
+  ],
+  "questions": [
+   "GS2-POL-04-M2025-Q04",
+   "GS2-POL-04-M2016-S02",
+   "GS2-POL-04-M2018-S02",
+   "GS2-POL-04-M2016-S01",
+   "GS2-POL-04-M2013-S02",
+   "GS3-SEC-02-M2026-S01",
+   "GS3-SEC-02-M2023-Q09"
+  ],
+  "also": {
+   "GS3-SEC-02-M2026-S01": [
+    "terror"
+   ],
+   "GS3-SEC-02-M2023-Q09": [
+    "terror"
+   ]
+  }
+ },
+ {
+  "key": "parties",
+  "cluster": "Constitution & Polity",
+  "title": "Party system: national vs regional parties",
+  "links": [
+   "coopfed"
+  ],
+  "questions": [
+   "GS2-POL-04-M2022-Q13",
+   "GS2-POL-04-M2016-S03"
+  ],
+  "also": {}
+ },
+ {
+  "key": "fiscalfed",
+  "cluster": "Constitution & Polity",
+  "title": "Fiscal federalism: Finance Commission, GST & state finances",
+  "links": [
+   "budget"
+  ],
+  "questions": [
+   "GS2-POL-05-M2025-Q14",
+   "GS2-POL-05-M2023-Q15",
+   "GS2-POL-05-M2021-S01",
+   "GS2-POL-05-M2018-S01",
+   "GS2-POL-05-M2017-S01",
+   "GS3-ECO-04-M2020-S01",
+   "GS3-ECO-04-M2013-S03",
+   "GS3-ECO-04-M2025-Q11"
+  ],
+  "also": {
+   "GS3-ECO-04-M2025-Q11": [
+    "budget"
+   ]
+  }
+ },
+ {
+  "key": "localgov",
+  "cluster": "Constitution & Polity",
+  "title": "Local self-government: 73rd/74th Amendments, functions, funds & functionaries",
+  "links": [
+   "fiscalfed",
+   "smartcity"
+  ],
+  "questions": [
+   "GS2-POL-06-M2024-Q05",
+   "GS2-POL-06-M2023-Q03",
+   "GS2-POL-06-M2022-Q03",
+   "GS2-POL-06-M2020-S01",
+   "GS2-POL-06-M2018-S01",
+   "GS2-POL-06-M2017-S01",
+   "GS2-POL-06-M2015-S01",
+   "GS2-POL-06-M2013-S01"
+  ],
+  "also": {
+   "GS2-POL-06-M2013-S01": [
+    "fiscalfed"
+   ],
+   "GS2-POL-06-M2024-Q05": [
+    "smartcity"
+   ]
+  }
+ },
+ {
+  "key": "parliament",
+  "cluster": "Constitution & Polity",
+  "title": "Parliament: role of MPs, executive accountability, Rajya Sabha, privileges",
+  "links": [
+   "committees",
+   "speaker"
+  ],
+  "questions": [
+   "GS2-POL-10-M2021-S01",
+   "GS2-POL-10-M2019-S01",
+   "GS2-POL-10-M2013-S01",
+   "GS2-POL-11-M2024-Q03",
+   "GS2-POL-10-M2014-S01",
+   "GS2-POL-10-M2017-S02",
+   "GS2-POL-10-M2021-S02",
+   "GS2-POL-10-M2020-S02",
+   "GS2-POL-10-M2022-Q04"
+  ],
+  "also": {
+   "GS2-POL-10-M2013-S01": [
+    "speaker"
+   ]
+  }
+ },
+ {
+  "key": "committees",
+  "cluster": "Constitution & Polity",
+  "title": "Parliamentary committees & financial accountability: PAC, Estimates, DRSCs",
+  "links": [
+   "cag"
+  ],
+  "questions": [
+   "GS2-POL-10-M2023-Q16",
+   "GS2-POL-10-M2021-S03",
+   "GS2-POL-10-M2018-S01",
+   "GS2-POL-10-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "speaker",
+  "cluster": "Constitution & Polity",
+  "title": "Presiding officers & anti-defection",
+  "links": [
+   "parliament"
+  ],
+  "questions": [
+   "GS2-POL-10-M2026-S01",
+   "GS2-POL-10-M2023-Q05",
+   "GS2-POL-10-M2020-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "executive",
+  "cluster": "Constitution & Polity",
+  "title": "Executive: cabinet, ordinances & pardon",
+  "links": [
+   "activism",
+   "comparative"
+  ],
+  "questions": [
+   "GS2-POL-11-M2015-S01",
+   "GS2-POL-11-M2014-S02",
+   "GS2-POL-11-M2014-S01",
+   "GS2-POL-09-M2025-Q03"
+  ],
+  "also": {
+   "GS2-POL-09-M2025-Q03": [
+    "comparative"
+   ]
+  }
+ },
+ {
+  "key": "comparative",
+  "cluster": "Constitution & Polity",
+  "title": "Comparative constitutions: UK, USA, France",
+  "links": [
+   "executive"
+  ],
+  "questions": [
+   "GS2-POL-09-M2026-S01",
+   "GS2-POL-09-M2023-Q04",
+   "GS2-POL-09-M2022-Q14",
+   "GS2-POL-09-M2021-S01",
+   "GS2-POL-09-M2020-S01",
+   "GS2-POL-09-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "elections",
+  "cluster": "Constitution & Polity",
+  "title": "Elections & electoral reforms: RPA, ECI, MCC, ONOE, EVMs",
+  "links": [
+   "anticorrupt"
+  ],
+  "questions": [
+   "GS2-POL-13-M2026-S01",
+   "GS2-POL-13-M2025-Q01",
+   "GS2-POL-13-M2024-Q01",
+   "GS2-POL-13-M2022-Q11",
+   "GS2-POL-13-M2022-Q15",
+   "GS2-POL-13-M2020-S01",
+   "GS2-POL-13-M2019-S01",
+   "GS2-POL-13-M2018-S01",
+   "GS2-POL-13-M2017-S01",
+   "GS2-POL-13-M2017-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "cag",
+  "cluster": "Constitution & Polity",
+  "title": "CAG & Attorney General",
+  "links": [
+   "committees"
+  ],
+  "questions": [
+   "GS2-POL-14-M2024-Q04",
+   "GS2-POL-14-M2018-S02",
+   "GS2-POL-14-M2016-S01",
+   "GS2-POL-14-M2025-Q05",
+   "GS2-POL-14-M2019-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "regulators",
+  "cluster": "Constitution & Polity",
+  "title": "Regulatory & quasi-judicial bodies: CCI, SEBI–IRDA, tariff authorities",
+  "links": [
+   "fdi"
+  ],
+  "questions": [
+   "GS2-POL-15-M2023-Q07",
+   "GS2-POL-15-M2013-S01",
+   "GS2-POL-15-M2014-S01",
+   "GS2-POL-15-M2015-S01",
+   "GS2-POL-15-M2016-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "pressure",
+  "cluster": "Constitution & Polity",
+  "title": "Pressure groups & interest representation",
+  "links": [
+   "civilsoc"
+  ],
+  "questions": [
+   "GS2-POL-11-M2026-S01",
+   "GS2-POL-11-M2021-S01",
+   "GS2-POL-11-M2019-S01",
+   "GS2-POL-11-M2017-S01",
+   "GS2-POL-11-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "policy",
+  "cluster": "Governance",
+  "title": "Policy design, implementation & people's participation",
+  "links": [
+   "localgov",
+   "civilsoc",
+   "regionalism"
+  ],
+  "questions": [
+   "GS2-GOV-01-M2026-S01",
+   "GS2-GOV-01-M2025-Q17",
+   "GS2-GOV-01-M2016-S01",
+   "GS2-GOV-01-M2016-S02",
+   "GS2-GOV-01-M2017-S01",
+   "GS2-GOV-01-M2014-S02",
+   "GS2-GOV-01-M2014-S01",
+   "GS1-SOC-04-M2018-S01"
+  ],
+  "also": {
+   "GS2-GOV-01-M2017-S01": [
+    "health"
+   ],
+   "GS2-GOV-01-M2016-S02": [
+    "fdi"
+   ],
+   "GS2-GOV-01-M2014-S01": [
+    "fdi"
+   ]
+  }
+ },
+ {
+  "key": "civilsoc",
+  "cluster": "Governance",
+  "title": "Civil society, NGOs, charitable trusts & donor agencies",
+  "links": [
+   "shg",
+   "policy"
+  ],
+  "questions": [
+   "GS2-GOV-02-M2025-Q08",
+   "GS2-GOV-02-M2024-Q06",
+   "GS2-GOV-02-M2022-Q17",
+   "GS2-GOV-02-M2021-S02",
+   "GS2-GOV-02-M2016-S01",
+   "GS2-GOV-02-M2015-S01",
+   "GS1-SOC-04-M2024-Q10"
+  ],
+  "also": {}
+ },
+ {
+  "key": "anticorrupt",
+  "cluster": "Governance",
+  "title": "Transparency, accountability & anti-corruption: RTI, whistleblowers, Lokpal, corporate governance",
+  "links": [
+   "citizen",
+   "commissions"
+  ],
+  "questions": [
+   "GS2-GOV-07-M2026-S01",
+   "GS2-GOV-07-M2020-S02",
+   "GS2-GOV-07-M2016-S01",
+   "GS2-GOV-07-M2015-S01",
+   "GS2-GOV-07-M2015-S02",
+   "GS2-POL-15-M2013-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "citizen",
+  "cluster": "Governance",
+  "title": "Citizens' Charter & citizen-centric administration",
+  "links": [
+   "anticorrupt"
+  ],
+  "questions": [
+   "GS2-GOV-07-M2024-Q16",
+   "GS2-GOV-07-M2018-S02",
+   "GS2-GOV-07-M2013-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "egov",
+  "cluster": "Governance",
+  "title": "E-governance & the digital divide",
+  "links": [
+   "dbt",
+   "digieco"
+  ],
+  "questions": [
+   "GS2-GOV-07-M2025-Q07",
+   "GS2-GOV-07-M2024-Q18",
+   "GS2-GOV-07-M2023-Q08",
+   "GS2-GOV-07-M2020-S01",
+   "GS2-GOV-07-M2018-S01",
+   "GS2-GOV-07-M2021-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "dbt",
+  "cluster": "Governance",
+  "title": "DBT, Aadhaar & digital welfare delivery",
+  "links": [
+   "subsidies",
+   "egov"
+  ],
+  "questions": [
+   "GS2-GOV-07-M2022-Q08",
+   "GS2-GOV-07-M2013-S01",
+   "GS2-GOV-07-M2014-S01",
+   "GS3-ECO-04-M2015-S01"
+  ],
+  "also": {
+   "GS3-ECO-04-M2015-S01": [
+    "subsidies"
+   ]
+  }
+ },
+ {
+  "key": "civilservices",
+  "cluster": "Governance",
+  "title": "Civil services in a democracy: ethos, neutrality, reforms",
+  "links": [
+   "consolidation"
+  ],
+  "questions": [
+   "GS2-GOV-08-M2026-S01",
+   "GS2-GOV-08-M2024-Q08",
+   "GS2-GOV-08-M2020-S01",
+   "GS2-GOV-08-M2017-S01",
+   "GS2-GOV-08-M2016-S01",
+   "GS2-GOV-08-M2014-S01",
+   "GS1-HIS-08-M2025-Q09"
+  ],
+  "also": {
+   "GS1-HIS-08-M2025-Q09": [
+    "consolidation"
+   ]
+  }
+ },
+ {
+  "key": "health",
+  "cluster": "Governance",
+  "title": "Public health system & universal health coverage",
+  "links": [
+   "hunger",
+   "pandemic"
+  ],
+  "questions": [
+   "GS2-GOV-04-M2024-Q17",
+   "GS2-GOV-04-M2021-S01",
+   "GS2-GOV-04-M2018-S01",
+   "GS2-GOV-04-M2015-S01",
+   "GS2-GOV-04-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "pandemic",
+  "cluster": "Governance",
+  "title": "Pandemics & global health: COVID-19, WHO, vaccines",
+  "links": [
+   "healthtech",
+   "un"
+  ],
+  "questions": [
+   "GS2-IR-06-M2020-S01",
+   "GS3-SCI-04-M2022-Q16",
+   "GS3-SCI-04-M2020-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "education",
+  "cluster": "Governance",
+  "title": "Education policy: NEP, RTE, higher education, exams",
+  "links": [
+   "skills",
+   "children"
+  ],
+  "questions": [
+   "GS2-GOV-05-M2026-S01",
+   "GS2-GOV-05-M2022-Q18",
+   "GS2-GOV-05-M2020-S01",
+   "GS2-GOV-05-M2016-S02",
+   "GS2-GOV-05-M2015-S01",
+   "GS2-GOV-05-M2014-S01",
+   "GS2-GOV-05-M2024-Q11"
+  ],
+  "also": {}
+ },
+ {
+  "key": "skills",
+  "cluster": "Governance",
+  "title": "Skills, HRD & the demographic dividend",
+  "links": [
+   "employment",
+   "education",
+   "population"
+  ],
+  "questions": [
+   "GS2-GOV-05-M2023-Q06",
+   "GS2-GOV-05-M2023-Q18",
+   "GS2-GOV-05-M2021-S01",
+   "GS2-GOV-05-M2016-S01",
+   "GS3-ECO-01-M2014-S02",
+   "GS3-ECO-05-M2015-S01"
+  ],
+  "also": {
+   "GS3-ECO-05-M2015-S01": [
+    "manufacturing"
+   ],
+   "GS3-ECO-01-M2014-S02": [
+    "employment"
+   ]
+  }
+ },
+ {
+  "key": "pakistan",
+  "cluster": "International Relations",
+  "title": "Pakistan & Afghanistan: terror, distrust, soft power, surgical strikes, ISAF withdrawal",
+  "links": [
+   "terror",
+   "centralasia"
+  ],
+  "questions": [
+   "GS2-IR-01-M2015-S01",
+   "GS3-SEC-02-M2016-S01",
+   "GS2-IR-01-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "china",
+  "cluster": "International Relations",
+  "title": "China: BRI, CPEC, String of Pearls & economic leverage",
+  "links": [
+   "border",
+   "neighbourhood"
+  ],
+  "questions": [
+   "GS2-IR-01-M2026-S01",
+   "GS2-IR-01-M2017-S01",
+   "GS2-IR-01-M2013-S02",
+   "GS3-SEC-02-M2018-S01",
+   "GS3-SEC-02-M2014-S02"
+  ],
+  "also": {
+   "GS3-SEC-02-M2018-S01": [
+    "border"
+   ],
+   "GS3-SEC-02-M2014-S02": [
+    "border"
+   ]
+  }
+ },
+ {
+  "key": "neighbourhood",
+  "cluster": "International Relations",
+  "title": "Neighbourhood: Sri Lanka, Maldives, Bangladesh, Project Mausam",
+  "links": [
+   "indopacific",
+   "maritime"
+  ],
+  "questions": [
+   "GS2-IR-02-M2024-Q20",
+   "GS2-IR-02-M2022-Q09",
+   "GS2-IR-02-M2013-S01",
+   "GS2-IR-02-M2013-S02",
+   "GS2-IR-02-M2013-S03",
+   "GS2-IR-02-M2015-S01"
+  ],
+  "also": {
+   "GS2-IR-02-M2024-Q20": [
+    "maritime"
+   ]
+  }
+ },
+ {
+  "key": "indopacific",
+  "cluster": "International Relations",
+  "title": "Indo-Pacific, Quad, AUKUS & sea lanes: straits, South China Sea, trade shift",
+  "links": [
+   "maritime",
+   "china"
+  ],
+  "questions": [
+   "GS1-GEO-06-M2026-S01",
+   "GS1-GEO-03-M2022-Q16",
+   "GS1-GEO-03-M2016-S01",
+   "GS2-IR-01-M2014-S01",
+   "GS2-IR-04-M2026-S01",
+   "GS2-IR-04-M2021-S02",
+   "GS2-IR-04-M2020-S01",
+   "GS2-IR-03-M2013-S01"
+  ],
+  "also": {
+   "GS2-IR-04-M2026-S01": [
+    "maritime"
+   ],
+   "GS2-IR-01-M2014-S01": [
+    "china"
+   ]
+  }
+ },
+ {
+  "key": "greatpower",
+  "cluster": "International Relations",
+  "title": "Great-power politics: US–China rivalry, NATO, China+1, Indo-US vs Indo-Russian defence",
+  "links": [
+   "indopacific"
+  ],
+  "questions": [
+   "GS2-IR-05-M2021-S01",
+   "GS2-IR-05-M2023-Q19",
+   "GS2-IR-05-M2024-Q09",
+   "GS2-IR-03-M2020-S01",
+   "GS2-IR-02-M2016-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "westasia",
+  "cluster": "International Relations",
+  "title": "West Asia: energy security, Israel, Iran, I2U2",
+  "links": [
+   "energysec"
+  ],
+  "questions": [
+   "GS2-IR-03-M2025-Q19",
+   "GS2-IR-03-M2017-S01",
+   "GS2-IR-03-M2018-S01",
+   "GS2-IR-03-M2018-S03",
+   "GS2-IR-04-M2022-Q19"
+  ],
+  "also": {}
+ },
+ {
+  "key": "centralasia",
+  "cluster": "International Relations",
+  "title": "Central Asia: connectivity & strategic presence",
+  "links": [],
+  "questions": [
+   "GS2-IR-03-M2024-Q10",
+   "GS2-IR-03-M2018-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "africa",
+  "cluster": "International Relations",
+  "title": "India & Africa: resources, digital partnership, influence",
+  "links": [
+   "mining"
+  ],
+  "questions": [
+   "GS2-IR-03-M2025-Q09",
+   "GS2-IR-03-M2021-S01",
+   "GS2-IR-03-M2015-S01",
+   "GS1-GEO-05-M2014-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "groupings",
+  "cluster": "International Relations",
+  "title": "Regional & multilateral groupings: SCO, BRICS, NDB/AIIB, BIMSTEC, SAARC",
+  "links": [
+   "un"
+  ],
+  "questions": [
+   "GS2-IR-04-M2023-Q09",
+   "GS2-IR-04-M2021-S01",
+   "GS2-IR-04-M2026-S02",
+   "GS2-IR-04-M2014-S01",
+   "GS2-IR-04-M2022-Q10",
+   "GS2-IR-04-M2016-S01"
+  ],
+  "also": {
+   "GS2-IR-04-M2016-S01": [
+    "pakistan",
+    "terror"
+   ]
+  }
+ },
+ {
+  "key": "diaspora",
+  "cluster": "International Relations",
+  "title": "Indian diaspora: from indentured labour to strategic asset",
+  "links": [
+   "migration"
+  ],
+  "questions": [
+   "GS2-IR-05-M2026-S01",
+   "GS2-IR-05-M2023-Q10",
+   "GS2-IR-05-M2020-S01",
+   "GS2-IR-05-M2017-S01",
+   "GS1-HIS-02-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "wto",
+  "cluster": "International Relations",
+  "title": "WTO, trade wars & protectionism",
+  "links": [
+   "subsidies"
+  ],
+  "questions": [
+   "GS2-IR-06-M2018-S01",
+   "GS2-IR-06-M2016-S01",
+   "GS2-IR-06-M2014-S01",
+   "GS2-IR-06-M2014-S03",
+   "GS3-ECO-08-M2025-Q02",
+   "GS3-ECO-08-M2018-S01",
+   "GS2-IR-05-M2025-Q10",
+   "GS3-ECO-08-M2015-S01"
+  ],
+  "also": {
+   "GS2-IR-06-M2014-S03": [
+    "hunger",
+    "subsidies"
+   ],
+   "GS3-ECO-08-M2015-S01": [
+    "fininc"
+   ]
+  }
+ },
+ {
+  "key": "un",
+  "cluster": "International Relations",
+  "title": "UN reform, Bretton Woods & global governance",
+  "links": [
+   "greatpower"
+  ],
+  "questions": [
+   "GS2-IR-06-M2025-Q20",
+   "GS2-IR-06-M2015-S01",
+   "GS2-IR-06-M2017-S01",
+   "GS2-IR-06-M2016-S02",
+   "GS2-IR-06-M2013-S01",
+   "GS2-IR-06-M2014-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "climateregime",
+  "cluster": "International Relations",
+  "title": "Global climate regime & India's commitments: Kyoto, Paris, COP26, ISA, CCUS",
+  "links": [
+   "renewables",
+   "climateimpact"
+  ],
+  "questions": [
+   "GS3-ENV-03-M2025-Q18",
+   "GS3-ENV-03-M2022-Q17",
+   "GS3-ENV-03-M2021-S02",
+   "GS3-ENV-03-M2021-S01",
+   "GS3-ENV-03-M2014-S01",
+   "GS2-IR-06-M2022-Q20",
+   "GS3-ENV-03-M2025-Q07"
+  ],
+  "also": {}
+ },
+ {
+  "key": "growth",
+  "cluster": "Indian Economy",
+  "title": "Growth: GDP measurement, potential GDP, savings, structure of growth",
+  "links": [
+   "manufacturing"
+  ],
+  "questions": [
+   "GS3-ECO-01-M2021-S01",
+   "GS3-ECO-01-M2021-S02",
+   "GS3-ECO-01-M2020-S01",
+   "GS3-ECO-01-M2017-S01",
+   "GS3-ECO-01-M2014-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "planning",
+  "cluster": "Indian Economy",
+  "title": "Planning: Nehruvian planning, Soviet influence, NITI Aayog",
+  "links": [
+   "consolidation",
+   "regionalism"
+  ],
+  "questions": [
+   "GS1-HIS-08-M2026-S02",
+   "GS1-WH-03-M2014-S01",
+   "GS3-ECO-01-M2018-S01"
+  ],
+  "also": {
+   "GS1-HIS-08-M2026-S02": [
+    "regionalism"
+   ],
+   "GS1-WH-03-M2014-S01": [
+    "worldwars"
+   ]
+  }
+ },
+ {
+  "key": "employment",
+  "cluster": "Indian Economy",
+  "title": "Employment: jobless growth, informality, unemployment measurement, labour productivity",
+  "links": [
+   "skills",
+   "manufacturing"
+  ],
+  "questions": [
+   "GS3-ECO-01-M2023-Q11",
+   "GS3-ECO-01-M2015-S01",
+   "GS3-ECO-01-M2016-S01",
+   "GS3-ECO-01-M2022-Q11"
+  ],
+  "also": {}
+ },
+ {
+  "key": "manufacturing",
+  "cluster": "Indian Economy",
+  "title": "Manufacturing, MSMEs, startups & industrial policy: PLI, SEZs, labour codes",
+  "links": [
+   "employment",
+   "fdi"
+  ],
+  "questions": [
+   "GS3-ECO-05-M2023-Q01",
+   "GS3-ECO-05-M2017-S02",
+   "GS3-ECO-05-M2017-S01",
+   "GS3-ECO-05-M2025-Q12",
+   "GS3-ECO-05-M2015-S02",
+   "GS3-ECO-05-M2024-Q11",
+   "GS3-ECO-05-M2026-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "fdi",
+  "cluster": "Indian Economy",
+  "title": "Liberalisation & FDI: retail, defence, Indian firms vs MNCs",
+  "links": [
+   "manufacturing"
+  ],
+  "questions": [
+   "GS3-ECO-05-M2016-S01",
+   "GS3-ECO-05-M2014-S01",
+   "GS3-ECO-05-M2013-S02",
+   "GS3-ECO-05-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "digieco",
+  "cluster": "Indian Economy",
+  "title": "Digital economy & digital currency: digitalisation, CBDC",
+  "links": [
+   "fininc",
+   "cyber"
+  ],
+  "questions": [
+   "GS3-ECO-01-M2023-Q02",
+   "GS3-ECO-03-M2026-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "fininc",
+  "cluster": "Indian Economy",
+  "title": "Financial inclusion & rural credit",
+  "links": [
+   "inclusive",
+   "shg",
+   "dbt"
+  ],
+  "questions": [
+   "GS3-ECO-03-M2026-S02",
+   "GS3-ECO-03-M2016-S01",
+   "GS3-ECO-03-M2014-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "inflation",
+  "cluster": "Indian Economy",
+  "title": "Inflation, monetary policy & the poor",
+  "links": [
+   "pds",
+   "agrimarket",
+   "poverty"
+  ],
+  "questions": [
+   "GS3-ECO-03-M2024-Q02",
+   "GS2-GOV-06-M2022-Q16"
+  ],
+  "also": {}
+ },
+ {
+  "key": "budget",
+  "cluster": "Indian Economy",
+  "title": "Budgeting & fiscal policy: capital vs revenue, FRBM, tax expenditure, budgets",
+  "links": [
+   "fiscalfed"
+  ],
+  "questions": [
+   "GS3-ECO-04-M2021-S01",
+   "GS3-ECO-04-M2018-S01",
+   "GS3-ECO-04-M2017-S01",
+   "GS3-ECO-04-M2013-S01",
+   "GS3-ECO-04-M2013-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "infra",
+  "cluster": "Indian Economy",
+  "title": "Infrastructure & investment models: PPP, Gati Shakti, concession agreements",
+  "links": [
+   "budget"
+  ],
+  "questions": [
+   "GS3-ECO-07-M2022-Q01",
+   "GS3-ECO-07-M2020-S01",
+   "GS3-ECO-07-M2017-S01",
+   "GS3-ECO-07-M2014-S01",
+   "GS3-ECO-07-M2013-S01",
+   "GS3-ECO-07-M2021-S01",
+   "GS2-GOV-01-M2022-Q06"
+  ],
+  "also": {}
+ },
+ {
+  "key": "transport",
+  "cluster": "Indian Economy",
+  "title": "Transport connectivity: tolling, UDAN, inland waterways, urban transport",
+  "links": [
+   "infra",
+   "smartcity"
+  ],
+  "questions": [
+   "GS3-ECO-07-M2024-Q06",
+   "GS3-ECO-07-M2024-Q12",
+   "GS1-GEO-06-M2016-S01",
+   "GS3-ECO-07-M2014-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "greenrev",
+  "cluster": "Agriculture & Food",
+  "title": "Green Revolution & food self-sufficiency: rice–wheat system, technology missions",
+  "links": [
+   "cropping",
+   "groundwater"
+  ],
+  "questions": [
+   "GS1-GEO-06-M2023-Q17",
+   "GS1-GEO-06-M2014-S02",
+   "GS3-AGR-01-M2026-S02",
+   "GS3-AGR-01-M2017-S01",
+   "GS3-AGR-01-M2020-S01",
+   "GS3-AGR-01-M2026-S01"
+  ],
+  "also": {
+   "GS3-AGR-01-M2020-S01": [
+    "groundwater"
+   ],
+   "GS1-GEO-06-M2014-S02": [
+    "regionalism"
+   ]
+  }
+ },
+ {
+  "key": "cropping",
+  "cluster": "Agriculture & Food",
+  "title": "Cropping patterns & crop diversification: horticulture, pulses, millets",
+  "links": [
+   "subsidies"
+  ],
+  "questions": [
+   "GS3-AGR-01-M2025-Q03",
+   "GS3-AGR-01-M2023-Q13",
+   "GS3-AGR-01-M2021-S02",
+   "GS3-AGR-01-M2018-S02",
+   "GS3-AGR-01-M2017-S02",
+   "GS3-AGR-01-M2016-S02",
+   "GS3-AGR-01-M2018-S01",
+   "GS1-GEO-07-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "agrimarket",
+  "cluster": "Agriculture & Food",
+  "title": "Agricultural marketing & supply chains: APMC, intermediaries",
+  "links": [
+   "foodproc",
+   "agritech"
+  ],
+  "questions": [
+   "GS3-AGR-02-M2026-S01",
+   "GS3-AGR-02-M2025-Q04",
+   "GS3-AGR-02-M2022-Q13",
+   "GS3-AGR-02-M2020-S01",
+   "GS3-AGR-02-M2018-S01",
+   "GS3-AGR-02-M2014-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "agritech",
+  "cluster": "Agriculture & Food",
+  "title": "Technology in agriculture: e-technology, Digital India, nano, satellites",
+  "links": [
+   "agrimarket",
+   "space"
+  ],
+  "questions": [
+   "GS3-AGR-02-M2023-Q03",
+   "GS3-AGR-02-M2015-S01",
+   "GS3-SCI-04-M2025-Q15",
+   "GS3-SCI-01-M2020-S01",
+   "GS1-GEO-07-M2026-S02"
+  ],
+  "also": {
+   "GS1-GEO-07-M2026-S02": [
+    "space",
+    "climateimpact"
+   ]
+  }
+ },
+ {
+  "key": "subsidies",
+  "cluster": "Agriculture & Food",
+  "title": "Farm subsidies, MSP & crop insurance (incl. WTO Agreement on Agriculture)",
+  "links": [
+   "wto",
+   "cropping"
+  ],
+  "questions": [
+   "GS3-AGR-03-M2026-S01",
+   "GS3-AGR-03-M2023-Q14",
+   "GS3-AGR-03-M2013-S01",
+   "GS3-AGR-03-M2017-S01",
+   "GS3-AGR-03-M2018-S01",
+   "GS3-AGR-03-M2016-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "pds",
+  "cluster": "Agriculture & Food",
+  "title": "PDS & buffer stocks",
+  "links": [
+   "hunger",
+   "dbt"
+  ],
+  "questions": [
+   "GS3-AGR-03-M2022-Q03",
+   "GS3-AGR-03-M2024-Q14"
+  ],
+  "also": {}
+ },
+ {
+  "key": "foodproc",
+  "cluster": "Agriculture & Food",
+  "title": "Food processing industry",
+  "links": [
+   "agrimarket"
+  ],
+  "questions": [
+   "GS3-AGR-04-M2026-S01",
+   "GS3-AGR-04-M2025-Q14",
+   "GS3-AGR-04-M2022-Q04",
+   "GS3-AGR-04-M2020-S01",
+   "GS3-AGR-04-M2017-S01",
+   "GS3-AGR-04-M2015-S01",
+   "GS3-AGR-04-M2013-S01"
+  ],
+  "also": {
+   "GS3-AGR-04-M2026-S01": [
+    "biotech"
+   ]
+  }
+ },
+ {
+  "key": "landreform",
+  "cluster": "Agriculture & Food",
+  "title": "Land reforms, tenancy & land acquisition: from Bhoodan to the 2013 Act",
+  "links": [
+   "consolidation",
+   "tribal"
+  ],
+  "questions": [
+   "GS3-AGR-05-M2024-Q03",
+   "GS3-AGR-05-M2023-Q04",
+   "GS3-AGR-05-M2021-S01",
+   "GS3-AGR-05-M2016-S01",
+   "GS3-AGR-05-M2013-S01",
+   "GS3-AGR-05-M2016-S03",
+   "GS3-AGR-05-M2014-S01",
+   "GS1-HIS-08-M2013-S01"
+  ],
+  "also": {
+   "GS1-HIS-08-M2013-S01": [
+    "consolidation"
+   ],
+   "GS3-AGR-05-M2014-S01": [
+    "eia",
+    "tribal"
+   ]
+  }
+ },
+ {
+  "key": "allied",
+  "cluster": "Agriculture & Food",
+  "title": "Allied & sustainable farming: livestock, fisheries, integrated & organic farming",
+  "links": [],
+  "questions": [
+   "GS3-AGR-05-M2016-S02",
+   "GS3-AGR-05-M2022-Q14",
+   "GS3-AGR-05-M2018-S01",
+   "GS1-GEO-06-M2018-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "space",
+  "cluster": "Science & Technology",
+  "title": "Space & geospatial technology: Chandrayaan, JWST, NavIC, asteroids, GIS",
+  "links": [],
+  "questions": [
+   "GS3-SCI-02-M2023-Q16",
+   "GS3-SCI-02-M2022-Q15",
+   "GS3-SCI-02-M2024-Q16",
+   "GS3-SCI-02-M2017-S01",
+   "GS3-SCI-02-M2016-S01",
+   "GS3-SCI-02-M2026-S01",
+   "GS1-GEO-06-M2018-S01",
+   "GS3-SCI-02-M2015-S01",
+   "GS1-GEO-06-M2025-Q15"
+  ],
+  "also": {}
+ },
+ {
+  "key": "aitech",
+  "cluster": "Science & Technology",
+  "title": "AI, semiconductors, robotics & emerging digital tech",
+  "links": [
+   "healthtech"
+  ],
+  "questions": [
+   "GS3-SCI-03-M2026-S01",
+   "GS3-SCI-03-M2025-Q16",
+   "GS3-SCI-03-M2023-Q05",
+   "GS3-SCI-03-M2015-S01",
+   "GS3-SCI-03-M2013-S01"
+  ],
+  "also": {
+   "GS3-SCI-03-M2023-Q05": [
+    "healthtech",
+    "rights"
+   ]
+  }
+ },
+ {
+  "key": "biotech",
+  "cluster": "Science & Technology",
+  "title": "Biotechnology: applications, biopharma, microbes for fuel",
+  "links": [
+   "energysec"
+  ],
+  "questions": [
+   "GS3-SCI-04-M2021-S01",
+   "GS3-SCI-04-M2018-S01",
+   "GS3-SCI-04-M2023-Q06"
+  ],
+  "also": {
+   "GS3-SCI-04-M2023-Q06": [
+    "energysec"
+   ]
+  }
+ },
+ {
+  "key": "healthtech",
+  "cluster": "Science & Technology",
+  "title": "Health technology & pharma: AMR, FDCs, stem cells, nanomedicine",
+  "links": [
+   "health"
+  ],
+  "questions": [
+   "GS3-SCI-04-M2014-S01",
+   "GS3-SCI-04-M2013-S01",
+   "GS3-SCI-04-M2017-S01",
+   "GS3-SCI-04-M2020-S01",
+   "GS3-SCI-04-M2016-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "ipr",
+  "cluster": "Science & Technology",
+  "title": "Intellectual property rights: patents, 3(d), TKDL, life forms",
+  "links": [
+   "wto"
+  ],
+  "questions": [
+   "GS3-SCI-05-M2024-Q05",
+   "GS3-SCI-05-M2015-S01",
+   "GS3-SCI-05-M2014-S01",
+   "GS3-SCI-05-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "nuclear",
+  "cluster": "Science & Technology",
+  "title": "Nuclear & fusion energy: FBR, ITER, raw materials",
+  "links": [
+   "energysec"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2013-S01",
+   "GS3-SCI-01-M2026-S01",
+   "GS3-SCI-01-M2025-Q05",
+   "GS3-SCI-01-M2018-S02",
+   "GS3-SCI-01-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "sciday",
+  "cluster": "Science & Technology",
+  "title": "Science in everyday life & Indian scientific achievement",
+  "links": [
+   "education"
+  ],
+  "questions": [
+   "GS3-SCI-01-M2021-S02",
+   "GS3-SCI-01-M2018-S01",
+   "GS3-SCI-01-M2022-Q06",
+   "GS3-SCI-01-M2013-S01",
+   "GS3-SCI-01-M2013-S02",
+   "GS3-SCI-01-M2021-S01",
+   "GS3-SCI-01-M2014-S01"
+  ],
+  "also": {
+   "GS3-SCI-01-M2014-S01": [
+    "education"
+   ]
+  }
+ },
+ {
+  "key": "renewables",
+  "cluster": "Energy & Environment",
+  "title": "Renewable energy transition: solar, wind, EVs, green corridor",
+  "links": [
+   "climateregime"
+  ],
+  "questions": [
+   "GS1-GEO-05-M2025-Q06",
+   "GS1-GEO-05-M2022-Q07",
+   "GS1-GEO-05-M2020-S02",
+   "GS3-ECO-06-M2022-Q12",
+   "GS3-ECO-06-M2020-S01",
+   "GS3-ECO-06-M2016-S01",
+   "GS3-ECO-06-M2015-S01",
+   "GS3-ECO-06-M2013-S01",
+   "GS3-ECO-06-M2023-Q15"
+  ],
+  "also": {}
+ },
+ {
+  "key": "energysec",
+  "cluster": "Energy & Environment",
+  "title": "Energy security & energy independence",
+  "links": [
+   "renewables",
+   "westasia",
+   "nuclear"
+  ],
+  "questions": [
+   "GS3-ECO-06-M2026-S01",
+   "GS3-ECO-06-M2025-Q06",
+   "GS3-ECO-06-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "airpoll",
+  "cluster": "Energy & Environment",
+  "title": "Air pollution: smog, WHO guidelines, NCAP",
+  "links": [
+   "atmosphere"
+  ],
+  "questions": [
+   "GS1-GEO-02-M2015-S01",
+   "GS3-ENV-02-M2022-Q07",
+   "GS3-ENV-02-M2021-S01",
+   "GS3-ENV-02-M2020-S01"
+  ],
+  "also": {
+   "GS1-GEO-02-M2015-S01": [
+    "atmosphere"
+   ]
+  }
+ },
+ {
+  "key": "riverpoll",
+  "cluster": "Energy & Environment",
+  "title": "River pollution & Ganga cleaning",
+  "links": [
+   "water"
+  ],
+  "questions": [
+   "GS3-ENV-02-M2024-Q07",
+   "GS3-ENV-02-M2015-S01",
+   "GS3-ENV-02-M2013-S02"
+  ],
+  "also": {}
+ },
+ {
+  "key": "waste",
+  "cluster": "Energy & Environment",
+  "title": "Solid & hazardous waste management",
+  "links": [
+   "localgov"
+  ],
+  "questions": [
+   "GS3-ENV-02-M2026-S01",
+   "GS3-ENV-02-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "eia",
+  "cluster": "Energy & Environment",
+  "title": "Environmental Impact Assessment & project displacement",
+  "links": [
+   "tribal",
+   "envconst"
+  ],
+  "questions": [
+   "GS3-ENV-03-M2020-S01",
+   "GS3-ENV-03-M2016-S01",
+   "GS3-ENV-03-M2014-S02",
+   "GS3-ENV-03-M2024-Q08"
+  ],
+  "also": {
+   "GS3-ENV-03-M2024-Q08": [
+    "envconst"
+   ]
+  }
+ },
+ {
+  "key": "climateimpact",
+  "cluster": "Energy & Environment",
+  "title": "Climate change impacts on India: food security, Himalayan & coastal states",
+  "links": [
+   "glaciers",
+   "greenrev"
+  ],
+  "questions": [
+   "GS1-GEO-07-M2023-Q04",
+   "GS3-ENV-03-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "dmframe",
+  "cluster": "Disaster Management",
+  "title": "Disaster management frameworks: DM Act, Sendai, resilience, community, dam safety",
+  "links": [
+   "quakes",
+   "urbfloods"
+  ],
+  "questions": [
+   "GS3-DM-01-M2026-S02",
+   "GS3-DM-01-M2024-Q17",
+   "GS3-DM-01-M2020-S01",
+   "GS3-DM-01-M2018-S01",
+   "GS3-DM-01-M2013-S01",
+   "GS3-DM-01-M2023-Q07"
+  ],
+  "also": {}
+ },
+ {
+  "key": "lwe",
+  "cluster": "Internal Security",
+  "title": "Left Wing Extremism: development–security linkage",
+  "links": [
+   "tribal",
+   "eia"
+  ],
+  "questions": [
+   "GS3-SEC-01-M2025-Q10",
+   "GS3-SEC-01-M2022-Q20",
+   "GS3-SEC-01-M2020-S01",
+   "GS3-SEC-01-M2018-S01",
+   "GS3-SEC-01-M2015-S01",
+   "GS3-SEC-01-M2013-S01"
+  ],
+  "also": {
+   "GS3-SEC-01-M2013-S01": [
+    "tribal"
+   ],
+   "GS3-SEC-01-M2015-S01": [
+    "tribal",
+    "eia"
+   ]
+  }
+ },
+ {
+  "key": "northeast",
+  "cluster": "Internal Security",
+  "title": "North-East insurgency & peace accords",
+  "links": [
+   "specialprov"
+  ],
+  "questions": [
+   "GS3-SEC-01-M2025-Q19",
+   "GS3-SEC-01-M2017-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "terror",
+  "cluster": "Internal Security",
+  "title": "Terrorism & external state/non-state actors",
+  "links": [
+   "terrorfin",
+   "socialmedia"
+  ],
+  "questions": [
+   "GS3-SEC-02-M2025-Q09",
+   "GS3-SEC-02-M2021-S01",
+   "GS3-SEC-02-M2021-S02",
+   "GS3-SEC-02-M2017-S01",
+   "GS3-SEC-02-M2016-S02",
+   "GS3-SEC-02-M2015-S01",
+   "GS2-IR-06-M2024-Q19"
+  ],
+  "also": {
+   "GS3-SEC-02-M2015-S01": [
+    "socialmedia"
+   ],
+   "GS2-IR-06-M2024-Q19": [
+    "un"
+   ]
+  }
+ },
+ {
+  "key": "terrorfin",
+  "cluster": "Internal Security",
+  "title": "Terror financing & money laundering: FATF, NMFT, PMLA",
+  "links": [
+   "terror",
+   "organised"
+  ],
+  "questions": [
+   "GS3-SEC-02-M2026-S02",
+   "GS3-SEC-02-M2023-Q20",
+   "GS3-SEC-03-M2021-S01",
+   "GS3-SEC-03-M2013-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "cyber",
+  "cluster": "Internal Security",
+  "title": "Cyber security & cyber warfare",
+  "links": [
+   "dataprot"
+  ],
+  "questions": [
+   "GS3-SEC-03-M2022-Q19",
+   "GS3-SEC-03-M2021-S02",
+   "GS3-SEC-03-M2020-S01",
+   "GS3-SEC-03-M2017-S01",
+   "GS3-SEC-03-M2015-S01",
+   "GS3-SEC-03-M2015-S02",
+   "GS3-SEC-03-M2013-S03"
+  ],
+  "also": {}
+ },
+ {
+  "key": "dataprot",
+  "cluster": "Internal Security",
+  "title": "Data protection: DPDP Act 2023, Srikrishna Committee",
+  "links": [
+   "rights",
+   "cyber"
+  ],
+  "questions": [
+   "GS3-SEC-03-M2024-Q10",
+   "GS3-SEC-03-M2018-S01"
+  ],
+  "also": {
+   "GS3-SEC-03-M2024-Q10": [
+    "rights"
+   ],
+   "GS3-SEC-03-M2018-S01": [
+    "rights"
+   ]
+  }
+ },
+ {
+  "key": "socialmedia",
+  "cluster": "Internal Security",
+  "title": "Social media, disinformation & public order: mob violence, IT Rules",
+  "links": [
+   "speech",
+   "communalism"
+  ],
+  "questions": [
+   "GS3-SEC-03-M2026-S01",
+   "GS3-SEC-03-M2024-Q20",
+   "GS3-SEC-03-M2016-S01",
+   "GS3-SEC-03-M2013-S02",
+   "GS3-SEC-03-M2017-S02"
+  ],
+  "also": {
+   "GS3-SEC-03-M2026-S01": [
+    "speech"
+   ],
+   "GS3-SEC-03-M2017-S02": [
+    "communalism"
+   ]
+  }
+ },
+ {
+  "key": "border",
+  "cluster": "Internal Security",
+  "title": "Border management: China & Pakistan borders, BADP, drones, airspace, Ladakh",
+  "links": [
+   "china",
+   "organised"
+  ],
+  "questions": [
+   "GS3-SEC-04-M2026-S01",
+   "GS3-SEC-04-M2024-Q19",
+   "GS3-SEC-04-M2020-S01",
+   "GS3-SEC-04-M2020-S02",
+   "GS3-SEC-04-M2016-S01",
+   "GS3-SEC-04-M2013-S01",
+   "GS3-SEC-04-M2023-Q10",
+   "GS3-SEC-04-M2014-S01"
+  ],
+  "also": {
+   "GS3-SEC-04-M2026-S01": [
+    "specialprov"
+   ],
+   "GS3-SEC-04-M2024-Q19": [
+    "china"
+   ]
+  }
+ },
+ {
+  "key": "organised",
+  "cluster": "Internal Security",
+  "title": "Organised crime & narco-terrorism",
+  "links": [
+   "terrorfin",
+   "border"
+  ],
+  "questions": [
+   "GS3-SEC-04-M2024-Q09",
+   "GS3-SEC-04-M2022-Q09",
+   "GS3-SEC-04-M2018-S01"
+  ],
+  "also": {}
+ },
+ {
+  "key": "maritime",
+  "cluster": "Internal Security",
+  "title": "Maritime & coastal security: piracy, IMO",
+  "links": [
+   "indopacific",
+   "coastal"
+  ],
+  "questions": [
+   "GS3-SEC-04-M2025-Q20",
+   "GS3-SEC-04-M2022-Q10",
+   "GS3-SEC-04-M2014-S03",
+   "GS2-IR-06-M2023-Q20"
+  ],
+  "also": {}
+ },
+ {
+  "key": "forces",
+  "cluster": "Internal Security",
+  "title": "Security forces, intelligence agencies & AFSPA",
+  "links": [
+   "northeast",
+   "commissions"
+  ],
+  "questions": [
+   "GS3-SEC-05-M2023-Q19",
+   "GS3-SEC-05-M2015-S01"
+  ],
+  "also": {
+   "GS3-SEC-05-M2015-S01": [
+    "commissions"
+   ]
+  }
+ }
+]

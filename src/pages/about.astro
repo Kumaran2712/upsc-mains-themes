@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { themes, totalQuestions, syllabus, source, u, issueUrl } from '../lib/data';
+---
+<Base title="About and sources" description="How the GS Mains Theme Atlas was built: sources of the UPSC questions, how themes were formed, known gaps, and how to report an error." crumbs={[{ name: 'About', href: u('/about/') }]}>
+  <h1>About this atlas</h1>
+  <p>A free, non-commercial study aid for UPSC Civil Services aspirants. It regroups {totalQuestions} GS1, GS2 and GS3 Mains questions (2013–2026) into {themes.length} themes so related topics from different papers can be prepared together.</p>
+  <h2>Sources</h2>
+  <ul>
+    <li>Questions: Civil Services (Main) Examination papers published by the <a href={source.official} rel="noopener">Union Public Service Commission</a>. Copyright, if any, remains with UPSC.</li>
+    <li>Syllabus: the GS Mains syllabus in the CSE notification ({syllabus.length} lines across GS1–GS3).</li>
+  </ul>
+  <h2>How themes were formed</h2>
+  <p>The theme map and prep notes are this site's own work. Each question was read against the syllabus and placed in the one theme it fits best. Where answering it well needs another theme, that theme is linked on the question ("Also needs") or on the theme ("Linked themes"). Counts, years and directive words are computed from the data.</p>
+  <h2>Known gaps</h2>
+  <ul>
+    <li>2019 is missing for GS1 and GS3; GS2 2019 has 10 questions.</li>
+    <li>Question text is being checked against the official papers. Some entries may still carry typos from the compilation they came from.</li>
+    <li>Marks are missing for most questions before 2022.</li>
+  </ul>
+  {issueUrl() && <>
+  <h2>Report an error</h2>
+  <p>Every question has a "Report a typo" link that opens a GitHub issue with its ID. You can also <a href={issueUrl()} rel="noopener" data-umami-event="report-error" data-umami-event-where="about">open an issue directly</a>.</p>
+  </>}
+  <h2>Privacy</h2>
+  <p>This site counts visits and clicks with Umami, which uses no cookies and collects no personal data. Browsers that send "Do Not Track" are not counted.</p>
+</Base>

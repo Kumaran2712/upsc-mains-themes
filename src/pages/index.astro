@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import ThemeCard from '../components/ThemeCard.astro';
+import { themes, clusters, totalQuestions, syllabus, u, themeUrl } from '../lib/data';
+const cross = themes.filter((t) => t.cross).length;
+const top = [...themes].sort((a, b) => b.count - a.count || b.recent - a.recent || a.n - b.n).slice(0, 12);
+const desc = `Prepare UPSC GS Mains by theme, not by paper. ${totalQuestions} GS1, GS2 and GS3 PYQs (2013–2026) grouped into ${themes.length} cross-paper themes with what UPSC asks and how to prepare.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'GS Mains Theme Atlas', url: new URL(u('/'), Astro.site).href,
+  description: desc, inLanguage: 'en-IN',
+  potentialAction: { '@type': 'SearchAction', target: new URL(u('/search/'), Astro.site).href + '?q={query}', 'query-input': 'required name=query' } }];
+---
+<Base title="GS Mains Theme Atlas" description={desc} jsonld={ld}>
+  <p class="eyebrow">UPSC Civil Services · GS Mains PYQs</p>
+  <h1>Prepare GS Mains by theme, not by paper</h1>
+  <p class="lead">The GS syllabus is interlinked: women's empowerment shows up in GS1 society, GS2 governance and GS3 economy. This atlas groups every GS1–GS3 Mains PYQ from 2013 to 2026 into themes that cut across papers, then shows what UPSC keeps asking, what to prepare, and how to write the answer.</p>
+  <div class="facts">
+    <div><b>{themes.length}</b><span>themes</span></div>
+    <div><b>{totalQuestions}</b><span>PYQs, 2013–2026</span></div>
+    <div><b>{cross}</b><span>themes span 2+ papers</span></div>
+    <div><b>{syllabus.length}/{syllabus.length}</b><span>syllabus lines covered</span></div>
+  </div>
+  <p><a class="chip" href={u('/themes/')} data-umami-event="home-cta" data-umami-event-target="themes">Browse all themes</a> <a class="chip" href={u('/search/')} data-umami-event="home-cta" data-umami-event-target="search">Search a topic</a> <a class="chip" href={u('/syllabus/')} data-umami-event="home-cta" data-umami-event-target="syllabus">Start from the syllabus</a></p>
+
+  <h2>Most-asked themes</h2>
+  <ul class="tlist">{top.map((t) => <ThemeCard t={t} />)}</ul>
+
+  <h2>All themes by area</h2>
+  {clusters.map((c) => {
+    const ts = themes.filter((t) => t.cluster === c.name);
+    return <section>
+      <h3><a href={u(`/topics/${c.slug}/`)}>{c.name}</a> <span class="eyebrow">· {ts.length} themes · {ts.reduce((s, t) => s + t.count, 0)} PYQs</span></h3>
+      <div class="chips">{ts.map((t) => <a class="chip" href={themeUrl(t)}>T{t.n} {t.title}</a>)}</div>
+    </section>;
+  })}
+</Base>

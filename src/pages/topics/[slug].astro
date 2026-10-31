@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemeCard from '../../components/ThemeCard.astro';
+import { themes, clusters, themeUrl, u } from '../../lib/data';
+export function getStaticPaths() { return clusters.map((c) => ({ params: { slug: c.slug }, props: { c } })); }
+const { c } = Astro.props as { c: { name: string; slug: string } };
+const ts = themes.filter((t) => t.cluster === c.name);
+const n = ts.reduce((s, t) => s + t.count, 0);
+const desc = `${c.name} for UPSC GS Mains: ${ts.length} themes and ${n} PYQs (2013–2026), linked across GS1, GS2 and GS3 with prep notes.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: `${c.name} — UPSC GS Mains themes`,
+  itemListElement: ts.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.title, url: new URL(themeUrl(t), Astro.site).href })) }];
+---
+<Base title={`${c.name}: UPSC Mains PYQs`} description={desc} jsonld={ld} crumbs={[{ name: c.name, href: u(`/topics/${c.slug}/`) }]}>
+  <h1>{c.name}</h1>
+  <p class="lead">{ts.length} themes · {n} PYQs. Open a theme to see what UPSC asks, what to prepare and every question.</p>
+  <ul class="tlist">{ts.map((t) => <ThemeCard t={t} />)}</ul>
+  <h2>Other areas</h2>
+  <div class="chips">{clusters.filter((x) => x.slug !== c.slug).map((x) => <a class="chip" href={u(`/topics/${x.slug}/`)}>{x.name}</a>)}</div>
+</Base>

@@ -1,0 +1,21 @@
+---
+import Base from '../../../layouts/Base.astro';
+import QuestionItem from '../../../components/QuestionItem.astro';
+import { allQuestions, papers, paperName, themeUrl, u } from '../../../lib/data';
+export function getStaticPaths() {
+  return papers.flatMap((p) => [...new Set(allQuestions.filter((q) => q.paper === p).map((q) => q.year))]
+    .map((y) => ({ params: { paper: p.toLowerCase(), year: String(y) }, props: { p, y } })));
+}
+const { p, y } = Astro.props as { p: string; y: number };
+const qs = allQuestions.filter((q) => q.paper === p && q.year === y).sort((a, b) => a.id.localeCompare(b.id));
+const years = [...new Set(allQuestions.filter((q) => q.paper === p).map((q) => q.year))].sort((a, b) => b - a);
+const desc = `UPSC CSE Mains ${y} ${p} questions (${qs.length}) with the cross-paper theme each belongs to, so you can prepare them alongside related GS1, GS2 and GS3 PYQs.`;
+---
+<Base title={`UPSC Mains ${y} ${p} questions`} description={desc}
+  crumbs={[{ name: p, href: u(`/papers/${p.toLowerCase()}/`) }, { name: String(y), href: u(`/papers/${p.toLowerCase()}/${y}/`) }]}>
+  <h1>UPSC Mains {y} — {p} questions</h1>
+  <p class="lead">{paperName[p]}. {qs.length} questions in this collection, each linked to its theme.</p>
+  <ol class="qs">{qs.map((q) => <QuestionItem q={q} showTheme={{ title: `T${q.theme.n} ${q.theme.title}`, href: themeUrl(q.theme) }} />)}</ol>
+  <h2>Other years</h2>
+  <div class="chips">{years.filter((x) => x !== y).map((x) => <a class="chip" href={u(`/papers/${p.toLowerCase()}/${x}/`)}>{p} {x}</a>)}</div>
+</Base>

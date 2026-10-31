@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import ThemeCard from '../../components/ThemeCard.astro';
+import { syllabus, syllabusThemes, paperName, u, clip } from '../../lib/data';
+export function getStaticPaths() { return syllabus.map((s) => ({ params: { id: s.id.toLowerCase() }, props: { s } })); }
+const { s } = Astro.props as { s: { id: string; text: string; paper: string } };
+const ts = syllabusThemes(s.id);
+const short = clip(s.text, 42);
+const desc = clip(`UPSC ${s.paper} Mains syllabus: "${s.text}" — ${ts.length} themes and their PYQs, with what to prepare for this syllabus line.`);
+---
+<Base title={`${s.paper} syllabus: ${short}`} description={desc}
+  crumbs={[{ name: 'Syllabus', href: u('/syllabus/') }, { name: s.id, href: u(`/syllabus/${s.id.toLowerCase()}/`) }]}>
+  <p class="eyebrow">{s.paper} · {paperName[s.paper]}</p>
+  <h1>{s.text}</h1>
+  <p class="lead">Syllabus line {s.id}. These {ts.length} themes have PYQs under it; several also draw on other papers.</p>
+  <ul class="tlist">{ts.map((t) => <ThemeCard t={t} />)}</ul>
+</Base>

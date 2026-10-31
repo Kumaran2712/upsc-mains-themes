@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import { u, totalQuestions } from '../lib/data';
+---
+<Base title="Search UPSC GS Mains PYQs and themes" description={`Search ${totalQuestions} UPSC GS Mains questions (2013–2026) and their cross-paper themes by keyword.`} crumbs={[{ name: 'Search', href: u('/search/') }]}>
+  <h1>Search</h1>
+  <form id="f" role="search" class="panel" style="display:flex;gap:8px;flex-wrap:wrap">
+    <label for="sq" class="eyebrow" style="width:100%">Search themes and question text</label>
+    <input id="sq" name="q" type="search" autocomplete="off" placeholder="e.g. federalism, groundwater, women" style="flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);min-width:0" />
+    <button class="btn" type="submit">Search</button>
+  </form>
+  <p id="st" class="lead" aria-live="polite" style="margin-top:12px">Type at least 3 letters.</p>
+  <div id="res"></div>
+  <script is:inline define:vars={{ idx: u('/search-index.json') }}>
+    (function () {
+      var data = null, sq = document.getElementById('sq'), st = document.getElementById('st'), res = document.getElementById('res'), timer = null, lastTracked = '';
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+      function mark(s, w) { var i = s.toLowerCase().indexOf(w); return i < 0 ? esc(s) : esc(s.slice(0, i)) + '<mark>' + esc(s.slice(i, i + w.length)) + '</mark>' + esc(s.slice(i + w.length)); }
+      function run(track) {
+        var w = sq.value.trim().toLowerCase();
+        if (w.length < 3 || !data) { res.innerHTML = ''; st.textContent = data ? 'Type at least 3 letters.' : 'Loading…'; return; }
+        var out = [], qn = 0;
+        data.forEach(function (t) {
+          var hitT = t.t.toLowerCase().indexOf(w) > -1;
+          var hq = t.q.filter(function (q) { return q[3].toLowerCase().indexOf(w) > -1; });
+          if (!hitT && !hq.length) return;
+          qn += hq.length;
+          out.push('<section class="panel" style="margin-bottom:10px"><h3 style="margin:0 0 6px"><a href="' + t.u + '">T' + t.n + ' ' + mark(t.t, w) + '</a></h3>' +
+            '<p class="eyebrow">' + t.c + ' PYQs in theme' + (hq.length ? ' · ' + hq.length + ' match' : '') + '</p>' +
+            hq.slice(0, 4).map(function (q) { return '<p style="margin:6px 0"><span class="pc ' + q[1].toLowerCase() + '">' + q[1] + '</span> <b>' + q[2] + '</b> ' + mark(q[3], w) + '</p>'; }).join('') +
+            (hq.length > 4 ? '<p><a href="' + t.u + '">See all ' + hq.length + ' matching questions</a></p>' : '') + '</section>');
+        });
+        res.innerHTML = out.join('');
+        st.textContent = out.length ? out.length + ' themes · ' + qn + ' questions match "' + sq.value.trim() + '"' : 'No match for "' + sq.value.trim() + '". Try a shorter word.';
+        if (track && w !== lastTracked && window.__track) { lastTracked = w; window.__track('search', { term: w.slice(0, 40), results: out.length }); }
+      }
+      sq.addEventListener('input', function () { run(false); clearTimeout(timer); timer = setTimeout(function () { run(true); }, 1500); });
+      document.getElementById('f').addEventListener('submit', function (e) { e.preventDefault(); run(true); });
+      var q0 = new URLSearchParams(location.search).get('q'); if (q0) sq.value = q0;
+      fetch(idx).then(function (r) { return r.json(); }).then(function (d) { data = d; run(!!q0); }).catch(function () { st.textContent = 'Search could not load. Refresh the page.'; });
+    })();
+  </script>
+</Base>

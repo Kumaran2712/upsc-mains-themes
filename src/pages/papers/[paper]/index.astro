@@ -1,0 +1,22 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ThemeCard from '../../../components/ThemeCard.astro';
+import { themes, allQuestions, papers, paperName, u, clip } from '../../../lib/data';
+export function getStaticPaths() { return papers.map((p) => ({ params: { paper: p.toLowerCase() }, props: { p } })); }
+const { p } = Astro.props as { p: string };
+const qs = allQuestions.filter((q) => q.paper === p);
+const years = [...new Set(qs.map((q) => q.year))].sort((a, b) => b - a);
+const ts = themes.filter((t) => t.papers[p] > 0).sort((a, b) => b.papers[p] - a.papers[p] || a.n - b.n);
+const desc = clip(`UPSC ${p} Mains PYQs: ${qs.length} questions from ${years[years.length - 1]}–${years[0]}, by year and by theme, linked to related GS1, GS2 and GS3 topics.`);
+---
+<Base title={`${p} Mains PYQs by year and theme`} description={desc} crumbs={[{ name: p, href: u(`/papers/${p.toLowerCase()}/`) }]}>
+  <div class="chips">{papers.map((x) => <a class="chip" href={u(`/papers/${x.toLowerCase()}/`)} aria-current={x === p ? 'page' : undefined}>{x}</a>)}</div>
+  <h1>{p} Mains PYQs</h1>
+  <p class="lead">{paperName[p]}. {qs.length} questions in this collection.</p>
+  <h2>By year</h2>
+  <div class="tablewrap"><table><thead><tr><th>Year</th><th class="num">Questions</th></tr></thead>
+    <tbody>{years.map((y) => <tr><td><a href={u(`/papers/${p.toLowerCase()}/${y}/`)}>{p} {y}</a></td><td class="num">{qs.filter((q) => q.year === y).length}</td></tr>)}</tbody></table></div>
+  <h2>Themes with {p} questions</h2>
+  <p class="lead">Sorted by how many {p} questions each theme holds.</p>
+  <ul class="tlist">{ts.map((t) => <ThemeCard t={t} />)}</ul>
+</Base>

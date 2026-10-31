@@ -1,0 +1,16 @@
+{
+  "name": "gs-mains-theme-atlas",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "data": "python3 tools/build_site_data.py",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.4"
+  }
+}
