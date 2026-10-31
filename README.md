@@ -56,7 +56,7 @@ All data lives in this repo:
 - `data/syllabus.yaml` — the 52 GS1–GS3 syllabus lines
 - `tools/theme_map.json` — the 171 themes, each listing its questions by ID, plus per-question "also needs" links
 - `tools/guide*.py` — the prep notes for each theme
-- `tools/roadmap.json` — the beginner roadmap: 12 stages, each listing its themes in study order (every theme exactly once)
+- `tools/build_roadmap.py` — builds the beginner roadmap so every theme comes after the themes it relies on. It writes `tools/roadmap.json` (5 stages, themes in study order) and `tools/roadmap_prereqs.json`. Change a theme's tier or order there, then rerun it before `build_site_data.py`.
 
 ```bash
 pip install pyyaml

@@ -10,9 +10,9 @@ const desc = clip(`${t.count} UPSC GS Mains PYQs (${yearSpan(t)}) on ${t.title.s
 const syl = syllabus.filter((s) => t.syllabus.includes(s.id));
 const prev = byStep.get(t.step - 1); const next = byStep.get(t.step + 1);
 const stage = stages[t.stage - 1];
-const linked = t.links.map((n) => byN.get(n)!);
-const buildsOn = linked.filter((l) => l.step < t.step).sort((a, b) => a.step - b.step);
-const comesBack = linked.filter((l) => l.step > t.step).sort((a, b) => a.step - b.step);
+const buildsOn = t.prereqs.map((n) => byN.get(n)!).sort((a, b) => a.step - b.step);
+const comesBack = t.related.map((n) => byN.get(n)!).filter((l) => l.step > t.step).sort((a, b) => a.step - b.step);
+const linked = [...buildsOn, ...comesBack];
 const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: t.title, description: desc,
   url: new URL(themeUrl(t), Astro.site).href, inLanguage: 'en-IN', learningResourceType: 'Previous year questions and study guide',
   educationalLevel: 'UPSC Civil Services (Main) Examination', teaches: t.checklist.slice(0, 6),
@@ -52,13 +52,14 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
 
   {linked.length > 0 && <>
     <h2>Linked themes</h2>
-    <p class="lead">Questions here often need understanding from these themes too.</p>
     {buildsOn.length > 0 && <>
-      <h3>Builds on (earlier in the roadmap)</h3>
+      <h3>Builds on: study these first</h3>
+      <p class="lead">These come earlier in the roadmap. Questions in this theme use them.</p>
       <div class="chips">{buildsOn.map((l) => <a class="chip" href={themeUrl(l)} data-umami-event="linked-theme-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`T${l.n}`}>Step {l.step}: {l.title}</a>)}</div>
     </>}
     {comesBack.length > 0 && <>
       <h3>Comes back later in</h3>
+      <p class="lead">Later themes that take this one further.</p>
       <div class="chips">{comesBack.map((l) => <a class="chip" href={themeUrl(l)} data-umami-event="linked-theme-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`T${l.n}`}>Step {l.step}: {l.title}</a>)}</div>
     </>}
   </>}

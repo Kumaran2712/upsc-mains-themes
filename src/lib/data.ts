@@ -3,7 +3,7 @@ import raw from '../data/site.json';
 export type Question = { id: string; paper: string; year: number; marks: number | null; words: number | null; text: string; verified: boolean; also: number[] };
 export type Theme = { n: number; key: string; slug: string; title: string; step: number; stage: number; cluster: string; clusterSlug: string;
   papers: Record<string, number>; cross: boolean; count: number; years: number[]; recent: number;
-  syllabus: string[]; links: number[]; directives: [string, number][]; asks: string; checklist: string[]; answer: string[]; questions: Question[] };
+  syllabus: string[]; links: number[]; prereqs: number[]; related: number[]; directives: [string, number][]; asks: string; checklist: string[]; answer: string[]; questions: Question[] };
 
 export const themes = raw.themes as Theme[];
 export const clusters = raw.clusters as { name: string; slug: string }[];

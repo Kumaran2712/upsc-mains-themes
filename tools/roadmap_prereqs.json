@@ -1,0 +1,482 @@
+{
+ "prerequisites": {
+  "rights": [],
+  "preamble": [
+   "rights"
+  ],
+  "speech": [],
+  "basicstructure": [],
+  "parliament": [],
+  "executive": [],
+  "judiciary": [],
+  "governor": [
+   "executive"
+  ],
+  "coopfed": [
+   "governor"
+  ],
+  "making": [
+   "coopfed"
+  ],
+  "revolutions": [],
+  "industrialrev": [],
+  "brexpansion": [],
+  "coloneco": [
+   "industrialrev"
+  ],
+  "earlynat": [],
+  "colonadmin": [
+   "earlynat"
+  ],
+  "finalphase": [],
+  "decolon": [],
+  "diversity": [],
+  "family": [],
+  "caste": [],
+  "reform": [
+   "caste"
+  ],
+  "gandhi": [
+   "caste"
+  ],
+  "tribal": [],
+  "revolt": [
+   "tribal"
+  ],
+  "population": [],
+  "atmosphere": [],
+  "tectonics": [
+   "atmosphere"
+  ],
+  "monsoon": [],
+  "oceans": [],
+  "growth": [],
+  "budget": [],
+  "worldwars": [
+   "budget"
+  ],
+  "ideologies": [
+   "decolon",
+   "worldwars"
+  ],
+  "inflation": [],
+  "employment": [],
+  "constmorality": [
+   "judiciary"
+  ],
+  "activism": [
+   "basicstructure"
+  ],
+  "cag": [],
+  "committees": [
+   "cag"
+  ],
+  "speaker": [
+   "parliament"
+  ],
+  "elections": [],
+  "fiscalfed": [
+   "budget"
+  ],
+  "localgov": [
+   "fiscalfed"
+  ],
+  "specialprov": [
+   "coopfed"
+  ],
+  "tribunals": [],
+  "pressure": [],
+  "parties": [
+   "coopfed"
+  ],
+  "comparative": [
+   "executive"
+  ],
+  "statesreorg": [
+   "coopfed",
+   "localgov"
+  ],
+  "consolidation": [],
+  "earlyfp": [],
+  "womenhist": [
+   "reform",
+   "gandhi"
+  ],
+  "globsoc": [
+   "diversity"
+  ],
+  "newurban": [
+   "globsoc"
+  ],
+  "secularism": [
+   "comparative"
+  ],
+  "communalism": [
+   "globsoc",
+   "secularism"
+  ],
+  "regionalism": [
+   "coopfed",
+   "statesreorg"
+  ],
+  "planning": [
+   "worldwars",
+   "consolidation",
+   "regionalism"
+  ],
+  "gender": [],
+  "ucc": [
+   "secularism",
+   "gender"
+  ],
+  "sexratio": [
+   "tribal",
+   "population"
+  ],
+  "ageing": [
+   "population"
+  ],
+  "dmframe": [],
+  "landslides": [
+   "dmframe"
+  ],
+  "quakes": [
+   "tectonics",
+   "dmframe"
+  ],
+  "cyclones": [
+   "dmframe"
+  ],
+  "cloudburst": [
+   "dmframe"
+  ],
+  "coastal": [
+   "dmframe"
+  ],
+  "glaciers": [
+   "coastal"
+  ],
+  "polar": [
+   "glaciers"
+  ],
+  "fininc": [],
+  "digieco": [
+   "fininc"
+  ],
+  "techsoc": [
+   "globsoc",
+   "digieco"
+  ],
+  "poverty": [],
+  "urbsoc": [
+   "poverty"
+  ],
+  "migration": [
+   "urbsoc"
+  ],
+  "manufacturing": [
+   "employment"
+  ],
+  "fdi": [
+   "manufacturing"
+  ],
+  "regulators": [
+   "fdi"
+  ],
+  "infra": [
+   "budget"
+  ],
+  "harappan": [
+   "tectonics",
+   "urbsoc"
+  ],
+  "vedic": [
+   "family",
+   "caste"
+  ],
+  "sources": [],
+  "sculpture": [],
+  "buddhistart": [
+   "sculpture"
+  ],
+  "temple": [
+   "sculpture"
+  ],
+  "bhakti": [
+   "secularism"
+  ],
+  "patronage": [],
+  "oil": [],
+  "industryloc": [
+   "manufacturing",
+   "infra"
+  ],
+  "water": [
+   "urbsoc"
+  ],
+  "irrigation": [
+   "water"
+  ],
+  "riverlink": [
+   "coopfed"
+  ],
+  "cropping": [],
+  "greenrev": [
+   "regionalism",
+   "cropping"
+  ],
+  "groundwater": [
+   "irrigation",
+   "greenrev"
+  ],
+  "agrimarket": [],
+  "agritech": [
+   "agrimarket"
+  ],
+  "subsidies": [
+   "cropping"
+  ],
+  "foodproc": [
+   "agrimarket"
+  ],
+  "allied": [],
+  "inclusive": [
+   "fininc",
+   "poverty"
+  ],
+  "smartcity": [
+   "localgov",
+   "urbsoc"
+  ],
+  "transport": [
+   "infra",
+   "smartcity"
+  ],
+  "egov": [
+   "digieco"
+  ],
+  "dbt": [
+   "subsidies",
+   "egov"
+  ],
+  "pds": [
+   "dbt"
+  ],
+  "civilservices": [
+   "consolidation"
+  ],
+  "health": [],
+  "policy": [
+   "localgov",
+   "regionalism",
+   "fdi",
+   "health"
+  ],
+  "affirmative": [
+   "coopfed",
+   "caste"
+  ],
+  "disability": [],
+  "commissions": [
+   "affirmative"
+  ],
+  "anticorrupt": [
+   "commissions"
+  ],
+  "citizen": [
+   "anticorrupt"
+  ],
+  "children": [],
+  "education": [
+   "children"
+  ],
+  "skills": [
+   "population",
+   "employment",
+   "manufacturing",
+   "education"
+  ],
+  "hunger": [
+   "cropping",
+   "pds",
+   "health"
+  ],
+  "shg": [
+   "gender",
+   "fininc",
+   "poverty",
+   "hunger"
+  ],
+  "civilsoc": [
+   "policy",
+   "shg"
+  ],
+  "forests": [],
+  "wetlands": [],
+  "landdeg": [
+   "urbsoc",
+   "wetlands"
+  ],
+  "fragile": [
+   "dmframe",
+   "infra"
+  ],
+  "airpoll": [
+   "atmosphere"
+  ],
+  "riverpoll": [
+   "water"
+  ],
+  "waste": [
+   "localgov"
+  ],
+  "envconst": [
+   "activism",
+   "pressure",
+   "civilsoc",
+   "airpoll"
+  ],
+  "eia": [
+   "tribal",
+   "envconst"
+  ],
+  "mining": [
+   "eia"
+  ],
+  "landreform": [
+   "tribal",
+   "consolidation",
+   "eia"
+  ],
+  "urbfloods": [
+   "dmframe",
+   "smartcity",
+   "wetlands"
+  ],
+  "womenpol": [
+   "rights",
+   "judiciary",
+   "localgov",
+   "commissions",
+   "civilsoc"
+  ],
+  "womeneco": [
+   "budget",
+   "employment",
+   "globsoc",
+   "migration",
+   "inclusive"
+  ],
+  "climateimpact": [
+   "glaciers",
+   "greenrev"
+  ],
+  "climateregime": [
+   "climateimpact"
+  ],
+  "renewables": [
+   "climateregime"
+  ],
+  "energysec": [
+   "renewables"
+  ],
+  "nuclear": [
+   "energysec"
+  ],
+  "neighbourhood": [],
+  "china": [
+   "neighbourhood"
+  ],
+  "indopacific": [
+   "china"
+  ],
+  "greatpower": [
+   "indopacific"
+  ],
+  "westasia": [
+   "energysec"
+  ],
+  "centralasia": [],
+  "pakistan": [
+   "centralasia"
+  ],
+  "africa": [
+   "mining"
+  ],
+  "diaspora": [
+   "migration"
+  ],
+  "un": [
+   "greatpower"
+  ],
+  "groupings": [
+   "pakistan",
+   "un"
+  ],
+  "wto": [
+   "fininc",
+   "subsidies",
+   "hunger"
+  ],
+  "space": [],
+  "biotech": [
+   "energysec"
+  ],
+  "healthtech": [
+   "health"
+  ],
+  "pandemic": [
+   "un",
+   "healthtech"
+  ],
+  "aitech": [
+   "rights",
+   "healthtech"
+  ],
+  "ipr": [
+   "wto"
+  ],
+  "sciday": [
+   "education"
+  ],
+  "lwe": [
+   "tribal",
+   "eia"
+  ],
+  "northeast": [
+   "specialprov"
+  ],
+  "maritime": [
+   "coastal",
+   "indopacific"
+  ],
+  "cyber": [],
+  "dataprot": [
+   "rights",
+   "cyber"
+  ],
+  "socialmedia": [
+   "speech",
+   "communalism"
+  ],
+  "terror": [
+   "un",
+   "socialmedia"
+  ],
+  "terrorfin": [
+   "terror"
+  ],
+  "organised": [
+   "terrorfin"
+  ],
+  "border": [
+   "specialprov",
+   "china",
+   "organised"
+  ],
+  "forces": [
+   "commissions",
+   "northeast"
+  ]
+ }
+}

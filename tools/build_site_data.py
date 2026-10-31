@@ -23,6 +23,7 @@ if sorted(_order) != sorted(t["key"] for t in C) or len(_order) != len(set(_orde
     sys.exit("tools/roadmap.json must list every theme exactly once.")
 STEP = {k: i + 1 for i, k in enumerate(_order)}
 STAGE = {k: si + 1 for si, s in enumerate(ROADMAP) for k in s["themes"]}
+PREREQS = json.load(open(os.path.join(HERE, "roadmap_prereqs.json")))["prerequisites"]
 
 syllabus = {s["id"]: s["text"] for s in yaml.safe_load(open(os.path.join(DATA, "syllabus.yaml")))}
 questions = yaml.safe_load(open(os.path.join(DATA, "questions.yaml")))
@@ -103,6 +104,8 @@ for t in C:
         cross=sum(1 for p in papers if papers[p]) > 1,
         count=len(qrows), years=years, recent=sum(1 for r in qrows if r["year"] >= 2024),
         syllabus=lines, links=[num[k] for k in t["links"]],
+        prereqs=[num[k] for k in PREREQS[t["key"]]],
+        related=sorted({num[k] for k in set(t["links"]) | {x for v in t["also"].values() for x in v}} - {num[t["key"]]}),
         directives=[[d, c] for d, c in dc.most_common(6)],
         asks=asks, checklist=checklist, answer=answer, questions=qrows))
 assert len(seen) == len(questions), (len(seen), len(questions))
