@@ -1,0 +1,307 @@
+{
+ "_note": "Curated points for the Maps tab. Coordinates are approximate centres, to roughly 0.5 degree, for teaching. Border lengths: Ministry of Home Affairs, Department of Border Management.",
+ "neighbours": [
+  {
+   "name": "Bangladesh",
+   "ne": "Bangladesh",
+   "border_km": 4096.7,
+   "themes": [
+    "neighbourhood",
+    "migration",
+    "border"
+   ],
+   "note": "India's longest land border; open riverine stretches make fencing hard."
+  },
+  {
+   "name": "China",
+   "ne": "China",
+   "border_km": 3488,
+   "themes": [
+    "china",
+    "border"
+   ],
+   "note": "Undemarcated Line of Actual Control in the western, middle and eastern sectors."
+  },
+  {
+   "name": "Pakistan",
+   "ne": "Pakistan",
+   "border_km": 3323,
+   "themes": [
+    "pakistan",
+    "border",
+    "riverlink"
+   ],
+   "note": "International Border, Line of Control and the Actual Ground Position Line in Siachen."
+  },
+  {
+   "name": "Nepal",
+   "ne": "Nepal",
+   "border_km": 1751,
+   "themes": [
+    "neighbourhood",
+    "border"
+   ],
+   "note": "Open border under the 1950 Treaty of Peace and Friendship."
+  },
+  {
+   "name": "Myanmar",
+   "ne": "Myanmar",
+   "border_km": 1643,
+   "themes": [
+    "border",
+    "northeast",
+    "organised"
+   ],
+   "note": "Hilly, forested border with the North-East; Free Movement Regime debates."
+  },
+  {
+   "name": "Bhutan",
+   "ne": "Bhutan",
+   "border_km": 699,
+   "themes": [
+    "neighbourhood",
+    "border"
+   ],
+   "note": "Open border; close hydropower and security ties."
+  },
+  {
+   "name": "Afghanistan",
+   "ne": "Afghanistan",
+   "border_km": 106,
+   "themes": [
+    "pakistan",
+    "centralasia"
+   ],
+   "note": "Shares a border with India through Gilgit-Baltistan (in Ladakh, under Pakistan's illegal occupation)."
+  },
+  {
+   "name": "Sri Lanka",
+   "ne": "Sri Lanka",
+   "border_km": null,
+   "themes": [
+    "neighbourhood"
+   ],
+   "note": "Maritime neighbour across the Palk Strait."
+  },
+  {
+   "name": "Maldives",
+   "ne": "Maldives",
+   "border_km": null,
+   "themes": [
+    "neighbourhood",
+    "indopacific"
+   ],
+   "note": "Maritime neighbour astride Indian Ocean sea lanes."
+  }
+ ],
+ "chokepoints": [
+  {
+   "name": "Strait of Hormuz",
+   "lat": 26.6,
+   "lon": 56.3,
+   "connects": "Persian Gulf and Gulf of Oman",
+   "why": "Most Gulf oil and LNG bound for India passes here; any disruption hits India's energy security.",
+   "themes": [
+    "westasia",
+    "energysec",
+    "maritime"
+   ],
+   "dx": -9,
+   "dy": -8,
+   "anchor": "end"
+  },
+  {
+   "name": "Bab-el-Mandeb",
+   "lat": 12.6,
+   "lon": 43.3,
+   "connects": "Red Sea and Gulf of Aden",
+   "why": "Gateway between the Suez route and the Indian Ocean; piracy and attacks on shipping here raise freight costs for India.",
+   "themes": [
+    "maritime",
+    "westasia",
+    "indopacific"
+   ],
+   "dx": -9,
+   "dy": 12,
+   "anchor": "end"
+  },
+  {
+   "name": "Suez Canal",
+   "lat": 30.6,
+   "lon": 32.3,
+   "connects": "Mediterranean Sea and Red Sea",
+   "why": "Shortest sea route between India and Europe; the 1956 crisis here ended Britain's great-power image.",
+   "themes": [
+    "decolon",
+    "maritime",
+    "indopacific"
+   ],
+   "dx": -9,
+   "dy": -6,
+   "anchor": "end"
+  },
+  {
+   "name": "Strait of Malacca",
+   "lat": 2.5,
+   "lon": 101.3,
+   "connects": "Andaman Sea and South China Sea",
+   "why": "Busiest route to East Asia; China's dependence on it (the 'Malacca dilemma') shapes its Indian Ocean strategy.",
+   "themes": [
+    "indopacific",
+    "china",
+    "maritime"
+   ],
+   "dx": 9,
+   "dy": 10
+  },
+  {
+   "name": "Sunda Strait",
+   "lat": -6.0,
+   "lon": 105.8,
+   "connects": "Java Sea and Indian Ocean",
+   "why": "Alternative to Malacca for ships moving between the Indian Ocean and East Asia.",
+   "themes": [
+    "indopacific"
+   ],
+   "dx": -9,
+   "dy": 12,
+   "anchor": "end"
+  },
+  {
+   "name": "Lombok Strait",
+   "lat": -8.5,
+   "lon": 115.7,
+   "connects": "Bali Sea and Indian Ocean",
+   "why": "Deep-water alternative to Malacca, used by the largest tankers.",
+   "themes": [
+    "indopacific"
+   ],
+   "dx": 9,
+   "dy": 14
+  },
+  {
+   "name": "Taiwan Strait",
+   "lat": 24.5,
+   "lon": 119.5,
+   "connects": "East China Sea and South China Sea",
+   "why": "Flashpoint in China–Taiwan tensions; a large share of global trade and chip supply chains pass nearby.",
+   "themes": [
+    "indopacific",
+    "greatpower"
+   ]
+  },
+  {
+   "name": "Six Degree Channel",
+   "lat": 6.0,
+   "lon": 94.5,
+   "connects": "Great Nicobar and Sumatra",
+   "why": "India's closest point to the Malacca approaches; makes the Andaman and Nicobar Islands strategically vital.",
+   "themes": [
+    "maritime",
+    "indopacific"
+   ],
+   "minor": true,
+   "dx": 9,
+   "dy": 16
+  },
+  {
+   "name": "Ten Degree Channel",
+   "lat": 10.0,
+   "lon": 92.6,
+   "connects": "Andaman Islands and Nicobar Islands",
+   "why": "Separates the two island groups on the main shipping lanes into the Bay of Bengal.",
+   "themes": [
+    "maritime"
+   ],
+   "minor": true,
+   "dx": 9,
+   "dy": -4
+  },
+  {
+   "name": "Nine Degree Channel",
+   "lat": 9.0,
+   "lon": 73.0,
+   "connects": "Minicoy and the main Lakshadweep islands",
+   "why": "Major route for ships between West Asia and East Asia, passing close to Lakshadweep.",
+   "themes": [
+    "maritime"
+   ],
+   "minor": true,
+   "dx": -9,
+   "dy": -6,
+   "anchor": "end"
+  },
+  {
+   "name": "Eight Degree Channel",
+   "lat": 8.0,
+   "lon": 73.0,
+   "connects": "Minicoy (India) and the Maldives",
+   "why": "Shipping lane close to India's maritime boundary with the Maldives.",
+   "themes": [
+    "maritime",
+    "neighbourhood"
+   ],
+   "minor": true,
+   "dx": -9,
+   "dy": 12,
+   "anchor": "end"
+  },
+  {
+   "name": "Palk Strait",
+   "lat": 10.0,
+   "lon": 79.6,
+   "connects": "Bay of Bengal and Palk Bay",
+   "why": "Separates India and Sri Lanka; fishing disputes and the Katchatheevu issue.",
+   "themes": [
+    "neighbourhood"
+   ],
+   "minor": true,
+   "dx": 9,
+   "dy": 4
+  },
+  {
+   "name": "Mozambique Channel",
+   "lat": -18.0,
+   "lon": 41.0,
+   "connects": "Africa and Madagascar",
+   "why": "Sea lane along East Africa, where India builds ties with island and coastal states.",
+   "themes": [
+    "africa",
+    "maritime"
+   ]
+  },
+  {
+   "name": "Strait of Gibraltar",
+   "lat": 35.95,
+   "lon": -5.6,
+   "connects": "Atlantic Ocean and Mediterranean Sea",
+   "why": "Western exit of the Suez–Mediterranean route to Europe and the Americas.",
+   "themes": [
+    "indopacific"
+   ]
+  },
+  {
+   "name": "Bosphorus",
+   "lat": 41.1,
+   "lon": 29.05,
+   "connects": "Black Sea and Sea of Marmara",
+   "why": "Only sea outlet for Black Sea grain and energy exports; disrupted by the Russia–Ukraine war.",
+   "themes": [
+    "greatpower"
+   ],
+   "dx": 9,
+   "dy": -6
+  },
+  {
+   "name": "Panama Canal",
+   "lat": 9.1,
+   "lon": -79.7,
+   "connects": "Atlantic Ocean and Pacific Ocean",
+   "why": "Links the Atlantic and the Pacific; droughts here show how climate change disrupts trade routes.",
+   "themes": [
+    "indopacific",
+    "climateimpact"
+   ]
+  }
+ ]
+}

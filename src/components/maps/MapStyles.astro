@@ -1,0 +1,42 @@
+<style is:global>
+  .mapbox { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+  .map { display: block; width: 100%; height: auto; max-height: 78vh; touch-action: manipulation; }
+  .map text { font-family: var(--f-body); paint-order: stroke; stroke: var(--surface); stroke-width: 4px; fill: var(--ink); }
+  .map-india .st { fill: var(--surface); stroke: var(--muted); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-india .st:hover { fill: var(--accent-soft); }
+  .map-india .ol { fill: none; stroke: var(--ink); stroke-width: 1.6; vector-effect: non-scaling-stroke; pointer-events: none; }
+  .map-india .grat { fill: none; stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; pointer-events: none; }
+  .map-india .tropic path { fill: none; stroke: var(--gs3); stroke-width: 2; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; }
+  .map-india .meridian path { fill: none; stroke: var(--gs2); stroke-width: 2; stroke-dasharray: 6 4; vector-effect: non-scaling-stroke; }
+  .map-india .tropic text { fill: var(--gs3); font-size: 30px; font-weight: 700; }
+  .map-india .meridian text { fill: var(--gs2); font-size: 30px; font-weight: 700; }
+  .map-india .gratlab text { font-size: 26px; fill: var(--muted); }
+  .map-india .ext circle { fill: var(--gs1); }
+  .map-india .ext text { font-size: 26px; font-weight: 700; fill: var(--gs1); }
+  .map-india .lab text { font-size: 24px; pointer-events: none; fill: var(--muted); }
+  .map-india .tropic, .map-india .meridian, .map-india .ext, .map-india .gratlab { pointer-events: none; }
+  .map-india .st.on1 { fill: var(--gs1-bg); stroke: var(--gs1); }
+  .map-india .st.on2 { fill: var(--gs3-bg); stroke: var(--gs3); }
+  .map-india .st.right { fill: var(--gs1); } .map-india .st.wrong { fill: var(--gs3); }
+  .map-world .sea, .map-region .sea { fill: var(--accent-soft); }
+  .map-world .land { fill: var(--surface); stroke: var(--muted); stroke-width: .6; }
+  .map-world .india, .map-region .india { fill: var(--gs2-bg); stroke: var(--gs2); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+  .map-world .pt { cursor: pointer; } .map-world .pt .hit { fill: transparent; } .map-world .pt .dot { fill: var(--gs3); stroke: var(--surface); stroke-width: 1.5; }
+  .map-world .pt.sel .dot, .map-world .pt.on1 .dot { fill: var(--gs1); stroke-width: 3; }
+  .map-world .lab text { font-size: 20px; font-weight: 600; pointer-events: none; } .map-world .lab text.minor { font-size: 15px; }
+  .map-world.compact .lab text.minor:not(.show) { display: none; }
+  .map-region .nb { fill: var(--surface); stroke: var(--muted); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-region .nb:hover, .map-region .nb.sel { fill: var(--gs3-bg); stroke: var(--gs3); }
+  .map-region .lab text { font-size: 26px; font-weight: 600; pointer-events: none; } .map-region .lab .in { fill: var(--gs2); font-size: 32px; letter-spacing: .12em; }
+  .hide-grid .grat, .hide-grid .gratlab, .hide-tropic .tropic, .hide-meridian .meridian, .hide-ext .ext, .hide-lab .lab { display: none; }
+  .maptools { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .tog { font: inherit; font-size: .82rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+  .tog[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+  .attrib { font-size: .76rem; color: var(--muted); margin: 6px 0 0; }
+  .infocard { margin-top: 10px; }
+  .infocard h3 { margin: 0 0 4px; }
+  .quiz { display: grid; gap: 6px; margin-top: 10px; }
+  .quiz .ask { font-weight: 700; font-size: 1.05rem; }
+  .quiz .fb { min-height: 1.4em; font-weight: 600; }
+  .fb.ok { color: var(--gs1); } .fb.no { color: var(--gs3); }
+</style>

@@ -1,0 +1,113 @@
+---
+import Base from '../../layouts/Base.astro';
+import RegionMap from '../../components/maps/RegionMap.astro';
+import WorldMap from '../../components/maps/WorldMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import { maps, modules, ATTRIBUTION, themeKey } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const R = maps.region, W = maps.world;
+const mod = modules[10];
+const land = R.neighbours.filter((n: any) => n.border_km).sort((a: any, b: any) => b.border_km - a.border_km);
+const fmt = (n: number) => n.toLocaleString('en-IN');
+const linkThemes = (keys: string[]) => keys.map((k) => themeKey(k)!).filter(Boolean).map((t) => ({ n: t.n, title: t.title, url: themeUrl(t) }));
+const nbData = Object.fromEntries(R.neighbours.map((n: any) => [n.name, { km: n.border_km, note: n.note, themes: linkThemes(n.themes) }]));
+const ckData = Object.fromEntries(W.chokepoints.map((c: any) => [c.name, { connects: c.connects, why: c.why, themes: linkThemes(c.themes) }]));
+const desc = `India's neighbours and border lengths, and the world's key straits and chokepoints (Hormuz, Malacca, Bab-el-Mandeb and more) for UPSC Mains GS1, GS2 and GS3, with a locate quiz and linked PYQ themes.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'Neighbourhood & sea routes map for UPSC Mains', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/neighbourhood-and-sea-routes/'), Astro.site).href }];
+---
+<Base title="India's neighbours & world chokepoints map" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'Neighbourhood & sea routes', href: u('/maps/neighbourhood-and-sea-routes/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module 10</p>
+  <h1>Neighbourhood & sea routes</h1>
+  <p class="lead">IR and security answers keep returning to two maps: India with its neighbours, and the sea lanes that carry India's trade and energy. Tap a country or a chokepoint to see why it matters and which themes use it.</p>
+
+  <h2>India's land neighbours</h2>
+  <div class="mapbox"><RegionMap id="m10a" /></div>
+  <p class="attrib">{ATTRIBUTION}</p>
+  <div class="panel infocard" id="nb-card" aria-live="polite"><p class="lead" style="margin:0">Tap a neighbouring country on the map.</p></div>
+  <div class="tablewrap" style="margin-top:12px"><table>
+    <thead><tr><th>Country</th><th class="num">Land border (km)</th></tr></thead>
+    <tbody>
+      {land.map((n: any) => <tr><td>{n.name}</td><td class="num">{fmt(n.border_km)}</td></tr>)}
+      <tr><td><b>Total</b></td><td class="num"><b>{fmt(R.totalLandBorderKm)}</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="attrib">Border lengths: Ministry of Home Affairs, Department of Border Management. Sri Lanka and the Maldives are maritime neighbours.</p>
+
+  <h2>Straits & chokepoints</h2>
+  <div class="maptools" role="group" aria-label="Map labels"><button class="tog" type="button" id="w-lab" aria-pressed="true">Names</button></div>
+  <div class="mapbox"><WorldMap id="m10b" /></div>
+  <p class="attrib">Small labels for the channels around India appear when you tap their dots.</p>
+  <p class="attrib">World land: Natural Earth (public domain). India outline: Survey of India–based data. Points are approximate, for teaching.</p>
+  <div class="panel infocard" id="ck-card" aria-live="polite"><p class="lead" style="margin:0">Tap a dot on the map.</p></div>
+
+  <section class="panel quiz" aria-live="polite">
+    <p class="eyebrow">Quiz · locate the chokepoint</p>
+    <p class="ask" id="q-ask">Names are hidden during the quiz. Tap Start, then tap each dot.</p>
+    <p class="fb" id="q-fb"></p>
+    <p><button class="btn" type="button" id="q-start">Start: 8 chokepoints</button> <span id="q-best" class="eyebrow"></span></p>
+  </section>
+
+  <h2>Themes that use these maps</h2>
+  <div class="chips">{(mod.themes || []).map((k) => themeKey(k)).filter(Boolean).sort((a, b) => a!.n - b!.n).map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+  <p><a class="chip" style="font-weight:700" href={u('/maps/lab/')}>Practise these in the sketch lab</a></p>
+
+  <script is:inline define:vars={{ nbData, ckData }}>
+    (function () {
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+      function chips(ts) { return ts.length ? '<div class="chips">' + ts.map(function (t) { return '<a class="chip" href="' + t.url + '">T' + t.n + ' ' + esc(t.title) + '</a>'; }).join('') + '</div>' : ''; }
+      var A = document.getElementById('m10a'), nbCard = document.getElementById('nb-card');
+      A.addEventListener('click', function (e) {
+        var p = e.target.closest('.nb'); if (!p) return;
+        A.querySelectorAll('.nb.sel').forEach(function (x) { x.classList.remove('sel'); }); p.classList.add('sel');
+        var n = p.dataset.name, d = nbData[n];
+        nbCard.innerHTML = '<h3>' + esc(n) + '</h3><p class="eyebrow">' + (d.km ? 'Land border: ' + Number(d.km).toLocaleString('en-IN') + ' km' : 'Maritime neighbour') + '</p><p>' + esc(d.note) + '</p>' + chips(d.themes);
+        if (window.__track) window.__track('map-tap', { map: 'neighbours', name: n });
+      });
+      var B = document.getElementById('m10b'); B.classList.add('compact');
+      var ckCard = document.getElementById('ck-card'), labBtn = document.getElementById('w-lab');
+      labBtn.addEventListener('click', function () { var on = labBtn.getAttribute('aria-pressed') !== 'true'; labBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); B.classList.toggle('hide-lab', !on); });
+      var round = null;
+      B.addEventListener('click', function (e) {
+        var g = e.target.closest('.pt'); if (!g) return;
+        var n = g.dataset.name;
+        if (round) { answer(n); return; }
+        B.querySelectorAll('.pt.sel').forEach(function (x) { x.classList.remove('sel'); }); g.classList.add('sel');
+        B.querySelectorAll('.lab text.show').forEach(function (x) { x.classList.remove('show'); });
+        var lt = B.querySelector('.lab text[data-for="' + CSS.escape(n) + '"]'); if (lt) lt.classList.add('show');
+        var d = ckData[n];
+        ckCard.innerHTML = '<h3>' + esc(n) + '</h3><p class="eyebrow">Connects ' + esc(d.connects) + '</p><p>' + esc(d.why) + '</p>' + chips(d.themes);
+        if (window.__track) window.__track('map-tap', { map: 'chokepoints', name: n });
+      });
+      var ask = document.getElementById('q-ask'), fb = document.getElementById('q-fb'), start = document.getElementById('q-start'), bestEl = document.getElementById('q-best');
+      var KEY = 'upscthemes-quiz-chokepoints', best = 0;
+      try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
+      function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/8' : ''; } showBest();
+      function next() {
+        if (round.i >= round.list.length) {
+          ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
+          fb.className = 'fb ' + (round.score >= 6 ? 'ok' : 'no'); fb.textContent = 'Tap Start for a new round.';
+          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (window.__track) window.__track('map-quiz-done', { quiz: 'chokepoints', score: round.score });
+          round = null; B.classList.remove('hide-lab'); labBtn.setAttribute('aria-pressed', 'true'); start.textContent = 'Start again'; return;
+        }
+        ask.textContent = 'Tap: ' + round.list[round.i] + ' (' + (round.i + 1) + '/' + round.list.length + ')';
+      }
+      function answer(got) {
+        var want = round.list[round.i], ok = got === want;
+        var dot = B.querySelector('.pt[data-name="' + CSS.escape(want) + '"]'); dot.classList.add('on1');
+        setTimeout(function () { dot.classList.remove('on1'); }, 1200);
+        fb.textContent = ok ? 'Correct: ' + want : 'That was ' + got + '. ' + want + ' is highlighted in green.';
+        fb.className = 'fb ' + (ok ? 'ok' : 'no'); if (ok) round.score++;
+        round.i++; setTimeout(next, ok ? 500 : 1300);
+      }
+      start.addEventListener('click', function () {
+        var pool = Object.keys(ckData); for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
+        round = { list: pool.slice(0, 8), i: 0, score: 0 }; fb.textContent = '';
+        B.classList.add('hide-lab'); labBtn.setAttribute('aria-pressed', 'false'); next();
+        B.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      });
+    })();
+  </script>
+</Base>

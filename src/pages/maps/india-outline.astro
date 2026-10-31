@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import IndiaMap from '../../components/maps/IndiaMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import { maps, modules, ATTRIBUTION, themeKey } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const m = maps.india;
+const mod = modules[0];
+const ext = Object.fromEntries(m.extremes.map((e: any) => [e.label, e]));
+const quizStates = m.states.filter((s: any) => s.area > 0.05).map((s: any) => s.name);
+const desc = 'India outline map for UPSC Mains: Tropic of Cancer states, the 82°30′E standard meridian, extreme points, states and UTs, with a tap-the-state quiz and a 60-second drawing drill.';
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'India outline & map grammar for UPSC Mains', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/india-outline/'), Astro.site).href }];
+---
+<Base title="India outline map for UPSC Mains" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'India outline', href: u('/maps/india-outline/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module 0</p>
+  <h1>India outline & map grammar</h1>
+  <p class="lead">Every map in a Mains answer starts here: a palm-sized India you can draw in about a minute, placed on the right latitude–longitude frame. Learn the frame and the anchor points, test yourself on the states, then practise drawing it in the lab.</p>
+
+  <div class="maptools" role="group" aria-label="Map layers">
+    <button class="tog" type="button" data-layer="grid" aria-pressed="true">Grid</button>
+    <button class="tog" type="button" data-layer="tropic" aria-pressed="true">Tropic of Cancer</button>
+    <button class="tog" type="button" data-layer="meridian" aria-pressed="true">82°30′E meridian</button>
+    <button class="tog" type="button" data-layer="ext" aria-pressed="true">Extreme points</button>
+    <button class="tog" type="button" data-layer="lab" aria-pressed="false">State names</button>
+  </div>
+  <div class="mapbox"><IndiaMap id="m0" /></div>
+  <p class="attrib">{ATTRIBUTION}</p>
+
+  <section class="panel quiz" id="quiz" aria-live="polite">
+    <p class="eyebrow">Quiz · tap the state</p>
+    <p class="ask" id="q-ask">Tap Start, then tap each state or UT on the map above.</p>
+    <p class="fb" id="q-fb"></p>
+    <p><button class="btn" type="button" id="q-start">Start: 10 states</button> <span id="q-best" class="eyebrow"></span></p>
+  </section>
+
+  <h2>The frame to remember</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>What</th><th>Value from the map</th><th>Where</th></tr></thead>
+    <tbody>{m.extremes.map((e: any) => <tr><td>{e.label}</td><td>{e.label.includes('Northern') || e.label.includes('Southern') ? e.lat : e.lon}</td><td>{e.state}</td></tr>)}</tbody>
+  </table></div>
+  <ul>
+    <li>Latitudes: about {ext['Southernmost (mainland)'].lat} (mainland tip) to {ext['Northernmost'].lat}; the southernmost point of India, Indira Point in Great Nicobar, is at {ext['Southernmost'].lat}.</li>
+    <li>Longitudes: about {ext['Westernmost'].lon} to {ext['Easternmost'].lon}, roughly 30° each way, which is why India looks almost square on a grid.</li>
+    <li>The <b>Tropic of Cancer</b> crosses {m.tropicStates.length} states: {m.tropicStates.join(', ')}.</li>
+    <li>The <b>82°30′E standard meridian</b> (Indian Standard Time) crosses {m.meridianStates.join(', ')}.</li>
+  </ul>
+
+  <h2>Draw India in about a minute</h2>
+  <ol>
+    <li>Draw a light square frame: 8°N to 37°N and 68°E to 97°E, with a line at the Tropic of Cancer (about 23½°N) through the middle.</li>
+    <li>Mark four anchors: the Kutch bulge on the west at the Tropic, Kanyakumari at the bottom of the frame, the head of the Bay of Bengal just below the Tropic on the east, and the north-east corner.</li>
+    <li>Join them: the peninsula as a downward triangle, the Himalayan arc across the top, and the North-East bulging out east.</li>
+    <li>Add dots for Andaman & Nicobar to the south-east and Lakshadweep to the south-west.</li>
+    <li>Then add only what the question needs: three or four labelled places, an arrow or a shaded area.</li>
+  </ol>
+  <p><a class="chip" style="font-weight:700" href={u('/maps/lab/#free-india')} data-umami-event="maps-cta" data-umami-event-target="lab-free">Practise drawing it in the sketch lab</a></p>
+
+  <h2>Themes where an India sketch helps</h2>
+  <div class="chips">{(mod.themes || []).map((k) => { const t = themeKey(k)!; return <a class="chip" href={themeUrl(t)}>T{t.n} {t.title}</a>; })}</div>
+
+  <script is:inline define:vars={{ quizStates }}>
+    (function () {
+      var svg = document.getElementById('m0');
+      document.querySelectorAll('.tog[data-layer]').forEach(function (b) {
+        var layer = b.dataset.layer;
+        function apply() { svg.classList.toggle('hide-' + layer, b.getAttribute('aria-pressed') !== 'true'); }
+        apply();
+        b.addEventListener('click', function () { b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); apply(); });
+      });
+      var ask = document.getElementById('q-ask'), fb = document.getElementById('q-fb'), start = document.getElementById('q-start'), bestEl = document.getElementById('q-best');
+      var KEY = 'upscthemes-quiz-india-states', best = 0;
+      try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
+      function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/10' : ''; }
+      showBest();
+      var round = null;
+      function next() {
+        if (round.i >= round.list.length) {
+          ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
+          fb.textContent = round.score === round.list.length ? 'Perfect round.' : 'Tap Start for a new round.';
+          fb.className = 'fb ' + (round.score >= 8 ? 'ok' : 'no');
+          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (window.__track) window.__track('map-quiz-done', { quiz: 'india-states', score: round.score });
+          round = null; start.textContent = 'Start again'; return;
+        }
+        ask.textContent = 'Tap: ' + round.list[round.i] + ' (' + (round.i + 1) + '/' + round.list.length + ')';
+      }
+      start.addEventListener('click', function () {
+        var pool = quizStates.slice(); for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
+        round = { list: pool.slice(0, 10), i: 0, score: 0 }; fb.textContent = ''; next();
+        svg.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      });
+      svg.addEventListener('click', function (e) {
+        var p = e.target.closest('.st'); if (!p || !round) return;
+        var want = round.list[round.i], got = p.dataset.name, ok = got === want;
+        var target = svg.querySelector('.st[data-name="' + CSS.escape(want) + '"]');
+        target.classList.add(ok ? 'right' : 'wrong');
+        setTimeout(function () { target.classList.remove('right', 'wrong'); }, 1200);
+        fb.textContent = ok ? 'Correct: ' + want : 'That was ' + got + '. ' + want + ' is shown in orange.';
+        fb.className = 'fb ' + (ok ? 'ok' : 'no');
+        if (ok) round.score++;
+        round.i++; setTimeout(next, ok ? 500 : 1200);
+      });
+    })();
+  </script>
+</Base>

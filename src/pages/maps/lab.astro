@@ -1,0 +1,203 @@
+---
+import Base from '../../layouts/Base.astro';
+import IndiaMap from '../../components/maps/IndiaMap.astro';
+import WorldMap from '../../components/maps/WorldMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import { lab, ATTRIBUTION } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const FREE = { id: 'free-india', base: 'india', title: 'Free practice: draw India in 90 seconds',
+  groups: [], checklist: ['Kutch bulge on the west, near the Tropic of Cancer', 'Peninsula narrowing to Kanyakumari at about 8°N', 'Himalayan arc across the top, including Ladakh and Jammu & Kashmir', 'North-East bulging east, joined by a narrow Siliguri corridor', 'Andaman & Nicobar and Lakshadweep marked'] };
+const cards = [FREE, ...lab.map((c) => ({ id: c.id, base: c.base, title: c.q.text, paper: c.q.paper, year: c.q.year, marks: c.q.marks,
+  theme: { n: c.q.theme.n, title: c.q.theme.title, url: themeUrl(c.q.theme) }, groups: c.groups, checklist: c.checklist }))];
+const india = cards.filter((c: any) => c.base === 'india' && c.id !== 'free-india');
+const world = cards.filter((c: any) => c.base === 'world');
+const desc = `Practise UPSC Mains map sketches on ${lab.length} real PYQs: draw on a blank India or world outline against a 90-second timer, reveal the answer, and track your score.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'UPSC Mains PYQ sketch lab', description: desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Practice exercise', interactivityType: 'active', url: new URL(u('/maps/lab/'), Astro.site).href }];
+---
+<Base title="UPSC Mains map sketch lab: practise on PYQs" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: 'Sketch lab', href: u('/maps/lab/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module 13</p>
+  <h1>PYQ sketch lab</h1>
+  <p class="lead">Pick a real PYQ, sketch the map with your finger in 90 seconds, then reveal what a good sketch shows and score yourself. Scores stay on this device. In the exam, a palm-sized outline with three or four correct labels is enough.</p>
+
+  <section id="work" class="panel lab-work" hidden aria-live="polite">
+    <p class="eyebrow" id="w-meta"></p>
+    <h2 id="w-title" style="margin-top:4px"></h2>
+    <p id="w-theme"></p>
+    <div class="lab-bar">
+      <button class="btn" type="button" id="b-start">Start 90s</button>
+      <span class="timer" id="timer" aria-live="off">1:30</span>
+      <button class="btn" type="button" id="b-clear">Clear</button>
+      <button class="tog" type="button" id="b-guide" aria-pressed="true">Faint guide</button>
+      <button class="btn reveal" type="button" id="b-reveal">Reveal answer</button>
+    </div>
+    <div class="mapbox stage" id="stage">
+      <div class="base" data-base="india"><IndiaMap id="lab-india" labels={false} extras={false} title="Blank India outline for sketching" /></div>
+      <div class="base" data-base="world" hidden><WorldMap id="lab-world" title="Blank world outline for sketching" /></div>
+      <canvas id="pad" aria-label="Drawing area. Draw with your finger or mouse."></canvas>
+    </div>
+    <p class="attrib">{ATTRIBUTION}</p>
+    <div id="result" hidden>
+      <div id="legend" class="legend"></div>
+      <p class="eyebrow">Score your sketch</p>
+      <ul id="check" class="check"></ul>
+      <p><button class="btn reveal" type="button" id="b-save">Save score</button> <span id="saved" class="eyebrow"></span></p>
+    </div>
+    <p id="hist" class="eyebrow"></p>
+  </section>
+
+  <h2>Warm-up</h2>
+  <ul class="cards"><li><button type="button" class="card" data-id="free-india"><b>{FREE.title}</b><span class="best" data-best="free-india"></span></button></li></ul>
+
+  <h2>India map PYQs</h2>
+  <ul class="cards">{india.map((c: any) => <li id={`c-${c.id}`}><button type="button" class="card" data-id={c.id}><span class="eyebrow">{c.paper} · {c.year}</span><span>{c.title}</span><span class="best" data-best={c.id}></span></button></li>)}</ul>
+
+  <h2>World map PYQs</h2>
+  <ul class="cards">{world.map((c: any) => <li><button type="button" class="card" data-id={c.id}><span class="eyebrow">{c.paper} · {c.year}</span><span>{c.title}</span><span class="best" data-best={c.id}></span></button></li>)}</ul>
+  <p class="lead">More lab questions arrive as each map module is built.</p>
+
+  <style is:global>
+    .lab-work { margin: 14px 0 20px; display: grid; gap: 6px; }
+    .lab-work h2 { font-size: 1.15rem; margin: 0; font-family: var(--f-body); font-weight: 600; line-height: 1.45; }
+    .lab-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .timer { font-family: var(--f-mono); font-size: 1.3rem; font-weight: 500; min-width: 3.2em; font-variant-numeric: tabular-nums; }
+    .timer.low { color: var(--gs3); }
+    .btn.reveal { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+    .stage { position: relative; }
+    .stage .base svg { transition: opacity .25s; }
+    .stage.guide-off .base svg { opacity: 0; }
+    .stage.guide-faint .base svg { opacity: .3; }
+    .stage.revealed .base svg { opacity: 1; }
+    #pad { position: absolute; left: 0; top: 0; touch-action: none; cursor: crosshair; }
+    .stage.revealed #pad { opacity: .75; }
+    .labonly .lab text { display: none; } .labonly .lab text.show { display: inline; }
+    .labonly .pt { display: none; } .labonly .pt.on1 { display: inline; }
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .88rem; margin-top: 6px; }
+    .legend span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+    .legend .l1::before { background: var(--gs1-bg); border: 2px solid var(--gs1); } .legend .l2::before { background: var(--gs3-bg); border: 2px solid var(--gs3); }
+    .check { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+    .check label { display: flex; gap: 8px; align-items: flex-start; cursor: pointer; }
+    .check input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--gs1); }
+    .cards { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+    .card { font: inherit; text-align: left; width: 100%; display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; color: var(--ink); cursor: pointer; }
+    .card:hover { border-color: var(--accent); }
+    .best { font-size: .8rem; font-weight: 700; color: var(--gs1); }
+  </style>
+
+  <script is:inline define:vars={{ cards }}>
+    (function () {
+      var byId = {}; cards.forEach(function (c) { byId[c.id] = c; });
+      var KEY = 'upscthemes-lab';
+      var store = {}; try { store = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
+      function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+      function track(n, d) { if (window.__track) window.__track(n, d); }
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+      function bestOf(id) { var a = store[id] || []; return a.reduce(function (b, x) { return Math.max(b, x.s / x.n); }, -1); }
+      function paintBest() {
+        document.querySelectorAll('[data-best]').forEach(function (el) {
+          var a = store[el.dataset.best] || []; if (!a.length) { el.textContent = ''; return; }
+          var b = a.reduce(function (m, x) { return x.s / x.n > m.s / m.n ? x : m; });
+          el.textContent = 'Best ' + b.s + '/' + b.n + ' · ' + a.length + (a.length > 1 ? ' attempts' : ' attempt');
+        });
+      }
+      paintBest();
+
+      var work = document.getElementById('work'), stage = document.getElementById('stage'), pad = document.getElementById('pad'), ctx = pad.getContext('2d');
+      var bases = { india: stage.querySelector('[data-base="india"]'), world: stage.querySelector('[data-base="world"]') };
+      var svgs = { india: document.getElementById('lab-india'), world: document.getElementById('lab-world') };
+      var cur = null, strokes = [], drawing = null, timer = null, left = 90, started = 0, guide = true;
+
+      function activeSvg() { return svgs[cur.base]; }
+      function fitPad() {
+        if (!cur) return;
+        var s = activeSvg(), r = s.getBoundingClientRect(), pr = stage.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+        pad.style.left = (r.left - pr.left) + 'px'; pad.style.top = (r.top - pr.top) + 'px';
+        pad.style.width = r.width + 'px'; pad.style.height = r.height + 'px';
+        pad.width = Math.round(r.width * dpr); pad.height = Math.round(r.height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0); redraw();
+      }
+      function redraw() {
+        var w = pad.width / (window.devicePixelRatio || 1), h = pad.height / (window.devicePixelRatio || 1);
+        ctx.clearRect(0, 0, w, h);
+        var ink = getComputedStyle(document.documentElement).getPropertyValue('--ink').trim() || '#1d2333';
+        ctx.strokeStyle = ink; ctx.lineWidth = 2.5; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+        strokes.forEach(function (st) { ctx.beginPath(); st.forEach(function (p, i) { var x = p[0] * w, y = p[1] * h; if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); }); if (st.length === 1) ctx.lineTo(st[0][0] * w + .1, st[0][1] * h); ctx.stroke(); });
+      }
+      function pos(e) { var r = pad.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; }
+      pad.addEventListener('pointerdown', function (e) { if (!cur) return; pad.setPointerCapture(e.pointerId); drawing = [pos(e)]; strokes.push(drawing); redraw(); if (!started) startTimer(); });
+      pad.addEventListener('pointermove', function (e) { if (!drawing) return; drawing.push(pos(e)); redraw(); });
+      ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (t) { pad.addEventListener(t, function () { drawing = null; }); });
+      window.addEventListener('resize', fitPad);
+
+      var tEl = document.getElementById('timer');
+      function showTime() { var m = Math.floor(left / 60), s = left % 60; tEl.textContent = m + ':' + (s < 10 ? '0' : '') + s; tEl.classList.toggle('low', left <= 15); }
+      function stopTimer() { if (timer) clearInterval(timer); timer = null; }
+      function startTimer() {
+        stopTimer(); left = 90; started = Date.now(); showTime();
+        timer = setInterval(function () { left--; showTime(); if (left <= 0) { stopTimer(); tEl.textContent = "Time's up"; } }, 1000);
+      }
+      document.getElementById('b-start').addEventListener('click', function () { strokes = []; redraw(); startTimer(); });
+      document.getElementById('b-clear').addEventListener('click', function () { strokes = []; redraw(); });
+      var gBtn = document.getElementById('b-guide');
+      function applyGuide() { stage.classList.toggle('guide-faint', guide); stage.classList.toggle('guide-off', !guide); gBtn.setAttribute('aria-pressed', guide ? 'true' : 'false'); }
+      gBtn.addEventListener('click', function () { guide = !guide; applyGuide(); });
+
+      function clearHighlights() {
+        svgs.india.querySelectorAll('.st').forEach(function (p) { p.classList.remove('on1', 'on2'); });
+        svgs.world.querySelectorAll('.pt').forEach(function (p) { p.classList.remove('on1'); });
+        svgs.world.querySelectorAll('.lab text').forEach(function (t) { t.classList.remove('show'); });
+      }
+      function open(id, scroll) {
+        var c = byId[id]; if (!c) return;
+        cur = c; strokes = []; stopTimer(); left = 90; started = 0; showTime();
+        clearHighlights(); stage.classList.remove('revealed');
+        bases.india.hidden = c.base !== 'india'; bases.world.hidden = c.base !== 'world';
+        svgs.world.classList.add('labonly');
+        document.getElementById('w-meta').textContent = c.paper ? c.paper + ' · ' + c.year + (c.marks ? ' · ' + c.marks + ' marks' : '') : 'Warm-up';
+        document.getElementById('w-title').textContent = c.title;
+        document.getElementById('w-theme').innerHTML = c.theme ? 'Theme: <a href="' + c.theme.url + '">T' + c.theme.n + ' ' + esc(c.theme.title) + '</a>' : '';
+        document.getElementById('result').hidden = true; document.getElementById('saved').textContent = '';
+        work.hidden = false; applyGuide();
+        requestAnimationFrame(fitPad);
+        paintHist();
+        if (scroll) work.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        try { history.replaceState(null, '', '#' + id); } catch (e) {}
+        track('lab-open', { id: id });
+      }
+      function paintHist() {
+        var a = store[cur.id] || [];
+        document.getElementById('hist').textContent = a.length ? 'Your attempts: ' + a.slice(-5).map(function (x) { return x.s + '/' + x.n; }).join(', ') + (a.length > 5 ? ' (last 5)' : '') : '';
+      }
+      document.getElementById('b-reveal').addEventListener('click', function () {
+        if (!cur) return; stopTimer();
+        clearHighlights(); stage.classList.add('revealed');
+        var legend = [];
+        cur.groups.forEach(function (g, i) {
+          var cls = i === 0 ? 'on1' : 'on2';
+          (g.states || []).forEach(function (n) { var p = svgs.india.querySelector('.st[data-name="' + CSS.escape(n) + '"]'); if (p) p.classList.add(cls); });
+          (g.points || []).forEach(function (n) {
+            var p = svgs.world.querySelector('.pt[data-name="' + CSS.escape(n) + '"]'); if (p) p.classList.add('on1');
+            var t = svgs.world.querySelector('.lab text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.add('show');
+          });
+          legend.push('<span class="' + (i === 0 ? 'l1' : 'l2') + '">' + esc(g.label) + (g.states ? ': ' + esc(g.states.join(', ')) : g.points ? ': ' + esc(g.points.join(', ')) : '') + '</span>');
+        });
+        document.getElementById('legend').innerHTML = legend.join('');
+        document.getElementById('check').innerHTML = cur.checklist.map(function (x, i) { return '<li><label><input type="checkbox" id="ck-' + i + '"> <span>' + esc(x) + '</span></label></li>'; }).join('');
+        document.getElementById('result').hidden = false;
+        track('lab-reveal', { id: cur.id, seconds: started ? Math.round((Date.now() - started) / 1000) : 0 });
+      });
+      document.getElementById('b-save').addEventListener('click', function () {
+        if (!cur) return;
+        var boxes = document.querySelectorAll('#check input'), s = 0; boxes.forEach(function (b) { if (b.checked) s++; });
+        (store[cur.id] = store[cur.id] || []).push({ t: Date.now(), s: s, n: boxes.length, sec: started ? Math.min(999, Math.round((Date.now() - started) / 1000)) : null });
+        save(); paintBest(); paintHist();
+        document.getElementById('saved').textContent = 'Saved: ' + s + '/' + boxes.length + '. Try another, or Start again.';
+        track('lab-save', { id: cur.id, score: s + '/' + boxes.length });
+      });
+      document.querySelectorAll('.card').forEach(function (b) { b.addEventListener('click', function () { open(b.dataset.id, true); }); });
+      function fromHash() { var h = location.hash.slice(1); if (h && byId[h]) open(h, true); }
+      window.addEventListener('hashchange', fromHash); fromHash();
+    })();
+  </script>
+</Base>

@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { modules, moduleUrl, lab } from '../../lib/maps';
+import { u } from '../../lib/data';
+const ready = modules.filter((m) => m.slug);
+const desc = `Map-based UPSC Mains preparation for GS1, GS2 and GS3: ${modules.length} map modules from the India outline to borders and environment, plus a PYQ sketch lab with ${lab.length} real questions.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC Mains map modules',
+  itemListElement: ready.map((m, i) => ({ '@type': 'ListItem', position: i + 1, name: m.name, url: new URL(moduleUrl(m), Astro.site).href })) }];
+---
+<Base title="UPSC Mains maps: learn and practise" description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }]}>
+  <p class="eyebrow">Maps for GS1, GS2 and GS3</p>
+  <h1>Learn the maps Mains answers need</h1>
+  <p class="lead">Mains rewards a quick, palm-sized sketch with a few correct labels, not memorised place names. These modules go from drawing India's outline to the maps behind geography, IR, security and environment answers. The sketch lab lets you practise on real PYQs against the clock.</p>
+  <p><a class="chip" style="font-weight:700" href={u('/maps/lab/')} data-umami-event="maps-cta" data-umami-event-target="lab">Open the sketch lab</a> <a class="chip" href={u('/maps/india-outline/')} data-umami-event="maps-cta" data-umami-event-target="module-0">Start with module 0</a></p>
+
+  <h2>Modules, basic to advanced</h2>
+  <ol class="mods">
+    {modules.map((m) => (
+      <li class={`mod ${m.slug ? 'ready' : ''}`}>
+        <span class="mn" aria-hidden="true">{m.n}</span>
+        <div class="mb">
+          {m.slug ? <a href={moduleUrl(m)}>{m.name}</a> : <span class="mt">{m.name}</span>}
+          <span class="mc">{m.covers}</span>
+          <span class="mp">{m.papers}{!m.slug && <span class="soon">Coming next</span>}</span>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <p class="lead" style="margin-top:16px">India's boundaries on every map follow the Survey of India. Each build checks that Jammu & Kashmir (including PoK and Gilgit-Baltistan), Ladakh (including Aksai Chin), Arunachal Pradesh and the island groups are shown as part of India.</p>
+  <style>
+    .mods { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); margin-left: 15px; }
+    .mod { display: grid; grid-template-columns: auto 1fr; gap: 12px; padding: 8px 0 12px; }
+    .mn { width: 30px; height: 30px; margin-left: -16px; border-radius: 50%; background: var(--surface); border: 2px solid var(--line); display: grid; place-items: center; font-size: .8rem; font-weight: 700; color: var(--muted); }
+    .mod.ready .mn { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+    .mb { display: grid; gap: 2px; min-width: 0; padding-top: 3px; }
+    .mb a, .mt { font-weight: 700; } .mt { color: var(--muted); }
+    .mc { font-size: .92rem; } .mp { font-size: .8rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+    .soon { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; }
+  </style>
+</Base>

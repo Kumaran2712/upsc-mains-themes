@@ -1,0 +1,13 @@
+---
+import { maps } from '../../lib/maps';
+interface Props { id: string; title?: string }
+const { id, title = 'India and its neighbouring countries' } = Astro.props;
+const m = maps.region;
+---
+<svg id={id} class="map map-region" viewBox={m.viewBox} role="img" aria-label={title} preserveAspectRatio="xMidYMid meet">
+  <title>{title}</title>
+  <rect class="sea" x="0" y="0" width="100%" height="100%" />
+  <g class="nbs">{m.neighbours.map((n: any) => <path class="nb" data-name={n.name} d={n.d}><title>{n.name}</title></path>)}</g>
+  <path class="india" d={m.india} />
+  <g class="lab">{m.neighbours.map((n: any) => <text x={n.cx} y={n.cy} text-anchor="middle">{n.name}</text>)}<text x={m.indiaLabel.x} y={m.indiaLabel.y} text-anchor="middle" class="in">INDIA</text></g>
+</svg>

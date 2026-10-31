@@ -1,0 +1,20 @@
+---
+import { maps } from '../../lib/maps';
+interface Props { id: string; labels?: boolean; extras?: boolean; title?: string }
+const { id, labels = true, extras = true, title = 'Map of India with state boundaries' } = Astro.props;
+const m = maps.india;
+const big = m.states.filter((s: any) => s.area > 2.5);
+---
+<svg id={id} class="map map-india" viewBox={m.viewBox} role="img" aria-label={title} preserveAspectRatio="xMidYMid meet">
+  <title>{title}</title>
+  {extras && <path class="grat" d={m.graticule} />}
+  <g class="states">{m.states.map((s: any) => <path class="st" data-name={s.name} d={s.d}><title>{s.name}</title></path>)}</g>
+  <path class="ol" d={m.outline} />
+  {extras && <>
+    <g class="tropic"><path d={m.tropic} /><text x={m.tropicLabel.x} y={m.tropicLabel.y}>Tropic of Cancer</text></g>
+    <g class="meridian"><path d={m.meridian} /><text x={m.meridianLabel.x} y={m.meridianLabel.y}>82°30′E</text></g>
+    <g class="gratlab">{m.latLabels.map((l: any) => <text x={l.x} y={l.y}>{l.t}</text>)}{m.lonLabels.map((l: any) => <text x={l.x} y={l.y} text-anchor="middle">{l.t}</text>)}</g>
+    <g class="ext">{m.extremes.map((e: any) => { const L = e.label; const end = L === 'Easternmost' || L === 'Southernmost'; const dy = L === 'Northernmost' ? 32 : L.startsWith('Southernmost') ? -14 : 9; return <g><circle cx={e.x} cy={e.y} r="9" /><text x={e.x + (end ? -14 : 14)} y={e.y + dy} text-anchor={end ? 'end' : 'start'}>{L.replace(' (mainland)', '*')}</text></g>; })}</g>
+  </>}
+  {labels && <g class="lab">{big.map((s: any) => <text x={s.cx} y={s.cy} text-anchor="middle">{s.name}</text>)}</g>}
+</svg>
