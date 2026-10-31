@@ -27,10 +27,12 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Set these under Settings → Secrets and variables → Actions → Variables
-          SITE_URL: ${{ vars.SITE_URL }}
-          BASE_PATH: ${{ vars.BASE_PATH }}
-          PUBLIC_REPO_URL: ${{ vars.PUBLIC_REPO_URL }}
+          # Defaults point at https://kumaran2712.github.io/upsc-mains-themes/.
+          # Override any of them under Settings → Secrets and variables → Actions → Variables
+          # (e.g. SITE_URL=https://your-domain.in and BASE_PATH=/ after moving to a custom domain).
+          SITE_URL: ${{ vars.SITE_URL || 'https://kumaran2712.github.io' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/upsc-mains-themes' }}
+          PUBLIC_REPO_URL: ${{ vars.PUBLIC_REPO_URL || 'https://github.com/Kumaran2712/upsc-mains-themes' }}
           PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.PUBLIC_UMAMI_WEBSITE_ID }}
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
       - uses: actions/upload-pages-artifact@v3

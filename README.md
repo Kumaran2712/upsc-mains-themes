@@ -10,7 +10,7 @@ Live address once deployed: **https://kumaran2712.github.io/upsc-mains-themes/**
 
 1. **Repo.** This repo, `Kumaran2712/upsc-mains-themes`.
 2. **Turn on Pages.** Settings → Pages → Source: **GitHub Actions**.
-3. **Set variables.** Settings → Secrets and variables → Actions → **Variables**:
+3. **Variables (optional now).** The workflow already defaults to this repo's address, so the site deploys without any variables. Add these under Settings → Secrets and variables → Actions → **Variables** only to override them or to switch on analytics and Search Console:
    | Name | Value |
    | --- | --- |
    | `SITE_URL` | `https://kumaran2712.github.io` (or your custom domain; required — the build stops without it) |
