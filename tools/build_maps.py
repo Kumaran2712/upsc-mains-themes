@@ -252,11 +252,59 @@ for it in WD["india_rivers"]:
     river_items.append(dict(name=it["name"], group=it["group"], flows=it["flows"], themes=it["themes"], d=path(gp, fi), cx=round(cx, 1), cy=round(cy, 1)))
 rivers_map = dict(rivers=river_items)
 
-data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, drainage=rivers_map, boundaryChecks=list(CHECKS))
+# ---------- Layered India modules ----------
+LM = json.load(open(os.path.join(HERE, "maps_india_layers.json")))
+reg10 = json.load(open(os.path.join(GEO, "ne_10m_geography_regions_polys.geojson")))
+by_reg10 = {}
+for f in reg10["features"]:
+    by_reg10.setdefault(f["properties"]["NAME"], []).append(shape(f["geometry"]).buffer(0))
+IFRAME = box(66.5, 5.5, 98.5, 37.6)
+state_names = set(states)
+layer_modules = []
+for mod in LM["modules"]:
+    out_layers = []
+    for L in mod["layers"]:
+        o = {k: L[k] for k in ("id", "name", "kind", "note", "themes") if k in L}
+        if L["kind"] == "states":
+            groups = L.get("groups") or [{"label": L["name"], "items": L["items"]}]
+            for g in groups:
+                bad = [x for x in g["items"] if x not in state_names]
+                if bad: sys.exit(f"{mod['slug']}/{L['id']}: unknown state(s) {bad}")
+            o["groups"] = groups
+            o["stateNotes"] = L.get("stateNotes", {})
+        elif L["kind"] == "pins":
+            items = []
+            for it in L["items"]:
+                x, y = pt(it["lon"], it["lat"])
+                items.append(dict(name=it["name"], note=it["note"], x=round(x, 1), y=round(y, 1)))
+            o["items"] = items
+        elif L["kind"] == "features":
+            items = []
+            for it in L["items"]:
+                if it["ne"] not in by_reg10: sys.exit(f"{mod['slug']}: missing Natural Earth region {it['ne']}")
+                g = unary_union(by_reg10[it["ne"]]).intersection(IFRAME).simplify(0.03, preserve_topology=True)
+                if g.is_empty: sys.exit(f"{mod['slug']}: region {it['ne']} is outside the India frame")
+                rp = max(getattr(g, "geoms", [g]), key=lambda q: q.area).representative_point()
+                cx, cy = pt(rp.x, rp.y)
+                items.append(dict(name=it["name"], d=path(proj(g, lcc), fi), cx=round(cx, 1), cy=round(cy, 1)))
+            o["items"] = items
+        elif L["kind"] == "lines":
+            items = []
+            for it in L["items"]:
+                pts_ = [pt(lon, lat) for lat, lon in it["path"]]
+                d = "M" + " L".join(f"{x:.0f} {y:.0f}" for x, y in pts_)
+                mx, my = pts_[len(pts_) // 2]
+                items.append(dict(name=it["name"], note=it["note"], d=d, cx=round(mx, 1), cy=round(my, 1)))
+            o["items"] = items
+        out_layers.append(o)
+    layer_modules.append(dict(n=mod["n"], slug=mod["slug"], name=mod["name"], h1=mod["h1"], seo=mod["seo"], desc=mod["desc"], lead=mod["lead"], papers=mod["papers"], layers=out_layers))
+
+data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, drainage=rivers_map, layerModules=layer_modules, boundaryChecks=list(CHECKS))
 json.dump(data, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 print("India map", W, "x", H, "| states", len(state_items), "| tropic states:", tropic_states)
 print("meridian states:", meridian_states)
 print("extremes:", [(e["label"], e["lat"], e["lon"], e["state"]) for e in extremes])
 print("neighbours drawn:", [n["name"] for n in neighbours], "| world chokepoints:", len(chokes))
 print("physical:", len(phys), "features,", len(seas), "seas,", len(wrivers), "rivers | history:", len(countries), "countries,", len(pins), "pins | india rivers:", len(river_items))
+print("layer modules:", [(m["slug"], len(m["layers"])) for m in layer_modules])
 print("maps.json size:", os.path.getsize(OUT) // 1024, "KB")

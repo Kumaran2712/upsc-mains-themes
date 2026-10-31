@@ -796,5 +796,1207 @@
    "Marked Mahanadi (Odisha–Chhattisgarh) or Narmada",
    "Kept labels to a few"
   ]
+ },
+ {
+  "id": "GS1-GEO-01-M2021-S02",
+  "base": "indiaplus",
+  "section": "physical-india",
+  "groups": [
+   {
+    "label": "Mountain wall in the north and north-east",
+    "items": [
+     "Himalayas",
+     "Karakoram",
+     "Naga Hills"
+    ]
+   },
+   {
+    "label": "The peninsular block",
+    "items": [
+     "Deccan Plateau",
+     "Western Ghats",
+     "Eastern Ghats"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Himalaya–Karakoram arc separating India from the rest of Asia",
+   "Showed seas on three sides of the peninsula",
+   "Marked the distinct peninsular plateau and the Ganga plain",
+   "Kept the sketch palm-sized"
+  ]
+ },
+ {
+  "id": "GS1-GEO-02-M2023-Q07",
+  "base": "indiaplus",
+  "section": "climate",
+  "groups": [
+   {
+    "label": "Bay of Bengal branch",
+    "items": [
+     "Bay of Bengal branch"
+    ]
+   },
+   {
+    "label": "Bhojpur region",
+    "items": [
+     "Bihar",
+     "Uttar Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Bay of Bengal branch entering the North-East",
+   "Showed it turning west along the Himalaya",
+   "Marked the Bhojpur region in western Bihar and eastern Uttar Pradesh",
+   "Labelled the wind as easterly (Purvaiya)"
+  ]
+ },
+ {
+  "id": "GS1-GEO-02-M2015-S02",
+  "base": "indiaplus",
+  "section": "climate",
+  "groups": [
+   {
+    "label": "The two branches",
+    "items": [
+     "Arabian Sea branch",
+     "Bay of Bengal branch"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew both monsoon branches",
+   "Marked one place where land use or urban heat may be altering rainfall",
+   "Showed the rain-shadow Deccan interior",
+   "Kept it schematic"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2021-S01",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "Seismic zone V (whole state)",
+    "items": [
+     "Arunachal Pradesh",
+     "Assam",
+     "Manipur",
+     "Meghalaya",
+     "Mizoram",
+     "Nagaland",
+     "Tripura",
+     "Andaman & Nicobar"
+    ]
+   },
+   {
+    "label": "Major earthquakes",
+    "items": [
+     "Bhuj earthquake (2001)",
+     "Latur earthquake (1993)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Shaded the Himalaya, the North-East and Kutch as the highest-risk belts",
+   "Marked Bhuj (2001) and Latur (1993)",
+   "Noted that Latur struck the 'stable' Deccan",
+   "Kept the sketch small"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2017-S01",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "2004 tsunami",
+    "items": [
+     "Indian Ocean tsunami (2004)"
+    ]
+   },
+   {
+    "label": "Worst-hit coasts",
+    "items": [
+     "Tamil Nadu",
+     "Andaman & Nicobar",
+     "Kerala",
+     "Andhra Pradesh",
+     "Puducherry"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Andaman–Sumatra source to the south-east",
+   "Marked the Tamil Nadu coast (Nagapattinam) and the Andaman & Nicobar Islands",
+   "Showed the waves travelling west across the Bay of Bengal",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2014-S01",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "Drought-prone states",
+    "items": [
+     "Rajasthan",
+     "Gujarat",
+     "Maharashtra",
+     "Karnataka",
+     "Andhra Pradesh",
+     "Telangana"
+    ]
+   }
+  ],
+  "checklist": [
+   "Shaded the rain-shadow and arid belts",
+   "Named Marathwada, north Karnataka and western Rajasthan",
+   "Linked drought years to El Niño",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2022-Q18",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "East coast",
+    "items": [
+     "West Bengal",
+     "Odisha",
+     "Andhra Pradesh",
+     "Tamil Nadu",
+     "Puducherry"
+    ]
+   },
+   {
+    "label": "West coast",
+    "items": [
+     "Gujarat",
+     "Maharashtra",
+     "Goa",
+     "Karnataka",
+     "Kerala"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked both coastlines",
+   "Pointed to erosion hotspots such as Kerala, Odisha and the Sundarbans",
+   "Showed one cause (ports, sand mining or cyclones)",
+   "Kept labels short"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2016-S02",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "Uttarakhand disasters",
+    "items": [
+     "Kedarnath (2013)",
+     "Joshimath subsidence (2023)"
+    ]
+   },
+   {
+    "label": "State",
+    "items": [
+     "Uttarakhand"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Uttarakhand and Kedarnath",
+   "Showed the steep valleys of the Bhagirathi and Alaknanda",
+   "Marked one recent event such as Joshimath",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-DM-01-M2024-Q18",
+  "base": "indiaplus",
+  "section": "hazards",
+  "groups": [
+   {
+    "label": "Two major urban floods",
+    "items": [
+     "Mumbai floods (2005)",
+     "Chennai floods (2015)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Mumbai (2005) and Chennai (2015)",
+   "Added one more city such as Hyderabad, Bengaluru or Delhi",
+   "Noted encroached wetlands and drains as a cause",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2021-S01",
+  "base": "indiaplus",
+  "section": "resources",
+  "groups": [
+   {
+    "label": "Gondwana coalfields",
+    "items": [
+     "Jharia",
+     "Raniganj",
+     "Korba",
+     "Talcher",
+     "Singrauli",
+     "Singareni"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Damodar, Mahanadi, Son and Godavari valleys",
+   "Placed the main coalfields along them",
+   "Noted Neyveli lignite as the exception in the south",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2022-Q06",
+  "base": "indiaplus",
+  "section": "resources",
+  "groups": [
+   {
+    "label": "Deccan plateau",
+    "items": [
+     "Deccan Plateau"
+    ]
+   },
+   {
+    "label": "Black-soil states",
+    "items": [
+     "Maharashtra",
+     "Gujarat",
+     "Madhya Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Shaded the Deccan trap region in Maharashtra and its neighbours",
+   "Linked it to black (regur) soil and cotton",
+   "Marked one mineral or groundwater point",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2013-S01",
+  "base": "indiaplus",
+  "section": "resources",
+  "groups": [
+   {
+    "label": "Northern sugar belt",
+    "items": [
+     "Uttar Pradesh"
+    ]
+   },
+   {
+    "label": "Southern sugar belt",
+    "items": [
+     "Maharashtra",
+     "Karnataka",
+     "Tamil Nadu"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Uttar Pradesh in the north",
+   "Marked Maharashtra, Karnataka and Tamil Nadu in the south",
+   "Noted higher yields and a longer crushing season in the south",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2014-S01",
+  "base": "indiaplus",
+  "section": "resources",
+  "groups": [
+   {
+    "label": "Successful tea regions",
+    "items": [
+     "Assam",
+     "West Bengal"
+    ]
+   },
+   {
+    "label": "Where planters failed",
+    "items": [
+     "Himachal Pradesh",
+     "Uttarakhand"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Assam and the Darjeeling hills",
+   "Marked the western Shiwaliks where plantations did not last",
+   "Linked success to rainfall, slopes and soil",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-05-M2013-S02",
+  "base": "indiaplus",
+  "section": "resources",
+  "groups": [
+   {
+    "label": "Hydrocarbon basins",
+    "items": [
+     "Ankleshwar",
+     "Krishna–Godavari basin",
+     "Digboi",
+     "Barmer (Mangala)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Cambay basin (Gujarat)",
+   "Marked the Krishna–Godavari basin",
+   "Marked the Assam–Arakan basin",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2018-S03",
+  "base": "indiaplus",
+  "section": "industry",
+  "groups": [
+   {
+    "label": "Industrial corridors",
+    "items": [
+     "Delhi–Mumbai (DMIC)",
+     "Amritsar–Kolkata (AKIC)",
+     "Chennai–Bengaluru (CBIC)",
+     "Bengaluru–Mumbai (BMEC)",
+     "Vizag–Chennai (VCIC)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew DMIC along the Western DFC",
+   "Drew AKIC along the Eastern DFC",
+   "Added the southern corridors (CBIC, BMEC, VCIC)",
+   "Kept it schematic"
+  ]
+ },
+ {
+  "id": "GS1-GEO-06-M2017-S01",
+  "base": "indiaplus",
+  "section": "industry",
+  "groups": [
+   {
+    "label": "Coastal refineries",
+    "items": [
+     "Jamnagar",
+     "Kochi",
+     "Mangaluru",
+     "Paradip",
+     "Haldia"
+    ]
+   },
+   {
+    "label": "Inland market refineries",
+    "items": [
+     "Panipat",
+     "Mathura",
+     "Barauni"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked coastal refineries fed by imported crude",
+   "Marked inland refineries near big markets",
+   "Contrasted with Digboi, near an oil field",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS2-GOV-01-M2022-Q06",
+  "base": "indiaplus",
+  "section": "industry",
+  "groups": [
+   {
+    "label": "Freight corridors",
+    "items": [
+     "Eastern DFC",
+     "Western DFC"
+    ]
+   },
+   {
+    "label": "Gateway ports",
+    "items": [
+     "JNPA (Nhava Sheva)",
+     "Kolkata–Haldia",
+     "Paradip"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Eastern and Western DFCs",
+   "Linked them to the ports they serve",
+   "Marked one industrial corridor along a DFC",
+   "Kept it schematic"
+  ]
+ },
+ {
+  "id": "GS1-CUL-01-M2025-Q01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Harappan sites",
+    "items": [
+     "Harappa",
+     "Mohenjo-daro",
+     "Dholavira",
+     "Lothal",
+     "Kalibangan",
+     "Rakhigarhi"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Harappa and Mohenjo-daro on the Indus (now Pakistan)",
+   "Marked Dholavira and Lothal in Gujarat",
+   "Marked Kalibangan and Rakhigarhi in the north-west",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-01-M2014-S01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Planned Harappan cities",
+    "items": [
+     "Mohenjo-daro",
+     "Harappa",
+     "Dholavira",
+     "Lothal",
+     "Kalibangan"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the main planned cities",
+   "Labelled one feature per site (Great Bath, reservoirs, dockyard)",
+   "Linked them to today's smart-city ideas",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-02-M2024-Q02",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Pallava centres",
+    "items": [
+     "Kanchipuram",
+     "Mamallapuram"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Kanchipuram as the Pallava capital",
+   "Marked Mamallapuram on the coast",
+   "Showed the Tamil coast trade links",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-02-M2024-Q11",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Chola heartland",
+    "items": [
+     "Thanjavur"
+    ]
+   },
+   {
+    "label": "State",
+    "items": [
+     "Tamil Nadu"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Thanjavur in the Kaveri delta",
+   "Marked Gangaikonda Cholapuram nearby",
+   "Showed the Chola reach across the Bay of Bengal",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-02-M2026-S01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Vijayanagara capital",
+    "items": [
+     "Hampi"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Hampi on the Tungabhadra",
+   "Placed it between the Deccan sultanates and the Tamil south",
+   "Marked one older influence such as Pattadakal",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-02-M2025-Q03",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Chandela temples",
+    "items": [
+     "Khajuraho"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Khajuraho in Bundelkhand",
+   "Contrasted it with a southern Dravida site",
+   "Labelled it as Nagara style",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-CUL-04-M2016-S01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Stupa and Buddhist sites",
+    "items": [
+     "Sanchi",
+     "Sarnath",
+     "Bodh Gaya"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Sanchi in central India",
+   "Marked Bodh Gaya and Sarnath in the Ganga plain",
+   "Linked one site to Ashoka",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-HIS-04-M2016-S01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Centres of 1857",
+    "items": [
+     "Meerut",
+     "Delhi",
+     "Kanpur",
+     "Lucknow",
+     "Jhansi",
+     "Arrah"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Meerut and Delhi",
+   "Marked Kanpur, Lucknow and Jhansi",
+   "Showed the spread across the Ganga plain and central India",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-HIS-06-M2026-S01",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Gandhian movements",
+    "items": [
+     "Champaran",
+     "Kheda",
+     "Ahmedabad",
+     "Bardoli",
+     "Dandi",
+     "Chauri Chaura"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the early satyagrahas (Champaran, Kheda, Ahmedabad)",
+   "Marked Dandi and Bardoli",
+   "Marked Chauri Chaura",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-HIS-04-M2023-Q13",
+  "base": "indiaplus",
+  "section": "india-history",
+  "groups": [
+   {
+    "label": "Tribal revolts",
+    "items": [
+     "Santhal hul (1855–56)",
+     "Munda ulgulan (1899–1900)",
+     "Rampa rebellion (1922–24)"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Santhal and Munda areas in Jharkhand",
+   "Marked the Rampa hills in Andhra",
+   "Linked them to forest and land laws",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-01-M2013-S01",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "LWE core in Fifth Schedule areas",
+    "items": [
+     "Chhattisgarh",
+     "Jharkhand",
+     "Odisha"
+    ]
+   },
+   {
+    "label": "Other Fifth Schedule states",
+    "items": [
+     "Andhra Pradesh",
+     "Telangana",
+     "Gujarat",
+     "Himachal Pradesh",
+     "Madhya Pradesh",
+     "Maharashtra",
+     "Rajasthan"
+    ]
+   }
+  ],
+  "checklist": [
+   "Shaded the Fifth Schedule states",
+   "Marked the LWE core in Chhattisgarh, Jharkhand and Odisha",
+   "Showed the overlap between the two",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS2-POL-04-M2013-S02",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "Article 371A",
+    "items": [
+     "Nagaland"
+    ]
+   },
+   {
+    "label": "Similar protection (371G)",
+    "items": [
+     "Mizoram"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Nagaland",
+   "Marked Mizoram with similar protections",
+   "Showed their location on the Myanmar border",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2026-S01",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "Ladakh",
+    "items": [
+     "Ladakh"
+    ]
+   },
+   {
+    "label": "Existing Sixth Schedule states",
+    "items": [
+     "Assam",
+     "Meghalaya",
+     "Tripura",
+     "Mizoram"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Ladakh between Pakistan and China",
+   "Marked the Sixth Schedule states in the North-East",
+   "Marked Galwan or Siachen as a security point",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-HIS-08-M2026-S01",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "Formed on linguistic lines",
+    "items": [
+     "Andhra Pradesh",
+     "Maharashtra",
+     "Gujarat",
+     "Punjab",
+     "Haryana"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Andhra (1953) as the first linguistic state",
+   "Marked the 1960 split of Bombay into Maharashtra and Gujarat",
+   "Marked the 1966 Punjab–Haryana split",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-SOC-02-M2014-S02",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "Prosperous but adverse sex ratio",
+    "items": [
+     "Haryana",
+     "Punjab",
+     "Delhi"
+    ]
+   },
+   {
+    "label": "Highest sex ratio",
+    "items": [
+     "Kerala"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked Haryana, Punjab and Delhi",
+   "Contrasted with Kerala",
+   "Noted son preference and sex-selective abortion",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS1-SOC-01-M2016-S01",
+  "base": "indiaplus",
+  "section": "society-polity",
+  "groups": [
+   {
+    "label": "Sixth Schedule",
+    "items": [
+     "Assam",
+     "Meghalaya",
+     "Tripura",
+     "Mizoram"
+    ]
+   },
+   {
+    "label": "Fifth Schedule",
+    "items": [
+     "Andhra Pradesh",
+     "Telangana",
+     "Chhattisgarh",
+     "Gujarat",
+     "Himachal Pradesh",
+     "Jharkhand",
+     "Madhya Pradesh",
+     "Maharashtra",
+     "Odisha",
+     "Rajasthan"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Sixth Schedule states in the North-East",
+   "Marked the Fifth Schedule states of central India",
+   "Labelled Articles 244(1) and 244(2)",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2016-S01",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "Pakistan border",
+    "items": [
+     "Gujarat",
+     "Rajasthan",
+     "Punjab",
+     "Jammu & Kashmir",
+     "Ladakh"
+    ]
+   },
+   {
+    "label": "Bangladesh border",
+    "items": [
+     "West Bengal",
+     "Assam",
+     "Meghalaya",
+     "Tripura",
+     "Mizoram"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the western and eastern borders",
+   "Labelled the force guarding each (BSF)",
+   "Marked difficult terrain (desert, marsh, rivers)",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2020-S02",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "Myanmar and Bangladesh borders",
+    "items": [
+     "Arunachal Pradesh",
+     "Assam",
+     "Manipur",
+     "Meghalaya",
+     "Mizoram",
+     "Nagaland",
+     "Tripura",
+     "West Bengal"
+    ]
+   },
+   {
+    "label": "Pakistan border and LoC",
+    "items": [
+     "Gujarat",
+     "Rajasthan",
+     "Punjab",
+     "Jammu & Kashmir",
+     "Ladakh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Myanmar and Bangladesh borders in the east",
+   "Marked the Pakistan border and the LoC",
+   "Labelled the forces: Assam Rifles, BSF, Army",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2024-Q19",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "China border (LAC)",
+    "items": [
+     "Ladakh",
+     "Himachal Pradesh",
+     "Uttarakhand",
+     "Sikkim",
+     "Arunachal Pradesh"
+    ]
+   },
+   {
+    "label": "Pakistan border",
+    "items": [
+     "Gujarat",
+     "Rajasthan",
+     "Punjab",
+     "Jammu & Kashmir"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the LAC's three sectors",
+   "Marked the Pakistan border and the LoC",
+   "Marked one flashpoint (Galwan, Doklam or Tawang)",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2014-S02",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "Bangladesh border",
+    "items": [
+     "West Bengal",
+     "Assam",
+     "Meghalaya",
+     "Tripura",
+     "Mizoram"
+    ]
+   },
+   {
+    "label": "Myanmar border",
+    "items": [
+     "Arunachal Pradesh",
+     "Nagaland",
+     "Manipur",
+     "Mizoram"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Bangladesh border states",
+   "Marked the Myanmar border states",
+   "Marked one migration route or hotspot",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-04-M2013-S01",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "Bangladesh and Myanmar borders",
+    "items": [
+     "Arunachal Pradesh",
+     "Assam",
+     "Manipur",
+     "Meghalaya",
+     "Mizoram",
+     "Nagaland",
+     "Tripura",
+     "West Bengal"
+    ]
+   },
+   {
+    "label": "Open borders with Nepal and Bhutan",
+    "items": [
+     "Arunachal Pradesh",
+     "Assam",
+     "Bihar",
+     "Sikkim",
+     "Uttar Pradesh",
+     "Uttarakhand",
+     "West Bengal"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the porous eastern borders",
+   "Marked the open Nepal and Bhutan borders",
+   "Marked the Siliguri Corridor",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-01-M2017-S01",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "North-Eastern states",
+    "items": [
+     "Assam",
+     "Arunachal Pradesh",
+     "Nagaland",
+     "Manipur",
+     "Mizoram",
+     "Tripura",
+     "Meghalaya"
+    ]
+   },
+   {
+    "label": "Chicken's Neck",
+    "items": [
+     "Siliguri Corridor"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the North-Eastern states",
+   "Marked the narrow Siliguri Corridor",
+   "Showed the borders with Myanmar, Bangladesh, Bhutan and China",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-SEC-01-M2022-Q20",
+  "base": "indiaplus",
+  "section": "borders-security",
+  "groups": [
+   {
+    "label": "Core LWE belt",
+    "items": [
+     "Chhattisgarh",
+     "Jharkhand",
+     "Odisha"
+    ]
+   },
+   {
+    "label": "Affected earlier or at lower intensity",
+    "items": [
+     "Bihar",
+     "West Bengal",
+     "Maharashtra",
+     "Telangana",
+     "Andhra Pradesh",
+     "Madhya Pradesh"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the core LWE belt",
+   "Marked the wider area of the past",
+   "Linked it to forested, mineral-rich tribal areas",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-ENV-01-M2023-Q17",
+  "base": "indiaplus",
+  "section": "environment",
+  "groups": [
+   {
+    "label": "Ramsar sites",
+    "items": [
+     "Chilika Lake",
+     "Keoladeo",
+     "Wular Lake",
+     "Loktak Lake",
+     "Sambhar Lake",
+     "Vembanad-Kol"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked a few Ramsar sites spread across India",
+   "Labelled Chilika and Keoladeo as the first two (1981)",
+   "Marked one urban wetland (East Kolkata)",
+   "Kept labels to a few"
+  ]
+ },
+ {
+  "id": "GS3-ENV-01-M2018-S01",
+  "base": "indiaplus",
+  "section": "environment",
+  "groups": [
+   {
+    "label": "Examples of wise use",
+    "items": [
+     "Chilika Lake",
+     "East Kolkata Wetlands",
+     "Loktak Lake"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked two or three Ramsar sites",
+   "Labelled the use at each (fisheries, sewage treatment, phumdis)",
+   "Kept it small",
+   "Used labels only for the examples"
+  ]
+ },
+ {
+  "id": "GS1-GEO-07-M2023-Q15",
+  "base": "indiaplus",
+  "section": "environment",
+  "groups": [
+   {
+    "label": "Rainforest belts",
+    "items": [
+     "Western Ghats"
+    ]
+   },
+   {
+    "label": "North-East and islands",
+    "items": [
+     "Assam",
+     "Arunachal Pradesh",
+     "Meghalaya",
+     "Andaman & Nicobar"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked the Western Ghats and the North-East",
+   "Marked the Andaman & Nicobar Islands",
+   "Named one rainforest sanctuary (e.g. Silent Valley, Namdapha)",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-ENV-01-M2018-S02",
+  "base": "indiaplus",
+  "section": "environment",
+  "groups": [
+   {
+    "label": "UNESCO biosphere reserves",
+    "items": [
+     "Nilgiri",
+     "Sunderban",
+     "Nanda Devi",
+     "Gulf of Mannar",
+     "Great Nicobar",
+     "Khangchendzonga"
+    ]
+   }
+  ],
+  "checklist": [
+   "Marked reserves in different biomes (mountain, mangrove, coral, island)",
+   "Showed the Western Ghats and Himalaya as biodiversity hotspots",
+   "Kept labels short",
+   "Kept it small"
+  ]
+ },
+ {
+  "id": "GS3-ENV-02-M2015-S01",
+  "base": "drainage",
+  "groups": [
+   {
+    "label": "Ganga and Yamuna",
+    "items": [
+     "Ganga",
+     "Yamuna"
+    ]
+   },
+   {
+    "label": "Main basin states",
+    "items": [
+     "Uttarakhand",
+     "Uttar Pradesh",
+     "Bihar",
+     "Jharkhand",
+     "West Bengal"
+    ]
+   }
+  ],
+  "checklist": [
+   "Drew the Ganga from Gangotri to the Bay of Bengal",
+   "Marked the main basin states",
+   "Marked one pollution hotspot (Kanpur tanneries, Varanasi)",
+   "Kept it small"
+  ]
  }
 ]

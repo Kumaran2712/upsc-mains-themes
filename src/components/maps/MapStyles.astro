@@ -68,6 +68,22 @@
   .quizzing .lab text, .quizzing .rvlab text { display: none !important; }
   .mapbox.zoomed { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .mapbox.zoomed > svg { width: 230%; max-width: none; max-height: none; }
+  /* Layered India modules */
+  .map-india .ft { fill: #b08a68; fill-opacity: .55; stroke: #7c5133; stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-india .ln { fill: none; stroke: var(--gs2); stroke-width: 3.5; stroke-linecap: round; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .map-india .arrowhead { fill: var(--gs2); }
+  .map-india .pt { cursor: pointer; } .map-india .pt .hit { fill: transparent; } .map-india .pt .dot { fill: var(--gs3); stroke: var(--surface); stroke-width: 2.5; }
+  .map-india .llab text { font-size: 22px; font-weight: 600; display: none; pointer-events: none; }
+  .map-india .ft[data-layer], .map-india .ln[data-layer], .map-india .pt[data-layer] { display: none; }
+  .map-india .ft.act, .map-india .ln.act, .map-india .pt.act { display: inline !important; }
+  .show-names .llab text.act, .map-india .llab text.show { display: inline !important; }
+  .quiz-all .ft[data-layer], .quiz-all .ln[data-layer], .quiz-all .pt[data-layer] { display: inline !important; }
+  .map-india .st.g1 { fill: var(--gs1-bg); stroke: var(--gs1); } .map-india .st.g2 { fill: var(--gs3-bg); stroke: var(--gs3); }
+  .map-india .ft.sel, .map-india .ft.on1 { fill: var(--gs1); fill-opacity: .8; } .map-india .ft.on2 { fill: var(--gs3); fill-opacity: .8; }
+  .map-india .ln.sel, .map-india .ln.on1 { stroke: var(--gs1); stroke-width: 5; } .map-india .ln.on2 { stroke: var(--gs3); stroke-width: 5; }
+  .map-india .pt.sel .dot, .map-india .pt.on1 .dot { fill: var(--gs1); } .map-india .pt.on2 .dot { fill: var(--gs2); }
+  .labonly .ft[data-layer].on1, .labonly .ft[data-layer].on2, .labonly .ln[data-layer].on1, .labonly .ln[data-layer].on2, .labonly .pt[data-layer].on1, .labonly .pt[data-layer].on2 { display: inline !important; }
+  .labonly .llab text.show { display: inline !important; }
   .hide-grid .grat, .hide-grid .gratlab, .hide-tropic .tropic, .hide-meridian .meridian, .hide-ext .ext, .hide-lab .lab { display: none; }
   .maptools { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
   .tog { font: inherit; font-size: .82rem; font-weight: 600; padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }

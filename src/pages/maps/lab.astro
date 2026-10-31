@@ -1,17 +1,19 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MapStyles from '../../components/maps/MapStyles.astro';
-import { lab, ATTRIBUTION } from '../../lib/maps';
+import { lab, ATTRIBUTION, maps } from '../../lib/maps';
 import { u, themeUrl } from '../../lib/data';
 const FREE = { id: 'free-india', base: 'india', title: 'Free practice: draw India in 90 seconds',
   groups: [], checklist: ['Kutch bulge on the west, near the Tropic of Cancer', 'Peninsula narrowing to Kanyakumari at about 8°N', 'Himalayan arc across the top, including Ladakh and Jammu & Kashmir', 'North-East bulging east, joined by a narrow Siliguri corridor', 'Andaman & Nicobar and Lakshadweep marked'] };
-const cards = [FREE, ...lab.map((c) => ({ id: c.id, base: c.base, title: c.q.text, paper: c.q.paper, year: c.q.year, marks: c.q.marks,
+const cards = [FREE, ...lab.map((c) => ({ id: c.id, base: c.base, section: c.section, title: c.q.text, paper: c.q.paper, year: c.q.year, marks: c.q.marks,
   theme: { n: c.q.theme.n, title: c.q.theme.title, url: themeUrl(c.q.theme) }, groups: c.groups, checklist: c.checklist }))];
 const SECTIONS = [
   { title: 'India map: states', base: 'india' }, { title: 'India map: rivers', base: 'drainage' },
   { title: 'World: physical geography', base: 'physical' }, { title: 'World: sea routes & chokepoints', base: 'world' },
   { title: 'World history', base: 'history' },
-].map((sec) => ({ ...sec, cards: cards.filter((c: any) => c.base === sec.base && c.id !== 'free-india') })).filter((sec) => sec.cards.length);
+].map((sec) => ({ ...sec, cards: cards.filter((c: any) => c.base === sec.base && c.id !== 'free-india') }))
+  .concat(maps.layerModules.map((m: any) => ({ title: `India map: ${m.name.replace('History on the map: India', 'history & culture places')}`, base: 'indiaplus', cards: cards.filter((c: any) => c.base === 'indiaplus' && c.section === m.slug) })))
+  .filter((sec) => sec.cards.length);
 const baseUrl = u('/maps/base/');
 const desc = `Practise UPSC Mains map sketches on ${lab.length} real PYQs: draw on a blank India or world outline (states, rivers, physical features, sea routes, world history) against a 90-second timer, reveal the answer, and track your score.`;
 const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: 'UPSC Mains PYQ sketch lab', description: desc,

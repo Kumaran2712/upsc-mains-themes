@@ -19,7 +19,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC
       <li class={`mod ${m.slug ? 'ready' : ''}`}>
         <span class="mn" aria-hidden="true">{m.n}</span>
         <div class="mb">
-          {m.slug ? <a href={moduleUrl(m)}>{m.name}</a> : <span class="mt">{m.name}</span>}
+          <span>{m.slug ? <a href={moduleUrl(m)}>{m.name}{m.also ? ': world' : ''}</a> : <span class="mt">{m.name}</span>}{m.also && <> · <a href={u(`/maps/${m.also.slug}/`)}>{m.also.label}</a></>}</span>
           <span class="mc">{m.covers}</span>
           <span class="mp">{m.papers}{!m.slug && <span class="soon">Coming next</span>}</span>
         </div>

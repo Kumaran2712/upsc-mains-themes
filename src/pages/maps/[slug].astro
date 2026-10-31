@@ -1,0 +1,160 @@
+---
+// One page per layered India module (physical India, climate, hazards, resources, industry,
+// India history, society & polity, borders & security, environment).
+import Base from '../../layouts/Base.astro';
+import IndiaMap from '../../components/maps/IndiaMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import { maps, modules, ATTRIBUTION, themeKey, themeChips, lab } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+export function getStaticPaths() { return maps.layerModules.map((m: any) => ({ params: { slug: m.slug }, props: { lm: m } })); }
+const { lm } = Astro.props as { lm: any };
+const mod = modules.find((m) => m.slug === lm.slug || m.also?.slug === lm.slug)!;
+const layers = lm.layers.map((l: any) => ({ id: l.id, name: l.name, kind: l.kind, note: l.note, themes: themeChips(l.themes || []),
+  groups: l.groups || null, stateNotes: l.stateNotes || {},
+  items: l.kind === 'states' ? [] : l.items.map((i: any) => ({ name: i.name, note: i.note || '' })) }));
+const labCards = lab.filter((c) => c.section === lm.slug);
+const allThemes = [...new Set(lm.layers.flatMap((l: any) => l.themes || []))].map((k) => themeKey(k as string)).filter(Boolean).sort((a, b) => a!.n - b!.n);
+const hasPlaces = layers.some((l: any) => l.kind !== 'states');
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: `${lm.h1} map for UPSC Mains`, description: lm.desc,
+  educationalLevel: 'UPSC Civil Services (Main) Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u(`/maps/${lm.slug}/`), Astro.site).href }];
+const otherHistory = lm.slug === 'india-history';
+---
+<Base title={lm.seo} description={lm.desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: lm.name, href: u(`/maps/${lm.slug}/`) }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module {lm.n} · {lm.papers}</p>
+  <h1>{lm.h1}</h1>
+  <p class="lead">{lm.lead}</p>
+  {otherHistory && <p><a class="chip" href={u('/maps/history/')}>See world history on the map</a></p>}
+
+  <div class="maptools" role="tablist" aria-label="Map layers">
+    {layers.map((l: any, i: number) => <button class="tog lt" type="button" role="tab" data-layer={l.id} aria-pressed={i === 0 ? 'true' : 'false'}>{l.name}</button>)}
+  </div>
+  <div class="panel lnote" id="lnote" aria-live="polite"></div>
+  {hasPlaces && <p class="maptools"><button class="tog" type="button" id="names" aria-pressed="false">Names</button></p>}
+  <div class="mapbox"><IndiaMap id="lm" labels={false} extras={false} layers={lm.slug} title={`${lm.h1}: India map`} /></div>
+  <p class="attrib">{ATTRIBUTION} Physical features: Natural Earth (public domain). Places are approximate and routes schematic, for teaching.</p>
+  <div class="panel infocard" id="card" aria-live="polite"><p class="lead" style="margin:0">Tap a state or a place on the map.</p></div>
+
+  <section class="panel quiz" id="quiz" aria-live="polite">
+    <p class="eyebrow">Quiz</p>
+    <p class="ask">{hasPlaces ? 'Tap Start, then find each place or feature on the map.' : 'Tap Start, then tap a state that fits each clue.'}</p>
+    <p class="fb"></p>
+    <p><button class="btn qstart" type="button">Start: 8 questions</button> <span class="eyebrow qbest"></span></p>
+  </section>
+
+  {labCards.length > 0 && <>
+    <h2>Practise in the sketch lab</h2>
+    <div class="chips">{labCards.map((c) => <a class="chip" href={`${u('/maps/lab/')}#${c.id}`}>{c.q.paper} {c.q.year}: {c.q.text.slice(0, 70)}…</a>)}</div>
+  </>}
+  <h2>Themes that use this map</h2>
+  <div class="chips">{allThemes.map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+
+  <style is:global>
+    .lnote { margin: 4px 0 8px; display: grid; gap: 4px; } .lnote p { margin: 0; }
+    .lnote .lg { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .86rem; }
+    .lnote .lg span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+    .lnote .lg .l1::before { background: var(--gs1-bg); border: 2px solid var(--gs1); } .lnote .lg .l2::before { background: var(--gs3-bg); border: 2px solid var(--gs3); }
+  </style>
+  <script is:inline define:vars={{ layers, slug: lm.slug, hasPlaces }}>
+    (function () {
+      var svg = document.getElementById('lm'), note = document.getElementById('lnote'), card = document.getElementById('card');
+      var byId = {}; layers.forEach(function (l) { byId[l.id] = l; });
+      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+      function chips(ts) { return ts.length ? '<div class="chips">' + ts.map(function (t) { return '<a class="chip" href="' + t.url + '">T' + t.n + ' ' + esc(t.title) + '</a>'; }).join('') + '</div>' : ''; }
+      function q(sel) { return svg.querySelectorAll(sel); }
+      var active = layers[0].id, selected = null;
+      function show(id) {
+        active = id; var l = byId[id];
+        document.querySelectorAll('.lt').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.layer === id ? 'true' : 'false'); });
+        q('.act').forEach(function (e) { e.classList.remove('act'); });
+        q('.st.g1, .st.g2').forEach(function (e) { e.classList.remove('g1', 'g2'); });
+        q('[data-layer="' + id + '"]').forEach(function (e) { e.classList.add('act'); });
+        var legend = '';
+        if (l.kind === 'states') {
+          l.groups.forEach(function (g, i) { g.items.forEach(function (n) { var p = svg.querySelector('.st[data-name="' + CSS.escape(n) + '"]'); if (p) p.classList.add(i ? 'g2' : 'g1'); }); });
+          if (l.groups.length > 1) legend = '<div class="lg">' + l.groups.map(function (g, i) { return '<span class="' + (i ? 'l2' : 'l1') + '">' + esc(g.label) + '</span>'; }).join('') + '</div>';
+        }
+        note.innerHTML = '<p><b>' + esc(l.name) + '.</b> ' + esc(l.note) + '</p>' + legend;
+        if (window.__track) window.__track('map-layer', { map: slug, layer: id });
+      }
+      document.querySelectorAll('.lt').forEach(function (b) { b.addEventListener('click', function () { if (!round) show(b.dataset.layer); }); });
+      show(active);
+      var nb = document.getElementById('names');
+      if (nb) nb.addEventListener('click', function () { var on = nb.getAttribute('aria-pressed') !== 'true'; nb.setAttribute('aria-pressed', on ? 'true' : 'false'); svg.classList.toggle('show-names', on); });
+      function placeInfo(name, layerId) {
+        var order = layers.filter(function (l) { return l.id === layerId; }).concat(layers);
+        for (var i = 0; i < order.length; i++) { var l = order[i]; if (l.kind === 'states') continue; for (var j = 0; j < l.items.length; j++) if (l.items[j].name === name) return { l: l, it: l.items[j] }; }
+      }
+      function stateInfo(name) {
+        var out = [];
+        layers.forEach(function (l) { if (l.kind !== 'states') return; l.groups.forEach(function (g) { if (g.items.indexOf(name) > -1) out.push({ l: l, g: g }); }); });
+        return out;
+      }
+      var round = null;
+      svg.addEventListener('click', function (e) {
+        var el = e.target.closest('[data-name]'); if (!el) return;
+        var n = el.getAttribute('data-name');
+        if (round) { answer(n, el); return; }
+        if (selected) { q('.sel').forEach(function (x) { x.classList.remove('sel'); }); q('text.show').forEach(function (t) { t.classList.remove('show'); }); }
+        if (!el.classList.contains('st')) {
+          var pi = placeInfo(n, el.getAttribute('data-layer')); if (!pi) return;
+          el.classList.add('sel'); var t = svg.querySelector('.llab text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.add('show'); selected = n;
+          card.innerHTML = '<h3>' + esc(n) + '</h3><p class="eyebrow">' + esc(pi.l.name) + '</p>' + (pi.it.note ? '<p>' + esc(pi.it.note) + '</p>' : '') + chips(pi.l.themes);
+        } else {
+          var si = stateInfo(n); selected = n;
+          card.innerHTML = '<h3>' + esc(n) + '</h3>' + (si.length ? '<ul>' + si.map(function (x) {
+            var extra = x.l.stateNotes[n] ? ': ' + esc(x.l.stateNotes[n]) : (x.l.groups.length > 1 ? ' (' + esc(x.g.label) + ')' : '');
+            return '<li><b>' + esc(x.l.name) + '</b>' + extra + '</li>'; }).join('') + '</ul>' : '<p class="lead">Not in any layer of this map.</p>');
+        }
+        if (window.__track) window.__track('map-tap', { map: slug, name: n });
+      });
+      // Quiz
+      var Q = document.getElementById('quiz'), ask = Q.querySelector('.ask'), fb = Q.querySelector('.fb'), start = Q.querySelector('.qstart'), bestEl = Q.querySelector('.qbest');
+      var KEY = 'upscthemes-quiz-' + slug, best = 0; try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
+      function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/8' : ''; } showBest();
+      function pool() {
+        var p = [];
+        layers.forEach(function (l) {
+          if (hasPlaces) { if (l.kind !== 'states') l.items.forEach(function (it) { p.push({ type: 'place', name: it.name, layer: l.id }); }); }
+          else if (l.groups.length > 1 && l.groups.every(function (g) { return g.items.length > 1; }))
+            l.groups.forEach(function (g) { p.push({ type: 'state', clue: l.name + ': ' + g.label, ok: g.items }); });
+          else p.push({ type: 'state', clue: l.name, ok: [].concat.apply([], l.groups.map(function (g) { return g.items; })) });
+        });
+        for (var i = p.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = p[i]; p[i] = p[j]; p[j] = t; }
+        return p.slice(0, 8);
+      }
+      function next() {
+        if (round.i >= round.list.length) {
+          ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
+          fb.className = 'fb ' + (round.score >= 6 ? 'ok' : 'no'); fb.textContent = 'Tap Start for a new round.';
+          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (window.__track) window.__track('map-quiz-done', { quiz: slug, score: round.score });
+          round = null; svg.classList.remove('quiz-all', 'quizzing'); show(active); start.textContent = 'Start again'; return;
+        }
+        var c = round.list[round.i];
+        ask.textContent = (c.type === 'place' ? 'Find: ' + c.name : 'Tap a state: ' + c.clue) + ' (' + (round.i + 1) + '/' + round.list.length + ')';
+      }
+      function answer(n, el) {
+        var c = round.list[round.i], ok;
+        if (c.type === 'place') {
+          ok = n === c.name;
+          q('[data-name="' + CSS.escape(c.name) + '"]').forEach(function (x) { x.classList.add('on1'); setTimeout(function () { x.classList.remove('on1'); }, 1300); });
+          fb.textContent = ok ? 'Correct: ' + c.name : 'That was ' + n + '. ' + c.name + ' is highlighted in green.';
+        } else {
+          ok = c.ok.indexOf(n) > -1;
+          c.ok.forEach(function (s) { var p = svg.querySelector('.st[data-name="' + CSS.escape(s) + '"]'); if (p) { p.classList.add('on1'); setTimeout(function () { p.classList.remove('on1'); }, 1300); } });
+          fb.textContent = ok ? 'Correct: ' + n : n + ' is not one. The right states are highlighted in green.';
+        }
+        fb.className = 'fb ' + (ok ? 'ok' : 'no'); if (ok) round.score++;
+        round.i++; setTimeout(next, ok ? 500 : 1400);
+      }
+      start.addEventListener('click', function () {
+        q('.sel').forEach(function (x) { x.classList.remove('sel'); }); q('text.show').forEach(function (t) { t.classList.remove('show'); });
+        q('.act').forEach(function (e) { e.classList.remove('act'); }); q('.st.g1, .st.g2').forEach(function (e) { e.classList.remove('g1', 'g2'); });
+        round = { list: pool(), i: 0, score: 0 }; fb.textContent = '';
+        svg.classList.add('quizzing'); if (hasPlaces) svg.classList.add('quiz-all');
+        next(); svg.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      });
+    })();
+  </script>
+</Base>

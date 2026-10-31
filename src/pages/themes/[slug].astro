@@ -69,7 +69,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   {(mapLinks.mods.length > 0 || mapLinks.cards.length > 0) && <>
     <h2>On the map</h2>
     <div class="chips">
-      {mapLinks.mods.map((m) => <a class="chip" href={moduleUrl(m)} data-umami-event="theme-map-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`module-${m.n}`}>Map module {m.n}: {m.name}</a>)}
+      {mapLinks.mods.map((m) => <a class="chip" href={m.url} data-umami-event="theme-map-click" data-umami-event-from={`T${t.n}`} data-umami-event-to={`module-${m.n}`}>Map module {m.n}: {m.name}</a>)}
       {mapLinks.cards.map((c) => <a class="chip" style="font-weight:700" href={`${u('/maps/lab/')}#${c.id}`} data-umami-event="theme-map-click" data-umami-event-from={`T${t.n}`} data-umami-event-to="lab">Practise in the sketch lab: {c.q.paper} {c.q.year}</a>)}
     </div>
   </>}
