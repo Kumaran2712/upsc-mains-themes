@@ -84,6 +84,15 @@ The script stops and names the IDs if any question is in no theme, in two themes
 - `src/data/maps_lab.json` — sketch-lab questions: PYQ ID, the states or chokepoints to reveal, and the self-check list. The site build fails on an unknown PYQ ID, state or chokepoint name.
 - Lab scores and quiz bests are saved in the visitor's browser only.
 
+## PYQs of the day
+
+`/daily/` shows 10 Prelims (GS Paper I) and 2 Mains questions a day, the same for everyone (day boundary: IST).
+
+- `data/prelims.json` — 1,380 Prelims questions (2013–2026): question, options, answer letter, subject, and whether UPSC dropped it. Built by `tools/extract_prelims.py <pdf> data/prelims.json` from a topic-wise solved-papers PDF (not stored here); only questions and answer letters are kept. `tools/prelims_fixes.py` holds hand corrections for tables the PDF layout scrambled.
+- `tools/build_daily.py` — writes `src/data/daily.json`: a fixed, seeded schedule. Prelims sets mix subjects (questions without a year, without an answer, or dropped by UPSC are left out); the two Mains questions come from different papers. Day 0 is 2026-11-01; after the last set the cycle repeats.
+- Each day's questions are served as small JSON files (`/daily/p/<n>.json`, `/daily/m/<n>.json`). Answers and streaks are saved in the visitor's browser only.
+- When UPSC publishes the official 2026 Prelims key, update the answers, then set `OFFICIAL_KEY_UPTO` in `src/lib/daily.ts` to 2026.
+
 ## Licence
 
 Theme analysis, prep notes and code: choose a licence before launch (CC BY-NC 4.0 suits a non-commercial project). Question text is from UPSC's published papers and is not covered by this licence.

@@ -1,0 +1,196 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/data';
+import { daily, OFFICIAL_KEY_UPTO } from '../../lib/daily';
+const P = daily.prelims.length, M = daily.mains.length, epoch = daily.epoch;
+const pUrl = u('/daily/p/'), mUrl = u('/daily/m/');
+const usable = daily.prelims.flat().length;
+const desc = `UPSC PYQs of the day: 10 Prelims GS Paper I questions with answer key and 2 GS Mains questions, a new set every day. Free, from ${usable} Prelims and ${daily.mains.length * 2} Mains PYQs (2013–2026).`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC PYQs of the day', description: desc, url: new URL(u('/daily/'), Astro.site).href }];
+---
+<Base title="UPSC PYQs of the day: 10 Prelims + 2 Mains" description={desc} jsonld={ld} crumbs={[{ name: 'PYQs of the day', href: u('/daily/') }]}>
+  <p class="eyebrow">PYQs of the day</p>
+  <h1>10 Prelims + 2 Mains, every day</h1>
+  <p class="lead">Real UPSC questions, a fresh set each day and the same for everyone. Prelims: pick your answers, then check them with UPSC marking. Mains: write the answer on paper, then see what it should cover.</p>
+
+  <div class="dnav panel">
+    <button class="btn" id="dprev" type="button">‹ Prev</button>
+    <div class="dmid"><b id="ddate">Today</b><span class="eyebrow" id="dstreak"></span></div>
+    <button class="btn" id="dnext" type="button">Next ›</button>
+  </div>
+  <noscript><p class="panel">Turn on JavaScript to see today's questions.</p></noscript>
+
+  <h2>Prelims · GS Paper I <span class="eyebrow" id="pcount"></span></h2>
+  <ol class="pq" id="plist"><li class="panel">Loading today's questions…</li></ol>
+  <div class="panel score" id="pscore" hidden></div>
+  <p><button class="btn bigbtn" id="pcheck" type="button" hidden>Check my answers</button></p>
+
+  <h2>Mains</h2>
+  <ol class="mq" id="mlist"></ol>
+
+  <p class="lead small">Prelims answers follow the published answer keys. The 2026 answers are not final: UPSC releases its official key only after the final result. Mains has no official answer; "what to cover" comes from this site's theme notes.</p>
+
+  <script is:inline define:vars={{ P, M, epoch, pUrl, mUrl, OFFICIAL_KEY_UPTO }}>
+  (function () {
+    var DAY = 864e5, IST = 5.5 * 36e5;
+    function istDay(ms) { return Math.floor((ms + IST) / DAY); }            // days since 1970 in IST
+    var e = epoch.split('-'), epochDay = Math.floor(Date.UTC(+e[0], e[1] - 1, +e[2]) / DAY);
+    var today = Math.max(istDay(Date.now()), epochDay);
+    function dayFromParam() {
+      var m = /[?&]d=(\d{4})-(\d{2})-(\d{2})/.exec(location.search); if (!m) return today;
+      var d = Math.floor(Date.UTC(+m[1], m[2] - 1, +m[3]) / DAY);
+      return Math.min(Math.max(d, epochDay), today);
+    }
+    function iso(d) { return new Date(d * DAY).toISOString().slice(0, 10); }
+    function nice(d) { return new Date(d * DAY).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }); }
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+    function load() { try { return JSON.parse(localStorage.getItem('upscthemes-daily') || '{}'); } catch (x) { return {}; } }
+    function save(s) { try { localStorage.setItem('upscthemes-daily', JSON.stringify(s)); } catch (x) {} }
+    function track(n, d) { if (window.__track) window.__track(n, d); }
+
+    var store = load(), day = dayFromParam(), set = null, picks = [], checked = false;
+    var plist = document.getElementById('plist'), mlist = document.getElementById('mlist'), pcheck = document.getElementById('pcheck'),
+        pscore = document.getElementById('pscore'), ddate = document.getElementById('ddate'), dprev = document.getElementById('dprev'),
+        dnext = document.getElementById('dnext'), dstreak = document.getElementById('dstreak');
+
+    function streak() {
+      var n = 0, d = today; if (!(store[iso(d)] && store[iso(d)].done)) d--;
+      while (store[iso(d)] && store[iso(d)].done) { n++; d--; }
+      return n;
+    }
+    function stem(blocks) {
+      var h = '', inList = false;
+      blocks.forEach(function (b) {
+        if (b.li !== undefined) { if (!inList) { h += '<ul class="st">'; inList = true; } h += '<li>' + esc(b.li) + '</li>'; return; }
+        if (inList) { h += '</ul>'; inList = false; }
+        if (b.table) h += '<div class="tablewrap"><table class="pt' + (/^(\d+\.|[IVX]+\.)/.test(b.table[0][0]) ? '' : ' hd') + '">' + b.table.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('') + '</table></div>';
+        else h += '<p>' + esc(b.p) + '</p>';
+      });
+      return h + (inList ? '</ul>' : '');
+    }
+    function renderPrelims() {
+      document.getElementById('pcount').textContent = '· ' + set.length + ' questions';
+      plist.innerHTML = set.map(function (q, i) {
+        return '<li class="q pqi" data-i="' + i + '"><p class="qm"><b>Q' + (i + 1) + '</b> <span>Prelims ' + (q.y || '') + '</span> <span>· ' + esc(q.s) + '</span></p>' +
+          stem(q.st) + '<div class="opts">' + q.o.map(function (o, k) {
+            var L = 'abcd'[k];
+            return '<button type="button" class="opt" data-k="' + L + '"><b>(' + L + ')</b> <span>' + esc(o) + '</span></button>';
+          }).join('') + '</div><p class="fb"></p></li>';
+      }).join('');
+      paint();
+    }
+    function paint() {
+      [].forEach.call(plist.querySelectorAll('.pqi'), function (li) {
+        var i = +li.getAttribute('data-i'), q = set[i];
+        [].forEach.call(li.querySelectorAll('.opt'), function (b) {
+          var k = b.getAttribute('data-k');
+          b.classList.toggle('pick', picks[i] === k);
+          b.classList.toggle('ok', checked && k === q.a);
+          b.classList.toggle('no', checked && picks[i] === k && k !== q.a);
+          b.disabled = checked;
+        });
+        var fb = li.querySelector('.fb');
+        if (!checked) { fb.textContent = ''; fb.className = 'fb'; return; }
+        var note = q.y > OFFICIAL_KEY_UPTO ? ' (' + q.y + ' official key not yet released)' : '';
+        if (!picks[i]) { fb.textContent = 'Not attempted. Answer: (' + q.a + ')' + note; fb.className = 'fb'; }
+        else if (picks[i] === q.a) { fb.textContent = 'Correct: (' + q.a + ')' + note; fb.className = 'fb ok'; }
+        else { fb.textContent = 'Wrong. Answer: (' + q.a + ')' + note; fb.className = 'fb no'; }
+      });
+      pcheck.hidden = checked;
+      if (checked) {
+        var c = 0, w = 0; set.forEach(function (q, i) { if (picks[i]) { if (picks[i] === q.a) c++; else w++; } });
+        var score = (c * 2 - w * 2 / 3).toFixed(2), left = set.length - c - w;
+        pscore.hidden = false;
+        pscore.innerHTML = '<b>' + c + ' correct · ' + w + ' wrong · ' + left + ' left</b><span>UPSC marking: ' + score + ' / ' + set.length * 2 + ' (+2 for correct, −0.66 for wrong)</span>' +
+          '<button class="btn" type="button" id="pretry">Try again</button>';
+        document.getElementById('pretry').onclick = function () { checked = false; picks = []; persist(false); pscore.hidden = true; paint(); };
+      } else pscore.hidden = true;
+    }
+    function persist(done) { store[iso(day)] = { p: picks, done: done || (store[iso(day)] && store[iso(day)].done) || false }; save(store); dstreak.textContent = streak() ? 'Streak: ' + streak() + ' day' + (streak() > 1 ? 's' : '') : ''; }
+    plist.addEventListener('click', function (ev) {
+      var b = ev.target.closest('.opt'); if (!b || checked) return;
+      var i = +b.closest('.pqi').getAttribute('data-i'), k = b.getAttribute('data-k');
+      picks[i] = picks[i] === k ? undefined : k; persist(false); paint();
+    });
+    pcheck.addEventListener('click', function () {
+      checked = true; store[iso(day)] = { p: picks, checked: true, done: true }; save(store); persist(true); paint();
+      var c = 0; set.forEach(function (q, i) { if (picks[i] === q.a) c++; });
+      track('daily-check', { correct: c, attempted: picks.filter(Boolean).length });
+      pscore.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    });
+
+    function mins(q) { var m = q.m || (q.w === 150 ? 10 : q.w === 250 ? 15 : null); return m === 10 ? 7 : m === 15 ? 11 : 9; }
+    function renderMains(ms) {
+      mlist.innerHTML = ms.map(function (q, i) {
+        var meta = [q.p, q.y, q.m ? q.m + ' marks' : '', q.w ? q.w + ' words' : ''].filter(Boolean).join(' · ');
+        return '<li class="q mqi"><p class="qm"><span class="pc ' + q.p.toLowerCase() + '">' + q.p + '</span> <span>' + esc(meta.replace(q.p + ' · ', '')) + '</span></p>' +
+          '<p class="qt">' + esc(q.t) + '</p>' +
+          '<p class="qa"><a class="chip" href="' + q.th.url + '">T' + q.th.n + ' ' + esc(q.th.title) + '</a>' +
+          '<button class="btn mt" type="button" data-min="' + mins(q) + '">Start ' + mins(q) + '-min timer</button>' +
+          '<button class="btn mr" type="button">Show what to cover</button></p>' +
+          '<div class="cover" hidden><h3>What UPSC asks in this theme</h3><p>' + esc(q.th.asks) + '</p><h3>Cover</h3><ul>' +
+          q.th.checklist.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul><h3>Writing the answer</h3><ul>' +
+          q.th.answer.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul></div></li>';
+      }).join('');
+    }
+    var timer = null;
+    mlist.addEventListener('click', function (ev) {
+      var r = ev.target.closest('.mr'), t = ev.target.closest('.mt');
+      if (r) { var c = r.closest('.mqi').querySelector('.cover'); c.hidden = !c.hidden; r.textContent = c.hidden ? 'Show what to cover' : 'Hide'; if (!c.hidden) track('daily-mains-cover', {}); }
+      if (t) {
+        if (timer) { clearInterval(timer.id); timer.btn.textContent = 'Start ' + timer.btn.getAttribute('data-min') + '-min timer'; if (timer.btn === t) { timer = null; return; } }
+        var end = Date.now() + t.getAttribute('data-min') * 6e4;
+        timer = { btn: t, id: setInterval(tick, 500) }; tick(); track('daily-mains-timer', {});
+        function tick() {
+          var s = Math.max(0, Math.round((end - Date.now()) / 1000));
+          t.textContent = s ? 'Stop · ' + Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0') : 'Time up';
+          if (!s) { clearInterval(timer.id); timer = null; }
+        }
+      }
+    });
+
+    function show(d) {
+      day = d; checked = false;
+      var st = store[iso(d)] || {}; picks = st.p || []; checked = !!st.checked;
+      ddate.textContent = d === today ? 'Today · ' + nice(d) : nice(d);
+      dprev.disabled = d <= epochDay; dnext.disabled = d >= today;
+      dstreak.textContent = streak() ? 'Streak: ' + streak() + ' day' + (streak() > 1 ? 's' : '') : '';
+      var k = d - epochDay, pi = k % P, mi = k % M;
+      if (d !== today) history.replaceState(null, '', '?d=' + iso(d)); else history.replaceState(null, '', location.pathname);
+      plist.innerHTML = '<li class="panel">Loading…</li>'; mlist.innerHTML = ''; pscore.hidden = true; pcheck.hidden = true;
+      Promise.all([fetch(pUrl + pi + '.json').then(function (r) { return r.json(); }), fetch(mUrl + mi + '.json').then(function (r) { return r.json(); })])
+        .then(function (res) { if (day !== d) return; set = res[0]; renderPrelims(); renderMains(res[1]); })
+        .catch(function () { plist.innerHTML = '<li class="panel">Could not load the questions. Check your connection and reload.</li>'; });
+    }
+    dprev.onclick = function () { show(day - 1); track('daily-nav', { dir: 'prev' }); };
+    dnext.onclick = function () { show(day + 1); };
+    show(day);
+  })();
+  </script>
+  <style is:global>
+    .dnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0 4px; }
+    .dmid { display: grid; text-align: center; gap: 2px; }
+    .dnav .btn:disabled { opacity: .4; cursor: default; }
+    .pq, .mq { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .pqi p { margin: 6px 0; } .pqi .qm { margin: 0 0 4px; gap: 6px; }
+    .st { list-style: none; padding: 0 0 0 4px; margin: 4px 0; display: grid; gap: 3px; }
+    .pt { font-size: .9rem; margin: 4px 0; } .pt td { border: 1px solid var(--line); padding: 4px 8px; vertical-align: top; }
+    .pt.hd tr:first-child td { font-weight: 600; }
+    .opts { display: grid; gap: 6px; margin-top: 8px; }
+    .opt { font: inherit; font-size: .95rem; text-align: left; display: flex; gap: 8px; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+    .opt b { flex: none; } .opt:disabled { cursor: default; }
+    .opt.pick { border-color: var(--accent); background: var(--accent-soft); }
+    .opt.ok { border-color: #2e7d32; background: #e3f2e5; } .opt.no { border-color: #c62828; background: #fbe4e4; }
+    .fb { font-size: .9rem; font-weight: 600; margin: 6px 0 0; } .fb.ok { color: #2e7d32; } .fb.no { color: #c62828; }
+    @media (prefers-color-scheme: dark) {
+      .opt.ok { background: #1d3a22; border-color: #66bb6a; } .opt.no { background: #3d1d1d; border-color: #ef5350; }
+      .fb.ok { color: #81c784; } .fb.no { color: #ef9a9a; }
+    }
+    .score { display: grid; gap: 6px; margin-top: 12px; } .score .btn { justify-self: start; }
+    .bigbtn { font-size: 1rem; padding: 9px 16px; background: var(--accent); color: var(--surface); border-color: var(--accent); }
+    .mqi .qt { font-size: 1.02rem; margin: 6px 0; }
+    .cover { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 4px; }
+    .cover h3 { font-size: .95rem; margin: 10px 0 4px; } .cover p, .cover ul { margin: 0; font-size: .93rem; } .cover ul { padding-left: 18px; }
+    .small { font-size: .85rem; margin-top: 18px; }
+  </style>
+</Base>

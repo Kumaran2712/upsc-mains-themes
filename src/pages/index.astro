@@ -19,6 +19,15 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'UPSC 
     <div><b>{cross}</b><span>themes span 2+ papers</span></div>
     <div><b>{syllabus.length}/{syllabus.length}</b><span>syllabus lines covered</span></div>
   </div>
+  <a class="panel today" href={u('/daily/')} data-umami-event="home-cta" data-umami-event-target="daily">
+    <span class="eyebrow">PYQs of the day</span>
+    <b>Today: 10 Prelims + 2 Mains questions</b>
+    <span>Answer the Prelims set with UPSC marking, then write two Mains answers against the clock.</span>
+  </a>
+  <style>
+    .today { display: grid; gap: 2px; text-decoration: none; color: var(--ink); border-color: var(--accent); margin: 14px 0; }
+    .today b { color: var(--accent); font-size: 1.05rem; } .today span:last-child { color: var(--muted); font-size: .92rem; }
+  </style>
   <p><a class="chip" style="font-weight:700" href={u('/roadmap/')} data-umami-event="home-cta" data-umami-event-target="roadmap">New to Mains? Follow the roadmap</a> <a class="chip" href={u('/maps/lab/')} data-umami-event="home-cta" data-umami-event-target="maps-lab">Practise map sketches</a> <a class="chip" href={u('/themes/')} data-umami-event="home-cta" data-umami-event-target="themes">Browse all themes</a> <a class="chip" href={u('/search/')} data-umami-event="home-cta" data-umami-event-target="search">Search a topic</a> <a class="chip" href={u('/syllabus/')} data-umami-event="home-cta" data-umami-event-target="syllabus">Start from the syllabus</a></p>
 
   <h2>Most-asked themes</h2>
