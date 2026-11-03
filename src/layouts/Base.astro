@@ -13,9 +13,12 @@ const SITE_NAME = 'UPSC Themes';
 const fullTitle = !brand ? title : `${title} | ${SITE_NAME}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL(u('/og.png'), Astro.site).href;
-const umamiId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+// Accept either the bare ID or a pasted tracking snippet: keep only the UUID.
+const umamiId = (String(import.meta.env.PUBLIC_UMAMI_WEBSITE_ID || '').match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i) || [])[0];
 const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC || 'https://cloud.umami.is/script.js';
-const gscToken = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+// Accept either the bare code or the whole <meta> tag Search Console shows.
+const gscRaw = String(import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '');
+const gscToken = (gscRaw.match(/content="([^"]+)"/) || [])[1] || gscRaw.trim();
 const crumbLd = crumbs.length
   ? [{
       '@context': 'https://schema.org', '@type': 'BreadcrumbList',
