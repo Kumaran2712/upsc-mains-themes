@@ -199,6 +199,7 @@ def sync(state, site_dir=None):
             chat, text = str(m['chat']['id']), (m.get('text') or '').strip().split('@')[0].lower()
             if text.startswith('/start'):
                 state['subs'].setdefault(chat, {'since': dt.datetime.now(IST).date().isoformat()})
+                print('new subscriber')
                 send(chat, WELCOME)
                 msgs = msgs or render(today_set(site_dir))
                 for x in msgs: send(chat, x); time.sleep(0.05)
@@ -246,6 +247,8 @@ def main():
         for i, m in enumerate(render(today_set(site_dir)), 1):
             print(f'----- message {i} ({len(m)} chars)\n{m}')
         return
+    me = api('getMe')
+    print('bot:', '@' + str((me.get('result') or {}).get('username')), '| ok' if me.get('ok') else '| ' + str(me.get('description')))
     state = load()
     changed = sync(state, site_dir)
     if mode == 'send':
