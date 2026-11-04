@@ -1,0 +1,55 @@
+name: Telegram bot
+
+# Every 30 minutes: answer /start, /stop, /today. At 06:00 IST (00:30 UTC): also send the daily set.
+# GitHub may start scheduled runs some minutes late. Needs repository secrets TELEGRAM_BOT_TOKEN and SUBSCRIBERS_KEY.
+on:
+  schedule:
+    - cron: '30 0 * * *'
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'sync = handle new messages; send = also send today''s set (once a day)'
+        default: sync
+        type: choice
+        options: [sync, send]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telegram-bot
+  cancel-in-progress: false
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install cryptography==43.0.3
+      - name: Run bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          SUBSCRIBERS_KEY: ${{ secrets.SUBSCRIBERS_KEY }}
+          SITE_URL: https://upscthemes.live
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$SUBSCRIBERS_KEY" ]; then echo "Bot secrets not set yet; skipping."; exit 0; fi
+          MODE=sync
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then MODE="${{ inputs.mode }}"; fi
+          # The daily cron, or any run after 06:00 IST that finds today's set not yet sent, sends it.
+          HOUR=$(TZ=Asia/Kolkata date +%H)
+          if [ "${{ github.event.schedule }}" = "30 0 * * *" ] || [ "$HOUR" -ge 6 ]; then MODE=send; fi
+          python3 tools/telegram_bot.py "$MODE"
+      - name: Save subscriber list
+        run: |
+          if [ -n "$(git status --porcelain data/telegram)" ]; then
+            git config user.name "upscthemes-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/telegram
+            git commit -m "Update Telegram subscribers [skip ci]"
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          fi

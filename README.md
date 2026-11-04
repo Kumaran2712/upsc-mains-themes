@@ -102,3 +102,12 @@ The script stops and names the IDs if any question is in no theme, in two themes
 ## Licence
 
 Theme analysis, prep notes and code: choose a licence before launch (CC BY-NC 4.0 suits a non-commercial project). Question text is from UPSC's published papers and is not covered by this licence.
+
+## Telegram bot (daily PYQs by direct message)
+
+`@upscthemesdaily_bot` sends each subscriber the day's set around 06:00 IST: the 10 Prelims questions with answers under tap-to-reveal spoilers, the 2 Mains questions with what to cover, and the theme of the day (roadmap order).
+
+- `tools/telegram_bot.py` — `sync` (answers /start, /stop, /today), `send` (sync + daily send, once per day), `preview --site-dir dist` (prints the messages). It reads the day's set from the live site (`/daily/meta.json`, `/daily/p|m|t/<n>.json`), so it always matches the Daily PYQs page.
+- `.github/workflows/telegram.yml` — runs every 30 minutes, and sends the daily set at 06:00 IST (or on the first run after that if GitHub skipped the scheduled one).
+- Repository **secrets**: `TELEGRAM_BOT_TOKEN` (from @BotFather) and `SUBSCRIBERS_KEY` (any long random string). Until both are set, the workflow does nothing.
+- Subscribers are stored only as Telegram chat IDs, encrypted, in `data/telegram/subscribers.enc`; the workflow commits changes with `[skip ci]` so the site isn't rebuilt. Losing `SUBSCRIBERS_KEY` means losing the list.

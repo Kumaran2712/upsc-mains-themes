@@ -1,6 +1,6 @@
 import prelimsRaw from '../../data/prelims.json';
 import dailyRaw from '../data/daily.json';
-import { allQuestions, themeUrl, shortTitle, qUrl } from './data';
+import { allQuestions, themeUrl, shortTitle, qUrl, roadmap } from './data';
 
 export type Block = { p?: string; li?: string; table?: string[][] };
 export type Prelims = { id: string; year: number | null; subject: string; stem: Block[]; options: string[]; answer: string; dropped: boolean };
@@ -35,3 +35,10 @@ export const subjRank = (s: string) => { const i = SUBJECT_ORDER.indexOf(s); ret
 /** Questions shown on browse pages: those with a known year. */
 export const preByYear = (y: number) => prelims.filter((q) => q.year === y).sort((a, b) => subjRank(a.subject) - subjRank(b.subject) || a.id.localeCompare(b.id));
 export const preBySubject = (s: string) => prelims.filter((q) => q.subject === s && q.year).sort((a, b) => b.year! - a.year! || a.id.localeCompare(b.id));
+
+// ---- Theme of the day: themes in roadmap order, one a day ----
+export const themeOfDay = (i: number) => {
+  const t = roadmap[i];
+  return { n: t.n, step: t.step, title: t.title, url: themeUrl(t), papers: t.papers, count: t.count, asks: t.asks, checklist: t.checklist, answer: t.answer };
+};
+export const dailyMeta = () => ({ epoch: daily.epoch, P: daily.prelims.length, M: daily.mains.length, T: roadmap.length, officialKeyUpto: OFFICIAL_KEY_UPTO });

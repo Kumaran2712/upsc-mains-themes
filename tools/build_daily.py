@@ -30,7 +30,20 @@ while any(queues.values()):
     # pick the subject with the most remaining questions relative to its size
     s = max((s for s in queues if queues[s]), key=lambda s: len(queues[s]) / len(by_sub[s]) + rng.random() * 1e-6)
     order.append(queues[s].popleft())
-psets = [order[i:i + PER_DAY] for i in range(0, len(order), PER_DAY)]
+# Keep the published schedule stable: existing days stay as they are; questions added later
+# (e.g. after an extraction fix) go into new sets at the end of the cycle.
+import os
+prev = json.load(open('src/data/daily.json')) if os.path.exists('src/data/daily.json') else None
+usable_ids = {q['id'] for q in usable}
+if prev:
+    kept = [[i for i in st if i in usable_ids] for st in prev['prelims']]
+    if any(len(st) != PER_DAY for st in kept):
+        raise SystemExit('a scheduled Prelims question is no longer usable: rebuild the schedule deliberately')
+    have = {i for st in kept for i in st}
+    order = [i for i in order if i not in have]
+    psets = kept + [order[i:i + PER_DAY] for i in range(0, len(order), PER_DAY)]
+else:
+    psets = [order[i:i + PER_DAY] for i in range(0, len(order), PER_DAY)]
 if len(psets[-1]) < PER_DAY and len(psets) > 1:      # top up the short last set from the first
     psets[-1] += [i for i in psets[0] if i not in psets[-1]][:PER_DAY - len(psets[-1])]
 
@@ -53,6 +66,8 @@ while sum(len(v) for v in pq.values()) >= 2:
         break
     pairs.append([x, pq[b].popleft()])
 
+if prev and sorted(i for p in prev['mains'] for i in p) == sorted(i for p in pairs for i in p):
+    pairs = prev['mains']           # same Mains questions: keep the published pairs
 json.dump({'epoch': EPOCH, 'prelims': psets, 'mains': pairs}, open('src/data/daily.json', 'w'), separators=(',', ':'))
 print(f'prelims: {len(usable)} usable → {len(psets)} days; mains: {len(mains)} → {len(pairs)} days')
 assert all(len(s) == PER_DAY for s in psets), 'short prelims set'

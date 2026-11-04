@@ -54,3 +54,6 @@ const qSlugs = new Map<string, string>();
 export const qPath = (q: { id: string; year: number; paper: string }) => `/mains/${q.year}/${q.paper.toLowerCase()}/${qSlugs.get(q.id)}/`;
 export const qUrl = (q: { id: string; year: number; paper: string }) => u(qPath(q));
 export const qSlug = (id: string) => qSlugs.get(id)!;
+
+// Daily PYQs by Telegram direct message (bot runs from .github/workflows/telegram.yml)
+export const telegramBot = 'https://t.me/upscthemesdaily_bot';

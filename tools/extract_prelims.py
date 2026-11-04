@@ -4,7 +4,7 @@ Usage: python3 tools/extract_prelims.py <pdf> <out.json>
 Only the questions (UPSC's papers) and the answer letters are kept. Explanations are not copied.
 The PDF itself is not committed to the repo.
 """
-import json, re, sys
+import json, os, re, sys
 from collections import defaultdict, OrderedDict
 import pdfplumber
 
@@ -66,7 +66,8 @@ def page_columns(page):
 
 def main(pdf_path, out_path):
     pdf = pdfplumber.open(pdf_path)
-    chapters = OrderedDict()  # title -> {'q': [lines], 'a': [lines], 'page': first page}
+    chapters = OrderedDict()  # key -> {'q': [lines], 'a': [lines], 'page': first page}
+    last_title, seen_titles, cur_key = None, set(), None
     for i, page in enumerate(pdf.pages):
         if i < 6:
             continue
@@ -76,7 +77,17 @@ def main(pdf_path, out_path):
             continue
         is_exp = foot.endswith('Explanation')
         title = re.sub(r'\s*-\s*Explanation$', '', foot).strip()
-        ch = chapters.setdefault(title, {'q': [], 'a': [], 'page': i + 1})
+        # Chapters are contiguous runs of pages. Several chapters share a title ("Miscellaneous"),
+        # so a new run of a title already seen starts a new chapter.
+        if not chapters or last_title != title:
+            if last_title is not None and title in seen_titles:
+                key = f'{title} #{sum(1 for k in chapters if k.split(" #")[0] == title) + 1}'
+            else:
+                key = title
+            chapters[key] = {'q': [], 'a': [], 'page': i + 1}
+            seen_titles.add(title); cur_key = key
+        last_title = title
+        ch = chapters[cur_key]
         for col in (L, R):
             for l in col:
                 l['page'] = i + 1
@@ -139,13 +150,41 @@ def main(pdf_path, out_path):
                 if k in b: b[k] = fix(b[k])
             if 'table' in b: b['table'] = [[fix(c) for c in r] for r in b['table']]
     # Our own ids and fields only: year, subject, question, options, answer.
+    # Ids are kept stable across re-runs (the daily schedule refers to them): a question whose
+    # year + question text matches the previous output keeps its id; new questions get the next free number.
+    from prelims_fixes import FIXES
+    prev, prev_opt, prev_stem = {}, {}, {}
+    if os.path.exists(out_path):
+        for o in json.load(open(out_path))['questions']:
+            if o['id'] in FIXES:
+                continue                       # hand-fixed questions are matched by their fix's text below
+            prev.setdefault((o['year'], norm_key(o)), o['id'])
+            prev_opt.setdefault((o['year'], opt_key(o)), o['id'])
+            prev_stem.setdefault((o['year'], re.sub(r'\W', '', stem_text(o).lower())), o['id'])
+    fixed_for = {}
+    for fid, f in FIXES.items():
+        y = None if fid.startswith('PNA') else int(fid[1:5])
+        hits = [i for i, q in enumerate(questions) if q['year'] == y and f['match'] in stem_text(q) + ' ' + ' '.join(q['options'])]
+        if len(hits) != 1:
+            raise SystemExit(f'fix {fid}: expected one question matching "{f["match"]}" in {y}, found {len(hits)}')
+        fixed_for[hits[0]] = fid
+    used = set(prev.values()) | set(prev_opt.values()) | set(FIXES)
     count = defaultdict(int)
+    for i in used:
+        y, n = i[1:].split('-'); count[None if y == 'NA' else int(y)] = max(count[None if y == 'NA' else int(y)], int(n))
     out = []
-    for q in sorted(questions, key=lambda q: (q['year'] or 0)):
-        count[q['year']] += 1
-        out.append({'id': f"P{q['year'] or 'NA'}-{count[q['year']]:03d}", 'year': q['year'], 'subject': q['section'],
+    taken = set()
+    for idx in sorted(range(len(questions)), key=lambda i: (questions[i]['year'] or 0)):
+        q = questions[idx]
+        qid = next((c for c in (fixed_for.get(idx), prev.get((q['year'], norm_key(q))), prev_opt.get((q['year'], opt_key(q))),
+                                prev_stem.get((q['year'], re.sub(r'\W', '', stem_text(q).lower())))) if c and c not in taken), None)
+        if not qid:
+            count[q['year']] += 1
+            qid = f"P{q['year'] or 'NA'}-{count[q['year']]:03d}"
+        taken.add(qid)
+        out.append({'id': qid, 'year': q['year'], 'subject': q['section'],
                     'stem': q['stem'], 'options': q['options'], 'answer': q['answer'], 'dropped': q['dropped']})
-    questions = out
+    questions = sorted(out, key=lambda q: q['id'])
     # Hand fixes for scrambled tables (guarded by a text match so they can't land on the wrong question).
     from prelims_fixes import FIXES
     byid = {q['id']: q for q in questions}
@@ -179,6 +218,14 @@ def fix(t):
     return re.sub(r'\s+', ' ', t).strip()
 
 
+def opt_key(q):
+    return re.sub(r'\W', '', '|'.join(q['options']).lower())[:200] + '#' + re.sub(r'\W', '', stem_text(q).lower())[:40]
+
+
+def norm_key(q):
+    return re.sub(r'\W', '', stem_text(q).lower()) + '|' + re.sub(r'\W', '', '|'.join(q['options']).lower())
+
+
 def stem_text(q):
     return ' '.join(b.get('p') or b.get('li') or ' '.join(' '.join(r) for r in b['table']) for b in q['stem'])
 
@@ -199,7 +246,7 @@ def split_numbered(lines, header_skip=False):
             l['text'] = ' '.join(w['text'] for w in l['words'])
             l['cells'][0]['t'] = re.sub(r'^(\d+) \. ?', r'\1. ', l['cells'][0]['t'])
         m = QNUM.match(first)
-        outer = l['x0'] < 50 or 290 <= l['x0'] < 305
+        outer = l['x0'] < 52 or 290 <= l['x0'] < 311
         if m and outer and int(m.group(1)) == expect:
             cur = int(m.group(1)); expect += 1
             blocks[cur] = [l]
@@ -269,6 +316,10 @@ def parse_question(block):
         if ok:
             oi = k
             opts = [t[pos[i][1]:(pos[i + 1][0] if i < 3 else len(t))].strip() for i in range(4)]
+            # A following question the layout hid (numbered at the statement indent) ends up after (d): cut it off.
+            cut = re.search(r'\s\d{1,2}\.\s+[A-Z‘\'"].*?\(a\)', opts[3])
+            if cut:
+                opts[3] = opts[3][:cut.start()].strip()
             break
     if oi is None or not all(opts):
         return None
