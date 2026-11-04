@@ -214,6 +214,8 @@ def send_all(state, site_dir=None, force=False):
     msgs = render(today_set(site_dir))
     sent = removed = 0
     for chat in list(state['subs']):
+        if state['subs'][chat].get('since') == today:
+            continue              # joined today: already got today's set with the welcome message
         for x in msgs:
             res = send(chat, x)
             if not res.get('ok'):
