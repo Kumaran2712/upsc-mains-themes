@@ -159,7 +159,10 @@ def api(method, **params):
 
 
 def send(chat, text):
-    return api('sendMessage', chat_id=chat, text=text, parse_mode='HTML', link_preview_options={'is_disabled': True})
+    res = api('sendMessage', chat_id=chat, text=text, parse_mode='HTML', link_preview_options={'is_disabled': True})
+    if not res.get('ok'):
+        print('sendMessage failed:', res.get('error_code'), res.get('description'))   # no chat ids in logs
+    return res
 
 
 def gone(res):
