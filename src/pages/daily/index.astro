@@ -9,24 +9,24 @@ const desc = `UPSC PYQs of the day: 10 Prelims GS Paper I questions with answer 
 const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC PYQs of the day', description: desc, url: new URL(u('/daily/'), Astro.site).href }];
 ---
 <Base title="UPSC PYQs of the day: 10 Prelims + 2 Mains" description={desc} jsonld={ld} crumbs={[{ name: 'PYQs of the day', href: u('/daily/') }]}>
-  <p class="eyebrow">PYQs of the day</p>
-  <h1>10 Prelims + 2 Mains, every day</h1>
-  <p class="lead">Real UPSC questions, a fresh set each day and the same for everyone. Prelims: pick your answers, then check them with UPSC marking. Mains: write the answer on paper, then see what it should cover.</p>
+  <h1>Today's practice</h1>
+  <p class="lead">10 Prelims questions and 2 Mains questions from real UPSC papers. Everyone gets the same set, and a new one comes every morning.</p>
 
   <div class="dnav panel">
-    <button class="btn" id="dprev" type="button">‹ Prev</button>
+    <button class="btn" id="dprev" type="button" aria-label="Previous day">‹</button>
     <div class="dmid"><b id="ddate">Today</b><span class="eyebrow" id="dstreak"></span></div>
-    <button class="btn" id="dnext" type="button">Next ›</button>
+    <button class="btn" id="dnext" type="button" aria-label="Next day">›</button>
   </div>
   <p class="tgrow"><a class="btn tg" href={telegramBot} target="_blank" rel="noopener" data-umami-event="telegram-subscribe" data-umami-event-where="daily">Get this every morning on Telegram</a> <a class="btn" id="dshare" href="#" target="_blank" rel="noopener" data-umami-event="share-whatsapp" data-umami-event-where="daily">Share this set on WhatsApp</a></p>
   <noscript><p class="panel">Turn on JavaScript to see today's questions.</p></noscript>
 
-  <h2>Prelims · GS Paper I <span class="eyebrow" id="pcount"></span></h2>
+  <h2>Prelims <span class="small" id="pcount"></span></h2>
+  <p class="small">Tap a bubble to mark your answer. Leave it blank if you are unsure, just like the real paper.</p>
   <ol class="pq" id="plist"><li class="panel">Loading today's questions…</li></ol>
   <div class="panel score" id="pscore" hidden></div>
-  <p><button class="btn bigbtn" id="pcheck" type="button" hidden>Check my answers</button></p>
+  <div class="checkbar" id="checkbar" hidden><span id="pmarked">0 of 10 marked</span><button class="btn primary" id="pcheck" type="button">Check my answers</button></div>
 
-  <h2>Mains</h2>
+  <h2>Mains <span class="small">write on paper, then compare</span></h2>
   <ol class="mq" id="mlist"></ol>
 
   <p class="lead small">Prelims answers follow the published answer keys. The 2026 answers are not final: UPSC releases its official key only after the final result. Mains has no official answer; "what to cover" comes from this site's theme notes.</p>
@@ -70,12 +70,12 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
       return h + (inList ? '</ul>' : '');
     }
     function renderPrelims() {
-      document.getElementById('pcount').textContent = '· ' + set.length + ' questions';
+      document.getElementById('pcount').textContent = set.length + ' questions';
       plist.innerHTML = set.map(function (q, i) {
         return '<li class="q pqi" data-i="' + i + '"><p class="qm"><b>Q' + (i + 1) + '</b> <span>Prelims ' + (q.y || '') + '</span> <span>· ' + esc(q.s) + '</span></p>' +
           stem(q.st) + '<div class="opts">' + q.o.map(function (o, k) {
             var L = 'abcd'[k];
-            return '<button type="button" class="opt" data-k="' + L + '"><b>(' + L + ')</b> <span>' + esc(o) + '</span></button>';
+            return '<button type="button" class="opt" data-k="' + L + '" aria-label="Option ' + L + '"><b>' + L + '</b> <span>' + esc(o) + '</span></button>';
           }).join('') + '</div><p class="fb"></p></li>';
       }).join('');
       paint();
@@ -97,7 +97,8 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
         else if (picks[i] === q.a) { fb.textContent = 'Correct: (' + q.a + ')' + note; fb.className = 'fb ok'; }
         else { fb.textContent = 'Wrong. Answer: (' + q.a + ')' + note; fb.className = 'fb no'; }
       });
-      pcheck.hidden = checked;
+      var marked = picks.filter(Boolean).length; document.getElementById('pmarked').textContent = marked + ' of ' + set.length + ' marked';
+      document.getElementById('checkbar').hidden = checked;
       if (checked) {
         var c = 0, w = 0; set.forEach(function (q, i) { if (picks[i]) { if (picks[i] === q.a) c++; else w++; } });
         var score = (c * 2 - w * 2 / 3).toFixed(2), left = set.length - c - w;
@@ -160,7 +161,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
       var link = location.origin + location.pathname + '?d=' + iso(d);
       document.getElementById('dshare').href = 'https://wa.me/?text=' + encodeURIComponent('UPSC PYQs of the day (' + nice(d) + '): 10 Prelims + 2 Mains. How many can you get right?\n' + link);
       if (d !== today) history.replaceState(null, '', '?d=' + iso(d)); else history.replaceState(null, '', location.pathname);
-      plist.innerHTML = '<li class="panel">Loading…</li>'; mlist.innerHTML = ''; pscore.hidden = true; pcheck.hidden = true;
+      plist.innerHTML = '<li class="panel">Loading…</li>'; mlist.innerHTML = ''; pscore.hidden = true; document.getElementById('checkbar').hidden = true;
       Promise.all([fetch(pUrl + pi + '.json').then(function (r) { return r.json(); }), fetch(mUrl + mi + '.json').then(function (r) { return r.json(); })])
         .then(function (res) { if (day !== d) return; set = res[0]; renderPrelims(); renderMains(res[1]); })
         .catch(function () { plist.innerHTML = '<li class="panel">Could not load the questions. Check your connection and reload.</li>'; });
@@ -171,30 +172,35 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
   })();
   </script>
   <style is:global>
-    .dnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0 4px; }
+    .dnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 14px 0 10px; padding: 10px 12px; }
     .dmid { display: grid; text-align: center; gap: 2px; }
-    .dnav .btn:disabled { opacity: .4; cursor: default; } .dnav .btn { white-space: nowrap; }
-    .pq, .mq { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-    .pqi p { margin: 6px 0; } .pqi .qm { margin: 0 0 4px; gap: 6px; }
-    .st { list-style: none; padding: 0 0 0 4px; margin: 4px 0; display: grid; gap: 3px; }
-    .pt { font-size: .9rem; margin: 4px 0; } .pt td { border: 1px solid var(--line); padding: 4px 8px; vertical-align: top; }
-    .pt.hd tr:first-child td { font-weight: 600; }
-    .opts { display: grid; gap: 6px; margin-top: 8px; }
-    .opt { font: inherit; font-size: .95rem; text-align: left; display: flex; gap: 8px; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
-    .opt b { flex: none; } .opt:disabled { cursor: default; }
-    .opt.pick { border-color: var(--accent); background: var(--accent-soft); }
-    .opt.ok { border-color: #2e7d32; background: #e3f2e5; } .opt.no { border-color: #c62828; background: #fbe4e4; }
-    .fb { font-size: .9rem; font-weight: 600; margin: 6px 0 0; } .fb.ok { color: #2e7d32; } .fb.no { color: #c62828; }
-    @media (prefers-color-scheme: dark) {
-      .opt.ok { background: #1d3a22; border-color: #66bb6a; } .opt.no { background: #3d1d1d; border-color: #ef5350; }
-      .fb.ok { color: #81c784; } .fb.no { color: #ef9a9a; }
-    }
-    .score { display: grid; gap: 6px; margin-top: 12px; } .score .btn { justify-self: start; }
-    .bigbtn { font-size: 1rem; padding: 9px 16px; background: var(--accent); color: var(--surface); border-color: var(--accent); }
-    .mqi .qt { font-size: 1.02rem; margin: 6px 0; }
-    .cover { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 4px; }
-    .cover h3 { font-size: .95rem; margin: 10px 0 4px; } .cover p, .cover ul { margin: 0; font-size: .93rem; } .cover ul { padding-left: 18px; }
-    .small { font-size: .85rem; margin-top: 18px; }
-    .tgrow { display: flex; flex-wrap: wrap; gap: 8px; } .tg { background: #229ed9; border-color: #229ed9; color: #fff; }
+    .dnav .btn { width: 44px; padding: 0; font-size: 1.3rem; }
+    .pq, .mq { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .pqi { padding: 16px 18px; } .pqi p { margin: 6px 0; } .pqi .qm { margin: 0 0 6px; gap: 6px; }
+    .pqi .qm b { color: var(--accent); }
+    .st { list-style: none; padding: 0 0 0 4px; margin: 4px 0; display: grid; gap: 4px; }
+    .pt { font-size: .92rem; margin: 6px 0; } .pt td { border: 1px solid var(--line); padding: 5px 9px; vertical-align: top; }
+    .pt.hd tr:first-child td { font-weight: 700; background: var(--bg); }
+    /* OMR-style answer bubbles */
+    .opts { display: grid; gap: 6px; margin-top: 12px; }
+    .opt { font: inherit; font-size: .98rem; text-align: left; display: flex; align-items: center; gap: 12px; padding: 7px 12px 7px 8px; border-radius: var(--r-sm);
+      border: 1px solid transparent; background: transparent; color: var(--ink); cursor: pointer; }
+    .opt:hover:not(:disabled) { background: var(--bg); }
+    .opt b { flex: none; width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--omr); color: var(--omr); display: grid; place-items: center; font-size: .85rem; font-weight: 800; }
+    .opt:disabled { cursor: default; }
+    .opt.pick b { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .opt.ok { background: var(--ok-soft); } .opt.ok b { background: var(--ok); border-color: var(--ok); color: #fff; }
+    .opt.no { background: var(--no-soft); } .opt.no b { background: var(--no); border-color: var(--no); color: #fff; }
+    .fb { font-size: .92rem; font-weight: 700; margin: 8px 0 0; } .fb.ok { color: var(--ok); } .fb.no { color: var(--no); }
+    .checkbar { position: sticky; bottom: 16px; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 16px 0;
+      background: var(--surface); border: 1px solid var(--line-strong); border-radius: 999px; padding: 8px 8px 8px 20px; font-weight: 700; }
+    .checkbar[hidden] { display: none; }
+    @media (max-width: 760px) { .checkbar { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); } }
+    .score { display: grid; gap: 6px; margin-top: 14px; border-color: var(--accent); } .score b { font-size: 1.1rem; } .score .btn { justify-self: start; }
+    .mqi .qt { font-size: 1.05rem; font-weight: 600; margin: 8px 0; }
+    .cover { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 4px; }
+    .cover h3 { font-size: .98rem; margin: 12px 0 4px; } .cover p, .cover ul { margin: 0; font-size: .95rem; } .cover ul { padding-left: 18px; }
+    .tgrow { display: flex; flex-wrap: wrap; gap: 8px; } .tg { background: #229ed9; border-color: #229ed9; color: #fff; } .tg:hover { color: #fff; filter: brightness(1.06); }
+    h2 .small { font-weight: 600; font-size: .9rem; margin-left: 6px; }
   </style>
 </Base>
