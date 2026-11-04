@@ -178,7 +178,10 @@ def sync(state, site_dir=None):
     changed, msgs = False, None
     while True:
         res = api('getUpdates', offset=state['offset'], timeout=0, limit=100, allowed_updates=['message', 'my_chat_member'])
+        if not res.get('ok'):
+            sys.exit(f"Telegram refused getUpdates: {res.get('description')} (check TELEGRAM_BOT_TOKEN)")
         ups = res.get('result') or []
+        print(f'{len(ups)} new message(s)')
         if not ups:
             break
         for u in ups:
