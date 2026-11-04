@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { u } from '../../lib/data';
+import { u, telegramBot } from '../../lib/data';
 import { daily, OFFICIAL_KEY_UPTO } from '../../lib/daily';
 const P = daily.prelims.length, M = daily.mains.length, epoch = daily.epoch;
 const pUrl = u('/daily/p/'), mUrl = u('/daily/m/');
@@ -18,7 +18,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     <div class="dmid"><b id="ddate">Today</b><span class="eyebrow" id="dstreak"></span></div>
     <button class="btn" id="dnext" type="button">Next ›</button>
   </div>
-  <p><a class="btn" id="dshare" href="#" target="_blank" rel="noopener" data-umami-event="share-whatsapp" data-umami-event-where="daily">Share this set on WhatsApp</a></p>
+  <p class="tgrow"><a class="btn tg" href={telegramBot} target="_blank" rel="noopener" data-umami-event="telegram-subscribe" data-umami-event-where="daily">Get this every morning on Telegram</a> <a class="btn" id="dshare" href="#" target="_blank" rel="noopener" data-umami-event="share-whatsapp" data-umami-event-where="daily">Share this set on WhatsApp</a></p>
   <noscript><p class="panel">Turn on JavaScript to see today's questions.</p></noscript>
 
   <h2>Prelims · GS Paper I <span class="eyebrow" id="pcount"></span></h2>
@@ -195,5 +195,6 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     .cover { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 4px; }
     .cover h3 { font-size: .95rem; margin: 10px 0 4px; } .cover p, .cover ul { margin: 0; font-size: .93rem; } .cover ul { padding-left: 18px; }
     .small { font-size: .85rem; margin-top: 18px; }
+    .tgrow { display: flex; flex-wrap: wrap; gap: 8px; } .tg { background: #229ed9; border-color: #229ed9; color: #fff; }
   </style>
 </Base>

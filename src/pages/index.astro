@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ThemeCard from '../components/ThemeCard.astro';
-import { themes, clusters, totalQuestions, syllabus, u, themeUrl } from '../lib/data';
+import { themes, clusters, totalQuestions, syllabus, u, themeUrl, telegramBot } from '../lib/data';
 const cross = themes.filter((t) => t.cross).length;
 const top = [...themes].sort((a, b) => b.count - a.count || b.recent - a.recent || a.n - b.n).slice(0, 12);
 const desc = `Prepare UPSC GS Mains by theme, not by paper. ${totalQuestions} GS1, GS2 and GS3 PYQs (2013–2026) grouped into ${themes.length} cross-paper themes with what UPSC asks and how to prepare.`;
@@ -24,6 +24,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'UPSC 
     <b>Today: 10 Prelims + 2 Mains questions</b>
     <span>Answer the Prelims set with UPSC marking, then write two Mains answers against the clock.</span>
   </a>
+  <p><a class="chip" style="font-weight:700" href={telegramBot} target="_blank" rel="noopener" data-umami-event="telegram-subscribe" data-umami-event-where="home">Get daily PYQs on Telegram (free)</a></p>
   <style>
     .today { display: grid; gap: 2px; text-decoration: none; color: var(--ink); border-color: var(--accent); margin: 14px 0; }
     .today b { color: var(--accent); font-size: 1.05rem; } .today span:last-child { color: var(--muted); font-size: .92rem; }
