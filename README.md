@@ -6,15 +6,15 @@ Static site built with [Astro](https://astro.build). 291 pages: home, a beginner
 
 ## Launch checklist
 
-Live address once deployed: **https://kumaran2712.github.io/upsc-mains-themes/**. The site has its own data and does not depend on any other repo.
+Live address: **https://upscthemes.live/** (custom domain on GitHub Pages; the old `kumaran2712.github.io/upsc-mains-themes/` links forward there). The site has its own data and does not depend on any other repo.
 
 1. **Repo.** This repo, `Kumaran2712/upsc-mains-themes`.
 2. **Turn on Pages.** Settings → Pages → Source: **GitHub Actions**.
 3. **Variables (optional now).** The workflow already defaults to this repo's address, so the site deploys without any variables. Add these under Settings → Secrets and variables → Actions → **Variables** only to override them or to switch on analytics and Search Console:
    | Name | Value |
    | --- | --- |
-   | `SITE_URL` | `https://kumaran2712.github.io` (or your custom domain; required — the build stops without it) |
-   | `BASE_PATH` | `/upsc-mains-themes` (delete this variable if you move to a custom domain) |
+   | `SITE_URL` | defaults to `https://upscthemes.live` in the workflow |
+   | `BASE_PATH` | defaults to `/` (only needed for a github.io project address) |
    | `PUBLIC_REPO_URL` | `https://github.com/Kumaran2712/upsc-mains-themes` — where "Report a typo" opens issues; leave unset to hide those links |
    | `PUBLIC_UMAMI_WEBSITE_ID` | from step 5 |
    | `PUBLIC_GOOGLE_SITE_VERIFICATION` | from step 6 |

@@ -27,11 +27,11 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          # Defaults point at https://kumaran2712.github.io/upsc-mains-themes/.
+          # Defaults point at https://upscthemes.live/ (custom domain set under Settings → Pages).
           # Override any of them under Settings → Secrets and variables → Actions → Variables
           # (e.g. SITE_URL=https://your-domain.in and BASE_PATH=/ after moving to a custom domain).
-          SITE_URL: ${{ vars.SITE_URL || 'https://kumaran2712.github.io' }}
-          BASE_PATH: ${{ vars.BASE_PATH || '/upsc-mains-themes' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://upscthemes.live' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/' }}
           PUBLIC_REPO_URL: ${{ vars.PUBLIC_REPO_URL || 'https://github.com/Kumaran2712/upsc-mains-themes' }}
           PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.PUBLIC_UMAMI_WEBSITE_ID || 'c104a33d-b914-48fa-ada3-62711142ce2c' }}
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
