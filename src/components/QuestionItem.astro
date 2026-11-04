@@ -1,5 +1,5 @@
 ---
-import { byN, themeUrl, issueUrl, type Question } from '../lib/data';
+import { byN, themeUrl, issueUrl, qUrl, type Question } from '../lib/data';
 interface Props { q: Question; showTheme?: { title: string; href: string } }
 const { q, showTheme } = Astro.props;
 const issue = issueUrl('PYQ check: ' + q.id, 'Question ID: ' + q.id + '\nWhat looks wrong:\n');
@@ -11,7 +11,7 @@ const issue = issueUrl('PYQ check: ' + q.id, 'Question ID: ' + q.id + '\nWhat lo
     {q.marks && <span>{q.marks} marks{q.words ? ` · ${q.words} words` : ''}</span>}
     <span class="qid">{q.id}</span>
   </div>
-  <p>{q.text}</p>
+  <p><a class="qlink" href={qUrl(q)}>{q.text}</a></p>
   {showTheme && <p class="eyebrow">Theme: <a href={showTheme.href}>{showTheme.title}</a></p>}
   <div class="qa">
     {q.also.map((n) => { const t = byN.get(n)!; return <a class="chip" href={themeUrl(t)} data-umami-event="also-needs-click" data-umami-event-from={q.id} data-umami-event-to={`T${n}`}>Also needs: T{n} {t.title}</a>; })}

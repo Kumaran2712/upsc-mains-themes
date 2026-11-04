@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import PrelimsItem from '../../components/PrelimsItem.astro';
+import { u } from '../../lib/data';
+import { preYears, preByYear, OFFICIAL_KEY_UPTO } from '../../lib/daily';
+export function getStaticPaths() { return preYears.map((y) => ({ params: { year: String(y) }, props: { y } })); }
+const { y } = Astro.props as { y: number };
+const qs = preByYear(y);
+const final = y <= OFFICIAL_KEY_UPTO;
+const desc = `UPSC Prelims ${y} GS Paper 1: ${qs.length} questions with answer key${final ? '' : ' (official key not yet released)'}, grouped by subject. Attempt each question, then tap to check the answer.`;
+let prevSub = '';
+---
+<Base title={`UPSC Prelims ${y} GS Paper 1 questions with answer key`} description={desc}
+  crumbs={[{ name: 'Prelims', href: u('/prelims/') }, { name: String(y), href: u(`/prelims/${y}/`) }]}>
+  <p class="eyebrow">UPSC CSE Prelims {y} · GS Paper 1</p>
+  <h1>Prelims {y} questions with answer key</h1>
+  <p class="lead">{qs.length} questions, grouped by subject (not in the exam booklet's order). Attempt each one before tapping "Show answer".{!final && ` UPSC's official ${y} key is released only after the final result, so these answers are not yet final.`}</p>
+  <ol class="qs">{qs.map((q, i) => { const h = q.subject !== prevSub; prevSub = q.subject; return <>{h && <li class="subh"><h2>{q.subject}</h2></li>}<PrelimsItem q={q} n={i + 1} /></>; })}</ol>
+  <h2>Other years</h2>
+  <div class="chips">{preYears.filter((x) => x !== y).map((x) => <a class="chip" href={u(`/prelims/${x}/`)}>Prelims {x}</a>)}</div>
+</Base>

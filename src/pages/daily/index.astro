@@ -18,6 +18,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     <div class="dmid"><b id="ddate">Today</b><span class="eyebrow" id="dstreak"></span></div>
     <button class="btn" id="dnext" type="button">Next ›</button>
   </div>
+  <p><a class="btn" id="dshare" href="#" target="_blank" rel="noopener" data-umami-event="share-whatsapp" data-umami-event-where="daily">Share this set on WhatsApp</a></p>
   <noscript><p class="panel">Turn on JavaScript to see today's questions.</p></noscript>
 
   <h2>Prelims · GS Paper I <span class="eyebrow" id="pcount"></span></h2>
@@ -124,7 +125,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
       mlist.innerHTML = ms.map(function (q, i) {
         var meta = [q.p, q.y, q.m ? q.m + ' marks' : '', q.w ? q.w + ' words' : ''].filter(Boolean).join(' · ');
         return '<li class="q mqi"><p class="qm"><span class="pc ' + q.p.toLowerCase() + '">' + q.p + '</span> <span>' + esc(meta.replace(q.p + ' · ', '')) + '</span></p>' +
-          '<p class="qt">' + esc(q.t) + '</p>' +
+          '<p class="qt"><a class="qlink" href="' + q.u + '">' + esc(q.t) + '</a></p>' +
           '<p class="qa"><a class="chip" href="' + q.th.url + '">T' + q.th.n + ' ' + esc(q.th.title) + '</a>' +
           '<button class="btn mt" type="button" data-min="' + mins(q) + '">Start ' + mins(q) + '-min timer</button>' +
           '<button class="btn mr" type="button">Show what to cover</button></p>' +
@@ -156,6 +157,8 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
       dprev.disabled = d <= epochDay; dnext.disabled = d >= today;
       dstreak.textContent = streak() ? 'Streak: ' + streak() + ' day' + (streak() > 1 ? 's' : '') : '';
       var k = d - epochDay, pi = k % P, mi = k % M;
+      var link = location.origin + location.pathname + '?d=' + iso(d);
+      document.getElementById('dshare').href = 'https://wa.me/?text=' + encodeURIComponent('UPSC PYQs of the day (' + nice(d) + '): 10 Prelims + 2 Mains. How many can you get right?\n' + link);
       if (d !== today) history.replaceState(null, '', '?d=' + iso(d)); else history.replaceState(null, '', location.pathname);
       plist.innerHTML = '<li class="panel">Loading…</li>'; mlist.innerHTML = ''; pscore.hidden = true; pcheck.hidden = true;
       Promise.all([fetch(pUrl + pi + '.json').then(function (r) { return r.json(); }), fetch(mUrl + mi + '.json').then(function (r) { return r.json(); })])
@@ -170,7 +173,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
   <style is:global>
     .dnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 12px 0 4px; }
     .dmid { display: grid; text-align: center; gap: 2px; }
-    .dnav .btn:disabled { opacity: .4; cursor: default; }
+    .dnav .btn:disabled { opacity: .4; cursor: default; } .dnav .btn { white-space: nowrap; }
     .pq, .mq { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
     .pqi p { margin: 6px 0; } .pqi .qm { margin: 0 0 4px; gap: 6px; }
     .st { list-style: none; padding: 0 0 0 4px; margin: 4px 0; display: grid; gap: 3px; }

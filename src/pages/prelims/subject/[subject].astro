@@ -1,0 +1,21 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PrelimsItem from '../../../components/PrelimsItem.astro';
+import { u } from '../../../lib/data';
+import { preSubjects, preBySubject, subjSlug, subjRank } from '../../../lib/daily';
+export function getStaticPaths() { return preSubjects.map((s) => ({ params: { subject: subjSlug(s) }, props: { s } })); }
+const { s } = Astro.props as { s: string };
+const qs = preBySubject(s);
+const ys = [...new Set(qs.map((q) => q.year!))];
+const desc = `UPSC Prelims ${s} PYQs ${ys.at(-1)}–${ys[0]}: ${qs.length} GS Paper 1 questions with answer key, newest first.`;
+const others = [...preSubjects].sort((a, b) => subjRank(a) - subjRank(b)).filter((x) => x !== s);
+---
+<Base title={`UPSC Prelims ${s} PYQs ${ys.at(-1)}–${ys[0]} with answers`} description={desc}
+  crumbs={[{ name: 'Prelims', href: u('/prelims/') }, { name: s, href: u(`/prelims/subject/${subjSlug(s)}/`) }]}>
+  <p class="eyebrow">UPSC Prelims · GS Paper 1 · {s}</p>
+  <h1>{s}: Prelims PYQs with answers</h1>
+  <p class="lead">{qs.length} questions from {ys.at(-1)} to {ys[0]}, newest first. The 2026 answers are not yet final: UPSC releases its official key after the final result.</p>
+  <ol class="qs">{qs.map((q, i) => <PrelimsItem q={q} n={i + 1} showYear />)}</ol>
+  <h2>Other subjects</h2>
+  <div class="chips">{others.map((x) => <a class="chip" href={u(`/prelims/subject/${subjSlug(x)}/`)}>{x}</a>)}</div>
+</Base>

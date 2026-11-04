@@ -1,0 +1,94 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { allQuestions, byN, themeUrl, u, qUrl, qSlug, paperName, clip, shortTitle, issueUrl } from '../../../../lib/data';
+import { mapLinksFor } from '../../../../lib/maps';
+
+export function getStaticPaths() {
+  return allQuestions.map((q) => ({ params: { year: String(q.year), paper: q.paper.toLowerCase(), slug: qSlug(q.id) }, props: { id: q.id } }));
+}
+const q = allQuestions.find((x) => x.id === Astro.props.id)!;
+const t = q.theme;
+const P = q.paper.toLowerCase();
+const same = allQuestions.filter((x) => x.paper === q.paper && x.year === q.year).sort((a, b) => a.id.localeCompare(b.id));
+const i = same.findIndex((x) => x.id === q.id), prev = same[i - 1], next = same[i + 1];
+const siblings = t.questions.filter((x) => x.id !== q.id).sort((a, b) => b.year - a.year);
+const maps = mapLinksFor(t.key);
+const mins = q.marks === 10 || q.words === 150 ? 7 : q.marks === 15 || q.words === 250 ? 11 : 9;
+const meta = [q.marks ? `${q.marks} marks` : '', q.words ? `${q.words} words` : ''].filter(Boolean).join(' · ');
+const title = `${clip(q.text.trim().replace(/[.?!:;,]+$/, ''), 70)} – UPSC Mains ${q.year} ${q.paper}`;
+const desc = clip(`UPSC CSE Mains ${q.year} ${q.paper}${q.marks ? ` (${q.marks} marks)` : ''}: ${q.text} What to cover, how to write the answer, and related PYQs from the theme "${shortTitle(t)}".`, 158);
+const abs = new URL(qUrl(q), Astro.site).href;
+const wa = `https://wa.me/?text=${encodeURIComponent(`UPSC Mains ${q.year} ${q.paper}: ${q.text}\n\nWhat to cover + related PYQs: ${abs}`)}`;
+const issue = issueUrl('PYQ check: ' + q.id, 'Question ID: ' + q.id + '\nWhat looks wrong:\n');
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: `UPSC Mains ${q.year} ${q.paper} question`, description: q.text,
+  learningResourceType: 'Practice question', educationalLevel: 'UPSC Civil Services (Main) Examination', inLanguage: 'en-IN', url: abs,
+  isPartOf: { '@type': 'WebSite', name: 'UPSC Themes', url: new URL(u('/'), Astro.site).href },
+  about: { '@type': 'Thing', name: t.title } }];
+---
+<Base title={title} brand={false} description={desc} jsonld={ld}
+  crumbs={[{ name: q.paper, href: u(`/papers/${P}/`) }, { name: String(q.year), href: u(`/papers/${P}/${q.year}/`) }, { name: 'Question', href: qUrl(q) }]}>
+  <p class="eyebrow">UPSC CSE Mains {q.year} · {q.paper}{meta && ` · ${meta}`}</p>
+  <h1 class="qh">{q.text}</h1>
+  <p class="qa">
+    <button class="btn" type="button" id="qtimer" data-min={mins}>Start {mins}-min timer</button>
+    <a class="btn wa" href={wa} target="_blank" rel="noopener" data-umami-event="share-whatsapp" data-umami-event-where="question">Share on WhatsApp</a>
+    <button class="btn" type="button" data-copy={`${q.text} (UPSC CSE Mains ${q.year}, ${q.paper})`} data-qid={q.id}>Copy</button>
+  </p>
+
+  <section class="panel qtheme">
+    <p class="eyebrow">Theme</p>
+    <h2><a href={themeUrl(t)} data-umami-event="question-theme-click">T{t.n} {t.title}</a></h2>
+    <h3>What UPSC asks in this theme</h3>
+    <p>{t.asks}</p>
+    <h3>What to cover</h3>
+    <ul>{t.checklist.map((c) => <li>{c}</li>)}</ul>
+    <h3>Writing the answer</h3>
+    <ul>{t.answer.map((c) => <li>{c}</li>)}</ul>
+    <p class="small">These notes are for the whole theme, built from all {t.count} of its PYQs. UPSC does not publish model answers.</p>
+  </section>
+
+  {q.also.length > 0 && <>
+    <h2>This question also needs</h2>
+    <div class="chips">{q.also.map((n) => { const x = byN.get(n)!; return <a class="chip" href={themeUrl(x)}>T{n} {x.title}</a>; })}</div>
+  </>}
+
+  {maps.mods.length > 0 && <>
+    <h2>On the map</h2>
+    <div class="chips">{maps.mods.map((m) => <a class="chip" href={m.url}>Map module {m.n}: {m.name}</a>)}</div>
+  </>}
+
+  {siblings.length > 0 && <>
+    <h2>More PYQs from this theme</h2>
+    <ol class="qs">{siblings.map((x) => (
+      <li class="q"><div class="qm"><span class={`pc ${x.paper.toLowerCase()}`}>{x.paper}</span><span class="yr">{x.year}</span>{x.marks && <span>{x.marks} marks</span>}</div>
+        <p><a href={qUrl(x)}>{x.text}</a></p></li>))}</ol>
+  </>}
+
+  <nav class="pn" aria-label={`More ${q.paper} ${q.year} questions`}>
+    {prev ? <a class="panel" href={qUrl(prev)}><span class="eyebrow">‹ Previous · {q.paper} {q.year}</span><span>{clip(prev.text, 90)}</span></a> : <span></span>}
+    {next ? <a class="panel" href={qUrl(next)}><span class="eyebrow">Next › · {q.paper} {q.year}</span><span>{clip(next.text, 90)}</span></a> : <span></span>}
+  </nav>
+  <p class="small"><a href={u(`/papers/${P}/${q.year}/`)}>All {same.length} {q.paper} {q.year} questions</a> · {paperName[q.paper]}{issue && <> · <a href={issue} rel="noopener nofollow" data-umami-event="report-error" data-umami-event-where={q.id}>Report a typo</a></>}</p>
+
+  <script is:inline>
+    (function () {
+      var b = document.getElementById('qtimer'), id = null;
+      b.addEventListener('click', function () {
+        if (id) { clearInterval(id); id = null; b.textContent = 'Start ' + b.dataset.min + '-min timer'; return; }
+        var end = Date.now() + b.dataset.min * 6e4;
+        function tick() { var s = Math.max(0, Math.round((end - Date.now()) / 1000)); b.textContent = s ? 'Stop · ' + Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0') : 'Time up'; if (!s) { clearInterval(id); id = null; } }
+        id = setInterval(tick, 500); tick(); if (window.__track) window.__track('question-timer', {});
+      });
+    })();
+  </script>
+  <style>
+    .qh { font-size: 1.35rem; line-height: 1.35; }
+    .qtheme { margin: 16px 0; } .qtheme h2 { margin: 2px 0 6px; font-size: 1.15rem; } .qtheme h3 { font-size: .98rem; margin: 12px 0 4px; }
+    .qtheme p, .qtheme ul { margin: 0; } .qtheme ul { padding-left: 20px; }
+    .wa { text-decoration: none; }
+    .pn { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0 8px; }
+    .pn a { display: grid; gap: 4px; text-decoration: none; color: var(--ink); font-size: .92rem; }
+    @media (max-width: 560px) { .pn { grid-template-columns: 1fr; } }
+    .small { font-size: .85rem; color: var(--muted); }
+  </style>
+</Base>

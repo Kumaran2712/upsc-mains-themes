@@ -8,6 +8,8 @@ P = lambda t: {'p': t}
 L = lambda t: {'li': t}
 
 FIXES = {
+    'P2024-009': {'match': 'Bhatkal',
+        'stem': [P('Who of the following rulers of medieval India gave permission to the Portuguese to build a fort at Bhatkal?')]},
     'P2013-027': {'match': 'Which one of the following pairs is correctly matched',
         'stem': [P('Which one of the following pairs is correctly matched? (Geographical feature : Region)')],
         'options': ['Abyssinian Plateau : Arabia', 'Atlas Mountains : North-Western Africa',

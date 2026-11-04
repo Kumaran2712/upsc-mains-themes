@@ -1,0 +1,29 @@
+---
+import type { Prelims } from '../lib/daily';
+import { OFFICIAL_KEY_UPTO } from '../lib/daily';
+import { issueUrl } from '../lib/data';
+interface Props { q: Prelims; n: number; showYear?: boolean; showSubject?: boolean }
+const { q, n, showYear = false, showSubject = false } = Astro.props;
+const issue = issueUrl('Prelims check: ' + q.id, 'Question ID: ' + q.id + '\nWhat looks wrong (question, options or answer):\n');
+const header = (t: string[][]) => !/^(\d+\.|[IVX]+\.)/.test(t[0][0]);
+const groups: ({ li: string[] } | { p: string } | { table: string[][] })[] = [];
+for (const b of q.stem) {
+  if (b.li !== undefined) { const last = groups[groups.length - 1]; if (last && 'li' in last) last.li.push(b.li); else groups.push({ li: [b.li] }); }
+  else if (b.table) groups.push({ table: b.table });
+  else groups.push({ p: b.p! });
+}
+---
+<li class="q pre" id={q.id}>
+  <p class="qm"><b>Q{n}</b>{showYear && <span>Prelims {q.year}</span>}{showSubject && <span>{q.subject}</span>}</p>
+  {groups.map((g) => 'li' in g ? <ul class="st">{g.li.map((x) => <li>{x}</li>)}</ul>
+    : 'table' in g ? <div class="tablewrap"><table class={`pt${header(g.table) ? ' hd' : ''}`}>{g.table.map((r) => <tr>{r.map((c) => <td>{c}</td>)}</tr>)}</table></div>
+    : <p>{g.p}</p>)}
+  <ol class="po">{q.options.map((o, k) => <li><b>({'abcd'[k]})</b> {o}</li>)}</ol>
+  <details data-umami-event="prelims-show-answer">
+    <summary>Show answer</summary>
+    {q.dropped ? <p>UPSC dropped this question from the evaluation.</p>
+      : !q.answer ? <p>No option is correct per the published key.</p>
+      : <p><b>Answer: ({q.answer})</b> {q.options['abcd'.indexOf(q.answer)]}{q.year! > OFFICIAL_KEY_UPTO && <span class="small"> · UPSC's official {q.year} key is not yet released.</span>}</p>}
+  </details>
+  {issue && <p class="small"><a href={issue} rel="noopener nofollow" data-umami-event="report-error" data-umami-event-where={q.id}>Report an error</a></p>}
+</li>

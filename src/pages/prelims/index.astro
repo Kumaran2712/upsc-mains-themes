@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/data';
+import { preYears, preSubjects, preByYear, preBySubject, subjSlug, subjRank } from '../../lib/daily';
+const total = preYears.reduce((s, y) => s + preByYear(y).length, 0);
+const desc = `UPSC Prelims GS Paper 1 previous year questions ${preYears.at(-1)}–${preYears[0]} with answer key: ${total} questions by year and by subject. Practise first, then tap to see the answer.`;
+const subjects = [...preSubjects].sort((a, b) => subjRank(a) - subjRank(b));
+---
+<Base title="UPSC Prelims PYQs with answer key, year-wise and subject-wise" description={desc} crumbs={[{ name: 'Prelims', href: u('/prelims/') }]}>
+  <p class="eyebrow">UPSC Prelims · GS Paper 1</p>
+  <h1>Prelims PYQs with answer key</h1>
+  <p class="lead">{total} GS Paper 1 questions from {preYears.at(-1)} to {preYears[0]}. Try each one, then tap "Show answer". For 10 mixed questions a day with UPSC marking, use <a href={u('/daily/')}>PYQs of the day</a>.</p>
+  <h2>By year</h2>
+  <div class="chips">{preYears.map((y) => <a class="chip" href={u(`/prelims/${y}/`)}>Prelims {y} <span class="eyebrow">· {preByYear(y).length}</span></a>)}</div>
+  <h2>By subject</h2>
+  <div class="chips">{subjects.map((s) => <a class="chip" href={u(`/prelims/subject/${subjSlug(s)}/`)}>{s} <span class="eyebrow">· {preBySubject(s).length}</span></a>)}</div>
+  <p class="lead small" style="margin-top:18px">Answers follow the published answer keys. UPSC releases its official key only after the final result, so 2026 answers are not yet final. Questions UPSC dropped are marked.</p>
+</Base>

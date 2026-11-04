@@ -84,6 +84,12 @@ The script stops and names the IDs if any question is in no theme, in two themes
 - `src/data/maps_lab.json` — sketch-lab questions: PYQ ID, the states or chokepoints to reveal, and the self-check list. The site build fails on an unknown PYQ ID, state or chokepoint name.
 - Lab scores and quiz bests are saved in the visitor's browser only.
 
+## Question and Prelims pages
+
+- `/mains/<year>/<paper>/<slug>/` — one page per Mains PYQ (810): the question, its theme's notes, "also needs" themes, map modules, other PYQs in the theme, previous/next in the same paper. Slugs come from the first words of the question (`qPath` in `src/lib/data.ts`), so they stay stable as long as the question text does.
+- `/prelims/` — hub; `/prelims/<year>/` (14 pages) and `/prelims/subject/<subject>/` (12 pages) list Prelims questions with a "Show answer" tap. Questions without a year are left out of these pages.
+- WhatsApp share buttons on question pages and the daily page.
+
 ## PYQs of the day
 
 `/daily/` shows 10 Prelims (GS Paper I) and 2 Mains questions a day, the same for everyone (day boundary: IST).

@@ -1,6 +1,6 @@
 import prelimsRaw from '../../data/prelims.json';
 import dailyRaw from '../data/daily.json';
-import { allQuestions, themeUrl, shortTitle } from './data';
+import { allQuestions, themeUrl, shortTitle, qUrl } from './data';
 
 export type Block = { p?: string; li?: string; table?: string[][] };
 export type Prelims = { id: string; year: number | null; subject: string; stem: Block[]; options: string[]; answer: string; dropped: boolean };
@@ -21,6 +21,17 @@ export const prelimsSet = (i: number) => daily.prelims[i].map((id) => {
 });
 export const mainsSet = (i: number) => daily.mains[i].map((id) => {
   const q = mById.get(id)!, t = q.theme;
-  return { id: q.id, p: q.paper, y: q.year, m: q.marks, w: q.words, t: q.text,
+  return { id: q.id, p: q.paper, y: q.year, m: q.marks, w: q.words, t: q.text, u: qUrl(q),
     th: { n: t.n, title: shortTitle(t), url: themeUrl(t), asks: t.asks, checklist: t.checklist, answer: t.answer } };
 });
+
+// ---- Prelims browse pages ----
+export const preYears = [...new Set(prelims.filter((q) => q.year).map((q) => q.year!))].sort((a, b) => b - a);
+export const subjSlug = (s: string) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+export const preSubjects = [...new Set(prelims.map((q) => q.subject))].sort();
+const SUBJECT_ORDER = ['Ancient India', 'Medieval India', 'Modern India', 'Art & Culture', 'World Geography', 'Indian Geography',
+  'Polity & Governance', 'International Relations', 'Economy', 'Environment & Ecology', 'Science & Technology', 'Current Affairs & GK'];
+export const subjRank = (s: string) => { const i = SUBJECT_ORDER.indexOf(s); return i < 0 ? 99 : i; };
+/** Questions shown on browse pages: those with a known year. */
+export const preByYear = (y: number) => prelims.filter((q) => q.year === y).sort((a, b) => subjRank(a.subject) - subjRank(b.subject) || a.id.localeCompare(b.id));
+export const preBySubject = (s: string) => prelims.filter((q) => q.subject === s && q.year).sort((a, b) => b.year! - a.year! || a.id.localeCompare(b.id));
