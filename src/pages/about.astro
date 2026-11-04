@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { themes, totalQuestions, syllabus, source, u, issueUrl } from '../lib/data';
+import { themes, totalQuestions, syllabus, source, u, issueUrl, telegramBot } from '../lib/data';
 ---
 <Base title="About and sources" description="How UPSC Themes was built: sources of the UPSC questions, how themes were formed, known gaps, and how to report an error." crumbs={[{ name: 'About', href: u('/about/') }]}>
   <h1>About UPSC Themes</h1>
@@ -8,7 +8,7 @@ import { themes, totalQuestions, syllabus, source, u, issueUrl } from '../lib/da
   <h2>Sources</h2>
   <ul>
     <li>Questions: Civil Services (Main) Examination papers published by the <a href={source.official} rel="noopener">Union Public Service Commission</a>. Copyright, if any, remains with UPSC.</li>
-    <li>Prelims questions (PYQs of the day): Civil Services (Preliminary) GS Paper I, 2013–2026. Answers follow the published answer keys. UPSC releases its official key only after the final result, so 2026 answers are not yet final. Questions UPSC dropped are left out.</li>
+    <li>Prelims questions (PYQs of the day): Civil Services (Preliminary) GS Paper I, 2013–2026. Answers follow the published answer keys. UPSC releases its official key only after the final result, so 2026 answers are not yet final. Questions UPSC dropped are marked and left out of the daily sets.</li>
     <li>Syllabus: the GS Mains syllabus in the CSE notification ({syllabus.length} lines across GS1–GS3).</li>
   </ul>
   <h2>How themes were formed</h2>
@@ -25,4 +25,5 @@ import { themes, totalQuestions, syllabus, source, u, issueUrl } from '../lib/da
   </>}
   <h2>Privacy</h2>
   <p>This site counts visits and clicks with Umami, which uses no cookies and collects no personal data. Browsers that send "Do Not Track" are not counted.</p>
+  <p>Daily PYQs on Telegram: when you press Start in <a href={telegramBot}>our Telegram bot</a>, it keeps only your Telegram chat ID, stored encrypted, so it can send you the daily set. It does not keep your name, phone number or messages. Send /stop to unsubscribe and your chat ID is deleted.</p>
 </Base>
