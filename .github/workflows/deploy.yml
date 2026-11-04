@@ -34,7 +34,8 @@ jobs:
           BASE_PATH: ${{ vars.BASE_PATH || '/' }}
           PUBLIC_REPO_URL: ${{ vars.PUBLIC_REPO_URL || 'https://github.com/Kumaran2712/upsc-mains-themes' }}
           PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.PUBLIC_UMAMI_WEBSITE_ID || 'c104a33d-b914-48fa-ada3-62711142ce2c' }}
-          PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
+          # Search Console codes: upscthemes.live property, plus any set in the repo variable (old github.io property).
+          PUBLIC_GOOGLE_SITE_VERIFICATION: SIbYIeZ8SfdwfIfdicb83XPAmhiXpboKzlPsyNULRyY,${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

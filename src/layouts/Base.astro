@@ -17,8 +17,9 @@ const ogImage = new URL(u('/og.png'), Astro.site).href;
 const umamiId = (String(import.meta.env.PUBLIC_UMAMI_WEBSITE_ID || '').match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i) || [])[0];
 const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC || 'https://cloud.umami.is/script.js';
 // Accept either the bare code or the whole <meta> tag Search Console shows.
+// One or more codes (comma-separated); each may be the bare code or a pasted <meta> tag.
 const gscRaw = String(import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '');
-const gscToken = (gscRaw.match(/content="([^"]+)"/) || [])[1] || gscRaw.trim();
+const gscTokens = [...new Set(gscRaw.split(',').map((x) => ((x.match(/content="([^"]+)"/) || [])[1] || x).trim()).filter((x) => /^[\w-]{20,}$/.test(x)))];
 const crumbLd = crumbs.length
   ? [{
       '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -37,7 +38,7 @@ const ld = [...crumbLd, ...jsonld];
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
   {noindex && <meta name="robots" content="noindex" />}
-  {gscToken && <meta name="google-site-verification" content={gscToken} />}
+  {gscTokens.map((t) => <meta name="google-site-verification" content={t} />)}
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content={SITE_NAME} />
   <meta property="og:title" content={fullTitle} />
