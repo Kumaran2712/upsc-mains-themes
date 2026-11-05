@@ -1,8 +1,8 @@
 ---
 import { maps } from '../../lib/maps';
-interface Props { id: string; title?: string }
-const { id, title = 'World map with places from modern world history' } = Astro.props;
-const m = maps.history;
+interface Props { id: string; title?: string; data?: 'history' | 'news' }
+const { id, title = 'World map with places from modern world history', data = 'history' } = Astro.props;
+const m = (maps as any)[data];
 ---
 <svg id={id} class="map map-hist" viewBox={m.viewBox} role="img" aria-label={title} preserveAspectRatio="xMidYMid meet">
   <title>{title}</title>

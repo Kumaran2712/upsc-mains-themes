@@ -5,13 +5,19 @@ import Base from '../../layouts/Base.astro';
 import IndiaMap from '../../components/maps/IndiaMap.astro';
 import MapStyles from '../../components/maps/MapStyles.astro';
 import { maps, modules, ATTRIBUTION, themeKey, themeChips, lab } from '../../lib/maps';
-import { u, themeUrl } from '../../lib/data';
+import { u, themeUrl, themes, qUrl } from '../../lib/data';
 export function getStaticPaths() { return maps.layerModules.map((m: any) => ({ params: { slug: m.slug }, props: { lm: m } })); }
 const { lm } = Astro.props as { lm: any };
 const mod = modules.find((m) => m.slug === lm.slug || m.also?.slug === lm.slug)!;
+const mainsById = new Map(themes.flatMap((t) => t.questions).map((q) => [q.id, q]));
+const pyqLinks = (ids: string[] = []) => ids.map((id) => {
+  if (id.startsWith('P')) return { l: `Prelims ${id.slice(1, 5)}`, u: `${u(`/prelims/${id.slice(1, 5)}/`)}#${id}` };
+  const q = mainsById.get(id); return q ? { l: `Mains ${q.year} ${q.paper}`, u: qUrl(q) } : null;
+}).filter(Boolean) as { l: string; u: string }[];
 const layers = lm.layers.map((l: any) => ({ id: l.id, name: l.name, kind: l.kind, note: l.note, themes: themeChips(l.themes || []),
   groups: l.groups || null, stateNotes: l.stateNotes || {},
-  items: l.kind === 'states' ? [] : l.items.map((i: any) => ({ name: i.name, note: i.note || '' })) }));
+  items: l.kind === 'states' ? [] : l.items.map((i: any) => ({ name: i.name, note: i.note || '', pyq: pyqLinks(i.pyq) })) }));
+const placeLayers = layers.filter((l: any) => l.kind === 'pins' && l.items.some((i: any) => i.pyq.length));
 const labCards = lab.filter((c) => c.section === lm.slug);
 const allThemes = [...new Set(lm.layers.flatMap((l: any) => l.themes || []))].map((k) => themeKey(k as string)).filter(Boolean).sort((a, b) => a!.n - b!.n);
 const hasPlaces = layers.some((l: any) => l.kind !== 'states');
@@ -42,6 +48,16 @@ const otherHistory = lm.slug === 'india-history';
     <p><button class="btn qstart" type="button">Start: 8 questions</button> <span class="eyebrow qbest"></span></p>
   </section>
 
+  {placeLayers.length > 0 && <>
+    <h2>Places asked in PYQs</h2>
+    <p class="lead">Every place on this map that a past question named, with a link to the question.</p>
+    {placeLayers.map((l: any) => { const asked = l.items.filter((i: any) => i.pyq.length); return (
+      <details class="plist">
+        <summary><b>{l.name}</b> <span class="small">{asked.length} asked</span></summary>
+        <ul>{asked.map((i: any) => <li><b>{i.name}</b> <span>{i.note}</span> <span class="pq">{i.pyq.map((p: any) => <a href={p.u}>{p.l}</a>)}</span></li>)}</ul>
+      </details>); })}
+  </>}
+
   {labCards.length > 0 && <>
     <h2>Practise in the sketch lab</h2>
     <div class="chips">{labCards.map((c) => <a class="chip" href={`${u('/maps/lab/')}#${c.id}`}>{c.q.paper} {c.q.year}: {c.q.text.slice(0, 70)}…</a>)}</div>
@@ -53,6 +69,12 @@ const otherHistory = lm.slug === 'india-history';
     .lnote { margin: 4px 0 8px; display: grid; gap: 4px; } .lnote p { margin: 0; }
     .lnote .lg { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .86rem; }
     .lnote .lg span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+    .plist { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 0 14px; margin-bottom: 8px; }
+    .plist summary { padding: 11px 0; cursor: pointer; } .plist summary .small { color: var(--muted); margin-left: 6px; }
+    .plist ul { list-style: none; padding: 0; margin: 0 0 12px; display: grid; gap: 0; }
+    .plist li { padding: 8px 0; border-top: 1px solid var(--line); display: grid; gap: 2px; } .plist li span { font-size: .92rem; }
+    .pq { display: flex; flex-wrap: wrap; gap: 4px 10px; font-weight: 600; } .pq a, .card-pq a { font-size: .86rem; }
+    .card-pq { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 6px 0 0; font-weight: 600; } .card-pq span { color: var(--muted); font-weight: 600; font-size: .86rem; }
     .lnote .lg .l1::before { background: var(--gs1-bg); border: 2px solid var(--gs1); } .lnote .lg .l2::before { background: var(--gs3-bg); border: 2px solid var(--gs3); }
   </style>
   <script is:inline define:vars={{ layers, slug: lm.slug, hasPlaces }}>
@@ -99,7 +121,8 @@ const otherHistory = lm.slug === 'india-history';
         if (!el.classList.contains('st')) {
           var pi = placeInfo(n, el.getAttribute('data-layer')); if (!pi) return;
           el.classList.add('sel'); var t = svg.querySelector('.llab text[data-for="' + CSS.escape(n) + '"]'); if (t) t.classList.add('show'); selected = n;
-          card.innerHTML = '<h3>' + esc(n) + '</h3><p class="eyebrow">' + esc(pi.l.name) + '</p>' + (pi.it.note ? '<p>' + esc(pi.it.note) + '</p>' : '') + chips(pi.l.themes);
+          card.innerHTML = '<h3>' + esc(n) + '</h3><p class="eyebrow">' + esc(pi.l.name) + '</p>' + (pi.it.note ? '<p>' + esc(pi.it.note) + '</p>' : '') +
+            (pi.it.pyq && pi.it.pyq.length ? '<p class="card-pq"><span>Asked in:</span> ' + pi.it.pyq.map(function (p) { return '<a href="' + p.u + '">' + esc(p.l) + '</a>'; }).join(' ') + '</p>' : '') + chips(pi.l.themes);
         } else {
           var si = stateInfo(n); selected = n;
           card.innerHTML = '<h3>' + esc(n) + '</h3>' + (si.length ? '<ul>' + si.map(function (x) {

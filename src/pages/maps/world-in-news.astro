@@ -1,0 +1,43 @@
+---
+// Module 14: world places named in Prelims PYQs (data: tools/maps_prelims.py via build_maps.py).
+import Base from '../../layouts/Base.astro';
+import HistoryMap from '../../components/maps/HistoryMap.astro';
+import MapStyles from '../../components/maps/MapStyles.astro';
+import MapExplorer from '../../components/maps/MapExplorer.astro';
+import { maps, modules, themeKey } from '../../lib/maps';
+import { u, themeUrl } from '../../lib/data';
+const N = (maps as any).news;
+const mod = modules.find((m) => m.slug === 'world-in-news')!;
+const link = (id: string) => ({ l: `Prelims ${id.slice(1, 5)}`, u: `${u(`/prelims/${id.slice(1, 5)}/`)}#${id}` });
+const gname = Object.fromEntries(N.groups.map((g: any) => [g.id, g.name]));
+const items = N.pins.map((p: any) => ({ name: p.name, sub: gname[p.group], text: p.note, themes: [], pyq: p.pyq.map(link) }));
+const desc = N.meta.desc;
+const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', name: N.meta.h1, description: desc,
+  educationalLevel: 'UPSC Civil Services Examination', learningResourceType: 'Interactive map and quiz', url: new URL(u('/maps/world-in-news/'), Astro.site).href }];
+---
+<Base title={N.meta.seo} description={desc} jsonld={ld} crumbs={[{ name: 'Maps', href: u('/maps/') }, { name: mod.name, href: u('/maps/world-in-news/') }]}>
+  <MapStyles />
+  <p class="eyebrow">Maps · Module {mod.n} · {mod.papers}</p>
+  <h1>{N.meta.h1}</h1>
+  <p class="lead">{N.meta.lead}</p>
+  <p class="maptools"><button class="tog zoombtn" type="button" aria-pressed="false" data-for="m14">Bigger map (swipe to move)</button></p>
+  <div class="mapbox"><HistoryMap id="m14" data="news" title="World map of places in the news named in UPSC Prelims" /></div>
+  <p class="attrib">Countries: Natural Earth, India point-of-view edition (public domain). India: Survey of India–based data. Pins are approximate. The map is cut in the Pacific, so Anadyr and Nome, a few kilometres apart across the Bering Strait, sit at opposite edges.</p>
+  <MapExplorer svgId="m14" items={items} quizName="world-in-news" quizCount={10} quizLabel="find the place" hideLabelsInQuiz={true} track="world-in-news" />
+
+  {N.groups.map((g: any) => { const ps = N.pins.filter((p: any) => p.group === g.id); return (
+    <section>
+      <h2>{g.name} <span class="small">({ps.length})</span></h2>
+      <ul class="wlist">{ps.map((p: any) => <li><b>{p.name}</b> <span>{p.note}</span> <span class="pq">{p.pyq.map((id: string) => { const x = link(id); return <a href={x.u}>{x.l}</a>; })}</span></li>)}</ul>
+    </section>); })}
+
+  <h2>Themes that use this map</h2>
+  <div class="chips">{(mod.themes || []).map((k) => themeKey(k)).filter(Boolean).sort((a, b) => a!.n - b!.n).map((t) => <a class="chip" href={themeUrl(t!)}>T{t!.n} {t!.title}</a>)}</div>
+  <style is:global>
+    .wlist { list-style: none; padding: 0; margin: 0; display: grid; }
+    .wlist li { padding: 9px 0; border-bottom: 1px solid var(--line); display: grid; gap: 2px; } .wlist li span { font-size: .92rem; }
+    .pq, .card-pq { display: flex; flex-wrap: wrap; gap: 4px 10px; font-weight: 600; } .pq a, .card-pq a { font-size: .86rem; }
+    .card-pq { margin: 6px 0 0; } .card-pq span { color: var(--muted); font-size: .86rem; }
+    h2 .small { color: var(--muted); font-weight: 600; font-size: .9rem; }
+  </style>
+</Base>

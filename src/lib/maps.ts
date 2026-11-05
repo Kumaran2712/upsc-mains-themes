@@ -29,19 +29,21 @@ export const lab = (labRaw as LabCard[]).map((c) => ({ ...c, q: qById.get(c.id)!
 export type Module = { n: number; name: string; covers: string; papers: string; slug?: string; themes?: string[]; also?: { label: string; slug: string } };
 export const modules: Module[] = [
   { n: 0, name: 'India outline & map grammar', covers: 'Drawing India in 60 seconds: latitude–longitude frame, Tropic of Cancer, standard meridian, extreme points, states and island groups.', papers: 'Used in every GS1–GS3 sketch', slug: 'india-outline', themes: ['tectonics', 'statesreorg', 'specialprov', 'regionalism', 'coopfed'] },
-  { n: 1, name: 'Physical India', covers: 'Mountains and hills, plateaus, plains and desert, coasts and deltas, passes, peaks and islands.', papers: 'GS1', slug: 'physical-india' },
+  { n: 1, name: 'Physical India', covers: 'Mountains and hills, plateaus, plains and desert, coasts and deltas, passes, peaks, glaciers and islands, plus every hill range Prelims has asked.', papers: 'GS1', slug: 'physical-india' },
   { n: 2, name: 'Drainage & water bodies', covers: 'Himalayan and peninsular rivers, east- and west-flowing rivers, the Indus system, inter-state and transboundary river issues.', papers: 'GS1 · GS2 · GS3', slug: 'drainage' },
   { n: 3, name: 'Climate, monsoon & soils', covers: 'The two monsoon branches, rainfall extremes, the north-east monsoon, and the main soil regions.', papers: 'GS1 · GS3', slug: 'climate' },
   { n: 4, name: 'World physical framework', covers: 'Mountain ranges, hot and cold deserts, plateaus and plains, cyclone seas, great rivers, Equator and Tropics.', papers: 'GS1', slug: 'world-physical' },
   { n: 5, name: 'Hazard zones', covers: 'Seismic zone V; cyclone-, flood-, drought- and landslide-prone states; major disasters since 1984.', papers: 'GS1 · GS3', slug: 'hazards' },
   { n: 6, name: 'Resources & agriculture', covers: 'Coal, iron ore, bauxite, oil and gas; rice, wheat, sugarcane, cotton, tea, coffee and jute states.', papers: 'GS1 · GS3', slug: 'resources' },
   { n: 7, name: 'Industry & infrastructure', covers: 'Steel plants, refineries, the 12 major ports, freight corridors and industrial corridors.', papers: 'GS1 · GS3', slug: 'industry' },
-  { n: 8, name: 'History on the map', covers: 'World: revolutions, industrialisation, the World Wars, decolonisation, Suez. India: Harappan and Buddhist sites, temples, 1857, Gandhian movements, tribal revolts.', papers: 'GS1', slug: 'history', also: { label: 'India places', slug: 'india-history' } },
+  { n: 8, name: 'History on the map', covers: 'World: revolutions, industrialisation, the World Wars, decolonisation, Suez. India: Harappan and Buddhist sites, temples, Ashokan edicts, ancient ports, caves, the 16 mahajanapadas, 1857, Gandhian movements, tribal revolts.', papers: 'GS1', slug: 'history', also: { label: 'India places', slug: 'india-history' } },
   { n: 9, name: 'Society & polity on the map', covers: 'Fifth and Sixth Schedules, Article 371 states, states formed after 1956, Union Territories, sex-ratio extremes.', papers: 'GS1 · GS2', slug: 'society-polity' },
   { n: 10, name: 'Neighbourhood & sea routes', covers: 'India’s land neighbours and border lengths; straits, channels and chokepoints on India’s trade routes.', papers: 'GS1 · GS2 · GS3', slug: 'neighbourhood-and-sea-routes' },
-  { n: 11, name: 'Borders & internal security', covers: 'States on each border and the force guarding it, the LWE belt, coastal states and security hotspots.', papers: 'GS3', slug: 'borders-security' },
-  { n: 12, name: 'Environment overlays', covers: 'Selected Ramsar sites, tiger reserves, UNESCO biosphere reserves, mangroves and coral reefs.', papers: 'GS1 · GS3', slug: 'environment' },
-  { n: 13, name: 'PYQ sketch lab', covers: 'Pick a PYQ, sketch the map against the clock, reveal the answer, score yourself.', papers: 'GS1 · GS2 · GS3', slug: 'lab' },
+  { n: 11, name: 'Borders & internal security', covers: 'States on each border and the force guarding it, the LWE belt, coastal states, security hotspots and cross-border links.', papers: 'GS3', slug: 'borders-security' },
+  { n: 12, name: 'Environment overlays', covers: 'Ramsar sites, tiger reserves, all 18 biosphere reserves, mangroves, coral reefs, and the parks, sanctuaries and lakes Prelims has asked about.', papers: 'GS1 · GS3', slug: 'environment' },
+  { n: 13, name: 'Rivers in detail', covers: 'Prelims river detail: Godavari, Krishna and Brahmaputra tributaries, east-flowing rivers, dams and reservoirs, waterfalls, each with the PYQ that asked it.', papers: 'Prelims · GS1', slug: 'river-detail' },
+  { n: 14, name: 'World places in the news', covers: 'Conflict regions, seas and the countries around them, lakes, rivers and highlands named in Prelims PYQs.', papers: 'Prelims · GS1 · GS2', slug: 'world-in-news', themes: ['groupings', 'westasia', 'africa', 'greatpower', 'oceans', 'water'] },
+  { n: 15, name: 'PYQ sketch lab', covers: 'Pick a PYQ, sketch the map against the clock, reveal the answer, score yourself.', papers: 'GS1 · GS2 · GS3', slug: 'lab' },
 ];
 // Theme links for data-driven modules come from their map data.
 const collect = (...lists: any[][]) => [...new Set(lists.flat().flatMap((x: any) => x.themes))];

@@ -1,6 +1,6 @@
 ---
 // Tap-to-learn card + locate quiz for one map. Items are matched by data-name inside the svg.
-interface Item { name: string; sub?: string; text: string; themes: { n: number; title: string; url: string }[] }
+interface Item { name: string; sub?: string; text: string; themes: { n: number; title: string; url: string }[]; pyq?: { l: string; u: string }[] }
 interface Props { svgId: string; items: Item[]; quizName: string; quizCount?: number; quizLabel: string; hideLabelsInQuiz?: boolean; track: string }
 const { svgId, items, quizName, quizCount = 8, quizLabel, hideLabelsInQuiz = true, track } = Astro.props;
 const data = Object.fromEntries(items.map((i) => [i.name, i]));
@@ -28,6 +28,7 @@ const cardId = `${svgId}-card`, qid = `${svgId}-quiz`;
       sel(n).forEach(function (x) { x.classList.add('sel'); }); label(n, true); last = n;
       var d = data[n];
       card.innerHTML = '<h3>' + esc(n) + '</h3>' + (d.sub ? '<p class="eyebrow">' + esc(d.sub) + '</p>' : '') + '<p>' + esc(d.text) + '</p>' +
+        (d.pyq && d.pyq.length ? '<p class="card-pq"><span>Asked in:</span> ' + d.pyq.map(function (p) { return '<a href="' + p.u + '">' + esc(p.l) + '</a>'; }).join(' ') + '</p>' : '') +
         (d.themes.length ? '<div class="chips">' + d.themes.map(function (t) { return '<a class="chip" href="' + t.url + '">T' + t.n + ' ' + esc(t.title) + '</a>'; }).join('') + '</div>' : '');
       if (window.__track) window.__track('map-tap', { map: track, name: n });
     });

@@ -254,6 +254,26 @@ rivers_map = dict(rivers=river_items)
 
 # ---------- Layered India modules ----------
 LM = json.load(open(os.path.join(HERE, "maps_india_layers.json")))
+# Prelims places from tools/maps_prelims.py: extra layers, the full biosphere list, the rivers module.
+sys.path.insert(0, HERE)
+import maps_prelims as MP
+PRE_IDS = {q["id"] for q in json.load(open(os.path.join(HERE, "..", "data", "prelims.json")))["questions"]}
+def pin_dict(t):
+    name, lat, lon, sts, note, pyq = t
+    bad = [i for i in pyq if i.startswith("P") and i not in PRE_IDS]
+    if bad: sys.exit(f"{name}: unknown PYQ id(s) {bad}")
+    return dict(name=name, lat=lat, lon=lon, states=sts, note=note, pyq=pyq)
+mods = {m["slug"]: m for m in LM["modules"]}
+for slug, L in MP.ADD:
+    L = dict(L, items=[pin_dict(t) for t in L["items"]])
+    mods[slug]["layers"].append(L)
+bio = next(L for L in mods["environment"]["layers"] if L["id"] == "biosphere")
+bio["items"] += [pin_dict(t) for t in MP.BIOSPHERE_ADD]
+bio["name"] = "Biosphere reserves (all 18)"
+bio["note"] = "India's 18 biosphere reserves, set up under UNESCO's Man and the Biosphere idea. Most are also on UNESCO's World Network of Biosphere Reserves; check the current count before you write it."
+rv = {k: MP.RIVERS[k] for k in ("n", "slug", "name", "h1", "seo", "desc", "lead", "papers")}
+rv["layers"] = [dict(L, items=[pin_dict(t) for t in L["items"]]) for L in MP.RIVERS["layers"]]
+LM["modules"].append(rv)
 reg10 = json.load(open(os.path.join(GEO, "ne_10m_geography_regions_polys.geojson")))
 by_reg10 = {}
 for f in reg10["features"]:
@@ -275,8 +295,16 @@ for mod in LM["modules"]:
         elif L["kind"] == "pins":
             items = []
             for it in L["items"]:
+                if "states" in it:  # check the pin lands where its note says
+                    p_ = Point(it["lon"], it["lat"])
+                    if it["states"] is None:
+                        if india.contains(p_): sys.exit(f"{mod['slug']}/{it['name']}: marked outside India but falls inside")
+                    elif min(states[k].distance(p_) for k in it["states"]) > (0.9 if set(it["states"]) & {"Andaman & Nicobar", "Lakshadweep"} else 0.12):  # small islands and channels are not in the simplified outline
+                        sys.exit(f"{mod['slug']}/{it['name']}: not in {it['states']} (nearest: {which_state(it['lon'], it['lat'])})")
                 x, y = pt(it["lon"], it["lat"])
-                items.append(dict(name=it["name"], note=it["note"], x=round(x, 1), y=round(y, 1)))
+                o_ = dict(name=it["name"], note=it["note"], x=round(x, 1), y=round(y, 1))
+                if it.get("pyq"): o_["pyq"] = it["pyq"]
+                items.append(o_)
             o["items"] = items
         elif L["kind"] == "features":
             items = []
@@ -299,7 +327,19 @@ for mod in LM["modules"]:
         out_layers.append(o)
     layer_modules.append(dict(n=mod["n"], slug=mod["slug"], name=mod["name"], h1=mod["h1"], seo=mod["seo"], desc=mod["desc"], lead=mod["lead"], papers=mod["papers"], layers=out_layers))
 
-data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, drainage=rivers_map, layerModules=layer_modules, boundaryChecks=list(CHECKS))
+# World places in the news (tools/maps_prelims.py), on the world history base map.
+news_pins = []
+for name, lat, lon, ctry, grp, note, pyq in MP.WORLD_PINS:
+    bad = [i for i in pyq if i.startswith("P") and i not in PRE_IDS]
+    if bad: sys.exit(f"{name}: unknown PYQ id(s) {bad}")
+    if ctry:
+        if ctry not in cshape: sys.exit(f"{name}: unknown country {ctry}")
+        if cshape[ctry].distance(Point(lon, lat)) > 0.6: sys.exit(f"{name}: not in {ctry}")
+    x, y = fp(*eq0.transform(lon, lat))
+    news_pins.append(dict(name=name, group=grp, note=note, pyq=pyq, x=round(x, 1), y=round(y, 1)))
+news_map = dict(viewBox=history_map["viewBox"], countries=countries, india=history_map["india"], pins=news_pins,
+    groups=[dict(id=g, name=n) for g, n in MP.WORLD_GROUPS], meta={k: MP.WORLD[k] for k in MP.WORLD})
+data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, news=news_map, drainage=rivers_map, layerModules=layer_modules, boundaryChecks=list(CHECKS))
 json.dump(data, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 print("India map", W, "x", H, "| states", len(state_items), "| tropic states:", tropic_states)
 print("meridian states:", meridian_states)
