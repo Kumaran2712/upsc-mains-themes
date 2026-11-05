@@ -23,7 +23,7 @@
      ],
      "type": "Exam",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "NCERT textbooks",
@@ -39,7 +39,7 @@
      ],
      "type": "Reference",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "PIB Research Unit",
@@ -167,7 +167,7 @@
      ],
      "type": "Law text",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "News On Air: Spotlight",
@@ -305,7 +305,7 @@
      ],
      "type": "Archive",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "GI registry",
@@ -317,7 +317,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -412,7 +412,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "NCRB: Crime in India",
@@ -426,7 +426,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -519,7 +519,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "Bhuvan",
@@ -533,7 +533,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -553,7 +553,7 @@
      ],
      "type": "Law text",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "Law Commission of India",
@@ -588,7 +588,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "Inter-State Council Secretariat",
@@ -600,7 +600,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1015,7 +1015,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1132,7 +1132,7 @@
      ],
      "type": "Current affairs",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1288,14 +1288,14 @@
      "name": "CACP price policy reports",
      "owner": "Commission for Agricultural Costs and Prices",
      "url": "https://cacp.da.gov.in/",
-     "use": "The reasoning behind MSP. Until checked, use the Economic Survey agriculture chapter.",
+     "use": "The reasoning behind MSP: cost concepts (A2+FL, C2) in the Kharif and Rabi price policy reports.",
      "papers": [
       "Pre",
       "M3"
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "NABARD",
@@ -1308,7 +1308,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1424,7 +1424,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1557,7 +1557,7 @@
      ],
      "type": "Data",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "Ramsar sites list",
@@ -1569,7 +1569,7 @@
      ],
      "type": "International",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1645,7 +1645,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1711,7 +1711,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   },
@@ -1777,7 +1777,7 @@
      ],
      "type": "Law text",
      "read": [],
-     "status": "check"
+     "status": "ok"
     },
     {
      "name": "Central Vigilance Commission",
@@ -1790,7 +1790,7 @@
      ],
      "type": "Report",
      "read": [],
-     "status": "check"
+     "status": "ok"
     }
    ]
   }

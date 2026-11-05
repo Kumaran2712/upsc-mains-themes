@@ -5,6 +5,7 @@ Research and link checks: 5 Nov 2026. Official sources only (government, Parliam
 constitutional/statutory bodies, public broadcasters, intergovernmental organisations).
 status: 'ok' = page loaded and content confirmed; 'check' = probably fine but blocks automated
 checks; shown only after a manual browser check flips it to 'ok'.
+All 'check' links were opened manually in a browser on 5 Nov 2026 and work.
 """
 import json, os
 
@@ -20,9 +21,9 @@ SECTIONS = [
    'items': [
     S('UPSC previous papers', 'Union Public Service Commission', 'https://upsc.gov.in/examinations/previous-question-papers',
       'Question patterns, exact syllabus wording and timed practice. The only official source for CSAT, Essay and GS4 case studies.',
-      'Pre CSAT M1 M2 M3 M4 Ess', 'Exam', status='check'),
+      'Pre CSAT M1 M2 M3 M4 Ess', 'Exam'),
     S('NCERT textbooks', 'NCERT, Ministry of Education', 'https://ncert.nic.in/textbook.php',
-      'Basics in history, geography, polity, economy and science; Class 6–10 Maths for CSAT.', 'Pre CSAT M1 M2 M3', 'Reference', status='check'),
+      'Basics in history, geography, polity, economy and science; Class 6–10 Maths for CSAT.', 'Pre CSAT M1 M2 M3', 'Reference'),
     S('PIB Research Unit', 'Press Information Bureau, Ministry of I&B', 'https://pib.gov.in/',
       "The government's own account of schemes, reports and visits; Year-End Reviews are good for revision.", 'Pre M1 M2 M3 Ess', 'Current affairs',
       read=[('Backgrounders', 'https://pib.gov.in/ViewBackgrounder.aspx?MenuId=473'), ('Factsheets', 'https://pib.gov.in/AllFactsheet.aspx?MenuId=472'),
@@ -40,7 +41,7 @@ SECTIONS = [
     S('Digital Sansad', 'Lok Sabha and Rajya Sabha Secretariats', 'https://sansad.in/',
       'Standing Committee reports, bills and ministers’ answers. Committee findings add weight to Mains answers.', 'Pre M2 M3', 'Report'),
     S('India Code', 'Legislative Department, Ministry of Law', 'https://www.indiacode.nic.in/',
-      'The original text of Acts (RTI, Lokpal, RPA, DPDP) instead of summaries.', 'Pre M2 M3 M4', 'Law text', status='check'),
+      'The original text of Acts (RTI, Lokpal, RPA, DPDP) instead of summaries.', 'Pre M2 M3 M4', 'Law text'),
     S('News On Air: Spotlight', 'All India Radio, Prasar Bharati', 'https://newsonair.gov.in/',
       'Short audio analysis of current issues; Vishwa Darpan for international affairs.', 'Pre M2 M3', 'Current affairs'),
     S('Sansad TV', 'Parliament of India', 'https://sansadtv.nic.in/', 'Parliament This Week for a weekly legislative wrap-up.', 'Pre M2', 'Current affairs'),
@@ -62,8 +63,8 @@ SECTIONS = [
     S('National Museum', 'Ministry of Culture', 'https://nationalmuseumindia.gov.in/',
       'A visual reference for sculpture, painting schools and coins.', 'Pre M1', 'Archive'),
     S('Indian Culture portal', 'Ministry of Culture and IIT Bombay', 'https://indianculture.gov.in/',
-      'Rare books, e-museums and freedom-struggle stories.', 'Pre M1', 'Archive', status='check'),
-    S('GI registry', 'IP India, DPIIT', 'https://ipindia.gov.in/', 'The official list of Geographical Indication tags.', 'Pre', 'Data', status='check'),
+      'Rare books, e-museums and freedom-struggle stories.', 'Pre M1', 'Archive'),
+    S('GI registry', 'IP India, DPIIT', 'https://ipindia.gov.in/', 'The official list of Geographical Indication tags.', 'Pre', 'Data'),
   ]},
   {'id': 'gs1-history', 'title': 'History', 'paper': 'GS1 · Prelims',
    'intro': 'NCERT (see Start here) is the official source for ancient, medieval, modern, post-independence and world history.', 'items': [
@@ -79,8 +80,8 @@ SECTIONS = [
       'Population, sex ratio, literacy, urbanisation and SRS bulletins.', 'Pre M1 M2', 'Data'),
     S('MoSPI / National Statistics Office', 'Ministry of Statistics and Programme Implementation', 'https://www.mospi.gov.in/',
       'Women and Men in India, PLFS and the Time Use Survey for gender and employment data.', 'Pre M1 M2 M3', 'Data'),
-    S('NFHS', 'Ministry of Health; IIPS Mumbai', 'https://rchiips.org/nfhs/', 'Stunting, anaemia, fertility and women’s empowerment indicators.', 'Pre M1 M2', 'Data', status='check'),
-    S('NCRB: Crime in India', 'National Crime Records Bureau, MHA', 'https://ncrb.gov.in/', 'Crimes against women, children and SC/STs.', 'M1 M2 M3', 'Data', status='check'),
+    S('NFHS', 'Ministry of Health; IIPS Mumbai', 'https://rchiips.org/nfhs/', 'Stunting, anaemia, fertility and women’s empowerment indicators.', 'Pre M1 M2', 'Data'),
+    S('NCRB: Crime in India', 'National Crime Records Bureau, MHA', 'https://ncrb.gov.in/', 'Crimes against women, children and SC/STs.', 'M1 M2 M3', 'Data'),
   ]},
   {'id': 'gs1-geography', 'title': 'Geography', 'paper': 'GS1 · GS3 · Prelims', 'items': [
     S('India Meteorological Department', 'Ministry of Earth Sciences', 'https://mausam.imd.gov.in/',
@@ -91,19 +92,19 @@ SECTIONS = [
     S('Survey of India', 'Department of Science and Technology', 'https://surveyofindia.gov.in/',
       'The authoritative political map and boundaries (most maps are sold, not free).', 'Pre M1', 'Reference'),
     S('NATMO', 'Department of Science and Technology', 'https://natmo.gov.in/', 'Official thematic atlas and maps (mostly for sale).', 'Pre M1', 'Reference'),
-    S('Forest Survey of India', 'MoEFCC', 'https://fsi.nic.in/', 'India State of Forest Report: forest, tree and mangrove cover.', 'Pre M1 M3', 'Report', status='check'),
-    S('Bhuvan', 'ISRO / NRSC', 'https://bhuvan.nrsc.gov.in/', 'Interactive thematic and land-use maps (heavy and slow).', 'Pre M1 M3', 'Data', status='check'),
+    S('Forest Survey of India', 'MoEFCC', 'https://fsi.nic.in/', 'India State of Forest Report: forest, tree and mangrove cover.', 'Pre M1 M3', 'Report'),
+    S('Bhuvan', 'ISRO / NRSC', 'https://bhuvan.nrsc.gov.in/', 'Interactive thematic and land-use maps (heavy and slow).', 'Pre M1 M3', 'Data'),
   ]},
 
   {'id': 'gs2-polity', 'title': 'Polity and Constitution', 'paper': 'GS2 · Prelims', 'items': [
     S('Constitution of India (updated text)', 'Legislative Department, Ministry of Law', 'https://legislative.gov.in/constitution-of-india/',
-      'The authoritative Constitution text with amendments.', 'Pre M2', 'Law text', status='check'),
+      'The authoritative Constitution text with amendments.', 'Pre M2', 'Law text'),
     S('Law Commission of India', 'Ministry of Law and Justice', 'https://lawcommissionofindia.nic.in/',
       'Reports on simultaneous elections, sedition, electoral reform and more.', 'M2 Ess', 'Report',
       read=[('All reports', 'https://lawcommissionofindia.nic.in/law-commission-reports/'), ('Reports by subject', 'https://lawcommissionofindia.nic.in/category-wise-reports/')]),
     S('Election Commission of India', 'Constitutional body (Art. 324)', 'https://www.eci.gov.in/',
-      'Statistical reports, the Model Code of Conduct and electoral reforms.', 'Pre M2', 'Data', status='check'),
-    S('Inter-State Council Secretariat', 'MHA', 'https://interstatecouncil.gov.in/', 'Sarkaria and Punchhi Commission reports on Centre–State relations.', 'M2', 'Report', status='check'),
+      'Statistical reports, the Model Code of Conduct and electoral reforms.', 'Pre M2', 'Data'),
+    S('Inter-State Council Secretariat', 'MHA', 'https://interstatecouncil.gov.in/', 'Sarkaria and Punchhi Commission reports on Centre–State relations.', 'M2', 'Report'),
   ]},
   {'id': 'gs2-parliament', 'title': 'Parliament', 'paper': 'GS2 · Prelims', 'items': [
     S('Digital Sansad: committees and bills', 'Lok Sabha and Rajya Sabha Secretariats', 'https://sansad.in/',
@@ -147,7 +148,7 @@ SECTIONS = [
     S('WTO: India', 'World Trade Organization', 'https://www.wto.org/english/thewto_e/countries_e/india_e.htm', 'Trade disputes involving India and tariff data.', 'Pre M2 M3', 'International'),
     S('World Bank and IMF on India', 'World Bank, IMF', 'https://www.worldbank.org/en/country/india', 'An external view of India’s economy.', 'Pre M2 M3', 'International',
       read=[('World Bank India', 'https://www.worldbank.org/en/country/india'), ('IMF India', 'https://www.imf.org/en/Countries/IND')]),
-    S('ICWA', 'Indian Council of World Affairs (ICWA Act 2001)', 'https://www.icwa.in/', 'India Quarterly and Sapru House papers.', 'M2', 'Report', status='check'),
+    S('ICWA', 'Indian Council of World Affairs (ICWA Act 2001)', 'https://www.icwa.in/', 'India Quarterly and Sapru House papers.', 'M2', 'Report'),
   ]},
 
   {'id': 'gs3-economy', 'title': 'Economy, budget and finance', 'paper': 'GS3 · Prelims',
@@ -161,7 +162,7 @@ SECTIONS = [
     S('SEBI', 'Securities and Exchange Board of India', 'https://www.sebi.gov.in/', 'Capital-market basics and statistics.', 'Pre M3', 'Data'),
     S('Department of Financial Services', 'Ministry of Finance', 'https://financialservices.gov.in/', 'Financial inclusion schemes and banking reforms.', 'Pre M3', 'Report',
       read=[('Schemes and services', 'https://financialservices.gov.in/schemes-and-services')]),
-    S('DEA Monthly Economic Review', 'Ministry of Finance', 'https://dea.gov.in/reports/monthly-economic-review', 'A monthly snapshot of the economy.', 'Pre M3', 'Current affairs', status='check'),
+    S('DEA Monthly Economic Review', 'Ministry of Finance', 'https://dea.gov.in/reports/monthly-economic-review', 'A monthly snapshot of the economy.', 'Pre M3', 'Current affairs'),
   ]},
   {'id': 'gs3-infra', 'title': 'Infrastructure and investment', 'paper': 'GS3', 'items': [
     S('Ports, Shipping and Waterways', 'Government of India', 'https://shipmin.gov.in/', 'Sagarmala and Maritime India Vision: port-led development.', 'M3', 'Report',
@@ -180,8 +181,8 @@ SECTIONS = [
     S('ICAR', 'Indian Council of Agricultural Research', 'https://icar.org.in/', 'Agricultural research and new crop varieties.', 'M3', 'Report'),
     S('FAO: State of Food Security and Nutrition', 'Food and Agriculture Organization', 'https://www.fao.org/publications/home/fao-flagship-publications/the-state-of-food-security-and-nutrition-in-the-world/en',
       'Global hunger and nutrition context.', 'M2 M3', 'International'),
-    S('CACP price policy reports', 'Commission for Agricultural Costs and Prices', 'https://cacp.da.gov.in/', 'The reasoning behind MSP. Until checked, use the Economic Survey agriculture chapter.', 'Pre M3', 'Report', status='check'),
-    S('NABARD', 'National Bank for Agriculture and Rural Development', 'https://www.nabard.org/', 'Rural credit and the RIDF.', 'Pre M3', 'Report', status='check'),
+    S('CACP price policy reports', 'Commission for Agricultural Costs and Prices', 'https://cacp.da.gov.in/', 'The reasoning behind MSP: cost concepts (A2+FL, C2) in the Kharif and Rabi price policy reports.', 'Pre M3', 'Report'),
+    S('NABARD', 'National Bank for Agriculture and Rural Development', 'https://www.nabard.org/', 'Rural credit and the RIDF.', 'Pre M3', 'Report'),
   ]},
   {'id': 'gs3-st', 'title': 'Science and technology', 'paper': 'GS3 · Prelims', 'items': [
     S('ISRO', 'Department of Space', 'https://www.isro.gov.in/', 'Mission facts and space-sector reforms.', 'Pre M3', 'Report'),
@@ -193,7 +194,7 @@ SECTIONS = [
     S('CSIR', 'Council of Scientific and Industrial Research', 'https://www.csir.res.in/', 'Lab-to-market technology examples.', 'Pre M3', 'Report'),
     S('IP India', 'CGPDTM, DPIIT', 'https://ipindia.gov.in/', 'IPR law: patents, Section 3(d) and GI tags.', 'Pre M2 M3', 'Law text',
       read=[('Acts and rules', 'https://ipindia.gov.in/resource-links/acts-rules-ipr-links')]),
-    S('DST and MeitY', 'Government of India', 'https://dst.gov.in/', 'National missions, IndiaAI, the Semiconductor Mission and the DPDP Act.', 'Pre M2 M3', 'Report', status='check'),
+    S('DST and MeitY', 'Government of India', 'https://dst.gov.in/', 'National missions, IndiaAI, the Semiconductor Mission and the DPDP Act.', 'Pre M2 M3', 'Report'),
   ]},
   {'id': 'gs3-env', 'title': 'Environment and ecology', 'paper': 'GS3 · Prelims', 'items': [
     S('MoEFCC', 'Ministry of Environment, Forest and Climate Change', 'https://moef.gov.in/', 'EIA process, eco-sensitive zones and scheme data.', 'Pre M3', 'Report',
@@ -206,8 +207,8 @@ SECTIONS = [
     S('UNEP', 'UN Environment Programme', 'https://www.unep.org/', 'Emissions Gap and Adaptation Gap reports.', 'Pre M3 Ess', 'International'),
     S('CBD: Global Biodiversity Framework', 'Convention on Biological Diversity', 'https://www.cbd.int/gbf', 'The 23 targets for 2030, including 30x30.', 'Pre M3', 'International',
       read=[('Targets', 'https://www.cbd.int/gbf/targets')]),
-    S('CPCB', 'Central Pollution Control Board', 'https://cpcb.nic.in/', 'AQI, NCAP and plastic EPR data.', 'Pre M3', 'Data', status='check'),
-    S('Ramsar sites list', 'Ramsar Convention', 'https://rsis.ramsar.org/', 'India’s Ramsar wetlands.', 'Pre', 'International', status='check'),
+    S('CPCB', 'Central Pollution Control Board', 'https://cpcb.nic.in/', 'AQI, NCAP and plastic EPR data.', 'Pre M3', 'Data'),
+    S('Ramsar sites list', 'Ramsar Convention', 'https://rsis.ramsar.org/', 'India’s Ramsar wetlands.', 'Pre', 'International'),
   ]},
   {'id': 'gs3-dm', 'title': 'Disaster management', 'paper': 'GS3', 'items': [
     S('IMD cyclone and heatwave warnings', 'India Meteorological Department', 'https://mausam.imd.gov.in/', 'How India’s warning systems work.', 'Pre M3', 'Data',
@@ -216,14 +217,14 @@ SECTIONS = [
       read=[('Tsunami Early Warning Centre', 'https://tsunami.incois.gov.in/TEWS/')]),
     S('UNDRR: Sendai Framework', 'UN Office for Disaster Risk Reduction', 'https://www.undrr.org/', 'Sendai priorities and targets.', 'M3', 'International',
       read=[('What is the Sendai Framework', 'https://www.undrr.org/implementing-sendai-framework/what-sendai-framework')]),
-    S('NDMA', 'National Disaster Management Authority', 'https://ndma.gov.in/', 'Guidelines and the National Disaster Management Plan.', 'M3', 'Report', status='check'),
+    S('NDMA', 'National Disaster Management Authority', 'https://ndma.gov.in/', 'Guidelines and the National Disaster Management Plan.', 'M3', 'Report'),
   ]},
   {'id': 'gs3-security', 'title': 'Internal security', 'paper': 'GS3', 'items': [
     S('Ministry of Home Affairs', 'Government of India', 'https://www.mha.gov.in/', 'Annual report data on LWE, the North East, J&K and borders.', 'Pre M3', 'Report',
       read=[('Reports', 'https://www.mha.gov.in/reports'), ('Divisions', 'https://www.mha.gov.in/our-divisions')]),
     S('FIU-IND', 'Financial Intelligence Unit, Ministry of Finance', 'https://fiuindia.gov.in/', 'Anti-money-laundering architecture and the PMLA.', 'M3', 'Law text'),
     S('Enforcement Directorate', 'Ministry of Finance', 'https://enforcementdirectorate.gov.in/', 'Economic-offence enforcement under PMLA and FEMA.', 'M2 M3', 'Report'),
-    S('CERT-In', 'MeitY', 'https://www.cert-in.org.in/', 'India’s cyber-security architecture.', 'M3', 'Report', status='check'),
+    S('CERT-In', 'MeitY', 'https://www.cert-in.org.in/', 'India’s cyber-security architecture.', 'M3', 'Report'),
   ]},
 
   {'id': 'gs4', 'title': 'Ethics, integrity and aptitude', 'paper': 'GS4',
@@ -233,8 +234,8 @@ SECTIONS = [
     S('Lokpal of India', 'Statutory body', 'https://lokpal.gov.in/', 'How the ombudsman is designed and how complaints work.', 'M4 M2 Pre', 'Reference'),
     S('RTI Online and CIC', 'DoPT; Central Information Commission', 'https://rtionline.gov.in/', 'Transparency as an ethical tool: the filing process and landmark decisions.', 'M4 M2', 'Reference',
       read=[('CIC', 'https://cic.gov.in/')]),
-    S('CCS (Conduct) Rules 1964', 'DoPT', 'https://dopt.gov.in/acts/central-civil-services-conduct-rules-1964-updated-0', 'The actual conduct rules for civil servants.', 'M4', 'Law text', status='check'),
-    S('Central Vigilance Commission', 'Statutory body', 'https://cvc.gov.in/', 'Preventive vigilance and annual reports.', 'M4 M2', 'Report', status='check'),
+    S('CCS (Conduct) Rules 1964', 'DoPT', 'https://dopt.gov.in/acts/central-civil-services-conduct-rules-1964-updated-0', 'The actual conduct rules for civil servants.', 'M4', 'Law text'),
+    S('Central Vigilance Commission', 'Statutory body', 'https://cvc.gov.in/', 'Preventive vigilance and annual reports.', 'M4 M2', 'Report'),
   ]},
 ]
 
