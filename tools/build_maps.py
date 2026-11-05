@@ -272,7 +272,7 @@ bio["items"] += [pin_dict(t) for t in MP.BIOSPHERE_ADD]
 bio["name"] = "Biosphere reserves (all 18)"
 bio["note"] = "India's 18 biosphere reserves, set up under UNESCO's Man and the Biosphere idea. Most are also on UNESCO's World Network of Biosphere Reserves; check the current count before you write it."
 rv = {k: MP.RIVERS[k] for k in ("n", "slug", "name", "h1", "seo", "desc", "lead", "papers")}
-rv["layers"] = [dict(L, items=[pin_dict(t) for t in L["items"]]) for L in MP.RIVERS["layers"]]
+rv["layers"] = [L if L["kind"] == "rivers" else dict(L, items=[pin_dict(t) for t in L["items"]]) for L in MP.RIVERS["layers"]]
 LM["modules"].append(rv)
 reg10 = json.load(open(os.path.join(GEO, "ne_10m_geography_regions_polys.geojson")))
 by_reg10 = {}
@@ -304,6 +304,26 @@ for mod in LM["modules"]:
                 x, y = pt(it["lon"], it["lat"])
                 o_ = dict(name=it["name"], note=it["note"], x=round(x, 1), y=round(y, 1))
                 if it.get("pyq"): o_["pyq"] = it["pyq"]
+                items.append(o_)
+            o["items"] = items
+        elif L["kind"] == "rivers":
+            items = []
+            for name, src, note, pyq in L["items"]:
+                bad = [i for i in pyq if i.startswith("P") and i not in PRE_IDS]
+                if bad: sys.exit(f"{name}: unknown PYQ id(s) {bad}")
+                if "ne" in src:
+                    parts = [g for k in src["ne"] for g in by_river.get(k, [])]
+                    if not parts: sys.exit(f"{mod['slug']}/{name}: no Natural Earth river named {src['ne']}")
+                    g = unary_union(parts).intersection(india_buf).simplify(0.01)
+                    if g.is_empty: sys.exit(f"{mod['slug']}/{name}: no course inside India")
+                else:
+                    g = LineString([(lon, lat) for lat, lon in src["path"]])
+                    off = [p for p in src["path"] if india_buf.distance(Point(p[1], p[0])) > 0.3]
+                    if off: sys.exit(f"{mod['slug']}/{name}: schematic points outside India {off}")
+                mid = max(getattr(g, "geoms", [g]), key=lambda q: q.length).interpolate(0.5, normalized=True)
+                cx, cy = pt(mid.x, mid.y)
+                o_ = dict(name=name, note=note, d=path(proj(g, lcc), fi), cx=round(cx, 1), cy=round(cy, 1), schematic="path" in src)
+                if pyq: o_["pyq"] = pyq
                 items.append(o_)
             o["items"] = items
         elif L["kind"] == "features":

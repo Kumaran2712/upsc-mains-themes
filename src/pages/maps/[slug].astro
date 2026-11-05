@@ -17,7 +17,7 @@ const pyqLinks = (ids: string[] = []) => ids.map((id) => {
 const layers = lm.layers.map((l: any) => ({ id: l.id, name: l.name, kind: l.kind, note: l.note, themes: themeChips(l.themes || []),
   groups: l.groups || null, stateNotes: l.stateNotes || {},
   items: l.kind === 'states' ? [] : l.items.map((i: any) => ({ name: i.name, note: i.note || '', pyq: pyqLinks(i.pyq) })) }));
-const placeLayers = layers.filter((l: any) => l.kind === 'pins' && l.items.some((i: any) => i.pyq.length));
+const placeLayers = layers.filter((l: any) => (l.kind === 'pins' || l.kind === 'rivers') && l.items.some((i: any) => i.pyq.length));
 const labCards = lab.filter((c) => c.section === lm.slug);
 const allThemes = [...new Set(lm.layers.flatMap((l: any) => l.themes || []))].map((k) => themeKey(k as string)).filter(Boolean).sort((a, b) => a!.n - b!.n);
 const hasPlaces = layers.some((l: any) => l.kind !== 'states');
@@ -87,6 +87,7 @@ const otherHistory = lm.slug === 'india-history';
       var active = layers[0].id, selected = null;
       function show(id) {
         active = id; var l = byId[id];
+        q('.sel').forEach(function (x) { x.classList.remove('sel'); }); q('text.show').forEach(function (t) { t.classList.remove('show'); }); selected = null;
         document.querySelectorAll('.lt').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.layer === id ? 'true' : 'false'); });
         q('.act').forEach(function (e) { e.classList.remove('act'); });
         q('.st.g1, .st.g2').forEach(function (e) { e.classList.remove('g1', 'g2'); });

@@ -7,7 +7,7 @@ const { layers } = Astro.props;
 // Layer content: one module (layers = slug) or all modules (layers = '*', for the sketch lab).
 const LM = !layers ? [] : maps.layerModules.filter((mm: any) => layers === '*' || mm.slug === layers);
 const LL = LM.flatMap((mm: any) => mm.layers.map((l: any) => ({ ...l, key: layers === '*' ? `${mm.slug}/${l.id}` : l.id })));
-const feats = LL.filter((l: any) => l.kind === 'features'), lines = LL.filter((l: any) => l.kind === 'lines'), pins = LL.filter((l: any) => l.kind === 'pins');
+const feats = LL.filter((l: any) => l.kind === 'features'), lines = LL.filter((l: any) => l.kind === 'lines'), pins = LL.filter((l: any) => l.kind === 'pins'), rvls = LL.filter((l: any) => l.kind === 'rivers');
 const m = maps.india;
 const big = m.states.filter((s: any) => s.area > 2.5);
 ---
@@ -26,8 +26,9 @@ const big = m.states.filter((s: any) => s.area > 2.5);
     <g class="ext">{m.extremes.map((e: any) => { const L = e.label; const end = L === 'Easternmost' || L === 'Southernmost'; const dy = L === 'Northernmost' ? 32 : L.startsWith('Southernmost') ? -14 : 9; return <g><circle cx={e.x} cy={e.y} r="9" /><text x={e.x + (end ? -14 : 14)} y={e.y + dy} text-anchor={end ? 'end' : 'start'}>{L.replace(' (mainland)', '*')}</text></g>; })}</g>
   </>}
   {feats.length > 0 && <g class="fts">{feats.map((l: any) => l.items.map((it: any) => <path class="ft" data-layer={l.key} data-name={it.name} d={it.d}><title>{it.name}</title></path>))}</g>}
+  {rvls.length > 0 && <g class="rvls">{rvls.map((l: any) => l.items.map((it: any) => <g class={`rvl${it.schematic ? ' sch' : ''}`} data-layer={l.key} data-name={it.name}><path class="hitl" d={it.d} /><path class="rline" d={it.d} /><title>{it.name}</title></g>))}</g>}
   {lines.length > 0 && <g class="lns">{lines.map((l: any) => l.items.map((it: any) => <path class="ln" data-layer={l.key} data-name={it.name} d={it.d} marker-end="url(#arrow)"><title>{it.name}</title></path>))}</g>}
   {pins.length > 0 && <g class="pts">{pins.map((l: any) => l.items.map((it: any) => <g class="pt" data-layer={l.key} data-name={it.name}><circle cx={it.x} cy={it.y} r="20" class="hit" /><circle cx={it.x} cy={it.y} r="8" class="dot" /><title>{it.name}</title></g>))}</g>}
-  {LL.length > 0 && <g class="lab llab">{[...feats, ...lines, ...pins].map((l: any) => l.items.map((it: any) => <text x={(it.x ?? it.cx) + (it.x != null ? 12 : 0)} y={(it.y ?? it.cy) + (it.x != null ? -10 : 0)} text-anchor={it.x != null ? 'start' : 'middle'} data-layer={l.key} data-for={it.name}>{it.name}</text>))}</g>}
+  {LL.length > 0 && <g class="lab llab">{[...feats, ...rvls, ...lines, ...pins].map((l: any) => l.items.map((it: any) => <text x={(it.x ?? it.cx) + (it.x != null ? 12 : 0)} y={(it.y ?? it.cy) + (it.x != null ? -10 : 0)} text-anchor={it.x != null ? 'start' : 'middle'} data-layer={l.key} data-for={it.name}>{it.name}</text>))}</g>}
   {labels && <g class="lab">{big.map((s: any) => <text x={s.cx} y={s.cy} text-anchor="middle">{s.name}</text>)}</g>}
 </svg>
