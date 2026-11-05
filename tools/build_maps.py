@@ -359,7 +359,23 @@ for name, lat, lon, ctry, grp, note, pyq in MP.WORLD_PINS:
     news_pins.append(dict(name=name, group=grp, note=note, pyq=pyq, x=round(x, 1), y=round(y, 1)))
 news_map = dict(viewBox=history_map["viewBox"], countries=countries, india=history_map["india"], pins=news_pins,
     groups=[dict(id=g, name=n) for g, n in MP.WORLD_GROUPS], meta={k: MP.WORLD[k] for k in MP.WORLD})
-data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, news=news_map, drainage=rivers_map, layerModules=layer_modules, boundaryChecks=list(CHECKS))
+# Straits, canals, isthmuses and sea routes (tools/maps_prelims.py), on the same world base.
+spins = []
+for name, lat, lon, grp, note, pyq in MP.STRAIT_PINS:
+    bad = [i for i in pyq if i.startswith("P") and i not in PRE_IDS]
+    if bad: sys.exit(f"{name}: unknown PYQ id(s) {bad}")
+    if land_w.contains(Point(lon, lat)) and grp == "strait": print("note: strait pin on land:", name)
+    x, y = fp(*eq0.transform(lon, lat))
+    spins.append(dict(name=name, group=grp, note=note, pyq=pyq, x=round(x, 1), y=round(y, 1)))
+sroutes = []
+for name, note, pts in MP.SEA_ROUTES:
+    xy = [fp(*eq0.transform(lo, la)) for la, lo in pts]
+    d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in xy)
+    mx, my = xy[len(xy) // 2]
+    sroutes.append(dict(name=name, note=note, d=d, cx=round(mx, 1), cy=round(my, 1)))
+straits_map = dict(viewBox=history_map["viewBox"], countries=countries, india=history_map["india"], pins=spins, lines=sroutes,
+    groups=[dict(id=g, name=n) for g, n in MP.STRAIT_GROUPS], meta={k: MP.STRAITS[k] for k in MP.STRAITS})
+data = dict(india=india_map, region=region_map, world=world_map, physical=physical_map, history=history_map, news=news_map, straits=straits_map, drainage=rivers_map, layerModules=layer_modules, boundaryChecks=list(CHECKS))
 json.dump(data, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 print("India map", W, "x", H, "| states", len(state_items), "| tropic states:", tropic_states)
 print("meridian states:", meridian_states)

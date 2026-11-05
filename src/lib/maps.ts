@@ -43,7 +43,8 @@ export const modules: Module[] = [
   { n: 12, name: 'Environment overlays', covers: 'Ramsar sites, tiger reserves, all 18 biosphere reserves, mangroves, coral reefs, and the parks, sanctuaries and lakes Prelims has asked about.', papers: 'GS1 · GS3', slug: 'environment' },
   { n: 13, name: 'Rivers in detail', covers: 'Prelims river detail: Godavari, Krishna and Brahmaputra tributaries, east-flowing rivers, dams and reservoirs, waterfalls, each with the PYQ that asked it.', papers: 'Prelims · GS1', slug: 'river-detail' },
   { n: 14, name: 'World places in the news', covers: 'Conflict regions, seas and the countries around them, lakes, rivers and highlands named in Prelims PYQs.', papers: 'Prelims · GS1 · GS2', slug: 'world-in-news', themes: ['groupings', 'westasia', 'africa', 'greatpower', 'oceans', 'water'] },
-  { n: 15, name: 'PYQ sketch lab', covers: 'Pick a PYQ, sketch the map against the clock, reveal the answer, score yourself.', papers: 'GS1 · GS2 · GS3', slug: 'lab' },
+  { n: 15, name: 'World straits, canals & sea routes', covers: 'About 40 straits and channels, the major canals, isthmuses and capes, and the main sea routes: Suez, Cape, Malacca, Hormuz, Northern Sea Route, INSTC, IMEC, Panama.', papers: 'Prelims · GS1 · GS2 · GS3', slug: 'world-straits', themes: ['indopacific', 'maritime', 'westasia', 'oceans', 'transport', 'polar'] },
+  { n: 16, name: 'PYQ sketch lab', covers: 'Pick a PYQ, sketch the map against the clock, reveal the answer, score yourself.', papers: 'GS1 · GS2 · GS3', slug: 'lab' },
 ];
 // Theme links for data-driven modules come from their map data.
 const collect = (...lists: any[][]) => [...new Set(lists.flat().flatMap((x: any) => x.themes))];
