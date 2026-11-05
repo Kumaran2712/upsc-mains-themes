@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import { u, issueUrl } from '../lib/data';
+import raw from '../data/sources.json';
+
+type Item = { name: string; owner: string; url: string; use: string; papers: string[]; type: string; read: { label: string; url: string }[]; status: string; note?: string };
+type Section = { id: string; title: string; paper: string; intro?: string; items: Item[] };
+const data = raw as { checked: string; sections: Section[]; notes: Record<string, string> };
+// Only links confirmed in a browser are shown; the rest wait in the data file until checked.
+const sections = data.sections.map((s) => ({ ...s, items: s.items.filter((i) => i.status === 'ok') })).filter((s) => s.items.length);
+const total = sections.reduce((n, s) => n + s.items.length, 0);
+const PAPER: Record<string, string> = { Pre: 'Prelims', CSAT: 'CSAT', M1: 'GS1', M2: 'GS2', M3: 'GS3', M4: 'GS4', Ess: 'Essay' };
+const groups = [
+  { id: 'start', title: 'Start here', ids: ['start'] },
+  { id: 'gs1', title: 'GS1: history, culture, society, geography', ids: ['gs1-culture', 'gs1-history', 'gs1-society', 'gs1-geography'] },
+  { id: 'gs2', title: 'GS2: polity, governance, social justice, IR', ids: ['gs2-polity', 'gs2-parliament', 'gs2-judiciary', 'gs2-governance', 'gs2-social', 'gs2-ir'] },
+  { id: 'gs3', title: 'GS3: economy, S&T, environment, security', ids: ['gs3-economy', 'gs3-infra', 'gs3-agri', 'gs3-st', 'gs3-env', 'gs3-dm', 'gs3-security'] },
+  { id: 'gs4', title: 'GS4: ethics', ids: ['gs4'] },
+].map((g) => ({ ...g, secs: g.ids.map((id) => sections.find((s) => s.id === id)).filter(Boolean) as Section[] })).filter((g) => g.secs.length);
+const checked = new Date(data.checked + 'T00:00:00Z').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const issue = issueUrl('Broken link on Good reads', 'Which link (name or URL):\nWhat happened:\n');
+const desc = `Good reads for UPSC prep: ${total} official, free government and UN sources for Prelims, CSAT, GS1–GS4 and Essay, with the exact section to read and what to use it for.`;
+const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Good reads for UPSC prep', description: desc, url: new URL(u('/sources/'), Astro.site).href }];
+---
+<Base title="Good reads for UPSC prep: official sources by subject" description={desc} jsonld={ld} crumbs={[{ name: 'Good reads', href: u('/sources/') }]}>
+  <h1>Good reads for UPSC prep</h1>
+  <div class="disclaimer" role="note">
+    <b>Read these for value addition, not as your primary source.</b>
+    <p>Build your base from NCERT and the standard books first. Use these official sites to add current data, committee findings, reports and examples to your answers.</p>
+  </div>
+  <p class="lead">{total} free, official sources: government, Parliament, courts, constitutional bodies and UN organisations. No coaching sites. For each one: the part worth reading and what to use it for.</p>
+
+  <nav class="jump chips" aria-label="Jump to">
+    {groups.map((g) => <a class="chip" href={`#${g.id}`}>{g.title.split(':')[0]}</a>)}
+    <a class="chip" href="#csat-essay">CSAT and Essay</a>
+  </nav>
+
+  {groups.map((g) => (
+    <section class="grp" id={g.id}>
+      <h2>{g.title}</h2>
+      {g.secs.map((s) => (
+        <div class="sec" id={s.id}>
+          {g.secs.length > 1 && <h3>{s.title}</h3>}
+          {s.intro && <p class="small">{s.intro}</p>}
+          <ul class="srcs">
+            {s.items.map((it) => (
+              <li class="src">
+                <div class="srch">
+                  <a class="srcn" href={it.url} target="_blank" rel="noopener" data-umami-event="source-click" data-umami-event-name={it.name}>{it.name}</a>
+                  <span class="stype">{it.type}</span>
+                </div>
+                <p class="sown">{it.owner}</p>
+                <p class="suse">{it.use}</p>
+                {it.read.length > 0 && <p class="sread"><span>Read:</span> {it.read.map((r) => <a href={r.url} target="_blank" rel="noopener">{r.label}</a>)}</p>}
+                <p class="sp">{it.papers.map((p) => <span class={`pp ${p.toLowerCase()}`}>{PAPER[p] || p}</span>)}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  ))}
+
+  <section class="grp" id="csat-essay">
+    <h2>CSAT and Essay</h2>
+    <div class="panel note"><h3>CSAT</h3><p>{data.notes.csat}</p></div>
+    <div class="panel note"><h3>Essay</h3><p>{data.notes.essay}</p></div>
+  </section>
+
+  <p class="small foot-note">Links last checked on {checked}. Some government sites load slowly or need JavaScript; if a link fails, try again later. {data.notes.excluded}{issue && <> <a href={issue} rel="noopener nofollow" data-umami-event="report-error" data-umami-event-where="sources">Report a broken link</a>.</>}</p>
+
+  <style>
+    .disclaimer { border: 1.5px solid var(--omr); background: var(--omr-soft); border-radius: var(--r-md); padding: 14px 18px; margin: 8px 0 16px; max-width: 72ch; }
+    .disclaimer b { display: block; font-size: 1.05rem; }
+    .disclaimer p { margin: 4px 0 0; }
+    .jump { margin: 6px 0 4px; position: sticky; top: 61px; z-index: 5; background: var(--bg); padding: 8px 0; }
+    @media (max-width: 760px) { .jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .jump .chip { flex: none; } }
+    .grp { scroll-margin-top: 120px; } .sec { scroll-margin-top: 120px; }
+    .sec h3 { margin: 22px 0 8px; font-size: 1.1rem; }
+    .srcs { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+    .src { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+    .srch { display: flex; gap: 8px; align-items: flex-start; justify-content: space-between; }
+    .srcn { font-weight: 700; font-size: 1.02rem; line-height: 1.3; }
+    .stype { flex: none; font-size: .74rem; font-weight: 700; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; margin-top: 2px; }
+    .sown { margin: 0; font-size: .84rem; color: var(--muted); }
+    .suse { margin: 4px 0 0; font-size: .94rem; line-height: 1.5; }
+    .sread { margin: 4px 0 0; font-size: .88rem; display: flex; flex-wrap: wrap; gap: 4px 12px; } .sread span { color: var(--muted); font-weight: 600; }
+    .sp { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 5px; }
+    .pp { font-size: .74rem; font-weight: 700; border-radius: 999px; padding: 1px 8px; background: var(--bg); color: var(--muted); }
+    .pp.m1 { background: var(--gs1-bg); color: var(--gs1); } .pp.m2 { background: var(--gs2-bg); color: var(--gs2); } .pp.m3 { background: var(--gs3-bg); color: var(--gs3); }
+    .pp.pre, .pp.csat { background: var(--accent-soft); color: var(--accent); } .pp.m4, .pp.ess { background: var(--omr-soft); color: var(--omr); }
+    .note { margin-bottom: 10px; } .note h3 { margin: 0 0 4px; } .note p { margin: 0; max-width: 72ch; }
+    .foot-note { margin-top: 28px; }
+  </style>
+</Base>

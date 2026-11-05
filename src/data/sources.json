@@ -1,0 +1,1803 @@
+{
+ "checked": "2026-11-05",
+ "sections": [
+  {
+   "id": "start",
+   "title": "Start here",
+   "paper": "All papers",
+   "intro": "Each of these serves three or more papers, so they are listed once here instead of under every subject.",
+   "items": [
+    {
+     "name": "UPSC previous papers",
+     "owner": "Union Public Service Commission",
+     "url": "https://upsc.gov.in/examinations/previous-question-papers",
+     "use": "Question patterns, exact syllabus wording and timed practice. The only official source for CSAT, Essay and GS4 case studies.",
+     "papers": [
+      "Pre",
+      "CSAT",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "Ess"
+     ],
+     "type": "Exam",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "NCERT textbooks",
+     "owner": "NCERT, Ministry of Education",
+     "url": "https://ncert.nic.in/textbook.php",
+     "use": "Basics in history, geography, polity, economy and science; Class 6–10 Maths for CSAT.",
+     "papers": [
+      "Pre",
+      "CSAT",
+      "M1",
+      "M2",
+      "M3"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "PIB Research Unit",
+     "owner": "Press Information Bureau, Ministry of I&B",
+     "url": "https://pib.gov.in/",
+     "use": "The government's own account of schemes, reports and visits; Year-End Reviews are good for revision.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M2",
+      "M3",
+      "Ess"
+     ],
+     "type": "Current affairs",
+     "read": [
+      {
+       "label": "Backgrounders",
+       "url": "https://pib.gov.in/ViewBackgrounder.aspx?MenuId=473"
+      },
+      {
+       "label": "Factsheets",
+       "url": "https://pib.gov.in/AllFactsheet.aspx?MenuId=472"
+      },
+      {
+       "label": "E-booklets",
+       "url": "https://www.pib.gov.in/ViewAllEbooklet.aspx?MenuId=722"
+      },
+      {
+       "label": "All releases by ministry",
+       "url": "https://www.pib.gov.in/allRel.aspx"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Economic Survey",
+     "owner": "Department of Economic Affairs, Ministry of Finance",
+     "url": "https://www.indiabudget.gov.in/economicsurvey/",
+     "use": "The best yearly source of economy data and policy reasoning; its thematic chapters give essay material.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Union Budget",
+     "owner": "Ministry of Finance",
+     "url": "https://www.indiabudget.gov.in/",
+     "use": "Budget at a Glance, Key to Budget Documents and the Budget Speech for budget concepts and new schemes.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "NITI Aayog",
+     "owner": "Government of India",
+     "url": "https://www.niti.gov.in/",
+     "use": "Policy papers and indices for recommendations and \"way forward\" points.",
+     "papers": [
+      "M2",
+      "M3",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Policy papers",
+       "url": "https://www.niti.gov.in/publications/policy-and-research/policy-paper"
+      },
+      {
+       "label": "Annual report",
+       "url": "https://www.niti.gov.in/publication/annual-report"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Yojana, Kurukshetra and India Year Book",
+     "owner": "Publications Division, Ministry of I&B",
+     "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2250465&reg=3&lang=1",
+     "use": "Free since April 2026 on Prasar Bharati’s WAVES app (the link is the official announcement). One theme in depth each month; the Year Book is the official fact reference.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3",
+      "Ess"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Digital Sansad",
+     "owner": "Lok Sabha and Rajya Sabha Secretariats",
+     "url": "https://sansad.in/",
+     "use": "Standing Committee reports, bills and ministers’ answers. Committee findings add weight to Mains answers.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "India Code",
+     "owner": "Legislative Department, Ministry of Law",
+     "url": "https://www.indiacode.nic.in/",
+     "use": "The original text of Acts (RTI, Lokpal, RPA, DPDP) instead of summaries.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3",
+      "M4"
+     ],
+     "type": "Law text",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "News On Air: Spotlight",
+     "owner": "All India Radio, Prasar Bharati",
+     "url": "https://newsonair.gov.in/",
+     "use": "Short audio analysis of current issues; Vishwa Darpan for international affairs.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Current affairs",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Sansad TV",
+     "owner": "Parliament of India",
+     "url": "https://sansadtv.nic.in/",
+     "use": "Parliament This Week for a weekly legislative wrap-up.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Current affairs",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "e-Gazette of India",
+     "owner": "Directorate of Printing, MoHUA",
+     "url": "https://egazette.gov.in/",
+     "use": "The exact notification or commencement date of a new law or rule.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Law text",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs1-culture",
+   "title": "Art and culture",
+   "paper": "GS1 · Prelims",
+   "items": [
+    {
+     "name": "UNESCO World Heritage: India",
+     "owner": "UNESCO World Heritage Centre",
+     "url": "https://whc.unesco.org/en/statesparties/in",
+     "use": "The authoritative list of India’s World Heritage Sites and Tentative List.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "UNESCO Intangible Heritage: India",
+     "owner": "UNESCO",
+     "url": "https://ich.unesco.org/en/state/india-IN",
+     "use": "India’s intangible heritage elements with year of inscription, a frequent Prelims topic.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "ASI: centrally protected monuments",
+     "owner": "Archaeological Survey of India, Ministry of Culture",
+     "url": "https://asi.nic.in/pdf/CPM_List.pdf",
+     "use": "Which monument is in which state, listed state by state.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CCRT",
+     "owner": "Centre for Cultural Resources and Training, Ministry of Culture",
+     "url": "https://ccrtindia.gov.in/",
+     "use": "A primer on dance, music, painting and architecture through its publications.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "IGNCA",
+     "owner": "Indira Gandhi National Centre for the Arts",
+     "url": "https://ignca.gov.in/",
+     "use": "Depth on rock art, folk traditions and Indian Ocean links (Project Mausam).",
+     "papers": [
+      "M1",
+      "M2"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "National Museum",
+     "owner": "Ministry of Culture",
+     "url": "https://nationalmuseumindia.gov.in/",
+     "use": "A visual reference for sculpture, painting schools and coins.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Indian Culture portal",
+     "owner": "Ministry of Culture and IIT Bombay",
+     "url": "https://indianculture.gov.in/",
+     "use": "Rare books, e-museums and freedom-struggle stories.",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "GI registry",
+     "owner": "IP India, DPIIT",
+     "url": "https://ipindia.gov.in/",
+     "use": "The official list of Geographical Indication tags.",
+     "papers": [
+      "Pre"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs1-history",
+   "title": "History",
+   "paper": "GS1 · Prelims",
+   "intro": "NCERT (see Start here) is the official source for ancient, medieval, modern, post-independence and world history.",
+   "items": [
+    {
+     "name": "National Archives of India",
+     "owner": "Ministry of Culture",
+     "url": "https://nationalarchives.nic.in/",
+     "use": "Primary documents on colonial rule and the freedom struggle.",
+     "papers": [
+      "M1"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Abhilekh Patal",
+     "owner": "National Archives of India",
+     "url": "https://www.abhilekh-patal.in/",
+     "use": "Millions of digitised records, including private papers of leaders, for enrichment.",
+     "papers": [
+      "M1"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Parliament Digital Library",
+     "owner": "Lok Sabha Secretariat",
+     "url": "https://eparlib.sansad.in/",
+     "use": "Legislative debates from 1854, Constituent Assembly-era material and Presidential Addresses.",
+     "papers": [
+      "M1",
+      "M2"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs1-society",
+   "title": "Society",
+   "paper": "GS1 · GS2 · Prelims",
+   "items": [
+    {
+     "name": "Census of India",
+     "owner": "Registrar General of India, MHA",
+     "url": "https://censusindia.gov.in/census.website/",
+     "use": "Population, sex ratio, literacy, urbanisation and SRS bulletins.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "MoSPI / National Statistics Office",
+     "owner": "Ministry of Statistics and Programme Implementation",
+     "url": "https://www.mospi.gov.in/",
+     "use": "Women and Men in India, PLFS and the Time Use Survey for gender and employment data.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M2",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "NFHS",
+     "owner": "Ministry of Health; IIPS Mumbai",
+     "url": "https://rchiips.org/nfhs/",
+     "use": "Stunting, anaemia, fertility and women’s empowerment indicators.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "NCRB: Crime in India",
+     "owner": "National Crime Records Bureau, MHA",
+     "url": "https://ncrb.gov.in/",
+     "use": "Crimes against women, children and SC/STs.",
+     "papers": [
+      "M1",
+      "M2",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs1-geography",
+   "title": "Geography",
+   "paper": "GS1 · GS3 · Prelims",
+   "items": [
+    {
+     "name": "India Meteorological Department",
+     "owner": "Ministry of Earth Sciences",
+     "url": "https://mausam.imd.gov.in/",
+     "use": "Monsoon onset and withdrawal, cyclone classification and climate services.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [
+      {
+       "label": "Monsoon information",
+       "url": "https://mausam.imd.gov.in/responsive/monsooninformation.php"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Indian Bureau of Mines",
+     "owner": "Ministry of Mines",
+     "url": "https://ibm.gov.in/",
+     "use": "Indian Minerals Yearbook: mineral distribution and producing states.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Central Water Commission",
+     "owner": "Ministry of Jal Shakti",
+     "url": "https://cwc.gov.in/",
+     "use": "Rivers, reservoirs and flood forecasting.",
+     "papers": [
+      "M1",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Survey of India",
+     "owner": "Department of Science and Technology",
+     "url": "https://surveyofindia.gov.in/",
+     "use": "The authoritative political map and boundaries (most maps are sold, not free).",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "NATMO",
+     "owner": "Department of Science and Technology",
+     "url": "https://natmo.gov.in/",
+     "use": "Official thematic atlas and maps (mostly for sale).",
+     "papers": [
+      "Pre",
+      "M1"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Forest Survey of India",
+     "owner": "MoEFCC",
+     "url": "https://fsi.nic.in/",
+     "use": "India State of Forest Report: forest, tree and mangrove cover.",
+     "papers": [
+      "Pre",
+      "M1",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "Bhuvan",
+     "owner": "ISRO / NRSC",
+     "url": "https://bhuvan.nrsc.gov.in/",
+     "use": "Interactive thematic and land-use maps (heavy and slow).",
+     "papers": [
+      "Pre",
+      "M1",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs2-polity",
+   "title": "Polity and Constitution",
+   "paper": "GS2 · Prelims",
+   "items": [
+    {
+     "name": "Constitution of India (updated text)",
+     "owner": "Legislative Department, Ministry of Law",
+     "url": "https://legislative.gov.in/constitution-of-india/",
+     "use": "The authoritative Constitution text with amendments.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Law text",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "Law Commission of India",
+     "owner": "Ministry of Law and Justice",
+     "url": "https://lawcommissionofindia.nic.in/",
+     "use": "Reports on simultaneous elections, sedition, electoral reform and more.",
+     "papers": [
+      "M2",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "All reports",
+       "url": "https://lawcommissionofindia.nic.in/law-commission-reports/"
+      },
+      {
+       "label": "Reports by subject",
+       "url": "https://lawcommissionofindia.nic.in/category-wise-reports/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Election Commission of India",
+     "owner": "Constitutional body (Art. 324)",
+     "url": "https://www.eci.gov.in/",
+     "use": "Statistical reports, the Model Code of Conduct and electoral reforms.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "Inter-State Council Secretariat",
+     "owner": "MHA",
+     "url": "https://interstatecouncil.gov.in/",
+     "use": "Sarkaria and Punchhi Commission reports on Centre–State relations.",
+     "papers": [
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs2-parliament",
+   "title": "Parliament",
+   "paper": "GS2 · Prelims",
+   "items": [
+    {
+     "name": "Digital Sansad: committees and bills",
+     "owner": "Lok Sabha and Rajya Sabha Secretariats",
+     "url": "https://sansad.in/",
+     "use": "Departmentally Related Standing Committee reports and official data from ministers’ answers.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Standing Committees",
+       "url": "https://sansad.in/committee/departmentally-related-standing-committees"
+      },
+      {
+       "label": "Bills",
+       "url": "https://sansad.in/legislation/bills"
+      },
+      {
+       "label": "Questions and answers",
+       "url": "https://sansad.in/questions/questions-and-answers"
+      },
+      {
+       "label": "Library research notes",
+       "url": "https://sansad.in/library/research"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Parliament Digital Library",
+     "owner": "Lok Sabha Secretariat",
+     "url": "https://eparlib.sansad.in/",
+     "use": "Archive of committee reports, Presidential Addresses and Budget Speeches.",
+     "papers": [
+      "M1",
+      "M2"
+     ],
+     "type": "Archive",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs2-judiciary",
+   "title": "Judiciary",
+   "paper": "GS2 · Prelims",
+   "items": [
+    {
+     "name": "Supreme Court of India",
+     "owner": "Supreme Court",
+     "url": "https://www.sci.gov.in/",
+     "use": "Landmark judgments in the original, and the judiciary’s annual report.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Law text",
+     "read": [
+      {
+       "label": "Judgments",
+       "url": "https://www.sci.gov.in/judgements-case-no/"
+      },
+      {
+       "label": "Annual report",
+       "url": "https://www.sci.gov.in/indian-judiciary-annual-report/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "National Judicial Data Grid",
+     "owner": "Supreme Court e-Committee",
+     "url": "https://njdg.ecourts.gov.in/",
+     "use": "Current, quotable pendency figures by age of case.",
+     "papers": [
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "eCourts",
+     "owner": "Supreme Court e-Committee",
+     "url": "https://ecourts.gov.in/ecourts_home/",
+     "use": "eCourts Phase III and virtual courts as e-governance examples.",
+     "papers": [
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "NALSA",
+     "owner": "National Legal Services Authority",
+     "url": "https://nalsa.gov.in/",
+     "use": "Lok Adalat statistics and legal aid (Article 39A).",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs2-governance",
+   "title": "Governance and accountability",
+   "paper": "GS2 · GS4 · Prelims",
+   "items": [
+    {
+     "name": "2nd ARC: Ethics in Governance (4th report)",
+     "owner": "DARPG",
+     "url": "https://darpg.gov.in/sites/default/files/ethics4.pdf",
+     "use": "The classic reform recommendations on ethics, codes of conduct and anti-corruption.",
+     "papers": [
+      "M2",
+      "M4",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CAG audit reports",
+     "owner": "Comptroller and Auditor General (Art. 148)",
+     "url": "https://cag.gov.in/",
+     "use": "Performance audits of schemes as accountability examples.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Audit reports",
+       "url": "https://cag.gov.in/en/audit-report"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Central Information Commission",
+     "owner": "Statutory body under the RTI Act",
+     "url": "https://cic.gov.in/",
+     "use": "RTI annual reports and landmark decisions.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M4"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CPGRAMS",
+     "owner": "DARPG",
+     "url": "https://pgportal.gov.in/",
+     "use": "How the national grievance redress system works.",
+     "papers": [
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Digital India",
+     "owner": "MeitY",
+     "url": "https://www.digitalindia.gov.in/",
+     "use": "DigiLocker, UMANG and Bhashini as e-governance and digital public infrastructure examples.",
+     "papers": [
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs2-social",
+   "title": "Social justice",
+   "paper": "GS2 · Prelims",
+   "items": [
+    {
+     "name": "myScheme",
+     "owner": "Digital India Corporation, MeitY",
+     "url": "https://www.myscheme.gov.in/",
+     "use": "Eligibility and benefits of any central or state scheme.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "National Health Mission",
+     "owner": "Ministry of Health and Family Welfare",
+     "url": "https://nhm.gov.in/",
+     "use": "Health scheme design and data.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "AISHE",
+     "owner": "Ministry of Education",
+     "url": "https://aishe.gov.in/",
+     "use": "Higher-education enrolment and gender parity data.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "NHRC",
+     "owner": "National Human Rights Commission",
+     "url": "https://nhrc.nic.in/",
+     "use": "Annual reports and advisories as rights examples.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "National Commissions for Women and Children",
+     "owner": "NCW and NCPCR",
+     "url": "https://ncw.gov.in/",
+     "use": "Reports and guidelines on POSH and POCSO.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "NCW",
+       "url": "https://ncw.gov.in/"
+      },
+      {
+       "label": "NCPCR",
+       "url": "https://ncpcr.gov.in/"
+      },
+      {
+       "label": "NCSC",
+       "url": "https://ncsc.nic.in/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Ministry of Minority Affairs",
+     "owner": "Government of India",
+     "url": "https://www.minorityaffairs.gov.in/",
+     "use": "Schemes, the Sachar Committee report and the 15-Point Programme.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Ministry of Tribal Affairs",
+     "owner": "Government of India",
+     "url": "https://tribal.nic.in/",
+     "use": "Tribal welfare schemes and the PVTG list.",
+     "papers": [
+      "M1",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs2-ir",
+   "title": "International relations",
+   "paper": "GS2 · Prelims",
+   "items": [
+    {
+     "name": "Ministry of External Affairs",
+     "owner": "Government of India",
+     "url": "https://www.mea.gov.in/",
+     "use": "Country briefs before any visit, and joint statements.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "International",
+     "read": [
+      {
+       "label": "Briefs on foreign relations",
+       "url": "https://www.mea.gov.in/foreign-relations"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "RIS",
+     "owner": "Autonomous think tank under MEA",
+     "url": "https://www.ris.org.in/",
+     "use": "Policy briefs on South-South cooperation, G20, BRICS and trade.",
+     "papers": [
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "United Nations",
+     "owner": "UN",
+     "url": "https://www.un.org/en/",
+     "use": "The UN Charter and Security Council resolutions.",
+     "papers": [
+      "Pre",
+      "M2"
+     ],
+     "type": "International",
+     "read": [
+      {
+       "label": "UN Charter",
+       "url": "https://www.un.org/en/about-us/un-charter"
+      },
+      {
+       "label": "Security Council",
+       "url": "https://main.un.org/securitycouncil/en"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "WTO: India",
+     "owner": "World Trade Organization",
+     "url": "https://www.wto.org/english/thewto_e/countries_e/india_e.htm",
+     "use": "Trade disputes involving India and tariff data.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "World Bank and IMF on India",
+     "owner": "World Bank, IMF",
+     "url": "https://www.worldbank.org/en/country/india",
+     "use": "An external view of India’s economy.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "International",
+     "read": [
+      {
+       "label": "World Bank India",
+       "url": "https://www.worldbank.org/en/country/india"
+      },
+      {
+       "label": "IMF India",
+       "url": "https://www.imf.org/en/Countries/IND"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "ICWA",
+     "owner": "Indian Council of World Affairs (ICWA Act 2001)",
+     "url": "https://www.icwa.in/",
+     "use": "India Quarterly and Sapru House papers.",
+     "papers": [
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-economy",
+   "title": "Economy, budget and finance",
+   "paper": "GS3 · Prelims",
+   "intro": "The Economic Survey and Union Budget are in Start here.",
+   "items": [
+    {
+     "name": "Finance Commission",
+     "owner": "Constitutional body (Art. 280)",
+     "url": "https://fincomindia.nic.in/",
+     "use": "Devolution, grants and fiscal federalism; the 16th Commission’s report covers 2026–31.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "16th Finance Commission reports",
+       "url": "https://fincomindia.nic.in/commission-reports-sixteenth"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "GST Council",
+     "owner": "Constitutional body (Art. 279A)",
+     "url": "https://gstcouncil.gov.in/",
+     "use": "Meeting decisions on rates: cooperative federalism in practice.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Council meetings",
+       "url": "https://gstcouncil.gov.in/en/gst-council-meeting"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Reserve Bank of India",
+     "owner": "RBI",
+     "url": "https://www.rbi.org.in/",
+     "use": "Monetary policy, banking health, state finances and data.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Monetary policy",
+       "url": "https://www.rbi.org.in/scripts/Annualpolicy.aspx"
+      },
+      {
+       "label": "Annual publications",
+       "url": "https://www.rbi.org.in/Scripts/Publications.aspx?publication=Annual"
+      },
+      {
+       "label": "Data (DBIE)",
+       "url": "https://data.rbi.org.in"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "SEBI",
+     "owner": "Securities and Exchange Board of India",
+     "url": "https://www.sebi.gov.in/",
+     "use": "Capital-market basics and statistics.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Department of Financial Services",
+     "owner": "Ministry of Finance",
+     "url": "https://financialservices.gov.in/",
+     "use": "Financial inclusion schemes and banking reforms.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Schemes and services",
+       "url": "https://financialservices.gov.in/schemes-and-services"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "DEA Monthly Economic Review",
+     "owner": "Ministry of Finance",
+     "url": "https://dea.gov.in/reports/monthly-economic-review",
+     "use": "A monthly snapshot of the economy.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Current affairs",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-infra",
+   "title": "Infrastructure and investment",
+   "paper": "GS3",
+   "items": [
+    {
+     "name": "Ports, Shipping and Waterways",
+     "owner": "Government of India",
+     "url": "https://shipmin.gov.in/",
+     "use": "Sagarmala and Maritime India Vision: port-led development.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Sagarmala",
+       "url": "https://shipmin.gov.in/en/division/sagarmala"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Indian Railways reports",
+     "owner": "Ministry of Railways",
+     "url": "https://indianrailways.gov.in/documents/reports",
+     "use": "Freight, dedicated freight corridors and modernisation data.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Central Electricity Authority",
+     "owner": "Ministry of Power",
+     "url": "https://cea.nic.in/",
+     "use": "Installed capacity and the generation mix.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Civil Aviation: UDAN",
+     "owner": "Ministry of Civil Aviation",
+     "url": "https://www.civilaviation.gov.in/udan",
+     "use": "Regional air connectivity.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Invest India",
+     "owner": "National investment promotion agency",
+     "url": "https://www.investindia.gov.in/",
+     "use": "FDI caps, routes and sector pages.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    }
+   ]
+  },
+  {
+   "id": "gs3-agri",
+   "title": "Agriculture and food",
+   "paper": "GS3 · Prelims",
+   "items": [
+    {
+     "name": "Agricultural Statistics at a Glance",
+     "owner": "Directorate of Economics and Statistics, Agriculture Ministry",
+     "url": "https://desagri.gov.in/document-report-category/agriculture-statistics-at-a-glance/",
+     "use": "Cropping pattern and production data.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Food and Public Distribution",
+     "owner": "Government of India",
+     "url": "https://dfpd.gov.in/",
+     "use": "NFSA, the public distribution system and PMGKAY.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "NFSA portal",
+       "url": "https://nfsa.gov.in/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Animal Husbandry statistics",
+     "owner": "Department of Animal Husbandry and Dairying",
+     "url": "https://dahd.gov.in/schemes/programmes/animal-husbandry-statistics",
+     "use": "Milk, egg and livestock data.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "ICAR",
+     "owner": "Indian Council of Agricultural Research",
+     "url": "https://icar.org.in/",
+     "use": "Agricultural research and new crop varieties.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "FAO: State of Food Security and Nutrition",
+     "owner": "Food and Agriculture Organization",
+     "url": "https://www.fao.org/publications/home/fao-flagship-publications/the-state-of-food-security-and-nutrition-in-the-world/en",
+     "use": "Global hunger and nutrition context.",
+     "papers": [
+      "M2",
+      "M3"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CACP price policy reports",
+     "owner": "Commission for Agricultural Costs and Prices",
+     "url": "https://cacp.da.gov.in/",
+     "use": "The reasoning behind MSP. Until checked, use the Economic Survey agriculture chapter.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "NABARD",
+     "owner": "National Bank for Agriculture and Rural Development",
+     "url": "https://www.nabard.org/",
+     "use": "Rural credit and the RIDF.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-st",
+   "title": "Science and technology",
+   "paper": "GS3 · Prelims",
+   "items": [
+    {
+     "name": "ISRO",
+     "owner": "Department of Space",
+     "url": "https://www.isro.gov.in/",
+     "use": "Mission facts and space-sector reforms.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Principal Scientific Adviser",
+     "owner": "Office of the PSA",
+     "url": "https://psa.gov.in/",
+     "use": "A cross-ministry view of S&T missions: quantum, AI, deep ocean, One Health.",
+     "papers": [
+      "Pre",
+      "M3",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Publications",
+       "url": "https://psa.gov.in/publications"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Department of Atomic Energy",
+     "owner": "Government of India",
+     "url": "https://dae.gov.in/",
+     "use": "Nuclear capacity and the three-stage programme.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Annual reports",
+       "url": "https://dae.gov.in/annual-reports-of-dae/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "DRDO",
+     "owner": "Ministry of Defence",
+     "url": "https://www.drdo.gov.in/",
+     "use": "Indigenisation of defence technology.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CSIR",
+     "owner": "Council of Scientific and Industrial Research",
+     "url": "https://www.csir.res.in/",
+     "use": "Lab-to-market technology examples.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "IP India",
+     "owner": "CGPDTM, DPIIT",
+     "url": "https://ipindia.gov.in/",
+     "use": "IPR law: patents, Section 3(d) and GI tags.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Law text",
+     "read": [
+      {
+       "label": "Acts and rules",
+       "url": "https://ipindia.gov.in/resource-links/acts-rules-ipr-links"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "DST and MeitY",
+     "owner": "Government of India",
+     "url": "https://dst.gov.in/",
+     "use": "National missions, IndiaAI, the Semiconductor Mission and the DPDP Act.",
+     "papers": [
+      "Pre",
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-env",
+   "title": "Environment and ecology",
+   "paper": "GS3 · Prelims",
+   "items": [
+    {
+     "name": "MoEFCC",
+     "owner": "Ministry of Environment, Forest and Climate Change",
+     "url": "https://moef.gov.in/",
+     "use": "EIA process, eco-sensitive zones and scheme data.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Annual reports",
+       "url": "https://moef.gov.in/annual-reports"
+      },
+      {
+       "label": "EIA",
+       "url": "https://moef.gov.in/environmental-impact-assessment-eia"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "NTCA",
+     "owner": "National Tiger Conservation Authority",
+     "url": "https://ntca.gov.in/",
+     "use": "Tiger numbers and reserves.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [
+      {
+       "label": "Tiger reserves",
+       "url": "https://ntca.gov.in/tiger-reserves/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "Wildlife Institute of India",
+     "owner": "MoEFCC",
+     "url": "https://wii.gov.in/",
+     "use": "Protected-area network and research.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "UNFCCC NDC Registry",
+     "owner": "UN Framework Convention on Climate Change",
+     "url": "https://unfccc.int/NDCREG",
+     "use": "The exact text of India’s climate targets (NDC 2031–35).",
+     "papers": [
+      "Pre",
+      "M3",
+      "Ess"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "IPCC",
+     "owner": "Intergovernmental Panel on Climate Change",
+     "url": "https://www.ipcc.ch/",
+     "use": "Headline climate science: Summaries for Policymakers.",
+     "papers": [
+      "Pre",
+      "M3",
+      "Ess"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "UNEP",
+     "owner": "UN Environment Programme",
+     "url": "https://www.unep.org/",
+     "use": "Emissions Gap and Adaptation Gap reports.",
+     "papers": [
+      "Pre",
+      "M3",
+      "Ess"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CBD: Global Biodiversity Framework",
+     "owner": "Convention on Biological Diversity",
+     "url": "https://www.cbd.int/gbf",
+     "use": "The 23 targets for 2030, including 30x30.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "International",
+     "read": [
+      {
+       "label": "Targets",
+       "url": "https://www.cbd.int/gbf/targets"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "CPCB",
+     "owner": "Central Pollution Control Board",
+     "url": "https://cpcb.nic.in/",
+     "use": "AQI, NCAP and plastic EPR data.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "Ramsar sites list",
+     "owner": "Ramsar Convention",
+     "url": "https://rsis.ramsar.org/",
+     "use": "India’s Ramsar wetlands.",
+     "papers": [
+      "Pre"
+     ],
+     "type": "International",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-dm",
+   "title": "Disaster management",
+   "paper": "GS3",
+   "items": [
+    {
+     "name": "IMD cyclone and heatwave warnings",
+     "owner": "India Meteorological Department",
+     "url": "https://mausam.imd.gov.in/",
+     "use": "How India’s warning systems work.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [
+      {
+       "label": "Cyclone information",
+       "url": "https://mausam.imd.gov.in/responsive/cycloneinformation.php"
+      },
+      {
+       "label": "Heatwave guidance",
+       "url": "https://mausam.imd.gov.in/responsive/heatwave_guidance.php"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "INCOIS",
+     "owner": "Ministry of Earth Sciences",
+     "url": "https://incois.gov.in/site/index.jsp",
+     "use": "Tsunami and ocean-state warnings.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Data",
+     "read": [
+      {
+       "label": "Tsunami Early Warning Centre",
+       "url": "https://tsunami.incois.gov.in/TEWS/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "UNDRR: Sendai Framework",
+     "owner": "UN Office for Disaster Risk Reduction",
+     "url": "https://www.undrr.org/",
+     "use": "Sendai priorities and targets.",
+     "papers": [
+      "M3"
+     ],
+     "type": "International",
+     "read": [
+      {
+       "label": "What is the Sendai Framework",
+       "url": "https://www.undrr.org/implementing-sendai-framework/what-sendai-framework"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "NDMA",
+     "owner": "National Disaster Management Authority",
+     "url": "https://ndma.gov.in/",
+     "use": "Guidelines and the National Disaster Management Plan.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs3-security",
+   "title": "Internal security",
+   "paper": "GS3",
+   "items": [
+    {
+     "name": "Ministry of Home Affairs",
+     "owner": "Government of India",
+     "url": "https://www.mha.gov.in/",
+     "use": "Annual report data on LWE, the North East, J&K and borders.",
+     "papers": [
+      "Pre",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [
+      {
+       "label": "Reports",
+       "url": "https://www.mha.gov.in/reports"
+      },
+      {
+       "label": "Divisions",
+       "url": "https://www.mha.gov.in/our-divisions"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "FIU-IND",
+     "owner": "Financial Intelligence Unit, Ministry of Finance",
+     "url": "https://fiuindia.gov.in/",
+     "use": "Anti-money-laundering architecture and the PMLA.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Law text",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Enforcement Directorate",
+     "owner": "Ministry of Finance",
+     "url": "https://enforcementdirectorate.gov.in/",
+     "use": "Economic-offence enforcement under PMLA and FEMA.",
+     "papers": [
+      "M2",
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "CERT-In",
+     "owner": "MeitY",
+     "url": "https://www.cert-in.org.in/",
+     "use": "India’s cyber-security architecture.",
+     "papers": [
+      "M3"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  },
+  {
+   "id": "gs4",
+   "title": "Ethics, integrity and aptitude",
+   "paper": "GS4",
+   "intro": "There is no official bank of case studies: UPSC’s past GS4 papers (Start here) are the only official case material.",
+   "items": [
+    {
+     "name": "2nd ARC: Ethics in Governance",
+     "owner": "DARPG",
+     "url": "https://darpg.gov.in/sites/default/files/ethics4.pdf",
+     "use": "Probity, codes of conduct, corruption and protecting honest civil servants.",
+     "papers": [
+      "M4",
+      "M2",
+      "Ess"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "Lokpal of India",
+     "owner": "Statutory body",
+     "url": "https://lokpal.gov.in/",
+     "use": "How the ombudsman is designed and how complaints work.",
+     "papers": [
+      "M4",
+      "M2",
+      "Pre"
+     ],
+     "type": "Reference",
+     "read": [],
+     "status": "ok"
+    },
+    {
+     "name": "RTI Online and CIC",
+     "owner": "DoPT; Central Information Commission",
+     "url": "https://rtionline.gov.in/",
+     "use": "Transparency as an ethical tool: the filing process and landmark decisions.",
+     "papers": [
+      "M4",
+      "M2"
+     ],
+     "type": "Reference",
+     "read": [
+      {
+       "label": "CIC",
+       "url": "https://cic.gov.in/"
+      }
+     ],
+     "status": "ok"
+    },
+    {
+     "name": "CCS (Conduct) Rules 1964",
+     "owner": "DoPT",
+     "url": "https://dopt.gov.in/acts/central-civil-services-conduct-rules-1964-updated-0",
+     "use": "The actual conduct rules for civil servants.",
+     "papers": [
+      "M4"
+     ],
+     "type": "Law text",
+     "read": [],
+     "status": "check"
+    },
+    {
+     "name": "Central Vigilance Commission",
+     "owner": "Statutory body",
+     "url": "https://cvc.gov.in/",
+     "use": "Preventive vigilance and annual reports.",
+     "papers": [
+      "M4",
+      "M2"
+     ],
+     "type": "Report",
+     "read": [],
+     "status": "check"
+    }
+   ]
+  }
+ ],
+ "notes": {
+  "csat": "Official CSAT material is limited to UPSC’s own Paper II archive and NCERT Class 6–10 Maths (both in Start here). For comprehension practice, PIB backgrounders and Economic Survey chapters are good official prose. No government source covers reasoning or decision-making.",
+  "essay": "No official source teaches essay writing. Use Yojana, Economic Survey thematic chapters, NITI papers and the India Year Book for content, and practise structure on UPSC’s own past essay topics.",
+  "excluded": "Left out because they are not official: PRS Legislative Research, Down To Earth / CSE, Wikipedia and all coaching portals."
+ }
+}
