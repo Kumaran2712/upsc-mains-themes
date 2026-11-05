@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { stages, byN, themeUrl, yearSpan, u, roadmap } from '../lib/data';
+import { stages, byN, themeUrl, pyqLine, u, roadmap } from '../lib/data';
 const desc = `A step-by-step UPSC GS Mains roadmap for beginners: ${roadmap.length} themes in ${stages.length} stages, from polity and modern history to IR, security and S&T, each with PYQs and prep notes.`;
 const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC GS Mains roadmap for beginners',
   itemListOrder: 'https://schema.org/ItemListOrderAscending',
@@ -33,7 +33,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC
               <a href={themeUrl(t)}>{t.title}</a>
               <span class="rm-meta">
                 {Object.entries(t.papers).filter(([, v]) => v).map(([k, v]) => <span class={`pc ${k.toLowerCase()}`}>{k} · {v}</span>)}
-                <span>{t.count} PYQs · {yearSpan(t)}</span>
+                <span>{pyqLine(t)}</span>
                 <span class="rm-done-tag" hidden>Done</span>
               </span>
             </div>

@@ -1,22 +1,48 @@
 {
  "prerequisites": {
-  "rights": [],
+  "constbasics": [],
+  "making": [
+   "constbasics"
+  ],
   "preamble": [
+   "making"
+  ],
+  "union": [
+   "preamble"
+  ],
+  "rights": [
+   "union"
+  ],
+  "speech": [
    "rights"
   ],
-  "speech": [],
-  "basicstructure": [],
-  "parliament": [],
-  "executive": [],
-  "judiciary": [],
-  "governor": [
-   "executive"
+  "ucc": [
+   "speech"
+  ],
+  "basicstructure": [
+   "ucc"
   ],
   "coopfed": [
-   "governor"
+   "basicstructure"
   ],
-  "making": [
+  "executive": [
    "coopfed"
+  ],
+  "parliament": [
+   "executive"
+  ],
+  "speaker": [
+   "parliament"
+  ],
+  "committees": [
+   "speaker"
+  ],
+  "governor": [
+   "executive",
+   "committees"
+  ],
+  "judiciary": [
+   "governor"
   ],
   "revolutions": [],
   "industrialrev": [],
@@ -61,36 +87,51 @@
   ],
   "inflation": [],
   "employment": [],
-  "constmorality": [
+  "activism": [
+   "basicstructure",
    "judiciary"
   ],
-  "activism": [
-   "basicstructure"
+  "constmorality": [
+   "judiciary",
+   "activism"
   ],
-  "cag": [],
-  "committees": [
-   "cag"
+  "tribunals": [
+   "constmorality"
   ],
-  "speaker": [
-   "parliament"
+  "specialprov": [
+   "coopfed",
+   "tribunals"
   ],
-  "elections": [],
   "fiscalfed": [
-   "budget"
+   "budget",
+   "specialprov"
   ],
   "localgov": [
    "fiscalfed"
   ],
-  "specialprov": [
-   "coopfed"
+  "elections": [
+   "localgov"
   ],
-  "tribunals": [],
-  "pressure": [],
-  "parties": [
-   "coopfed"
+  "cag": [
+   "committees",
+   "elections"
+  ],
+  "bodies": [
+   "cag"
+  ],
+  "otherprov": [
+   "bodies"
   ],
   "comparative": [
-   "executive"
+   "executive",
+   "otherprov"
+  ],
+  "parties": [
+   "coopfed",
+   "comparative"
+  ],
+  "pressure": [
+   "parties"
   ],
   "statesreorg": [
    "coopfed",
@@ -125,10 +166,6 @@
    "regionalism"
   ],
   "gender": [],
-  "ucc": [
-   "secularism",
-   "gender"
-  ],
   "sexratio": [
    "tribal",
    "population"
@@ -181,6 +218,7 @@
    "manufacturing"
   ],
   "regulators": [
+   "pressure",
    "fdi"
   ],
   "infra": [
@@ -324,17 +362,18 @@
   "airpoll": [
    "atmosphere"
   ],
+  "envconst": [
+   "activism",
+   "pressure",
+   "regulators",
+   "civilsoc",
+   "airpoll"
+  ],
   "riverpoll": [
    "water"
   ],
   "waste": [
    "localgov"
-  ],
-  "envconst": [
-   "activism",
-   "pressure",
-   "civilsoc",
-   "airpoll"
   ],
   "eia": [
    "tribal",

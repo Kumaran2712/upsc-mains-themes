@@ -3250,5 +3250,37 @@
     "commissions"
    ]
   }
+ },
+ {
+  "key": "constbasics",
+  "cluster": "Constitution & Polity",
+  "title": "Constitution basics: constitutionalism, rule of law, liberty, equality, the State & types of majority",
+  "links": [],
+  "questions": [],
+  "also": {}
+ },
+ {
+  "key": "union",
+  "cluster": "Constitution & Polity",
+  "title": "Union & its territory, citizenship (Art 1–11)",
+  "links": [],
+  "questions": [],
+  "also": {}
+ },
+ {
+  "key": "bodies",
+  "cluster": "Constitution & Polity",
+  "title": "Constitutional, statutory & executive bodies: UPSC, NCSC–NCST–NCBC, NHRC, CIC, CVC, Lokpal, NITI Aayog",
+  "links": [],
+  "questions": [],
+  "also": {}
+ },
+ {
+  "key": "otherprov",
+  "cluster": "Constitution & Polity",
+  "title": "Parts, Schedules, official language & other provisions",
+  "links": [],
+  "questions": [],
+  "also": {}
  }
 ]

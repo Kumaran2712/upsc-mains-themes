@@ -8,10 +8,10 @@ const desc = `All ${themes.length} cross-paper themes for UPSC GS Mains with PYQ
   <p class="lead">Sort by PYQ count to see what UPSC asks most. "Cross-paper" themes pull questions from more than one GS paper.</p>
   <div class="tablewrap">
     <table>
-      <thead><tr><th>#</th><th>Theme</th><th>Area</th><th class="num">PYQs</th><th class="num">GS1</th><th class="num">GS2</th><th class="num">GS3</th><th class="num">2024–26</th><th>Years</th></tr></thead>
+      <thead><tr><th>#</th><th>Theme</th><th>Area</th><th class="num">Mains</th><th class="num">Prelims</th><th class="num">GS1</th><th class="num">GS2</th><th class="num">GS3</th><th class="num">2024–26</th><th>Years</th></tr></thead>
       <tbody>{themes.map((t) => <tr>
         <td class="num">T{t.n}</td><td><a href={themeUrl(t)}>{t.title}</a>{t.cross && <> <span class="xp">Cross-paper</span></>}</td>
-        <td>{t.cluster}</td><td class="num">{t.count}</td><td class="num">{t.papers.GS1 || ''}</td><td class="num">{t.papers.GS2 || ''}</td><td class="num">{t.papers.GS3 || ''}</td><td class="num">{t.recent || ''}</td><td>{yearSpan(t)}</td></tr>)}</tbody>
+        <td>{t.cluster}</td><td class="num">{t.count || ''}</td><td class="num">{t.pre.length || ''}</td><td class="num">{t.papers.GS1 || ''}</td><td class="num">{t.papers.GS2 || ''}</td><td class="num">{t.papers.GS3 || ''}</td><td class="num">{t.recent || ''}</td><td>{yearSpan(t)}</td></tr>)}</tbody>
     </table>
   </div>
 </Base>

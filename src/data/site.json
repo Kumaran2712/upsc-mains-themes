@@ -5,7 +5,7 @@
    "key": "harappan",
    "slug": "harappan-civilisation-early-urbanism-and-civilisational-continuity",
    "title": "Harappan civilisation, early urbanism & civilisational continuity",
-   "step": 82,
+   "step": 86,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -114,14 +114,16 @@
       55
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 2,
    "key": "vedic",
    "slug": "vedic-society-and-its-legacy-in-today-s-society",
    "title": "Vedic society & its legacy in today's society",
-   "step": 83,
+   "step": 87,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -189,14 +191,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 3,
    "key": "sources",
    "slug": "sources-of-history",
    "title": "Sources of history: inscriptions, rock-cut caves, travellers, Sangam & Persian texts",
-   "step": 84,
+   "step": 88,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -301,14 +305,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 4,
    "key": "buddhistart",
    "slug": "buddhist-art-and-sculpture-schools-stupa-gandhara-pala",
    "title": "Buddhist art & sculpture schools: stupa, Gandhara, Pala",
-   "step": 86,
+   "step": 90,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -392,14 +398,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 5,
    "key": "temple",
    "slug": "temple-architecture-and-regional-dynasties",
    "title": "Temple architecture & regional dynasties: Pallava, Chola, Chandela, Vijayanagara, Gupta",
-   "step": 87,
+   "step": 91,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -531,14 +539,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 6,
    "key": "sculpture",
    "slug": "sculpture-painting-motifs-coins-and-safeguarding-art-heritage",
    "title": "Sculpture, painting, motifs, coins & safeguarding art heritage",
-   "step": 85,
+   "step": 89,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -651,14 +661,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 7,
    "key": "bhakti",
    "slug": "bhakti-sufi-movements-and-religious-syncretism",
    "title": "Bhakti–Sufi movements & religious syncretism",
-   "step": 88,
+   "step": 92,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -761,14 +773,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 8,
    "key": "patronage",
    "slug": "patronage-learning-centres-and-medieval-technology",
    "title": "Patronage, learning centres & medieval technology",
-   "step": 89,
+   "step": 93,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -844,14 +858,16 @@
       111
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 9,
    "key": "brexpansion",
    "slug": "british-expansion",
    "title": "British expansion: fragmented polity, Panipat, why the Company won, Dalhousie",
-   "step": 13,
+   "step": 18,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -938,14 +954,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 10,
    "key": "coloneco",
    "slug": "colonial-economy",
    "title": "Colonial economy: drain, deindustrialisation, famines, economic policy",
-   "step": 14,
+   "step": 19,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1047,14 +1065,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 11,
    "key": "colonadmin",
    "slug": "colonial-administration-and-education-policy-macaulay-curzon",
    "title": "Colonial administration & education policy: Macaulay, Curzon",
-   "step": 16,
+   "step": 21,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1127,14 +1147,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 12,
    "key": "revolt",
    "slug": "1857-and-tribal-peasant-resistance-to-colonial-rule",
    "title": "1857 and tribal–peasant resistance to colonial rule",
-   "step": 25,
+   "step": 30,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1202,14 +1224,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 13,
    "key": "reform",
    "slug": "socio-religious-reform-brahmo-samaj-young-bengal-phule",
    "title": "Socio-religious reform: Brahmo Samaj, Young Bengal, Phule",
-   "step": 22,
+   "step": 27,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1280,14 +1304,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 14,
    "key": "earlynat",
    "slug": "early-nationalism-moderates-and-foreign-contributors",
    "title": "Early nationalism: Moderates & foreign contributors",
-   "step": 15,
+   "step": 20,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1369,14 +1395,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 15,
    "key": "gandhi",
    "slug": "gandhi",
    "title": "Gandhi: mass movements, constructive programme, ideas & contemporaries",
-   "step": 23,
+   "step": 28,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1516,14 +1544,16 @@
       70
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 16,
    "key": "ideologies",
    "slug": "widening-of-the-national-movement",
    "title": "Widening of the national movement: ideological strands & global influences",
-   "step": 34,
+   "step": 39,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1607,14 +1637,16 @@
       25
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 17,
    "key": "finalphase",
    "slug": "final-phase-quit-india-naval-mutiny-maulana-azad",
    "title": "Final phase: Quit India, Naval mutiny, Maulana Azad",
-   "step": 17,
+   "step": 22,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1683,14 +1715,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 18,
    "key": "making",
    "slug": "making-of-the-constitution",
-   "title": "Making of the Constitution: Government of India Act 1935 to Constituent Assembly",
-   "step": 10,
+   "title": "Historical underpinnings & making of the Constitution: Regulating Act 1773 to the Constituent Assembly",
+   "step": 2,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1714,7 +1748,7 @@
     87
    ],
    "prereqs": [
-    87
+    172
    ],
    "related": [
     87
@@ -1758,6 +1792,112 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 1 Constitution: Why and How?"
+     }
+    ],
+    "book": [
+     "Historical Background",
+     "Making of the Constitution"
+    ],
+    "bare": [
+     {
+      "t": "Art 393–395 (short title, commencement, repeals)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Company rule, 1773–1857",
+      "items": [
+       {
+        "t": "Regulating Act 1773: Governor-General of Bengal, Supreme Court at Calcutta",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Pitt's India Act 1784: Board of Control, dual government",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Charter Acts 1793, 1813 (trade monopoly ended except tea and China), 1833 (Governor-General of India), 1853",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Crown rule, 1858–1935",
+      "items": [
+       {
+        "t": "Government of India Act 1858: Crown takes over, Secretary of State",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Indian Councils Acts 1861, 1892, 1909 (separate electorates)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Government of India Act 1919: dyarchy in provinces, bicameral centre",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Simon Commission 1927 and the Nehru Report",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Government of India Act 1935: All-India federation, provincial autonomy, dyarchy at centre, three lists, Federal Court",
+        "p": 0,
+        "m": 2
+       }
+      ]
+     },
+     {
+      "h": "The Constituent Assembly, 1946–50",
+      "items": [
+       {
+        "t": "Cripps 1942 and Cabinet Mission 1946: how the Assembly was formed",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Objectives Resolution, committees and the Drafting Committee (Ambedkar)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Adoption on 26 Nov 1949 (Constitution Day) and commencement on 26 Jan 1950",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Indian Independence Act 1947 and dominion status",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Sources of the Constitution: GoI Act 1935, UK, US, Ireland, Canada and others",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2023-002",
+    "P2023-044",
+    "P2022-004",
+    "P2019-002"
    ]
   },
   {
@@ -1765,7 +1905,7 @@
    "key": "statesreorg",
    "slug": "integration-and-reorganisation-of-states",
    "title": "Integration & reorganisation of states: princely states, linguistic states, new & smaller states",
-   "step": 50,
+   "step": 55,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1894,14 +2034,16 @@
       92
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 20,
    "key": "consolidation",
    "slug": "post-independence-consolidation",
    "title": "Post-independence consolidation: polity, economy, Jai Jawan Jai Kisan",
-   "step": 51,
+   "step": 56,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1969,14 +2111,16 @@
       137
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 21,
    "key": "earlyfp",
    "slug": "early-foreign-policy-and-wars",
    "title": "Early foreign policy & wars: Tashkent, Bangladesh 1971, Gujral doctrine",
-   "step": 52,
+   "step": 57,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -2066,14 +2210,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 22,
    "key": "revolutions",
    "slug": "american-and-french-revolutions-and-their-legacy",
    "title": "American & French Revolutions and their legacy",
-   "step": 11,
+   "step": 16,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2136,14 +2282,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 23,
    "key": "industrialrev",
    "slug": "industrial-revolution-and-its-spread",
    "title": "Industrial Revolution and its spread: England, Japan, railways",
-   "step": 12,
+   "step": 17,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2235,14 +2383,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 24,
    "key": "worldwars",
    "slug": "world-wars-interwar-crisis-great-depression-and-ideologies",
    "title": "World Wars, interwar crisis, Great Depression & ideologies",
-   "step": 33,
+   "step": 38,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2345,14 +2495,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 25,
    "key": "decolon",
    "slug": "colonisation-and-decolonisation-africa-malaya-suez",
    "title": "Colonisation & decolonisation: Africa, Malaya, Suez",
-   "step": 18,
+   "step": 23,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2443,14 +2595,16 @@
       120
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 26,
    "key": "tectonics",
    "slug": "earth-s-interior-plate-tectonics-mountains-islands-and-landforms",
    "title": "Earth's interior, plate tectonics, mountains, islands & landforms",
-   "step": 28,
+   "step": 33,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2632,14 +2786,16 @@
       31
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 27,
    "key": "landslides",
    "slug": "landslides-in-the-himalayas-and-western-ghats",
    "title": "Landslides in the Himalayas & Western Ghats",
-   "step": 65,
+   "step": 69,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2751,14 +2907,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 28,
    "key": "quakes",
    "slug": "earthquakes-tsunamis-and-volcanoes-science-to-preparedness",
    "title": "Earthquakes, tsunamis & volcanoes: science to preparedness",
-   "step": 66,
+   "step": 70,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2888,14 +3046,16 @@
       160
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 29,
    "key": "atmosphere",
    "slug": "atmosphere-air-masses-winds-inversion-deserts-and-auroras",
    "title": "Atmosphere, air masses, winds, inversion, deserts & auroras",
-   "step": 27,
+   "step": 32,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3023,14 +3183,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 30,
    "key": "monsoon",
    "slug": "monsoon-el-ni-o-and-drought",
    "title": "Monsoon, El Niño & drought",
-   "step": 29,
+   "step": 34,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3153,14 +3315,16 @@
       46
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 31,
    "key": "cyclones",
    "slug": "tropical-cyclones-twisters-and-cyclone-warnings",
    "title": "Tropical cyclones, twisters & cyclone warnings",
-   "step": 67,
+   "step": 71,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3272,14 +3436,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 32,
    "key": "cloudburst",
    "slug": "cloudbursts-and-extreme-rainfall",
    "title": "Cloudbursts & extreme rainfall",
-   "step": 68,
+   "step": 72,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3365,14 +3531,16 @@
       43
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 33,
    "key": "oceans",
    "slug": "oceans-and-marine-environment",
    "title": "Oceans & marine environment: currents, salinity, dead zones, oil pollution, marine resources",
-   "step": 30,
+   "step": 35,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3503,14 +3671,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 34,
    "key": "coastal",
    "slug": "coastal-zone-resources-erosion-and-hazard-preparedness",
    "title": "Coastal zone: resources, erosion & hazard preparedness",
-   "step": 69,
+   "step": 73,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3587,14 +3757,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 35,
    "key": "mining",
    "slug": "minerals-and-mining-resource-vs-environment",
    "title": "Minerals & mining: resource vs environment",
-   "step": 132,
+   "step": 136,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -3707,14 +3879,16 @@
       158
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 36,
    "key": "oil",
    "slug": "oil-and-gas-global-distribution-shale-refineries",
    "title": "Oil & gas: global distribution, shale, refineries",
-   "step": 90,
+   "step": 94,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -3811,14 +3985,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 37,
    "key": "polar",
    "slug": "polar-regions-arctic-resources-tundra-and-india-s-interest",
    "title": "Polar regions: Arctic resources, tundra & India's interest",
-   "step": 71,
+   "step": 75,
    "stage": 2,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -3902,14 +4078,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 38,
    "key": "glaciers",
    "slug": "glaciers-cryosphere-and-sea-level-rise",
    "title": "Glaciers, cryosphere & sea-level rise",
-   "step": 70,
+   "step": 74,
    "stage": 2,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4035,14 +4213,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 39,
    "key": "industryloc",
    "slug": "location-of-industries",
    "title": "Location of industries: steel, refineries, sugar, textiles, tea, rubber, corridors",
-   "step": 91,
+   "step": 95,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4188,14 +4368,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 40,
    "key": "landdeg",
    "slug": "desertification-land-degradation-and-land-use-change",
    "title": "Desertification, land degradation & land-use change",
-   "step": 125,
+   "step": 129,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4300,14 +4482,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 41,
    "key": "forests",
    "slug": "forests-natural-vegetation-and-biodiversity",
    "title": "Forests, natural vegetation & biodiversity",
-   "step": 123,
+   "step": 127,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4412,14 +4596,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 42,
    "key": "wetlands",
    "slug": "wetlands-and-ramsar-sites",
    "title": "Wetlands & Ramsar sites",
-   "step": 124,
+   "step": 128,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4482,14 +4668,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 43,
    "key": "fragile",
    "slug": "fragile-himalayan-ecosystems-tourism-and-infrastructure",
    "title": "Fragile Himalayan ecosystems: tourism & infrastructure",
-   "step": 126,
+   "step": 130,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4569,14 +4757,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 44,
    "key": "water",
    "slug": "water-security-scarcity-conservation-and-management",
    "title": "Water security: scarcity, conservation & management",
-   "step": 92,
+   "step": 96,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -4724,14 +4914,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 45,
    "key": "groundwater",
    "slug": "groundwater-depletion-and-seawater-intrusion",
    "title": "Groundwater depletion & seawater intrusion",
-   "step": 97,
+   "step": 101,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -4815,14 +5007,16 @@
       137
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 46,
    "key": "irrigation",
    "slug": "irrigation-and-water-use-efficiency",
    "title": "Irrigation & water-use efficiency",
-   "step": 93,
+   "step": 97,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -4928,14 +5122,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 47,
    "key": "riverlink",
    "slug": "river-interlinking-and-water-disputes",
    "title": "River interlinking & water disputes: inter-state and transboundary",
-   "step": 94,
+   "step": 98,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -5053,14 +5249,16 @@
       87
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 48,
    "key": "diversity",
    "slug": "diversity-and-national-unity",
    "title": "Diversity & national unity",
-   "step": 19,
+   "step": 24,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5176,14 +5374,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 49,
    "key": "family",
    "slug": "family-marriage-traditions-and-social-values",
    "title": "Family, marriage, traditions & social values",
-   "step": 20,
+   "step": 25,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5280,14 +5480,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 50,
    "key": "caste",
    "slug": "caste-continuity-change-mobility-and-dalit-assertion",
    "title": "Caste: continuity, change, mobility & Dalit assertion",
-   "step": 21,
+   "step": 26,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5416,14 +5618,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 51,
    "key": "tribal",
    "slug": "tribal-identity-rights-and-development",
    "title": "Tribal identity, rights & development",
-   "step": 24,
+   "step": 29,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5553,6 +5757,12 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2021-068",
+    "P2019-096",
+    "P2013-066"
    ]
   },
   {
@@ -5560,7 +5770,7 @@
    "key": "population",
    "slug": "population-and-demographic-transition",
    "title": "Population & demographic transition",
-   "step": 26,
+   "step": 31,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5673,14 +5883,16 @@
       74
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 53,
    "key": "ageing",
    "slug": "ageing-population-and-elderly-care",
    "title": "Ageing population & elderly care",
-   "step": 63,
+   "step": 67,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5767,14 +5979,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 54,
    "key": "migration",
    "slug": "migration-internal-international-and-illegal",
    "title": "Migration: internal, international & illegal",
-   "step": 77,
+   "step": 81,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5858,14 +6072,16 @@
       168
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 55,
    "key": "urbsoc",
    "slug": "urbanisation-social-problems-segregation-and-urban-poverty",
    "title": "Urbanisation: social problems, segregation & urban poverty",
-   "step": 76,
+   "step": 80,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5942,14 +6158,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 56,
    "key": "newurban",
    "slug": "new-urban-economy-it-hubs-tier-2-cities-and-new",
    "title": "New urban economy: IT hubs, tier-2 cities & new middle class",
-   "step": 55,
+   "step": 60,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6024,14 +6242,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 57,
    "key": "smartcity",
    "slug": "smart-cities-rural-urban-integration-and-urban-transport",
    "title": "Smart cities, rural–urban integration & urban transport",
-   "step": 104,
+   "step": 108,
    "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6130,14 +6350,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 58,
    "key": "urbfloods",
    "slug": "urban-floods",
    "title": "Urban floods",
-   "step": 134,
+   "step": 138,
    "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6255,14 +6477,16 @@
       160
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 59,
    "key": "globsoc",
    "slug": "globalisation-and-indian-society-and-culture",
    "title": "Globalisation & Indian society and culture",
-   "step": 54,
+   "step": 59,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6380,14 +6604,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 60,
    "key": "techsoc",
    "slug": "technology-and-social-change",
    "title": "Technology & social change: mobiles, WFH, fast food, crypto, digital education",
-   "step": 74,
+   "step": 78,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6541,14 +6767,16 @@
       106
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 61,
    "key": "secularism",
    "slug": "secularism-indian-vs-western-models",
    "title": "Secularism: Indian vs Western models",
-   "step": 56,
+   "step": 61,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6658,14 +6886,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 62,
    "key": "communalism",
    "slug": "communalism-sect-and-radicalisation",
    "title": "Communalism, sect & radicalisation",
-   "step": 57,
+   "step": 62,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6784,14 +7014,16 @@
       163
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 63,
    "key": "regionalism",
    "slug": "regionalism-and-regional-disparity",
    "title": "Regionalism & regional disparity",
-   "step": 58,
+   "step": 63,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6894,14 +7126,16 @@
       19
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 64,
    "key": "womenhist",
    "slug": "women-s-question-in-history",
    "title": "Women's question in history: 19th-century reform & freedom struggle",
-   "step": 53,
+   "step": 58,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -6981,14 +7215,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 65,
    "key": "gender",
    "slug": "gender-concepts-patriarchy-and-women-s-social-status",
    "title": "Gender concepts, patriarchy & women's social status",
-   "step": 60,
+   "step": 65,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7127,14 +7363,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 66,
    "key": "sexratio",
    "slug": "sex-ratio-and-gender-gaps-across-communities-and-regions",
    "title": "Sex ratio & gender gaps across communities and regions",
-   "step": 62,
+   "step": 66,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7205,14 +7443,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 67,
    "key": "womeneco",
    "slug": "women-and-the-economy",
    "title": "Women & the economy: gig work, feminisation of agriculture, care economy, gender budgeting, migration",
-   "step": 136,
+   "step": 140,
    "stage": 4,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7349,14 +7589,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 68,
    "key": "womenpol",
    "slug": "women-in-politics-law-and-institutions",
    "title": "Women in politics, law & institutions: reservation, judiciary, NCW, gender justice",
-   "step": 135,
+   "step": 139,
    "stage": 4,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7512,14 +7754,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 69,
    "key": "shg",
    "slug": "shgs-and-microfinance",
    "title": "SHGs & microfinance",
-   "step": 121,
+   "step": 125,
    "stage": 3,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7660,14 +7904,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 70,
    "key": "affirmative",
    "slug": "affirmative-action-and-welfare-schemes-for-vulnerable-sections",
    "title": "Affirmative action & welfare schemes for vulnerable sections",
-   "step": 112,
+   "step": 116,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -7771,14 +8017,16 @@
       87
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 71,
    "key": "disability",
    "slug": "disability-and-inclusion-rpwd-act-2016",
    "title": "Disability & inclusion: RPwD Act 2016",
-   "step": 113,
+   "step": 117,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -7856,6 +8104,10 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2026-048"
    ]
   },
   {
@@ -7863,7 +8115,7 @@
    "key": "commissions",
    "slug": "commissions-for-social-justice-and-human-rights",
    "title": "Commissions for social justice & human rights: NCSC, NCST, NCBC, NHRC",
-   "step": 114,
+   "step": 118,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -7988,14 +8240,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 73,
    "key": "children",
    "slug": "children-s-rights-and-child-policy",
    "title": "Children's rights & child policy: NCPCR, National Child Policy",
-   "step": 117,
+   "step": 121,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8064,14 +8318,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 74,
    "key": "poverty",
    "slug": "poverty-measurement-causes-and-alleviation",
    "title": "Poverty: measurement, causes & alleviation",
-   "step": 75,
+   "step": 79,
    "stage": 2,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8221,14 +8477,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 75,
    "key": "hunger",
    "slug": "hunger-malnutrition-and-food-security-law",
    "title": "Hunger, malnutrition & food security law: NFSA, Mid-Day Meal, millets",
-   "step": 120,
+   "step": 124,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8379,14 +8637,16 @@
       123
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 76,
    "key": "inclusive",
    "slug": "inclusive-growth-and-human-development",
    "title": "Inclusive growth & human development: HDI/IHDI, social spending, equity, CSR",
-   "step": 103,
+   "step": 107,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8573,14 +8833,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 77,
    "key": "preamble",
    "slug": "preamble-features-and-the-living-constitution",
    "title": "Preamble, features & the 'living' Constitution",
-   "step": 2,
+   "step": 3,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -8603,7 +8865,7 @@
     78
    ],
    "prereqs": [
-    78
+    18
    ],
    "related": [
     78
@@ -8649,14 +8911,111 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 10 The Philosophy of the Constitution; Ch 9 Constitution as a Living Document"
+     }
+    ],
+    "book": [
+     "Salient Features of the Constitution",
+     "Preamble of the Constitution"
+    ],
+    "bare": [
+     {
+      "t": "Preamble; Constitution (42nd Amendment) Act 1976",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Salient features",
+      "items": [
+       {
+        "t": "Lengthiest written constitution, partly rigid and partly flexible",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Federal system with a unitary bias, parliamentary government, single citizenship",
+        "p": null,
+        "m": null
+       },
+       {
+        "t": "Independent integrated judiciary, universal adult franchise, emergency provisions",
+        "p": null,
+        "m": null
+       }
+      ]
+     },
+     {
+      "h": "The Preamble",
+      "items": [
+       {
+        "t": "Source of authority: 'We, the people of India'",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Nature of the State: sovereign, socialist, secular, democratic, republic",
+        "p": 0,
+        "m": 1
+       },
+       {
+        "t": "Objectives: justice (social, economic, political), liberty, equality, fraternity",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Is the Preamble part of the Constitution? Berubari (1960), Kesavananda (1973), LIC (1995)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "42nd Amendment added socialist, secular, integrity; SC upheld them in 2024",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "India's status on 26 Jan 1950: a sovereign democratic republic",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "The 'living' Constitution",
+      "items": [
+       {
+        "t": "Mind of the makers: Preamble, Objectives Resolution",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Change by amendment and by judicial interpretation",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2021-054",
+    "P2020-053",
+    "P2017-039",
+    "P2017-044",
+    "P2013-055"
    ]
   },
   {
    "n": 78,
    "key": "rights",
    "slug": "fundamental-rights",
-   "title": "Fundamental Rights: privacy, Art 21, movement, transgender rights",
-   "step": 1,
+   "title": "Fundamental Rights (Art 12–35): equality, freedoms, life & liberty, writs",
+   "step": 5,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -8680,7 +9039,9 @@
    "links": [
     166
    ],
-   "prereqs": [],
+   "prereqs": [
+    173
+   ],
    "related": [
     166
    ],
@@ -8755,6 +9116,184 @@
       166
      ]
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 2 Rights in the Indian Constitution"
+     },
+     {
+      "book": "NCERT Class 11 · Political Theory",
+      "ch": "Ch 5 Rights"
+     }
+    ],
+    "book": [
+     "Fundamental Rights"
+    ],
+    "bare": [
+     {
+      "t": "Part III (Art 12–35)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "General provisions (Art 12–13)",
+      "items": [
+       {
+        "t": "Art 12: what counts as 'the State'",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 13: laws inconsistent with Fundamental Rights; what 'law' includes",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Right to equality (Art 14–18)",
+      "items": [
+       {
+        "t": "Art 14: equality before law and equal protection; reasonable classification; arbitrariness",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 15 and 16: no discrimination; reservations 15(4), 15(5), 15(6), 16(4), 16(4A), 16(6); Art 335",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 17: untouchability abolished",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Art 18: titles abolished; Bharat Ratna and Padma awards are not titles",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Right to freedom (Art 19–22)",
+      "items": [
+       {
+        "t": "Art 19: six freedoms and reasonable restrictions (see the speech theme)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 20: no ex post facto law, double jeopardy or self-incrimination",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 21: life and personal liberty; due process (Maneka Gandhi 1978)",
+        "p": 2,
+        "m": 2
+       },
+       {
+        "t": "Privacy as part of Art 21 (Puttaswamy 2017) and the Aadhaar judgment (2018)",
+        "p": 4,
+        "m": 3
+       },
+       {
+        "t": "Right to marry (Hadiya), dignity, livelihood, environment, speedy trial",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 21A: education for children aged 6–14",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 22: arrest and preventive detention",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Exploitation, religion, culture (Art 23–30)",
+      "items": [
+       {
+        "t": "Art 23–24: no trafficking or forced labour; no child labour in hazardous work",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 25–28: freedom of religion; essential religious practices",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 29–30: minorities' cultural and educational rights",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Property, remedies and limits (Art 31–35)",
+      "items": [
+       {
+        "t": "Right to property: removed by the 44th Amendment; now a legal right under Art 300A",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 32 and 226: writs (habeas corpus, mandamus, prohibition, certiorari, quo warranto)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Art 33–35: limits for armed forces; martial law",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Rights in recent judgments and laws",
+      "items": [
+       {
+        "t": "Transgender persons: NALSA (2014) and the 2019 Act",
+        "p": 0,
+        "m": 1
+       },
+       {
+        "t": "Fundamental Rights and the UDHR; FRs vs DPSP",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-039",
+    "P2024-043",
+    "P2024-051",
+    "P2023-045",
+    "P2023-047",
+    "P2023-053",
+    "P2022-053",
+    "P2021-057",
+    "P2021-058",
+    "P2021-063",
+    "P2021-069",
+    "P2020-048",
+    "P2020-049",
+    "P2020-063",
+    "P2019-049",
+    "P2018-052",
+    "P2017-041",
+    "P2017-045"
    ]
   },
   {
@@ -8762,7 +9301,7 @@
    "key": "speech",
    "slug": "freedom-of-speech-and-expression",
    "title": "Freedom of speech & expression: hate speech, films, Section 66A",
-   "step": 3,
+   "step": 6,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -8784,7 +9323,9 @@
    "links": [
     167
    ],
-   "prereqs": [],
+   "prereqs": [
+    78
+   ],
    "related": [
     167
    ],
@@ -8829,14 +9370,74 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 2 Rights in the Indian Constitution"
+     }
+    ],
+    "book": [
+     "Fundamental Rights (Art 19)"
+    ],
+    "bare": [
+     {
+      "t": "Art 19(1)(a) and 19(2)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Scope of Art 19(1)(a)",
+      "items": [
+       {
+        "t": "Press, information, silence, commercial speech, the internet (Anuradha Bhasin 2020)",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "Restrictions under Art 19(2)",
+      "items": [
+       {
+        "t": "Grounds: sovereignty and integrity, security, friendly relations, public order, decency, contempt, defamation, incitement",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Sedition: S.124A, Kedar Nath (1962), the 2022 stay, BNS 2023",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Cases and current issues",
+      "items": [
+       {
+        "t": "Shreya Singhal (2015): Section 66A struck down",
+        "p": 0,
+        "m": 1
+       },
+       {
+        "t": "Hate speech, film certification, social media rules",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": []
   },
   {
    "n": 80,
    "key": "envconst",
    "slug": "environment-courts-and-civil-society",
    "title": "Environment, courts & civil society: Art 21, environmental PILs, green NGOs & pressure groups",
-   "step": 130,
+   "step": 132,
    "stage": 3,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -8869,6 +9470,7 @@
    "prereqs": [
     83,
     101,
+    100,
     103,
     155
    ],
@@ -8955,15 +9557,31 @@
       155
      ]
     }
-   ]
+   ],
+   "cover": {
+    "ncert": [],
+    "book": [
+     "Fundamental Rights (Art 21)",
+     "Directive Principles (Art 48A)",
+     "Fundamental Duties (Art 51A(g))"
+    ],
+    "bare": [
+     {
+      "t": "Art 21, 48A, 51A(g)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": []
+   },
+   "pre": []
   },
   {
    "n": 81,
    "key": "ucc",
    "slug": "dpsp-uniform-civil-code-and-extra-constitutional-bodies-khaps",
-   "title": "DPSP, Uniform Civil Code & extra-constitutional bodies (khaps)",
-   "step": 61,
-   "stage": 2,
+   "title": "DPSP, Fundamental Duties & Uniform Civil Code",
+   "step": 7,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -8985,8 +9603,7 @@
     65
    ],
    "prereqs": [
-    61,
-    65
+    79
    ],
    "related": [
     61,
@@ -9033,14 +9650,134 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 2 Rights in the Indian Constitution (Directive Principles)"
+     }
+    ],
+    "book": [
+     "Directive Principles of State Policy",
+     "Fundamental Duties"
+    ],
+    "bare": [
+     {
+      "t": "Part IV (Art 36–51) and Part IVA (Art 51A)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Nature of the Directive Principles",
+      "items": [
+       {
+        "t": "Not enforceable by courts (Art 37) but fundamental in governance",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Ideal of the welfare state; borrowed from the Irish Constitution",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "They limit and guide legislative and executive action",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "The principles",
+      "items": [
+       {
+        "t": "Socialist: Art 38, 39 (no concentration of wealth), 41, 42, 43, 47",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Gandhian: Art 40 (panchayats), 43, 46, 47, 48",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Liberal-intellectual: Art 44 (UCC), 45, 48A, 49, 50 (separate judiciary), 51 (international peace)",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Added later: 42nd (39f, 39A, 43A, 48A), 44th (38(2)), 86th (45), 97th (43B)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Fundamental Rights vs Directive Principles",
+      "items": [
+       {
+        "t": "Champakam Dorairajan, Golaknath, 25th Amendment (Art 31C), Kesavananda, Minerva Mills",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Fundamental Duties (Art 51A)",
+      "items": [
+       {
+        "t": "Eleven duties; added by the 42nd Amendment (Swaran Singh Committee), the 11th by the 86th",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Not enforceable by courts; Parliament can enforce them by law; Verma Committee",
+        "p": 3,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Uniform Civil Code and extra-constitutional bodies",
+      "items": [
+       {
+        "t": "Art 44: Constituent Assembly debate, Goa, Uttarakhand UCC 2024, Law Commission view",
+        "p": 0,
+        "m": 1
+       },
+       {
+        "t": "Khap panchayats and honour killings (Shakti Vahini 2018)",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-040",
+    "P2021-056",
+    "P2020-050",
+    "P2020-054",
+    "P2020-061",
+    "P2017-043",
+    "P2017-047",
+    "P2017-048",
+    "P2015-046",
+    "P2015-047",
+    "P2015-049",
+    "P2014-065",
+    "P2013-056"
    ]
   },
   {
    "n": 82,
    "key": "basicstructure",
    "slug": "amending-power-and-basic-structure",
-   "title": "Amending power & basic structure",
-   "step": 4,
+   "title": "Amending power, basic structure & Ninth Schedule",
+   "step": 8,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9064,7 +9801,9 @@
    "links": [
     83
    ],
-   "prereqs": [],
+   "prereqs": [
+    81
+   ],
    "related": [
     83
    ],
@@ -9136,14 +9875,113 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 9 Constitution as a Living Document"
+     }
+    ],
+    "book": [
+     "Amendment of the Constitution",
+     "Basic Structure of the Constitution"
+    ],
+    "bare": [
+     {
+      "t": "Art 368 (Part XX); Ninth Schedule; Art 31A–31C",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Procedure under Art 368",
+      "items": [
+       {
+        "t": "Bill only in Parliament (either House), by a minister or private member; no prior presidential sanction",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Special majority in each House separately; no joint sitting; President must assent (24th Amendment)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "State ratification by half the states for federal provisions (President's election, Union and state executive power, courts, Seventh Schedule, Art 368 itself)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Three kinds: simple majority outside Art 368, special majority, special majority plus ratification",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Basic structure doctrine",
+      "items": [
+       {
+        "t": "Shankari Prasad (1951), Golaknath (1967), 24th Amendment, Kesavananda Bharati (1973)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Indira Gandhi v Raj Narain (1975), 42nd Amendment Art 368(4)–(5), Minerva Mills (1980)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Elements the courts have named: supremacy of the Constitution, secularism, federalism, judicial review, free elections",
+        "p": 1,
+        "m": 1
+       },
+       {
+        "t": "Amendments struck down: 39th (part), 99th (NJAC, 2015)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Ninth Schedule",
+      "items": [
+       {
+        "t": "1st Amendment 1951 (Nehru), Art 31B; I.R. Coelho (2007): laws added after 24 April 1973 can be reviewed",
+        "p": 2,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "Amendments worth knowing",
+      "items": [
+       {
+        "t": "1st, 7th, 24th, 42nd, 44th, 52nd, 61st, 73rd, 74th, 86th, 101st (GST), 103rd (EWS), 106th (women's reservation)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-043",
+    "P2022-051",
+    "P2020-051",
+    "P2019-048",
+    "P2019-054",
+    "P2018-050",
+    "P2013-061"
    ]
   },
   {
    "n": 83,
    "key": "activism",
    "slug": "judicial-activism-pil-judicial-legislation-and-separation-of-powers",
-   "title": "Judicial activism, PIL, judicial legislation & separation of powers",
-   "step": 38,
+   "title": "Judicial review, activism, PIL & separation of powers",
+   "step": 42,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9169,7 +10007,8 @@
     82
    ],
    "prereqs": [
-    82
+    82,
+    85
    ],
    "related": [
     82
@@ -9256,6 +10095,66 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 6 Judiciary"
+     }
+    ],
+    "book": [
+     "Judicial Review",
+     "Judicial Activism",
+     "Public Interest Litigation"
+    ],
+    "bare": [
+     {
+      "t": "Art 13, 32, 226, 142",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Judicial review",
+      "items": [
+       {
+        "t": "Meaning and basis (Art 13, 32, 226); review of constitutional amendments",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Activism and restraint",
+      "items": [
+       {
+        "t": "Separation of powers vs checks and balances; overreach",
+        "p": 0,
+        "m": 3
+       },
+       {
+        "t": "Judicial legislation: Vishaka guidelines, euthanasia cases",
+        "p": 0,
+        "m": 2
+       }
+      ]
+     },
+     {
+      "h": "Public interest litigation",
+      "items": [
+       {
+        "t": "Origins (S.P. Gupta, Hussainara Khatoon), relaxed locus standi, misuse",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2019-056",
+    "P2017-056"
    ]
   },
   {
@@ -9263,7 +10162,7 @@
    "key": "constmorality",
    "slug": "constitutional-morality",
    "title": "Constitutional morality",
-   "step": 37,
+   "step": 43,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9286,7 +10185,8 @@
     85
    ],
    "prereqs": [
-    85
+    85,
+    83
    ],
    "related": [
     85
@@ -9328,14 +10228,28 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 10 The Philosophy of the Constitution"
+     }
+    ],
+    "book": [
+     "Basic Structure of the Constitution (constitutional morality in judgments)"
+    ],
+    "bare": [],
+    "sections": []
+   },
+   "pre": []
   },
   {
    "n": 85,
    "key": "judiciary",
    "slug": "judicial-appointments-and-independence-collegium-njac",
-   "title": "Judicial appointments & independence: collegium, NJAC",
-   "step": 7,
+   "title": "Supreme Court & High Courts: jurisdiction, appointments & independence",
+   "step": 15,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9358,7 +10272,9 @@
    "links": [
     97
    ],
-   "prereqs": [],
+   "prereqs": [
+    88
+   ],
    "related": [
     97
    ],
@@ -9422,14 +10338,115 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 6 Judiciary"
+     }
+    ],
+    "book": [
+     "Supreme Court",
+     "High Court",
+     "Subordinate Courts"
+    ],
+    "bare": [
+     {
+      "t": "Art 124–147, 214–237",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Organisation and appointments",
+      "items": [
+       {
+        "t": "Number of judges fixed by Parliament (Art 124(1))",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Collegium: Three Judges cases; NJAC (99th Amendment) struck down in 2015",
+        "p": 0,
+        "m": 2
+       },
+       {
+        "t": "Removal of judges (Art 124(4)) and the Judges (Inquiry) Act 1968",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Retired and ad hoc judges (Art 127–128)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Jurisdiction",
+      "items": [
+       {
+        "t": "Original (Art 131, Centre–state disputes), writ (Art 32), appellate, advisory (Art 143)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Complete justice (Art 142); review and curative petitions",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Court of record and contempt (Art 129, 215); Contempt of Courts Act 1971",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "High Courts and lower courts",
+      "items": [
+       {
+        "t": "High Courts: Art 226 writs, powers over lower courts",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Bar Councils and the Advocates Act",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Independence",
+      "items": [
+       {
+        "t": "Security of tenure, salaries charged on the Consolidated Fund, separation from the executive (Art 50)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2022-054",
+    "P2022-055",
+    "P2021-066",
+    "P2019-053",
+    "P2019-055",
+    "P2015-055",
+    "P2014-072",
+    "P2014-073"
    ]
   },
   {
    "n": 86,
    "key": "tribunals",
    "slug": "tribunals-lok-adalats-arbitration-and-legal-aid",
-   "title": "Tribunals, Lok Adalats, arbitration & legal aid",
-   "step": 46,
+   "title": "Tribunals, legal aid, Lok Adalats & criminal justice basics",
+   "step": 44,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9453,7 +10470,9 @@
     "GS2-L3"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    84
+   ],
    "related": [],
    "directives": [
     [
@@ -9552,13 +10571,93 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 6 Judiciary"
+     }
+    ],
+    "book": [
+     "Tribunals",
+     "Lok Adalats and Other Courts",
+     "National Legal Services Authority"
+    ],
+    "bare": [
+     {
+      "t": "Art 39A, 323A, 323B",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     },
+     {
+      "t": "Legal Services Authorities Act 1987; Gram Nyayalayas Act 2008",
+      "url": "https://www.indiacode.nic.in/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Tribunals",
+      "items": [
+       {
+        "t": "Art 323A and 323B (42nd Amendment); L. Chandra Kumar (1997); Tribunal Reforms Act 2021",
+        "p": 0,
+        "m": 4
+       }
+      ]
+     },
+     {
+      "h": "Legal aid and alternative forums",
+      "items": [
+       {
+        "t": "Art 39A; NALSA; who gets free legal aid",
+        "p": 2,
+        "m": 1
+       },
+       {
+        "t": "Lok Adalats, Gram Nyayalayas, arbitration and mediation",
+        "p": 1,
+        "m": 2
+       }
+      ]
+     },
+     {
+      "h": "Criminal justice basics",
+      "items": [
+       {
+        "t": "FIR and Zero FIR under the BNSS 2023; police and judicial custody",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Bail, parole and furlough; prisons are a state subject (Prisons Act 1894)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "New criminal laws (BNS, BNSS, BSA) and other Acts such as the Official Secrets Act",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-049",
+    "P2023-048",
+    "P2023-054",
+    "P2021-064",
+    "P2021-065",
+    "P2020-064",
+    "P2016-046",
+    "P2013-071"
    ]
   },
   {
    "n": 87,
    "key": "coopfed",
    "slug": "centre-state-relations",
-   "title": "Centre–State relations: cooperative, competitive & confrontational federalism",
+   "title": "Federalism & Centre–State relations: cooperative, competitive & confrontational",
    "step": 9,
    "stage": 1,
    "cluster": "Constitution & Polity",
@@ -9588,7 +10687,7 @@
     91
    ],
    "prereqs": [
-    88
+    82
    ],
    "related": [
     63,
@@ -9721,14 +10820,122 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 7 Federalism"
+     },
+     {
+      "book": "NCERT Class 10 · Democratic Politics II",
+      "ch": "Ch 2 Federalism"
+     }
+    ],
+    "book": [
+     "Federal System",
+     "Centre–State Relations",
+     "Inter-State Relations"
+    ],
+    "bare": [
+     {
+      "t": "Part XI (Art 245–263); Seventh Schedule; Art 301–307",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Federal system",
+      "items": [
+       {
+        "t": "Federal features: two governments, division of powers, written and rigid constitution, independent judiciary",
+        "p": 2,
+        "m": 1
+       },
+       {
+        "t": "Unitary features: strong centre, Art 3, emergency, single constitution and citizenship, All-India Services, Governor",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Legislative relations (Art 245–255)",
+      "items": [
+       {
+        "t": "Seventh Schedule: Union, State and Concurrent Lists; residuary power with Parliament (Art 248)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Parliament on State List subjects: Art 249 (national interest), 250 (emergency), 252 (two or more states), 253 (treaties)",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Administrative relations (Art 256–263)",
+      "items": [
+       {
+        "t": "Centre's directions to states; duty to protect states (Art 355)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "All-India Services; Union agencies (CBI consent)",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "Inter-state relations",
+      "items": [
+       {
+        "t": "River water disputes (Art 262); Inter-State Council (Art 263); Zonal Councils; North Eastern Council",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Freedom of trade and commerce (Art 301–307); full faith and credit",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Reform reports and current debates",
+      "items": [
+       {
+        "t": "Sarkaria (1988), Punchhi (2010), Rajamannar (Tamil Nadu)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Cooperative, competitive and confrontational federalism: NITI Aayog, GST Council, COVID-era laws",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-053",
+    "P2024-042",
+    "P2021-061",
+    "P2017-042",
+    "P2016-043",
+    "P2013-062"
    ]
   },
   {
    "n": 88,
    "key": "governor",
    "slug": "governor-president-s-rule-and-emergency-provisions",
-   "title": "Governor, President's Rule & emergency provisions",
-   "step": 8,
+   "title": "Governor, state executive, President's Rule & emergency provisions",
+   "step": 14,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9754,7 +10961,8 @@
     96
    ],
    "prereqs": [
-    96
+    96,
+    94
    ],
    "related": [
     96
@@ -9820,13 +11028,110 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 4 Executive; Ch 7 Federalism"
+     }
+    ],
+    "book": [
+     "Governor",
+     "Chief Minister",
+     "State Council of Ministers",
+     "Emergency Provisions"
+    ],
+    "bare": [
+     {
+      "t": "Art 153–167, 200–201, 213, 361; Part XVIII (Art 352–360)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Governor",
+      "items": [
+       {
+        "t": "Appointment, term at the President's pleasure, one Governor for two or more states",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Immunities (Art 361)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Discretion: constitutional and situational (Art 163)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Bills: assent, withhold, return, reserve for the President (Art 200–201); SC timelines",
+        "p": 2,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "State executive",
+      "items": [
+       {
+        "t": "Chief Minister, state Council of Ministers, Chief Secretary",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Emergency provisions",
+      "items": [
+       {
+        "t": "National emergency (Art 352): grounds, 44th Amendment safeguards, effect on rights (Art 358–359)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "President's Rule (Art 356): approval, duration, S.R. Bommai (1994), effects on the Assembly and local bodies",
+        "p": 3,
+        "m": 1
+       },
+       {
+        "t": "Financial emergency (Art 360)",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "Reform reports",
+      "items": [
+       {
+        "t": "Sarkaria and Punchhi on the Governor's role",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-046",
+    "P2025-047",
+    "P2019-052",
+    "P2018-056",
+    "P2018-057",
+    "P2017-054",
+    "P2014-070",
+    "P2013-064"
    ]
   },
   {
    "n": 89,
    "key": "specialprov",
    "slug": "special-provisions-and-asymmetric-federalism",
-   "title": "Special provisions & asymmetric federalism: J&K, Delhi, Art 371A",
+   "title": "Special provisions: J&K, Delhi & UTs, Art 371, Fifth & Sixth Schedules",
    "step": 45,
    "stage": 2,
    "cluster": "Constitution & Polity",
@@ -9856,7 +11161,8 @@
     87
    ],
    "prereqs": [
-    87
+    87,
+    86
    ],
    "related": [
     87,
@@ -9974,6 +11280,87 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 7 Federalism (special provisions)"
+     }
+    ],
+    "book": [
+     "Union Territories",
+     "Scheduled and Tribal Areas",
+     "Special Provisions for Some States",
+     "Jammu and Kashmir"
+    ],
+    "bare": [
+     {
+      "t": "Art 239–244A, 370, 371–371J; Fifth and Sixth Schedules",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Jammu and Kashmir",
+      "items": [
+       {
+        "t": "Art 370 and 35A, the 2019 changes and the Reorganisation Act; SC judgment of 2023",
+        "p": 0,
+        "m": 4
+       }
+      ]
+     },
+     {
+      "h": "Union Territories and Delhi",
+      "items": [
+       {
+        "t": "Art 239, 239AA (69th Amendment); NCT of Delhi cases 2018 and 2023",
+        "p": 0,
+        "m": 3
+       }
+      ]
+     },
+     {
+      "h": "Special provisions for states (Art 371–371J)",
+      "items": [
+       {
+        "t": "Maharashtra and Gujarat, Nagaland (371A), Assam, Manipur, Sikkim, Mizoram, Arunachal, Goa, Karnataka and others",
+        "p": 0,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "Scheduled and tribal areas",
+      "items": [
+       {
+        "t": "Fifth Schedule: areas declared by the President, Tribes Advisory Council, Governor's powers; Samatha (1997) on tribal land",
+        "p": 6,
+        "m": 0
+       },
+       {
+        "t": "Sixth Schedule: Assam, Meghalaya, Tripura, Mizoram; autonomous district councils",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Scheduled Tribes (Art 342): notified by the President, list differs by state",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-041",
+    "P2025-041",
+    "P2024-052",
+    "P2023-049",
+    "P2022-047",
+    "P2019-047",
+    "P2015-048"
    ]
   },
   {
@@ -9981,7 +11368,7 @@
    "key": "parties",
    "slug": "party-system-national-vs-regional-parties",
    "title": "Party system: national vs regional parties",
-   "step": 48,
+   "step": 53,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10004,7 +11391,8 @@
     87
    ],
    "prereqs": [
-    87
+    87,
+    97
    ],
    "related": [
     87
@@ -10049,14 +11437,32 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 12 · Politics in India since Independence",
+      "ch": "Ch 2 Era of One-party Dominance"
+     },
+     {
+      "book": "NCERT Class 10 · Democratic Politics II",
+      "ch": "Political Parties"
+     }
+    ],
+    "book": [
+     "Political Parties"
+    ],
+    "bare": [],
+    "sections": []
+   },
+   "pre": []
   },
   {
    "n": 91,
    "key": "fiscalfed",
    "slug": "fiscal-federalism-finance-commission-gst-and-state-finances",
    "title": "Fiscal federalism: Finance Commission, GST & state finances",
-   "step": 43,
+   "step": 46,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10085,7 +11491,8 @@
     134
    ],
    "prereqs": [
-    134
+    134,
+    89
    ],
    "related": [
     134
@@ -10209,6 +11616,77 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 7 Federalism"
+     }
+    ],
+    "book": [
+     "Centre–State Relations (financial)",
+     "Finance Commission",
+     "Goods and Services Tax Council"
+    ],
+    "bare": [
+     {
+      "t": "Part XII (Art 264–293); Art 279A, 280",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Sharing taxes",
+      "items": [
+       {
+        "t": "Divisible pool (Art 270); cesses and surcharges stay outside it",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Grants: Art 275 (statutory) and Art 282 (discretionary)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "State borrowing (Art 293); FRBM",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Finance Commission",
+      "items": [
+       {
+        "t": "Art 280: chair and four members every five years; devolution and grants",
+        "p": 3,
+        "m": 2
+       },
+       {
+        "t": "14th (42%), 15th (41%) and their criteria; the 16th FC",
+        "p": 3,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "GST",
+      "items": [
+       {
+        "t": "101st Amendment, GST Council (Art 279A), compensation to states",
+        "p": 0,
+        "m": 2
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-072",
+    "P2023-065",
+    "P2015-069"
    ]
   },
   {
@@ -10216,7 +11694,7 @@
    "key": "localgov",
    "slug": "local-self-government",
    "title": "Local self-government: 73rd/74th Amendments, functions, funds & functionaries",
-   "step": 44,
+   "step": 47,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10373,14 +11851,111 @@
       91
      ]
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 8 Local Governments"
+     }
+    ],
+    "book": [
+     "Panchayati Raj",
+     "Municipalities"
+    ],
+    "bare": [
+     {
+      "t": "Part IX (Art 243–243O), Part IXA (Art 243P–243ZG); Eleventh and Twelfth Schedules",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     },
+     {
+      "t": "PESA 1996",
+      "url": "https://www.indiacode.nic.in/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Evolution",
+      "items": [
+       {
+        "t": "Balwant Rai Mehta (1957), Ashok Mehta (1977), G.V.K. Rao, L.M. Singhvi; Art 40",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "73rd Amendment: Panchayats",
+      "items": [
+       {
+        "t": "Gram Sabha; three tiers (no intermediate tier where population is under 20 lakh); direct elections",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Reservation (at least a third for women), five-year term, minimum age 21",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "State Election Commission (243K) and State Finance Commission (243I, set up by the Governor)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Eleventh Schedule: 29 subjects",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "74th Amendment: Municipalities",
+      "items": [
+       {
+        "t": "Nagar panchayat, municipal council, municipal corporation; ward committees; Twelfth Schedule (18 subjects)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "District and Metropolitan Planning Committees",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Scheduled Areas and capacity",
+      "items": [
+       {
+        "t": "PESA 1996: gram sabha powers in Fifth Schedule areas",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Funds, functions, functionaries; own revenue; Rashtriya Gram Swaraj Abhiyan",
+        "p": 1,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-044",
+    "P2025-050",
+    "P2017-057",
+    "P2016-045",
+    "P2015-056",
+    "P2013-065"
    ]
   },
   {
    "n": 93,
    "key": "parliament",
    "slug": "parliament",
-   "title": "Parliament: role of MPs, executive accountability, Rajya Sabha, privileges",
-   "step": 5,
+   "title": "Parliament & state legislatures: structure, procedure, budget, accountability",
+   "step": 11,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10410,7 +11985,9 @@
     94,
     95
    ],
-   "prereqs": [],
+   "prereqs": [
+    96
+   ],
    "related": [
     94,
     95
@@ -10545,6 +12122,154 @@
       95
      ]
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 5 Legislature"
+     }
+    ],
+    "book": [
+     "Parliament",
+     "Parliamentary Forums",
+     "State Legislature"
+    ],
+    "bare": [
+     {
+      "t": "Part V, Chapter II (Art 79–122); Part VI, Chapter III (Art 168–212)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Composition and membership",
+      "items": [
+       {
+        "t": "Lok Sabha (Art 81) and Rajya Sabha (Art 80); nominated members",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Qualifications and disqualification (Art 102); office of profit",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Sessions",
+      "items": [
+       {
+        "t": "Summoning (no more than six months between sessions), adjournment, prorogation, dissolution",
+        "p": 5,
+        "m": 1
+       },
+       {
+        "t": "Which bills lapse on dissolution",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Joint sitting (Art 108)",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Making laws",
+      "items": [
+       {
+        "t": "Ordinary bills and private members' bills",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Money bills (Art 110): Speaker certifies; Rajya Sabha can only recommend, within 14 days",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Financial bills (Art 117)",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Budget in Parliament",
+      "items": [
+       {
+        "t": "Annual Financial Statement (Art 112); demands for grants only on the President's recommendation (Art 113)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Consolidated Fund (Art 266), Contingency Fund (Art 267), appropriation, vote on account, cut motions",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Holding the government to account",
+      "items": [
+       {
+        "t": "Question hour: starred, unstarred and short-notice questions; zero hour",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Motions: adjournment, no-confidence (Lok Sabha only, not in the Constitution), censure, calling attention",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Lok Sabha vs Rajya Sabha: equal and exclusive powers",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Parliamentary privileges (Art 105), MPLADS, Leader of the Opposition",
+        "p": 2,
+        "m": 1
+       }
+      ]
+     },
+     {
+      "h": "State legislatures",
+      "items": [
+       {
+        "t": "Legislative Councils (Art 169, at most a third of the Assembly); Governor's address",
+        "p": 2,
+        "m": 1
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-042",
+    "P2024-045",
+    "P2024-046",
+    "P2024-048",
+    "P2022-050",
+    "P2020-058",
+    "P2020-060",
+    "P2020-062",
+    "P2019-050",
+    "P2019-051",
+    "P2018-049",
+    "P2018-053",
+    "P2017-052",
+    "P2017-055",
+    "P2016-042",
+    "P2015-051",
+    "P2015-052",
+    "P2015-053",
+    "P2014-068",
+    "P2013-060"
    ]
   },
   {
@@ -10552,8 +12277,8 @@
    "key": "committees",
    "slug": "parliamentary-committees-and-financial-accountability",
    "title": "Parliamentary committees & financial accountability: PAC, Estimates, DRSCs",
-   "step": 40,
-   "stage": 2,
+   "step": 13,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10577,7 +12302,7 @@
     99
    ],
    "prereqs": [
-    99
+    95
    ],
    "related": [
     99
@@ -10659,6 +12384,77 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 5 Legislature"
+     }
+    ],
+    "book": [
+     "Parliamentary Committees"
+    ],
+    "bare": [
+     {
+      "t": "Art 118 (rules of procedure)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Financial committees",
+      "items": [
+       {
+        "t": "Public Accounts Committee: 22 members (15 LS, 7 RS), examines CAG reports",
+        "p": 1,
+        "m": 1
+       },
+       {
+        "t": "Estimates Committee: 30 Lok Sabha members, the largest committee",
+        "p": 1,
+        "m": 1
+       },
+       {
+        "t": "Committee on Public Undertakings",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Standing committees",
+      "items": [
+       {
+        "t": "Department-related standing committees (since 1993)",
+        "p": 0,
+        "m": 1
+       },
+       {
+        "t": "Subordinate legislation, ethics, privileges, welfare of SCs and STs",
+        "p": 2,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Ad hoc committees",
+      "items": [
+       {
+        "t": "Select committees and joint parliamentary committees",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-043",
+    "P2024-040",
+    "P2018-051",
+    "P2014-067",
+    "P2013-057"
    ]
   },
   {
@@ -10666,8 +12462,8 @@
    "key": "speaker",
    "slug": "presiding-officers-and-anti-defection",
    "title": "Presiding officers & anti-defection",
-   "step": 41,
-   "stage": 2,
+   "step": 12,
+   "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
    "papers": {
@@ -10750,14 +12546,79 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 5 Legislature"
+     }
+    ],
+    "book": [
+     "Parliament (presiding officers)",
+     "Anti-Defection Law"
+    ],
+    "bare": [
+     {
+      "t": "Art 89–98, 178–187; Tenth Schedule",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Presiding officers",
+      "items": [
+       {
+        "t": "Speaker and Deputy Speaker: election, removal (14 days' notice, effective majority), stays in office until the new House meets",
+        "p": 4,
+        "m": 2
+       },
+       {
+        "t": "Chairman and Deputy Chairman of the Rajya Sabha; pro tem Speaker",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Anti-defection law (Tenth Schedule)",
+      "items": [
+       {
+        "t": "52nd Amendment 1985 and 91st Amendment 2003; grounds: giving up membership, defying the whip",
+        "p": 3,
+        "m": 1
+       },
+       {
+        "t": "Exception for a two-thirds merger; nominated members get six months to join a party",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Presiding officer decides; Kihoto Hollohan (1992); Keisham Meghachandra (2020) on timelines",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-044",
+    "P2025-045",
+    "P2024-044",
+    "P2022-048",
+    "P2022-049",
+    "P2018-054",
+    "P2014-066",
+    "P2013-059"
    ]
   },
   {
    "n": 96,
    "key": "executive",
    "slug": "executive-cabinet-ordinances-and-pardon",
-   "title": "Executive: cabinet, ordinances & pardon",
-   "step": 6,
+   "title": "Union executive: President, PM & Council of Ministers, ordinances & pardon",
+   "step": 10,
    "stage": 1,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10782,7 +12643,9 @@
     83,
     97
    ],
-   "prereqs": [],
+   "prereqs": [
+    87
+   ],
    "related": [
     83,
     97
@@ -10862,6 +12725,126 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 4 Executive"
+     }
+    ],
+    "book": [
+     "Parliamentary System",
+     "President",
+     "Vice-President",
+     "Prime Minister",
+     "Central Council of Ministers",
+     "Cabinet Committees"
+    ],
+    "bare": [
+     {
+      "t": "Part V, Chapter I (Art 52–78); Art 123",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Parliamentary system",
+      "items": [
+       {
+        "t": "Nominal and real executive, collective responsibility, dual membership, PM's leadership",
+        "p": 4,
+        "m": 0
+       },
+       {
+        "t": "Why India chose it over the presidential system",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "President",
+      "items": [
+       {
+        "t": "Election (Art 54–55): electoral college, value of votes; nominated members cannot vote",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Term, qualifications, impeachment (Art 61), election disputes (Art 71)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Powers: executive, legislative, financial, judicial, diplomatic, military; veto types",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Vice-President",
+      "items": [
+       {
+        "t": "Election by both Houses (nominated members included); removal by Rajya Sabha resolution (Art 67b)",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Prime Minister and Council of Ministers",
+      "items": [
+       {
+        "t": "Art 74 aid and advice; Art 75 collective responsibility; ministers hold office at the President's pleasure",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "91st Amendment: ministers capped at 15% of the Lok Sabha; ranks are not in the Constitution",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "PM's duties (Art 78); business rules (Art 77); Cabinet Secretariat",
+        "p": 3,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Ordinances and pardon",
+      "items": [
+       {
+        "t": "Ordinance (Art 123): when Parliament is not in session, six weeks; D.C. Wadhwa, Krishna Kumar Singh",
+        "p": 1,
+        "m": 1
+       },
+       {
+        "t": "Pardon (Art 72): pardon, commutation, remission, respite, reprieve; on advice; limited judicial review",
+        "p": 1,
+        "m": 2
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-048",
+    "P2025-049",
+    "P2023-050",
+    "P2023-051",
+    "P2022-052",
+    "P2020-056",
+    "P2018-055",
+    "P2017-051",
+    "P2015-050",
+    "P2015-054",
+    "P2014-069",
+    "P2014-071",
+    "P2013-058",
+    "P2013-063"
    ]
   },
   {
@@ -10869,7 +12852,7 @@
    "key": "comparative",
    "slug": "comparative-constitutions-uk-usa-france",
    "title": "Comparative constitutions: UK, USA, France",
-   "step": 49,
+   "step": 52,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -10896,7 +12879,8 @@
     96
    ],
    "prereqs": [
-    96
+    96,
+    175
    ],
    "related": [
     96
@@ -10998,6 +12982,23 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 4 Executive (parliamentary vs presidential)"
+     }
+    ],
+    "book": [
+     "Salient Features of the Constitution (borrowed features)",
+     "Parliamentary System"
+    ],
+    "bare": [],
+    "sections": []
+   },
+   "pre": [
+    "P2021-052"
    ]
   },
   {
@@ -11005,7 +13006,7 @@
    "key": "elections",
    "slug": "elections-and-electoral-reforms-rpa-eci-mcc-onoe-evms",
    "title": "Elections & electoral reforms: RPA, ECI, MCC, ONOE, EVMs",
-   "step": 42,
+   "step": 48,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -11033,7 +13034,9 @@
    "links": [
     104
    ],
-   "prereqs": [],
+   "prereqs": [
+    92
+   ],
    "related": [
     104
    ],
@@ -11176,6 +13179,106 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 3 Election and Representation"
+     }
+    ],
+    "book": [
+     "Election Commission",
+     "Elections",
+     "Electoral Reforms",
+     "Delimitation Commission"
+    ],
+    "bare": [
+     {
+      "t": "Part XV (Art 324–329)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     },
+     {
+      "t": "Representation of the People Acts 1950 and 1951",
+      "url": "https://www.indiacode.nic.in/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Election Commission",
+      "items": [
+       {
+        "t": "Art 324; multi-member since 1993; removal of the CEC; 2023 Act on appointments",
+        "p": 1,
+        "m": 4
+       },
+       {
+        "t": "Recognition of parties and symbols; disputes over splits and mergers",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Voting and representation",
+      "items": [
+       {
+        "t": "Universal adult franchise (Art 326); the right to vote is statutory",
+        "p": 1,
+        "m": 1
+       },
+       {
+        "t": "First-past-the-post; no minimum vote share to win",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Delimitation (Art 82, 170); commissions of 1952, 1963, 1973, 2002",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Representation of the People Act 1951",
+      "items": [
+       {
+        "t": "Nomination, disqualification on conviction (Lily Thomas 2013), election petitions in High Courts",
+        "p": 2,
+        "m": 3
+       }
+      ]
+     },
+     {
+      "h": "Electoral reforms",
+      "items": [
+       {
+        "t": "Model Code of Conduct, EVMs and VVPAT, NOTA",
+        "p": 0,
+        "m": 2
+       },
+       {
+        "t": "Electoral bonds (struck down 2024), One Nation One Election (Kovind Committee)",
+        "p": 0,
+        "m": 2
+       },
+       {
+        "t": "Women's reservation: Nari Shakti Vandan Adhiniyam (106th Amendment)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2024-047",
+    "P2024-049",
+    "P2020-057",
+    "P2017-040",
+    "P2017-050",
+    "P2017-053",
+    "P2017-058"
    ]
   },
   {
@@ -11183,7 +13286,7 @@
    "key": "cag",
    "slug": "cag-and-attorney-general",
    "title": "CAG & Attorney General",
-   "step": 39,
+   "step": 49,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -11208,7 +13311,10 @@
    "links": [
     94
    ],
-   "prereqs": [],
+   "prereqs": [
+    94,
+    98
+   ],
    "related": [
     94
    ],
@@ -11287,6 +13393,61 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 4 Executive"
+     }
+    ],
+    "book": [
+     "Comptroller and Auditor General of India",
+     "Attorney General and Solicitor General",
+     "Advocate General of the State"
+    ],
+    "bare": [
+     {
+      "t": "Art 76, 148–151, 165",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Comptroller and Auditor General",
+      "items": [
+       {
+        "t": "Appointment and removal like an SC judge; six years or 65; CAG (DPC) Act 1971",
+        "p": 0,
+        "m": 3
+       },
+       {
+        "t": "Regularity, propriety and performance audit; reports go to the President, then the PAC",
+        "p": 0,
+        "m": 3
+       }
+      ]
+     },
+     {
+      "h": "Law officers",
+      "items": [
+       {
+        "t": "Attorney General (Art 76): can speak and take part in Parliament and its committees, cannot vote (Art 88)",
+        "p": 2,
+        "m": 1
+       },
+       {
+        "t": "Solicitor General (not a constitutional office); Advocate General of a state (Art 165)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2022-058",
+    "P2013-067"
    ]
   },
   {
@@ -11294,7 +13455,7 @@
    "key": "regulators",
    "slug": "regulatory-and-quasi-judicial-bodies",
    "title": "Regulatory & quasi-judicial bodies: CCI, SEBI–IRDA, tariff authorities",
-   "step": 80,
+   "step": 84,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -11320,6 +13481,7 @@
     130
    ],
    "prereqs": [
+    101,
     130
    ],
    "related": [
@@ -11400,6 +13562,18 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": {
+    "ncert": [],
+    "book": [
+     "(no chapter; use the Act that sets up each regulator)"
+    ],
+    "bare": [],
+    "sections": []
+   },
+   "pre": [
+    "P2019-057",
+    "P2019-067"
    ]
   },
   {
@@ -11407,7 +13581,7 @@
    "key": "pressure",
    "slug": "pressure-groups-and-interest-representation",
    "title": "Pressure groups & interest representation",
-   "step": 47,
+   "step": 54,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -11432,7 +13606,9 @@
    "links": [
     103
    ],
-   "prereqs": [],
+   "prereqs": [
+    90
+   ],
    "related": [
     103
    ],
@@ -11518,14 +13694,28 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 10 · Democratic Politics II",
+      "ch": "Political Parties (pressure groups)"
+     }
+    ],
+    "book": [
+     "Pressure Groups"
+    ],
+    "bare": [],
+    "sections": []
+   },
+   "pre": []
   },
   {
    "n": 102,
    "key": "policy",
    "slug": "policy-design-implementation-and-people-s-participation",
    "title": "Policy design, implementation & people's participation",
-   "step": 111,
+   "step": 115,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -11694,14 +13884,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 103,
    "key": "civilsoc",
    "slug": "civil-society-ngos-charitable-trusts-and-donor-agencies",
    "title": "Civil society, NGOs, charitable trusts & donor agencies",
-   "step": 122,
+   "step": 126,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -11847,14 +14039,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 104,
    "key": "anticorrupt",
    "slug": "transparency-accountability-and-anti-corruption",
    "title": "Transparency, accountability & anti-corruption: RTI, whistleblowers, Lokpal, corporate governance",
-   "step": 115,
+   "step": 119,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -11980,6 +14174,10 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2025-052"
    ]
   },
   {
@@ -11987,7 +14185,7 @@
    "key": "citizen",
    "slug": "citizens-charter-and-citizen-centric-administration",
    "title": "Citizens' Charter & citizen-centric administration",
-   "step": 116,
+   "step": 120,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12072,14 +14270,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 106,
    "key": "egov",
    "slug": "e-governance-and-the-digital-divide",
    "title": "E-governance & the digital divide",
-   "step": 106,
+   "step": 110,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12204,14 +14404,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 107,
    "key": "dbt",
    "slug": "dbt-aadhaar-and-digital-welfare-delivery",
    "title": "DBT, Aadhaar & digital welfare delivery",
-   "step": 107,
+   "step": 111,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12314,14 +14516,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 108,
    "key": "civilservices",
    "slug": "civil-services-in-a-democracy-ethos-neutrality-reforms",
    "title": "Civil services in a democracy: ethos, neutrality, reforms",
-   "step": 109,
+   "step": 113,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12467,6 +14671,12 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2021-067",
+    "P2020-059",
+    "P2016-044"
    ]
   },
   {
@@ -12474,7 +14684,7 @@
    "key": "health",
    "slug": "public-health-system-and-universal-health-coverage",
    "title": "Public health system & universal health coverage",
-   "step": 110,
+   "step": 114,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12595,14 +14805,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 110,
    "key": "pandemic",
    "slug": "pandemics-and-global-health-covid-19-who-vaccines",
    "title": "Pandemics & global health: COVID-19, WHO, vaccines",
-   "step": 157,
+   "step": 161,
    "stage": 4,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12685,14 +14897,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 111,
    "key": "education",
    "slug": "education-policy-nep-rte-higher-education-exams",
    "title": "Education policy: NEP, RTE, higher education, exams",
-   "step": 118,
+   "step": 122,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12837,14 +15051,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 112,
    "key": "skills",
    "slug": "skills-hrd-and-the-demographic-dividend",
    "title": "Skills, HRD & the demographic dividend",
-   "step": 119,
+   "step": 123,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -12983,14 +15199,16 @@
       128
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 113,
    "key": "pakistan",
    "slug": "pakistan-and-afghanistan",
    "title": "Pakistan & Afghanistan: terror, distrust, soft power, surgical strikes, ISAF withdrawal",
-   "step": 148,
+   "step": 152,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13078,14 +15296,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 114,
    "key": "china",
    "slug": "china-bri-cpec-string-of-pearls-and-economic-leverage",
    "title": "China: BRI, CPEC, String of Pearls & economic leverage",
-   "step": 143,
+   "step": 147,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13211,14 +15431,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 115,
    "key": "neighbourhood",
    "slug": "neighbourhood",
    "title": "Neighbourhood: Sri Lanka, Maldives, Bangladesh, Project Mausam",
-   "step": 142,
+   "step": 146,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13329,14 +15551,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 116,
    "key": "indopacific",
    "slug": "indo-pacific-quad-aukus-and-sea-lanes",
    "title": "Indo-Pacific, Quad, AUKUS & sea lanes: straits, South China Sea, trade shift",
-   "step": 144,
+   "step": 148,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13498,14 +15722,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 117,
    "key": "greatpower",
    "slug": "great-power-politics",
    "title": "Great-power politics: US–China rivalry, NATO, China+1, Indo-US vs Indo-Russian defence",
-   "step": 145,
+   "step": 149,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13614,14 +15840,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 118,
    "key": "westasia",
    "slug": "west-asia-energy-security-israel-iran-i2u2",
    "title": "West Asia: energy security, Israel, Iran, I2U2",
-   "step": 146,
+   "step": 150,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13723,14 +15951,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 119,
    "key": "centralasia",
    "slug": "central-asia-connectivity-and-strategic-presence",
    "title": "Central Asia: connectivity & strategic presence",
-   "step": 147,
+   "step": 151,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13801,14 +16031,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 120,
    "key": "africa",
    "slug": "india-and-africa-resources-digital-partnership-influence",
    "title": "India & Africa: resources, digital partnership, influence",
-   "step": 149,
+   "step": 153,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -13905,14 +16137,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 121,
    "key": "groupings",
    "slug": "regional-and-multilateral-groupings",
    "title": "Regional & multilateral groupings: SCO, BRICS, NDB/AIIB, BIMSTEC, SAARC",
-   "step": 152,
+   "step": 156,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -14044,14 +16278,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 122,
    "key": "diaspora",
    "slug": "indian-diaspora-from-indentured-labour-to-strategic-asset",
    "title": "Indian diaspora: from indentured labour to strategic asset",
-   "step": 150,
+   "step": 154,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -14167,14 +16403,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 123,
    "key": "wto",
    "slug": "wto-trade-wars-and-protectionism",
    "title": "WTO, trade wars & protectionism",
-   "step": 153,
+   "step": 157,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -14331,14 +16569,16 @@
       141
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 124,
    "key": "un",
    "slug": "un-reform-bretton-woods-and-global-governance",
    "title": "UN reform, Bretton Woods & global governance",
-   "step": 151,
+   "step": 155,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -14468,14 +16708,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 125,
    "key": "climateregime",
    "slug": "global-climate-regime-and-india-s-commitments",
    "title": "Global climate regime & India's commitments: Kyoto, Paris, COP26, ISA, CCUS",
-   "step": 138,
+   "step": 142,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -14609,14 +16851,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 126,
    "key": "growth",
    "slug": "growth",
    "title": "Growth: GDP measurement, potential GDP, savings, structure of growth",
-   "step": 31,
+   "step": 36,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -14716,14 +16960,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 127,
    "key": "planning",
    "slug": "planning-nehruvian-planning-soviet-influence-niti-aayog",
    "title": "Planning: Nehruvian planning, Soviet influence, NITI Aayog",
-   "step": 59,
+   "step": 64,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -14814,6 +17060,10 @@
       24
      ]
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2014-087"
    ]
   },
   {
@@ -14821,7 +17071,7 @@
    "key": "employment",
    "slug": "employment",
    "title": "Employment: jobless growth, informality, unemployment measurement, labour productivity",
-   "step": 36,
+   "step": 41,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -14925,14 +17175,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 129,
    "key": "manufacturing",
    "slug": "manufacturing-msmes-startups-and-industrial-policy",
    "title": "Manufacturing, MSMEs, startups & industrial policy: PLI, SEZs, labour codes",
-   "step": 78,
+   "step": 82,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15071,14 +17323,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 130,
    "key": "fdi",
    "slug": "liberalisation-and-fdi-retail-defence-indian-firms-vs-mncs",
    "title": "Liberalisation & FDI: retail, defence, Indian firms vs MNCs",
-   "step": 79,
+   "step": 83,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15180,14 +17434,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 131,
    "key": "digieco",
    "slug": "digital-economy-and-digital-currency-digitalisation-cbdc",
    "title": "Digital economy & digital currency: digitalisation, CBDC",
-   "step": 73,
+   "step": 77,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15261,14 +17517,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 132,
    "key": "fininc",
    "slug": "financial-inclusion-and-rural-credit",
    "title": "Financial inclusion & rural credit",
-   "step": 72,
+   "step": 76,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15358,14 +17616,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 133,
    "key": "inflation",
    "slug": "inflation-monetary-policy-and-the-poor",
    "title": "Inflation, monetary policy & the poor",
-   "step": 35,
+   "step": 40,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15437,14 +17697,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 134,
    "key": "budget",
    "slug": "budgeting-and-fiscal-policy",
    "title": "Budgeting & fiscal policy: capital vs revenue, FRBM, tax expenditure, budgets",
-   "step": 32,
+   "step": 37,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15559,6 +17821,13 @@
      "verified": false,
      "also": []
     }
+   ],
+   "cover": null,
+   "pre": [
+    "P2020-055",
+    "P2018-071",
+    "P2016-057",
+    "P2015-065"
    ]
   },
   {
@@ -15566,7 +17835,7 @@
    "key": "infra",
    "slug": "infrastructure-and-investment-models",
    "title": "Infrastructure & investment models: PPP, Gati Shakti, concession agreements",
-   "step": 81,
+   "step": 85,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15704,14 +17973,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 136,
    "key": "transport",
    "slug": "transport-connectivity",
    "title": "Transport connectivity: tolling, UDAN, inland waterways, urban transport",
-   "step": 105,
+   "step": 109,
    "stage": 3,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -15810,14 +18081,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 137,
    "key": "greenrev",
    "slug": "green-revolution-and-food-self-sufficiency",
    "title": "Green Revolution & food self-sufficiency: rice–wheat system, technology missions",
-   "step": 96,
+   "step": 100,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -15947,14 +18220,16 @@
       63
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 138,
    "key": "cropping",
    "slug": "cropping-patterns-and-crop-diversification",
    "title": "Cropping patterns & crop diversification: horticulture, pulses, millets",
-   "step": 95,
+   "step": 99,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16103,14 +18378,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 139,
    "key": "agrimarket",
    "slug": "agricultural-marketing-and-supply-chains-apmc-intermediaries",
    "title": "Agricultural marketing & supply chains: APMC, intermediaries",
-   "step": 98,
+   "step": 102,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16232,14 +18509,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 140,
    "key": "agritech",
    "slug": "technology-in-agriculture",
    "title": "Technology in agriculture: e-technology, Digital India, nano, satellites",
-   "step": 99,
+   "step": 103,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16352,14 +18631,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 141,
    "key": "subsidies",
    "slug": "farm-subsidies-msp-and-crop-insurance-incl-wto-agreement",
    "title": "Farm subsidies, MSP & crop insurance (incl. WTO Agreement on Agriculture)",
-   "step": 100,
+   "step": 104,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16486,14 +18767,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 142,
    "key": "pds",
    "slug": "pds-and-buffer-stocks",
    "title": "PDS & buffer stocks",
-   "step": 108,
+   "step": 112,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16564,14 +18847,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 143,
    "key": "foodproc",
    "slug": "food-processing-industry",
    "title": "Food processing industry",
-   "step": 101,
+   "step": 105,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16710,14 +18995,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 144,
    "key": "landreform",
    "slug": "land-reforms-tenancy-and-land-acquisition",
    "title": "Land reforms, tenancy & land acquisition: from Bhoodan to the 2013 Act",
-   "step": 133,
+   "step": 137,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16875,14 +19162,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 145,
    "key": "allied",
    "slug": "allied-and-sustainable-farming",
    "title": "Allied & sustainable farming: livestock, fisheries, integrated & organic farming",
-   "step": 102,
+   "step": 106,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -16972,14 +19261,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 146,
    "key": "space",
    "slug": "space-and-geospatial-technology",
    "title": "Space & geospatial technology: Chandrayaan, JWST, NavIC, asteroids, GIS",
-   "step": 154,
+   "step": 158,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17138,14 +19429,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 147,
    "key": "aitech",
    "slug": "ai-semiconductors-robotics-and-emerging-digital-tech",
    "title": "AI, semiconductors, robotics & emerging digital tech",
-   "step": 158,
+   "step": 162,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17261,14 +19554,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 148,
    "key": "biotech",
    "slug": "biotechnology-applications-biopharma-microbes-for-fuel",
    "title": "Biotechnology: applications, biopharma, microbes for fuel",
-   "step": 155,
+   "step": 159,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17349,14 +19644,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 149,
    "key": "healthtech",
    "slug": "health-technology-and-pharma",
    "title": "Health technology & pharma: AMR, FDCs, stem cells, nanomedicine",
-   "step": 156,
+   "step": 160,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17466,14 +19763,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 150,
    "key": "ipr",
    "slug": "intellectual-property-rights",
    "title": "Intellectual property rights: patents, 3(d), TKDL, life forms",
-   "step": 159,
+   "step": 163,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17569,14 +19868,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 151,
    "key": "nuclear",
    "slug": "nuclear-and-fusion-energy-fbr-iter-raw-materials",
    "title": "Nuclear & fusion energy: FBR, ITER, raw materials",
-   "step": 141,
+   "step": 145,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17688,14 +19989,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 152,
    "key": "sciday",
    "slug": "science-in-everyday-life-and-indian-scientific-achievement",
    "title": "Science in everyday life & Indian scientific achievement",
-   "step": 160,
+   "step": 164,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -17827,14 +20130,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 153,
    "key": "renewables",
    "slug": "renewable-energy-transition",
    "title": "Renewable energy transition: solar, wind, EVs, green corridor",
-   "step": 139,
+   "step": 143,
    "stage": 4,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -17996,14 +20301,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 154,
    "key": "energysec",
    "slug": "energy-security-and-energy-independence",
    "title": "Energy security & energy independence",
-   "step": 140,
+   "step": 144,
    "stage": 4,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18091,14 +20398,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 155,
    "key": "airpoll",
    "slug": "air-pollution-smog-who-guidelines-ncap",
    "title": "Air pollution: smog, WHO guidelines, NCAP",
-   "step": 127,
+   "step": 131,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18205,14 +20514,16 @@
       29
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 156,
    "key": "riverpoll",
    "slug": "river-pollution-and-ganga-cleaning",
    "title": "River pollution & Ganga cleaning",
-   "step": 128,
+   "step": 133,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18292,14 +20603,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 157,
    "key": "waste",
    "slug": "solid-and-hazardous-waste-management",
    "title": "Solid & hazardous waste management",
-   "step": 129,
+   "step": 134,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18368,14 +20681,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 158,
    "key": "eia",
    "slug": "environmental-impact-assessment-and-project-displacement",
    "title": "Environmental Impact Assessment & project displacement",
-   "step": 131,
+   "step": 135,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18475,14 +20790,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 159,
    "key": "climateimpact",
    "slug": "climate-change-impacts-on-india",
    "title": "Climate change impacts on India: food security, Himalayan & coastal states",
-   "step": 137,
+   "step": 141,
    "stage": 4,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -18550,14 +20867,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 160,
    "key": "dmframe",
    "slug": "disaster-management-frameworks",
    "title": "Disaster management frameworks: DM Act, Sendai, resilience, community, dam safety",
-   "step": 64,
+   "step": 68,
    "stage": 2,
    "cluster": "Disaster Management",
    "clusterSlug": "disaster-management",
@@ -18683,14 +21002,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 161,
    "key": "lwe",
    "slug": "left-wing-extremism-development-security-linkage",
    "title": "Left Wing Extremism: development–security linkage",
-   "step": 161,
+   "step": 165,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -18819,14 +21140,16 @@
       51
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 162,
    "key": "northeast",
    "slug": "north-east-insurgency-and-peace-accords",
    "title": "North-East insurgency & peace accords",
-   "step": 162,
+   "step": 166,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -18890,14 +21213,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 163,
    "key": "terror",
    "slug": "terrorism-and-external-state-non-state-actors",
    "title": "Terrorism & external state/non-state actors",
-   "step": 167,
+   "step": 171,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19041,14 +21366,16 @@
       167
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 164,
    "key": "terrorfin",
    "slug": "terror-financing-and-money-laundering-fatf-nmft-pmla",
    "title": "Terror financing & money laundering: FATF, NMFT, PMLA",
-   "step": 168,
+   "step": 172,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19146,14 +21473,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 165,
    "key": "cyber",
    "slug": "cyber-security-and-cyber-warfare",
    "title": "Cyber security & cyber warfare",
-   "step": 164,
+   "step": 168,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19290,14 +21619,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 166,
    "key": "dataprot",
    "slug": "data-protection-dpdp-act-2023-srikrishna-committee",
    "title": "Data protection: DPDP Act 2023, Srikrishna Committee",
-   "step": 165,
+   "step": 169,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19368,14 +21699,16 @@
       78
      ]
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 167,
    "key": "socialmedia",
    "slug": "social-media-disinformation-and-public-order",
    "title": "Social media, disinformation & public order: mob violence, IT Rules",
-   "step": 166,
+   "step": 170,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19491,14 +21824,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 168,
    "key": "border",
    "slug": "border-management",
    "title": "Border management: China & Pakistan borders, BADP, drones, airspace, Ladakh",
-   "step": 170,
+   "step": 174,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19657,14 +21992,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 169,
    "key": "organised",
    "slug": "organised-crime-and-narco-terrorism",
    "title": "Organised crime & narco-terrorism",
-   "step": 169,
+   "step": 173,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19753,14 +22090,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 170,
    "key": "maritime",
    "slug": "maritime-and-coastal-security-piracy-imo",
    "title": "Maritime & coastal security: piracy, IMO",
-   "step": 163,
+   "step": 167,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19855,14 +22194,16 @@
      "verified": false,
      "also": []
     }
-   ]
+   ],
+   "cover": null,
+   "pre": []
   },
   {
    "n": 171,
    "key": "forces",
    "slug": "security-forces-intelligence-agencies-and-afspa",
    "title": "Security forces, intelligence agencies & AFSPA",
-   "step": 171,
+   "step": 175,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -19940,6 +22281,553 @@
       72
      ]
     }
+   ],
+   "cover": null,
+   "pre": []
+  },
+  {
+   "n": 172,
+   "key": "constbasics",
+   "slug": "constitution-basics",
+   "title": "Constitution basics: constitutionalism, rule of law, liberty, equality, the State & types of majority",
+   "step": 1,
+   "stage": 1,
+   "cluster": "Constitution & Polity",
+   "clusterSlug": "constitution-and-polity",
+   "papers": {
+    "GS1": 0,
+    "GS2": 0,
+    "GS3": 0
+   },
+   "cross": false,
+   "count": 0,
+   "years": [],
+   "recent": 0,
+   "syllabus": [],
+   "links": [],
+   "prereqs": [],
+   "related": [],
+   "directives": [],
+   "asks": "Mains rarely asks these ideas on their own, but Prelims does almost every year: what a constitutional government is, what rule of law and liberty mean, how rights relate to duties. Every later Polity theme assumes you know them, and the types of majority come back in amendments, impeachment and removal questions.",
+   "checklist": [
+    "Define constitutionalism and limited government in one line each",
+    "Rule of law (Dicey) and how Art 14 carries it",
+    "Liberty, equality and rights: positive vs negative liberty, formal vs substantive equality",
+    "Which majority applies where: amendment, impeachment, removal of the Vice-President or Speaker, Art 249 resolution"
+   ],
+   "answer": [
+    "Use these definitions as the opening line of GS2 answers on rights, courts or Parliament",
+    "Quote one Article for each concept (Art 13, 14, 21, 368) so the answer stays constitutional, not just theoretical"
+   ],
+   "questions": [],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Political Theory",
+      "ch": "Ch 1 Political Theory: An Introduction; Ch 2 Freedom; Ch 3 Equality; Ch 5 Rights"
+     },
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 1 Constitution: Why and How?"
+     }
+    ],
+    "book": [
+     "Salient Features of the Constitution",
+     "Parliament (voting in the Houses)"
+    ],
+    "bare": [
+     {
+      "t": "Art 13, 14 and 368",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "What a constitution does",
+      "items": [
+       {
+        "t": "Functions: sets up the organs of the State, limits their power, guarantees rights",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Constitutionalism and constitutional (limited) government",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Constitution vs ordinary law vs ordinance vs rules; what 'law' means in Art 13",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Political ideas UPSC tests",
+      "items": [
+       {
+        "t": "Rule of law (Dicey): limited power, equality before law, rights from courts",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Liberty: negative and positive; best safeguards of liberty in a democracy",
+        "p": 5,
+        "m": 0
+       },
+       {
+        "t": "Equality: formal vs substantive, absence of privileges",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Rights and duties: rights as claims against the State",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "The State: population, territory, government, sovereignty",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Democracy and ideologies: virtues of democracy, Gandhism and Marxism, liberal democracy",
+        "p": 3,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Types of majority",
+      "items": [
+       {
+        "t": "Simple majority: ordinary bills, money bills, no-confidence and adjournment motions",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Absolute majority: more than half of total membership (part of the special majority)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Effective majority: removal of the Vice-President (Art 67b), Speaker and Deputy Speaker (Art 94c)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Special majority under Art 368: majority of total membership and two-thirds present and voting; also judges' removal, Art 352",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Art 249 and Art 312: two-thirds of Rajya Sabha members present and voting",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Impeachment of the President (Art 61): two-thirds of the total membership of each House",
+        "p": null,
+        "m": null
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2023-046",
+    "P2021-053",
+    "P2021-055",
+    "P2021-060",
+    "P2020-047",
+    "P2020-052",
+    "P2019-046",
+    "P2018-047",
+    "P2018-048",
+    "P2017-038",
+    "P2017-046",
+    "P2017-049",
+    "P2014-064"
+   ]
+  },
+  {
+   "n": 173,
+   "key": "union",
+   "slug": "union-and-its-territory-citizenship-art-1-11",
+   "title": "Union & its territory, citizenship (Art 1–11)",
+   "step": 4,
+   "stage": 1,
+   "cluster": "Constitution & Polity",
+   "clusterSlug": "constitution-and-polity",
+   "papers": {
+    "GS1": 0,
+    "GS2": 0,
+    "GS3": 0
+   },
+   "cross": false,
+   "count": 0,
+   "years": [],
+   "recent": 0,
+   "syllabus": [],
+   "links": [],
+   "prereqs": [
+    77
+   ],
+   "related": [],
+   "directives": [],
+   "asks": "Prelims asks how states are formed and renamed under Art 2–4, how a person gets or loses citizenship, and the history of particular states. Mains comes at it through state reorganisation, CAA and the debate over smaller states.",
+   "checklist": [
+    "Art 3: Parliament's power, the President's recommendation, state views not binding",
+    "Why an Art 3 law is not an amendment under Art 368",
+    "Citizenship at commencement (Art 5–8) and the Citizenship Act 1955",
+    "CAA 2019 and OCI: what they change and the debate"
+   ],
+   "answer": [
+    "For reorganisation questions, pair Art 3 with the SRC 1953–56 and one recent case (Telangana 2014, J&K 2019)",
+    "For citizenship, separate the constitutional part (Art 5–11) from the statutory part (Citizenship Act)"
+   ],
+   "questions": [],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Political Theory",
+      "ch": "Ch 6 Citizenship"
+     },
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 7 Federalism (the Union and the states)"
+     }
+    ],
+    "book": [
+     "Union and its Territory",
+     "Citizenship"
+    ],
+    "bare": [
+     {
+      "t": "Part I (Art 1–4) and Part II (Art 5–11)",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     },
+     {
+      "t": "Citizenship Act 1955",
+      "url": "https://www.indiacode.nic.in/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Union and its territory (Art 1–4)",
+      "items": [
+       {
+        "t": "Art 1: 'India, that is Bharat, shall be a Union of States'; territory of India",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 2 and 3: admitting and forming states; President's recommendation; state's view not binding",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Art 4: such laws are not amendments under Art 368",
+        "p": null,
+        "m": null
+       },
+       {
+        "t": "How states were formed: SRC 1953–56, Nagaland 1963, Telangana 2014, J&K reorganisation 2019",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Citizenship (Art 5–11) and the Citizenship Act 1955",
+      "items": [
+       {
+        "t": "Citizenship at commencement (Art 5–8); voluntary foreign citizenship ends it (Art 9)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Acquiring citizenship: birth, descent, registration, naturalisation, territory",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Losing it: renunciation, termination, deprivation",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Single citizenship and domicile",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Citizenship (Amendment) Act 2019 and Overseas Citizens of India",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2025-042",
+    "P2021-059"
+   ]
+  },
+  {
+   "n": 174,
+   "key": "bodies",
+   "slug": "constitutional-statutory-and-executive-bodies",
+   "title": "Constitutional, statutory & executive bodies: UPSC, NCSC–NCST–NCBC, NHRC, CIC, CVC, Lokpal, NITI Aayog",
+   "step": 50,
+   "stage": 2,
+   "cluster": "Constitution & Polity",
+   "clusterSlug": "constitution-and-polity",
+   "papers": {
+    "GS1": 0,
+    "GS2": 0,
+    "GS3": 0
+   },
+   "cross": false,
+   "count": 0,
+   "years": [],
+   "recent": 0,
+   "syllabus": [],
+   "links": [],
+   "prereqs": [
+    99
+   ],
+   "related": [],
+   "directives": [],
+   "asks": "Prelims tests which bodies are constitutional, statutory or executive, who appoints and removes their heads, and what they can and cannot do. Mains asks whether commissions are effective or just recommendatory.",
+   "checklist": [
+    "Constitutional vs statutory vs executive: one table for all bodies",
+    "Appointment and removal of the heads (UPSC, ECI, CAG, NHRC, CIC, CVC, Lokpal)",
+    "Recommendatory vs binding powers",
+    "NITI Aayog vs the Planning Commission"
+   ],
+   "answer": [
+    "Start with the legal basis (Article or Act) in one line; it shows the body's strength",
+    "End with reform ideas from the 2nd ARC or the relevant committee"
+   ],
+   "questions": [],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 4 Executive (independent bodies)"
+     }
+    ],
+    "book": [
+     "Union Public Service Commission",
+     "National Commission for SCs",
+     "National Commission for STs",
+     "National Commission for BCs",
+     "National Human Rights Commission",
+     "Central Information Commission",
+     "Central Vigilance Commission",
+     "Lokpal and Lokayuktas",
+     "NITI Aayog"
+    ],
+    "bare": [
+     {
+      "t": "Art 263, 280, 315–323, 338–338B, 350B",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     },
+     {
+      "t": "PHRA 1993, RTI Act 2005, CVC Act 2003, Lokpal Act 2013",
+      "url": "https://www.indiacode.nic.in/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Constitutional bodies",
+      "items": [
+       {
+        "t": "ECI (324), UPSC and SPSCs (315), Finance Commission (280), GST Council (279A), CAG (148)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "NCSC (338), NCST (338A), NCBC (338B, 102nd Amendment 2018), Special Officer for Linguistic Minorities (350B)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "UPSC: composition, removal, functions, what it does not advise on",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Statutory bodies",
+      "items": [
+       {
+        "t": "NHRC and SHRCs (Protection of Human Rights Act 1993)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "Central Information Commission (RTI Act), Central Vigilance Commission, Lokpal (2013)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Others: NCW, NCPCR, consumer commissions",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Executive bodies",
+      "items": [
+       {
+        "t": "NITI Aayog (2015); the Planning Commission and National Development Council it replaced",
+        "p": 3,
+        "m": 0
+       },
+       {
+        "t": "Law Commission, National Security Council, Zonal Councils (statutory), Inter-State Council (Art 263)",
+        "p": 2,
+        "m": 0
+       },
+       {
+        "t": "Other government bodies and boards (CEIB, SFIO, commodity boards)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-050",
+    "P2024-053",
+    "P2023-055",
+    "P2013-068",
+    "P2013-069",
+    "P2013-070"
+   ]
+  },
+  {
+   "n": 175,
+   "key": "otherprov",
+   "slug": "parts-schedules-official-language-and-other-provisions",
+   "title": "Parts, Schedules, official language & other provisions",
+   "step": 51,
+   "stage": 2,
+   "cluster": "Constitution & Polity",
+   "clusterSlug": "constitution-and-polity",
+   "papers": {
+    "GS1": 0,
+    "GS2": 0,
+    "GS3": 0
+   },
+   "cross": false,
+   "count": 0,
+   "years": [],
+   "recent": 0,
+   "syllabus": [],
+   "links": [],
+   "prereqs": [
+    174
+   ],
+   "related": [],
+   "directives": [],
+   "asks": "Prelims regularly asks which Part or Schedule contains a provision, which languages are in the Eighth Schedule and how the Constitution names itself. These are pure recall questions and easy marks once you have one table.",
+   "checklist": [
+    "The 22 Parts and 12 Schedules: one line each",
+    "Official language provisions (Art 343–351) and the Eighth Schedule",
+    "Art 300A property, Art 311 safeguards for civil servants, Part IXB co-operative societies"
+   ],
+   "answer": [
+    "Use the Schedule or Part number when it is the point of the question; otherwise cite the Article"
+   ],
+   "questions": [],
+   "cover": {
+    "ncert": [
+     {
+      "book": "NCERT Class 11 · Indian Constitution at Work",
+      "ch": "Ch 1 Constitution: Why and How?"
+     }
+    ],
+    "book": [
+     "Official Language",
+     "Public Services",
+     "Rights and Liabilities of the Government",
+     "Co-operative Societies"
+    ],
+    "bare": [
+     {
+      "t": "Parts XIV and XVII; Art 300, 300A, 308–323, 343–351, 393–395",
+      "url": "https://legislative.gov.in/constitution-of-india/"
+     }
+    ],
+    "sections": [
+     {
+      "h": "Parts and Schedules",
+      "items": [
+       {
+        "t": "The 22 Parts: which Part has what (IX panchayats, IXA municipalities, XVIII emergency, XX amendment)",
+        "p": 1,
+        "m": 0
+       },
+       {
+        "t": "The 12 Schedules: what each one lists",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Short title, commencement and repeals (Art 393–395)",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Official language (Part XVII)",
+      "items": [
+       {
+        "t": "Art 343–351: Hindi in Devanagari, languages of states, courts, mother-tongue instruction",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Eighth Schedule: 22 languages; 71st (Konkani, Manipuri, Nepali) and 92nd (Bodo, Dogri, Maithili, Santhali) Amendments",
+        "p": 1,
+        "m": 0
+       }
+      ]
+     },
+     {
+      "h": "Services and the government",
+      "items": [
+       {
+        "t": "Art 308–323: services; Art 311 safeguards; Art 312 All-India Services",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Art 300 (suits by and against the government), Art 300A (property)",
+        "p": 0,
+        "m": 0
+       },
+       {
+        "t": "Part IXB co-operative societies (97th Amendment)",
+        "p": 0,
+        "m": 0
+       }
+      ]
+     }
+    ]
+   },
+   "pre": [
+    "P2026-040",
+    "P2024-041",
+    "P2024-050"
    ]
   }
  ],
@@ -20023,16 +22911,21 @@
    "name": "Foundations",
    "why": "Core concepts every later theme uses: the Constitution and Parliament, modern history, basic physical geography, Indian society, and economy basics like growth and budgets.",
    "themes": [
-    78,
-    77,
-    79,
-    82,
-    93,
-    96,
-    85,
-    88,
-    87,
+    172,
     18,
+    77,
+    173,
+    78,
+    79,
+    81,
+    82,
+    87,
+    96,
+    93,
+    95,
+    94,
+    88,
+    85,
     22,
     23,
     9,
@@ -20066,19 +22959,19 @@
    "name": "Building blocks",
    "why": "Institutions, elections, federal finance, social issues, hazards, banking and industry. Each needs only Foundations and earlier steps here.",
    "themes": [
-    84,
     83,
-    99,
-    94,
-    95,
-    98,
+    84,
+    86,
+    89,
     91,
     92,
-    89,
-    86,
-    101,
-    90,
+    98,
+    99,
+    174,
+    175,
     97,
+    90,
+    101,
     19,
     20,
     21,
@@ -20090,7 +22983,6 @@
     63,
     127,
     65,
-    81,
     66,
     53,
     160,
@@ -20164,9 +23056,9 @@
     40,
     43,
     155,
+    80,
     156,
     157,
-    80,
     158,
     35,
     144,

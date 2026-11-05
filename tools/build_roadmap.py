@@ -37,6 +37,14 @@ TIERS = {
      "space","aitech","biotech","healthtech","ipr","sciday"],
  5: ["lwe","northeast","terror","terrorfin","organised","border","maritime","cyber","dataprot","socialmedia","forces"],
 }
+# Subject chains (tools/polity_pilot.py) fix the study order and tier of their themes.
+sys.path.insert(0, HERE)
+from polity_pilot import CHAIN, TIER as CHAIN_TIER
+in_chain = {k: (c, i) for c, ks in CHAIN.items() for i, k in enumerate(ks)}
+for t in TIERS:
+    TIERS[t] = [k for k in TIERS[t] if k not in in_chain]
+for t in sorted(TIERS, reverse=True):
+    TIERS[t] = [k for c in CHAIN.values() for k in c if CHAIN_TIER[k] == t] + TIERS[t]
 tier = {k: t for t, ks in TIERS.items() for k in ks}
 pref = {k: i for i, k in enumerate(k for t in sorted(TIERS) for k in TIERS[t])}
 assert sorted(tier) == sorted(M), ("tier list mismatch", set(M) ^ set(tier))
@@ -45,6 +53,11 @@ rank = lambda k: (tier[k], pref[k])
 need_all = {k: (set(M[k]["links"]) | {x for v in M[k]["also"].values() for x in v}) - {k} for k in M}
 # A basic theme never requires an advanced one: links to a higher tier are "comes back later", not prerequisites.
 need = {k: {x for x in need_all[k] if tier[x] <= tier[k]} for k in M}
+# Inside a chain, a later theme is never a prerequisite of an earlier one; each theme needs the one before it.
+for k, (c, i) in in_chain.items():
+    need[k] = {x for x in need[k] if not (x in in_chain and in_chain[x][0] == c and in_chain[x][1] > i)}
+    if i:
+        need[k].add(CHAIN[c][i - 1])
 upward = [(k, x) for k in M for x in need_all[k] if tier[x] > tier[k]]
 
 # Break circles inside a tier at the edge pointing to the later theme in the preferred order.

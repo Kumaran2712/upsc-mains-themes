@@ -16,6 +16,20 @@ for f in ["guide1", "guide2", "guide3", "guide4", "guide5"]:
     exec(open(os.path.join(HERE, f + ".py")).read().replace("G = {}", ""))
 # Theme map: each theme lists its questions by repo question ID.
 C = json.load(open(os.path.join(HERE, "theme_map.json")))
+# Polity pilot: study order, wider titles, full-syllabus coverage, Prelims links.
+sys.path.insert(0, HERE)
+import polity_pilot as PP
+for k, v in PP.GUIDE.items():
+    G[k] = v
+for t in C:
+    t["title"] = PP.RETITLE.get(t["key"], t["title"])
+# Theme URLs never change once published, even when a title changes.
+FROZEN = json.load(open(os.path.join(HERE, "theme_slugs.json")))
+PRE = json.load(open(os.path.join(DATA, "prelims.json")))["questions"]
+PRE_BY = {q["id"]: q for q in PRE}
+bad = [i for i in PP.PRELIMS if i not in PRE_BY]
+if bad:
+    sys.exit(f"tools/polity_pilot.py PRELIMS has unknown IDs: {bad}")
 # Roadmap: ordered stages for newcomers; every theme exactly once.
 ROADMAP = json.load(open(os.path.join(HERE, "roadmap.json")))
 _order = [k for s in ROADMAP for k in s["themes"]]
@@ -67,13 +81,43 @@ for t in C:
         clusters.append(t["cluster"])
 cluster_slug = {c: slugify(c, 6) for c in clusters}
 
-slugs = {}
+slugs = dict(FROZEN)
 for t in C:
+    if t["key"] in slugs:
+        continue
     s = slugify(t["title"].split(":")[0] if len(t["title"]) > 60 else t["title"])
     base, i = s, 2
     while s in slugs.values():
         s = f"{base}-{i}"; i += 1
     slugs[t["key"]] = s
+
+def flat(b):
+    if isinstance(b, str): return b
+    if isinstance(b, dict): return " ".join(flat(v) for k, v in b.items() if k != "type")
+    if isinstance(b, list): return " ".join(flat(x) for x in b)
+    return ""
+# Coverage counters look only at the theme's own questions: its tagged Prelims stems and its Mains questions.
+def cover(key, own_pre, own_mains):
+    c = PP.COVER.get(key)
+    if not c:
+        return None
+    secs = []
+    for head, items in c["sections"]:
+        rows = []
+        for text, rx, extra in items:
+            p = m = None
+            if rx:
+                r = re.compile(rx, re.I)
+                hp = {i for i, x in own_pre if r.search(x)} | {i for i in extra if i.startswith("P")}
+                hm = {i for i, x in own_mains if r.search(x)} | {i for i in extra if not i.startswith("P")}
+                p, m = len(hp), len(hm)
+            rows.append(dict(t=text, p=p, m=m))
+        secs.append(dict(h=head, items=rows))
+    return dict(ncert=[dict(book=b, ch=ch) for b, ch in c["ncert"]], book=c["book"],
+                bare=[dict(t=t, url=u) for t, u in c["bare"]], sections=secs)
+pre_of = collections.defaultdict(list)
+for qid, k in PP.PRELIMS.items():
+    pre_of[k].append(qid)
 
 themes = []
 seen = set()
@@ -107,7 +151,9 @@ for t in C:
         prereqs=[num[k] for k in PREREQS[t["key"]]],
         related=sorted({num[k] for k in set(t["links"]) | {x for v in t["also"].values() for x in v}} - {num[t["key"]]}),
         directives=[[d, c] for d, c in dc.most_common(6)],
-        asks=asks, checklist=checklist, answer=answer, questions=qrows))
+        asks=asks, checklist=checklist, answer=answer, questions=qrows,
+        cover=cover(t["key"], [(i, flat(PRE_BY[i]["stem"])) for i in pre_of.get(t["key"], [])], [(r["id"], r["text"]) for r in qrows]),
+        pre=sorted(pre_of.get(t["key"], []), key=lambda i: (-PRE_BY[i]["year"], i))))
 assert len(seen) == len(questions), (len(seen), len(questions))
 
 data = dict(

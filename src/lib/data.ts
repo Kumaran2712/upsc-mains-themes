@@ -3,7 +3,10 @@ import raw from '../data/site.json';
 export type Question = { id: string; paper: string; year: number; marks: number | null; words: number | null; text: string; verified: boolean; also: number[] };
 export type Theme = { n: number; key: string; slug: string; title: string; step: number; stage: number; cluster: string; clusterSlug: string;
   papers: Record<string, number>; cross: boolean; count: number; years: number[]; recent: number;
-  syllabus: string[]; links: number[]; prereqs: number[]; related: number[]; directives: [string, number][]; asks: string; checklist: string[]; answer: string[]; questions: Question[] };
+  syllabus: string[]; links: number[]; prereqs: number[]; related: number[]; directives: [string, number][]; asks: string; checklist: string[]; answer: string[]; questions: Question[];
+  cover: Cover | null; pre: string[] };
+export type Cover = { ncert: { book: string; ch: string }[]; book: string[]; bare: { t: string; url: string }[];
+  sections: { h: string; items: { t: string; p: number | null; m: number | null }[] }[] };
 
 export const themes = raw.themes as Theme[];
 export const clusters = raw.clusters as { name: string; slug: string }[];
@@ -28,7 +31,9 @@ export const paperName: Record<string, string> = {
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const u = (p: string) => base + p;
 export const themeUrl = (t: Theme) => u(`/themes/${t.slug}/`);
-export const yearSpan = (t: Theme) => (t.years.length > 1 ? `${t.years[0]}–${t.years[t.years.length - 1]}` : `${t.years[0]}`);
+export const yearSpan = (t: Theme) => (t.years.length > 1 ? `${t.years[0]}–${t.years[t.years.length - 1]}` : t.years.length ? `${t.years[0]}` : '');
+/** "12 Mains · 18 Prelims PYQs" style count line for lists. */
+export const pyqLine = (t: Theme) => [t.count ? `${t.count} Mains` : '', t.pre.length ? `${t.pre.length} Prelims` : ''].filter(Boolean).join(' · ') + ' PYQs' + (t.years.length ? ` · ${yearSpan(t)}` : '');
 export const allQuestions = themes.flatMap((t) => t.questions.map((q) => ({ ...q, theme: t })));
 export const syllabusThemes = (id: string) => themes.filter((t) => t.syllabus.includes(id));
 export const clip = (s: string, n = 155) => (s.length <= n ? s : s.slice(0, s.lastIndexOf(' ', n - 1)) + '…');

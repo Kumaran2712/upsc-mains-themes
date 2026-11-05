@@ -1,13 +1,20 @@
 ---
 import Base from '../../layouts/Base.astro';
 import QuestionItem from '../../components/QuestionItem.astro';
+import PrelimsItem from '../../components/PrelimsItem.astro';
+import { prelims } from '../../lib/daily';
 import { mapLinksFor, moduleUrl } from '../../lib/maps';
 import { themes, byN, byStep, stages, roadmap, syllabus, themeUrl, yearSpan, u, clip, paperName, shortTitle, type Theme } from '../../lib/data';
 export function getStaticPaths() { return themes.map((t) => ({ params: { slug: t.slug }, props: { t } })); }
 const { t } = Astro.props as { t: Theme };
 const paperList = Object.entries(t.papers).filter(([, v]) => v).map(([k]) => k);
-const title = `${shortTitle(t)} – UPSC Mains PYQs`;
-const desc = clip(`${t.count} UPSC GS Mains PYQs (${yearSpan(t)}) on ${t.title.split(':')[0].toLowerCase()}. ${t.asks}`);
+const pById = new Map(prelims.map((q) => [q.id, q]));
+const preQs = t.pre.map((id) => pById.get(id)!);
+const cv = t.cover;
+const title = `${shortTitle(t)} – UPSC ${preQs.length ? 'Prelims & Mains' : 'Mains'} PYQs`;
+const countText = [t.count ? `${t.count} GS Mains PYQs (${yearSpan(t)})` : '', preQs.length ? `${preQs.length} Prelims PYQs` : ''].filter(Boolean).join(' and ');
+const desc = clip(`${countText || 'Study guide'} on ${t.title.split(':')[0].toLowerCase()}${cv ? ', with NCERT, standard book and Bare Act pointers' : ''}. ${t.asks}`);
+const tag = (x: { p: number | null; m: number | null }) => x.p === null ? null : (x.p || x.m) ? [x.p ? `Prelims ${x.p}` : '', x.m ? `Mains ${x.m}` : ''].filter(Boolean).join(' · ') : '';
 const syl = syllabus.filter((s) => t.syllabus.includes(s.id));
 const prev = byStep.get(t.step - 1); const next = byStep.get(t.step + 1);
 const stage = stages[t.stage - 1];
@@ -26,9 +33,10 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <p class="eyebrow">Theme T{t.n} · {t.cluster}</p>
   <h1>{t.title}</h1>
   <div class="facts">
-    <div><b>{t.count}</b><span>PYQs</span></div>
+    <div><b>{t.count}</b><span>Mains PYQs</span></div>
+    {preQs.length > 0 && <div><b>{preQs.length}</b><span>Prelims PYQs</span></div>}
     {paperList.map((p) => <div><b>{t.papers[p]}</b><span>{p}</span></div>)}
-    <div><b>{yearSpan(t)}</b><span>{t.years.length} distinct years</span></div>
+    {t.years.length > 0 && <div><b>{yearSpan(t)}</b><span>{t.years.length} distinct years</span></div>}
     {t.recent > 0 && <div><b>{t.recent}</b><span>asked 2024–26</span></div>}
   </div>
   <div class="panel rmbar">
@@ -42,10 +50,30 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   </div>
   <p><button class="btn" type="button" data-share>Share this theme</button></p>
 
+  {cv && <>
+    <h2>Study in this order</h2>
+    <ol class="order">
+      {cv.ncert.length > 0 && <li><b>Basics from NCERT</b>{cv.ncert.map((x) => <span>{x.book}: {x.ch}</span>)}</li>}
+      {cv.book.length > 0 && <li><b>Standard book</b><span>M. Laxmikanth, <i>Indian Polity</i>: {cv.book.join('; ')}</span></li>}
+      {cv.bare.length > 0 && <li><b>Bare Act</b>{cv.bare.map((x) => <span><a href={x.url} target="_blank" rel="noopener">{x.t}</a></span>)}</li>}
+      <li><b>Prelims PYQs</b><span>{preQs.length ? <a href="#prelims">{preQs.length} questions with answers, below</a> : 'None linked to this theme yet'}</span></li>
+      <li><b>Mains PYQs</b><span>{t.count ? <a href="#mains">{t.count} questions, below</a> : 'None asked on this theme alone yet'}</span></li>
+    </ol>
+  </>}
+
+  {cv && cv.sections.length > 0 && <>
+    <h2>Full syllabus coverage</h2>
+    <p class="lead">Everything this part of the syllabus covers. The tags count this theme's PYQs, plus a few questions filed under a linked theme that test the same point. Start with the tagged lines, then cover the rest: UPSC keeps asking new corners.</p>
+    {cv.sections.map((sec) => <>
+      <h3>{sec.h}</h3>
+      <ul class="cov">{sec.items.map((x) => { const g = tag(x); return <li><span>{x.t}</span>{g ? <span class="ask">{g}</span> : g === '' ? <span class="ask none">No PYQ here yet</span> : null}</li>; })}</ul>
+    </>)}
+  </>}
+
   <h2>What UPSC asks</h2>
   <p>{t.asks}</p>
 
-  <h2>Prepare these</h2>
+  <h2>{cv ? 'Mains focus' : 'Prepare these'}</h2>
   <ul>{t.checklist.map((x) => <li>{x}</li>)}</ul>
 
   <h2>Answer writing</h2>
@@ -77,8 +105,14 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <h2>Syllabus lines covered</h2>
   <ul>{syl.map((s) => <li><a href={u(`/syllabus/${s.id.toLowerCase()}/`)}>{s.id}</a> — {s.text}</li>)}</ul>
 
-  <h2>All {t.count} PYQs, newest first</h2>
-  <ol class="qs">{t.questions.map((q) => <QuestionItem q={q} />)}</ol>
+  {preQs.length > 0 && <>
+    <h2 id="prelims">{preQs.length} Prelims PYQs, newest first</h2>
+    <ol class="qs">{preQs.map((q, i) => <PrelimsItem q={q} n={i + 1} showYear />)}</ol>
+  </>}
+
+  <h2 id="mains">{t.count ? `All ${t.count} Mains PYQs, newest first` : 'Mains PYQs'}</h2>
+  {t.count ? <ol class="qs">{t.questions.map((q) => <QuestionItem q={q} />)}</ol>
+    : <p>Mains has not asked about this theme on its own yet. Its ideas come up inside the questions of the themes that follow it on the roadmap.</p>}
 
   <nav class="panel rmnext" aria-label="Roadmap">
     <p class="eyebrow">Next on the roadmap</p>
@@ -93,6 +127,15 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
     .rmnext { margin-top: 28px; display: grid; gap: 6px; } .rmnext p { margin: 0; }
     .rmnext > a:first-of-type { font-weight: 700; font-size: 1.05rem; }
     .small { font-size: .86rem; }
+    .order { list-style: none; counter-reset: o; padding: 0; margin: 0 0 8px; display: grid; gap: 8px; }
+    .order li { counter-increment: o; position: relative; padding: 10px 14px 10px 50px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); display: grid; gap: 2px; }
+    .order li::before { content: counter(o); position: absolute; left: 12px; top: 10px; width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--omr); color: var(--omr); display: grid; place-items: center; font-weight: 800; font-size: .82rem; }
+    .order b { font-size: .98rem; } .order span { color: var(--muted); font-size: .92rem; line-height: 1.45; }
+    .cov { list-style: none; padding: 0; margin: 0 0 6px; display: grid; gap: 0; }
+    .cov li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    .cov li > span:first-child { flex: 1 1 280px; min-width: 0; }
+    .ask { flex: none; font-size: .76rem; font-weight: 700; border-radius: 999px; padding: 2px 9px; background: var(--omr-soft); color: var(--omr); white-space: nowrap; }
+    .ask.none { background: transparent; color: var(--muted); border: 1px dashed var(--line); font-weight: 600; }
   </style>
   <script is:inline>
     (function () {

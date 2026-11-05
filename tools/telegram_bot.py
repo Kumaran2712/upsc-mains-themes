@@ -86,7 +86,10 @@ def render(s):
     msgs += pack(mparts)
 
     t = s['theme']
-    tparts = [f'<b>Theme of the day</b> · roadmap step {t["step"]} of {meta["T"]}\n<b>{esc(t["title"])}</b> ({t["count"]} PYQs)\n',
+    def pyqs(t):
+        parts = [f'{t["count"]} Mains' if t.get('count') else '', f'{t["pcount"]} Prelims' if t.get('pcount') else '']
+        return ' · '.join(p for p in parts if p) + ' PYQs'
+    tparts = [f'<b>Theme of the day</b> · roadmap step {t["step"]} of {meta["T"]}\n<b>{esc(t["title"])}</b> ({pyqs(t)})\n',
               f'<b>What UPSC asks</b>\n{esc(t["asks"])}\n',
               '<b>What to cover</b>\n' + '\n'.join('• ' + esc(c) for c in t['checklist']) + '\n',
               '<b>Writing the answer</b>\n' + '\n'.join('• ' + esc(c) for c in t['answer']) + '\n',

@@ -39,6 +39,6 @@ export const preBySubject = (s: string) => prelims.filter((q) => q.subject === s
 // ---- Theme of the day: themes in roadmap order, one a day ----
 export const themeOfDay = (i: number) => {
   const t = roadmap[i];
-  return { n: t.n, step: t.step, title: t.title, url: themeUrl(t), papers: t.papers, count: t.count, asks: t.asks, checklist: t.checklist, answer: t.answer };
+  return { n: t.n, step: t.step, title: t.title, url: themeUrl(t), papers: t.papers, count: t.count, pcount: t.pre.length, asks: t.asks, checklist: t.checklist, answer: t.answer };
 };
 export const dailyMeta = () => ({ epoch: daily.epoch, P: daily.prelims.length, M: daily.mains.length, T: roadmap.length, officialKeyUpto: OFFICIAL_KEY_UPTO });
