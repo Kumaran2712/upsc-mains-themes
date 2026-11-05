@@ -5,7 +5,7 @@
    "key": "harappan",
    "slug": "harappan-civilisation-early-urbanism-and-civilisational-continuity",
    "title": "Harappan civilisation, early urbanism & civilisational continuity",
-   "step": 86,
+   "step": 59,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -30,8 +30,7 @@
     57
    ],
    "prereqs": [
-    26,
-    55
+    26
    ],
    "related": [
     26,
@@ -123,7 +122,7 @@
    "key": "vedic",
    "slug": "vedic-society-and-its-legacy-in-today-s-society",
    "title": "Vedic society & its legacy in today's society",
-   "step": 87,
+   "step": 60,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -147,8 +146,9 @@
     50
    ],
    "prereqs": [
+    50,
     49,
-    50
+    1
    ],
    "related": [
     49,
@@ -200,7 +200,7 @@
    "key": "sources",
    "slug": "sources-of-history",
    "title": "Sources of history: inscriptions, rock-cut caves, travellers, Sangam & Persian texts",
-   "step": 88,
+   "step": 66,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -222,7 +222,9 @@
     "GS1-L1"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    8
+   ],
    "related": [],
    "directives": [
     [
@@ -314,7 +316,7 @@
    "key": "buddhistart",
    "slug": "buddhist-art-and-sculpture-schools-stupa-gandhara-pala",
    "title": "Buddhist art & sculpture schools: stupa, Gandhara, Pala",
-   "step": 90,
+   "step": 61,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -338,7 +340,7 @@
     6
    ],
    "prereqs": [
-    6
+    2
    ],
    "related": [
     6
@@ -407,7 +409,7 @@
    "key": "temple",
    "slug": "temple-architecture-and-regional-dynasties",
    "title": "Temple architecture & regional dynasties: Pallava, Chola, Chandela, Vijayanagara, Gupta",
-   "step": 91,
+   "step": 63,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -548,7 +550,7 @@
    "key": "sculpture",
    "slug": "sculpture-painting-motifs-coins-and-safeguarding-art-heritage",
    "title": "Sculpture, painting, motifs, coins & safeguarding art heritage",
-   "step": 89,
+   "step": 62,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -570,7 +572,9 @@
     "GS1-L1"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    4
+   ],
    "related": [],
    "directives": [
     [
@@ -670,7 +674,7 @@
    "key": "bhakti",
    "slug": "bhakti-sufi-movements-and-religious-syncretism",
    "title": "Bhakti–Sufi movements & religious syncretism",
-   "step": 92,
+   "step": 64,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -695,7 +699,7 @@
     61
    ],
    "prereqs": [
-    61
+    5
    ],
    "related": [
     61
@@ -782,7 +786,7 @@
    "key": "patronage",
    "slug": "patronage-learning-centres-and-medieval-technology",
    "title": "Patronage, learning centres & medieval technology",
-   "step": 93,
+   "step": 65,
    "stage": 2,
    "cluster": "Heritage, Art & Culture",
    "clusterSlug": "heritage-art-and-culture",
@@ -805,7 +809,9 @@
    "links": [
     111
    ],
-   "prereqs": [],
+   "prereqs": [
+    7
+   ],
    "related": [
     111
    ],
@@ -867,7 +873,7 @@
    "key": "brexpansion",
    "slug": "british-expansion",
    "title": "British expansion: fragmented polity, Panipat, why the Company won, Dalhousie",
-   "step": 18,
+   "step": 16,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -963,7 +969,7 @@
    "key": "coloneco",
    "slug": "colonial-economy",
    "title": "Colonial economy: drain, deindustrialisation, famines, economic policy",
-   "step": 19,
+   "step": 18,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -988,7 +994,7 @@
     23
    ],
    "prereqs": [
-    23
+    11
    ],
    "related": [
     23
@@ -1074,7 +1080,7 @@
    "key": "colonadmin",
    "slug": "colonial-administration-and-education-policy-macaulay-curzon",
    "title": "Colonial administration & education policy: Macaulay, Curzon",
-   "step": 21,
+   "step": 17,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1099,7 +1105,7 @@
     14
    ],
    "prereqs": [
-    14
+    9
    ],
    "related": [
     14,
@@ -1156,7 +1162,7 @@
    "key": "revolt",
    "slug": "1857-and-tribal-peasant-resistance-to-colonial-rule",
    "title": "1857 and tribal–peasant resistance to colonial rule",
-   "step": 30,
+   "step": 19,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1180,7 +1186,7 @@
     51
    ],
    "prereqs": [
-    51
+    10
    ],
    "related": [
     51
@@ -1233,7 +1239,7 @@
    "key": "reform",
    "slug": "socio-religious-reform-brahmo-samaj-young-bengal-phule",
    "title": "Socio-religious reform: Brahmo Samaj, Young Bengal, Phule",
-   "step": 27,
+   "step": 20,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1257,7 +1263,7 @@
     64
    ],
    "prereqs": [
-    50
+    12
    ],
    "related": [
     50,
@@ -1313,7 +1319,7 @@
    "key": "earlynat",
    "slug": "early-nationalism-moderates-and-foreign-contributors",
    "title": "Early nationalism: Moderates & foreign contributors",
-   "step": 20,
+   "step": 21,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1334,7 +1340,9 @@
     "GS1-L3"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    13
+   ],
    "related": [],
    "directives": [
     [
@@ -1404,7 +1412,7 @@
    "key": "gandhi",
    "slug": "gandhi",
    "title": "Gandhi: mass movements, constructive programme, ideas & contemporaries",
-   "step": 28,
+   "step": 22,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1432,7 +1440,7 @@
     111
    ],
    "prereqs": [
-    50
+    14
    ],
    "related": [
     50,
@@ -1553,7 +1561,7 @@
    "key": "ideologies",
    "slug": "widening-of-the-national-movement",
    "title": "Widening of the national movement: ideological strands & global influences",
-   "step": 39,
+   "step": 23,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1577,8 +1585,7 @@
     24
    ],
    "prereqs": [
-    25,
-    24
+    15
    ],
    "related": [
     24,
@@ -1646,7 +1653,7 @@
    "key": "finalphase",
    "slug": "final-phase-quit-india-naval-mutiny-maulana-azad",
    "title": "Final phase: Quit India, Naval mutiny, Maulana Azad",
-   "step": 22,
+   "step": 24,
    "stage": 1,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1667,7 +1674,9 @@
     "GS1-L3"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    16
+   ],
    "related": [],
    "directives": [
     [
@@ -1905,7 +1914,7 @@
    "key": "statesreorg",
    "slug": "integration-and-reorganisation-of-states",
    "title": "Integration & reorganisation of states: princely states, linguistic states, new & smaller states",
-   "step": 55,
+   "step": 56,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -1935,7 +1944,7 @@
    ],
    "prereqs": [
     87,
-    92
+    17
    ],
    "related": [
     63,
@@ -2043,7 +2052,7 @@
    "key": "consolidation",
    "slug": "post-independence-consolidation",
    "title": "Post-independence consolidation: polity, economy, Jai Jawan Jai Kisan",
-   "step": 56,
+   "step": 57,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -2066,7 +2075,9 @@
     127,
     137
    ],
-   "prereqs": [],
+   "prereqs": [
+    19
+   ],
    "related": [
     127,
     137
@@ -2120,7 +2131,7 @@
    "key": "earlyfp",
    "slug": "early-foreign-policy-and-wars",
    "title": "Early foreign policy & wars: Tashkent, Bangladesh 1971, Gujral doctrine",
-   "step": 57,
+   "step": 58,
    "stage": 2,
    "cluster": "Modern India & Freedom Struggle",
    "clusterSlug": "modern-india-and-freedom-struggle",
@@ -2143,7 +2154,9 @@
     115,
     113
    ],
-   "prereqs": [],
+   "prereqs": [
+    20
+   ],
    "related": [
     113,
     115
@@ -2219,7 +2232,7 @@
    "key": "revolutions",
    "slug": "american-and-french-revolutions-and-their-legacy",
    "title": "American & French Revolutions and their legacy",
-   "step": 16,
+   "step": 25,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2291,7 +2304,7 @@
    "key": "industrialrev",
    "slug": "industrial-revolution-and-its-spread",
    "title": "Industrial Revolution and its spread: England, Japan, railways",
-   "step": 17,
+   "step": 26,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2314,7 +2327,9 @@
    "links": [
     10
    ],
-   "prereqs": [],
+   "prereqs": [
+    22
+   ],
    "related": [
     10
    ],
@@ -2392,7 +2407,7 @@
    "key": "worldwars",
    "slug": "world-wars-interwar-crisis-great-depression-and-ideologies",
    "title": "World Wars, interwar crisis, Great Depression & ideologies",
-   "step": 38,
+   "step": 27,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2417,7 +2432,7 @@
     134
    ],
    "prereqs": [
-    134
+    23
    ],
    "related": [
     134
@@ -2504,7 +2519,7 @@
    "key": "decolon",
    "slug": "colonisation-and-decolonisation-africa-malaya-suez",
    "title": "Colonisation & decolonisation: Africa, Malaya, Suez",
-   "step": 23,
+   "step": 28,
    "stage": 1,
    "cluster": "World History",
    "clusterSlug": "world-history",
@@ -2528,7 +2543,9 @@
    "links": [
     120
    ],
-   "prereqs": [],
+   "prereqs": [
+    24
+   ],
    "related": [
     120
    ],
@@ -2604,7 +2621,7 @@
    "key": "tectonics",
    "slug": "earth-s-interior-plate-tectonics-mountains-islands-and-landforms",
    "title": "Earth's interior, plate tectonics, mountains, islands & landforms",
-   "step": 33,
+   "step": 34,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2632,9 +2649,7 @@
    "links": [
     29
    ],
-   "prereqs": [
-    29
-   ],
+   "prereqs": [],
    "related": [
     29,
     31,
@@ -2795,7 +2810,7 @@
    "key": "landslides",
    "slug": "landslides-in-the-himalayas-and-western-ghats",
    "title": "Landslides in the Himalayas & Western Ghats",
-   "step": 69,
+   "step": 80,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2821,7 +2836,7 @@
     43
    ],
    "prereqs": [
-    160
+    28
    ],
    "related": [
     43,
@@ -2916,7 +2931,7 @@
    "key": "quakes",
    "slug": "earthquakes-tsunamis-and-volcanoes-science-to-preparedness",
    "title": "Earthquakes, tsunamis & volcanoes: science to preparedness",
-   "step": 70,
+   "step": 79,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -2945,7 +2960,7 @@
    ],
    "prereqs": [
     26,
-    160
+    33
    ],
    "related": [
     26,
@@ -3055,7 +3070,7 @@
    "key": "atmosphere",
    "slug": "atmosphere-air-masses-winds-inversion-deserts-and-auroras",
    "title": "Atmosphere, air masses, winds, inversion, deserts & auroras",
-   "step": 32,
+   "step": 35,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3081,7 +3096,9 @@
    "links": [
     58
    ],
-   "prereqs": [],
+   "prereqs": [
+    26
+   ],
    "related": [
     55,
     58
@@ -3192,7 +3209,7 @@
    "key": "monsoon",
    "slug": "monsoon-el-ni-o-and-drought",
    "title": "Monsoon, El Niño & drought",
-   "step": 34,
+   "step": 36,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3219,7 +3236,9 @@
     160,
     159
    ],
-   "prereqs": [],
+   "prereqs": [
+    29
+   ],
    "related": [
     40,
     46,
@@ -3324,7 +3343,7 @@
    "key": "cyclones",
    "slug": "tropical-cyclones-twisters-and-cyclone-warnings",
    "title": "Tropical cyclones, twisters & cyclone warnings",
-   "step": 71,
+   "step": 81,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3351,7 +3370,7 @@
     159
    ],
    "prereqs": [
-    160
+    27
    ],
    "related": [
     159,
@@ -3445,7 +3464,7 @@
    "key": "cloudburst",
    "slug": "cloudbursts-and-extreme-rainfall",
    "title": "Cloudbursts & extreme rainfall",
-   "step": 72,
+   "step": 82,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3472,7 +3491,7 @@
     43
    ],
    "prereqs": [
-    160
+    31
    ],
    "related": [
     43,
@@ -3540,7 +3559,7 @@
    "key": "oceans",
    "slug": "oceans-and-marine-environment",
    "title": "Oceans & marine environment: currents, salinity, dead zones, oil pollution, marine resources",
-   "step": 35,
+   "step": 37,
    "stage": 1,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3568,7 +3587,9 @@
    "links": [
     34
    ],
-   "prereqs": [],
+   "prereqs": [
+    30
+   ],
    "related": [
     34
    ],
@@ -3680,7 +3701,7 @@
    "key": "coastal",
    "slug": "coastal-zone-resources-erosion-and-hazard-preparedness",
    "title": "Coastal zone: resources, erosion & hazard preparedness",
-   "step": 73,
+   "step": 83,
    "stage": 2,
    "cluster": "Physical Geography & Hazards",
    "clusterSlug": "physical-geography-and-hazards",
@@ -3705,7 +3726,7 @@
     145
    ],
    "prereqs": [
-    160
+    32
    ],
    "related": [
     145,
@@ -3766,7 +3787,7 @@
    "key": "mining",
    "slug": "minerals-and-mining-resource-vs-environment",
    "title": "Minerals & mining: resource vs environment",
-   "step": 136,
+   "step": 105,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -3793,7 +3814,7 @@
     158
    ],
    "prereqs": [
-    158
+    40
    ],
    "related": [
     153,
@@ -3888,7 +3909,7 @@
    "key": "oil",
    "slug": "oil-and-gas-global-distribution-shale-refineries",
    "title": "Oil & gas: global distribution, shale, refineries",
-   "step": 94,
+   "step": 106,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -3912,7 +3933,9 @@
    "links": [
     154
    ],
-   "prereqs": [],
+   "prereqs": [
+    35
+   ],
    "related": [
     118,
     154
@@ -3994,7 +4017,7 @@
    "key": "polar",
    "slug": "polar-regions-arctic-resources-tundra-and-india-s-interest",
    "title": "Polar regions: Arctic resources, tundra & India's interest",
-   "step": 75,
+   "step": 86,
    "stage": 2,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4087,7 +4110,7 @@
    "key": "glaciers",
    "slug": "glaciers-cryosphere-and-sea-level-rise",
    "title": "Glaciers, cryosphere & sea-level rise",
-   "step": 74,
+   "step": 85,
    "stage": 2,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4116,7 +4139,8 @@
     44
    ],
    "prereqs": [
-    34
+    34,
+    160
    ],
    "related": [
     34,
@@ -4222,7 +4246,7 @@
    "key": "industryloc",
    "slug": "location-of-industries",
    "title": "Location of industries: steel, refineries, sugar, textiles, tea, rubber, corridors",
-   "step": 95,
+   "step": 107,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4250,7 +4274,8 @@
    ],
    "prereqs": [
     129,
-    135
+    135,
+    36
    ],
    "related": [
     129,
@@ -4377,7 +4402,7 @@
    "key": "landdeg",
    "slug": "desertification-land-degradation-and-land-use-change",
    "title": "Desertification, land degradation & land-use change",
-   "step": 129,
+   "step": 104,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4404,7 +4429,8 @@
    ],
    "prereqs": [
     55,
-    42
+    42,
+    43
    ],
    "related": [
     42,
@@ -4491,7 +4517,7 @@
    "key": "forests",
    "slug": "forests-natural-vegetation-and-biodiversity",
    "title": "Forests, natural vegetation & biodiversity",
-   "step": 127,
+   "step": 101,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4516,7 +4542,9 @@
    "links": [
     125
    ],
-   "prereqs": [],
+   "prereqs": [
+    47
+   ],
    "related": [
     125
    ],
@@ -4605,7 +4633,7 @@
    "key": "wetlands",
    "slug": "wetlands-and-ramsar-sites",
    "title": "Wetlands & Ramsar sites",
-   "step": 128,
+   "step": 102,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4625,7 +4653,9 @@
     "GS3-L14"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    41
+   ],
    "related": [],
    "directives": [
     [
@@ -4677,7 +4707,7 @@
    "key": "fragile",
    "slug": "fragile-himalayan-ecosystems-tourism-and-infrastructure",
    "title": "Fragile Himalayan ecosystems: tourism & infrastructure",
-   "step": 130,
+   "step": 103,
    "stage": 3,
    "cluster": "Resources & Economic Geography",
    "clusterSlug": "resources-and-economic-geography",
@@ -4703,7 +4733,8 @@
    ],
    "prereqs": [
     160,
-    135
+    135,
+    42
    ],
    "related": [
     135,
@@ -4766,7 +4797,7 @@
    "key": "water",
    "slug": "water-security-scarcity-conservation-and-management",
    "title": "Water security: scarcity, conservation & management",
-   "step": 96,
+   "step": 97,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -4798,7 +4829,8 @@
     45
    ],
    "prereqs": [
-    55
+    55,
+    37
    ],
    "related": [
     45,
@@ -4923,7 +4955,7 @@
    "key": "groundwater",
    "slug": "groundwater-depletion-and-seawater-intrusion",
    "title": "Groundwater depletion & seawater intrusion",
-   "step": 101,
+   "step": 98,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -4949,8 +4981,7 @@
     159
    ],
    "prereqs": [
-    46,
-    137
+    44
    ],
    "related": [
     46,
@@ -5016,7 +5047,7 @@
    "key": "irrigation",
    "slug": "irrigation-and-water-use-efficiency",
    "title": "Irrigation & water-use efficiency",
-   "step": 97,
+   "step": 99,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -5043,7 +5074,8 @@
     44
    ],
    "prereqs": [
-    44
+    44,
+    45
    ],
    "related": [
     44
@@ -5131,7 +5163,7 @@
    "key": "riverlink",
    "slug": "river-interlinking-and-water-disputes",
    "title": "River interlinking & water disputes: inter-state and transboundary",
-   "step": 98,
+   "step": 100,
    "stage": 3,
    "cluster": "Water",
    "clusterSlug": "water",
@@ -5161,7 +5193,8 @@
     115
    ],
    "prereqs": [
-    87
+    87,
+    46
    ],
    "related": [
     87,
@@ -5258,7 +5291,7 @@
    "key": "diversity",
    "slug": "diversity-and-national-unity",
    "title": "Diversity & national unity",
-   "step": 24,
+   "step": 29,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5383,7 +5416,7 @@
    "key": "family",
    "slug": "family-marriage-traditions-and-social-values",
    "title": "Family, marriage, traditions & social values",
-   "step": 25,
+   "step": 32,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5407,7 +5440,9 @@
    "links": [
     2
    ],
-   "prereqs": [],
+   "prereqs": [
+    51
+   ],
    "related": [
     2
    ],
@@ -5489,7 +5524,7 @@
    "key": "caste",
    "slug": "caste-continuity-change-mobility-and-dalit-assertion",
    "title": "Caste: continuity, change, mobility & Dalit assertion",
-   "step": 26,
+   "step": 30,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5516,7 +5551,9 @@
     70,
     55
    ],
-   "prereqs": [],
+   "prereqs": [
+    48
+   ],
    "related": [
     55,
     70
@@ -5627,7 +5664,7 @@
    "key": "tribal",
    "slug": "tribal-identity-rights-and-development",
    "title": "Tribal identity, rights & development",
-   "step": 29,
+   "step": 31,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5655,7 +5692,9 @@
     161,
     158
    ],
-   "prereqs": [],
+   "prereqs": [
+    50
+   ],
    "related": [
     70,
     144,
@@ -5770,7 +5809,7 @@
    "key": "population",
    "slug": "population-and-demographic-transition",
    "title": "Population & demographic transition",
-   "step": 31,
+   "step": 33,
    "stage": 1,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5796,7 +5835,9 @@
     112,
     74
    ],
-   "prereqs": [],
+   "prereqs": [
+    49
+   ],
    "related": [
     74,
     112
@@ -5892,7 +5933,7 @@
    "key": "ageing",
    "slug": "ageing-population-and-elderly-care",
    "title": "Ageing population & elderly care",
-   "step": 67,
+   "step": 75,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -5919,7 +5960,8 @@
     52
    ],
    "prereqs": [
-    52
+    52,
+    60
    ],
    "related": [
     52,
@@ -5988,7 +6030,7 @@
    "key": "migration",
    "slug": "migration-internal-international-and-illegal",
    "title": "Migration: internal, international & illegal",
-   "step": 81,
+   "step": 71,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6081,7 +6123,7 @@
    "key": "urbsoc",
    "slug": "urbanisation-social-problems-segregation-and-urban-poverty",
    "title": "Urbanisation: social problems, segregation & urban poverty",
-   "step": 80,
+   "step": 70,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6106,7 +6148,7 @@
     74
    ],
    "prereqs": [
-    74
+    63
    ],
    "related": [
     57,
@@ -6167,7 +6209,7 @@
    "key": "newurban",
    "slug": "new-urban-economy-it-hubs-tier-2-cities-and-new",
    "title": "New urban economy: IT hubs, tier-2 cities & new middle class",
-   "step": 60,
+   "step": 72,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6191,7 +6233,7 @@
     59
    ],
    "prereqs": [
-    59
+    54
    ],
    "related": [
     59
@@ -6251,7 +6293,7 @@
    "key": "smartcity",
    "slug": "smart-cities-rural-urban-integration-and-urban-transport",
    "title": "Smart cities, rural–urban integration & urban transport",
-   "step": 108,
+   "step": 94,
    "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6280,7 +6322,8 @@
    ],
    "prereqs": [
     92,
-    55
+    55,
+    53
    ],
    "related": [
     55,
@@ -6359,7 +6402,7 @@
    "key": "urbfloods",
    "slug": "urban-floods",
    "title": "Urban floods",
-   "step": 138,
+   "step": 95,
    "stage": 3,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6387,8 +6430,7 @@
    ],
    "prereqs": [
     160,
-    57,
-    42
+    57
    ],
    "related": [
     42,
@@ -6486,7 +6528,7 @@
    "key": "globsoc",
    "slug": "globalisation-and-indian-society-and-culture",
    "title": "Globalisation & Indian society and culture",
-   "step": 59,
+   "step": 73,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6512,7 +6554,8 @@
     48
    ],
    "prereqs": [
-    48
+    48,
+    56
    ],
    "related": [
     48
@@ -6613,7 +6656,7 @@
    "key": "techsoc",
    "slug": "technology-and-social-change",
    "title": "Technology & social change: mobiles, WFH, fast food, crypto, digital education",
-   "step": 78,
+   "step": 74,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6642,8 +6685,7 @@
     131
    ],
    "prereqs": [
-    59,
-    131
+    59
    ],
    "related": [
     59,
@@ -6776,7 +6818,7 @@
    "key": "secularism",
    "slug": "secularism-indian-vs-western-models",
    "title": "Secularism: Indian vs Western models",
-   "step": 61,
+   "step": 67,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6803,7 +6845,7 @@
     97
    ],
    "prereqs": [
-    97
+    52
    ],
    "related": [
     97
@@ -6895,7 +6937,7 @@
    "key": "communalism",
    "slug": "communalism-sect-and-radicalisation",
    "title": "Communalism, sect & radicalisation",
-   "step": 62,
+   "step": 68,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -6923,7 +6965,6 @@
     163
    ],
    "prereqs": [
-    59,
     61
    ],
    "related": [
@@ -7023,7 +7064,7 @@
    "key": "regionalism",
    "slug": "regionalism-and-regional-disparity",
    "title": "Regionalism & regional disparity",
-   "step": 63,
+   "step": 69,
    "stage": 2,
    "cluster": "Indian Society",
    "clusterSlug": "indian-society",
@@ -7050,7 +7091,7 @@
    ],
    "prereqs": [
     87,
-    19
+    62
    ],
    "related": [
     19,
@@ -7135,7 +7176,7 @@
    "key": "womenhist",
    "slug": "women-s-question-in-history",
    "title": "Women's question in history: 19th-century reform & freedom struggle",
-   "step": 58,
+   "step": 76,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7224,7 +7265,7 @@
    "key": "gender",
    "slug": "gender-concepts-patriarchy-and-women-s-social-status",
    "title": "Gender concepts, patriarchy & women's social status",
-   "step": 65,
+   "step": 77,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7252,7 +7293,9 @@
    "links": [
     68
    ],
-   "prereqs": [],
+   "prereqs": [
+    64
+   ],
    "related": [
     68,
     102
@@ -7372,7 +7415,7 @@
    "key": "sexratio",
    "slug": "sex-ratio-and-gender-gaps-across-communities-and-regions",
    "title": "Sex ratio & gender gaps across communities and regions",
-   "step": 66,
+   "step": 78,
    "stage": 2,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7397,7 +7440,8 @@
    ],
    "prereqs": [
     51,
-    52
+    52,
+    65
    ],
    "related": [
     51,
@@ -7485,9 +7529,10 @@
    "prereqs": [
     134,
     128,
-    59,
     54,
-    76
+    59,
+    76,
+    68
    ],
    "related": [
     54,
@@ -7636,8 +7681,9 @@
     78,
     85,
     92,
-    72,
-    103
+    69,
+    103,
+    72
    ],
    "related": [
     72,
@@ -7763,7 +7809,7 @@
    "key": "shg",
    "slug": "shgs-and-microfinance",
    "title": "SHGs & microfinance",
-   "step": 125,
+   "step": 96,
    "stage": 3,
    "cluster": "Women & Gender (cross-paper)",
    "clusterSlug": "women-and-gender-cross-paper",
@@ -7793,9 +7839,9 @@
    ],
    "prereqs": [
     65,
-    132,
+    66,
     74,
-    75
+    132
    ],
    "related": [
     65,
@@ -7913,7 +7959,7 @@
    "key": "affirmative",
    "slug": "affirmative-action-and-welfare-schemes-for-vulnerable-sections",
    "title": "Affirmative action & welfare schemes for vulnerable sections",
-   "step": 116,
+   "step": 130,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -7941,7 +7987,8 @@
    ],
    "prereqs": [
     87,
-    50
+    50,
+    75
    ],
    "related": [
     50,
@@ -8026,7 +8073,7 @@
    "key": "disability",
    "slug": "disability-and-inclusion-rpwd-act-2016",
    "title": "Disability & inclusion: RPwD Act 2016",
-   "step": 117,
+   "step": 132,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8048,7 +8095,9 @@
     "GS2-L12"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    72
+   ],
    "related": [],
    "directives": [
     [
@@ -8115,7 +8164,7 @@
    "key": "commissions",
    "slug": "commissions-for-social-justice-and-human-rights",
    "title": "Commissions for social justice & human rights: NCSC, NCST, NCBC, NHRC",
-   "step": 118,
+   "step": 131,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8249,7 +8298,7 @@
    "key": "children",
    "slug": "children-s-rights-and-child-policy",
    "title": "Children's rights & child policy: NCPCR, National Child Policy",
-   "step": 121,
+   "step": 133,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8272,7 +8321,9 @@
    "links": [
     165
    ],
-   "prereqs": [],
+   "prereqs": [
+    71
+   ],
    "related": [
     165
    ],
@@ -8327,7 +8378,7 @@
    "key": "poverty",
    "slug": "poverty-measurement-causes-and-alleviation",
    "title": "Poverty: measurement, causes & alleviation",
-   "step": 79,
+   "step": 88,
    "stage": 2,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8355,7 +8406,9 @@
     76,
     75
    ],
-   "prereqs": [],
+   "prereqs": [
+    127
+   ],
    "related": [
     75,
     76
@@ -8486,7 +8539,7 @@
    "key": "hunger",
    "slug": "hunger-malnutrition-and-food-security-law",
    "title": "Hunger, malnutrition & food security law: NFSA, Mid-Day Meal, millets",
-   "step": 124,
+   "step": 129,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8514,11 +8567,7 @@
     109,
     123
    ],
-   "prereqs": [
-    138,
-    142,
-    109
-   ],
+   "prereqs": [],
    "related": [
     109,
     123,
@@ -8646,7 +8695,7 @@
    "key": "inclusive",
    "slug": "inclusive-growth-and-human-development",
    "title": "Inclusive growth & human development: HDI/IHDI, social spending, equity, CSR",
-   "step": 107,
+   "step": 108,
    "stage": 3,
    "cluster": "Social Justice & Welfare",
    "clusterSlug": "social-justice-and-welfare",
@@ -8679,8 +8728,9 @@
     132
    ],
    "prereqs": [
+    74,
     132,
-    74
+    135
    ],
    "related": [
     74,
@@ -9437,7 +9487,7 @@
    "key": "envconst",
    "slug": "environment-courts-and-civil-society",
    "title": "Environment, courts & civil society: Art 21, environmental PILs, green NGOs & pressure groups",
-   "step": 132,
+   "step": 138,
    "stage": 3,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -9470,9 +9520,8 @@
    "prereqs": [
     83,
     101,
-    100,
-    103,
-    155
+    155,
+    158
    ],
    "related": [
     83,
@@ -13455,7 +13504,7 @@
    "key": "regulators",
    "slug": "regulatory-and-quasi-judicial-bodies",
    "title": "Regulatory & quasi-judicial bodies: CCI, SEBI–IRDA, tariff authorities",
-   "step": 84,
+   "step": 55,
    "stage": 2,
    "cluster": "Constitution & Polity",
    "clusterSlug": "constitution-and-polity",
@@ -13481,8 +13530,7 @@
     130
    ],
    "prereqs": [
-    101,
-    130
+    101
    ],
    "related": [
     130
@@ -13715,7 +13763,7 @@
    "key": "policy",
    "slug": "policy-design-implementation-and-people-s-participation",
    "title": "Policy design, implementation & people's participation",
-   "step": 115,
+   "step": 119,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -13747,8 +13795,7 @@
    "prereqs": [
     92,
     63,
-    130,
-    109
+    130
    ],
    "related": [
     63,
@@ -13893,7 +13940,7 @@
    "key": "civilsoc",
    "slug": "civil-society-ngos-charitable-trusts-and-donor-agencies",
    "title": "Civil society, NGOs, charitable trusts & donor agencies",
-   "step": 126,
+   "step": 125,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -13923,7 +13970,7 @@
    ],
    "prereqs": [
     102,
-    69
+    104
    ],
    "related": [
     69,
@@ -14048,7 +14095,7 @@
    "key": "anticorrupt",
    "slug": "transparency-accountability-and-anti-corruption",
    "title": "Transparency, accountability & anti-corruption: RTI, whistleblowers, Lokpal, corporate governance",
-   "step": 119,
+   "step": 124,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14076,7 +14123,7 @@
     72
    ],
    "prereqs": [
-    72
+    105
    ],
    "related": [
     72,
@@ -14185,7 +14232,7 @@
    "key": "citizen",
    "slug": "citizens-charter-and-citizen-centric-administration",
    "title": "Citizens' Charter & citizen-centric administration",
-   "step": 120,
+   "step": 123,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14209,7 +14256,7 @@
     104
    ],
    "prereqs": [
-    104
+    107
    ],
    "related": [
     104
@@ -14279,7 +14326,7 @@
    "key": "egov",
    "slug": "e-governance-and-the-digital-divide",
    "title": "E-governance & the digital divide",
-   "step": 110,
+   "step": 121,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14307,7 +14354,8 @@
     131
    ],
    "prereqs": [
-    131
+    131,
+    108
    ],
    "related": [
     107,
@@ -14413,7 +14461,7 @@
    "key": "dbt",
    "slug": "dbt-aadhaar-and-digital-welfare-delivery",
    "title": "DBT, Aadhaar & digital welfare delivery",
-   "step": 111,
+   "step": 122,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14440,7 +14488,6 @@
     106
    ],
    "prereqs": [
-    141,
     106
    ],
    "related": [
@@ -14525,7 +14572,7 @@
    "key": "civilservices",
    "slug": "civil-services-in-a-democracy-ethos-neutrality-reforms",
    "title": "Civil services in a democracy: ethos, neutrality, reforms",
-   "step": 113,
+   "step": 120,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14554,7 +14601,8 @@
     20
    ],
    "prereqs": [
-    20
+    20,
+    102
    ],
    "related": [
     20
@@ -14684,7 +14732,7 @@
    "key": "health",
    "slug": "public-health-system-and-universal-health-coverage",
    "title": "Public health system & universal health coverage",
-   "step": 114,
+   "step": 126,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14710,7 +14758,9 @@
     75,
     110
    ],
-   "prereqs": [],
+   "prereqs": [
+    103
+   ],
    "related": [
     75,
     110
@@ -14814,7 +14864,7 @@
    "key": "pandemic",
    "slug": "pandemics-and-global-health-covid-19-who-vaccines",
    "title": "Pandemics & global health: COVID-19, WHO, vaccines",
-   "step": 161,
+   "step": 162,
    "stage": 4,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14839,7 +14889,6 @@
     124
    ],
    "prereqs": [
-    124,
     149
    ],
    "related": [
@@ -14906,7 +14955,7 @@
    "key": "education",
    "slug": "education-policy-nep-rte-higher-education-exams",
    "title": "Education policy: NEP, RTE, higher education, exams",
-   "step": 122,
+   "step": 127,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -14935,7 +14984,7 @@
     73
    ],
    "prereqs": [
-    73
+    109
    ],
    "related": [
     73,
@@ -15060,7 +15109,7 @@
    "key": "skills",
    "slug": "skills-hrd-and-the-demographic-dividend",
    "title": "Skills, HRD & the demographic dividend",
-   "step": 123,
+   "step": 128,
    "stage": 3,
    "cluster": "Governance",
    "clusterSlug": "governance",
@@ -15208,7 +15257,7 @@
    "key": "pakistan",
    "slug": "pakistan-and-afghanistan",
    "title": "Pakistan & Afghanistan: terror, distrust, soft power, surgical strikes, ISAF withdrawal",
-   "step": 152,
+   "step": 147,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -15234,7 +15283,7 @@
     119
    ],
    "prereqs": [
-    119
+    115
    ],
    "related": [
     119,
@@ -15305,7 +15354,7 @@
    "key": "china",
    "slug": "china-bri-cpec-string-of-pearls-and-economic-leverage",
    "title": "China: BRI, CPEC, String of Pearls & economic leverage",
-   "step": 147,
+   "step": 148,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -15333,7 +15382,8 @@
     115
    ],
    "prereqs": [
-    115
+    115,
+    113
    ],
    "related": [
     115,
@@ -15560,7 +15610,7 @@
    "key": "indopacific",
    "slug": "indo-pacific-quad-aukus-and-sea-lanes",
    "title": "Indo-Pacific, Quad, AUKUS & sea lanes: straits, South China Sea, trade shift",
-   "step": 148,
+   "step": 152,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -15592,7 +15642,8 @@
     114
    ],
    "prereqs": [
-    114
+    114,
+    120
    ],
    "related": [
     114,
@@ -15731,7 +15782,7 @@
    "key": "greatpower",
    "slug": "great-power-politics",
    "title": "Great-power politics: US–China rivalry, NATO, China+1, Indo-US vs Indo-Russian defence",
-   "step": 149,
+   "step": 153,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -15874,7 +15925,7 @@
     154
    ],
    "prereqs": [
-    154
+    119
    ],
    "related": [
     154
@@ -15960,7 +16011,7 @@
    "key": "centralasia",
    "slug": "central-asia-connectivity-and-strategic-presence",
    "title": "Central Asia: connectivity & strategic presence",
-   "step": 151,
+   "step": 149,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -15980,7 +16031,9 @@
     "GS2-L18"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    114
+   ],
    "related": [],
    "directives": [
     [
@@ -16040,7 +16093,7 @@
    "key": "africa",
    "slug": "india-and-africa-resources-digital-partnership-influence",
    "title": "India & Africa: resources, digital partnership, influence",
-   "step": 153,
+   "step": 151,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -16066,7 +16119,8 @@
     35
    ],
    "prereqs": [
-    35
+    35,
+    118
    ],
    "related": [
     35
@@ -16146,7 +16200,7 @@
    "key": "groupings",
    "slug": "regional-and-multilateral-groupings",
    "title": "Regional & multilateral groupings: SCO, BRICS, NDB/AIIB, BIMSTEC, SAARC",
-   "step": 156,
+   "step": 154,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -16174,7 +16228,7 @@
    ],
    "prereqs": [
     113,
-    124
+    117
    ],
    "related": [
     113,
@@ -16287,7 +16341,7 @@
    "key": "diaspora",
    "slug": "indian-diaspora-from-indentured-labour-to-strategic-asset",
    "title": "Indian diaspora: from indentured labour to strategic asset",
-   "step": 154,
+   "step": 157,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -16314,7 +16368,8 @@
     54
    ],
    "prereqs": [
-    54
+    54,
+    123
    ],
    "related": [
     54
@@ -16412,7 +16467,7 @@
    "key": "wto",
    "slug": "wto-trade-wars-and-protectionism",
    "title": "WTO, trade wars & protectionism",
-   "step": 157,
+   "step": 156,
    "stage": 4,
    "cluster": "International Relations",
    "clusterSlug": "international-relations",
@@ -16443,7 +16498,8 @@
    "prereqs": [
     132,
     141,
-    75
+    75,
+    124
    ],
    "related": [
     75,
@@ -16605,7 +16661,8 @@
     117
    ],
    "prereqs": [
-    117
+    117,
+    121
    ],
    "related": [
     117
@@ -16860,7 +16917,7 @@
    "key": "growth",
    "slug": "growth",
    "title": "Growth: GDP measurement, potential GDP, savings, structure of growth",
-   "step": 36,
+   "step": 38,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -16969,7 +17026,7 @@
    "key": "planning",
    "slug": "planning-nehruvian-planning-soviet-influence-niti-aayog",
    "title": "Planning: Nehruvian planning, Soviet influence, NITI Aayog",
-   "step": 64,
+   "step": 87,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -16997,8 +17054,7 @@
    ],
    "prereqs": [
     24,
-    20,
-    63
+    128
    ],
    "related": [
     20,
@@ -17096,7 +17152,9 @@
     112,
     129
    ],
-   "prereqs": [],
+   "prereqs": [
+    134
+   ],
    "related": [
     112,
     129
@@ -17184,7 +17242,7 @@
    "key": "manufacturing",
    "slug": "manufacturing-msmes-startups-and-industrial-policy",
    "title": "Manufacturing, MSMEs, startups & industrial policy: PLI, SEZs, labour codes",
-   "step": 82,
+   "step": 91,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17212,7 +17270,8 @@
     130
    ],
    "prereqs": [
-    128
+    128,
+    131
    ],
    "related": [
     128,
@@ -17332,7 +17391,7 @@
    "key": "fdi",
    "slug": "liberalisation-and-fdi-retail-defence-indian-firms-vs-mncs",
    "title": "Liberalisation & FDI: retail, defence, Indian firms vs MNCs",
-   "step": 83,
+   "step": 92,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17443,7 +17502,7 @@
    "key": "digieco",
    "slug": "digital-economy-and-digital-currency-digitalisation-cbdc",
    "title": "Digital economy & digital currency: digitalisation, CBDC",
-   "step": 77,
+   "step": 90,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17526,7 +17585,7 @@
    "key": "fininc",
    "slug": "financial-inclusion-and-rural-credit",
    "title": "Financial inclusion & rural credit",
-   "step": 76,
+   "step": 89,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17551,7 +17610,9 @@
     69,
     107
    ],
-   "prereqs": [],
+   "prereqs": [
+    74
+   ],
    "related": [
     69,
     76,
@@ -17625,7 +17686,7 @@
    "key": "inflation",
    "slug": "inflation-monetary-policy-and-the-poor",
    "title": "Inflation, monetary policy & the poor",
-   "step": 40,
+   "step": 39,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17650,7 +17711,9 @@
     139,
     74
    ],
-   "prereqs": [],
+   "prereqs": [
+    126
+   ],
    "related": [
     74,
     139,
@@ -17706,7 +17769,7 @@
    "key": "budget",
    "slug": "budgeting-and-fiscal-policy",
    "title": "Budgeting & fiscal policy: capital vs revenue, FRBM, tax expenditure, budgets",
-   "step": 37,
+   "step": 40,
    "stage": 1,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17730,7 +17793,9 @@
    "links": [
     91
    ],
-   "prereqs": [],
+   "prereqs": [
+    133
+   ],
    "related": [
     91
    ],
@@ -17835,7 +17900,7 @@
    "key": "infra",
    "slug": "infrastructure-and-investment-models",
    "title": "Infrastructure & investment models: PPP, Gati Shakti, concession agreements",
-   "step": 85,
+   "step": 93,
    "stage": 2,
    "cluster": "Indian Economy",
    "clusterSlug": "indian-economy",
@@ -17864,7 +17929,8 @@
     134
    ],
    "prereqs": [
-    134
+    134,
+    130
    ],
    "related": [
     134
@@ -18010,7 +18076,7 @@
    ],
    "prereqs": [
     135,
-    57
+    76
    ],
    "related": [
     57,
@@ -18090,7 +18156,7 @@
    "key": "greenrev",
    "slug": "green-revolution-and-food-self-sufficiency",
    "title": "Green Revolution & food self-sufficiency: rice–wheat system, technology missions",
-   "step": 100,
+   "step": 112,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18119,7 +18185,8 @@
    ],
    "prereqs": [
     63,
-    138
+    138,
+    144
    ],
    "related": [
     45,
@@ -18229,7 +18296,7 @@
    "key": "cropping",
    "slug": "cropping-patterns-and-crop-diversification",
    "title": "Cropping patterns & crop diversification: horticulture, pulses, millets",
-   "step": 99,
+   "step": 110,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18387,7 +18454,7 @@
    "key": "agrimarket",
    "slug": "agricultural-marketing-and-supply-chains-apmc-intermediaries",
    "title": "Agricultural marketing & supply chains: APMC, intermediaries",
-   "step": 102,
+   "step": 115,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18415,7 +18482,9 @@
     143,
     140
    ],
-   "prereqs": [],
+   "prereqs": [
+    142
+   ],
    "related": [
     140,
     143
@@ -18518,7 +18587,7 @@
    "key": "agritech",
    "slug": "technology-in-agriculture",
    "title": "Technology in agriculture: e-technology, Digital India, nano, satellites",
-   "step": 103,
+   "step": 117,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18550,7 +18619,8 @@
     146
    ],
    "prereqs": [
-    139
+    139,
+    143
    ],
    "related": [
     139,
@@ -18640,7 +18710,7 @@
    "key": "subsidies",
    "slug": "farm-subsidies-msp-and-crop-insurance-incl-wto-agreement",
    "title": "Farm subsidies, MSP & crop insurance (incl. WTO Agreement on Agriculture)",
-   "step": 104,
+   "step": 113,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18668,7 +18738,8 @@
     138
    ],
    "prereqs": [
-    138
+    138,
+    137
    ],
    "related": [
     123,
@@ -18776,7 +18847,7 @@
    "key": "pds",
    "slug": "pds-and-buffer-stocks",
    "title": "PDS & buffer stocks",
-   "step": 112,
+   "step": 114,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -18800,7 +18871,7 @@
     107
    ],
    "prereqs": [
-    107
+    141
    ],
    "related": [
     75,
@@ -18856,7 +18927,7 @@
    "key": "foodproc",
    "slug": "food-processing-industry",
    "title": "Food processing industry",
-   "step": 105,
+   "step": 116,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -19004,7 +19075,7 @@
    "key": "landreform",
    "slug": "land-reforms-tenancy-and-land-acquisition",
    "title": "Land reforms, tenancy & land acquisition: from Bhoodan to the 2013 Act",
-   "step": 137,
+   "step": 111,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -19036,7 +19107,7 @@
    "prereqs": [
     51,
     20,
-    158
+    138
    ],
    "related": [
     20,
@@ -19171,7 +19242,7 @@
    "key": "allied",
    "slug": "allied-and-sustainable-farming",
    "title": "Allied & sustainable farming: livestock, fisheries, integrated & organic farming",
-   "step": 106,
+   "step": 118,
    "stage": 3,
    "cluster": "Agriculture & Food",
    "clusterSlug": "agriculture-and-food",
@@ -19194,7 +19265,9 @@
     "GS3-L7"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    140
+   ],
    "related": [],
    "directives": [
     [
@@ -19270,7 +19343,7 @@
    "key": "space",
    "slug": "space-and-geospatial-technology",
    "title": "Space & geospatial technology: Chandrayaan, JWST, NavIC, asteroids, GIS",
-   "step": 158,
+   "step": 159,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -19298,7 +19371,9 @@
     "GS3-L13"
    ],
    "links": [],
-   "prereqs": [],
+   "prereqs": [
+    152
+   ],
    "related": [],
    "directives": [
     [
@@ -19438,7 +19513,7 @@
    "key": "aitech",
    "slug": "ai-semiconductors-robotics-and-emerging-digital-tech",
    "title": "AI, semiconductors, robotics & emerging digital tech",
-   "step": 162,
+   "step": 163,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -19465,7 +19540,8 @@
    ],
    "prereqs": [
     78,
-    149
+    149,
+    110
    ],
    "related": [
     78,
@@ -19563,7 +19639,7 @@
    "key": "biotech",
    "slug": "biotechnology-applications-biopharma-microbes-for-fuel",
    "title": "Biotechnology: applications, biopharma, microbes for fuel",
-   "step": 159,
+   "step": 160,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -19587,7 +19663,7 @@
     154
    ],
    "prereqs": [
-    154
+    146
    ],
    "related": [
     154
@@ -19653,7 +19729,7 @@
    "key": "healthtech",
    "slug": "health-technology-and-pharma",
    "title": "Health technology & pharma: AMR, FDCs, stem cells, nanomedicine",
-   "step": 160,
+   "step": 161,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -19679,7 +19755,8 @@
     109
    ],
    "prereqs": [
-    109
+    109,
+    148
    ],
    "related": [
     109
@@ -19772,7 +19849,7 @@
    "key": "ipr",
    "slug": "intellectual-property-rights",
    "title": "Intellectual property rights: patents, 3(d), TKDL, life forms",
-   "step": 163,
+   "step": 164,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -19797,7 +19874,7 @@
     123
    ],
    "prereqs": [
-    123
+    147
    ],
    "related": [
     123
@@ -19998,7 +20075,7 @@
    "key": "sciday",
    "slug": "science-in-everyday-life-and-indian-scientific-achievement",
    "title": "Science in everyday life & Indian scientific achievement",
-   "step": 164,
+   "step": 158,
    "stage": 4,
    "cluster": "Science & Technology",
    "clusterSlug": "science-and-technology",
@@ -20407,7 +20484,7 @@
    "key": "airpoll",
    "slug": "air-pollution-smog-who-guidelines-ncap",
    "title": "Air pollution: smog, WHO guidelines, NCAP",
-   "step": 131,
+   "step": 134,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -20523,7 +20600,7 @@
    "key": "riverpoll",
    "slug": "river-pollution-and-ganga-cleaning",
    "title": "River pollution & Ganga cleaning",
-   "step": 133,
+   "step": 135,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -20547,7 +20624,7 @@
     44
    ],
    "prereqs": [
-    44
+    155
    ],
    "related": [
     44
@@ -20612,7 +20689,7 @@
    "key": "waste",
    "slug": "solid-and-hazardous-waste-management",
    "title": "Solid & hazardous waste management",
-   "step": 134,
+   "step": 136,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -20635,7 +20712,8 @@
     92
    ],
    "prereqs": [
-    92
+    92,
+    156
    ],
    "related": [
     92
@@ -20690,7 +20768,7 @@
    "key": "eia",
    "slug": "environmental-impact-assessment-and-project-displacement",
    "title": "Environmental Impact Assessment & project displacement",
-   "step": 135,
+   "step": 137,
    "stage": 3,
    "cluster": "Energy & Environment",
    "clusterSlug": "energy-and-environment",
@@ -20717,7 +20795,7 @@
    ],
    "prereqs": [
     51,
-    80
+    157
    ],
    "related": [
     51,
@@ -20825,7 +20903,8 @@
    ],
    "prereqs": [
     38,
-    137
+    137,
+    80
    ],
    "related": [
     38,
@@ -20876,7 +20955,7 @@
    "key": "dmframe",
    "slug": "disaster-management-frameworks",
    "title": "Disaster management frameworks: DM Act, Sendai, resilience, community, dam safety",
-   "step": 68,
+   "step": 84,
    "stage": 2,
    "cluster": "Disaster Management",
    "clusterSlug": "disaster-management",
@@ -20903,7 +20982,10 @@
     28,
     58
    ],
-   "prereqs": [],
+   "prereqs": [
+    28,
+    34
+   ],
    "related": [
     28,
     58
@@ -21172,7 +21254,8 @@
     89
    ],
    "prereqs": [
-    89
+    89,
+    161
    ],
    "related": [
     89
@@ -21222,7 +21305,7 @@
    "key": "terror",
    "slug": "terrorism-and-external-state-non-state-actors",
    "title": "Terrorism & external state/non-state actors",
-   "step": 171,
+   "step": 167,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -21252,7 +21335,7 @@
    ],
    "prereqs": [
     124,
-    167
+    162
    ],
    "related": [
     124,
@@ -21375,7 +21458,7 @@
    "key": "terrorfin",
    "slug": "terror-financing-and-money-laundering-fatf-nmft-pmla",
    "title": "Terror financing & money laundering: FATF, NMFT, PMLA",
-   "step": 172,
+   "step": 168,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -21482,7 +21565,7 @@
    "key": "cyber",
    "slug": "cyber-security-and-cyber-warfare",
    "title": "Cyber security & cyber warfare",
-   "step": 168,
+   "step": 172,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -21508,7 +21591,9 @@
    "links": [
     166
    ],
-   "prereqs": [],
+   "prereqs": [
+    170
+   ],
    "related": [
     166
    ],
@@ -21628,7 +21713,7 @@
    "key": "dataprot",
    "slug": "data-protection-dpdp-act-2023-srikrishna-committee",
    "title": "Data protection: DPDP Act 2023, Srikrishna Committee",
-   "step": 169,
+   "step": 173,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -21708,7 +21793,7 @@
    "key": "socialmedia",
    "slug": "social-media-disinformation-and-public-order",
    "title": "Social media, disinformation & public order: mob violence, IT Rules",
-   "step": 170,
+   "step": 174,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -21736,7 +21821,8 @@
    ],
    "prereqs": [
     79,
-    62
+    62,
+    166
    ],
    "related": [
     62,
@@ -21833,7 +21919,7 @@
    "key": "border",
    "slug": "border-management",
    "title": "Border management: China & Pakistan borders, BADP, drones, airspace, Ladakh",
-   "step": 174,
+   "step": 170,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -22001,7 +22087,7 @@
    "key": "organised",
    "slug": "organised-crime-and-narco-terrorism",
    "title": "Organised crime & narco-terrorism",
-   "step": 173,
+   "step": 169,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -22099,7 +22185,7 @@
    "key": "maritime",
    "slug": "maritime-and-coastal-security-piracy-imo",
    "title": "Maritime & coastal security: piracy, IMO",
-   "step": 167,
+   "step": 171,
    "stage": 5,
    "cluster": "Internal Security",
    "clusterSlug": "internal-security",
@@ -22127,7 +22213,8 @@
    ],
    "prereqs": [
     34,
-    116
+    116,
+    168
    ],
    "related": [
     34,
@@ -22228,7 +22315,8 @@
    ],
    "prereqs": [
     72,
-    162
+    162,
+    167
    ],
    "related": [
     72,
@@ -22926,31 +23014,31 @@
     94,
     88,
     85,
+    9,
+    11,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
     22,
     23,
-    9,
-    10,
-    14,
-    11,
-    17,
+    24,
     25,
     48,
-    49,
     50,
-    13,
-    15,
     51,
-    12,
+    49,
     52,
-    29,
     26,
+    29,
     30,
     33,
     126,
-    134,
-    24,
-    16,
     133,
+    134,
     128
    ]
   },
@@ -22972,45 +23060,45 @@
     97,
     90,
     101,
+    100,
     19,
     20,
     21,
-    64,
-    59,
-    56,
+    1,
+    2,
+    4,
+    6,
+    5,
+    7,
+    8,
+    3,
     61,
     62,
     63,
-    127,
+    55,
+    54,
+    56,
+    59,
+    60,
+    53,
+    64,
     65,
     66,
-    53,
-    160,
-    27,
     28,
+    27,
     31,
     32,
     34,
+    160,
     38,
     37,
+    127,
+    74,
     132,
     131,
-    60,
-    74,
-    55,
-    54,
     129,
     130,
-    100,
-    135,
-    1,
-    2,
-    3,
-    6,
-    4,
-    5,
-    7,
-    8
+    135
    ]
   },
   {
@@ -23018,51 +23106,51 @@
    "name": "Applied themes",
    "why": "Agriculture, water, governance, welfare, health, education and environment, built on the two stages above.",
    "themes": [
-    36,
-    39,
+    57,
+    58,
+    69,
     44,
+    45,
     46,
     47,
-    138,
-    137,
-    45,
-    139,
-    140,
-    141,
-    143,
-    145,
+    41,
+    42,
+    43,
+    40,
+    35,
+    36,
+    39,
     76,
-    57,
     136,
+    138,
+    144,
+    137,
+    141,
+    142,
+    139,
+    143,
+    140,
+    145,
+    102,
+    108,
     106,
     107,
-    142,
-    108,
-    109,
-    102,
-    70,
-    71,
-    72,
-    104,
     105,
-    73,
+    104,
+    103,
+    109,
     111,
     112,
     75,
-    69,
-    103,
-    41,
-    42,
-    40,
-    43,
+    70,
+    72,
+    71,
+    73,
     155,
-    80,
     156,
     157,
     158,
-    35,
-    144,
-    58
+    80
    ]
   },
   {
@@ -23078,24 +23166,24 @@
     154,
     151,
     115,
+    113,
     114,
+    119,
+    118,
+    120,
     116,
     117,
-    118,
-    119,
-    113,
-    120,
-    122,
-    124,
     121,
+    124,
     123,
+    122,
+    152,
     146,
     148,
     149,
     110,
     147,
-    150,
-    152
+    150
    ]
   },
   {
@@ -23105,14 +23193,14 @@
    "themes": [
     161,
     162,
-    170,
-    165,
-    166,
-    167,
     163,
     164,
     169,
     168,
+    170,
+    165,
+    166,
+    167,
     171
    ]
   }

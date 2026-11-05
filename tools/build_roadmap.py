@@ -39,8 +39,16 @@ TIERS = {
 }
 # Subject chains (tools/polity_pilot.py) fix the study order and tier of their themes.
 sys.path.insert(0, HERE)
-from polity_pilot import CHAIN, TIER as CHAIN_TIER
-in_chain = {k: (c, i) for c, ks in CHAIN.items() for i, k in enumerate(ks)}
+from study_order import CHAINS as CHAIN, TIER_OVERRIDE
+orig_tier = {k: t for t, ks in TIERS.items() for k in ks}
+CHAIN_TIER = {k: TIER_OVERRIDE.get(k, orig_tier.get(k)) for c in CHAIN.values() for k in c}
+in_chain = {}
+for c, ks in CHAIN.items():
+    for i, k in enumerate(ks):
+        if k in in_chain: sys.exit(f"{k} is in two chains: {in_chain[k][0]} and {c}")
+        if CHAIN_TIER[k] is None: sys.exit(f"chain {c}: unknown theme {k}")
+        if i and CHAIN_TIER[k] < CHAIN_TIER[ks[i - 1]]: sys.exit(f"chain {c}: {k} (stage {CHAIN_TIER[k]}) comes after {ks[i-1]} (stage {CHAIN_TIER[ks[i-1]]})")
+        in_chain[k] = (c, i)
 for t in TIERS:
     TIERS[t] = [k for k in TIERS[t] if k not in in_chain]
 for t in sorted(TIERS, reverse=True):
@@ -55,7 +63,10 @@ need_all = {k: (set(M[k]["links"]) | {x for v in M[k]["also"].values() for x in 
 need = {k: {x for x in need_all[k] if tier[x] <= tier[k]} for k in M}
 # Inside a chain, a later theme is never a prerequisite of an earlier one; each theme needs the one before it.
 for k, (c, i) in in_chain.items():
-    need[k] = {x for x in need[k] if not (x in in_chain and in_chain[x][0] == c and in_chain[x][1] > i)}
+    # Inside a stage, subjects are studied as blocks: a link to another subject's theme in the same stage
+    # becomes 'comes back later' rather than a prerequisite.
+    need[k] = {x for x in need[k] if not (x in in_chain and in_chain[x][0] == c and in_chain[x][1] > i)
+               and not (x in in_chain and in_chain[x][0] != c and tier[x] == tier[k])}
     if i:
         need[k].add(CHAIN[c][i - 1])
 upward = [(k, x) for k in M for x in need_all[k] if tier[x] > tier[k]]
