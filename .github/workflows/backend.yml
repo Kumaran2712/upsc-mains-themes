@@ -26,6 +26,7 @@ jobs:
       - name: Build backend container
         run: docker build --tag stage0-backend:ci .
       - name: Start backend container without a provider key
+        id: smoke
         run: docker run --detach --name stage0-backend-smoke -p 127.0.0.1:18787:8787 -e SESSION_SECRET=ci-only-secret-for-container-smoke-test-123456789 -e ALLOWED_ORIGINS=https://upscthemes.live stage0-backend:ci
       - name: Verify container health and learning page
         run: |
@@ -46,8 +47,8 @@ jobs:
           assert.match(await page.text(), /data-live-workspace/);
           JS
       - name: Container diagnostics
-        if: failure()
+        if: failure() && steps.smoke.outcome == 'success'
         run: docker logs stage0-backend-smoke
       - name: Stop test container
-        if: always()
+        if: always() && steps.smoke.outcome == 'success'
         run: docker rm --force stage0-backend-smoke
