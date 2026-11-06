@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { themes, totalQuestions, syllabus, source, u, issueUrl, telegramBot } from '../lib/data';
+const liveTutor = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
 <Base title="About and sources" description="How UPSC Themes was built: sources of the UPSC questions, how themes were formed, known gaps, and how to report an error." crumbs={[{ name: 'About', href: u('/about/') }]}>
   <h1>About UPSC Themes</h1>
@@ -25,5 +26,11 @@ import { themes, totalQuestions, syllabus, source, u, issueUrl, telegramBot } fr
   </>}
   <h2>Privacy</h2>
   <p>This site counts visits and clicks with Umami, which uses no cookies and collects no personal data. Browsers that send "Do Not Track" are not counted.</p>
+  <h3 id="stage0-privacy">Concept Explorer learning data</h3>
+  {liveTutor ? <>
+    <p>The concept catalogue and reusable learning prompts can be read without an account. If you create a learning account, the tutor service stores your username, password and recovery-code hashes, conversations, understanding-check answers and drafts, progress and revisit reminders. A secure HttpOnly session cookie keeps you signed in.</p>
+    <p>When you use the AI tutor, your question and recent conversation context, or your check answer and lesson context, are sent to the configured AI provider for a reply or feedback. Avoid sharing personal information. AI processing follows the provider’s own policies; the app does not promise zero provider retention.</p>
+    <p>You can download your saved learning data or permanently delete your account through “Manage your learning data” on a Concept Explorer page. Deletion removes active account records; existing hosting backups may retain earlier copies until rotated. Application request receipts are retained for seven days and operational rate counters for eight days. Rate limiting uses keyed IP hashes rather than storing raw IP addresses.</p>
+  </> : <p>The current Concept Explorer preview saves its sample conversations and progress in your browser. Its sample replies do not send your input to an AI provider. You can clear this preview data in your browser’s site-storage settings. A separately configured live tutor uses accounts and explains its data handling before sign-in.</p>}
   <p>Daily PYQs on Telegram: when you press Start in <a href={telegramBot}>our Telegram bot</a>, it keeps only your Telegram chat ID, stored encrypted, so it can send you the daily set. It does not keep your name, phone number or messages. Send /stop to unsubscribe and your chat ID is deleted.</p>
 </Base>

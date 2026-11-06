@@ -4,6 +4,12 @@ This milestone is a reviewable UI prototype, not the live AI tutor. Open `/stage
 The homepage and preparation roadmap link to it. Prototype routes use `noindex` and
 are excluded from the sitemap.
 
+The repository also includes an opt-in [backend and live-tutor implementation](stage0-backend.md).
+Without `PUBLIC_STAGE0_API_URL`, the deployed site retains this browser-only
+prototype. Setting that public API address switches Stage 0 to accounts, streamed
+conversations and actual model-backed checks. Provider credentials and a backend
+deployment are required; the switch does not make the existing authored replies live.
+
 ## Review journey
 
 1. Open the dashboard and browse the four subject cards.

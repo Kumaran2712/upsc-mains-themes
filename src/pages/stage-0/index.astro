@@ -4,9 +4,11 @@ import Styles from '../../components/stage0/Styles.astro';
 import SubjectIcon from '../../components/stage0/SubjectIcon.astro';
 import PreviewNotice from '../../components/stage0/PreviewNotice.astro';
 import BeginnerGuide from '../../components/stage0/BeginnerGuide.astro';
+import AccountControls from '../../components/stage0/AccountControls.astro';
 import { subjects, concepts, conceptsFor, conceptPath, subjectPath, uniqueConceptCount } from '../../lib/stage0/curriculum';
 import { u } from '../../lib/data';
 const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
+const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
 <Base title="Stage 0 — Concept Explorer" description="Get familiar with the language of UPSC. Explore foundational concepts in Polity, Economics, Geography and International Relations at your own pace." noindex crumbs={[{ name: 'Stage 0', href: u('/stage-0/') }]}>
   <Styles />
@@ -15,6 +17,7 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
       <span class="s0-wordmark"><b>STAGE 0</b> Concept Explorer</span>
       <a href={u('/roadmap/')}>The preparation roadmap ↗</a>
     </div>
+    <AccountControls />
     <PreviewNotice />
     <section class="s0-hero" aria-labelledby="s0-title">
       <div class="s0-hero-copy">
@@ -23,7 +26,7 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
         <p>Sovereignty. Inflation. Geopolitics. Big words become small steps when someone helps you make sense of them.</p>
         <p>Explore the ideas behind the words. Bring your curiosity. You don’t need any prior knowledge.</p>
         <div class="s0-hero-actions">
-          <a class="s0-button s0-button-primary" id="s0-continue" href={u(conceptPath(first))}>Try a sample lesson <span aria-hidden="true">↗</span></a>
+          <a class="s0-button s0-button-primary" id="s0-continue" href={u(conceptPath(first))}>{live ? 'Explore Sovereignty' : 'Try a sample lesson'} <span aria-hidden="true">↗</span></a>
           <span>Free to explore · No memorising</span>
         </div>
         <p class="s0-footnote" id="s0-continue-caption">Start with Sovereignty. There’s no wrong place to begin.</p>
@@ -37,10 +40,10 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
       </div>
     </section>
 
-    <section class="s0-summary" aria-label="Your sample learning progress">
+    <section class="s0-summary" aria-label={live ? 'Your learning progress' : 'Your sample learning progress'}>
       <div><div><strong>Your starting point</strong><span id="s0-progress-caption">A little more familiar, one idea at a time.</span></div><div class="s0-meter"><span id="s0-overall-fill"></span></div></div>
       <div><strong id="s0-explored">0</strong><span>concepts explored</span></div>
-      <div><strong id="s0-understood">0</strong><span>sample checks understood</span></div>
+      <div><strong id="s0-understood">0</strong><span>{live ? 'checks understood' : 'sample checks understood'}</span></div>
       <div><strong id="s0-revisit">0</strong><span>saved to revisit</span></div>
     </section>
 
@@ -70,16 +73,18 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
       <section class="s0-card" aria-labelledby="s0-recent-title">
         <p class="s0-kicker">Your open tabs, in a good way</p>
         <h2 id="s0-recent-title" style="margin-top:8px">Recently explored</h2>
-        <div class="s0-empty" id="s0-recent-empty"><span class="s0-subject-icon"><SubjectIcon kind="globe" /></span><p>Your first small discovery starts here.<br />Try a sample conversation and it will appear here.</p><a class="s0-text-button" href={u(conceptPath(first))}>Explore Sovereignty →</a></div>
+        <div class="s0-empty" id="s0-recent-empty"><span class="s0-subject-icon"><SubjectIcon kind="globe" /></span><p>Your first small discovery starts here.<br />{live ? 'Sign in and explore a concept; it will appear here.' : 'Try a sample conversation and it will appear here.'}</p><a class="s0-text-button" href={u(conceptPath(first))}>Explore Sovereignty →</a></div>
         <ul class="s0-recent-list" id="s0-recent-list"></ul>
       </section>
     </div>
-    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; this preview keeps their progress separate. All progress shown here is prototype data.</p>
+    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; their progress is separate. {live ? 'The live tutor starts with twelve pilot concepts. The full catalogue and reusable learning prompts remain free to read.' : 'All progress shown here is prototype data.'}</p>
     <noscript><p class="s0-footnote">You can browse every subject and concept without JavaScript. Enable JavaScript to try sample conversations and save preview progress.</p></noscript>
   </div>
   <script>
     import { concepts, conceptPath } from '../../lib/stage0/curriculum';
     import { initialiseProgress, paintStatus, STORAGE_KEY } from '../../lib/stage0/progress';
+    import { liveEnabled } from '../../lib/stage0/api';
+    import { initialiseLiveDashboard } from '../../lib/stage0/live-progress';
     const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     function refreshDashboard() {
       const progress = initialiseProgress();
@@ -109,8 +114,11 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
         }
       }
     }
-    refreshDashboard();
-    window.addEventListener('pageshow', (event) => { if (event.persisted) refreshDashboard(); });
-    window.addEventListener('storage', (event) => { if (event.key === STORAGE_KEY || event.key === null) refreshDashboard(); });
+    if (liveEnabled) initialiseLiveDashboard();
+    else {
+      refreshDashboard();
+      window.addEventListener('pageshow', (event) => { if (event.persisted) refreshDashboard(); });
+      window.addEventListener('storage', (event) => { if (event.key === STORAGE_KEY || event.key === null) refreshDashboard(); });
+    }
   </script>
 </Base>

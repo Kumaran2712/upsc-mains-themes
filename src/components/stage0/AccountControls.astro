@@ -1,0 +1,60 @@
+---
+import { u } from '../../lib/data';
+const enabled = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+---
+{enabled && <section class:list={['s0-account', { 's0-account-compact': compact }]} aria-label="Learning account" data-account>
+  <div class="s0-account-bar">
+    <p data-account-label role="status">Connecting to your learning account…</p>
+    <div class="s0-assessment-actions">
+      <button class="s0-text-button" type="button" data-account-open disabled>Sign in / Create account</button>
+      <button class="s0-text-button" type="button" data-account-logout hidden>Sign out</button>
+    </div>
+  </div>
+  {!compact && <p class="s0-footnote" data-account-usage></p>}
+  <details class="s0-account-manage" data-account-manage hidden>
+    <summary>Manage your learning data</summary>
+    {compact && <p class="s0-footnote" data-account-usage></p>}
+    <p class="s0-footnote">Conversations and checks are saved to this account. Tutor messages are sent to our AI provider. Avoid sharing personal information.</p>
+    <button type="button" class="s0-button" data-account-export>Download my learning data</button>
+    <details class="s0-delete-account">
+      <summary>Delete my account and learning data</summary>
+      <form data-account-delete>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required maxlength="128" /></label>
+        <label class="s0-checkbox"><input name="confirm" type="checkbox" required />Permanently delete my account, conversations and checks.</label>
+        <button type="submit" class="s0-button">Delete my account permanently</button>
+      </form>
+    </details>
+  </details>
+  <p class="s0-footnote" role="status" data-account-message></p>
+  <dialog class="s0-dialog s0-auth-dialog" data-account-dialog aria-labelledby="s0-account-title">
+    <div class="s0-section-head"><h2 id="s0-account-title">Your free learning account</h2><button type="button" class="s0-text-button" data-account-close aria-label="Close account dialog">Close ×</button></div>
+    <div data-auth-fields>
+      <div class="s0-auth-tabs" role="group" aria-label="Account action">
+        <button type="button" class="s0-button" data-auth-mode="login" aria-pressed="true">Sign in</button>
+        <button type="button" class="s0-button" data-auth-mode="signup" aria-pressed="false">Create account</button>
+        <button type="button" class="s0-text-button" data-auth-mode="recover" aria-pressed="false">Recover account</button>
+      </div>
+      <p class="s0-footnote">Choose a username; no email is needed. When you create an account, save your recovery code somewhere private. It is the way to reset a forgotten password.</p>
+      <form data-account-form>
+        <label>Username<input name="username" autocomplete="username" pattern="[a-zA-Z0-9_]{3,32}" minlength="3" maxlength="32" required /></label>
+        <label data-recovery-field hidden>Recovery code<input name="recoveryCode" autocomplete="off" minlength="43" maxlength="43" /></label>
+        <label><span data-password-label>Password</span><input name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required /></label>
+        <button type="submit" class="s0-button s0-button-primary" data-auth-submit>Sign in</button>
+      </form>
+      <p class="s0-footnote">Your questions and checks are saved to your account and sent to our AI provider when you use the tutor. The concept list and reusable prompts are free to read without an account. You can export your learning data or delete your account. <a href={u('/about/#stage0-privacy')}>How learning data is handled</a></p>
+    </div>
+    <div data-recovery-result hidden>
+      <h3>Save your recovery code</h3><p>Keep it somewhere private. We show it only now. A new code replaces your previous one.</p>
+      <label>Recovery code<input readonly data-recovery-code aria-label="Your recovery code" /></label>
+      <button type="button" class="s0-button" data-copy-recovery>Copy recovery code</button>
+      <p class="s0-footnote">If you lose both your password and this code, we cannot recover your account.</p>
+    </div>
+    <p class="s0-footnote" role="status" aria-live="polite" data-auth-message></p>
+  </dialog>
+</section>}
+<script>
+  import { initialiseAccount } from '../../lib/stage0/account';
+  initialiseAccount();
+</script>

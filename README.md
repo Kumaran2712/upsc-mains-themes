@@ -51,6 +51,15 @@ Search terms with zero results tell you which themes or words to add.
 
 **Google Search Console**: which searches show your pages, impressions, clicks, average position, indexing status per page, Core Web Vitals.
 
+## Stage 0 live tutor
+
+The concept catalogue and prompts remain free. An opt-in Node 24 service adds
+accounts, saved learning, streamed AI conversations, understanding checks and
+server-enforced free usage limits. The existing GitHub Pages site keeps its sample
+preview until a backend is deployed and `PUBLIC_STAGE0_API_URL` is configured.
+See [backend setup and deployment](docs/stage0-backend.md) and the
+[teaching rubric](docs/stage0-teaching-rubric.md).
+
 ## Updating the data
 
 All data lives in this repo:

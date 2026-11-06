@@ -32,6 +32,7 @@ jobs:
           # (e.g. SITE_URL=https://your-domain.in and BASE_PATH=/ after moving to a custom domain).
           SITE_URL: ${{ vars.SITE_URL || 'https://upscthemes.live' }}
           BASE_PATH: ${{ vars.BASE_PATH || '/' }}
+          PUBLIC_STAGE0_API_URL: ${{ vars.PUBLIC_STAGE0_API_URL || '' }}
           PUBLIC_REPO_URL: ${{ vars.PUBLIC_REPO_URL || 'https://github.com/Kumaran2712/upsc-mains-themes' }}
           PUBLIC_UMAMI_WEBSITE_ID: ${{ vars.PUBLIC_UMAMI_WEBSITE_ID || 'c104a33d-b914-48fa-ada3-62711142ce2c' }}
           # Search Console codes: upscthemes.live property, plus any set in the repo variable (old github.io property).

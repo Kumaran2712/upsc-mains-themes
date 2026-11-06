@@ -1,0 +1,53 @@
+name: Check Stage 0 backend
+on:
+  push:
+    branches: [main]
+    paths: ['backend/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+  pull_request:
+    paths: ['backend/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check:stage0
+      - run: npm run test:backend
+      - run: npm run build
+        env:
+          SITE_URL: https://upscthemes.live
+          PUBLIC_STAGE0_API_URL: /api
+      - name: Build backend container
+        run: docker build --tag stage0-backend:ci .
+      - name: Start backend container without a provider key
+        run: docker run --detach --name stage0-backend-smoke -p 127.0.0.1:18787:8787 -e SESSION_SECRET=ci-only-secret-for-container-smoke-test-123456789 -e ALLOWED_ORIGINS=https://upscthemes.live stage0-backend:ci
+      - name: Verify container health and learning page
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          let ready = false;
+          for (let i = 0; i < 20; i++) {
+            try {
+              const health = await (await fetch('http://127.0.0.1:18787/api/health')).json();
+              assert.equal(health.ready, false);
+              ready = true;
+              break;
+            } catch { await new Promise(resolve => setTimeout(resolve, 500)); }
+          }
+          assert(ready, 'Container did not become healthy');
+          const page = await fetch('http://127.0.0.1:18787/stage-0/polity/sovereignty/');
+          assert.equal(page.status, 200);
+          assert.match(await page.text(), /data-live-workspace/);
+          JS
+      - name: Container diagnostics
+        if: failure()
+        run: docker logs stage0-backend-smoke
+      - name: Stop test container
+        if: always()
+        run: docker rm --force stage0-backend-smoke

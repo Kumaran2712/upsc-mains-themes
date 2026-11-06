@@ -1,9 +1,10 @@
 ---
 interface Props { compact?: boolean }
 const { compact = false } = Astro.props;
+const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
-<aside class="s0-notice" aria-label="About this prototype">
-  <span class="s0-preview-label">Interactive preview</span>
-  <span>{compact ? 'No live AI. Sample progress saved on this browser.' : 'Sample conversations, no live AI. Progress is saved on this browser only.'}</span>
+<aside class="s0-notice" aria-label={live ? 'About the learning pilot' : 'About this prototype'}>
+  <span class="s0-preview-label">{live ? 'Free learning · AI pilot' : 'Interactive preview'}</span>
+  <span>{live ? 'Sign in to save learning. AI can make mistakes; check important facts.' : compact ? 'No live AI. Sample progress saved on this browser.' : 'Sample conversations, no live AI. Progress is saved on this browser only.'}</span>
 </aside>
-<p class="s0-storage-note" data-storage-warning hidden role="status">Your browser could not save this preview. Keep this page open to retain the current conversation.</p>
+{!live && <p class="s0-storage-note" data-storage-warning hidden role="status">Your browser could not save this preview. Keep this page open to retain the current conversation.</p>}

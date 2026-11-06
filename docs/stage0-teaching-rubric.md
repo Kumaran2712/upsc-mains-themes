@@ -1,8 +1,9 @@
 # Stage 0: teaching and assessment rubric
 
-Status: product specification for the future live tutor, plus a public prompt that
-learners can use now. The built-in prototype still uses authored replies and
-example feedback. This document does not add live AI, grading or server limits.
+Status: teaching contract for the [live-tutor implementation](stage0-backend.md),
+plus the public reusable prompt. The default static deployment remains a sample
+preview until an API address, provider key and persistent backend are configured.
+Real model output review is still required before opening the live pilot.
 
 ## Purpose and access
 
@@ -134,6 +135,12 @@ contradictions; never keep an old correct answer while ignoring a new central
 misconception. Do not add a grammar or spelling penalty. A response can be short
 and still demonstrate the required idea.
 
+In the implemented pilot, this evidence is collected in explicit checks. Ordinary
+chat does not silently grade a learner: progress describes their latest check.
+The interface encourages a fresh check after a new doubt. Starting a new check
+clears its previous evidence; a later incorrect check answer cannot be outweighed
+by an earlier correct answer.
+
 - **Not started:** no learning interaction for this placement.
 - **Exploring:** interaction has begun, or the check has missing evidence without
   an identified gap. A draft or elapsed time never establishes understanding.
@@ -141,8 +148,8 @@ and still demonstrate the required idea.
   Missing answers can coexist with this status; state exactly what remains unknown.
 - **Understood:** all three dimensions have level 2 evidence, with no unresolved
   central misconception. This is a revisable familiarity signal for this concept.
-- **Revisit:** learner-selected reminder. The future service should store this
-  separately from assessment evidence so bookmarking cannot erase a learning result.
+- **Revisit:** learner-selected reminder. The backend stores this separately from
+  assessment evidence so bookmarking cannot erase a learning result.
 
 The existing prototype has one status field and explicit sample-feedback buttons.
 Keep their disclosure: clicking an authored “Understood” example is not an actual
@@ -202,7 +209,8 @@ prompt version, concept metadata version, output and reviewer rationale.
 | Tutor allowance exhausted | Keep the concept list, guide and reusable prompt accessible; accurately explain the service limit. |
 
 The public prompt in `src/lib/stage0/teaching.ts` carries the portable teaching
-rules. It cannot enforce behaviour or provider limits in another LLM. When a live
-backend is built, it must load reviewed concept metadata, version its instructions,
-validate assessment evidence and enforce usage limits on the server. Prompt text
-and sample UI state alone are insufficient for those guarantees.
+rules. It cannot enforce behaviour or provider limits in another LLM. The backend
+loads subject-specific pilot metadata, versions its instructions, validates
+assessment evidence and enforces usage limits on the server. Prompt text and
+sample UI state alone are insufficient for those guarantees. Valid schema and
+quoted evidence still require actual model-output review for teaching accuracy.

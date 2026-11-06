@@ -7,10 +7,18 @@
     "data": "python3 tools/build_site_data.py",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "backend": "node --env-file-if-exists=backend/.env backend/server.mjs",
+    "check:stage0": "tsc -p tsconfig.stage0.json",
+    "test:backend": "node --test backend/test/*.test.mjs",
+    "backup:backend": "node --env-file-if-exists=backend/.env backend/backup.mjs",
+    "eval:tutor": "node --env-file-if-exists=backend/.env backend/evaluate.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.4"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
   }
 }

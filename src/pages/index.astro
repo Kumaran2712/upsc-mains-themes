@@ -11,17 +11,18 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'UPSC 
   potentialAction: { '@type': 'SearchAction', target: new URL(u('/search/'), Astro.site).href + '?q={query}', 'query-input': 'required name=query' } }];
 const rm = roadmap.map((t) => ({ n: t.n, step: t.step, title: shortTitle(t), url: themeUrl(t) }));
 const preCount = prelims.filter((q) => q.year).length;
+const liveTutor = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
 <Base title="UPSC Themes: theme-wise UPSC PYQs, roadmap and daily practice" description={desc} jsonld={ld} brand={false}>
   <h1 class="home-h1">Prepare UPSC by theme, one day at a time</h1>
   <a class="stage0-entry panel" href={u('/stage-0/')}>
-    <span class="stage0-entry-label">NEW · STAGE 0 PREVIEW</span>
+    <span class="stage0-entry-label">{liveTutor ? 'STAGE 0 · AI PILOT' : 'NEW · STAGE 0 PREVIEW'}</span>
     <span><b>New to the language of UPSC?</b><span>Explore the ideas behind the words, one small conversation at a time.</span></span>
     <span aria-hidden="true">↗</span>
   </a>
   <section class="about" aria-labelledby="about-h">
     <h2 id="about-h">What this site is</h2>
-    <p>A free study companion for UPSC Civil Services aspirants, beginners and repeaters alike. It takes every GS Mains question asked since 2013 ({totalQuestions} of them) and groups them into {themes.length} themes, because the syllabus is interlinked: women's empowerment, for example, comes up in GS1, GS2 and GS3. No sign-up, no fees.</p>
+    <p>A free study companion for UPSC Civil Services aspirants, beginners and repeaters alike. It takes every GS Mains question asked since 2013 ({totalQuestions} of them) and groups them into {themes.length} themes, because the syllabus is interlinked: women's empowerment, for example, comes up in GS1, GS2 and GS3. Themes, PYQs and learning guides are free to browse without an account.</p>
     <ol class="how">
       <li><b>Practise every day</b><span>10 Prelims and 2 Mains PYQs each morning, on the site or on Telegram.</span></li>
       <li><b>Follow the roadmap</b><span>Study the themes in an order where each one builds on the last.</span></li>

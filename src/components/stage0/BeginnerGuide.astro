@@ -3,6 +3,7 @@ import { subjects } from '../../lib/stage0/curriculum';
 import { subjectReasons, teachingSteps } from '../../lib/stage0/teaching';
 import TutorPrompt from './TutorPrompt.astro';
 import { u } from '../../lib/data';
+const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
 <section class="s0-card s0-section s0-guide" aria-labelledby="s0-why-title">
   <p class="s0-kicker">Why start here</p>
@@ -18,9 +19,9 @@ import { u } from '../../lib/data';
   </details>
   <details class="s0-guide-detail">
     <summary>How our tutor should help you learn</summary>
-    <p>Start here with Concept Explorer. We’re building a free AI tutor around this approach; today’s preview uses prepared sample conversations. The teaching approach is simple:</p>
+    <p>{live ? 'Start here with Concept Explorer. Our free AI tutor begins with twelve pilot concepts, with saved conversations and short understanding checks. The teaching approach is simple:' : 'Start here with Concept Explorer. We’re building a free AI tutor around this approach; today’s preview uses prepared sample conversations. The teaching approach is simple:'}</p>
     <ol class="s0-teaching-steps">{teachingSteps.map((step) => <li><strong>{step.title}.</strong> {step.text}</li>)}</ol>
-    <p>Ask again whenever you need to. Understanding means you can explain an idea in your own words, distinguish it from a similar idea and use it in a new situation. Our preview lets you inspect example feedback; it does not evaluate your answers yet.</p>
+    <p>Ask again whenever you need to. Understanding means you can explain an idea in your own words, distinguish it from a similar idea and use it in a new situation. {live ? 'The tutor checks those three kinds of evidence. Its feedback is a learning signal, and you can revisit an explanation or try a fresh check.' : 'Our preview lets you inspect example feedback; it does not evaluate your answers yet.'}</p>
   </details>
   <details class="s0-guide-detail">
     <summary>When to begin Prelims, Mains and current affairs together</summary>

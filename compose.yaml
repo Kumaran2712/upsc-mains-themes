@@ -1,0 +1,21 @@
+services:
+  tutor:
+    build:
+      context: .
+      args:
+        SITE_URL: ${SITE_URL:-https://upscthemes.live}
+        PUBLIC_STAGE0_API_URL: ${PUBLIC_STAGE0_API_URL:-/api}
+    env_file: backend/.env
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 8787
+      SERVE_STATIC: "true"
+      DATABASE_PATH: /data/stage0.sqlite
+    ports:
+      - "127.0.0.1:8787:8787"
+    volumes:
+      - stage0-data:/data
+    restart: unless-stopped
+volumes:
+  stage0-data:
