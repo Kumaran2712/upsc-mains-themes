@@ -1,0 +1,113 @@
+---
+import Base from '../../layouts/Base.astro';
+import Styles from '../../components/stage0/Styles.astro';
+import SubjectIcon from '../../components/stage0/SubjectIcon.astro';
+import PreviewNotice from '../../components/stage0/PreviewNotice.astro';
+import { subjects, concepts, conceptsFor, conceptPath, subjectPath, uniqueConceptCount } from '../../lib/stage0/curriculum';
+import { u } from '../../lib/data';
+const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
+---
+<Base title="Stage 0 — Concept Explorer" description="Get familiar with the language of UPSC. Explore foundational concepts in Polity, Economics, Geography and International Relations at your own pace." noindex crumbs={[{ name: 'Stage 0', href: u('/stage-0/') }]}>
+  <Styles />
+  <div class="s0">
+    <div class="s0-topline">
+      <span class="s0-wordmark"><b>STAGE 0</b> Concept Explorer</span>
+      <a href={u('/roadmap/')}>The preparation roadmap ↗</a>
+    </div>
+    <PreviewNotice />
+    <section class="s0-hero" aria-labelledby="s0-title">
+      <div class="s0-hero-copy">
+        <p class="s0-kicker">Before the books, a little understanding.</p>
+        <h1 id="s0-title">Make the unfamiliar<br /><em>feel familiar.</em></h1>
+        <p>Sovereignty. Inflation. Geopolitics. Big words become small steps when someone helps you make sense of them.</p>
+        <p>Explore the ideas behind the words. Bring your curiosity. You don’t need any prior knowledge.</p>
+        <div class="s0-hero-actions">
+          <a class="s0-button s0-button-primary" id="s0-continue" href={u(conceptPath(first))}>Try a sample lesson <span aria-hidden="true">↗</span></a>
+          <span>Free to explore · No memorising</span>
+        </div>
+        <p class="s0-footnote" id="s0-continue-caption">Start with Sovereignty. There’s no wrong place to begin.</p>
+      </div>
+      <div class="s0-orbit" aria-hidden="true">
+        <span class="s0-orbit-core"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 41V23M24 28C8 29 6 17 7 10c12-1 20 5 17 18ZM24 34c15 0 19-10 18-18-11-1-19 5-18 18Z" /></svg></span>
+        <span class="s0-orbit-label">“Why do prices rise?”</span>
+        <span class="s0-orbit-label">“Who makes the rules?”</span>
+        <span class="s0-orbit-label">“What does that mean?”</span>
+        <span class="s0-orbit-label">“Oh, I get it now.”</span>
+      </div>
+    </section>
+
+    <section class="s0-summary" aria-label="Your sample learning progress">
+      <div><div><strong>Your starting point</strong><span id="s0-progress-caption">A little more familiar, one idea at a time.</span></div><div class="s0-meter"><span id="s0-overall-fill"></span></div></div>
+      <div><strong id="s0-explored">0</strong><span>concepts explored</span></div>
+      <div><strong id="s0-understood">0</strong><span>sample checks understood</span></div>
+      <div><strong id="s0-revisit">0</strong><span>saved to revisit</span></div>
+    </section>
+
+    <section class="s0-section" aria-labelledby="s0-subjects">
+      <div class="s0-section-head"><h2 id="s0-subjects">Four windows into the world</h2><p>Pick a subject. Follow your curiosity.</p></div>
+      <div class="s0-subject-grid">
+        {subjects.map((s) => <a class="s0-card s0-subject-card" href={u(subjectPath(s))} data-subject-progress={s.id}>
+          <div class="s0-subject-card-head"><span class="s0-subject-icon" data-subject={s.id}><SubjectIcon kind={s.icon} /></span><span class="s0-tag">{conceptsFor(s.id).length} concepts</span></div>
+          <div><h3>{s.name} <span aria-hidden="true">↗</span></h3><p>{s.description}</p></div>
+          <div><div class="s0-subject-card-foot"><span data-count>0 of {conceptsFor(s.id).length} understood</span><span data-subject-state>Ready when you are</span></div><div class="s0-meter" style="margin-top:10px"><span data-fill></span></div></div>
+        </a>)}
+      </div>
+    </section>
+
+    <div class="s0-bottom-grid s0-section">
+      <section class="s0-card" aria-labelledby="s0-journey-title">
+        <p class="s0-kicker">A gentle guide</p>
+        <h2 id="s0-journey-title" style="margin-top:8px">A 30-day beginning. At your pace.</h2>
+        <p class="s0-muted" style="margin-top:9px">Set aside 30–45 minutes when you can. Take longer whenever an idea needs it. Everything is open from day one.</p>
+        <ol class="s0-journey">
+          {subjects.map((s, i) => <li><span>{i + 1}</span><div><a href={u(subjectPath(s))}>{s.name}</a><small>{s.days}</small></div></li>)}
+          <li><span>↺</span><div><span>Connect ideas & revisit</span><small>Days 29–30</small></div></li>
+        </ol>
+      </section>
+      <section class="s0-card" aria-labelledby="s0-recent-title">
+        <p class="s0-kicker">Your open tabs, in a good way</p>
+        <h2 id="s0-recent-title" style="margin-top:8px">Recently explored</h2>
+        <div class="s0-empty" id="s0-recent-empty"><span class="s0-subject-icon"><SubjectIcon kind="globe" /></span><p>Your first small discovery starts here.<br />Try a sample conversation and it will appear here.</p><a class="s0-text-button" href={u(conceptPath(first))}>Explore Sovereignty →</a></div>
+        <ul class="s0-recent-list" id="s0-recent-list"></ul>
+      </section>
+    </div>
+    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; this preview keeps their progress separate. All progress shown here is prototype data.</p>
+    <noscript><p class="s0-footnote">You can browse every subject and concept without JavaScript. Enable JavaScript to try sample conversations and save preview progress.</p></noscript>
+  </div>
+  <script>
+    import { concepts, conceptPath } from '../../lib/stage0/curriculum';
+    import { initialiseProgress, paintStatus, STORAGE_KEY } from '../../lib/stage0/progress';
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+    function refreshDashboard() {
+      const progress = initialiseProgress();
+      const entries = Object.entries(progress.entries).sort((a, b) => b[1].updated - a[1].updated);
+      document.getElementById('s0-explored')!.textContent = String(entries.length);
+      const understood = entries.filter(([, e]) => e.status === 'Understood').length;
+      document.getElementById('s0-understood')!.textContent = String(understood);
+      document.getElementById('s0-revisit')!.textContent = String(entries.filter(([, e]) => e.status === 'Revisit').length);
+      document.getElementById('s0-overall-fill')!.style.width = `${100 * understood / concepts.length}%`;
+      document.getElementById('s0-recent-list')!.replaceChildren();
+      document.getElementById('s0-recent-empty')!.hidden = entries.length > 0;
+      document.getElementById('s0-progress-caption')!.textContent = entries.length ? 'Sample progress · saved on this browser' : 'A little more familiar, one idea at a time.';
+      const resume = document.getElementById('s0-continue') as HTMLAnchorElement;
+      resume.href = base + '/stage-0/polity/sovereignty/'; resume.textContent = 'Try a sample lesson ↗';
+      document.getElementById('s0-continue-caption')!.textContent = 'Start with Sovereignty. There’s no wrong place to begin.';
+      if (entries.length) {
+        const recent = concepts.find((c) => c.id === entries[0][0])!;
+        resume.href = base + conceptPath(recent); resume.textContent = 'Continue exploring →';
+        document.getElementById('s0-continue-caption')!.textContent = `Pick up where you left off: ${recent.name}.`;
+        for (const [id, entry] of entries.slice(0, 4)) {
+          const c = concepts.find((x) => x.id === id)!;
+          const li = document.createElement('li'), link = document.createElement('a'), name = document.createElement('span');
+          link.href = base + conceptPath(c); name.textContent = c.name;
+          const sub = document.createElement('small'); sub.textContent = c.subject.name; name.append(sub);
+          const status = document.createElement('span'); status.className = 's0-status'; paintStatus(status, entry.status);
+          link.append(name, status); li.append(link); document.getElementById('s0-recent-list')!.append(li);
+        }
+      }
+    }
+    refreshDashboard();
+    window.addEventListener('pageshow', (event) => { if (event.persisted) refreshDashboard(); });
+    window.addEventListener('storage', (event) => { if (event.key === STORAGE_KEY || event.key === null) refreshDashboard(); });
+  </script>
+</Base>

@@ -9,6 +9,11 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC
 <Base title="UPSC GS Mains roadmap for beginners" description={desc} jsonld={ld} crumbs={[{ name: 'Roadmap', href: u('/roadmap/') }]}>
   <p class="eyebrow">New to Mains? Start here</p>
   <h1>A step-by-step roadmap through GS Mains</h1>
+  <aside class="panel" style="margin:18px 0;border-color:var(--gs1)">
+    <p class="eyebrow" style="color:var(--gs1)">Before stage 1 · Interactive preview</p>
+    <p style="margin:6px 0"><b>Make the language feel familiar first.</b> Stage 0 introduces everyday ideas behind Polity, Economics, Geography and International Relations.</p>
+    <a class="chip" href={u('/stage-0/')}>Try Concept Explorer →</a>
+  </aside>
   <p class="lead">All {roadmap.length} themes in an order where each one prepares you for the next. A theme always comes after the themes it relies on, so when women's empowerment brings up gender budgeting, you have already studied budgets. Each theme page lists what it builds on and where it comes back later. If you already know an area, jump to any step.</p>
 
   <div class="panel rm-progress" id="rm-progress">

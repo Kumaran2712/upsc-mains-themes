@@ -12,6 +12,6 @@ export default defineConfig({
   site,
   base,
   trailingSlash: 'always',
-  integrations: [sitemap({ filter: (page) => !page.includes('/maps/base/') })],
+  integrations: [sitemap({ filter: (page) => !page.includes('/maps/base/') && !page.includes('/stage-0/') })],
   build: { format: 'directory' },
 });

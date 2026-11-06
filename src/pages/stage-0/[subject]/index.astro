@@ -1,0 +1,57 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Styles from '../../../components/stage0/Styles.astro';
+import SubjectIcon from '../../../components/stage0/SubjectIcon.astro';
+import PreviewNotice from '../../../components/stage0/PreviewNotice.astro';
+import { subjects, conceptsFor, conceptPath, subjectPath, type Subject } from '../../../lib/stage0/curriculum';
+import { previews, featured } from '../../../lib/stage0/previews';
+import { u } from '../../../lib/data';
+export function getStaticPaths() { return subjects.map((s) => ({ params: { subject: s.id }, props: { subject: s } })); }
+const { subject: s } = Astro.props as { subject: Subject };
+const list = conceptsFor(s.id);
+---
+<Base title={`${s.name} — Stage 0`} description={s.description} noindex crumbs={[{ name: 'Stage 0', href: u('/stage-0/') }, { name: s.name, href: u(subjectPath(s)) }]}>
+  <Styles />
+  <div class="s0">
+    <div class="s0-topline"><a href={u('/stage-0/')} class="s0-wordmark">← All subjects</a><span class="s0-kicker">Concept Explorer · Stage 0</span></div>
+    <PreviewNotice />
+    <header class="s0-subject-heading">
+      <span class="s0-subject-icon" data-subject={s.id}><SubjectIcon kind={s.icon} /></span>
+      <div><p class="s0-kicker">{s.question}</p><h1>{s.name}</h1><p class="s0-muted">{s.description} Start anywhere; there’s no test to get in.</p></div>
+    </header>
+    <div class="s0-subject-summary" data-subject-progress={s.id}><span>{list.length} concepts · {s.categories.length} categories</span><span data-count>0 of {list.length} understood</span><div class="s0-meter"><span data-fill></span></div></div>
+    <section class="s0-featured" aria-labelledby="s0-try-title"><h2 id="s0-try-title" style="font-size:1rem">A good place to try the experience</h2><p>These three concepts have prepared sample conversations. The full catalogue is below.</p><div class="s0-featured-links">{featured[s.id].map((slug) => { const c = list.find((x) => x.slug === slug)!; return <a href={u(conceptPath(c))}>{c.name} ↗</a>; })}</div></section>
+    <div class="s0-filters"><label class="s0-search-label"><span>Find a concept in {s.name}</span><input id="s0-concept-search" type="search" placeholder={`Find a concept in ${s.name}…`} autocomplete="off" /></label><label><span class="s0-sr">Filter by learning status</span><select id="s0-status-filter"><option value="all">All learning statuses</option>{['Not started', 'Exploring', 'Developing', 'Understood', 'Revisit'].map((status) => <option value={status}>{status}</option>)}</select></label></div>
+    <p class="s0-sr" id="s0-filter-count" role="status" aria-live="polite"></p>
+    <div class="s0-subject-layout">
+      <nav class="s0-category-nav" aria-label={`${s.name} categories`}><p class="s0-kicker">Find your starting point</p>{s.categories.map((cat) => <a href={`#${cat.id}`}>{cat.name}</a>)}</nav>
+      <div>
+        {s.categories.map((cat) => <section class="s0-category" id={cat.id}><h2>{cat.name}<span>{cat.terms.length}</span></h2><ul class="s0-concept-grid">{list.filter((c) => c.category.id === cat.id).map((c) => <li data-concept-item data-name={c.name.toLowerCase()} data-id={c.id}><a class="s0-concept-link" href={u(conceptPath(c))}><span class="s0-concept-name">{c.name}</span><span class="s0-concept-meta"><span class="s0-status" data-concept-status={c.id} data-status="Not started">Not started</span>{previews[c.slug] && <span class="s0-sample-dot">Sample lesson ↗</span>}</span></a></li>)}</ul></section>)}
+        <div class="s0-card" id="s0-no-results" hidden><h2>No concepts match just yet.</h2><p class="s0-muted" style="margin:10px 0">Try another word or show all learning statuses.</p><button class="s0-button" id="s0-clear-filters" type="button">Clear filters</button></div>
+      </div>
+    </div>
+    <p class="s0-footnote">A status describes familiarity, not a grade. You can return to any concept whenever you like.</p>
+  </div>
+  <script>
+    import { initialiseProgress, STORAGE_KEY } from '../../../lib/stage0/progress';
+    let progress = initialiseProgress();
+    const search = document.getElementById('s0-concept-search') as HTMLInputElement;
+    const select = document.getElementById('s0-status-filter') as HTMLSelectElement;
+    function filter() {
+      let count = 0;
+      for (const el of document.querySelectorAll<HTMLElement>('[data-concept-item]')) {
+        const status = progress.entries[el.dataset.id!]?.status || 'Not started';
+        el.hidden = !el.dataset.name!.includes(search.value.trim().toLowerCase()) || (select.value !== 'all' && select.value !== status);
+        if (!el.hidden) count++;
+      }
+      document.querySelectorAll<HTMLElement>('.s0-category').forEach((section) => { section.hidden = !section.querySelector('[data-concept-item]:not([hidden])'); });
+      document.getElementById('s0-no-results')!.hidden = count > 0;
+      document.getElementById('s0-filter-count')!.textContent = `${count} concepts shown`;
+    }
+    search.addEventListener('input', filter); select.addEventListener('change', filter);
+    document.getElementById('s0-clear-filters')!.addEventListener('click', () => { search.value = ''; select.value = 'all'; filter(); search.focus(); });
+    function refresh() { progress = initialiseProgress(); filter(); }
+    window.addEventListener('pageshow', (event) => { if (event.persisted) refresh(); });
+    window.addEventListener('storage', (event) => { if (event.key === STORAGE_KEY || event.key === null) refresh(); });
+  </script>
+</Base>

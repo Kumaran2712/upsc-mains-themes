@@ -1,0 +1,43 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Styles from '../../../components/stage0/Styles.astro';
+import PreviewNotice from '../../../components/stage0/PreviewNotice.astro';
+import { concepts, conceptsFor, conceptPath, subjectPath, type Concept } from '../../../lib/stage0/curriculum';
+import { previews, featured } from '../../../lib/stage0/previews';
+import { u } from '../../../lib/data';
+export function getStaticPaths() { return concepts.map((c) => ({ params: { subject: c.subject.id, concept: c.slug }, props: { concept: c } })); }
+const { concept: c } = Astro.props as { concept: Concept };
+const lesson = previews[c.slug];
+const sampleList = featured[c.subject.id].map((slug) => conceptsFor(c.subject.id).find((x) => x.slug === slug)!);
+const next = sampleList[(sampleList.findIndex((x) => x.id === c.id) + 1) % sampleList.length];
+---
+<Base title={`${c.name} — Concept Explorer`} description={lesson?.objective || c.objective} noindex focusMode crumbs={[{ name: 'Stage 0', href: u('/stage-0/') }, { name: c.subject.name, href: u(subjectPath(c.subject)) }, { name: c.category.name, href: `${u(subjectPath(c.subject))}#${c.category.id}` }]}>
+  <Styles />
+  <div class="s0" data-workspace data-concept-id={c.id} data-concept-slug={c.slug}>
+    <div class="s0-topline"><a class="s0-wordmark" href={u(subjectPath(c.subject))}>← Explore {c.subject.name}</a><span class="s0-kicker">One idea at a time</span></div>
+    <PreviewNotice compact />
+    <header class="s0-concept-heading"><div><h1>{c.name}</h1><p>{lesson?.objective || c.objective}</p></div><span class="s0-status" id="s0-current-status" data-status="Not started">Not started</span></header>
+    <div class="s0-conversation-layout">
+      <section class="s0-chat" aria-label={`Learning conversation about ${c.name}`}>
+        <div class="s0-chat-header"><div class="s0-tutor-identity"><span class="s0-tutor-avatar" aria-hidden="true">✳</span><div><strong>Your concept companion</strong><small>{lesson ? 'Prepared sample conversation' : 'Concept workspace preview'}</small></div></div>{lesson && <button type="button" class="s0-text-button" id="s0-restart">Start fresh ↺</button>}</div>
+        {lesson ? <>
+          <div class="s0-messages" id="s0-messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions" tabindex="0"><article class="s0-message" data-role="tutor"><span>Companion · sample</span><p>{lesson.opening}</p></article></div>
+          <div class="s0-chat-shortcuts" aria-label="Try a sample question"><button type="button" data-question="meaning">What does it mean?</button><button type="button" data-question="example">Give me an example</button><button type="button" data-question="different">Explain differently</button><button type="button" data-question="distinction">What is it often confused with?</button></div>
+          <div class="s0-composer-wrap"><form class="s0-composer" id="s0-message-form"><label class="s0-sr" for="s0-message-input">Ask about {c.name}</label><textarea id="s0-message-input" placeholder={`Ask about ${c.name.toLowerCase()}…`} rows="2" maxlength="1200" enterkeyhint="send" required></textarea><button type="submit" id="s0-send" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6" /></svg></button></form><p class="s0-composer-hint" id="s0-message-hint" role="status">Sample replies only. Enter to send · Shift + Enter for a new line.</p></div>
+          <section class="s0-assessment" id="s0-assessment" hidden aria-labelledby="s0-check-title"><p class="s0-kicker">A moment to connect the dots</p><h2 id="s0-check-title" tabindex="-1">How would you explain it?</h2><p>Use your own words. There’s no perfect wording, and you can come back later.</p><p class="s0-preview-label">Assessment preview: your answers are not evaluated by AI.</p>{lesson.questions.map((q, i) => <label for={`s0-answer-${i}`}>{i + 1}. {q}<textarea id={`s0-answer-${i}`} data-answer rows="2" maxlength="1200" placeholder="Here’s how I think about it…"></textarea></label>)}<div class="s0-assessment-actions"><button type="button" class="s0-button s0-button-primary" id="s0-preview-feedback">Preview feedback</button><button type="button" class="s0-text-button" id="s0-assessment-later">Come back later</button></div><div class="s0-feedback" id="s0-feedback" hidden aria-live="polite"></div></section>
+          <noscript><p class="s0-card">Enable JavaScript to try the prepared conversation and assessment preview. The introduction above is a sample, not live AI.</p></noscript>
+        </> : <div class="s0-placeholder"><p class="s0-kicker">A place for your first questions</p><h2>Meet {c.name.toLowerCase()}, at your pace.</h2><p>This concept is part of the full curriculum. Its live tutor will be connected in a later step.</p><p>For this interface preview, try one of the prepared lessons below. You can explore questions, alternative explanations and an example understanding check.</p><div class="s0-featured-links">{sampleList.map((sample) => <a href={u(conceptPath(sample))}>{sample.name} ↗</a>)}</div></div>}
+      </section>
+      <aside class="s0-chat-aside" aria-label="Learning guidance">
+        <section class="s0-card"><p class="s0-kicker">Just enough to begin</p><h2>Curiosity is the only prerequisite.</h2><p>Ask again. Ask differently. Everyday examples are welcome here.</p><ul class="s0-boundaries"><li>One idea at a time</li><li>Simple, familiar examples</li><li>No definitions to memorise</li></ul></section>
+        {lesson && <section class="s0-card"><p class="s0-kicker">When you feel ready</p><h2>Check your understanding</h2><p>A few short questions help you see what has clicked. You can skip them and return later.</p><button type="button" class="s0-button" id="s0-open-assessment">Try the sample check →</button><button type="button" class="s0-text-button" id="s0-revisit" style="width:100%;margin-top:5px">Save to revisit</button><p style="font-size:.67rem;margin:5px 0 0">Status changes here are sample progress.</p></section>}
+      </aside>
+    </div>
+    <nav class="s0-next-concept" aria-label="Continue exploring"><a href={u(subjectPath(c.subject))}>← All {c.subject.name} concepts</a><a href={u(conceptPath(next))}>Another sample: {next.name} →</a></nav>
+    <dialog class="s0-dialog" id="s0-restart-dialog" aria-labelledby="s0-restart-title"><h2 id="s0-restart-title">A fresh look at this idea?</h2><p>This resets only this concept’s sample conversation and progress on this browser.</p><form method="dialog" class="s0-dialog-actions"><button class="s0-button" value="cancel">Keep exploring</button><button class="s0-button s0-button-primary" value="restart">Start fresh</button></form></dialog>
+  </div>
+  <script>
+    import { initialiseConversation } from '../../../lib/stage0/conversation';
+    initialiseConversation();
+  </script>
+</Base>

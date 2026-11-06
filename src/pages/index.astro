@@ -14,6 +14,11 @@ const preCount = prelims.filter((q) => q.year).length;
 ---
 <Base title="UPSC Themes: theme-wise UPSC PYQs, roadmap and daily practice" description={desc} jsonld={ld} brand={false}>
   <h1 class="home-h1">Prepare UPSC by theme, one day at a time</h1>
+  <a class="stage0-entry panel" href={u('/stage-0/')}>
+    <span class="stage0-entry-label">NEW · STAGE 0 PREVIEW</span>
+    <span><b>New to the language of UPSC?</b><span>Explore the ideas behind the words, one small conversation at a time.</span></span>
+    <span aria-hidden="true">↗</span>
+  </a>
   <section class="about" aria-labelledby="about-h">
     <h2 id="about-h">What this site is</h2>
     <p>A free study companion for UPSC Civil Services aspirants, beginners and repeaters alike. It takes every GS Mains question asked since 2013 ({totalQuestions} of them) and groups them into {themes.length} themes, because the syllabus is interlinked: women's empowerment, for example, comes up in GS1, GS2 and GS3. No sign-up, no fees.</p>
@@ -101,6 +106,13 @@ const preCount = prelims.filter((q) => q.year).length;
     })();
   </script>
   <style>
+    .stage0-entry { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); margin: 20px 0; }
+    .stage0-entry:hover { border-color: var(--gs1); }
+    .stage0-entry-label { color: var(--gs1); font-weight: 800; font-size: .66rem; letter-spacing: .08em; max-width: 100px; }
+    .stage0-entry > span:nth-child(2) { flex: 1; display: grid; gap: 2px; }
+    .stage0-entry b { font-size: .98rem; }
+    .stage0-entry > span:nth-child(2) > span { color: var(--muted); font-size: .83rem; }
+    @media (max-width: 480px) { .stage0-entry { flex-wrap: wrap; } .stage0-entry-label { max-width: none; width: 100%; } }
     .home-h1 { margin-top: 8px; }
     .about { margin: 18px 0 8px; }
     .about h2 { margin: 0 0 6px; font-size: 1.2rem; }

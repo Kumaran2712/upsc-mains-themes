@@ -6,9 +6,10 @@ interface Props {
   jsonld?: object[];
   noindex?: boolean;
   brand?: boolean;          // append ' | UPSC Themes' to the <title>
+  focusMode?: boolean;      // give concept conversations the full mobile viewport
   crumbs?: { name: string; href: string }[];
 }
-const { title, description, jsonld = [], noindex = false, crumbs = [], brand = true } = Astro.props;
+const { title, description, jsonld = [], noindex = false, crumbs = [], brand = true, focusMode = false } = Astro.props;
 const SITE_NAME = 'UPSC Themes';
 const fullTitle = !brand ? title : `${title} | ${SITE_NAME}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -69,7 +70,7 @@ const TABS = [
   {ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
   {umamiId && <script defer src={umamiSrc} data-website-id={umamiId} data-do-not-track="true"></script>}
 </head>
-<body>
+<body class:list={{ 'focus-mode': focusMode }}>
   <a class="skip" href="#main">Skip to content</a>
   <header class="top">
     <div class="wrap topin">
@@ -188,6 +189,8 @@ const TABS = [
     .tabbar a { display: grid; justify-items: center; gap: 2px; padding: 4px 0; font-size: .72rem; font-weight: 600; color: var(--muted); text-decoration: none; }
     .tabbar a[aria-current="page"] { color: var(--accent); }
     body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+    body.focus-mode { padding-bottom: 0; }
+    .focus-mode .top, .focus-mode .tabbar { display: none; }
   }
 
   /* Type */
