@@ -1,0 +1,34 @@
+---
+import { buildTutorPrompt } from '../../lib/stage0/teaching';
+interface Props { concept?: string; subject?: string }
+const { concept, subject } = Astro.props;
+const prompt = buildTutorPrompt(concept, subject);
+---
+<details class="s0-guide-detail s0-portable" data-tutor-prompt>
+  <summary>Prefer another LLM? Take the learning prompt with you.</summary>
+  <p>The concepts and this guide are free to read and reuse. Paste this prompt into an LLM you already use; that provider may have its own access limits. You can also read and copy it without an account here.</p>
+  <label>
+    <span class="s0-kicker">Your reusable learning prompt</span>
+    <textarea readonly rows="9" aria-label={concept ? `Learning prompt for ${concept}` : 'Stage 0 learning prompt'} spellcheck="false">{prompt}</textarea>
+  </label>
+  <div class="s0-assessment-actions">
+    <button type="button" class="s0-button" data-copy-tutor-prompt>Copy learning prompt</button>
+    <span class="s0-footnote" role="status" data-copy-prompt-status aria-live="polite"></span>
+  </div>
+</details>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-tutor-prompt]').forEach((root) => {
+    const button = root.querySelector<HTMLButtonElement>('[data-copy-tutor-prompt]')!;
+    const field = root.querySelector<HTMLTextAreaElement>('textarea')!;
+    const status = root.querySelector<HTMLElement>('[data-copy-prompt-status]')!;
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(field.value);
+        status.textContent = 'Prompt copied. Paste it into your preferred LLM.';
+      } catch {
+        field.focus(); field.select();
+        status.textContent = 'Prompt selected. Use your device’s Copy command.';
+      }
+    });
+  });
+</script>

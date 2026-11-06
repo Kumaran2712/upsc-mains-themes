@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Styles from '../../../components/stage0/Styles.astro';
 import PreviewNotice from '../../../components/stage0/PreviewNotice.astro';
+import TutorPrompt from '../../../components/stage0/TutorPrompt.astro';
 import { concepts, conceptsFor, conceptPath, subjectPath, type Concept } from '../../../lib/stage0/curriculum';
 import { previews, featured } from '../../../lib/stage0/previews';
 import { u } from '../../../lib/data';
@@ -33,6 +34,7 @@ const next = sampleList[(sampleList.findIndex((x) => x.id === c.id) + 1) % sampl
         {lesson && <section class="s0-card"><p class="s0-kicker">When you feel ready</p><h2>Check your understanding</h2><p>A few short questions help you see what has clicked. You can skip them and return later.</p><button type="button" class="s0-button" id="s0-open-assessment">Try the sample check →</button><button type="button" class="s0-text-button" id="s0-revisit" style="width:100%;margin-top:5px">Save to revisit</button><p style="font-size:.67rem;margin:5px 0 0">Status changes here are sample progress.</p></section>}
       </aside>
     </div>
+    <TutorPrompt concept={c.name} subject={c.subject.name} />
     <nav class="s0-next-concept" aria-label="Continue exploring"><a href={u(subjectPath(c.subject))}>← All {c.subject.name} concepts</a><a href={u(conceptPath(next))}>Another sample: {next.name} →</a></nav>
     <dialog class="s0-dialog" id="s0-restart-dialog" aria-labelledby="s0-restart-title"><h2 id="s0-restart-title">A fresh look at this idea?</h2><p>This resets only this concept’s sample conversation and progress on this browser.</p><form method="dialog" class="s0-dialog-actions"><button class="s0-button" value="cancel">Keep exploring</button><button class="s0-button s0-button-primary" value="restart">Start fresh</button></form></dialog>
   </div>

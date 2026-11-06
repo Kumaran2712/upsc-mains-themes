@@ -1,0 +1,39 @@
+---
+import { subjects } from '../../lib/stage0/curriculum';
+import { subjectReasons, teachingSteps } from '../../lib/stage0/teaching';
+import TutorPrompt from './TutorPrompt.astro';
+import { u } from '../../lib/data';
+---
+<section class="s0-card s0-section s0-guide" aria-labelledby="s0-why-title">
+  <p class="s0-kicker">Why start here</p>
+  <h2 id="s0-why-title">Make the syllabus mean something first.</h2>
+  <p>You’ve decided to prepare for UPSC CSE. Reading the syllabus and previous years’ questions becomes more useful when you recognise the ideas they refer to. If the language feels unfamiliar, begin with a little background.</p>
+  <p>Stage 0 introduces the vocabulary behind much of the news you’ll study: public decisions, the economy, our physical world and relations between countries. These four subjects involve connected ideas that become easier to follow once the basics make sense.</p>
+  <details class="s0-guide-detail">
+    <summary>Why Polity, Economics, Geography and International Relations?</summary>
+    <div class="s0-reasons">
+      {subjects.map((s) => <article><h3>{s.name}</h3><p>{subjectReasons[s.id].reason}</p><p class="s0-news-example"><strong>In the news:</strong> {subjectReasons[s.id].news}</p></article>)}
+    </div>
+    <p>These ideas also connect: a water dispute can involve geography, government decisions and relations between countries. History, society, science, environment and ethics will add other essential perspectives as your preparation develops.</p>
+  </details>
+  <details class="s0-guide-detail">
+    <summary>How our tutor should help you learn</summary>
+    <p>Start here with Concept Explorer. We’re building a free AI tutor around this approach; today’s preview uses prepared sample conversations. The teaching approach is simple:</p>
+    <ol class="s0-teaching-steps">{teachingSteps.map((step) => <li><strong>{step.title}.</strong> {step.text}</li>)}</ol>
+    <p>Ask again whenever you need to. Understanding means you can explain an idea in your own words, distinguish it from a similar idea and use it in a new situation. Our preview lets you inspect example feedback; it does not evaluate your answers yet.</p>
+  </details>
+  <details class="s0-guide-detail">
+    <summary>When to begin Prelims, Mains and current affairs together</summary>
+    <p>Once the basic language feels familiar, begin integrated preparation from your first day of structured study. You can start sooner if you already have that background, and return here whenever a term gets in the way. There is no requirement to finish every concept first.</p>
+    <ol class="s0-teaching-steps">
+      <li>Pick a topic and find its place in the syllabus.</li>
+      <li>Learn the idea and use PYQs to see the depth and kinds of questions asked.</li>
+      <li>For Prelims, practise the facts and distinctions; for Mains, explore causes, effects and competing arguments.</li>
+      <li>Connect a relevant news story to the same topic and revise them together.</li>
+    </ol>
+    <p>For example, with inflation: understand prices and purchasing power, practise relevant questions, then connect a dated price report to causes and household effects. The same topic can support all three parts of your study.</p>
+    <p>The full CSE also needs CSAT, Essay, Ethics, an optional subject and the other examination requirements. See the <a href="https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf">official CSE 2026 syllabus</a> for the full scope. Stage 0 is an introductory bridge; the roadmap here covers GS Mains themes.</p>
+    <a class="s0-text-button" href={u('/roadmap/')}>Explore the GS Mains roadmap →</a>
+  </details>
+  <TutorPrompt />
+</section>

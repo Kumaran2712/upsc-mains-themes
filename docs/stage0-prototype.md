@@ -44,6 +44,25 @@ State uses only `upscthemes-stage0-prototype-v1` in localStorage. Conversations 
 the most recent 60 messages. Existing roadmap/daily/map state is untouched.
 Prototype input is rendered as text, and is not sent to an AI provider.
 
+## Beginner rationale and teaching contract
+
+The dashboard explains why these four subjects offer a conceptual bridge into
+syllabus reading, PYQs and current affairs. It presents an optional study rhythm
+and encourages integrated study as soon as the learner is ready. No newspaper
+coverage percentage or mandatory completion gate is claimed.
+
+The dashboard and every concept page provide a freely reusable learning prompt,
+including concept-specific context on concept pages. The copy action falls back
+to selecting the prompt when clipboard access is unavailable; it is also readable
+without JavaScript. Other LLMs may have their own access limits.
+
+See [the teaching rubric](stage0-teaching-rubric.md) for the live tutor’s required
+lesson metadata, answering rules, evidence-based assessment, output review criteria
+and acceptance scenarios. `src/lib/stage0/teaching.ts` is the shared source for the
+public prompt and teaching summary. These are instructions and product criteria,
+not a live model integration or a grading engine. The current authored feedback
+remains explicitly labelled as sample feedback.
+
 ## Validation
 
 - Production Astro build and focused TypeScript check.

@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Styles from '../../components/stage0/Styles.astro';
 import SubjectIcon from '../../components/stage0/SubjectIcon.astro';
 import PreviewNotice from '../../components/stage0/PreviewNotice.astro';
+import BeginnerGuide from '../../components/stage0/BeginnerGuide.astro';
 import { subjects, concepts, conceptsFor, conceptPath, subjectPath, uniqueConceptCount } from '../../lib/stage0/curriculum';
 import { u } from '../../lib/data';
 const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
@@ -43,6 +44,8 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
       <div><strong id="s0-revisit">0</strong><span>saved to revisit</span></div>
     </section>
 
+    <BeginnerGuide />
+
     <section class="s0-section" aria-labelledby="s0-subjects">
       <div class="s0-section-head"><h2 id="s0-subjects">Four windows into the world</h2><p>Pick a subject. Follow your curiosity.</p></div>
       <div class="s0-subject-grid">
@@ -58,7 +61,7 @@ const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
       <section class="s0-card" aria-labelledby="s0-journey-title">
         <p class="s0-kicker">A gentle guide</p>
         <h2 id="s0-journey-title" style="margin-top:8px">A 30-day beginning. At your pace.</h2>
-        <p class="s0-muted" style="margin-top:9px">Set aside 30–45 minutes when you can. Take longer whenever an idea needs it. Everything is open from day one.</p>
+        <p class="s0-muted" style="margin-top:9px">An optional rhythm, not a deadline. Try 30–45 minutes when you can, and adjust to your starting point. Begin structured study when the basics feel familiar; revisit terms as needed.</p>
         <ol class="s0-journey">
           {subjects.map((s, i) => <li><span>{i + 1}</span><div><a href={u(subjectPath(s))}>{s.name}</a><small>{s.days}</small></div></li>)}
           <li><span>↺</span><div><span>Connect ideas & revisit</span><small>Days 29–30</small></div></li>
