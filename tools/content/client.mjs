@@ -55,7 +55,7 @@ export async function createContentClient({ directory, budgetUsd, maxCalls, apiK
         if (calls >= maxCalls || ledger.chargedMicrousd + reserved > cap) throw Object.assign(new Error('Content budget exhausted before dispatch'), { code: 'budget_exhausted' });
         ledger.chargedMicrousd += reserved; ledger.dispatched++; calls++;
         await atomicJson(ledgerPath, ledger);
-        await atomicJson(path, { state: 'dispatched', model, stage, executedAt: new Date().toISOString(), promptVersion: 'content-pipeline-v3', requestHash, reservedMicrousd: reserved, request });
+        await atomicJson(path, { state: 'dispatched', model, stage, executedAt: new Date().toISOString(), promptVersion: 'content-pipeline-v4', requestHash, reservedMicrousd: reserved, request });
         return null;
       });
       if (cached) return exportReceipt(cached);
