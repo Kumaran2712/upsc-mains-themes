@@ -2,7 +2,7 @@
 
 Checkpoint: 7 November 2026. All 253 placements have local source packets; the source report records 109 captured primary educational/institutional documents. A packet is provenance and candidate evidence, not factual approval. The source collector uses lexical matches to propose passages; the independent reviewer must check support for every lesson claim. The strategic-interest packet uses explicitly selected contextual passages rather than pretending a lexical match establishes its meaning.
 
-The live application still has 12 legacy pilot placements and **0/253 newly approved flagship placements**. No new paid model calls have been made in this preparation step. The full-curriculum currency budget is awaiting the operator's choice; the previous $1 calibration ledger and its $0.782090 charge are unchanged.
+The live application now supports conversations for all 253 concepts: 12 legacy pilots with understanding checks and 241 source-guided concepts. There are still **0/253 newly approved flagship authored lessons**. See [the live rollout](stage0-live-rollout.md). No new paid model calls have been made in this preparation step. The full-curriculum currency budget is awaiting the operator's choice; the previous $1 calibration ledger and its $0.782090 charge are unchanged.
 
 ## Source capture and preflight
 
