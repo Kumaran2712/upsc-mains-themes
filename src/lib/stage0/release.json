@@ -1,5 +1,5 @@
 {
-  "version": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "version": "e15e4b14694b9f1db99e9d0ee62602d2a8f072a7e8bceed3c69b8a5ed9f4db7f",
   "pilotPlacements": [
     "polity/sovereignty",
     "polity/state",
@@ -13,6 +13,3724 @@
     "international-relations/diplomacy",
     "international-relations/united-nations",
     "international-relations/bilateral-relations"
+  ],
+  "guided": [
+    {
+      "id": "polity/law",
+      "version": "guided-1a39cbe88c0abfa94abbac5669175df4cc90cfad44857a388014aa77b1820a56",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 134, passage containing law"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 16, passage containing law"
+        }
+      ]
+    },
+    {
+      "id": "polity/legal-system",
+      "version": "guided-836c1a77c23498b1fd736abe76ca573396077f7a8ff658e14c2a8236c293d884",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 128, passage containing Legal System"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 20, passage containing Legal System"
+        }
+      ]
+    },
+    {
+      "id": "polity/justice",
+      "version": "guided-b3324b293d7e1160e1d7998440a40e0161c821fec66c9819016b1b1687af7f4e",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+          "locator": "PDF page 1, passage containing justice"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 261, passage containing Justice"
+        }
+      ]
+    },
+    {
+      "id": "polity/rights",
+      "version": "guided-d77cf220297f328ad14c54397cd99a6d23a0bb00599e6e2c8291f70ddf0d6351",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 35, passage containing rights"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+          "locator": "PDF page 1, passage containing Rights"
+        }
+      ]
+    },
+    {
+      "id": "polity/duties",
+      "version": "guided-62782c3b31f21eb2c184a9c13d894f6ae5c916f442e8fa23e61b3f1558f0c366",
+      "sources": [
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 361, passage containing duties"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+          "locator": "PDF page 1, passage containing duties"
+        }
+      ]
+    },
+    {
+      "id": "polity/obligations",
+      "version": "guided-78d7f5cb15437808a1fa7f2a435130335dcc860ae37ea213bb61adee872c9c22",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+          "locator": "PDF page 7, passage containing obligations"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+          "locator": "PDF page 4, passage containing obligations"
+        }
+      ]
+    },
+    {
+      "id": "polity/rules",
+      "version": "guided-ad6e6cb7dfb860a2054675bd2cc69042d40ce682634c64a46e3fec69743bbc7e",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 13, passage containing Rules"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+          "locator": "PDF page 3, passage containing rules"
+        }
+      ]
+    },
+    {
+      "id": "polity/regulations",
+      "version": "guided-15e7b181c1e18203b90e536fa917e5341395e4098a64c289b5f5dd7a9a5733a1",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 176, passage containing regulations"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 645, passage containing regulations"
+        }
+      ]
+    },
+    {
+      "id": "polity/offence",
+      "version": "guided-98a9a103cd4d6600849410ef37921272133f50c32e7b7f697196e4e35f844956",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 11, passage containing offence"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 75, passage containing offence"
+        }
+      ]
+    },
+    {
+      "id": "polity/punishment",
+      "version": "guided-b01403adbda32600948a4deeee0b2dd9bebd4ffad57bcacd35a835e7818ba21d",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 64, passage containing punishment"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 97, passage containing punishment"
+        }
+      ]
+    },
+    {
+      "id": "polity/courts",
+      "version": "guided-c0a19e1ba995106e63c363471ade051e924172f2cdfa2e09403e59391c67ac93",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 234, passage containing courts"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 1, passage containing courts"
+        }
+      ]
+    },
+    {
+      "id": "polity/legal-authority",
+      "version": "guided-494a05bfee5d2f0e4c936580680df2af0144b1eccd956486bc87980ce4b56f0f",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Constitution and legal system",
+          "url": "https://www.sci.gov.in/constitution/",
+          "locator": "Passage containing legal authority"
+        }
+      ]
+    },
+    {
+      "id": "polity/government",
+      "version": "guided-a2b6ad3da2a114e32c3d3118444acd780979fccd3c2f831ec4f25a170ed2dd76",
+      "sources": [
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 39, passage containing government"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+          "locator": "PDF page 6, passage containing government"
+        }
+      ]
+    },
+    {
+      "id": "polity/citizen",
+      "version": "guided-637d3ed7d78d5d29ac77a09dc73f4cc21d494b5518b91990cc740edcf65fd3cc",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 297, passage containing citizen"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 627, passage containing citizen"
+        }
+      ]
+    },
+    {
+      "id": "polity/citizenship",
+      "version": "guided-34fb9c42197b593672f2c36d22fa9a6233d23ff7631c744bf56116c5b8ae10a5",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+          "locator": "PDF page 9, passage containing Citizenship"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+          "locator": "PDF page 10, passage containing citizenship"
+        }
+      ]
+    },
+    {
+      "id": "polity/country",
+      "version": "guided-5731eaf7a72448b9495dc886812306ee88b6783be7f7dc2c8514db6d36223f7b",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+          "locator": "PDF page 6, passage containing country"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 130, passage containing country"
+        }
+      ]
+    },
+    {
+      "id": "polity/nation",
+      "version": "guided-3bfa0bcc6be2788bec355f706ffe3127340066e25b2d4550fdffffbd78ada305",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+          "locator": "PDF page 4, passage containing nation"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 512, passage containing nation"
+        }
+      ]
+    },
+    {
+      "id": "polity/territory",
+      "version": "guided-9c8701002458093e7d862f07740e635d328046ce960610cb758894ef4e8978e8",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+          "locator": "PDF page 6, passage containing Territory"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 63, passage containing territory"
+        }
+      ]
+    },
+    {
+      "id": "polity/public-authority",
+      "version": "guided-e88b94c8ee7bda1c3e1e9e3b0fe71538f54e5e0475eec216d78ab3a276e071d9",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 461, passage containing public authority"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 211, passage containing public authority"
+        }
+      ]
+    },
+    {
+      "id": "polity/public-administration",
+      "version": "guided-5b2b3b9c491b243082b21a9d2f9fe67d38fc8ddb6e7bbe22878e26e0249f360d",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 204, passage containing Public Administration"
+        },
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 34, passage containing Public Administration"
+        }
+      ]
+    },
+    {
+      "id": "polity/preamble",
+      "version": "guided-8c2211ad28fa93233e0334718459fc09db85b0bba4b4817ad36004d577dc0c84",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 93, passage containing Preamble"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+          "locator": "PDF page 20, passage containing preamble"
+        }
+      ]
+    },
+    {
+      "id": "polity/legislature",
+      "version": "guided-2383aee8cca9210b1aaf6e90ab96948518cee6556ab0f53988daad26c07a03b9",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 227, passage containing legislature"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+          "locator": "PDF page 2, passage containing Legislature"
+        }
+      ]
+    },
+    {
+      "id": "polity/executive",
+      "version": "guided-53600448d734e6987fc90b9f757c25052a1198e7721e61ecff5e5d65da9f7249",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keps204.pdf",
+          "locator": "PDF page 2, passage containing Executive"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 18, passage containing executive"
+        }
+      ]
+    },
+    {
+      "id": "polity/judiciary",
+      "version": "guided-f02fc9072493d9effb2b05a773e3d5ecd3d011ab76b8151cbb2afdca2d5678c3",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 1, passage containing Judiciary"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 208, passage containing judiciary"
+        }
+      ]
+    },
+    {
+      "id": "polity/parliament",
+      "version": "guided-9c38f36652165b97658e2692e3031749dc6a5409dc0ceb52b6479f064be06fc5",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+          "locator": "PDF page 8, passage containing Parliament"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+          "locator": "PDF page 23, passage containing parliament"
+        }
+      ]
+    },
+    {
+      "id": "polity/government-departments",
+      "version": "guided-6c4a11c0886808f715913b93bbfb6118bc5f18602961b4500ae0889680237aa8",
+      "sources": [
+        {
+          "title": "Government of Odisha: General Administration Department functions",
+          "url": "https://ga.odisha.gov.in/en/about-us/about-department",
+          "locator": "Passage containing Government Departments"
+        }
+      ]
+    },
+    {
+      "id": "polity/public-institutions",
+      "version": "guided-28d23b9133299466db412a77e57ecd7f8248021870c766a2ffd6501c6ca7af4c",
+      "sources": [
+        {
+          "title": "Government of Odisha: General Administration Department functions",
+          "url": "https://ga.odisha.gov.in/en/about-us/about-department",
+          "locator": "Passage containing public institutions"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+          "locator": "PDF page 8, passage containing public institutions"
+        }
+      ]
+    },
+    {
+      "id": "polity/elections",
+      "version": "guided-cc60d2943bd3a3eb81512734fc65720d7b64d62f467b87e507e9d92ddd41ce99",
+      "sources": [
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 43, passage containing Elections"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+          "locator": "PDF page 1, passage containing elections"
+        }
+      ]
+    },
+    {
+      "id": "polity/voting",
+      "version": "guided-d9bcbb6e3c30e78dda5186ad77990e46cfca262535b9ec7675724b96cc7df08f",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+          "locator": "PDF page 7, passage containing voting"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+          "locator": "PDF page 19, passage containing voting"
+        }
+      ]
+    },
+    {
+      "id": "polity/representation",
+      "version": "guided-95596643c8b171f0eb5276c263d2abb406b998fd3d71dc4b3c21000cb8573fe1",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+          "locator": "PDF page 21, passage containing representation"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 222, passage containing representation"
+        }
+      ]
+    },
+    {
+      "id": "polity/accountability",
+      "version": "guided-2cfdbe051ef8756cb82cc59a119557b622d3f7e9cb36421aba4a23bb8c4f73a8",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+          "locator": "PDF page 18, passage containing accountability"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+          "locator": "PDF page 3, passage containing accountability"
+        }
+      ]
+    },
+    {
+      "id": "polity/human-rights",
+      "version": "guided-5f3764e2eccd33ccb6f94c4c0e471a276d675c800b9b1ab2533134026f9ef918",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 389, passage containing Human rights"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+          "locator": "PDF page 3, passage containing human rights"
+        }
+      ]
+    },
+    {
+      "id": "polity/fundamental-rights",
+      "version": "guided-83cee6c59310eb0b5eaf1d4d46d179c2be5c5177c28335697a160e8c9449e1d0",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 15, passage containing fundamental rights"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 4, passage containing Fundamental Rights"
+        }
+      ]
+    },
+    {
+      "id": "polity/civil-rights",
+      "version": "guided-2d966ea8f9903180420004940b704bcefb84838d71182eb99f427c4599b5bb68",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 27, passage containing civil rights"
+        },
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 20, passage containing civil rights"
+        }
+      ]
+    },
+    {
+      "id": "polity/political-rights",
+      "version": "guided-be30fa36b7649146a053d72b8fa5320d4fb6935a348c36f261437cff8e2bb35d",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 216, passage containing political rights"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+          "locator": "PDF page 7, passage containing Political rights"
+        }
+      ]
+    },
+    {
+      "id": "polity/equality",
+      "version": "guided-c3a753fda63a145317f1feb853b6dafcfe75a78d66827d507f73a285f6e01f12",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps103.pdf",
+          "locator": "PDF page 2, passage containing Equality"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 183, passage containing equality"
+        }
+      ]
+    },
+    {
+      "id": "polity/liberty",
+      "version": "guided-230a7a0c77616ac5b592ad0f9eb73179304a049ac0c9204a42a9ec71e11da649",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 287, passage containing liberty"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+          "locator": "PDF page 11, passage containing liberty"
+        }
+      ]
+    },
+    {
+      "id": "polity/freedom-of-expression",
+      "version": "guided-9618b5210aa9aff5114a16ce19688e01b09f569dd331ad432b002fd7130b295b",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+          "locator": "PDF page 12, passage containing Freedom of expression"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+          "locator": "PDF page 2, passage containing freedom of expression"
+        }
+      ]
+    },
+    {
+      "id": "polity/freedom-of-religion",
+      "version": "guided-cc44b8167725cf2c07833d5f46f2d00a084c0a9f5c55df5a7a82f14b9b522be0",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 13, passage containing Freedom of religion"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+          "locator": "PDF page 11, passage containing Freedom of religion"
+        }
+      ]
+    },
+    {
+      "id": "polity/right-to-life",
+      "version": "guided-3f9996d0887d5d2fc7c9bcb2724b54ff478c4d8436733e7b2ca3ede7fbd551e6",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 15, passage containing right to life"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 84, passage containing Right to life"
+        }
+      ]
+    },
+    {
+      "id": "polity/right-to-property",
+      "version": "guided-90c2056ed42b74739390da6a5de5292af0a75a2fc93f72af4825a3a299283ba3",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 21, passage containing right to property"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 18, passage containing right to property"
+        }
+      ]
+    },
+    {
+      "id": "polity/discrimination",
+      "version": "guided-76633e2d242e272e666211409f3cdf66013e761757fd7cbf7ce62c01cea0be67",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 7, passage containing discrimination"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+          "locator": "PDF page 4, passage containing discrimination"
+        }
+      ]
+    },
+    {
+      "id": "polity/act",
+      "version": "guided-4d09ca658218d4ca47e59aaff20d19e628cde57f7215bef10600e0efbc401547",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 173, passage containing Act"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 89, passage containing act"
+        }
+      ]
+    },
+    {
+      "id": "polity/bill",
+      "version": "guided-3414899f874fc911cb5179e08f1f4d0b3d145f649777119c49b9a9224cb10955",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+          "locator": "PDF page 12, passage containing Bill"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 153, passage containing Bill"
+        }
+      ]
+    },
+    {
+      "id": "polity/amendment",
+      "version": "guided-2fb6f1cce8b27fa195e96d8b52c0c712406f9ff9500f15a26009f8fa23bb6c07",
+      "sources": [
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 513, passage containing amendment"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+          "locator": "PDF page 12, passage containing amendment"
+        }
+      ]
+    },
+    {
+      "id": "polity/ordinance",
+      "version": "guided-507a37ff15d52c9958756dbb7bc9e9f66aff4264b4f80b78ae835663e5dadb3c",
+      "sources": [
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 287, passage containing Ordinance"
+        },
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 52, passage containing Ordinance"
+        }
+      ]
+    },
+    {
+      "id": "polity/notification",
+      "version": "guided-a3d6dde8506486e76da109a64feb78ac618fe2b62bf3e7ec900b6a77a36dcc24",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 47, passage containing notification"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 547, passage containing notification"
+        }
+      ]
+    },
+    {
+      "id": "polity/order",
+      "version": "guided-5f37a50258f56a0a39eec9985a87bf04d69a6a6cf555d45313d0842b30be370e",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 100, passage containing order"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 535, passage containing order"
+        }
+      ]
+    },
+    {
+      "id": "polity/petition",
+      "version": "guided-a878780675eb86b30407025939af4f81d5c45d386e0a46693780f7d4e1b8474c",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 464, passage containing petition"
+        },
+        {
+          "title": "Supreme Court of India: Constitution and legal system",
+          "url": "https://www.sci.gov.in/constitution/",
+          "locator": "Passage containing petition"
+        }
+      ]
+    },
+    {
+      "id": "polity/writ",
+      "version": "guided-2cd9f9d4e1330c78fc8040306aac982b9626232bee65aed6b0ae926c43f6a01c",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+          "locator": "PDF page 16, passage containing writ"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 267, passage containing WRIT"
+        }
+      ]
+    },
+    {
+      "id": "polity/appeal",
+      "version": "guided-053735ba3449fc35cd847e95a76cfb28e5779f9bb66e200101ba4523906b3563",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 194, passage containing Appeal"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+          "locator": "PDF page 23, passage containing appeal"
+        }
+      ]
+    },
+    {
+      "id": "polity/jurisdiction",
+      "version": "guided-52d5891c4b1917237907a15d931dac0425f8cdbd05e6bd2f23fef416fddad8d2",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+          "locator": "PDF page 9, passage containing jurisdiction"
+        },
+        {
+          "title": "Legislative Department: Constitution of India, English",
+          "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+          "locator": "PDF page 551, passage containing jurisdiction"
+        }
+      ]
+    },
+    {
+      "id": "polity/due-process",
+      "version": "guided-447ce6fbe5bb4412bd2eb5f109a1b73d374947a54ed569892e4d0063ded04ebd",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 377, passage containing due process"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 93, passage containing due process"
+        }
+      ]
+    },
+    {
+      "id": "polity/natural-justice",
+      "version": "guided-b4007720e988c4d600f795f676132f1c2be2cdb8c5c423132248d3a7b68442f8",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 20, passage containing natural justice"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 47, passage containing natural justice"
+        }
+      ]
+    },
+    {
+      "id": "polity/public-interest",
+      "version": "guided-cae1b86c1afadcabb5dc485e76b27438eb9066b6bb55e93f0b4e436a5f7a514a",
+      "sources": [
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 36, passage containing public interest"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 542, passage containing public interest"
+        }
+      ]
+    },
+    {
+      "id": "polity/democratic",
+      "version": "guided-2c027c2c9a651c0336b2569b13168d3e1e879456ea6f049f31390f65e025ddc4",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+          "locator": "PDF page 2, passage containing democracy"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 450, passage containing democracy"
+        }
+      ]
+    },
+    {
+      "id": "polity/republic",
+      "version": "guided-6d2a3211b32d1fa620d2e644cda4d3db992c53826730bc4f40cf947b48e82782",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+          "locator": "PDF page 2, passage containing republic"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 97, passage containing republic"
+        }
+      ]
+    },
+    {
+      "id": "polity/secular",
+      "version": "guided-1ad431f749ee11f00d30f66e478641487e55c0d03b3bd6967c2b799f917d066b",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+          "locator": "PDF page 1, passage containing secularism"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+          "locator": "PDF page 10, passage containing secularism"
+        }
+      ]
+    },
+    {
+      "id": "polity/socialist",
+      "version": "guided-f0d3229638c95b8d74d09794c8c067248c7c424d4fc15ee18d94f9a92a23fc3c",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keps103.pdf",
+          "locator": "PDF page 14, passage containing Socialism"
+        },
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 108, passage containing Socialist"
+        }
+      ]
+    },
+    {
+      "id": "polity/federal",
+      "version": "guided-45f2866592196eee78e26beda510c8478b3b5c8424d738311a56bbbc59ae4428",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+          "locator": "PDF page 5, passage containing federalism"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+          "locator": "PDF page 9, passage containing Federalism"
+        }
+      ]
+    },
+    {
+      "id": "polity/unitary",
+      "version": "guided-0917ece57066900e4f38df6e88b16611475abd9ddfd8097c8b2fd22e41a88867",
+      "sources": [
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+          "locator": "PDF page 11, passage containing unitary"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+          "locator": "PDF page 5, passage containing unitary"
+        }
+      ]
+    },
+    {
+      "id": "polity/parliamentary",
+      "version": "guided-758f50bcd225e66086d9882d96d0031e0d80e74416bcab1f17f49927c4478460",
+      "sources": [
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 38, passage containing parliamentary"
+        },
+        {
+          "title": "NCERT Indian Constitution at Work, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keps204.pdf",
+          "locator": "PDF page 3, passage containing parliamentary"
+        }
+      ]
+    },
+    {
+      "id": "polity/constitutional",
+      "version": "guided-beb6afe0ee749a8144f525e2e7e70d2baeae9306566b8033553b30ad2b384e6c",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 104, passage containing Constitution"
+        },
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 51, passage containing Constitution"
+        }
+      ]
+    },
+    {
+      "id": "polity/constitutional-authority",
+      "version": "guided-d27d15d7515a46c91ae0b2439cb63bdedc78dcdd43e7ebedefed6e0af19a490a",
+      "sources": [
+        {
+          "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+          "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+          "locator": "PDF page 279, passage containing Constitutional authority"
+        },
+        {
+          "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+          "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+          "locator": "PDF page 24, passage containing Constitutional Authority"
+        }
+      ]
+    },
+    {
+      "id": "polity/constitutional-body",
+      "version": "guided-f1c2277820ddffa550b6e89a181632423ed45a857a416a0c1a659a32dd527d95",
+      "sources": [
+        {
+          "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+          "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+          "locator": "PDF page 69, passage containing constitutional bodies"
+        }
+      ]
+    },
+    {
+      "id": "economics/economy",
+      "version": "guided-362698e1a55e08b9058475e4b07289a625a68f80b30d7bc18593cf17c64c6533",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+          "locator": "PDF page 1, passage containing economy"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 8, passage containing economy"
+        }
+      ]
+    },
+    {
+      "id": "economics/economics",
+      "version": "guided-a5bc40b1d75d35689e4dd0ba7c59c5d0ed26c41efef7f78e9ee95172062062ec",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 8, passage containing economics"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+          "locator": "PDF page 5, passage containing economics"
+        }
+      ]
+    },
+    {
+      "id": "economics/goods",
+      "version": "guided-bfcf75c8c12a43087377fc3bd51a2fc2be5083db13a8aa0f85925042d933e545",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 5, passage containing goods"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 9, passage containing Goods"
+        }
+      ]
+    },
+    {
+      "id": "economics/services",
+      "version": "guided-6d4fd71e09cf15184fcf684f05ebbf1a046f81d61108b22939a4cab148196ff3",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 5, passage containing services"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 4, passage containing services"
+        }
+      ]
+    },
+    {
+      "id": "economics/needs",
+      "version": "guided-887d7b1f24d9058e1d5dfb9a4bfc74af3ba6094c99adc344d8f340699793b0eb",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 12, passage containing needs"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+          "locator": "PDF page 1, passage containing needs"
+        }
+      ]
+    },
+    {
+      "id": "economics/wants",
+      "version": "guided-98a29759dc19445b5d16bb5142f50962ce01ccd3180b815969f5c96a00b604d3",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 2, passage containing wants"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec202.pdf",
+          "locator": "PDF page 8, passage containing wants"
+        }
+      ]
+    },
+    {
+      "id": "economics/resources",
+      "version": "guided-0cd8257d4327375a39bbe6d81f965c0b4529945fe063f6413d90f5d22db9f620",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 1, passage containing resources"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 14, passage containing resources"
+        }
+      ]
+    },
+    {
+      "id": "economics/scarcity",
+      "version": "guided-94bbd40c2215dbad0805d95e356f002ea9b773c91abcf61e011ce77090aad766",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 1, passage containing scarcity"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+          "locator": "PDF page 12, passage containing scarcity"
+        }
+      ]
+    },
+    {
+      "id": "economics/choice",
+      "version": "guided-de9a1cc6609d60a127531fec5ffdb9d5adb875d9302dd0e267562f8964a8c834",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/jess205.pdf",
+          "locator": "PDF page 8, passage containing choice"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+          "locator": "PDF page 3, passage containing choice"
+        }
+      ]
+    },
+    {
+      "id": "economics/production",
+      "version": "guided-414698e5fbec5eecfb1a6760285e9555093c884e271b61aadfb16d6a2c1d1d82",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 4, passage containing production"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 6, passage containing production"
+        }
+      ]
+    },
+    {
+      "id": "economics/consumption",
+      "version": "guided-3fce3d77009c2e50ce24bf5805e9a2b4940c2cffd2bdb70ea2283ae5ea737d1b",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+          "locator": "PDF page 2, passage containing consumption"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+          "locator": "PDF page 7, passage containing consumption"
+        }
+      ]
+    },
+    {
+      "id": "economics/distribution",
+      "version": "guided-baea3011f590c58bbed7e49f6c2b652bb9e41e817eae10e4774c218b9427b9f8",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+          "locator": "PDF page 9, passage containing distribution"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 8, passage containing distribution"
+        }
+      ]
+    },
+    {
+      "id": "economics/exchange",
+      "version": "guided-5c0cbfcc7c49057c51af1882bea19dc26d74303e48c1fd1968796ea899fb4740",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keec108.pdf",
+          "locator": "PDF page 13, passage containing exchange"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 4, passage containing exchange"
+        }
+      ]
+    },
+    {
+      "id": "economics/market",
+      "version": "guided-06ae19e2b5752889e4a8ed37f7b528367317c0d1c5f05678c89fbf32ad879655",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 7, passage containing market"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+          "locator": "PDF page 1, passage containing market"
+        }
+      ]
+    },
+    {
+      "id": "economics/money",
+      "version": "guided-03294c9b2c6385efa1725c155cbdf5b111b1c8a0b3cc4eac82d3853e1d2f11c4",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 2, passage containing money"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 1, passage containing Money"
+        }
+      ]
+    },
+    {
+      "id": "economics/currency",
+      "version": "guided-32285a0c7dfc8cf3df0bfcd6f79e4b84adf47cb524098a5d62cc975fb7674939",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 3, passage containing currency"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 2, passage containing currency"
+        }
+      ]
+    },
+    {
+      "id": "economics/barter-system",
+      "version": "guided-860da0f946b6d39fd5d30df4a79fd48076d0c2bbab486edb5f7da58de9351afc",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 2, passage containing barter system"
+        }
+      ]
+    },
+    {
+      "id": "economics/bank",
+      "version": "guided-8ee85afc6831fee008bf3045f05559ebf342d8c1d36398f91a7193b93314c445",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 1, passage containing Bank"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 3, passage containing Bank"
+        }
+      ]
+    },
+    {
+      "id": "economics/central-bank",
+      "version": "guided-1bc7349559fcabcf775e82d67ed9da414715f6c9a09e3272a3f05ad6d61f06df",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 3, passage containing Central Bank"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 12, passage containing central bank"
+        }
+      ]
+    },
+    {
+      "id": "economics/commercial-bank",
+      "version": "guided-f49b7868a6c4d89e95805d9ec8be1052fd70674356379910aacf9a9dab210cb4",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 15, passage containing commercial bank"
+        }
+      ]
+    },
+    {
+      "id": "economics/credit",
+      "version": "guided-d1fd2c485cb2361e949c93bf2ef39aef27b5f3b2b2c1e7befd59054c71b12b6d",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 13, passage containing credit"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+          "locator": "PDF page 4, passage containing credit"
+        }
+      ]
+    },
+    {
+      "id": "economics/loan",
+      "version": "guided-5f8ecf7a9b6c07623ce847d7367578d50f4dadd2b087f9dbec1ba88a35f8fccc",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 8, passage containing loan"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+          "locator": "PDF page 5, passage containing loan"
+        }
+      ]
+    },
+    {
+      "id": "economics/interest",
+      "version": "guided-14df8780e3606fe977c745fc5203c2ddd4240c8c1f32836fc0e65f1418a900ed",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 12, passage containing interest"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+          "locator": "PDF page 13, passage containing interest"
+        }
+      ]
+    },
+    {
+      "id": "economics/deposit",
+      "version": "guided-61048ea822444ebf0a22065572b39486550e93e329c27f5c91ea6ab14b4537b6",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 4, passage containing deposit"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+          "locator": "PDF page 3, passage containing deposit"
+        }
+      ]
+    },
+    {
+      "id": "economics/deflation",
+      "version": "guided-a5e5be50502d69f48f27698b9f45003c8286951668b2789a7a69625db23df54f",
+      "sources": [
+        {
+          "title": "IMF Back to Basics: What Is Money?",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/2012/09/basics.htm",
+          "locator": "Passage containing deflation"
+        }
+      ]
+    },
+    {
+      "id": "economics/purchasing-power",
+      "version": "guided-3e9ed454c1722ec84e14be7b13f985ae6d22a22fe03a8dca2315f49e34d6a523",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+          "locator": "PDF page 3, passage containing Purchasing Power"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 1, passage containing Purchasing Power"
+        }
+      ]
+    },
+    {
+      "id": "economics/income",
+      "version": "guided-ef6a90092f3dfa2d7f070b143f119b5a704c9dbd3213ebf09d37220e145cf720",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 8, passage containing income"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 18, passage containing Income"
+        }
+      ]
+    },
+    {
+      "id": "economics/wealth",
+      "version": "guided-659c39562a087c334c7a3447ae61e7c63e6502987ba5580090b15f08f546b592",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 1, passage containing wealth"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 5, passage containing wealth"
+        }
+      ]
+    },
+    {
+      "id": "economics/savings",
+      "version": "guided-52efdde05cb8cbb15fbc715c8facdb0174a72308b30518dd17cc0397b37f00ac",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+          "locator": "PDF page 3, passage containing Savings"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 14, passage containing savings"
+        }
+      ]
+    },
+    {
+      "id": "economics/investment",
+      "version": "guided-b5d7a77320972041b8ab0c6deece844512a2e958c10b38b19e3f0f536e6e65ee",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 4, passage containing investment"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 11, passage containing investment"
+        }
+      ]
+    },
+    {
+      "id": "economics/expenditure",
+      "version": "guided-c02cdcf69c4770e137f08ae17e47e8cc7e15f70117c80bd0ad3b824688152330",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 13, passage containing expenditure"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 4, passage containing Expenditure"
+        }
+      ]
+    },
+    {
+      "id": "economics/employment",
+      "version": "guided-d382b4b82e1bed9cb7b4a794bd3c319a255c4314948707d6671229f589fc8a84",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 13, passage containing employment"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+          "locator": "PDF page 2, passage containing employment"
+        }
+      ]
+    },
+    {
+      "id": "economics/unemployment",
+      "version": "guided-c99cbc0fc24ead23c1e749b3b30a12fb5a554a38905b98a2feb913e1774c76f5",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 16, passage containing unemployment"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+          "locator": "PDF page 5, passage containing Unemployment"
+        }
+      ]
+    },
+    {
+      "id": "economics/wages",
+      "version": "guided-9f66e61d681da02c1bb1e2feae940682bbc700ccecaafc7e03c579f94a13e1ff",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 4, passage containing wages"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+          "locator": "PDF page 7, passage containing wages"
+        }
+      ]
+    },
+    {
+      "id": "economics/salary",
+      "version": "guided-29a034e9dc544e9540c1072f298540bd355c541deb4c7386cfde08c1dc32569d",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 13, passage containing salary"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+          "locator": "PDF page 8, passage containing salary"
+        }
+      ]
+    },
+    {
+      "id": "economics/poverty",
+      "version": "guided-a19e56036df63a5b509f90f662e6500a636dee51d4a1cca8706990b8d2b54a16",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+          "locator": "PDF page 10, passage containing poverty"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+          "locator": "PDF page 2, passage containing poverty"
+        }
+      ]
+    },
+    {
+      "id": "economics/inequality",
+      "version": "guided-678fe2c1d4c37a6836e02586dbc201be44cef6627f22c308f4f75ed035438228",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+          "locator": "PDF page 7, passage containing inequality"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+          "locator": "PDF page 17, passage containing inequality"
+        }
+      ]
+    },
+    {
+      "id": "economics/standard-of-living",
+      "version": "guided-5eef5d7b90980a932b84583e717ae701274359171c2b26bf0a2b65e9fa188a26",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+          "locator": "PDF page 15, passage containing standard of living"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 12, passage containing standard of living"
+        }
+      ]
+    },
+    {
+      "id": "economics/tax",
+      "version": "guided-03bfe49fcc6be648ad47324dfb1aa0025e8bca2f64f0444a4112267e4b924d38",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 18, passage containing tax"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+          "locator": "PDF page 10, passage containing tax"
+        }
+      ]
+    },
+    {
+      "id": "economics/direct-tax",
+      "version": "guided-c5dbf010b6c13dd66b694dfc348074b6db179cdd1752f818b960e212df87deca",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 3, passage containing direct taxes"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+          "locator": "PDF page 7, passage containing Direct taxes"
+        }
+      ]
+    },
+    {
+      "id": "economics/indirect-tax",
+      "version": "guided-39e742541f148e37ad5e464d6b84d38bc507772e252d1e5c4c3a3445e308d9fc",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 17, passage containing indirect tax"
+        }
+      ]
+    },
+    {
+      "id": "economics/government-revenue",
+      "version": "guided-06997ee8ed4032093ba9d9c2824ce34aa3ab0e081b134d6ca46601c9c51c726a",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 1, passage containing government revenue"
+        }
+      ]
+    },
+    {
+      "id": "economics/government-expenditure",
+      "version": "guided-8378ce7e811f9ea08825ff5883b8160d84ff2358e0ce3c55f89be5df0de162ba",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 12, passage containing government expenditure"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+          "locator": "PDF page 14, passage containing government expenditure"
+        }
+      ]
+    },
+    {
+      "id": "economics/budget",
+      "version": "guided-f5438fc7f175073231cd5b4071ec69453a195e9b8223d6441faa3ddb384d986e",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 6, passage containing budget"
+        },
+        {
+          "title": "NCERT Introductory Microeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec202.pdf",
+          "locator": "PDF page 9, passage containing budget"
+        }
+      ]
+    },
+    {
+      "id": "economics/subsidy",
+      "version": "guided-f3e034b9f5810ea1b4b743ddc6863d8f712a014b83802d99ea6b2e69f2d05b5f",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+          "locator": "PDF page 11, passage containing subsidy"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+          "locator": "PDF page 14, passage containing subsidy"
+        }
+      ]
+    },
+    {
+      "id": "economics/public-debt",
+      "version": "guided-e83cfe67628c4fcc4c2badb878539ce2eeb0cd41907f66b13588ac638960939c",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 16, passage containing Public debt"
+        },
+        {
+          "title": "IMF Back to Basics: Fiscal Policy",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/basics/36-fiscal-policy.htm",
+          "locator": "Passage containing public debt"
+        }
+      ]
+    },
+    {
+      "id": "economics/fiscal-policy",
+      "version": "guided-8a6d43a4d1baccb2dfeff0053de8eb389947e3a9ba5be8a1c82f892332b414a2",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 7, passage containing Fiscal Policy"
+        },
+        {
+          "title": "IMF Back to Basics: Fiscal Policy",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/basics/36-fiscal-policy.htm",
+          "locator": "Passage containing Fiscal Policy"
+        }
+      ]
+    },
+    {
+      "id": "economics/monetary-policy",
+      "version": "guided-85361f3b0a787bd92e709369e6ff6ab056d81cd58ab63fc7291a8c8cca1dc741",
+      "sources": [
+        {
+          "title": "Federal Reserve: inflation",
+          "url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+          "locator": "Passage containing Monetary Policy"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 8, passage containing monetary policy"
+        }
+      ]
+    },
+    {
+      "id": "economics/gnp",
+      "version": "guided-1711d0791a622d62e0c44f82e25148cd63122c3dbf21e334867313aba68bd7ba",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 20, passage containing GNP"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 3, passage containing gross national product"
+        }
+      ]
+    },
+    {
+      "id": "economics/per-capita-income",
+      "version": "guided-8059cf9acc4d8d0fbe16c49e4841fd3d8604996c082dcc050e23ea57e8e62eb7",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 15, passage containing per capita income"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+          "locator": "PDF page 14, passage containing per capita income"
+        }
+      ]
+    },
+    {
+      "id": "economics/economic-growth",
+      "version": "guided-61d51d1df06a92c8257dc1d86dae9e1d3d49679ba9ee0eac70452b3174bd288c",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+          "locator": "PDF page 7, passage containing Economic growth"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf",
+          "locator": "PDF page 9, passage containing economic growth"
+        }
+      ]
+    },
+    {
+      "id": "economics/economic-development",
+      "version": "guided-174d28b7aecbc5e36643208ce90378bf86511d7cb79d5c0c240b909c92bb018a",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 2, passage containing economic development"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+          "locator": "PDF page 4, passage containing economic development"
+        }
+      ]
+    },
+    {
+      "id": "economics/primary-sector",
+      "version": "guided-ca502a46632e263203d45d0628b79b4ddbc284eb0c4d712ee9e0928bb6459d8c",
+      "sources": [
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 8, passage containing Primary sector"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 10, passage containing PRIMARY SECTOR"
+        }
+      ]
+    },
+    {
+      "id": "economics/secondary-sector",
+      "version": "guided-399211dc13affb44fc2fb4a297178112d0028dac2e2054b6d30d40dd02453424",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf",
+          "locator": "PDF page 1, passage containing secondary sector"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 3, passage containing secondary sector"
+        }
+      ]
+    },
+    {
+      "id": "economics/tertiary-sector",
+      "version": "guided-0343515135c5fcb87f1635d1d5f9c2c0d084b0c3cd963f86bad263b236c70c0c",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+          "locator": "PDF page 3, passage containing tertiary sector"
+        }
+      ]
+    },
+    {
+      "id": "economics/imports",
+      "version": "guided-eb8cd644b1ed7c36280bb4f819a548b3f6d7e1e07c265646dad96835c6bde226",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 14, passage containing imports"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 11, passage containing imports"
+        }
+      ]
+    },
+    {
+      "id": "economics/exports",
+      "version": "guided-87fdea567c2bd021922fa2a0beb9bdbc2ba779507a095d3742911e453c41b528",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 9, passage containing exports"
+        },
+        {
+          "title": "NCERT Indian Economic Development, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+          "locator": "PDF page 3, passage containing exports"
+        }
+      ]
+    },
+    {
+      "id": "geography/earth",
+      "version": "guided-bacb9f82f7b0a867e33bf94522617c99785d4c6d8c6bf1e9d342c9fea7920215",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+          "locator": "PDF page 2, passage containing earth"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+          "locator": "PDF page 1, passage containing earth"
+        }
+      ]
+    },
+    {
+      "id": "geography/solar-system",
+      "version": "guided-3b2d1a65da3fff39554f50f9be747bb618690870bb996822d6c9cc2b219330fa",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+          "locator": "PDF page 2, passage containing solar system"
+        },
+        {
+          "title": "NASA Earth Observatory: Mission Biomes",
+          "url": "https://earthobservatory.nasa.gov/biome/",
+          "locator": "Passage containing Solar System"
+        }
+      ]
+    },
+    {
+      "id": "geography/planet",
+      "version": "guided-a076ace42d01917330ae16a37e525216c7a5c5fa1c1eb65daf5366dff38ed84c",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+          "locator": "PDF page 2, passage containing planet"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 2, passage containing planet"
+        }
+      ]
+    },
+    {
+      "id": "geography/rotation",
+      "version": "guided-3ed6b3487ddc4530d88737e2672d580de89ac758a516ae38f405c7d73a18a5e7",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 3, passage containing rotation"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+          "locator": "PDF page 2, passage containing rotation"
+        }
+      ]
+    },
+    {
+      "id": "geography/revolution",
+      "version": "guided-39c2baa043fcca4f800c07dba9dd71842e1940311c8b42aa2d1851f07efe37ba",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess104.pdf",
+          "locator": "PDF page 9, passage containing Revolution"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/legy101.pdf",
+          "locator": "PDF page 5, passage containing revolution"
+        }
+      ]
+    },
+    {
+      "id": "geography/axis",
+      "version": "guided-e446fdc57e3e5cfd4173e0618fd4aed48135fc5069c2b98438a2ec37ccd11fe4",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+          "locator": "PDF page 4, passage containing axis"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+          "locator": "PDF page 7, passage containing axis"
+        }
+      ]
+    },
+    {
+      "id": "geography/equator",
+      "version": "guided-b9822e7a3c0f2a6def3444138e41715e6c3bf06a8a516fc3549a7100c7fd28e0",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+          "locator": "PDF page 2, passage containing equator"
+        },
+        {
+          "title": "NCERT Practical Work in Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy304.pdf",
+          "locator": "PDF page 11, passage containing equator"
+        }
+      ]
+    },
+    {
+      "id": "geography/longitude",
+      "version": "guided-fcda5be9a9656d3551b978d8214869eb222362100c34e10670379867512297c3",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+          "locator": "PDF page 3, passage containing longitude"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+          "locator": "PDF page 5, passage containing longitude"
+        }
+      ]
+    },
+    {
+      "id": "geography/hemisphere",
+      "version": "guided-d404563015498f8e8448d848b219970c9f32dfd83ef6c3f74f4c9a3cdf532a8a",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 9, passage containing hemisphere"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+          "locator": "PDF page 6, passage containing hemisphere"
+        }
+      ]
+    },
+    {
+      "id": "geography/globe",
+      "version": "guided-c0d2340f7714fb90d145b29448e40b8c4c15990c7f00fd10696420f6f238b76f",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy304.pdf",
+          "locator": "PDF page 1, passage containing globe"
+        },
+        {
+          "title": "NCERT Practical Work in Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+          "locator": "PDF page 1, passage containing globe"
+        }
+      ]
+    },
+    {
+      "id": "geography/map",
+      "version": "guided-83800213620421a111d2fa0c72d50315ce910b05a14dd4d9bdf6b49ee089f2e4",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+          "locator": "PDF page 1, passage containing map"
+        },
+        {
+          "title": "NCERT Practical Work in Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy302.pdf",
+          "locator": "PDF page 3, passage containing map"
+        }
+      ]
+    },
+    {
+      "id": "geography/scale",
+      "version": "guided-1f5138874fda622c1f1c1a7e6a2b0cbadc9ec8098bc5ff26311ce234497c1f8e",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+          "locator": "PDF page 4, passage containing scale"
+        },
+        {
+          "title": "NCERT Practical Work in Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy302.pdf",
+          "locator": "PDF page 1, passage containing scale"
+        }
+      ]
+    },
+    {
+      "id": "geography/coordinates",
+      "version": "guided-bd29e549a4bcd4dd98a1ac8ca06042efb54747bb6c4da77741ae721648aac7e1",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+          "locator": "PDF page 2, passage containing coordinates"
+        },
+        {
+          "title": "NCERT Practical Work in Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+          "locator": "PDF page 5, passage containing coordinates"
+        }
+      ]
+    },
+    {
+      "id": "geography/time-zone",
+      "version": "guided-ae9be3ab89b93b3bcd91578bc1f82c0a385f035cbd78cd3255714a3bec3342de",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+          "locator": "PDF page 7, passage containing time zone"
+        }
+      ]
+    },
+    {
+      "id": "geography/continent",
+      "version": "guided-e6227f38887fccb2daffc6b2c4f98b4209dc4b3a6713edfdbede6277f0b15829",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/legy107.pdf",
+          "locator": "PDF page 5, passage containing continent"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+          "locator": "PDF page 9, passage containing continent"
+        }
+      ]
+    },
+    {
+      "id": "geography/ocean",
+      "version": "guided-6197cf0a1fec825c376af5cb7f33db4f3b8e606364353ba49461f262a3981866",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+          "locator": "PDF page 5, passage containing ocean"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 5, passage containing Ocean"
+        }
+      ]
+    },
+    {
+      "id": "geography/sea",
+      "version": "guided-83ececdced25867a4a48ea2e46a27e7cd9c9437de1c2d128612cccbf0a10d535",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+          "locator": "PDF page 4, passage containing sea"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 6, passage containing sea"
+        }
+      ]
+    },
+    {
+      "id": "geography/island",
+      "version": "guided-7403dc29f259b423b130704bf3b271b60c00308ed8cefe23f21c650606647059",
+      "sources": [
+        {
+          "title": "NASA Earth Observatory: Mission Biomes",
+          "url": "https://earthobservatory.nasa.gov/biome/",
+          "locator": "Passage containing Island"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+          "locator": "PDF page 2, passage containing Island"
+        }
+      ]
+    },
+    {
+      "id": "geography/peninsula",
+      "version": "guided-fd971379b7530779eee84520272794da3508fe5248a21f058736366a143b9d88",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+          "locator": "PDF page 3, passage containing peninsula"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 8, passage containing Peninsula"
+        }
+      ]
+    },
+    {
+      "id": "geography/mountain",
+      "version": "guided-e49978cbde54f54d5a78260957520d37c92902e4950e2fb089e13fe42dd886b2",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+          "locator": "PDF page 14, passage containing mountain"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+          "locator": "PDF page 3, passage containing mountain"
+        }
+      ]
+    },
+    {
+      "id": "geography/plateau",
+      "version": "guided-dfa5ede5217833c9d168dc07e7a9f00047b46dd4b2159ace08c947dfcbef1cd7",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+          "locator": "PDF page 8, passage containing plateau"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+          "locator": "PDF page 10, passage containing plateau"
+        }
+      ]
+    },
+    {
+      "id": "geography/plain",
+      "version": "guided-d91f39fbd7020460b686a9679ea30f291084d9b0aec8420f73c4cb799c2c2901",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+          "locator": "PDF page 14, passage containing plain"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+          "locator": "PDF page 3, passage containing plain"
+        }
+      ]
+    },
+    {
+      "id": "geography/valley",
+      "version": "guided-f0d40cc73f65e5de3aa7312114cc20846fd7afd0c1231727941b360e313bef49",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+          "locator": "PDF page 9, passage containing valley"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 6, passage containing valley"
+        }
+      ]
+    },
+    {
+      "id": "geography/desert",
+      "version": "guided-4e685e7c66c8e5edca747c2a97688928a20269bfb2b6dac7a901dd32d2bec56d",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 3, passage containing desert"
+        },
+        {
+          "title": "NASA Earth Observatory: Mission Biomes",
+          "url": "https://earthobservatory.nasa.gov/biome/",
+          "locator": "Passage containing Desert"
+        }
+      ]
+    },
+    {
+      "id": "geography/river",
+      "version": "guided-0567e7b5a2a74b710de1dd599176ddfba26a9592a3f430dc5f3b682e71478af6",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+          "locator": "PDF page 10, passage containing river"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+          "locator": "PDF page 6, passage containing river"
+        }
+      ]
+    },
+    {
+      "id": "geography/lake",
+      "version": "guided-fac29f504330187c7a96c141cd523ede32b07501d5a629b262333970b308cf08",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 4, passage containing lake"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+          "locator": "PDF page 6, passage containing Lake"
+        }
+      ]
+    },
+    {
+      "id": "geography/glacier",
+      "version": "guided-0a60ac97756fbe829559eeed7aadd5f920129283590da6045b41bca2a215e01e",
+      "sources": [
+        {
+          "title": "NCERT Practical Work in Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+          "locator": "PDF page 9, passage containing glacier"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+          "locator": "PDF page 8, passage containing glacier"
+        }
+      ]
+    },
+    {
+      "id": "geography/volcano",
+      "version": "guided-2afdbb6e8ef20ca847977f06f347631feb354cc801105f4dd960f95d918b3ddd",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+          "locator": "PDF page 6, passage containing volcano"
+        }
+      ]
+    },
+    {
+      "id": "geography/earthquake",
+      "version": "guided-bea14f81295890379ec300f5ecc8517a98c164f51fad82423bea9239c025dbd9",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+          "locator": "PDF page 4, passage containing Earthquake"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 2, passage containing earthquake"
+        }
+      ]
+    },
+    {
+      "id": "geography/atmosphere",
+      "version": "guided-4b2633f78684cb49e16f3cc31a5a3ae964ee7af687cbd4c950f58ff16282572a",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+          "locator": "PDF page 2, passage containing atmosphere"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+          "locator": "PDF page 2, passage containing atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "geography/temperature",
+      "version": "guided-91f93d52d79f0eeb98a6de65ec56bf79e71f94bf8369d55990ae6c5932a676af",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+          "locator": "PDF page 4, passage containing temperature"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "locator": "PDF page 1, passage containing temperature"
+        }
+      ]
+    },
+    {
+      "id": "geography/air-pressure",
+      "version": "guided-399f8d0a7f3c5729171a1344efa98381daccda1c5a21071d98aabc2d8361ccd0",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 9, passage containing air pressure"
+        },
+        {
+          "title": "NOAA: Climate vs. Weather",
+          "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+          "locator": "Passage containing Air Pressure"
+        }
+      ]
+    },
+    {
+      "id": "geography/wind",
+      "version": "guided-a534966389c8a7c587cecc67e7ef841168665b95d7bbd598098bc64adaccd368",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+          "locator": "PDF page 14, passage containing Wind"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 4, passage containing wind"
+        }
+      ]
+    },
+    {
+      "id": "geography/humidity",
+      "version": "guided-3193eeec7ff824029ccc1c01486fc1ac9da92d2a5bddbd218125216b21fae67c",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 6, passage containing humidity"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "locator": "PDF page 1, passage containing humidity"
+        }
+      ]
+    },
+    {
+      "id": "geography/rainfall",
+      "version": "guided-a2f86c0759b4da50d6f734dc302799ca5d992504f25e367e06cd2af092c64981",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "locator": "PDF page 4, passage containing rainfall"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 2, passage containing rainfall"
+        }
+      ]
+    },
+    {
+      "id": "geography/precipitation",
+      "version": "guided-84c5570be35908a31e48307863cbdbf879515ab4b131d372579298dc3636622a",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+          "locator": "PDF page 3, passage containing precipitation"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 4, passage containing precipitation"
+        }
+      ]
+    },
+    {
+      "id": "geography/monsoon",
+      "version": "guided-92c8f559d806a6aa60189ee2a408b41968a9633559322ef53912ae17e96a5006",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 2, passage containing Monsoon"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+          "locator": "PDF page 6, passage containing monsoon"
+        }
+      ]
+    },
+    {
+      "id": "geography/cyclone",
+      "version": "guided-e8160b29c9feb2a737768c14d1bd14a05fa159f639c4fd972d3ee7eddf7332db",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 8, passage containing cyclone"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess104.pdf",
+          "locator": "PDF page 10, passage containing cyclone"
+        }
+      ]
+    },
+    {
+      "id": "geography/anticyclone",
+      "version": "guided-736185532b4b1ca5475c96472ad647da645282c4e30fc9f7dd4f952aec263003",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+          "locator": "PDF page 4, passage containing Anticyclone"
+        }
+      ]
+    },
+    {
+      "id": "geography/greenhouse-effect",
+      "version": "guided-4057a909d398dd6551924f78c9faaf500186c066b3fa56ac1e0cd46a007b32fc",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+          "locator": "PDF page 1, passage containing greenhouse effect"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 6, passage containing greenhouse effect"
+        }
+      ]
+    },
+    {
+      "id": "geography/global-warming",
+      "version": "guided-f61d0f73da62d29c29cdb6a931895271e905bfa1ba69de79411d852794fd719f",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 6, passage containing global warming"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+          "locator": "PDF page 1, passage containing global warming"
+        }
+      ]
+    },
+    {
+      "id": "geography/ecosystem",
+      "version": "guided-38996244856b3dd01a72809a90608170e2510231d047f9e6c6c8af4a778c0bfe",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+          "locator": "PDF page 3, passage containing ecosystem"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+          "locator": "PDF page 8, passage containing Ecosystem"
+        }
+      ]
+    },
+    {
+      "id": "geography/biome",
+      "version": "guided-9d8f3bd652c24df571c1e7b33f6cd3d778297f4ad9242bcf452013d0f0afb1d9",
+      "sources": [
+        {
+          "title": "NASA Earth Observatory: Mission Biomes",
+          "url": "https://earthobservatory.nasa.gov/biome/",
+          "locator": "Passage containing biome"
+        }
+      ]
+    },
+    {
+      "id": "geography/biodiversity",
+      "version": "guided-a95df80c4fb7be276158097b1fc7d61011a33e77d448bd404b2a71f1c6610bb2",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+          "locator": "PDF page 2, passage containing biodiversity"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+          "locator": "PDF page 2, passage containing biodiversity"
+        }
+      ]
+    },
+    {
+      "id": "geography/natural-resources",
+      "version": "guided-94f84c27332ec0f33b9b26dc5fdbd5f6e947ee83907d4fca56fe9e47b22cff8e",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+          "locator": "PDF page 2, passage containing natural resources"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+          "locator": "PDF page 3, passage containing natural resources"
+        }
+      ]
+    },
+    {
+      "id": "geography/renewable-resources",
+      "version": "guided-7b7ef8ab5e1b67238d9b685bdf4684b6d4bb6a2b47ab8e885d9e4e1d161cc330",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 1, passage containing renewable resource"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 11, passage containing renewable resource"
+        }
+      ]
+    },
+    {
+      "id": "geography/non-renewable-resources",
+      "version": "guided-8a4d30760a73a4ec40b8270fdff8aa9008eb55dcc113766f8ff8d48ae5d15667",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 11, passage containing non-renewable resource"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+          "locator": "PDF page 11, passage containing Non-renewable Resources"
+        }
+      ]
+    },
+    {
+      "id": "geography/forest",
+      "version": "guided-0e6f1abd1ef5c3aab8495fad06cc362ab60fcfdec42eecc71db337f557fe6293",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf",
+          "locator": "PDF page 3, passage containing forest"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+          "locator": "PDF page 1, passage containing forest"
+        }
+      ]
+    },
+    {
+      "id": "geography/soil",
+      "version": "guided-6f77e8da078317bcf409fb1e8e69619156ce71df3effaed49f26afa05bf7cb2c",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 7, passage containing soil"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+          "locator": "PDF page 9, passage containing Soil"
+        }
+      ]
+    },
+    {
+      "id": "geography/water-cycle",
+      "version": "guided-554712c8ecc01c0a5091cd75a37670cb924423991a7f38557049b7742714b33c",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 2, passage containing water cycle"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+          "locator": "PDF page 3, passage containing Water Cycle"
+        }
+      ]
+    },
+    {
+      "id": "geography/erosion",
+      "version": "guided-b410343ea961195a04eddb4b546f5259879eb4d841c1345d69f05cef07a07b07",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+          "locator": "PDF page 8, passage containing erosion"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+          "locator": "PDF page 10, passage containing erosion"
+        }
+      ]
+    },
+    {
+      "id": "geography/conservation",
+      "version": "guided-0b0fe2a5f2f8b678f5edae786b6b9f4211a50431ecafad465536b4bbd0ff5b5f",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf",
+          "locator": "PDF page 1, passage containing Conservation"
+        },
+        {
+          "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+          "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+          "locator": "PDF page 4, passage containing Conservation"
+        }
+      ]
+    },
+    {
+      "id": "geography/population",
+      "version": "guided-2baf3072ad41ae93a492dfc228717e488169f0160a01efe67658d749f75cd6a3",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 5, passage containing population"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+          "locator": "PDF page 1, passage containing population"
+        }
+      ]
+    },
+    {
+      "id": "geography/population-density",
+      "version": "guided-63c76c8049fe57a179b9bc0af25191855937000974ad9cf2b1feb5bdb55fa334",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/jess107.pdf",
+          "locator": "PDF page 4, passage containing population density"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 6, passage containing population density"
+        }
+      ]
+    },
+    {
+      "id": "geography/birth-rate",
+      "version": "guided-8b21a698eea03ee3953a65e61643d6b2162b02cff4749fa7ce1909b8b6f0ce30",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 3, passage containing birth rate"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+          "locator": "PDF page 5, passage containing birth rate"
+        }
+      ]
+    },
+    {
+      "id": "geography/death-rate",
+      "version": "guided-12e59939499b19e49b78184765b9c9b07daa80b61241a2a41604acf65ee989fc",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 3, passage containing Death rate"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+          "locator": "PDF page 5, passage containing death rate"
+        }
+      ]
+    },
+    {
+      "id": "geography/migration",
+      "version": "guided-464752669b84327931622b96b5a099cee63d6cce2acf420ddfc550c330df3b30",
+      "sources": [
+        {
+          "title": "NCERT India: People and Economy, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+          "locator": "PDF page 9, passage containing migration"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 3, passage containing Migration"
+        }
+      ]
+    },
+    {
+      "id": "geography/urbanisation",
+      "version": "guided-88eb03d4fa107aaf62d3f25e39347b4d87a0df4f9c46954ca1c974fe2399383b",
+      "sources": [
+        {
+          "title": "NCERT India: People and Economy, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy202.pdf",
+          "locator": "PDF page 4, passage containing urbanisation"
+        },
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 3, passage containing urbanisation"
+        }
+      ]
+    },
+    {
+      "id": "geography/rural-settlement",
+      "version": "guided-f6564304050939d9085e386b398c033a4e5a823ddeac03de19a0e10dcf2afc99",
+      "sources": [
+        {
+          "title": "NCERT India: People and Economy, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy202.pdf",
+          "locator": "PDF page 2, passage containing rural settlement"
+        }
+      ]
+    },
+    {
+      "id": "geography/agriculture",
+      "version": "guided-c9d0d5b5fbdce695a29ccd7154559a97ceb353288bb0e299497db8cae02329d7",
+      "sources": [
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+          "locator": "PDF page 4, passage containing Agriculture"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+          "locator": "PDF page 16, passage containing Agriculture"
+        }
+      ]
+    },
+    {
+      "id": "geography/irrigation",
+      "version": "guided-70c60da98e93b06adff347420f38bd6b5f40e12f2a9581914e489fa63a82ee0b",
+      "sources": [
+        {
+          "title": "NCERT India: People and Economy, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+          "locator": "PDF page 6, passage containing irrigation"
+        },
+        {
+          "title": "NCERT India: People and Economy, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+          "locator": "PDF page 2, passage containing Irrigation"
+        }
+      ]
+    },
+    {
+      "id": "geography/industrialisation",
+      "version": "guided-93aa9b7ce75196a6b50826ebd82e8e309aa6c13336447760d923bf37d4348f46",
+      "sources": [
+        {
+          "title": "NCERT Contemporary India II, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+          "locator": "PDF page 3, passage containing industrialisation"
+        },
+        {
+          "title": "NCERT Fundamentals of Human Geography, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+          "locator": "PDF page 2, passage containing Industrialisation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/country",
+      "version": "guided-ed72ca11037838830a670711307e4ed3cf14c72caed8d908a5fd28a64f9a650a",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 7, passage containing country"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 19, passage containing country"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/nation",
+      "version": "guided-386e0ed0d526947d7e1e6360869ffb1c148acb96a46688997ae6011ab4e36cc4",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+          "locator": "PDF page 4, passage containing nation"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 3, passage containing nation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/state",
+      "version": "guided-b3fcd669ac86f9c55fafdb4951e2098cdb9874c4acfabc43eeaedb38a7779616",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+          "locator": "PDF page 2, passage containing state"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+          "locator": "PDF page 4, passage containing state"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/sovereignty",
+      "version": "guided-a392b88a6d706c8f38dc82f303f355aa3b5fd2b26d1c048bfdb1be538a12aae9",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 6, passage containing sovereignty"
+        },
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 7, passage containing sovereignty"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/territory",
+      "version": "guided-5a25b22233bb821c2611858bae7018e936aad4a93692c8cf9db1aa11b6a221e0",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+          "locator": "PDF page 13, passage containing territory"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 7",
+          "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+          "locator": "PDF page 6, passage containing Territory"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/border",
+      "version": "guided-1f29c201d54466b4f5f71502d99a427e648f31a3df063845711adb026141a648",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 11, passage containing border"
+        },
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 10, passage containing border"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/national-interest",
+      "version": "guided-6b8f600c99cc1676e5b331801574a3c3132b9bc86508c1850c31740806730aca",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 4, passage containing national interests"
+        },
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 1, passage containing national interest"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/foreign-policy",
+      "version": "guided-479bd99e5e3cd7b7601623d2a369836f6163640e698d3d800a3391aceddabbee",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 1, passage containing Foreign policy"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 7, passage containing foreign policy"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-relations",
+      "version": "guided-6850c118cb3eca33fe479ef062a187ca450630badb9d00693a98b94405f6cc5d",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 5, passage containing International relations"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 2, passage containing international relations"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/multilateral-relations",
+      "version": "guided-01156efc9547df2df636d567b57f266c069b73a7e295731048a2c931425978bd",
+      "sources": [
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing Multilateralism"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/globalisation",
+      "version": "guided-68a3a5cc9454c9c42d783c4daa8a2a0cd0546af0b778ed2ce4dad5d1993bc7f3",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 17, passage containing globalisation"
+        },
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 8, passage containing Globalisation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/geopolitics",
+      "version": "guided-a0fdf595eb2c116753684bb38b4a05aed037e659b4ee1629e7c202ba3f12e5c4",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+          "locator": "PDF page 12, passage containing geopolitics"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/strategic-interest",
+      "version": "guided-e4b180e6d3ac87350a427672cf9607aee4e5473b475fd51e63bd64a97d3f3d0d",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+          "locator": "PDF page 13, passage containing strategic resources"
+        },
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 8, passage containing national interest in every"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/security-council",
+      "version": "guided-e0635ef470c50cea2ccc16eea2ff6937ac7cf94bf8f0ec00ce1e3de7d29d9cd5",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 8, passage containing Security Council"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+          "locator": "PDF page 1, passage containing Security Council"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/general-assembly",
+      "version": "guided-ef627c32853c3df046d7cd530e17f053a03c01af557769fcbdd8a91f15633078",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+          "locator": "PDF page 16, passage containing General Assembly"
+        },
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing General Assembly"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/world-bank",
+      "version": "guided-9c1a68d0d7bb655db68a79a9936a0d213c1486d4b032eb7ba665aa4214857b35",
+      "sources": [
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 20, passage containing World Bank"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+          "locator": "PDF page 15, passage containing World Bank"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-monetary-fund",
+      "version": "guided-c62aab5370a156f9ae49cbf7d31ed44809f7aff6176fe2cf813b198e7c72f8bf",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 2, passage containing International Monetary Fund"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+          "locator": "PDF page 17, passage containing International Monetary Fund"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/world-trade-organization",
+      "version": "guided-10773d593864230e1b22c8828500b50b7aeaf5c4056f4e43546a7796b5e2784e",
+      "sources": [
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 12, passage containing WORLD TRADE ORGANISATION"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 4, passage containing World Trade Organisation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-court-of-justice",
+      "version": "guided-d88d69bdf024e1159bedcaa821dc10954161c67a4a0fba92a56f64128686caa2",
+      "sources": [
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing International Court of Justice"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+          "locator": "PDF page 17, passage containing International Court of Justice"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/regional-organisations",
+      "version": "guided-e468b56799a3ffd2fc236ffc2efdd156a99d7dffe498092d91b0c86d600277db",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 14, passage containing regional organisations"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-institutions",
+      "version": "guided-65c15e0b1752e043194a6e65527296b98cca312e94844087278cc8d1b45d2e10",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 15, passage containing international institutions"
+        },
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing international institutions"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/treaty",
+      "version": "guided-460f9073a1af129ab00285d83bef6ae6b66dd7eb5e2ee693cbdfb3da330c3ee1",
+      "sources": [
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing treaty"
+        },
+        {
+          "title": "United Nations Treaty Collection glossary",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/glossary/page1_en.xml",
+          "locator": "Passage containing treaty"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/ambassador",
+      "version": "guided-6a6dcfd7d92311ddf5fdd070ea3d89c9a95860d4e55b248c525fed6a45760287",
+      "sources": [
+        {
+          "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+          "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+          "locator": "Passage containing ambassador"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 2, passage containing Ambassador"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/high-commissioner",
+      "version": "guided-880bbed12333cf6b1d321507df7a812e1886fed6100a54025f7c25e854436442",
+      "sources": [
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing High Commissioner"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+          "locator": "PDF page 15, passage containing High Commissioner"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/embassy",
+      "version": "guided-c9ce4d3cacf54859ca5091c84617446a0d39c39181e36842e8bef7feb415591b",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leps101.pdf",
+          "locator": "PDF page 11, passage containing embassy"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/consulate",
+      "version": "guided-58eea57b41f5e0d4048f2e76eb777fd1d9433c23e541ae51c71efc80ea09adf5",
+      "sources": [
+        {
+          "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+          "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+          "locator": "Passage containing consulate"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/diplomatic-mission",
+      "version": "guided-751bf2e26ea744afbcfffe0da905c13d65618aef6c022b2dffb99bbb50cbdb75",
+      "sources": [
+        {
+          "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+          "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+          "locator": "Passage containing diplomatic mission"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/summit",
+      "version": "guided-da313893094358b1d04483278d694a73ad52dd657f3ddf5f188c24ac0b303867",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+          "locator": "PDF page 4, passage containing Summit"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+          "locator": "PDF page 18, passage containing Summit"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/dialogue",
+      "version": "guided-8db544667133a520cda730192e629df46f1264bb763b9fee371a7120a7a5b307",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps101.pdf",
+          "locator": "PDF page 8, passage containing dialogue"
+        },
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 3, passage containing dialogue"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/negotiation",
+      "version": "guided-9f8e41b23b12c5bc047867c872c78a865a700c7f9a6d07cec046729c295cfb70",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 16, passage containing negotiation"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+          "locator": "PDF page 13, passage containing negotiation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/mediation",
+      "version": "guided-088d87cada955c8b5d829a8c536b4a3d42967d06acfd47c820cc58014ebc278c",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 1, passage containing mediation"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/agreement",
+      "version": "guided-f1384f79fba774619161919de8fb9b1f1068c6268de939f80c59839384679363",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+          "locator": "PDF page 8, passage containing agreement"
+        },
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing agreement"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/memorandum-of-understanding",
+      "version": "guided-fca61428e83549411dbea27e9656ba42c21cad0574c39d8c4263d9d15b5d9682",
+      "sources": [
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing memorandum of understanding"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/protocol",
+      "version": "guided-1514bc0c72ccbacd2a8f435f1516bbf9359320014f6b8a45374630b33acaf109",
+      "sources": [
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing Protocol"
+        },
+        {
+          "title": "United Nations Treaty Collection: Definitions",
+          "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+          "locator": "Passage containing Protocol"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/sanctions",
+      "version": "guided-af5410ee8201b5f8d596096ffb42cf7a2d7273204e9413ff34132778898e04a3",
+      "sources": [
+        {
+          "title": "United Nations Security Council: Sanctions",
+          "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+          "locator": "Passage containing sanctions"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/national-security",
+      "version": "guided-83db75a18e7ff3a251c2e647ef5fc5f5a4f7705f5062938aab9b15bc8e247bf8",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+          "locator": "PDF page 10, passage containing national security"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 1, passage containing national security"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-security",
+      "version": "guided-a49d5d976cd11f05f668ab6e80e0496395f4a9a0b61c1529707c2499264b0ba6",
+      "sources": [
+        {
+          "title": "United Nations Security Council: Sanctions",
+          "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+          "locator": "Passage containing international peace and security"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+          "locator": "PDF page 13, passage containing international peace and security"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/defence",
+      "version": "guided-9c73ff389d3939d6cc0f7c8f297e80fd79da86dbc607642d217e4d746508c2b2",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 4, passage containing defence"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+          "locator": "PDF page 5, passage containing defence"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/military-alliance",
+      "version": "guided-108db1e96fb5a0a959ff9a7bffee4e640e21d2b74da89aeac36fd28a676281ee",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 2, passage containing military alliance"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/leps101.pdf",
+          "locator": "PDF page 14, passage containing military alliance"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/war",
+      "version": "guided-5810e6009e0e1dd1c8195369bc78d434f5c7e4be2e10439c8177f3c7722638c2",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 3, passage containing War"
+        },
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 8, passage containing war"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/conflict",
+      "version": "guided-63d2b6d6210ec656ada3ff08ec5e176fe0c308088f881d02c0a27ae9fe6b2efa",
+      "sources": [
+        {
+          "title": "NCERT Political Theory, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+          "locator": "PDF page 6, passage containing conflict"
+        },
+        {
+          "title": "NCERT Political Theory, chapter 8",
+          "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+          "locator": "PDF page 4, passage containing conflict"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/terrorism",
+      "version": "guided-b8d7cd325912953fa9d1774eba6ea9716a8c2be958db8cee5dccbd03d7f2ccf5",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 9, passage containing Terrorism"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+          "locator": "PDF page 12, passage containing terrorism"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/insurgency",
+      "version": "guided-deae37b230fea6ccd4e5a4986b69f4eb4fb0a3db88b0dda6c8a4683728518052",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+          "locator": "PDF page 1, passage containing insurgency"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 16, passage containing insurgency"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/nuclear-weapons",
+      "version": "guided-d2db9901123861c8989b463d7c42e38780ac3428fe770eab21650b003f6f4422",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 6, passage containing nuclear weapons"
+        },
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 7, passage containing nuclear weapons"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/arms-control",
+      "version": "guided-4e8f889e92c67bf12a57491868922b236293e592536a4d3b7a2d4fa52def23c9",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 7, passage containing arms control"
+        },
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing Arms control"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/disarmament",
+      "version": "guided-66cb8ffa362eaa7a36bc73a1a9df2a9ac824327c29240e0236736405bb20a6cb",
+      "sources": [
+        {
+          "title": "NIOS: India’s Foreign Policy, lesson 26",
+          "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+          "locator": "PDF page 5, passage containing Disarmament"
+        },
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing disarmament"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/deterrence",
+      "version": "guided-e47d58982c54fbfbc8bf8f710dfa3bd731b0282dba2094a112beee0078e6fcf3",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 5",
+          "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+          "locator": "PDF page 3, passage containing deterrence"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/international-trade",
+      "version": "guided-8a27ce0b31e2f0a937a3265767f83b878745931371288037569b7c450077c459",
+      "sources": [
+        {
+          "title": "United Nations Office at Geneva: Multi-what?",
+          "url": "https://sites.ungeneva.org/multiwhat/",
+          "locator": "Passage containing international trade"
+        },
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 11, passage containing international trade"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/free-trade",
+      "version": "guided-c02e81446ad41db1536de0726d16c74a06fea3af876165e2f32bb2126aea1b63",
+      "sources": [
+        {
+          "title": "NCERT Contemporary World Politics, chapter 3",
+          "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+          "locator": "PDF page 14, passage containing Free Trade"
+        },
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 3, passage containing free trade"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/protectionism",
+      "version": "guided-77d67c48ef1f3bc4fd472a59abf1034f41e2c911db9d3e13847b380c7dfe5430",
+      "sources": [
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 3, passage containing Protectionism"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/tariff",
+      "version": "guided-89d962d50863488f2e07945c6cbc4bd2c74752617c0966341a57bb5d47d87720",
+      "sources": [
+        {
+          "title": "UK Department for Business: Protectionism",
+          "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+          "locator": "PDF page 7, passage containing tariff"
+        },
+        {
+          "title": "IMF Back to Basics: What Is Direct Investment?",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/basics/20_direct-invest.htm",
+          "locator": "Passage containing tariff"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/trade-deficit",
+      "version": "guided-de23c4ca83af124773ff45698a36f9a8084ecfc31ef92fadb0c876699c2f5f03",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 2",
+          "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+          "locator": "PDF page 25, passage containing trade deficit"
+        },
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 3, passage containing Trade deficit"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/trade-surplus",
+      "version": "guided-6bde924007d6dd881b38ceb67ded1abe5d116460f0fb3e1bc3b6f6643b3e1780",
+      "sources": [
+        {
+          "title": "NCERT Introductory Macroeconomics, chapter 6",
+          "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+          "locator": "PDF page 3, passage containing Trade surplus"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/foreign-direct-investment",
+      "version": "guided-30a0c61d332e6d5accc182fd5598445ade0d01a76c3af2ffd077eb15119502e4",
+      "sources": [
+        {
+          "title": "IMF: Portfolio investment assets and their distinction from direct investment",
+          "url": "https://www.imf.org/en/Blogs/Articles/2023/03/20/global-portfolio-asset-holdings-decrease-amid-elevated-uncertainty",
+          "locator": "Passage containing foreign direct investment"
+        },
+        {
+          "title": "IMF Back to Basics: What Is Direct Investment?",
+          "url": "https://www.imf.org/external/pubs/ft/fandd/basics/20_direct-invest.htm",
+          "locator": "Passage containing foreign direct investment"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/foreign-portfolio-investment",
+      "version": "guided-f201defd6ea0ded5eef04984d81d9b319209393de86627e0f7582c63a9a3d26a",
+      "sources": [
+        {
+          "title": "IMF: Portfolio investment assets and their distinction from direct investment",
+          "url": "https://www.imf.org/en/Blogs/Articles/2023/03/20/global-portfolio-asset-holdings-decrease-amid-elevated-uncertainty",
+          "locator": "Passage containing portfolio investment"
+        },
+        {
+          "title": "NCERT Understanding Economic Development, chapter 4",
+          "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+          "locator": "PDF page 1, passage containing portfolio investment"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/foreign-aid",
+      "version": "guided-bd88152f46e726983be1ed49736ab91126b45064f450e3512926a3b73dca544e",
+      "sources": [
+        {
+          "title": "OECD: Official Development Assistance",
+          "url": "https://www.oecd.org/en/topics/official-development-assistance-oda.html",
+          "locator": "Passage containing foreign aid"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/economic-sanctions",
+      "version": "guided-b5485f8705bde054f99f9da676ea0beec3a1209bb8a6df9f1fb87857a64bb4c2",
+      "sources": [
+        {
+          "title": "United Nations Security Council: Sanctions",
+          "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+          "locator": "Passage containing economic and trade sanctions"
+        }
+      ]
+    }
   ],
   "published": []
 }

@@ -1,5 +1,5 @@
 import { concepts, conceptPath } from './curriculum';
-import { tutorPlacements, availableFor } from './publication';
+import { assessmentPlacements, checksFor } from './publication';
 import { auth, api, ensureAuth, type ProgressEntry, type Usage } from './api';
 
 export function paintLiveStatus(el: HTMLElement, entry?: Pick<ProgressEntry, 'status' | 'revisit'>) {
@@ -48,8 +48,8 @@ export function paintSubjects(entries: ProgressEntry[]) {
     const list = concepts.filter((c) => c.subject.id === el.dataset.subjectProgress);
     const seen = list.filter((c) => byId.has(c.id));
     const understood = seen.filter((c) => byId.get(c.id)?.status === 'Understood').length;
-    const count = el.querySelector('[data-count]'); if (count) count.textContent = `${understood} of ${availableFor(el.dataset.subjectProgress!)} available checks understood`;
-    const fill = el.querySelector<HTMLElement>('[data-fill]'); if (fill) fill.style.width = `${100 * understood / Math.max(1, availableFor(el.dataset.subjectProgress!))}%`;
+    const count = el.querySelector('[data-count]'); if (count) count.textContent = `${understood} of ${checksFor(el.dataset.subjectProgress!)} available checks understood`;
+    const fill = el.querySelector<HTMLElement>('[data-fill]'); if (fill) fill.style.width = `${100 * understood / Math.max(1, checksFor(el.dataset.subjectProgress!))}%`;
     const state = el.querySelector('[data-subject-state]'); if (state) state.textContent = seen.length ? `${seen.length} explored` : auth.user ? 'Ready when you are' : 'Sign in to save progress';
   });
 }
@@ -61,7 +61,7 @@ export function initialiseLiveDashboard() {
     document.getElementById('s0-explored')!.textContent = String(entries.length);
     document.getElementById('s0-understood')!.textContent = String(understood);
     document.getElementById('s0-revisit')!.textContent = String(entries.filter((e) => e.revisit).length);
-    document.getElementById('s0-overall-fill')!.style.width = `${100 * understood / Math.max(1, tutorPlacements.size)}%`;
+    document.getElementById('s0-overall-fill')!.style.width = `${100 * understood / Math.max(1, assessmentPlacements.size)}%`;
     const list = document.getElementById('s0-recent-list')!; list.replaceChildren();
     const known = entries.filter((e) => concepts.some((c) => c.id === e.conceptId));
     document.getElementById('s0-recent-empty')!.hidden = known.length > 0;

@@ -6,7 +6,7 @@ import PreviewNotice from '../../components/stage0/PreviewNotice.astro';
 import BeginnerGuide from '../../components/stage0/BeginnerGuide.astro';
 import AccountControls from '../../components/stage0/AccountControls.astro';
 import { subjects, concepts, conceptsFor, conceptPath, subjectPath, uniqueConceptCount } from '../../lib/stage0/curriculum';
-import { tutorPlacements, availableFor } from '../../lib/stage0/publication';
+import { tutorPlacements, assessmentPlacements, checksFor } from '../../lib/stage0/publication';
 import { u } from '../../lib/data';
 const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
 const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
@@ -40,7 +40,7 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
         {subjects.map((s) => <a class="s0-card s0-subject-card" href={u(subjectPath(s))} data-subject-progress={s.id}>
           <div class="s0-subject-card-head"><span class="s0-subject-icon" data-subject={s.id}><SubjectIcon kind={s.icon} /></span><span class="s0-tag">{conceptsFor(s.id).length} concepts</span></div>
           <div><h3>{s.name} <span aria-hidden="true">↗</span></h3><p>{s.description}</p></div>
-          <div><div class="s0-subject-card-foot"><span data-count>0 of {live ? availableFor(s.id) : conceptsFor(s.id).length} available checks understood</span><span data-subject-state>Ready when you are</span></div><div class="s0-meter" style="margin-top:10px"><span data-fill></span></div></div>
+          <div><div class="s0-subject-card-foot"><span data-count>0 of {live ? checksFor(s.id) : conceptsFor(s.id).length} available checks understood</span><span data-subject-state>Ready when you are</span></div><div class="s0-meter" style="margin-top:10px"><span data-fill></span></div></div>
         </a>)}
       </div>
     </section>
@@ -73,7 +73,7 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
         <ul class="s0-recent-list" id="s0-recent-list"></ul>
       </section>
     </div>
-    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; their progress is separate. {live ? `${tutorPlacements.size} tutor lessons are currently available. The full catalogue and reusable learning prompts remain free to read.` : 'All progress shown here is prototype data.'}</p>
+    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; their progress is separate. {live ? `AI tutoring is available for all ${tutorPlacements.size} concepts. Understanding checks are available for ${assessmentPlacements.size} concepts. The catalogue and reusable learning prompts remain free to read.` : 'All progress shown here is prototype data.'}</p>
     <noscript><p class="s0-footnote">You can browse every subject and concept without JavaScript. Enable JavaScript to try sample conversations and save preview progress.</p></noscript>
   </div>
   <script>

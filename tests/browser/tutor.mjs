@@ -165,17 +165,30 @@ try {
 
   await navigate('/stage-0/geography/erosion/');
   await wait(`document.querySelector('[data-account-label]').textContent.includes(${JSON.stringify(username)}) && !document.querySelector('[data-live-revisit]').disabled`);
-  assert.equal(await evalJS(`!!document.querySelector('[data-live-form]')`),false);
+  await liveReady();
+  assert.equal(await evalJS(`!!document.querySelector('[data-live-form]')`),true);
+  assert.equal(await evalJS(`!!document.querySelector('[data-live-open-check]')`),false);
+  await sendLive('Explain erosion with an everyday example.');
+  await navigate('/stage-0/geography/erosion/'); await liveReady();
+  assert.equal(await evalJS(`document.querySelectorAll('#s0-live-messages article').length`),2);
   await click('[data-live-revisit]');
   await wait(`document.querySelector('[data-live-revisit]').textContent.includes('Saved')`);
   assert(await evalJS(`document.querySelector('[data-tutor-prompt] textarea').value.includes('Erosion in Geography')`));
-  console.log('PASS: catalogue-only concepts remain free, portable and bookmarkable without a live lesson');
+  await navigate('/stage-0/international-relations/multilateral-relations/'); await liveReady();
+  await sendLive('How are multilateral relations different from bilateral relations?');
+  await navigate('/stage-0/international-relations/multilateral-relations/'); await liveReady();
+  assert.equal(await evalJS(`document.querySelectorAll('#s0-live-messages article').length`),2);
+  assert.equal(await evalJS(`!!document.querySelector('[data-live-open-check]')`),false);
+  assert(await evalJS(`!!document.querySelector('[aria-label="References for Multilateral Relations"] a')`));
+  console.log('PASS: new source-guided concepts support chat, restored history, references and bookmarking without exposing unprepared checks');
 
   for(const width of [1360,390,320]) {
     await assertLayout('/stage-0/',width,width===1360?1000:844);
     await screenshot('stage0-live-dashboard-'+width);
     await assertLayout('/stage-0/polity/sovereignty/',width,width===1360?1000:844); await liveReady();
     await screenshot('stage0-live-concept-'+width);
+    await assertLayout('/stage-0/international-relations/multilateral-relations/',width,width===1360?1000:844); await liveReady();
+    await screenshot('stage0-guided-concept-'+width);
   }
   await click('[data-account-logout]');
   await wait(`!document.querySelector('[data-account-open]').hidden`);
