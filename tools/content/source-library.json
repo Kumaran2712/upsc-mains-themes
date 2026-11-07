@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "keps101",
+      "title": "NCERT Political Theory, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps102",
+      "title": "NCERT Political Theory, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps103",
+      "title": "NCERT Political Theory, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps104",
+      "title": "NCERT Political Theory, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps105",
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps106",
+      "title": "NCERT Political Theory, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps107",
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps108",
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "keps201",
+      "title": "NCERT Indian Constitution at Work, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps202",
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps203",
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps204",
+      "title": "NCERT Indian Constitution at Work, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps204.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps205",
+      "title": "NCERT Indian Constitution at Work, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps206",
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps207",
+      "title": "NCERT Indian Constitution at Work, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps208",
+      "title": "NCERT Indian Constitution at Work, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps209",
+      "title": "NCERT Indian Constitution at Work, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "keps210",
+      "title": "NCERT Indian Constitution at Work, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "leec101",
+      "title": "NCERT Introductory Macroeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec102",
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec103",
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec104",
+      "title": "NCERT Introductory Macroeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec105",
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec106",
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leec201",
+      "title": "NCERT Introductory Microeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "leec202",
+      "title": "NCERT Introductory Microeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec202.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "leec203",
+      "title": "NCERT Introductory Microeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec203.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "leec204",
+      "title": "NCERT Introductory Microeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "leec205",
+      "title": "NCERT Introductory Microeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec205.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "leec206",
+      "title": "NCERT Introductory Microeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec206.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec101",
+      "title": "NCERT Indian Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec102",
+      "title": "NCERT Indian Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec103",
+      "title": "NCERT Indian Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec104",
+      "title": "NCERT Indian Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec105",
+      "title": "NCERT Indian Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec106",
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec107",
+      "title": "NCERT Indian Economic Development, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keec107.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "keec108",
+      "title": "NCERT Indian Economic Development, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keec108.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "kegy201",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy202",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy202.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy203",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy204",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy205",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy206",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy207",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy208",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy209",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy210",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy211",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy212",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy213",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 13",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy213.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy214",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy215",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 15",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy215.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy216",
+      "title": "NCERT Fundamentals of Physical Geography, chapter 16",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy216.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy301",
+      "title": "NCERT Practical Work in Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy302",
+      "title": "NCERT Practical Work in Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy302.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy303",
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy304",
+      "title": "NCERT Practical Work in Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy304.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy305",
+      "title": "NCERT Practical Work in Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "kegy306",
+      "title": "NCERT Practical Work in Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy306.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy101",
+      "title": "NCERT Fundamentals of Human Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/legy101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy102",
+      "title": "NCERT Fundamentals of Human Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy103",
+      "title": "NCERT Fundamentals of Human Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy104",
+      "title": "NCERT Fundamentals of Human Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy105",
+      "title": "NCERT Fundamentals of Human Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/legy105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy106",
+      "title": "NCERT Fundamentals of Human Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/legy106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy107",
+      "title": "NCERT Fundamentals of Human Geography, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/legy107.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy108",
+      "title": "NCERT Fundamentals of Human Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/legy108.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "jess101",
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess102",
+      "title": "NCERT Contemporary India II, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess103",
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess104",
+      "title": "NCERT Contemporary India II, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess105",
+      "title": "NCERT Contemporary India II, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess106",
+      "title": "NCERT Contemporary India II, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "jess107",
+      "title": "NCERT Contemporary India II, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/jess107.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography",
+        "economics"
+      ]
+    },
+    {
+      "id": "leps101",
+      "title": "NCERT Contemporary World Politics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leps101.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps102",
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps103",
+      "title": "NCERT Contemporary World Politics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps104",
+      "title": "NCERT Contemporary World Politics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps105",
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps106",
+      "title": "NCERT Contemporary World Politics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps107",
+      "title": "NCERT Contemporary World Politics, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/leps107.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "leps108",
+      "title": "NCERT Contemporary World Politics, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/leps108.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "iess401",
+      "title": "NCERT Democratic Politics I, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/iess401.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "iess402",
+      "title": "NCERT Democratic Politics I, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/iess402.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "iess403",
+      "title": "NCERT Democratic Politics I, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/iess403.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "iess404",
+      "title": "NCERT Democratic Politics I, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/iess404.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "iess405",
+      "title": "NCERT Democratic Politics I, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/iess405.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "un-charter",
+      "title": "United Nations Charter",
+      "url": "https://www.un.org/en/about-us/un-charter/full-text",
+      "format": "html",
+      "subjects": [
+        "polity",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "diplomatic-encyclopedia",
+      "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+      "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "wto-glossary",
+      "title": "World Trade Organization glossary",
+      "url": "https://www.wto.org/english/thewto_e/glossary_e/glossary_e.htm",
+      "format": "html",
+      "subjects": [
+        "international-relations",
+        "economics"
+      ]
+    },
+    {
+      "id": "treaty-glossary",
+      "title": "United Nations Treaty Collection glossary",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/glossary/page1_en.xml",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "imf-fiscal",
+      "title": "IMF Back to Basics: Fiscal Policy",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/36-fiscal-policy.htm",
+      "format": "html",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "fed-inflation",
+      "title": "Federal Reserve: inflation",
+      "url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+      "format": "html",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "noaa-weather",
+      "title": "NOAA: Climate vs. Weather",
+      "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+      "format": "html",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "constitution-india",
+      "title": "Legislative Department: Constitution of India, 2025 edition",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/12/f6ffd68fdbc63bef89c65e9963c6a1b5.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "sci-constitution",
+      "title": "Supreme Court of India: Constitution and legal system",
+      "url": "https://www.sci.gov.in/constitution/",
+      "format": "html",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "ignou-public-administration",
+      "title": "IGNOU: Public Administration, meaning and scope",
+      "url": "https://www.egyankosh.ac.in/bitstream/123456789/25454/1/Unit-1.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "imf-money",
+      "title": "IMF Back to Basics: What Is Money?",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2012/09/basics.htm",
+      "format": "html",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "imf-direct-investment",
+      "title": "IMF Back to Basics: What Is Direct Investment?",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/20_direct-invest.htm",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "uk-protectionism",
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "nasa-biomes",
+      "title": "NASA Earth Observatory: Mission Biomes",
+      "url": "https://earthobservatory.nasa.gov/biome/",
+      "format": "html",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "jess201",
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "jess202",
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "jess203",
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "jess204",
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "jess205",
+      "title": "NCERT Understanding Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/jess205.pdf",
+      "format": "pdf",
+      "subjects": [
+        "economics",
+        "international-relations"
+      ]
+    },
+    {
+      "id": "legy201",
+      "title": "NCERT India: People and Economy, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy202",
+      "title": "NCERT India: People and Economy, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy202.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy203",
+      "title": "NCERT India: People and Economy, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "legy204",
+      "title": "NCERT India: People and Economy, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+      "format": "pdf",
+      "subjects": [
+        "geography"
+      ]
+    },
+    {
+      "id": "constitution-india-english",
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "ignou-administration",
+      "title": "IGNOU: Public Administration, meaning and scope",
+      "url": "https://egyankosh.ac.in/bitstream/123456789/25454/1/Unit-1.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "ignou-law",
+      "title": "IGNOU: Indian legal system and constitutional protections",
+      "url": "https://egyankosh.ac.in/bitstream/123456789/60208/1/Unit-2.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "mea-foreign-policy",
+      "title": "Ministry of External Affairs: India\u2019s Foreign Policy, 2014 address",
+      "url": "https://www.mea.gov.in/indian-foreign-policy.htm",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "un-treaty-definitions",
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "un-sanctions",
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/sanctions",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "oecd-aid",
+      "title": "OECD: Official Development Assistance",
+      "url": "https://www.oecd.org/en/topics/official-development-assistance-oda.html",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "imf-portfolio",
+      "title": "IMF: Portfolio investment assets and their distinction from direct investment",
+      "url": "https://www.imf.org/en/Blogs/Articles/2023/03/20/global-portfolio-asset-holdings-decrease-amid-elevated-uncertainty",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "dor-direct-tax",
+      "title": "Government of India Department of Revenue: Direct Tax",
+      "url": "https://www.dor.gov.in/index.php/direct-tax",
+      "format": "html",
+      "subjects": [
+        "economics"
+      ]
+    },
+    {
+      "id": "un-multilateralism",
+      "title": "United Nations: International Day of Multilateralism and Diplomacy for Peace",
+      "url": "https://www.un.org/en/observances/multilateralism-for-peace-day",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "eci-role",
+      "title": "Election Commission of India: Constitutional Role",
+      "url": "https://www.eci.gov.in/about-eci",
+      "format": "html",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "un-sanctions-canonical",
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "nacin-natural-justice",
+      "title": "National Academy of Customs: Principles of Natural Justice",
+      "url": "https://nacin.gov.in/resources/file/e-books/Principles%20of%20natural%20justice.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "sci-privacy-judgment",
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "istm-vigilance",
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "ignou-administration-new",
+      "title": "IGNOU: Concept and Significance of Public Administration",
+      "url": "https://www.egyankosh.ac.in/bitstream/123456789/53762/1/Unit-1.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "fm-university-administration",
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "format": "pdf",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "mea-foreign-relations",
+      "title": "Ministry of External Affairs: India\u2019s Foreign Relations, 2009 educational text",
+      "url": "https://fsi.mea.gov.in/Images/pdf/Indias_Foreign_Relations_2009.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "oecd-oda-definition",
+      "title": "OECD: Official Development Assistance definition, 2021",
+      "url": "https://web-archive.oecd.org/2021-05-07/154009-What-is-ODA.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "un-sanctions-web",
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "oecd-aid-web",
+      "title": "OECD: Official Development Assistance",
+      "url": "https://www.oecd.org/en/topics/official-development-assistance-oda.html",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "nios-foreign-policy",
+      "title": "NIOS: India\u2019s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "format": "pdf",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "un-multiwhat",
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    },
+    {
+      "id": "odisha-department",
+      "title": "Government of Odisha: General Administration Department functions",
+      "url": "https://ga.odisha.gov.in/en/about-us/about-department",
+      "format": "html",
+      "subjects": [
+        "polity"
+      ]
+    },
+    {
+      "id": "un-multilateral-system",
+      "title": "United Nations: Multilateral System",
+      "url": "https://www.un.org/en/global-issues/multilateral-system",
+      "format": "html",
+      "subjects": [
+        "international-relations"
+      ]
+    }
+  ]
+}

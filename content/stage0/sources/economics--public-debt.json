@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing Public debt",
+      "excerpt": ". Proportional taxes reduce the autonomous expenditure multiplier because taxes reduce the marginal propensity to consume out of income. 6. Public debt is burdensome if it reduces future growth in output. Key Concepts Public goods Automatic stabiliser Discretionary fiscal policy Ricardian equivalence Box 5.2: Fiscal Responsibility and Budget Management Act, 2003 (FRBMA) In a multi-party parliamentary system, electoral concerns play an 81 important role in determining expenditure policies. A legislative provision, Government B"
+    },
+    {
+      "title": "IMF Back to Basics: Fiscal Policy",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/36-fiscal-policy.htm",
+      "retrievedAt": "2026-11-07T08:20:38.495992+00:00",
+      "sha256": "36ee5d19b313579cdbb8456219bb75fa1ccc294279a1d83f9c1f14f7eec7bbc3",
+      "file": "36ee5d19b313579cdbb8456219bb75fa1ccc294279a1d83f9c1f14f7eec7bbc3.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing public debt",
+      "excerpt": "ment of revenue, expenditures, assets and liabilities, and risks help improve policymaking over the business cycle. Big deficits and rising public debt Fiscal deficits and public-debt-to-GDP ratios have expanded sharply in many countries because of the effects of the crisis on GDP and tax revenue and the cost of the fiscal response. Support and guarantees for the financial and industrial sectors have added to concerns about the financial health of governments. Many countries can afford a moderate fiscal deficit for an extende"
+    }
+  ]
+}

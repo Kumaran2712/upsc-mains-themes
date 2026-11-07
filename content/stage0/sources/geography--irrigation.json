@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT India: People and Economy, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.159813+00:00",
+      "sha256": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1",
+      "file": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing irrigation",
+      "excerpt": " it is kind of irrigation is to provide soil moisture to considered to be a crop of tropical humid areas, maximum possible area. Productive irrigation is it has many varieties which are grown in meant to provide sufficient soil moisture in the different agro-climatic regions. These are cropping season to achieve high productivity. In successfully grown from sea level to about such irrigation the water input per unit area of 2,000 m altitude and from humid areas in cultivated land is higher than protective irrigation. eastern"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.276900+00:00",
+      "sha256": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b",
+      "file": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Irrigation",
+      "excerpt": " groundwater resources at a moderate rate. In agriculture, water is mainly used for If the present trend continues, the demands irrigation. Irrigation is needed because of for water would need the supplies. And such spatio-temporal variability in rainfall in the situation, will be detrimental to development, country. The large tracts of the country are and can cause social upheaval and deficient in rainfall and are drought prone. disruptions. North-western India and Deccan plateau constitute such areas. Winter and summer Lag"
+    }
+  ]
+}

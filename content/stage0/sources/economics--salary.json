@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing salary",
+      "excerpt": "y rules and regulations that are followed as regards their employment? Ka n ta nds her office from Kanta works in an office. She atte s her salary regularly 9.30 a.m. to 5.30 p.m. She get ition to the salary, at the end of every month. In add as per the rules laid she also gets provident fund also gets medical and down by the government. She s not go to office on other allowances. Kanta doe y. When she joined Sundays. This is a paid holida tment letter stating work, she was given an appoin work. all the terms and conditi"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing salary",
+      "excerpt": " the loan is to be repaid in 10 years in monthly instalments. Megha had to submit to the bank, documents showing her employment records and salary before the bank agreed to give her the loan. The bank retained as collateral the papers of the new house, which will be returned to Megha only when she repays the entire loan with interest. Fill the following details of Megha’s housing loan. Loan amount (in Rupees) Duration of loan Documents required Interest rate Mode of repayment Collateral Interest rate, collateral and docu"
+    }
+  ]
+}

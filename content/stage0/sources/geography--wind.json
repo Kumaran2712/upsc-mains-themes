@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.302220+00:00",
+      "sha256": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3",
+      "file": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing Wind",
+      "excerpt": "e expense of mountain front, and gradually, the mountain gets reduced Depositional Landforms leaving an inselberg which is a remnant of the Wind is a good sorting agent. Depending upon mountain. That’s how the high relief in desert the velocity of wind, different sizes of grains are areas is reduced to low featureless plains called moved along the floors by rolling or saltation pediplains. and carried in suspension and in this process of transportation itself, the materials get sorted. Playas When the wind slows or beg"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing wind",
+      "excerpt": "or the formation of clouds and precipitation. cyclones are not formed near the equator. Pressure and Wind The velocity and direction of the wind are the net result of the wind generating forces. The winds in the upper atmosphere, 2 - 3 km above the surface, are free from frictional effect of the surface and are controlled mainly by the pressure gradient and the Coriolis force. When isobars are straight and when there is no Figure 9.5 : Convergence and divergence of winds friction, the pressure gradient force is balance"
+    }
+  ]
+}

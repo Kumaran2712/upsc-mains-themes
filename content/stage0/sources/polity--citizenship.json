@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.207508+00:00",
+      "sha256": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079",
+      "file": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Citizenship",
+      "excerpt": "Citizenship Political Theory slum dwellers make a significant contribution to the Citizenship CITIZENSHIP, EQUALITY AND RIGHTS Citizenship is not merely a legal concept. It is also closely economy through related to larger notions of equality and rights. A widely their labour. They accepted formulation of this relationship was provided may be hawkers, by the British sociologist, T. H. Marshall (1893-1981). petty traders, In his book Citizenship and Social Class (1950), Marshall defined citizenship as “a status be"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.238740+00:00",
+      "sha256": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385",
+      "file": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing citizenship",
+      "excerpt": "e and wealth The President has the power to appoint the Prime Minister The Constitution is the supreme law that everyone has to obey Indian citizenship is not limited to people of any race, caste or religion THE AUTHORITY OF A CONSTITUTION 10 We have outlined some of the functions a constitution performs. These functions explain why most societies have a constitution. But there are three further questions we can ask about constitutions: Reprint 2026-27"
+    }
+  ]
+}

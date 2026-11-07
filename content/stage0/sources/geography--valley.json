@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.212264+00:00",
+      "sha256": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358",
+      "file": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing valley",
+      "excerpt": " erosion by a river or a glacier is called a valley. ‘V’-shaped Valley ‘U’ – shaped Valley It resembles the letter V. A V-shaped A U–shaped valley is formed by strong valley occurs in mountainous areas. lateral erosion of glaciers at high The lowermost part of the V–shaped altitudes. The flat wide bottom and valley is shown by the innermost steep sides makes it resemble the contour line with very small gap letter ‘U’. The lowermost part of the between its two sides and the lowest U–shaped valley is shown by the value of "
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing valley",
+      "excerpt": "eat differently. During the day the air, of the high plateaus and ice fields draining land heats up faster and becomes warmer than into the valley is called katabatic wind. Another the sea. Therefore, over the land the air rises type of warm wind occurs on the leeward side giving rise to a low pressure area, whereas the of the mountain ranges. The moisture in these sea is relatively cool and the pressure over sea winds, while crossing the mountain ranges is relatively high. Thus, pressure gradient from condense and preci"
+    }
+  ]
+}

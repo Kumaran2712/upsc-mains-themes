@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing barter system",
+      "excerpt": " – in the sense that a unit of money can now purchase less of any commodity. We call it a deterioration in the purchasing power of money. A barter system has other deficiencies. It is difficult to carry forward one’s wealth under the barter system. Suppose you have an endowment of rice which you do not wish to consume today entirely. You may regard this stock of surplus rice as an asset which you may wish to consume, or even sell off, for acquiring other commodities at some future date. But rice is a perishable item and cannot "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.706090+00:00",
+      "sha256": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1",
+      "file": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing temperature",
+      "excerpt": "he places located on the coast where molecular movement of particles comprising the warm ocean currents flow record higher a substance, the temperature is the temperature than the places located on the measurement in degrees of how hot (or cold) coast where the cold currents flow. a thing (or a place) is. Distribution of Temperature Factors Controlling Temperature Distribution The global distribution of temperature can The temperature of air at any place is well be understood by studying the influenced by (i) the latitude of "
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.830187+00:00",
+      "sha256": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392",
+      "file": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing temperature",
+      "excerpt": "lso takes place when the moist The air containing moisture to its full air comes in contact with some colder object and capacity at a given temperature is said to be it may also take place when the temperature is saturated. It means that the air at the given close to the dew point. Condensation, therefore, temperature is incapable of holding any depends upon the amount of cooling and the additional amount of moisture at that stage. relative humidity of the air. Condensation is The temperature at which saturation occurs influe"
+    }
+  ]
+}

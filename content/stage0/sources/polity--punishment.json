@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 64, passage containing punishment",
+      "excerpt": "ement set aside by on Appeal or Review When a Govt. servant already under suspension is dismissed, removed or compulsorily retired but such punishment is set aside on appeal or review and further enquiry is ordered, the order of suspension will be deemed to continue in force from the date of the order of the punishment. Such order shall remain in force until further orders. It may be noted that this rule gets invoked only if the Government servant was at the time of removal, dismissal or compulsory retirement was already und"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 97, passage containing punishment",
+      "excerpt": " of article 16, clause (3) of article 32, article 33 and article 34 may be provided for by law made by Parliament; and (ii) for prescribing punishment for those acts which are declared to be offences under this Part, and Parliament shall, as soon as may be after the commencement of this Constitution, make laws for prescribing punishment for the acts referred to in sub-clause (ii); (b) any law in force immediately before the commencement of this Constitution in the territory of India with respect to any of the matters referre"
+    }
+  ]
+}

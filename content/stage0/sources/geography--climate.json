@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing climate",
+      "excerpt": "d south of Af type climate regions. It borders with Tropical Wet Climate (Af) dry climate on the western part of the continent Tropical wet climate is found near the equator. and Cf or Cw on the eastern part. Extensive The major areas are the Amazon Basin in South Aw climate is found to the north and south of America, western equatorial Africa and the the Amazon forest in Brazil and adjoining parts Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.195898+00:00",
+      "sha256": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65",
+      "file": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing Climate",
+      "excerpt": "als are very much similar to many complex geological, climatic, topographic the chemical reactions in a laboratory. and vegetative factors. Climate is of particular importance. Not only weathering processes Physical Weathering Processes differ from climate to climate, but also the depth Physical or mechanical weathering processes of the weathering mantle (Figure 5.2). depend on some applied forces. The applied Reprint 2026-27"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.490992+00:00",
+      "sha256": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36",
+      "file": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing biodiversity",
+      "excerpt": "use for simple terms, biodiversity is the number and such weathering variations and resultant variety of organisms found within a specified biodiversity is the input of solar energy and geographic region. It refers to the varieties of water. No wonder that the areas that are rich plants, animals and micro-organisms, the in these inputs are the areas of wide spectrum genes they contain and the ecosystems they of biodiversity. form. It relates to the variability among living organisms on the earth, including the Biodiversity as "
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing biodiversity",
+      "excerpt": "e 11.2. The distribution around 20°C. Tropical evergreen forests with of climatic groups and types is shown in dense canopy cover and large biodiversity are Table 11.1. found in this climate. Table 11.2 : Climatic Types According to Koeppen Group Type Letter Code Characteristics Tropical wet Af No dry season A-Tropical Humid Climate Tropical monsoon Am Monsoonal, short dry season Tropical wet and dry Aw Winter dry season Subtropical steppe BSh Low-latitude semi arid or dry Subtropical desert BWh Low-latitude arid or dry B-Dry "
+    }
+  ]
+}

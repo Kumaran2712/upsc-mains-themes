@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 128, passage containing Legal System",
+      "excerpt": "plied as to be in consonance with the provisions of clauses (3) to (7) of article 22 of the Constitution of India. Further under the Indian Legal System, there is no enforceable right to compensation for persons claiming to be victims of unlawful arrest or detention against the State.” The reservation to Article 13 – which refers to protections for aliens, states that “the Government of the Republic of India reserves its right to apply its law relating to foreigners.” On 30 June 2014, a report was presented by the Office of th"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing Legal System",
+      "excerpt": " – 4 PRINCIPLES OF NATURAL JUSTICE Introduction 1. Initially, the term Natural Justice referred to certain procedural rights in the English Legal System. Over a period of time, the content of the term has expanded and presently it connotes some basic principles relating to judicial, quasi judicial and administrative decision making. These principles are believed and practiced by all civilized societies for millennia. The view that Natural Justice can be traced back to over thousand years is not an exaggeration. The following o"
+    }
+  ]
+}

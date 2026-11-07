@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 93, passage containing Preamble",
+      "excerpt": "e framers of the Constitution. 95 In Kesavananda Bharati v State of Kerala155 (“Kesavananda Bharati”), Chief Justice Sikri noticed that the Preamble is a part of the Constitution. The Preamble emphasises the need to secure to all citizens justice, liberty, equality and fraternity. Together they constitute the founding faith or the blueprint of values embodied with a sense of permanence in the constitutional document. The Preamble speaks of securing liberty of thought, expression, belief, faith and worship. Fraternity is to"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.959891+00:00",
+      "sha256": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9",
+      "file": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing preamble",
+      "excerpt": " of this vision. Many people have said that the best summary of this vision or the 239 philosophy of the Constitution is to be found in the preamble to our Constitution. Have you carefully read the preamble? Apart from the various objectives mentioned in it, the preamble makes a very humble claim: the Constitution is not ‘given’ by a body of great men, it is prepared and adopted by ‘We, the people of India…’. Thus, the people are themselves the makers of their own destinies, and democracy is the instrument that people have"
+    }
+  ]
+}

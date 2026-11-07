@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing sovereignty",
+      "excerpt": "has become known as the ‘ASEAN Way’, a form of interaction that is informal, non-confrontationist and cooperative. The respect for national sovereignty is critical to the functioning of ASEAN. With some of the fastest growing economies in the world, ASEAN broadened its objectives beyond the economic and social Source: http://www.unicef.org/eapro/EAP_map_final.gif spheres. In 2003, ASEAN Note: Maps on this site do not reflect a position by UNICEF on the legal status of any moved along the path of the country or territory or th"
+    },
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing sovereignty",
+      "excerpt": "ti-dumping) can also be misused to support domestic industries 20  Strategic reasons - such as food security (e.g. the EU’s CAP), national sovereignty, or export restrictions encouraging domestic processing of precious metals  A source of public revenue (especially in developing countries)  To deter consumption of goods with negative externalities 21  To prevent surges of imports (e.g. developing countries may use the special safeguard mechanism)  To counter the effects of ‘dutch disease’ 22 3. Tariff and non-tariff barr"
+    }
+  ]
+}

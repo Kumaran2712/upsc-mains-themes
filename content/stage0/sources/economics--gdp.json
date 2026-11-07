@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.419378+00:00",
+      "sha256": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193",
+      "file": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing GDP",
+      "excerpt": "conomics, is steady increase in the the producers have to adopt new Gross Domestic Product (GDP). The technology. For example, a farmer can GDP is the market value of all the increase the output on the farm by final goods and services produced in using new seed varieties instead of the country during a year. You have using the old ones. Similarly, a factory studied this concept in Class X as can increase output by using a new well. You can think of the GDP as a type of machine. Adoption of new cake and growth is incre"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keec108.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.417505+00:00",
+      "sha256": "ee1afbb391a8266327d4bdb6357e970298ea559de2a62c24c60fb8c40d0faa97",
+      "file": "ee1afbb391a8266327d4bdb6357e970298ea559de2a62c24c60fb8c40d0faa97.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing GDP",
+      "excerpt": "tic Product. China has the second largest GDP (PPP) of $35 trillion in the world, whereas, India’s GDP (PPP) is $15 trillion and Pakistan’s GDP is $1.5 trillion, roughly about 10 per cent of India’s GDP. India’s GDP is about 42 per cent of China’s GDP. Fig. 8.2 Land use and agriculture in India, China and Pakistan When many developed countries were finding it difficult to maintain a TABLE 8.2 growth rate of even 5 per cent, China Annual Growth of Gross Domestic Product (%), 1980–2024 was able to maintain near double-d"
+    }
+  ]
+}

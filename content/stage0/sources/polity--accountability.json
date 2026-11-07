@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.185916+00:00",
+      "sha256": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261",
+      "file": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing accountability",
+      "excerpt": "ature controls the policy of the government. No Confidence Motion: The most powerful weapon that enables the Parliament to ensure executive accountability is the no-confidence motion. As long as the government has the support of its party or coalition of parties that have a majority in the Lok Sabha, the power of the House to dismiss the government is fictional rather than real. However, after 1989, several governments have been forced to resign due to lack of confidence of the house. Each of these governments lost the confidenc"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.539499+00:00",
+      "sha256": "4bf418d295440cd03b81f3d247b028a9673e8392a58823666287ec864cce032c",
+      "file": "4bf418d295440cd03b81f3d247b028a9673e8392a58823666287ec864cce032c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing accountability",
+      "excerpt": "ingful participation. It is also about accountability. Strong and vibrant local governments ensure both active participation and purposeful accountability. Geeta Rathore’s story is one of committed participation. Vengaivasal village Gram Is it possible that we only had Panchayat’s relentless efforts to secure its rights over its governments at the local level own land were an example of a mission to ensure and a coordinating body at the accountability. It is at the level of local government that national level? I think common ci"
+    }
+  ]
+}

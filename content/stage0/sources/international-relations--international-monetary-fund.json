@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing International Monetary Fund",
+      "excerpt": "accounts — the current account, the financial account and the capital account. This is as per the new accounting standards specified by the International Monetary Fund (IMF) in the sixth edition of the Balance of Payments and International Investment Position Manual (BPM6). India has also made the change but the Reserve Bank of India continues to publish data accounting to the old classification. Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.312181+00:00",
+      "sha256": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca",
+      "file": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 17, passage containing International Monetary Fund",
+      "excerpt": "ourt of Justice 3. International Atomic Energy Agency 4. Security Council 5. UN High Commission for Refugees 6. World Trade Organisation 7. International Monetary Fund 8. General Assembly 9. World Health Organisation 10. Secretariat Reprint 2026-27 Chapter 4.indd 61 14 September 2022 11:03:29"
+    }
+  ]
+}

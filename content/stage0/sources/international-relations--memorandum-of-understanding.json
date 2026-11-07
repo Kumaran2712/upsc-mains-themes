@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:22:52.459341+00:00",
+      "sha256": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15",
+      "file": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing memorandum of understanding",
+      "excerpt": "orted to, either because of its speedy procedure, or, sometimes, to avoid the process of legislative approval. Memoranda of Understanding A memorandum of understanding is an international instrument of a less formal kind. It often sets out operational arrangements under a framework international agreement. It is also used for the regulation of technical or detailed matters. It is typically in the form of a single instrument and does not require ratification. They are entered into either by States or International Organizations. The United Na"
+    }
+  ]
+}

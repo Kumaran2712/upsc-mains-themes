@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Central Bank",
+      "excerpt": "e are created by a system comprising two types of institutions: central bank of the economy and the commercial banking system. Central bank Central Bank is a very important institution in a modern economy. Almost every country has one central bank. India got its central bank in 1935. Its name is the ‘Reserve Bank of India’. Central bank has several important functions. It issues the currency of the country. It controls money supply of the country through various methods, like bank rate, open market operations and variations in"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing central bank",
+      "excerpt": " is the exchange rate determined under a flexible exchange rate regime? 7. Differentiate between devaluation and depreciation. 8. Would the central bank need to intervene in a managed floating system? Explain why. 9. Are the concepts of demand for domestic goods and domestic demand for goods the same? 10. What is the marginal propensity to import when M = 60 + 0.06Y? What is the relationship between the marginal propensity to import and the aggregate demand function? 11. Why is the open economy autonomous expenditure multiplie"
+    }
+  ]
+}

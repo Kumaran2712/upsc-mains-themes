@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.548335+00:00",
+      "sha256": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7",
+      "file": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing territory",
+      "excerpt": "re second only to Saudi Arabia’s. associated with oil generates And, since substantial portions of political struggles to control it, Iraqi territory are yet to be fully and the history of petroleum explored, there is a fair chance is also the history of war and that actual reserves might be struggle. Nowhere is this more far larger. The United States, obviously the case than in West Europe, Japan, and increasingly Asia and Central Asia. West India and China, which consume Asia, specifically the Gulf region, this petroleum,"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.238445+00:00",
+      "sha256": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158",
+      "file": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing Territory",
+      "excerpt": "was that tremendous impress of oneness, which held all of us together in ages past, whatever political fate or misfortune had befallen us”. Territory Third, nations identify with a particular territory. Sharing a common past and living together on a particular territory over a long period of time gives people a sense of their collective identity. It helps them to imagine themselves as one people. It is therefore not surprising that people who see themselves as a nation speak of a homeland. The territory they occupied and th"
+    }
+  ]
+}

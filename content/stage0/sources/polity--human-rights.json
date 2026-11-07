@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 389, passage containing Human rights",
+      "excerpt": "an being. That is why every democratic country committed to the rule of law put into force mechanisms for their enforcement and protection. Human rights are universal in nature. The Universal Declaration of Human Rights (hereinafter referred to as UDHR) adopted by the General Assembly of the United Nations on 10-12-1948 recognises and requires the observance of certain universal rights, articulated therein, to be human rights, and these are acknowledged and accepted as equal and inalienable and necessary for the inherent digni"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.198388+00:00",
+      "sha256": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f",
+      "file": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing human rights",
+      "excerpt": "ncreasingly seen as guarantees that human beings themselves seek or arrive at in order to lead a minimally good life. The assumption behind human rights is that all persons are entitled to certain things simply because they are human beings. As a human being each person is unique and equally valuable. This means that all persons are equal and no one is born to serve others. 69 Reprint 2026-27"
+    }
+  ]
+}

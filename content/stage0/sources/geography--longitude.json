@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.097361+00:00",
+      "sha256": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731",
+      "file": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing longitude",
+      "excerpt": "S. MERIDIANS OF LONGITUDE Figure 3.2 Drawing of Parallels of Latitudes Unlike the parallels of latitude which are circles, the meridians of longitude are semi-circles that converge at the poles. If opposite meridians are taken together, they complete a circle, but, they are valued separately as two meridians. The meridians intersect the equator at right angles. Unlike the parallels of latitude, they are all equal in length. For convenience of numbering, the meridian of longitude passing through the Greenwich observatory (ne"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.706090+00:00",
+      "sha256": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1",
+      "file": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing longitude",
+      "excerpt": "ced in the Siberian the month of January and July. plain. The mean January temperature along In general the effect of the latitude on 60° E longitude is minus 20° C both at 80° N temperature is well pronounced on the map, and 50° N latitudes. The mean monthly as the isotherms are generally parallel to the temperature for January is over 27° C, in latitude. The deviation from this general equatorial oceans over 24° C in the tropics trend is more pronounced in January than and 2° C - 0° C in the middle latitudes in July, espe"
+    }
+  ]
+}

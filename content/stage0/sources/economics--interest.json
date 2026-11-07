@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing interest",
+      "excerpt": "tted on the horizontal axis and the rate of interest on the vertical axis. When r = rmax, speculative demand for money is zero. The rate of interest is so high that everyone expects it to fall in future and hence is sure about a future capital gain. Thus everyone has converted the speculative money balance into bonds. When r = rmin, the economy is in the liquidity trap. Everyone is sure of a future rise in interest rate and a fall in bond prices. Everyone puts whatever wealth they acquire in the form of money and the specu"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.500008+00:00",
+      "sha256": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0",
+      "file": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing interest",
+      "excerpt": "ases? 4. What is ‘effective demand’? How will you derive the autonomous expenditure 65 multiplier when price of final goods and the rate of interest are given? Determination of Income 5. Measure the level of ex-ante aggregate demand when autonomous investment and consumption expenditure (A) is Rs 50 crores, and MPS is 0.2 and level of income (Y) is Rs 4000 crores. State whether the economy is in equilibrium or not (cite reasons). ? 6. Explain ‘Paradox of Thrift’. and Employment Suggested Readings 1 . Dornbusch, R. and S. F"
+    }
+  ]
+}

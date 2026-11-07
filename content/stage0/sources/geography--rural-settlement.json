@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT India: People and Economy, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy202.pdf",
+      "retrievedAt": "2026-11-07T08:22:00.162296+00:00",
+      "sha256": "f7c36fece58e30c82071edba22c99a4acdde9514f49b5eff84a532d96b3f4267",
+      "file": "f7c36fece58e30c82071edba22c99a4acdde9514f49b5eff84a532d96b3f4267.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing rural settlement",
+      "excerpt": "n and some • Semi-clustered or fragmented, parts of Rajasthan. • Hamleted, and • Dispersed or isolated. Clustered Settlements The clustered rural settlement is a compact or closely built up area of houses. In this type of village the general living area is distinct and separated from the surrounding farms, barns and pastures. The closely built-up area and its Fig. 2.2 : Semi-clustered settlements Hamleted Settlements Sometimes settlement is fragmented into several units physically separated from each other bearing a common name. T"
+    }
+  ]
+}

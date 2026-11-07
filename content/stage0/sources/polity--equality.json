@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps103.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.361831+00:00",
+      "sha256": "7d8a5c00ae1b3ae08d3094a0c99f5c61146c6c855530a3ea689362ce0e42552f",
+      "file": "7d8a5c00ae1b3ae08d3094a0c99f5c61146c6c855530a3ea689362ce0e42552f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Equality",
+      "excerpt": "Equality Equality 3.1 WHY DOES EQUALITY MATTER? Political Theory Equality is a powerful moral and political ideal that has inspired and guided human society for many centuries. It is implicit in all faiths and religions which proclaim all human beings to be the creation of God. As a political ideal the concept of equality invokes the idea that all human beings have an equal worth regardless of their colour, gender, race, or nationality. It maintains"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 183, passage containing equality",
+      "excerpt": "ity upon him. Equal is to be treated equally even in the matter of executive or administrative action. As a matter of fact, the doctrine of equality is now turned as a synonym of fairness in the concept of justice and stands as the most accepted methodology of a governmental action. The administrative action is to be just on the test of 'fair play' and reasonableness. We have, therefore, examined the case of the appellant in the light of the established doctrine of equality and fair play. The principle is the same, namely,"
+    }
+  ]
+}

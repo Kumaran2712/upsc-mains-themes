@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing border",
+      "excerpt": "Centres of Power 25 policies in Latin America and was popular. However, Chinese Africa are increasingly projecting aggression on the Indian border it as a global player on the side of has marred that hope. Soon after developing economies. independence, both states were involved in differences arising India – China Relations from the Chinese takeover of Tibet in 1950 and the final settlement of India and China were great the Sino-Indian border. China and powers in Asia before the advent India were involved in a border of "
+    },
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing border",
+      "excerpt": "ff reductions from trading partners – tariffs are retained as bargaining levers. 3.2 Non tariff barriers Non tariff barriers (NTBs) include border measures (e.g. customs procedures) as well as behind-the border measures due to domestic laws, regulations and practices (e.g. grants and subsidies, support/ rescue packages to industries, and pressuring companies on where to locate production facilities). The significance of non tariff barriers to trade has increased as tariffs steadily decline and governments worldwide intro"
+    }
+  ]
+}

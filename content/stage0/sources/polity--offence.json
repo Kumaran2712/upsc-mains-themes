@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing offence",
+      "excerpt": "hat persons accused of various offences would also get sufficient protection. We often tend to believe that anyone who is charged with some offence is guilty. However, no one is guilty unless the court has found that person guilty of an offence. It is also necessary that a person accused of any crime should get adequate opportunity to defend herself or himself. To ensure a fair trial in courts, the Constitution has provided three rights: ± no person would be punished for the same offence more than once, ± no law shall dec"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 75, passage containing offence",
+      "excerpt": "ks a definite shift away from the M P Sharma rationale. The right not to be compelled to speak or to incriminate oneself when accused of an offence is an embodiment of the right to privacy. Selvi indicates how the right to privacy can straddle the ambit of several constitutional rights - in that case, Articles 20(3) and 21. 75 In Bhabani Prasad Jena v Orissa State Commission for Women126, the Court was considering the question whether the High Court was justified in issuing a direction for a DNA test of a child and the ap"
+    }
+  ]
+}

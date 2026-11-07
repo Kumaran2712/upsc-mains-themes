@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.936671+00:00",
+      "sha256": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3",
+      "file": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Earthquake",
+      "excerpt": "y scale takes into account the visible damage caused 145 145 by the event. The range of intensity scale is from 1-12. EFFECTS OF EARTHQUAKE Earthquake is a natural hazard. The following are the immediate hazardous effects of earthquake: (i) Ground Shaking (ii) Differential ground settlement (iii) Land and mud slides (iv) Soil liquefaction (v) Ground lurching S (vi) Avalanches (vii) Ground displacement 105 105 (viii) Floods from dam and levee failures (ix) Fires (x) Structural collapse (xi) Falling objects (xii) Tsunami The f"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing earthquake",
+      "excerpt": " adjacent districts was paralysed as incessant overnight rain, meaning a record 180 mm, flooded vast area and disrupted traffic. A Kashmiri earthquake survivor carries water in the snow in a devastated village. Fig. 3.1: Water Scarcity 20 CONTEMPORARY INDIA – II Reprint 2026-27"
+    }
+  ]
+}

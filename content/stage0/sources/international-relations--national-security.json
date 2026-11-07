@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.198388+00:00",
+      "sha256": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f",
+      "file": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing national security",
+      "excerpt": " debated topic concerns the increased restrictions which many governments are imposing on the civil liberties of citizens on the grounds of national security. Protecting national security may be defended as necessary for safeguarding the rights and well-being of citizens. But at what point could the restrictions imposed as necessary for security themselves become a threat to the rights of people? Should a country facing the threat of terrorist bombings be allowed to curtail the liberty of citizens? Should it be allowed to arrest pe"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing national security",
+      "excerpt": "Chapter 5 Security in the Contemporary World Overview In reading about world politics, we frequently encounter the terms ‘security’ or ‘national security’. Do we know what these terms mean? Often, they are used to stop debate and discussion. We hear that an issue is a security issue and that it is vital for the well-being of the country. The implication is that it is too important or secret to be debated and discussed openly. We see movies in which everything surrounding ‘national security’ is shadowy and dangerous. Security se"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 227, passage containing legislature",
+      "excerpt": "ger arising from the introduction of the phrase ‘due process’. Another view is this : that it is not possible to trust the legislature; the legislature is likely to err, is likely to be led away by passion, by party prejudice, by party considerations, and the legislature may make a law which may abrogate what may be regarded as the fundamental principles which safeguard the individual rights of a citizen. We are therefore placed in two difficult positions. One is to give the judiciary the authority to sit in judgment over the"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.185916+00:00",
+      "sha256": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261",
+      "file": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Legislature",
+      "excerpt": "Chapter 5: Legislature WHY DO WE NEED A PARLIAMENT? Legislature is not merely a law making body. Lawmaking is but one 101 of the functions of the legislature. It is the centre of all democratic political process. It is packed with action; walkouts, protests, demonstration, unanimity, concern and co-operation. All these serve very vital purposes. Indeed, a genuine democracy is inconceivable without a representative, efficient and effective "
+    }
+  ]
+}

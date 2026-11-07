@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 69, passage containing constitutional bodies",
+      "excerpt": "protections granted to linguistic minorities would be the special officer's responsibility. 5.8 Summary The Indian Constitution established constitutional bodies, and altering their mandate would require amending the Constitution itself. The provisions and rules of the Constitution serve as their foundation. The Election Commission and the Finance Commission are two instances of constitutional entities. Statutory bodies are constituted by Acts of Parliament or State Legislatures and are also known as non-constitutional bodies. Their fu"
+    }
+  ]
+}

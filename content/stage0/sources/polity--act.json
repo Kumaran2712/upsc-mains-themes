@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 173, passage containing Act",
+      "excerpt": "tional\" status, as it is “closely linked to the values and rights set out in the Constitution”. The Court also stated that the \"The Privacy Act is a reminder of the extent to which the protection of privacy is necessary to the preservation of a free and democratic society”. 282 [1984] 2 SCR 145 173"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 89, passage containing act",
+      "excerpt": "plicability of the sealed cover procedure: : “The issue of a chargesheet, therefore, means its despatch to the government servant, and this act is complete the moment steps are taken for the purpose, by framing the chargesheet and despatching it to the government servant, the further fact of its actual service on the government servant not being a necessary part of its requirement. This is the sense in which the word 'issue' was used in the expression 'chargesheet has already been issued to the employee', in para 17 o"
+    }
+  ]
+}

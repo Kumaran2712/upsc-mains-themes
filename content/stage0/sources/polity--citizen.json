@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 297, passage containing citizen",
+      "excerpt": " entrenched freedom/s, such law seeks to abridge. (4) If the person whose liberty is sought to be deprived of is a non-citizen or even if a citizen is with respect to any freedom other than those specified in Articles 19(1), the law should be just, fair and reasonable. 30. My endeavour qua the aforesaid analysis is only to establish that the expression liberty in Article 21 is wide enough to take in not only the various freedoms enumerated in Article 19(1) but also many others which are not enumerated. I am of the opinion"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 627, passage containing citizen",
+      "excerpt": "nd (b) disallow and citizen from acquiring land either by way of inheritance, allotment, settlement or by any other way of transfer if such citizen is otherwise eligible for such acquisition of land within the Bodoland Territorial Areas District. (2) All laws made under paragraph 3 or under this paragraph shall in so far as they relate to matters specified in List III of the Seventh Schedule, be submitted forthwith to the Governor who shall reserve the same for the consideration of the President. (3) When a law is reserve"
+    }
+  ]
+}

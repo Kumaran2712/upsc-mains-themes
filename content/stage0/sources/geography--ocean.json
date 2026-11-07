@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.706090+00:00",
+      "sha256": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1",
+      "file": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing ocean",
+      "excerpt": "he Eurasian hemisphere. In the northern hemisphere the continental interior. land surface area is much larger than in the The effect of the ocean is well pronounced southern hemisphere. Hence, the effects of in the southern hemisphere. Here the isotherms land mass and the ocean currents are well are more or less parallel to the latitudes and pronounced. In January the isotherms the variation in temperature is more gradual deviate to the north over the ocean and to than in the northern hemisphere. The isotherm the south "
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing Ocean",
+      "excerpt": " rather slowly over a large part of the ocean. General Atmospheric Circulation and its Effects on Oceans Warming and cooling of the Pacific Ocean is most important in terms of general atmospheric circulation. The warm water of the central Pacific Ocean slowly drifts towards South American coast and replaces the cool Peruvian current. Such appearance of warm water off the coast Figure 9. 6 : Simplified general circulation of Peru is known as the El Nino. The El of the atmosphere Nino event is closely associated with the "
+    }
+  ]
+}

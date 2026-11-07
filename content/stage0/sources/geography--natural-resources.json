@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.685924+00:00",
+      "sha256": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70",
+      "file": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing natural resources",
+      "excerpt": "ed many other elements created by human beings technologies and started producing our food across the entire period of their cultural using natural resources such as land, soil and development. water. We adjusted our food habits and This variation provides a clue to the clothing according to the prevailing weather understanding of the relationship between the conditions. There are variations in the natural physical environment and social/cultural resource base, technological development, features. The physical environment has adapt"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.490992+00:00",
+      "sha256": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36",
+      "file": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing natural resources",
+      "excerpt": "ty. At the same time, it is also the origin of new conflicts dealing Importance of Biodiversity with rules of division and appropriation of natural resources. Some of the important Biodiversity has contributed in many ways to economic commodities that biodiversity the development of human culture and, in supplies to humankind are: food turn, human communities have played a major crops, livestock, forests, fish, medicinal role in shaping the diversity of nature at the resources, etc. genetic, species and ecological levels. Biodivers"
+    }
+  ]
+}

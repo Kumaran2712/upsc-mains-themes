@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing fundamental rights",
+      "excerpt": "down in Article 19(2) so far as the attributes covered by Article 19(1) are concerned. In other words, the State must satisfy that both the fundamental rights are not infringed by showing that there is a law and that it does amount to a reasonable restriction within the meaning of Article 19(2) of the Constitution. But in this case no such defence is available, as admittedly there is no such law. So the petitioner can legitimately plead that his fundamental rights both under Article 19(1)(d) and Article 21 are infringed by the State"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Fundamental Rights",
+      "excerpt": " not violated by the colour, age, disability, religion, government. conscience, belief, culture, language and birth”. It grants perhaps the Fundamental Rights are most extensive range of rights to the different from other rights citizens. A special constitutional available to us. While ordinary court enforces the rights enshrined legal rights are protected and in the constitution. enforced by ordinary law, Some of the Rights included in Fundamental Rights are the constitution of South Africa protected and guaranteed by include: the "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.185916+00:00",
+      "sha256": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261",
+      "file": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Parliament",
+      "excerpt": " Do both Houses of the Parliament have similar functions? Is there a difference in the powers of the two Houses? Apart from law making, the Parliament is engaged in many other functions. Let us list the functions of the Parliament: ± Legislative Function: The Parliament enacts legislations for the country. Despite being the chief law making body, the Parliament often merely approves legislations. The actual task of drafting the bill is performed by the bureaucracy under the supervision of the minister concerned. The substanc"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.238740+00:00",
+      "sha256": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385",
+      "file": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 23, passage containing parliament",
+      "excerpt": "came into being. b. The constitution makers were more eminent leaders than the members of the parliament. c. The constitution specifies how parliament is to be formed and what are its powers. d. The constitution cannot be amended by the parliament. Reprint 2026-27"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.936671+00:00",
+      "sha256": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3",
+      "file": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing scale",
+      "excerpt": "kes. 10 Measuring Earthquakes 5 The earthquake events are scaled either according to the magnitude or intensity of the shock. The magnitude scale is known as the Richter scale. The magnitude relates to the energy released during the quake. The 105 105 magnitude is expressed in numbers, 0-10. The intensity scale is named after Mercalli, an Italian seismologist. The intensity scale takes into account the visible damage caused 145 145 by the event. The range of intensity scale is from 1-12. EFFECTS OF EARTHQUAKE Earthquake"
+    },
+    {
+      "title": "NCERT Practical Work in Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy302.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.098413+00:00",
+      "sha256": "3a80d2d80728515f05b8c6901c57b6a8d03d09dbfa66ec8a98e0e9c2042ebbc0",
+      "file": "3a80d2d80728515f05b8c6901c57b6a8d03d09dbfa66ec8a98e0e9c2042ebbc0.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing scale",
+      "excerpt": "Map Scale Chapter 2 Map Scale You have read in Chapter 1 that the scale is an essential element of all types of maps. It is so important that if a network of lines and polygons does not carry a scale, we call it a “sketch”. Why is the scale so important ? What does it mean ? What are the different methods of showing the scale on a map? How useful is the scale in measuring the distances and the area? These are some of the questions which will be ta"
+    }
+  ]
+}

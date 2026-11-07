@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Government of Odisha: General Administration Department functions",
+      "url": "https://ga.odisha.gov.in/en/about-us/about-department",
+      "retrievedAt": "2026-11-07T08:29:55.002346+00:00",
+      "sha256": "b2655c8b1b639b41a2d5f6d132bf7b0a10e27d3b501a6b6182aa442a456ee45b",
+      "file": "b2655c8b1b639b41a2d5f6d132bf7b0a10e27d3b501a6b6182aa442a456ee45b.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing public institutions",
+      "excerpt": "r Group-A Officers, Rules of Business of Government and advising Government Departments on common service rules / conditions. There are key public institutions working within the ambit of the Department such as Odisha Public Service Commission, Odisha Staff Selection Commission, Odisha Sub-ordinate Staff Selection Commission assigned with the task of recruitment and Gopabandhu Academy of Administration assigned with the task of training and capacity building. Besides, there are some special functions such as Estate Administration, wh"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.202734+00:00",
+      "sha256": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f",
+      "file": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing public institutions",
+      "excerpt": " it strange that both India and France are secular, but in India there is no prohibition on wearing or displaying such religious markers in public institutions. That is because the ideal of secularism envisaged in India is different from that of France. The advent of western modernity brought to the fore hitherto neglected and marginalised notions of equality in Indian thought. It sharpened these ideas and helped us to focus on equality within the community. It also ushered ideas of inter-community equality to replace the notion of h"
+    }
+  ]
+}

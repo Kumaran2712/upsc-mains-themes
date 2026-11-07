@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps204.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.417319+00:00",
+      "sha256": "d192215feeecb4abcde9d5f9359f93d2e946a036e6d9212f573fcac2f6973479",
+      "file": "d192215feeecb4abcde9d5f9359f93d2e946a036e6d9212f573fcac2f6973479.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Executive",
+      "excerpt": "y looks after the function of implementation and administration is called the executive. What are the principal functions of the executive? Executive is the branch of government responsible for the implementation of laws and policies adopted by the legislature. The executive is often involved in framing of policy. The official designations of the executive vary from country to country. Some countries have presidents, while others have chancellors. The executive branch is not just about presidents, prime ministers and minist"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing executive",
+      "excerpt": " organ of the government has a clear area of functioning. Thus, the Parliament is supreme in making laws and amending the Constitution, the executive is supreme in implementing them while the judiciary is supreme in settling disputes and deciding whether the laws that have been made are in accordance with the provisions of the Constitution. Despite such clear cut division of power the conflict between the Parliament and judiciary, and executive and the judiciary has remained a recurrent theme in Indian politics. We have alr"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.212264+00:00",
+      "sha256": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358",
+      "file": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing glacier",
+      "excerpt": "ographical Maps VALLEY A geomorphic feature lying between two hills or ridges and formed as a result of the lateral erosion by a river or a glacier is called a valley. ‘V’-shaped Valley ‘U’ – shaped Valley It resembles the letter V. A V-shaped A U–shaped valley is formed by strong valley occurs in mountainous areas. lateral erosion of glaciers at high The lowermost part of the V–shaped altitudes. The flat wide bottom and valley is shown by the innermost steep sides makes it resemble the contour line with very small gap le"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.302220+00:00",
+      "sha256": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3",
+      "file": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing glacier",
+      "excerpt": "gh mountains into low hills and plains. Masses of ice moving as sheets over the land As glaciers continue to move, debris gets (continental glacier or piedmont glacier if a removed, divides get lowered and eventually vast sheet of ice is spread over the plains at the slope is reduced to such an extent that the foot of mountains) or as linear flows down glaciers will stop moving leaving only a mass the slopes of mountains in broad trough-like of low hills and vast outwash plains along valleys (mountain and valley glaciers)"
+    }
+  ]
+}

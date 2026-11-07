@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.291911+00:00",
+      "sha256": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b",
+      "file": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing conflict",
+      "excerpt": "o control scarce resources. There are numerous reasons why disagreements may develop in a society which may express themselves through open conflict. We see people around us ready to fight for all kinds of reasons ranging from the serious to the trivial. Rage while driving on the roads, fighting over parking spaces, quarrels over housing or land, disagreements regarding whether a particular film should be screened, all these, and many other issues, can lead to conflict and violence, perhaps even loss of life. Therefore eve"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.202734+00:00",
+      "sha256": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f",
+      "file": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing conflict",
+      "excerpt": "al difference to which you feel communal the outcome of any struggle to create a society less har mony could be ridden with inter-community conflict and religious promoted. discrimination. For this reason, we need to see what kind of state is needed to prevent religious conflict and to promote religious harmony. How should a state prevent domination by any religious group? For a start, a state must not be run by the heads of any particular religion. A state governed directly by a priestly order is called theocratic. Theocr"
+    }
+  ]
+}

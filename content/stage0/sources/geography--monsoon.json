@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Monsoon",
+      "excerpt": "nter dry and very severe Tundra ET No true summer E-Cold Climates Polar ice cap EF Perennial ice Group A : Tropical Humid Climates Tropical Monsoon Climate (Am) Tropical humid climates exist between Tropic Tropical monsoon climate (Am) is found over of Cancer and Tropic of Capricorn. The sun the Indian sub-continent, North Eastern part being overhead throughout the year and the of South America and Northern Australia. presence of Inter Tropical Convergence Zone Heavy rainfall occurs mostly in summer. Winter (ITCZ) make th"
+    },
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+      "retrievedAt": "2026-11-07T08:20:32.177894+00:00",
+      "sha256": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6",
+      "file": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing monsoon",
+      "excerpt": "ultivation is done. of the other geographical factors, it is not practical to grow paddy in many parts of Intensive Subsistence Agriculture monsoon Asia. Wheat, soyabean, barley and sorghum are grown in northern This type of agriculture is largely found in China, Manchuria, North Korea and North densely populated regions of monsoon Asia. Japan. In India wheat is grown in western Fig. 4.8: Areas of Intensive Subsistence Farming Primary Activities 27 Reprint 2026-27"
+    }
+  ]
+}

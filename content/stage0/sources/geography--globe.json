@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy304.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.255712+00:00",
+      "sha256": "6c309c1412da8021614058365ac892eee508e72dbe1acc58d2e2b4758f076096",
+      "file": "6c309c1412da8021614058365ac892eee508e72dbe1acc58d2e2b4758f076096.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing globe",
+      "excerpt": "allels and meridians on a plane surface. As you know that, the earth on which we live in is not flat. It is geoid in shape like a sphere. A globe is the best model of the earth. Due to this property of the globe, the shape and sizes of the continents and oceans are accurately shown on it. It also shows the directions and distances very accurately. The globe is divided into various segments by the lines of latitude and longitude. The horizontal lines represent the parallels of latitude and the vertical lines represent th"
+    },
+    {
+      "title": "NCERT Practical Work in Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.252554+00:00",
+      "sha256": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1",
+      "file": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing globe",
+      "excerpt": "ocial sciences representing the earth or any of its parts. You may also know that the shape of the earth is geoid (three-dimensional) and a globe can best represent it (Fig. 1.1). A map, on the other hand, is a simplified depiction of whole or part of the earth on a piece of paper. In other words, it is a two-dimensional form of the three-dimensional earth. Hence, a map can be Figure 1.1 India as it is seen on the globe drawn using a system of map projections (see Chapter 4). As it is impossible to represent all feature"
+    }
+  ]
+}

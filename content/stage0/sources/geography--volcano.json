@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.936671+00:00",
+      "sha256": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3",
+      "file": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing volcano",
+      "excerpt": "d to as the nife layer. VOLCANOES AND VOLCANIC LANDFORMS You may have seen photographs or pictures of volcanoes on a number of occasions. A volcano is a place where gases, ashes and/or molten rock material – lava – escape to the ground. A volcano is called an active volcano if the materials mentioned are being released or have been released out in the recent past. The layer below the solid crust is mantle. It has Cinder Cone Reprint 2026-27"
+    }
+  ]
+}

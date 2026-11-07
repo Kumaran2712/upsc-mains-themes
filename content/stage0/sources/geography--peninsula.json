@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.285535+00:00",
+      "sha256": "5ade7db383aa547b048279ed34193b9ad29f1625c559009bb6ebbfbaf8e8d515",
+      "file": "5ade7db383aa547b048279ed34193b9ad29f1625c559009bb6ebbfbaf8e8d515.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing peninsula",
+      "excerpt": "ada means horse. The non-metallic minerals. Sedimentary rocks on highest peak in the western ghats of the western and eastern flanks of the peninsula, Karnataka resembles the face of a horse. in Gujarat and Assam have most of the The Bailadila hills look like the hump of petroleum deposits. Rajasthan with the rock an ox, and hence its name. systems of the peninsula, has reserves of many 44 CONTEMPORARY INDIA – II Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Peninsula",
+      "excerpt": "pen’s system of classification of climates can be termed as : (a) Applied (b) Systematic (c) Genetic (d) Empirical (iii) Most of the Indian Peninsula will be grouped according to Koeppen’s system under: (a) “Af” (b) “BSh” (c) “Cfb” (d) “Am” (iv) Which one of the following years is supposed to have recorded the warmest temperature the world over? (a) 1990 (b) 1998 (c) 1885 (d) 1950 (v) Which one of the following groups of four climates represents humid conditions? (a) A—B—C—E (b) A—C—D—E (c) B—C—D—E (d) A—C—D—F 2. Answer the"
+    }
+  ]
+}

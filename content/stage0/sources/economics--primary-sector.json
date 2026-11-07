@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Primary sector",
+      "excerpt": "Tertiary/Service sectors could also Water Supply (v) Construction (vi) be called as non-farm sectors. Trade (vii) Transport and Storage and Primary sector is the main source (viii) Services. For simplicity, all the of employment for majority of workers TABLE 6.2 Distribution of Workforce by Industry, 2023–24 Industrial Category Place of Residence Sex Total Rural Urban Male Female Primary Sector 59.8 6.7 36.3 64.4 46.1 Secondary Sector 21.4 32.4 28.8 15.6 24.1 * * * * Tertiary / Service Sector 18.8 60.9 34.9 20.0 29.8* Total 100."
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing PRIMARY SECTOR",
+      "excerpt": " the data given in Graphs 2 and 3 and answer the question that follows. Ignore if data are not available for some years. TABLE 2.2 SHARE OF PRIMARY SECTOR IN GDP AND EMPLOYMENT 1977-78 2017-18 Share in Gross Value Added (GVA) Share in employment What are the changes that you observe in the primary sector over a span of forty years? 2. Choose the correct answer: Underemployment occurs when people (i) do not want to work (ii) are working in a lazy manner (iii) are working less than what they are capable of doing (iv) are not paid "
+    }
+  ]
+}

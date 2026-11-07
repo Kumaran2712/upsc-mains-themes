@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.706090+00:00",
+      "sha256": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1",
+      "file": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing atmosphere",
+      "excerpt": "ating the lower layers of the The Passage of Solar Radiation atmosphere. through the Atmosphere The air in contact with the earth rises The atmosphere is largely transparent to short vertically on heating in the form of currents wave solar radiation. The incoming solar and further transmits the heat of the radiation passes through the atmosphere atmsphere. This process of vertical heating before striking the earth’s surface. Within the of the atmosphere is known as convection. troposphere water vapour, ozone and other The co"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.374573+00:00",
+      "sha256": "09c9ff985345ff7dc23f78a0e52ea9791e7305d3e0d4f7c143f4cf2a8d636ec7",
+      "file": "09c9ff985345ff7dc23f78a0e52ea9791e7305d3e0d4f7c143f4cf2a8d636ec7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing atmosphere",
+      "excerpt": "mportant component of the atmosphere found the earth’s mass and 99 per cent of the total between 10 and 50 km above the earth’s mass of the atmosphere is confined to the surface and acts as a filter and absorbs the height of 32 km from the earth’s surface. The ultra-violet rays radiating from the sun and air is colourless and odourless and can be felt prevents them from reaching the surface of the only when it blows as wind. earth. Can you imagine what will happen Water Vapour to us in the absence of ozone in the atmosphere?"
+    }
+  ]
+}

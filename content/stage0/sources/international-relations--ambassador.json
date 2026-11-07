@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+      "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+      "retrievedAt": "2026-11-07T08:20:38.210894+00:00",
+      "sha256": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba",
+      "file": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing ambassador",
+      "excerpt": "ef of a diplomatic mission; the highest-ranking diplomatic representative of one country to another country to which they are appointed; An ambassador is considered the personal representative of their country’s head of state to the head of state of the host country. Term Ambassador extraordinaire and plenipotentiary A diplomatic agent who is the personal representative of the head of one state accredited to the head of another state. Term American Presence Posts (APP) A special purpose overseas diplomatic post with limited "
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Ambassador",
+      "excerpt": "anufacturers of the world are within our reach. Every season, new models of automobiles can be seen on Indian roads. Gone are the days when Ambassador and Fiat were the only cars on Indian roads. Today, Indians are buying cars produced by nearly all the top companies in the world. A similar explosion of brands can be seen for many other goods: from shirts to televisions to processed fruit juices. Such wide-ranging choice of goods in our markets is a relatively recent phenomenon. You wouldn’t have found such a wide variety of"
+    }
+  ]
+}

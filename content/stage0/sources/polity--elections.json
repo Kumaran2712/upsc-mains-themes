@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 43, passage containing Elections",
+      "excerpt": "ce president. ⚫ Whether they are general or by-elections, decisions are made on the election calendar for periodic and ongoing elections. ⚫ Elections are held in and around polling stations and voting centers, and decisions are made regarding the locations of polling stations, the placement of voters in the polling stations, the location of the polling centers, and all other connected issues. ⚫ Voter certificates are issued to political parties and resolutions are related to the production of voter lists, Electronic Image I"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.257803+00:00",
+      "sha256": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd",
+      "file": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing elections",
+      "excerpt": "o be taken before the game of electoral politics can begin, these cannot be left to any government. That is why these basic decisions about elections are written down in the constitution of a democratic country. In this chapter we shall study the constitutional provisions regarding elections and representation. We shall focus on the importance of the method of election chosen in our Constitution and the implications of the constitutional provisions regarding impartial machinery for conducting elections. We shall also look a"
+    }
+  ]
+}

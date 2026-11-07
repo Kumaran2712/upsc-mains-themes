@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/jess107.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.244193+00:00",
+      "sha256": "330de91a5c8f3818b5a9670e945f40f265ff8f3d97e1b28a09ef6823b7c4c5b8",
+      "file": "330de91a5c8f3818b5a9670e945f40f265ff8f3d97e1b28a09ef6823b7c4c5b8.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing population density",
+      "excerpt": "try has been largely influenced by physiographic, economic and administrative factors. The northern plains with their vast level land, high population density and rich agricultural resources provided the most favourable condition for their growth. However, a large number of rivers requiring construction of bridges across their wide beds posed some obstacles. In the hilly terrains of the peninsular region, railway tracts are laid through low hills, Fig. 7.4: Traffic on north-eastern border road gaps or tunnels. The Himalayan mountain"
+    },
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.552223+00:00",
+      "sha256": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7",
+      "file": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing population density",
+      "excerpt": "(ii) There are a number of areas with high population density in the world. Why does this happen? (iii) What are the three components of population change? 3. Distinguish between: (i) Birth rate and death rate. (ii) Push factors and pull factors of migration. 4. Answer the following questions in about 150 words. (i) Discuss the factors influencing the distribution and density of population in the world. (ii) Discuss the three stages of d"
+    }
+  ]
+}

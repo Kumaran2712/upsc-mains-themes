@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 25, passage containing trade deficit",
+      "excerpt": "f a country by the three methods. Also briefly explain why each of these should give us the same value of GDP. 6. Define budget deficit and trade deficit. The excess of private investment over saving of a country in a particular year was Rs 2,000 crores. The amount of budget deficit was ( – ) Rs 1,500 crores. What was the volume of trade deficit of that country? 7. Suppose the GDP at market price of a country in a particular year was Rs 1,100 crores. Net Factor Income from Abroad was Rs 100 crores. The value of Indirect taxes –"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Trade deficit",
+      "excerpt": "o the imports of goods. Surplus BOT or Trade surplus will arise if country exports more goods than what it imports. Whereas, Deficit BOT or Trade deficit will arise if a country imports more goods than what it exports. Net Invisibles is the difference between the value of exports and value Reprint 2026-27"
+    }
+  ]
+}

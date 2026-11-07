@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.302220+00:00",
+      "sha256": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3",
+      "file": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing plain",
+      "excerpt": "and and with constant wind at the centre of the basin. In times of sufficient directions, depositional features in arid regions water, this plain is covered up by a shallow can develop anywhere. water body. Such types of shallow lakes are called as playas where water is retained only Sand Dunes for short duration due to evaporation and quite often the playas contain good deposition Dry hot deserts are good places for sand dune of salts. The playa plain covered up by salts formation. Obstacles to initiate dune formation "
+    },
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+      "retrievedAt": "2026-11-07T08:20:32.177894+00:00",
+      "sha256": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6",
+      "file": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing plain",
+      "excerpt": "n the geographical factors, and another in the mountainous regions. The technological development, animal rearing process of migration from plain areas to today is practised either at the subsistence or pastures on mountains during summers and at the commercial level. again from mountain pastures to plain areas during winters is known as transhumance. In Nomadic Herding mountain regions, such as Himalayas, Gujjars, Nomadic herding or pastoral nomadism is a Bakarwals, Gaddis and Bhotiyas migrate from primitive subsistenc"
+    }
+  ]
+}

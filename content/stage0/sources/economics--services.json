@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing services",
+      "excerpt": "s have a large number of people working in them to produce these goods and services. The next step, therefore, is to see how much goods and services are produced and how many people work in each sector. In an economy there could be one or more sectors which are dominant in terms of total production and employment, while other sectors are relatively small in size. How do we count the various goods and services and know the total production in each sector? With so many thousands of goods and services produced, you might thin"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing services",
+      "excerpt": " selling its finished products globally, in the US and Europe. India has but more important, the goods and highly skilled engineers who can services are produced globally. As understand the technical aspects of a result, production is organised in production. It also has educated increasingly complex ways. The English speaking youth who can production process is divided into provide customer care services. And small parts and spread out across the all this probably can mean 50-60 per globe. In the above example, China cent"
+    }
+  ]
+}

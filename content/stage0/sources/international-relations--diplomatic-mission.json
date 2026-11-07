@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+      "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+      "retrievedAt": "2026-11-07T08:20:38.210894+00:00",
+      "sha256": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba",
+      "file": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing diplomatic mission",
+      "excerpt": " formed for mutual benefit by two or more states to engage in cooperative action in specified circumstances. Term Ambassador The chief of a diplomatic mission; the highest-ranking diplomatic representative of one country to another country to which they are appointed; An ambassador is considered the personal representative of their country’s head of state to the head of state of the host country. Term Ambassador extraordinaire and plenipotentiary A diplomatic agent who is the personal representative of the head of one state accredit"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 234, passage containing courts",
+      "excerpt": "and for the courts to impose it. Two instances, undoubtedly extreme, may be taken by way of illustration for the purpose of showing how the courts are not bound, and are indeed not free, to apply a fanciful procedure by a blind adherence to the letter of the law or to impose a savage sentence. A law providing that an accused shall not be allowed to lead evidence in self-defence will be hit by Articles 14 and 21. Similarly, if a law were to provide that the offence of theft will be punishable with the penalty of the cutti"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing courts",
+      "excerpt": "Indian Constitution at Work Chapter Six JUDICIARY INTRODUCTION Many times, courts are seen only as arbitrators in disputes between individuals or private parties. But judiciary performs some political functions also. Judiciary is an important organ of the government. The Supreme Court of India is in fact, one of the very powerful courts in the world. Right from 1950 the judiciary has played an important role in interpreting and in protecting the Constitutio"
+    }
+  ]
+}

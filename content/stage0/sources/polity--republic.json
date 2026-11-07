@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.906768+00:00",
+      "sha256": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4",
+      "file": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing republic",
+      "excerpt": "e first upheaval, the newly formed Russian French republic. Then federation adopted a new constitution in commenced the second 1993. French republic in 1848. But look at India. The Constitution of The third French republic was formed with a new India was adopted on 26 November 1949. constitution in 1875. In Its implementation formally started 1946, with a new from 26 January 1950. More than constitution, the fourth 69 years after that, the same constitution French republic came into continues to function as the framework b"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 97, passage containing republic",
+      "excerpt": "t cannot give. It simply is. Every human being has dignity by virtue of his existence…169 India is constituted into a sovereign, democratic republic to secure to all its citizens, fraternity assuring the dignity of the individual and the unity of the nation. The sovereign, democratic republic exists to promote fraternity and the dignity of the individual citizen and to secure to the citizens certain rights. This is because the objectives of the State can be realized only in and through the individuals. Therefore, rights co"
+    }
+  ]
+}

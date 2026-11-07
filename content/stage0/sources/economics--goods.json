@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing goods",
+      "excerpt": "services’ counted? In contrast to final goods, goods such as wheat and the wheat flour in this example are intermediate goods. Intermediate goods are used up in producing final goods and services. The value of final goods already includes the value of all the intermediate goods that are used in making the final good. Hence, the value of Rs 80 for the biscuits (final good) already includes the value of flour (Rs 25). Similarly, the value of all other intermediate goods ...BUT I SHOULD BE PAID THE would have been included"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Goods",
+      "excerpt": "on technology. This has made much faster delivery of goods across long distances possible at lower costs. Containers for transport of goods Goods are placed in containers that can be loaded intact onto ships, railways, planes and trucks. Containers have led to huge reduction in port handling costs and increased the speed with which exports can reach markets. Similarly, the cost of air transport has fallen. This has enabled much greater volumes of goods being transported by airlines. 62 U NDERSTANDING E CONOMIC D EVELOPM"
+    }
+  ]
+}

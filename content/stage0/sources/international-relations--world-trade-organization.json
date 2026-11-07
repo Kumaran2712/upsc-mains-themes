@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing WORLD TRADE ORGANISATION",
+      "excerpt": "WORLD TRADE ORGANISATION We have seen that the liberalisation developed countries, WTO establishes of foreign trade and investment in rules regarding international trade, India was supported by some very and sees that these rules are obeyed. powerful international organisations. About 160 countries of the world are These organisations say that all currently members of the WTO. barriers to foreign trad"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing World Trade Organisation",
+      "excerpt": " from the EU. invasion, and many of the EU’s newer members made up the economic organisations such as US-led ‘coalition of the willing’ the World Trade Organisation whereas Germany and France (WTO). opposed American policy. There The EU also has political and is also a deep-seated ‘Euro- diplomatic influence. One member skepticism’ in some parts Reprint 2026-27 Chapter 2.indd 18 15-03-2024 11:47:18"
+    }
+  ]
+}

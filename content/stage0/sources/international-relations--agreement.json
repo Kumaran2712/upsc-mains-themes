@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing agreement",
+      "excerpt": "ral bank buys the security, this agreement of purchase also has specification about date and price of resale of this security. This type of agreement is called a repurchase agreement or repo. The interest rate at which the money is lent in this way is called the repo rate. Similarly, instead of outright sale of securities the central bank may sell the securities through an agreement which has a specification about the date and price at which it will be repurchased. This type of agreement is called a reverse repurchase agree"
+    },
+    {
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:22:52.459341+00:00",
+      "sha256": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15",
+      "file": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing agreement",
+      "excerpt": "ical matters. Finally, treaty terminology might be indicative of the relationship of the treaty with a previously or subsequently concluded agreement. Agreements The term \"agreement\" can have a generic and a specific meaning. It also has acquired a special meaning in the law of regional economic integration. Agreement as a generic term: The 1969 Vienna Convention on the Law of Treaties employs the term \"international agreement\" in its broadest sense. On the one hand, it defines treaties as \"international agreements\" with ce"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing production",
+      "excerpt": "s of these countries. The available at low costs; and where the benefit to the local company of such availability of other factors of joint production is two-fold. First, production is assured. In addition, MNCs can provide money for MNCs might look for government additional investments, like buying policies that look after their interests. new machines for faster production. You will read more about the policies Second, MNCs might bring with them WE WILL SHIFT later in the chapter. the latest technology for production. THIS"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing production",
+      "excerpt": "or goods and services creates payments to the firms and enables the sale of the products they produce. So the social act of consumption and production are intricately linked and, in fact, there is a circular causation here. The process of production in an economy generates factor payments for those involved in production and generates goods and services as the outcome of the production process. The incomes so generated create the capacity to purchase the final consumption goods and thus enable their sale by the business ente"
+    }
+  ]
+}

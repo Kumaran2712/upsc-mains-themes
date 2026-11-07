@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing Fiscal Policy",
+      "excerpt": "abilities Net interest liabilities consist of interest payments minus interest receipts by the government on net domestic lending. Box 5.1: Fiscal Policy One of Keynes’s main ideas in The General Theory of Employment, Interest and Money was that government fiscal policy should be used to stabilise the level of output and employment. Through changes in its expenditure and taxes, the government attempts to increase output and income and seeks to stabilise the ups and downs in the economy. In the process, fiscal policy creates a s"
+    },
+    {
+      "title": "IMF Back to Basics: Fiscal Policy",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/36-fiscal-policy.htm",
+      "retrievedAt": "2026-11-07T08:20:38.495992+00:00",
+      "sha256": "36ee5d19b313579cdbb8456219bb75fa1ccc294279a1d83f9c1f14f7eec7bbc3",
+      "file": "36ee5d19b313579cdbb8456219bb75fa1ccc294279a1d83f9c1f14f7eec7bbc3.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Fiscal Policy",
+      "excerpt": "posted on the IMF website. Modify your profile Back t o Basics Compilation | Finance & Development | PDF version II. How Economies Function Fiscal Policy: Taking and Giving Away Governments promote stable and sustainable growth through their power to spend and tax Mark Horton and Asmaa El-Ganainy Fiscal policy influences the economy through government spending and taxation, typically to promote strong and sustainable growth and reduce poverty. The role and objectives of fiscal policy gained prominence during the global economic"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Constitution and legal system",
+      "url": "https://www.sci.gov.in/constitution/",
+      "retrievedAt": "2026-11-07T08:21:54.443376+00:00",
+      "sha256": "66eb3e6cd04449875d38c9803deb69b1b91981fb317a158f4526d694e6aa6fd9",
+      "file": "66eb3e6cd04449875d38c9803deb69b1b91981fb317a158f4526d694e6aa6fd9.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing legal authority",
+      "excerpt": "ia as a ‘Sovereign Socialist Secular Democratic Republic’ with a Parliamentary form of Government. The Constitution of India is the supreme legal authority which binds the legislative, executive, and judicial organs of government. The Constitution grants all citizens Fundamental Rights and empowers the independent judiciary to invalidate legislations or government actions which violate the Constitution. Some of the other key features of the Constitution are a federal system of governance between the Union and the States, separati"
+    }
+  ]
+}

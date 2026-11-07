@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.212264+00:00",
+      "sha256": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358",
+      "file": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing plateau",
+      "excerpt": "he adjoining plain or the surrounding land. A conical sea is called a plateau. The contour hill with uniform slope and lines representing a plateau are narrow top is represented by normally close spaced at the margins concentric contours spaced with the innermost contour showing almost at regular intervals. wide gap between its two sides. Conical Slope Plateau 2026-27"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.159813+00:00",
+      "sha256": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1",
+      "file": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing plateau",
+      "excerpt": "acting edible oils. Drylands of Malwa plateau, Marathwada, Gujarat, Rajasthan, Telangana, Rayalseema region of Andhra Pradesh and Karnataka plateau are oilseeds growing regions of India. These crops together occupy about 14 per cent of total cropped area in the country. Groundnut, rapeseed and mustard, soyabean and sunflower are the main oilseed crops grown Fig. 3.5 : Farmers sowing soyabean seeds in Amravati, in India. Maharashtra 30 India : People and Economy Reprint 2026-27"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing air pressure",
+      "excerpt": " again causes the clouds to grow bigger and rise to returns to its stable state. EXERCISES 1. Multiple choice questions. (i) If the surface air pressure is 1,000 mb, the air pressure at 1 km above the surface will be: (a) 700 mb (c) 900 mb (b) 1,100 mb (d) 1,300 mb (ii) The Inter Tropical Convergence Zone normally occurs: (a) near the Equator (b) near the Tropic of Cancer (c) near the Tropic of Capricorn (d) near the Arctic Circle (iii) The direction of wind around a low pressure in northern hemisphere is: (a) clockwise (c) an"
+    },
+    {
+      "title": "NOAA: Climate vs. Weather",
+      "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+      "retrievedAt": "2026-11-07T08:20:39.279685+00:00",
+      "sha256": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b",
+      "file": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Air Pressure",
+      "excerpt": "Enter Search Terms Breadcrumb Home JetStream Topic Matrix Global Weather JetStream home Topic Topic The Atmosphere Layers of the Atmosphere Air Pressure The Transfer of Heat Energy Energy Balance Hydrologic Cycle Precipitation The Ocean Layers of the Ocean Sea Water Ocean Circulations Waves Tides The Sea Breeze The Marine Layer Rip Currents Rip Current Safety Global Weather Global Atmospheric Circulations The Jet Stream Climate vs. Weather Climate Zones Clouds How clouds form The Core Four The Basic Ten Cloud Chart Color of Cl"
+    }
+  ]
+}

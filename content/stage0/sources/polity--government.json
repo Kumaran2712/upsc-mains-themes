@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 39, passage containing government",
+      "excerpt": "he Council of Ministers does not represent political parties. Party governments are coalition governments. The parties participating in the government are the conventional definition of the composition of a coalition government. Nonetheless, several parliamentary governments also maintain a long-term partnership with non-government parties. At the governmental level, coalitions can take many different forms. The first is a national government, in which a national crisis resulting from a war or economic crisis requires the co"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.238740+00:00",
+      "sha256": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385",
+      "file": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing government",
+      "excerpt": " government may never trespass them. Constitutions limit the power of government in many ways. The most common way of limiting the power of government is to specify certain fundamental rights that all of us possess as citizens and which no government can ever be allowed to violate. The exact content and interpretation of these rights varies from constitution to Ah! So you first create a monster constitution. But most constitutions will protect a basic and then start worrying about cluster of rights. Citizens will be protecte"
+    }
+  ]
+}

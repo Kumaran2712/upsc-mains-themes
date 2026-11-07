@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 134, passage containing law",
+      "excerpt": "a rule of law (and may point the direction in which the law should develop) and privacy as a principle of law in itself. The English common law is familiar with 234 [2001] QB 967 134"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing law",
+      "excerpt": "the power of the Supreme Court (or High Courts) to examine the constitutionality of any law if the Court arrives at the conclusion that the law is inconsistent with the provisions of the Constitution, such a law is declared as unconstitutional and inapplicable. The term judicial review is nowhere mentioned in the Constitution. However, the fact that India has a written constitution and the Supreme Court can strike down a law that goes against fundamental rights, implicitly gives the Supreme Court the power of judicial"
+    }
+  ]
+}

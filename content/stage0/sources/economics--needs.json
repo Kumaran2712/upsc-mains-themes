@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing needs",
+      "excerpt": "then half of the total credit needs of the borrow cheaply for a variety rural people. The remaining credit of needs. They could grow crops, needs are met from informal sources. Graph 2 : Of all the loans taken by urban households, what percentage was formal and what percentage was informal? Poor Households Well-off Rich Households with a few assets Households Households BLUE : Per cent of loans from the FORMAL sector ORANGE: Per cent of loans from the INFORMAL sector M ONEY AND C REDIT 49 Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.996897+00:00",
+      "sha256": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a",
+      "file": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing needs",
+      "excerpt": " postal services and various other services like that of teachers and doctors. In fact, the list of goods and services that any individual2 needs is so large that no individual in society, to begin with, has all the things she needs. Every individual has some amount of only a few of the goods and services that she would like to use. A family farm may own a plot of land, some grains, farming implements, maybe a pair of bullocks and also the labour services of the family members. A weaver may have some yarn, some cotton a"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NASA Earth Observatory: Mission Biomes",
+      "url": "https://earthobservatory.nasa.gov/biome/",
+      "retrievedAt": "2026-11-07T08:21:58.338767+00:00",
+      "sha256": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0",
+      "file": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing biome",
+      "excerpt": "r be like? What kinds of animals would you see? Which plants live there? By investigating these questions, you are learning about biomes. A biome is a community of plants and animals living together in a certain kind of climate. Scientists have classified regions of the world into different biomes. Click on the links below for more information on that biome . Rainforest Grassland Coniferous Forest Temperate Deciduous Forest Desert Tundra Shrubland Your mission, should you choose to accept it, is to investigate biomes, t"
+    }
+  ]
+}

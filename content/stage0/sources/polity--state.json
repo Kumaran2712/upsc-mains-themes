@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 199, passage containing state",
+      "excerpt": "s solitude – the most complete state of privacy involving the individual in an “inner dialogue with the mind and conscience”.314 The second state is the state of intimacy which refers not merely to intimate relations between spouses or partners but also between family, friends and colleagues. The third state is of anonymity where an individual seeks freedom from identification despite being in a public space. The fourth state is described as a state of reservation which is expressed as “the need to 313 Westin’s categori"
+    },
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing state",
+      "excerpt": "us mobilisation and authoritarian repression. Indian state thus opened up to the outside world. Globalisation has its pros and cons. Indian state is also confronting with them. In an age of technological revolution, the Indian state is now trying to cope up with the technological advancements taken place in the world. In warfare and life style, technology has been widely used. Indian state is trying to meet such challenges through modernisation. Despite the acts such as MGNREGA and SSA, the Indian state has been struggl"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 287, passage containing liberty",
+      "excerpt": "Jalianwala Bagh and the like. Man is not a creature of the State. Life and liberty are not granted by the Constitution. Constitution only stipulates the limitations on the power of the State to interfere with our life and liberty. Law is essential to enjoy the fruits of liberty; it is not the source of liberty and emphatically not the exclusive source. 19. To comprehend whether the right to privacy is a Fundamental Right falling within the sweep of any of th"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.291911+00:00",
+      "sha256": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b",
+      "file": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing liberty",
+      "excerpt": "stion: ‘Over what area am I the master?’ It is concerned with explaining the idea of ‘freedom from’. In contrast, the arguments of positive liberty are concerned with explaining the idea of ‘freedom to’. They are in response to the answer ‘who governs me?’ to which the ideal answer is ‘I govern myself ’. Positive liberty discussions have a long tradition that can be traced to Rousseau, Hegel, Marx, Gandhi, Aurobindo, and also to those who draw their inspiration from these thinkers. It is concerned with looking at the cond"
+    }
+  ]
+}

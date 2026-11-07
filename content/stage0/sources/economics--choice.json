@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/jess205.pdf",
+      "retrievedAt": "2026-11-07T08:22:00.642555+00:00",
+      "sha256": "08ecccf79d8cb771d825169406b650f3d088847f23a444cf84752114cbaabe0a",
+      "file": "08ecccf79d8cb771d825169406b650f3d088847f23a444cf84752114cbaabe0a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing choice",
+      "excerpt": " roads or poor water and health facilities but no one listens. Now the RTI Act gives you the power to question. Do you agree? Discuss. When choice is denied A Refund Abirami, a student of Ansari Institute again appealed Nagar, joined a two-year in the State Consumer course at a local coaching Com-mission. The State institute for professional Commission upheld the courses in New Delhi. At the District Commission’s time of joining the course, direction and further she paid the fees Rs 61,020 fined the institute as lumpsum "
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/jess105.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.285535+00:00",
+      "sha256": "5ade7db383aa547b048279ed34193b9ad29f1625c559009bb6ebbfbaf8e8d515",
+      "file": "5ade7db383aa547b048279ed34193b9ad29f1625c559009bb6ebbfbaf8e8d515.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing choice",
+      "excerpt": "conomic bromine are largely derived from ocean viability of a reserve. Thus, to meet the demand, waters. The ocean beds, too, are rich in a choice has to be made between a number of manganese nodules. possible options. When this is done a mineral ‘deposit’ or ‘reserve’ turns into a mine. Ferrous Minerals Rat-Hole Mining. Do you know that most Ferrous minerals account for about three- of the minerals in India are nationalised fourths of the total value of the production of and their extraction is possible only after metal"
+    }
+  ]
+}

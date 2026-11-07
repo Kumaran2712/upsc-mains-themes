@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.097361+00:00",
+      "sha256": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731",
+      "file": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing axis",
+      "excerpt": "earth if we look at it from directly above the North Pole. LONGITUDE AND TIME We all know that the earth rotates from west to east over its axis. It makes the sun rise in the east and set in the west. The rotation of the earth 29 over its axis takes 24 hours to complete one circle or 360° of longitudes. As 180° of longitudes fall Figure 3.5 Drawing of Meridians of both east and west of the Prime Meridian, the Longitude sun, thus takes 12 hours’ time to traverse the 2026-27"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.029033+00:00",
+      "sha256": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee",
+      "file": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing axis",
+      "excerpt": "at all the plates, without is a differential movement of a portion of the exception, have moved in the geological past, plate away from the axis of the earth. Also, the and shall continue to move in the future as well. rotation of the earth has its effect on the Wegener had thought of all the continents to separated blocks of the plate portions. have initially existed as a super continent in the form of Pangaea. However, later discoveries How do you think the rate of plate reveal that the continental masses, resting on"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing soil",
+      "excerpt": "k Soil Alluvial Soils These soils are black in colour and are also This is the most widely spread and important known as regur soils. Black soil is ideal for soil. In fact, the entire northern plains are growing cotton and is also known as black made of alluvial soil. These have been cotton soil. It is believed that climatic condition deposited by three important Himalayan river along with the parent rock material are the systems – the Indus, the Ganga and the important factors for the formation of black Brahmaputra. T"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.195898+00:00",
+      "sha256": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65",
+      "file": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Soil",
+      "excerpt": "contact with soil. action of one another. You touch and feel soil and soil your clothes while playing. Can you describe it? Parent Material Soil is a dynamic medium in which many chemical, physical and biological Parent material is a passive control factor in activities go on constantly. Soil is a result soil formation. Parent materials can be any of decay, it is also the medium for growth. in-situ or on-site weathered rock debris It is a changing and developing body. It has (residual soils) or transported deposits man"
+    }
+  ]
+}

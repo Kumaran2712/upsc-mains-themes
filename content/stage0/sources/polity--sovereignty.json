@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.906768+00:00",
+      "sha256": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4",
+      "file": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing sovereignty",
+      "excerpt": "inciple: only elected representatives of the people are empowered to consider and take final decisions on the question of amendments. Thus, sovereignty of elected representatives (parliamentary sovereignty) is the basis of the amendment procedure. Special Majority In the chapters on Election, Executive and Judiciary, we have come across provisions that require ‘special majority’. Let us repeat again what special majority means. Ordinarily, all business of the legislature requires that a motion or resolution or bill should get"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 595, passage containing sovereignty",
+      "excerpt": "od solemnly affirm that I will bear true faith and allegiance to the Constitution of India as by law established and that I will uphold the sovereignty and integrity of India.” B Form of oath or affirmation to be made by a member of Parliament:— “I, A.B., having been elected (or nominated) a member of the Council of States (or the House of the People) do swear in the name of God solemnly affirm that I will bear true faith and allegiance to the Constitution of India as by law established, that I will uphold the sovereignty and"
+    }
+  ]
+}

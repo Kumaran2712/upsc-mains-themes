@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.207907+00:00",
+      "sha256": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf",
+      "file": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing poverty",
+      "excerpt": "n the absence of growth at this stage was very high. reliable data, it is difficult to specify The various social development the extent of poverty at that time but indicators were also not quite there is no doubt that extensive encouraging. The overall literacy level poverty prevailed in India during the was less than 16 per cent. Out of this, colonial period which contributed to the female literacy level was at a the worsening profile of India’s negligible low of about seven per population of the time. cent. Public heal"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.058916+00:00",
+      "sha256": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc",
+      "file": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing poverty",
+      "excerpt": "n information dissemination • Special measures for alleviation depends on agriculture that is yet to become productive enough to provide of poverty and bringing about significant improvement in the living for them; one-fourth of rural India still lives in abject poverty. That is the conditions of the weaker sections of the population emphasising reason why we have to see a developed rural India if our nation has to realise access to productive employment opportunities real progress. What, then, does rural development impl"
+    }
+  ]
+}

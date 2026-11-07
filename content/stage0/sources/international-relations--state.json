@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.207508+00:00",
+      "sha256": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079",
+      "file": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing state",
+      "excerpt": " condition of the thousands of people in the world who have the bad fortune to be forced to live as refugees or illegal migrants because no state is willing to grant them membership. Such people are not guaranteed rights by any state and generally live in precarious conditions. For them full membership of a state of their choice is a goal for which they are willing to struggle, as we see today with Palestinian refugees in the Middle East. The precise nature of the rights granted to citizens may vary from state to state "
+    },
+    {
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.202734+00:00",
+      "sha256": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f",
+      "file": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing state",
+      "excerpt": "har mony could be ridden with inter-community conflict and religious promoted. discrimination. For this reason, we need to see what kind of state is needed to prevent religious conflict and to promote religious harmony. How should a state prevent domination by any religious group? For a start, a state must not be run by the heads of any particular religion. A state governed directly by a priestly order is called theocratic. Theocratic states, such as the Papal states of Europe in medieval times or in recent times the Ta"
+    }
+  ]
+}

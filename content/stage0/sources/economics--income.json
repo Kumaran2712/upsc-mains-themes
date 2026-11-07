@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "retrievedAt": "2026-11-07T08:21:57.304231+00:00",
+      "sha256": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb",
+      "file": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing income",
+      "excerpt": "THESE OUT MADE THE CHAIRS 1. Give three examples where an average is used for comparing situations. AND HE TOOK 2. Why do you think average income is an important criterion for development? Explain. THEM. 3. Besides size of per capita income, what other property of income is important in comparing two or more societies? 4. Suppose records show that the average income in a country has been increasing over a period of time. From this, can we conclude that all sections of the economy have become better? Illustrate your answ"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing Income",
+      "excerpt": "the Personal Disposable Income. Thus Personal Disposable Income (PDI ) ≡ PI – Personal tax payments – Non-tax payments. Personal Disposable Income is the part of the aggregate income which belongs to the households. They may decide to consume a part of it, and save the rest. In Fig. 2.3 we present a diagrammatic representation of the relations between these major macroeconomic variables. NFIA D 26 GDP GNP NNP ID - Sub Introductory Macroeconomics (at Market NI UP + NIH Price) (NNP at + CT – FC) TrH PI PTP + NP PDI Fig. 2."
+    }
+  ]
+}

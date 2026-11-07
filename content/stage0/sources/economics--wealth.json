@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing wealth",
+      "excerpt": "possession of resources; the point is how these resources are used in generating a flow of production and how, as a consequence, income and wealth are generated from that process. Let us now dwell upon this flow of production. How does this flow of production arise? People combine their energies with natural and manmade environment within a certain social and technological structure to generate a flow of production. In our modern economic setting this flow of production arises out of production of commodities – goods and"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing wealth",
+      "excerpt": "ill is now the largest producer of edible oil in India, with a capacity to make 5 million pouches daily! In fact, many of the top MNCs have wealth exceeding the entire budgets of the developing country Jeans produced in developing countries being sold in USA for Rs 6500 ($145) governments. With such enormous wealth, imagine the power and influence of these MNCs! There’s another way in which The products are supplied to the MNCs control production. Large MNCs, which then sell these under MNCs in developed countries place "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy104.pdf",
+      "retrievedAt": "2026-11-07T08:20:32.177894+00:00",
+      "sha256": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6",
+      "file": "a41cf608cd75fb76baf645135259c917a5b0092f4339f9d326e1778a68f2f4f6.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Agriculture",
+      "excerpt": "Fig. 4.4: Areas of Nomadic Herding AGRICULTURE Agriculture is practised under multiple combinations of physical and socio-economic conditions, which gives rise to different types of agricultural systems. Based on methods of farming, different types of crops are grown and livestock raised. The following are the main agricultural systems. Subsistence Agriculture Subsistence agriculture is one in which the farming areas consume all, or n"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.159813+00:00",
+      "sha256": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1",
+      "file": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing Agriculture",
+      "excerpt": "-portal- india-department-agriculture-and-cooperation) National Mission for Sustainable Agriculture (NMSA) National Mission for Sustainable Agriculture is to Problems of Indian Agriculture make agriculture more productive, sustainable, The nature of problems faced by Indian remunerative and climate resilient by promoting location specific integrated/composite farming agriculture varies according to agro-ecological systems and to conserve natural resources through and historical experiences of its different regions. appropriat"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing natural justice",
+      "excerpt": "prevalence even like the Anglo-American system. The dichotomy between administrative and quasi-judicial functions vis a vis the doctrine of natural justice is presumably obsolescent after Kraipak(1) in India and Schmit(2) in England. 2. Traditionally English Law recognized two principles of natural justice viz. (i) Nemo debet esse judex in propria causa i.e No man shall be a judge in his own cause, or a suitor or the deciding authority must be impartial and without bias and (ii) Audi alteram Partem i.e. hear the other side, or no"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 47, passage containing natural justice",
+      "excerpt": " held that the person who is subject to surveillance is not entitled to access the register nor was a pre-decisional hearing compliant with natural justice warranted. Confidentiality, this Court held, was required in the interest of the public, including keeping in confidence the sources of information. Again the Court held: “But all this does not mean that the police have a licence to enter the names of whoever they like (dislike?) in the surveillance register; nor can the surveillance be such as to squeeze the fundamental freed"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing jurisdiction",
+      "excerpt": "Indian Constitution at Work Original Jurisdiction Original jurisdiction means cases that can be directly considered by the Supreme Court without going to the lower courts before that. From the diagram above, you will notice that cases involving federal relations go directly to the Supreme Court. The Original Jurisdiction of the Supreme Court establishes it as an umpire in all disputes regarding federal matters. In any federal country, legal disput"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 551, passage containing jurisdiction",
+      "excerpt": "etitions from, or in respect of, any judgment, decree or order of any court within the territory of India in so far as the exercise of such jurisdiction is authorised by law, and any order of His Majesty in Council made on any such appeal or petition after the commencement of this Constitution shall for all purposes have effect as if it were an order or decree made by the Supreme Court in the exercise of the jurisdiction conferred on such Court by this Constitution. (4) On and from the commencement of this Constitution the jur"
+    }
+  ]
+}

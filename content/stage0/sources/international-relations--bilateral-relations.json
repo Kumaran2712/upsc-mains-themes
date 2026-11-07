@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing bilateral relations",
+      "excerpt": "the durability of some decades old principles lie in the efforts of India and China to revive the fifty year old Panchsheel as the basis of bilateral relations. India has contributed significantly to UN efforts for peace and disarmament and to UN peacekeeping operations. Even as India is poised to become an economic superpower in the coming times, it always has and in future too will take necessary steps to further its national interest in every respect i.e. political, strategic and economic terms. 284"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing bilateral relations",
+      "excerpt": "ipally over ______________ and __________________ region. b. ARF was established in the year ______________________ . c. China entered into bilateral relations with __________ (a major country) in 1972. d. ________________ Plan influenced the establishment of the Organisation for European Economic Cooperation in 1948. e. ___________ is the organisation of ASEAN that deals with security. 5. What are the objectives of establishing regional organisations? 6. How does geographical proximity influence the formation of regional organisatio"
+    }
+  ]
+}

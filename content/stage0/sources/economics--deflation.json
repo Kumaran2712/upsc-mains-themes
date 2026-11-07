@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "IMF Back to Basics: What Is Money?",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2012/09/basics.htm",
+      "retrievedAt": "2026-11-07T08:21:54.921234+00:00",
+      "sha256": "2f6438b37d334dd6f99713ba127a2a478ed20e3fd8876ff2e916cba5048f28d7",
+      "file": "2f6438b37d334dd6f99713ba127a2a478ed20e3fd8876ff2e916cba5048f28d7.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing deflation",
+      "excerpt": "f money is too tight. One reason might be that there just isn’t enough gold to mint new money. When prices as a whole go down, it is called deflation. On the other hand, if there is more money in circulation but the same level of demand for goods, the value of the money will drop. This is inflation—when it takes more money to get the same amount of goods and services (see “ What Is Inflation? ” in the March 2010 issue of F&D ). Keeping the demand for and supply of money balanced can be tricky. Manufacturing money Fiat money"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.238445+00:00",
+      "sha256": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158",
+      "file": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing nation",
+      "excerpt": " characteristics such as race or descent. Identify any patriotic song in your language. What then constitutes a nation? A How is the nation nation is to a great extent an ‘imagined’ described in this song? community, held together by the Identify and watch collective beliefs, aspirations and any patriotic films imaginations of its members. It is based in your language. How has nationalism been on certain assumptions which people portrayed and its make about the collective whole with complexities worked which they identif"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 512, passage containing nation",
+      "excerpt": " laying down the norms for the functioning of different organs a Constitution encompasses within itself the broad indications as to how the nation is to march forward in times to come. A Constitution cannot be regarded as a mere legal document to be read as a will or an agreement nor is Constitution like a plaint or written statement filed in a suit between two litigants. A Constitution must of necessity be the vehicle of the life of a nation. It has also to be borne in mind that a Constitution is not a gate but a 12 (19"
+    }
+  ]
+}

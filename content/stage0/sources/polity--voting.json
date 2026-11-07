@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.906768+00:00",
+      "sha256": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4",
+      "file": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing voting",
+      "excerpt": " a motion or resolution or bill should get the support of a simple majority of the members voting at that time. Suppose that at the time of voting on a bill, 247 members were present in the house and all of them participated in the voting on the bill. Then, the bill would be passed if at least 124 members voted in favour of the bill. Not so in the case of an amendment bill. Amendment to the Constitution requires two different kinds of special majorities: in the first place, those voting in favour of the amendment bill sh"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.257803+00:00",
+      "sha256": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd",
+      "file": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 19, passage containing voting",
+      "excerpt": "is earlier. The CEC can be removed before the expiry of Special majority Special majority means: ± Two-thirds majority of those present and voting, and ± Simple majority of the total membership of the House. Let us say that you have to pass a resolution in your class with a special majority. Imagine further that your class has a total student strength of 57. But on the day of voting, only 51 students are present and 50 students participated in voting. When would you say that the resolution has been passed with ‘special m"
+    }
+  ]
+}

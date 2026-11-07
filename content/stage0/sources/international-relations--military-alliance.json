@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing military alliance",
+      "excerpt": "st important feature of India’s foreign policy. Non alignment aimed to maintain national independence in foreign affairs by not joining any military alliance formed by the USA and Soviet Union in the aftermath of the Second World War. Non-alignment was neither neutrality nor non-involvement nor isolationism. It was a dynamic concept which meant not committing to any military bloc but taking an independent stand on international issues according to the merits of each case. The policy of non-alignment won many supporters in the devel"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leps101.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.090154+00:00",
+      "sha256": "958889d2d022174591ba6344eb4f104c730fa05e922215c87fe25745d564eb09",
+      "file": "958889d2d022174591ba6344eb4f104c730fa05e922215c87fe25745d564eb09.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing military alliance",
+      "excerpt": "orld Politics 5. Fill in the blanks. a. The Soviet political system was based on ___________________ ideology. b. _________________ was the military alliance started by the USSR. c. ____________________ party dominated the Soviet Union’s E x e r c i s e s political system. d. ______________________ initiated the reforms in the USSR in 1985. e. The fall of the ____________________ symbolised the end of the Cold War. 6. Mention any three features that distinguish the Soviet economy from that of a capitalist country like the US. 7. Wh"
+    }
+  ]
+}

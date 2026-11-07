@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing hemisphere",
+      "excerpt": " Tropic of Cancer (c) near the Tropic of Capricorn (d) near the Arctic Circle (iii) The direction of wind around a low pressure in northern hemisphere is: (a) clockwise (c) anti-clock wise (b) perpendicular to isobars (d) parallel to isobars (iv) Which one of the following is the source region for the formation of air masses? (a) the Equatorial forest (c) the Siberian Plain (b) the Himalayas (d) the Deccan Plateau 2. Answer the following questions in about 30 words. (i) What is the unit used in measuring pressure? Why is the"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.340325+00:00",
+      "sha256": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a",
+      "file": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing hemisphere",
+      "excerpt": "perature or north of it. The average annual density influences the salinity of water in temperatures for the northern and southern an area. hemisphere are around 19° C and 16° C Highest salinity in water bodies respectively. This variation is due to the Lake Van in Turkey (330 o/oo), unequal distribution of land and water in Dead Sea (238 o/oo), the northern and southern hemispheres. Great Salt Lake (220 o/oo) Reprint 2026-27"
+    }
+  ]
+}

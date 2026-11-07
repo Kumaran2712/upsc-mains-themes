@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing GNP",
+      "excerpt": "ices that are produced by the Product at Market normal residents of India and is Prices (GNPMP) measured at the market prices, in a year. • GNP refers to all the economic output produced by a nation’s normal residents, whether they are located within the national boundary or abroad. • Everything is valued at the market prices. GNPMP = GDPMP + NFIA 6. GNP at Factor Cost • GNP at factor cost measures value of (GNPFC) output received by the factors of production belonging to a country in a year. GNPFC =GNPMP - Net Produc"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing gross national product",
+      "excerpt": "ical degrees national product for that year. and diplomas and also free Those activities which contribute to time to go to work, do not the gross national product are called go to work. Ask them the economic activities. All those who are reasons for not going to engaged in economic activities, in work. List all of them and whatever capacity — high or low, are discuss in the classroom workers. Even if some of them whether they should go for temporarily abstain from work due to work and why, and also illness, injury or other physical ways"
+    }
+  ]
+}

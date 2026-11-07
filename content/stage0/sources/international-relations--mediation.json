@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing mediation",
+      "excerpt": " in transactions through the market, money becomes an important instrument for facilitating these exchanges. Economic exchanges without the mediation of money are referred to as barter exchanges. However, they presume the rather improbable double coincidence of wants. Consider, for example, an individual who has a surplus of rice which she wishes to exchange for clothing. If she is not lucky enough she may not be able to find another person who has the diametrically opposite demand for rice with a surplus of clothing to off"
+    }
+  ]
+}

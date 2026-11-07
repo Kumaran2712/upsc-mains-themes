@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.240732+00:00",
+      "sha256": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010",
+      "file": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing federalism",
+      "excerpt": "– is different from German or Indian federalism. But there are also a few key ideas and concepts associated with federalism. ± Essentially, federalism is an institutional mechanism to accommodate two sets of polities—one at the regional level and the other at the national level. Each government is autonomous in its own sphere. In some federal countries, there is even a system of dual citizenship. India has only a single citizenship. ± The people likewise, have two sets of identities and I get it! It’s like our school. We loy"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/keps209.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.906768+00:00",
+      "sha256": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4",
+      "file": "3e2dfeff81ba180bd5e9217a694ce2cc8a37f7ddf98006686c11bddd233d34b4.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Federalism",
+      "excerpt": "it is necessary that the States must be consulted and that they give their consent. We have studied the federal nature of the Constitution. Federalism means that powers of the States must not be at the mercy of the central government. The Constitution has ensured this by providing that legislatures of half the States have to pass the amendment bill before the amendment comes into effect. We can say that for some parts of the Constitution, greater or wider consensus in the polity is expected. This provision also respects the "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.237595+00:00",
+      "sha256": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560",
+      "file": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing Free Trade",
+      "excerpt": "ortunately, due to persisting political differences, SAARC has not had much Keshav, The Hindu success. SAARC members signed the South Asian Free Trade (SAFTA) agreement which promised the formation of a free trade zone for the whole of South Asia. A new chapter of peace and cooperation might evolve in South Asia if all the countries in the region allow free trade across the borders. This is the spirit behind the idea of SAFTA. The Agreement was signed in 2004 and came into effect on 1 January 2006. SAFTA aims at lowering tra"
+    },
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing free trade",
+      "excerpt": " up to economic analysis. Protectionism comes in many forms. Successive reductions in tariff measures through multilateral trade rounds and free trade agreements have meant that non-tariff measures are now often the most significant barriers to trade. The issue of protectionism has become a focus of commentators, international organisations and governments in the post-crisis era. Although the recent economic crisis has not led to a general rise in tariffs, there have been many examples of less explicit, non-tariff protection"
+    }
+  ]
+}

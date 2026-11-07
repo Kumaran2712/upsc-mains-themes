@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.240732+00:00",
+      "sha256": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010",
+      "file": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 21, passage containing representation",
+      "excerpt": " treatment. We have already noted in the chapter on Legislature that the size and population of each State being different, an asymmetrical representation is provided in the Rajya Sabha. While ensuring minimum representation to each of the smaller States, this arrangement also ensures that larger States would get more representation. In the case of division of powers, too, the Constitution provides a division of powers that is common to all the States. And yet, the Constitution has some special provisions for some States given t"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 222, passage containing representation",
+      "excerpt": "ce to bear upon any superior authority to further his interest in respect of matters pertaining to his service under the Government, if any representation is received on his behalf from another person in respect of any matter dealt with in these proceedings, it will be presumed that Shri ……………… is aware of such a representation and that it has been made at his instance and action will be taken against him for violation of Rules 20 of the CCS(Conduct) Rules, 1964. 6. The receipt of the Memorandum may be acknowledged. (By order an"
+    }
+  ]
+}

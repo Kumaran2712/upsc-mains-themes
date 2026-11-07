@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "retrievedAt": "2026-11-07T08:21:57.304231+00:00",
+      "sha256": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb",
+      "file": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing per capita income",
+      "excerpt": "ur own examples related to development. 7. Kerala, with lower per capita income has a better human development ranking than Haryana. Hence, per capita income is not a useful criterion at all and should not be used to compare states. Do you agree? Discuss. 8. Find out the present sources of energy that are used by the people in India. What could be the other possibilities fifty years from now? 9. Why is the issue of sustainability important for development? 16 U NDERSTANDING E CONOMIC D EVELOPMENT Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.207907+00:00",
+      "sha256": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf",
+      "file": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing per capita income",
+      "excerpt": "pursued by the colonial government in India? What were the impacts of these policies? 2. Name some notable economists who estimated India’s per capita income during the colonial period. 3. What were the main causes of India’s agricultural stagnation during the colonial period? 4. Name some modern industries which were in operation in our country at the time of independence. 5. What was the two-fold motive behind the systematic de- industrialisation effected by the British in pre-independent India? 6. The traditional handicrafts ind"
+    }
+  ]
+}

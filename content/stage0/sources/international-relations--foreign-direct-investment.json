@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "IMF: Portfolio investment assets and their distinction from direct investment",
+      "url": "https://www.imf.org/en/Blogs/Articles/2023/03/20/global-portfolio-asset-holdings-decrease-amid-elevated-uncertainty",
+      "retrievedAt": "2026-11-07T08:22:53.001320+00:00",
+      "sha256": "997182583b3a4d2dd9eca2c12f0ed222399ac22fddbe59d6b073f1d1b45b65a2",
+      "file": "997182583b3a4d2dd9eca2c12f0ed222399ac22fddbe59d6b073f1d1b45b65a2.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing foreign direct investment",
+      "excerpt": "tion, higher vulnerability in the event of a crisis. Evrim Bese Goksu, Alicia Hierro, Rita Mesias, Wilson Phiri — March 20, 2023 References foreign direct investment Coordinated Portfolio Investment Survey"
+    },
+    {
+      "title": "IMF Back to Basics: What Is Direct Investment?",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/20_direct-invest.htm",
+      "retrievedAt": "2026-11-07T08:21:55.074085+00:00",
+      "sha256": "d4a008e9ccb4f3a3816054098cf5fca7f1daf44302a91e288eba48ec7aa15b8e",
+      "file": "d4a008e9ccb4f3a3816054098cf5fca7f1daf44302a91e288eba48ec7aa15b8e.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing foreign direct investment",
+      "excerpt": "g local firms out of business or imposing their policies on governments. But the overall benefits to both host and investing economies from foreign direct investment significantly outweigh the costs. Capital inflows from foreign direct investors help finance a country’s spending—on investment, for example—and increase tax revenue, create jobs, and produce other positive spillovers for the host economy.- TADEUSZ GALEZA is a research officer in the IMF’s Monetary and Capital Markets Department. JAMES CHAN is a senior information management o"
+    }
+  ]
+}

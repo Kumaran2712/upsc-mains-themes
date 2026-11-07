@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.097361+00:00",
+      "sha256": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731",
+      "file": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing time zone",
+      "excerpt": "n their administrative boundaries. The countries with large east- west span may choose more than one standard meridian to get more than one time zone such as Russia, Canada and the United States of America. The world is divided into 24 major time zones (Fig. 3.6). Figure 3.6 Major Time Zones of the World INTERNATIONAL DATE LINE While the world is divided into 24 time zones, there has to be a place where there is a difference in days, somewhere the day truly “starts” on the planet. The 180° line of longitude is approximately"
+    }
+  ]
+}

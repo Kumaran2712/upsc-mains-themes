@@ -1,6 +1,7 @@
 import { readFile, readdir, mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { catalogue, validateLesson, validateApproval, toPublicLesson, digest } from './contract.mjs';
+import { validateReviewControls } from './calibration.mjs';
 
 export async function compile(root = resolve('content/stage0')) {
   const published = [], privateLessons = [];
@@ -13,6 +14,12 @@ export async function compile(root = resolve('content/stage0')) {
         const lesson = validateLesson(JSON.parse(await readFile(path, 'utf8')));
         const review = JSON.parse(await readFile(resolve(root, 'reviews', lesson.id.replace('/', '--') + '.json'), 'utf8'));
         validateApproval(lesson, review);
+        if (review.schemaVersion === 2) {
+          const controls = JSON.parse(await readFile(resolve(root, 'calibration', 'current-controls.json'), 'utf8'));
+          const inflation = JSON.parse(await readFile(resolve(root, 'lessons', 'economics/inflation.json'), 'utf8'));
+          const rubric = await readFile('docs/stage0-teaching-rubric.md', 'utf8');
+          validateReviewControls(controls, { lesson: inflation, reviewerModel: review.reviewer.resolvedModel, rubric });
+        }
         if (privateLessons.some((l) => l.id === lesson.id)) throw new Error('Duplicate lesson placement');
         privateLessons.push({ ...lesson, evaluatedModel: review.tutorModel, evaluatedPromptVersion: review.evaluation.promptVersion }); published.push(toPublicLesson(lesson));
       }

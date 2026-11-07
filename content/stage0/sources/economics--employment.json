@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing employment",
+      "excerpt": "nised sector covers those but they too have to register enterprises or places of work where themselves with the government and the terms of employment are regular follow the rules and regulations. and therefore, people have assured work. They are registered by the Workers in the organised sector government and have to follow its enjoy security of employment. They rules and regulations which are are expected to work only a fixed given in various laws such as the number of hours. If they work more, Factories Act, Minimum Wages"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.757611+00:00",
+      "sha256": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729",
+      "file": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing employment",
+      "excerpt": " employment level of the economy. In macroeconomics we usually simplify the analysis of how the country’s total production and the level of employment are related to attributes (called ‘variables’) like prices, rate of interest, wage rates, profits and so on, by focusing on a single imaginary commodity and what happens to it. We are able to afford this simplification and thus usefully abstain from studying what happens to the many real commodities that actually are bought and sold in the market because we generally see that "
+    }
+  ]
+}

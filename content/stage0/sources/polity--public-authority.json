@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 461, passage containing public authority",
+      "excerpt": "se of conflict, over the other provisions of the Act. Even if, there is any indication to the contrary, still there is no obligation on the public authority to give information to any citizen of what has been mentioned in clauses (a) to (j). The public authority, as already indicated, cannot access all the information from a private individual, but only those information which he is legally obliged to pass on to a public authority by law, and also only those information to which the public authority can have access in accordance w"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 211, passage containing public authority",
+      "excerpt": "evelopment Corporation and Ors. Vs. State of Maharashtra and Anr. [ 2010(11)SCALE675] 44. The principle of proportionality envisages that a public authority ought to maintain a sense of proportion between particular goals and the means employed to achieve those goals, so that administrative action impinges on 208"
+    }
+  ]
+}

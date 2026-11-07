@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.552223+00:00",
+      "sha256": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7",
+      "file": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing birth rate",
+      "excerpt": "Japan is thickly populated because of the Positive Growth of Population: This presence of a number of industries. happens when the birth rate is more than the death rate between two points of time or when people from other countries migrate III. Social and Cultural Factors permanently to a region. Some places attract more people because they Negative Growth of Population: If the have religious or cultural significance. In the population decreases between two points same way – people tend to move away from of time it"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+      "retrievedAt": "2026-11-07T08:22:00.440446+00:00",
+      "sha256": "fb2d9bee8181bdea544750799792eb6a64cf67eeb116982d314b001b9e1f31dd",
+      "file": "fb2d9bee8181bdea544750799792eb6a64cf67eeb116982d314b001b9e1f31dd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing birth rate",
+      "excerpt": "n India over components namely; natural and induced. the last one century has been caused by While the natural growth is analysed by annual birth rate and death rate and rate of assessing the crude birth and death rates, the migration and thereby shows different trends. induced components are explained by the There are four distinct phases of growth volume of inward and outward movement of identified within this period: Table 1.1 : Decadal Growth Rates in India, 1901-2011 Census Total Population Growth Rate* Years Absolute N"
+    }
+  ]
+}

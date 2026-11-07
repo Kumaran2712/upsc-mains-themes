@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.291911+00:00",
+      "sha256": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b",
+      "file": "a65a02969a8a960fb7cf59914734aab6572b27e64f1ab878983e0611cec8727b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing Freedom of expression",
+      "excerpt": "here we recognise the need for ‘justifiable constraints’ but these have to be supported by proper procedures and important moral arguments. Freedom of expression is a fundamental value and for that society must be willing to bear some inconvenience to protect it from people who want to restrict it. Remember Voltaire’s statement — ‘I disapprove of what you say but I will defend to death your right to say it’. How deeply are we committed to this freedom of expression? Some years ago Deepa Mehta, film maker, wanted to make a film about wi"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.198388+00:00",
+      "sha256": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f",
+      "file": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing freedom of expression",
+      "excerpt": "ght gives us the opportunity to be creative and original, whether it be in writing, or dance, or music, or any other creative activity. But freedom of expression is also important for democratic government since it allows for the free expression of beliefs and opinions. Rights such as the right to a livelihood, or freedom of expression, would be important for all human beings who live in society and they are described as universal in nature. Another ground on which rights have been claimed is that they are necessary for our well-being."
+    }
+  ]
+}

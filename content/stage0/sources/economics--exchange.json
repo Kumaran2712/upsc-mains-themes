@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keec108.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.417505+00:00",
+      "sha256": "ee1afbb391a8266327d4bdb6357e970298ea559de2a62c24c60fb8c40d0faa97",
+      "file": "ee1afbb391a8266327d4bdb6357e970298ea559de2a62c24c60fb8c40d0faa97.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing exchange",
+      "excerpt": "d Bank to and political costs of success or failure. set right its balance of payments For instance, when reforms were made crisis; foreign exchange is an essential in agriculture, as pointed out earlier component for any country and it is 144 INDIAN ECONOMIC DEVELOPMENT Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing exchange",
+      "excerpt": "a debit item on the capital account. If an Indian buys a UK Car Company, it enters capital account transactions as a debit item (as foreign exchange is flowing out of India). On the other hand, sale of assets like sale of share of an Indian company to a Chinese customer is a credit item on the capital account. Fig. 6.2 classifies the items which are a part of capital account transactions. These items are Foreign Direct Investments (FDIs), Foreign Institutional Investments (FIIs), external borrowings and assistance. Fig. 6."
+    }
+  ]
+}

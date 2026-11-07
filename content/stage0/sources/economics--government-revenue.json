@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing government revenue",
+      "excerpt": "ent budget. This chapter proceeds as follows. In section 5.1 we present the components of the government budget to bring out the sources of government revenue and avenues of government spending. In section 5.2 we discuss the topic of balanced, surplus or deficit budget to account for the difference between expenditures and revenue collection. It specifically deals with the meaning of different kinds of budget deficits, their implications and the measures to contain them. Box. 5.1 deals with fiscal policy and a simple description of "
+    }
+  ]
+}

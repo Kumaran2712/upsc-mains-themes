@@ -7,6 +7,8 @@ COPY src ./src
 COPY public ./public
 COPY content ./content
 COPY tools/content ./tools/content
+COPY backend ./backend
+COPY docs/stage0-teaching-rubric.md ./docs/stage0-teaching-rubric.md
 COPY data/prelims.json ./data/prelims.json
 ARG SITE_URL=https://upscthemes.live
 ARG PUBLIC_STAGE0_API_URL=/api

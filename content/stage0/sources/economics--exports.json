@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing exports",
+      "excerpt": " curve of foreign exchange shifts outward. On balance, the domestic currency may or may not depreciate. What happens will depend on whether exports are growing faster than imports. In general, other things remaining equal, a country whose aggregate demand grows faster than the rest of the world’s normally finds its currency depreciating because its imports grow faster than its exports. Its demand curve for foreign currency shifts faster than its supply curve. Exchange Rates in the Long Run The purchasing Power (PPP) theor"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing exports",
+      "excerpt": "When India had a workforce of about 545 we also consider what we pay for our million. Since majority of our people imports and get from our exports we reside in rural areas, the proportion of find that there is a net earning for the workforce residing there is higher. The country which may be positive (if we have exported more in value terms than imported) or negative (if imports Work This Out exceeded exports in value terms) or zero (if exports and imports were of the same Ø In your house or value). When we add this earn"
+    }
+  ]
+}
