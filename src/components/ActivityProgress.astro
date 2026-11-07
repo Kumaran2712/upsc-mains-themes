@@ -13,7 +13,7 @@ const enabled = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
     <form method="dialog"><button class="btn">Cancel</button></form>
   </dialog>
 </aside>}
-<style>.activity-progress { border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 16px; font-size: .9rem; } p { margin: 4px 0; } button { margin: 5px 8px 5px 0; } dialog { color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; width: min(32rem, calc(100% - 32px)); } dialog::backdrop { background: #0007; }</style>
+<style>.activity-progress[data-scope="guest"] { display: none; } .activity-progress { border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 16px; font-size: .9rem; } p { margin: 4px 0; } button { margin: 5px 8px 5px 0; } dialog { color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; width: min(32rem, calc(100% - 32px)); } dialog::backdrop { background: #0007; }</style>
 <script>
   import { initialiseActivities } from '../lib/client/activities';
   initialiseActivities();

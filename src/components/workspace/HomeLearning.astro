@@ -1,0 +1,74 @@
+---
+import { u } from '../../lib/data';
+---
+<section class="home-learning s0" aria-labelledby="learning-title">
+  <div class="learning-heading"><div><p class="eyebrow">Foundations · 253 concepts</p><h2 id="learning-title">Start with one idea</h2></div><a href={u('/stage-0/')}>Browse concepts <span aria-hidden="true">↗</span></a></div>
+  <p class="learning-description" data-home-learning-description>Read a short guide, try an everyday example, then ask your questions.</p>
+  <a class="btn primary" data-home-resume data-umami-event="home-cta" data-umami-event-target="learning-start" href={u('/stage-0/polity/sovereignty/')}>Explore Sovereignty <span aria-hidden="true">→</span></a>
+  <p class="small" data-home-progress-status role="status">Guides are free to read. Sign in to save conversations and revisit concepts.</p>
+  <button class="btn" type="button" data-home-progress-retry hidden>Retry loading learning</button>
+  <ul class="recent-learning" data-home-recent hidden aria-label="Recently explored concepts"></ul>
+</section>
+<style>
+  .home-learning { padding: 24px 0 28px; border-block: 1px solid var(--line); margin-top: 28px; }
+  .learning-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  h2 { margin: 4px 0 0; font-size: 1.5rem; } .learning-heading > a { font-size: .88rem; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; gap: 10px; }
+  .learning-description { color: var(--muted); margin: 12px 0 18px; max-width: 64ch; }
+  .small { margin: 12px 0 0; }
+  .recent-learning { padding: 0; margin: 20px 0 0; list-style: none; }
+</style>
+<script>
+  import { concepts, conceptPath } from '../../lib/stage0/curriculum';
+  import { auth, api, ensureAuth, liveEnabled, type ProgressEntry } from '../../lib/stage0/api';
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const resume = document.querySelector<HTMLAnchorElement>('[data-home-resume]')!;
+  const title = document.getElementById('learning-title')!;
+  const description = document.querySelector('[data-home-learning-description]')!;
+  const status = document.querySelector('[data-home-progress-status]')!;
+  const retry = document.querySelector<HTMLButtonElement>('[data-home-progress-retry]')!;
+  const list = document.querySelector<HTMLUListElement>('[data-home-recent]')!;
+  let generation = 0;
+  function reset() {
+    title.textContent = 'Start with one idea'; resume.dataset.umamiEventTarget = 'learning-start';
+    resume.href = base + '/stage-0/polity/sovereignty/'; resume.textContent = 'Explore Sovereignty →';
+    description.textContent = 'Read a short guide, try an everyday example, then ask your questions.';
+    list.replaceChildren(); list.hidden = true;
+  }
+  async function refresh() {
+    const current = ++generation, user = auth.user?.username;
+    reset(); retry.hidden = true;
+    if (!user) { status.textContent = 'Guides are free to read. Sign in to save conversations and revisit concepts.'; return; }
+    status.textContent = 'Loading your saved learning…';
+    try {
+      const { entries } = await api<{ entries: ProgressEntry[] }>('/progress');
+      if (current !== generation || auth.user?.username !== user) return;
+      const known = entries.filter((e) => concepts.some((c) => c.id === e.conceptId)).sort((a, b) => b.updated - a.updated);
+      status.textContent = known.length ? 'Saved to your account. Return whenever you need to.' : 'Your learning will appear here after your first conversation.';
+      if (!known.length) return;
+      const recent = concepts.find((c) => c.id === known[0].conceptId)!;
+      title.textContent = 'Continue learning'; resume.dataset.umamiEventTarget = 'learning-resume'; resume.textContent = `Continue ${recent.name} →`; resume.href = base + conceptPath(recent);
+      description.textContent = `Pick up where you left off in ${recent.subject.name}, or browse another concept.`;
+      for (const entry of known.slice(0, 3)) {
+        const c = concepts.find((c) => c.id === entry.conceptId)!;
+        const li = document.createElement('li'), link = document.createElement('a'), name = document.createElement('span'), detail = document.createElement('span');
+        link.href = base + conceptPath(c); name.textContent = c.name; detail.textContent = entry.revisit ? 'Saved to revisit' : c.subject.name;
+        link.append(name, detail); li.append(link); list.append(li);
+      }
+      list.hidden = false;
+    } catch {
+      if (current !== generation || auth.user?.username !== user) return;
+      status.textContent = 'Your saved learning could not load. You can still browse all concept guides.'; retry.hidden = false;
+    }
+  }
+  retry.addEventListener('click', () => void refresh());
+  if (liveEnabled) {
+    window.addEventListener('stage0-auth', () => void refresh());
+    window.addEventListener('stage0-live-progress', () => void refresh());
+    void ensureAuth().then(refresh);
+  }
+</script>
+<style is:global>
+  .recent-learning a { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px 20px; padding: 12px 0; border-top: 1px solid var(--line); text-decoration: none; color: var(--ink); min-height: 48px; }
+  .recent-learning a:hover { color: var(--accent); }
+  .recent-learning a > span:last-child { font-size: .8rem; color: var(--muted); }
+</style>

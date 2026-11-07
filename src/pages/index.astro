@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
+import HomeLearning from '../components/workspace/HomeLearning.astro';
 import ThemeCard from '../components/ThemeCard.astro';
-import { themes, clusters, totalQuestions, syllabus, u, themeUrl, telegramBot, roadmap, stages, shortTitle } from '../lib/data';
+import { themes, clusters, totalQuestions, u, themeUrl, telegramBot, roadmap, stages, shortTitle } from '../lib/data';
 import { daily, prelims, preYears } from '../lib/daily';
 const cross = themes.filter((t) => t.cross).length;
 const top = [...themes].sort((a, b) => b.count - a.count || b.recent - a.recent || a.n - b.n).slice(0, 6);
@@ -11,148 +12,116 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebSite', name: 'UPSC 
   potentialAction: { '@type': 'SearchAction', target: new URL(u('/search/'), Astro.site).href + '?q={query}', 'query-input': 'required name=query' } }];
 const rm = roadmap.map((t) => ({ n: t.n, step: t.step, title: shortTitle(t), url: themeUrl(t) }));
 const preCount = prelims.filter((q) => q.year).length;
-const liveTutor = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
 ---
 <Base title="UPSC Themes: theme-wise UPSC PYQs, roadmap and daily practice" description={desc} jsonld={ld} brand={false}>
-  <h1 class="home-h1">Prepare UPSC by theme, one day at a time</h1>
-  <a class="stage0-entry panel" href={u('/stage-0/')}>
-    <span class="stage0-entry-label">{liveTutor ? 'STAGE 0 · AI PILOT' : 'NEW · STAGE 0 PREVIEW'}</span>
-    <span><b>New to the language of UPSC?</b><span>Explore the ideas behind the words, one small conversation at a time.</span></span>
-    <span aria-hidden="true">↗</span>
-  </a>
-  <section class="about" aria-labelledby="about-h">
-    <h2 id="about-h">What this site is</h2>
-    <p>A free study companion for UPSC Civil Services aspirants, beginners and repeaters alike. It takes every GS Mains question asked since 2013 ({totalQuestions} of them) and groups them into {themes.length} themes, because the syllabus is interlinked: women's empowerment, for example, comes up in GS1, GS2 and GS3. Themes, PYQs and learning guides are free to browse without an account.</p>
-    <ol class="how">
-      <li><b>Practise every day</b><span>10 Prelims and 2 Mains PYQs each morning, on the site or on Telegram.</span></li>
-      <li><b>Follow the roadmap</b><span>Study the themes in an order where each one builds on the last.</span></li>
-      <li><b>Write better answers</b><span>Each theme shows what UPSC keeps asking, what to cover and how to structure the answer.</span></li>
-    </ol>
-    <p class="small"><a href={u('/about/')}>Sources and how the themes were made</a></p>
+  <header class="home-heading">
+    <p class="eyebrow">Your study workspace</p>
+    <h1>One idea. A little practice. Every day.</h1>
+    <p class="lead">Learn the foundations, connect the syllabus and practise real UPSC questions. Free to explore, at your pace.</p>
+    <nav class="home-reference" aria-label="Study references">
+      <a href={u('/syllabus/')}>Syllabus <span aria-hidden="true">↗</span></a>
+      <a href={u('/sources/')}>Good Reads <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <HomeLearning />
+  <div class="practice-row">
+    <section class="today" aria-labelledby="today-h">
+      <p class="eyebrow">A daily habit</p><h2 id="today-h">Today's practice</h2>
+      <p>10 Prelims questions and 2 Mains prompts, with an optional timer.</p>
+      <p class="small" id="today-status" role="status">A fresh set every morning.</p>
+      <a class="btn" href={u('/daily/')} id="today-go" data-umami-event="home-cta" data-umami-event-target="daily">Start today's set →</a>
+      <a class="telegram-link" href={telegramBot} target="_blank" rel="noopener" data-umami-event="telegram-subscribe" data-umami-event-where="home">Get it on Telegram ↗</a>
+    </section>
+    <section class="cont" aria-labelledby="cont-h">
+      <p class="eyebrow">A guided path</p><h2 id="cont-h">Your preparation roadmap</h2>
+      <p>Build from one theme to the next, in an order that connects ideas.</p>
+      <p class="small" id="cont-sub">Step 1 of {roadmap.length} · {rm[0].title}</p>
+      <a class="btn" id="cont-link" href={rm[0].url} data-umami-event="home-cta" data-umami-event-target="roadmap-continue">Start the roadmap →</a>
+      <a class="roadmap-link" href={u('/roadmap/')}>All {stages.length} stages ↗</a>
+    </section>
+  </div>
+  <section aria-labelledby="browse-title">
+    <div class="section-heading"><h2 id="browse-title">Your study library</h2><a href={u('/search/')}>Search everything ↗</a></div>
+    <ul class="library-list">
+      <li><a href={u('/syllabus/')}><span><b>Syllabus</b><small>Every syllabus line, linked to its themes and questions</small></span><span aria-hidden="true">↗</span></a></li>
+      <li><a href={u('/sources/')}><span><b>Good Reads</b><small>Official sources and useful reading, organised by subject</small></span><span aria-hidden="true">↗</span></a></li>
+      <li><a href={u('/prelims/')}><span><b>Prelims questions</b><small>{preCount} questions with answer keys, by year or subject</small></span><span aria-hidden="true">↗</span></a></li>
+      <li><a href={u('/papers/gs1/')}><span><b>Mains papers</b><small>GS1, GS2 and GS3, year by year</small></span><span aria-hidden="true">↗</span></a></li>
+      <li><a href={u('/maps/')}><span><b>Map practice</b><small>16 modules and a sketch lab with real UPSC questions</small></span><span aria-hidden="true">↗</span></a></li>
+    </ul>
   </section>
-
-  <section class="today" aria-labelledby="today-h">
-    <div class="today-main">
-      <h2 id="today-h">Today's practice</h2>
-      <p>10 Prelims questions with UPSC marking, then 2 Mains answers to write against the clock.</p>
-      <div class="sheet" aria-hidden="true" id="sheet">
-        {Array.from({ length: 10 }, (_, i) => <span class="b"><i>{i + 1}</i></span>)}
-      </div>
-      <p class="today-status" id="today-status">Not started yet</p>
-      <div class="today-cta">
-        <a class="btn onblue" href={u('/daily/')} id="today-go" data-umami-event="home-cta" data-umami-event-target="daily">Start today's set</a>
-        <a class="btn ghost" href={telegramBot} target="_blank" rel="noopener" data-umami-event="telegram-subscribe" data-umami-event-where="home">Get it on Telegram</a>
-      </div>
-    </div>
+  <section aria-labelledby="themes-title">
+    <div class="section-heading"><h2 id="themes-title">Most-asked themes</h2><a href={u('/themes/')}>All {themes.length} themes ↗</a></div>
+    <ul class="tlist">{top.map((t) => <ThemeCard t={t} />)}</ul>
   </section>
-
-  <section class="cont panel" aria-labelledby="cont-h">
-    <div>
-      <h2 id="cont-h">Continue the roadmap</h2>
-      <p class="small" id="cont-sub">Step 1 of {roadmap.length}. Each theme builds on the ones before it.</p>
-      <p class="cont-title"><a id="cont-link" href={rm[0].url} data-umami-event="home-cta" data-umami-event-target="roadmap-continue">{rm[0].title}</a></p>
-    </div>
-    <div class="cont-bar" aria-hidden="true"><span id="cont-fill"></span></div>
-    <p class="cont-more"><a href={u('/roadmap/')}>See all {stages.length} stages</a></p>
-  </section>
-
-  <h2>Practise and browse</h2>
-  <ul class="tiles">
-    <li><a href={u('/prelims/')}><b>Prelims PYQs</b><span>{preCount} questions with answer key, by year or subject</span></a></li>
-    <li><a href={u('/papers/gs1/')}><b>Mains by paper</b><span>GS1, GS2 and GS3, year by year</span></a></li>
-    <li><a href={u('/maps/')}><b>Map practice</b><span>16 map modules and a sketch lab with real PYQs</span></a></li>
-    <li><a href={u('/sources/')}><b>Good reads</b><span>Official sites worth reading, by subject</span></a></li>
-    <li><a href={u('/syllabus/')}><b>From the syllabus</b><span>All {syllabus.length} syllabus lines and their themes</span></a></li>
-  </ul>
-
-  <h2>Most-asked themes</h2>
-  <ul class="tlist">{top.map((t) => <ThemeCard t={t} />)}</ul>
-  <p><a class="btn" href={u('/themes/')}>All {themes.length} themes</a></p>
-
-  <h2>Themes by area</h2>
-  <div class="areas">
-    {clusters.map((c) => {
+  <section aria-labelledby="areas-title">
+    <h2 id="areas-title">Browse by subject area</h2>
+    <div class="areas">{clusters.map((c) => {
       const ts = themes.filter((t) => t.cluster === c.name);
-      return <details class="area">
-        <summary><span class="an">{c.name}<span class="small">{ts.length} themes, {ts.reduce((s, t) => s + t.count, 0)} PYQs</span></span></summary>
-        <div class="chips">{ts.map((t) => <a class="chip" href={themeUrl(t)}>{t.title}</a>)}</div>
-        <p><a href={u(`/topics/${c.slug}/`)}>Open {c.name}</a></p>
-      </details>;
-    })}
-  </div>
-
-  <div class="facts">
-    <div><b>{totalQuestions}</b><span>Mains PYQs, 2013–2026</span></div>
-    <div><b>{themes.length}</b><span>themes, {cross} of them cross-paper</span></div>
-    <div><b>{preCount}</b><span>Prelims PYQs, {preYears.at(-1)}–{preYears[0]}</span></div>
-  </div>
-
-  <script is:inline define:vars={{ rm, epoch: daily.epoch }}>
+      return <details class="area"><summary><span>{c.name}<small>{ts.length} themes · {ts.reduce((sum, t) => sum + t.count, 0)} PYQs</small></span></summary><div class="chips">{ts.map((t) => <a class="chip" href={themeUrl(t)}>{t.title}</a>)}</div><p><a href={u(`/topics/${c.slug}/`)}>Open {c.name} →</a></p></details>;
+    })}</div>
+  </section>
+  <p class="home-about">{totalQuestions} Mains questions across {themes.length} themes, including {cross} that connect multiple papers. Prelims questions from {preYears.at(-1)}–{preYears[0]}. <a href={u('/about/')}>About this free study companion</a>.</p>
+  <script is:inline define:vars={{ rm }}>
     (function () {
-      var store = {}, done = [];
-      try { store = JSON.parse(localStorage.getItem('upscthemes-daily') || '{}'); } catch (e) {}
-      try { done = JSON.parse(localStorage.getItem('upscthemes-done') || '[]'); } catch (e) {}
-      var today = new Date(Date.now() + 5.5 * 36e5).toISOString().slice(0, 10), t = store[today] || {};
-      var picks = (t.p || []).filter(Boolean).length;
-      [].forEach.call(document.querySelectorAll('#sheet .b'), function (b, i) { if (t.p && t.p[i]) b.classList.add('on'); });
-      var st = document.getElementById('today-status'), go = document.getElementById('today-go');
-      if (t.checked) { st.textContent = 'Done for today. Come back tomorrow for a new set.'; go.textContent = 'Review today’s answers'; }
-      else if (picks) { st.textContent = picks + ' of 10 answered'; go.textContent = 'Continue today’s set'; }
-      var next = rm.find(function (x) { return done.indexOf(x.n) < 0; });
-      if (done.length && next) {
-        document.getElementById('cont-sub').textContent = 'Step ' + next.step + ' of ' + rm.length + ' · ' + done.length + ' done';
-        var a = document.getElementById('cont-link'); a.textContent = next.title; a.href = next.url;
+      function read(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) || fallback; } catch (e) { return fallback; } }
+      function render(snapshot) {
+        var daily = snapshot && snapshot.daily || {}, done = snapshot && Array.isArray(snapshot.roadmap) ? snapshot.roadmap : [];
+        done = rm.filter(function (x) { return done.indexOf(x.n) >= 0; }).map(function (x) { return x.n; });
+        var today = new Date(Date.now() + 5.5 * 36e5).toISOString().slice(0, 10), t = daily[today] || {};
+        var picks = Array.isArray(t.p) ? t.p.filter(Boolean).length : 0;
+        var st = document.getElementById('today-status'), go = document.getElementById('today-go');
+        st.textContent = 'A fresh set every morning.'; go.textContent = "Start today's set →";
+        if (t.checked) { st.textContent = 'Completed today. Your next set arrives tomorrow.'; go.textContent = 'Review today’s answers →'; }
+        else if (picks) { st.textContent = picks + ' of 10 answered'; go.textContent = 'Continue today’s set →'; }
+        var next = rm.find(function (x) { return done.indexOf(x.n) < 0; }), link = document.getElementById('cont-link');
+        link.href = (next || rm[0]).url; link.textContent = done.length ? next ? 'Continue the roadmap →' : 'Revisit the roadmap →' : 'Start the roadmap →';
+        document.getElementById('cont-sub').textContent = next ? 'Step ' + next.step + ' of ' + rm.length + ' · ' + next.title : 'All ' + rm.length + ' themes completed. Revisit any theme.';
       }
-      document.getElementById('cont-fill').style.width = Math.round(100 * done.length / rm.length) + '%';
+      function guest() { render({ daily: read('upscthemes-daily', {}), roadmap: read('upscthemes-done', []) }); }
+      window.addEventListener('activity-snapshot', function (event) { render(event.detail); });
+      window.addEventListener('storage', function () { if (window.__activityScope === 'guest') guest(); });
+      if (window.__activitySnapshot) render(window.__activitySnapshot);
+      else if (!document.querySelector('[data-activity-status]')) guest();
+      else render(null);
     })();
   </script>
   <style>
-    .stage0-entry { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); margin: 20px 0; }
-    .stage0-entry:hover { border-color: var(--gs1); }
-    .stage0-entry-label { color: var(--gs1); font-weight: 800; font-size: .66rem; letter-spacing: .08em; max-width: 100px; }
-    .stage0-entry > span:nth-child(2) { flex: 1; display: grid; gap: 2px; }
-    .stage0-entry b { font-size: .98rem; }
-    .stage0-entry > span:nth-child(2) > span { color: var(--muted); font-size: .83rem; }
-    @media (max-width: 480px) { .stage0-entry { flex-wrap: wrap; } .stage0-entry-label { max-width: none; width: 100%; } }
-    .home-h1 { margin-top: 8px; }
-    .about { margin: 18px 0 8px; }
-    .about h2 { margin: 0 0 6px; font-size: 1.2rem; }
-    .about > p { margin: 0 0 14px; max-width: 70ch; }
-    .how { list-style: none; counter-reset: how; padding: 0; margin: 0 0 10px; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .how li { counter-increment: how; display: grid; align-content: start; gap: 2px; padding: 14px 16px 14px 56px; position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); }
-    .how li::before { content: counter(how); position: absolute; left: 14px; top: 14px; width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--omr); color: var(--omr); display: grid; place-items: center; font-weight: 800; font-size: .9rem; }
-    .how b { font-size: 1rem; } .how span { color: var(--muted); font-size: .92rem; line-height: 1.45; }
-    .about .small { margin: 0; font-weight: 600; }
-    .today { background: var(--accent); color: #fff; border-radius: var(--r-lg); padding: 22px 22px 20px; margin: 22px 0 14px; position: relative; overflow: hidden; }
-    .today h2 { margin: 0 0 4px; color: #fff; font-size: 1.5rem; }
-    .today p { margin: 0; color: rgba(255, 255, 255, .88); max-width: 52ch; }
-    .sheet { display: grid; grid-template-columns: repeat(10, minmax(0, 34px)); gap: 8px; margin: 18px 0 8px; }
-    .sheet .b { aspect-ratio: 1; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .55); display: grid; place-items: center; }
-    .sheet .b i { font-style: normal; font-size: .72rem; font-weight: 700; color: rgba(255, 255, 255, .75); }
-    .sheet .b.on { background: #fff; border-color: #fff; } .sheet .b.on i { color: var(--accent); }
-    .today-status { font-weight: 600; font-size: .92rem; }
-    .today-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
-    .btn.onblue { background: #fff; border-color: #fff; color: #2340b5; } .btn.onblue:hover { color: #2340b5; filter: brightness(.96); }
-    .btn.ghost { background: transparent; border-color: rgba(255, 255, 255, .6); color: #fff; } .btn.ghost:hover { border-color: #fff; color: #fff; }
-    @media (prefers-color-scheme: dark) { .today { background: #2340b5; } }
-    .cont { display: grid; gap: 10px; }
-    .cont h2 { margin: 0; font-size: 1.15rem; } .cont .small { margin: 2px 0 0; }
-    .cont-title { margin: 6px 0 0; font-size: 1.15rem; font-weight: 700; } .cont-title a { color: var(--ink); }
-    .cont-bar { height: 6px; background: var(--bg); border-radius: 99px; overflow: hidden; } .cont-bar span { display: block; height: 100%; width: 0; background: var(--accent); }
-    .cont-more { margin: 0; font-weight: 600; }
-    .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
-    .tiles a { display: grid; gap: 4px; height: 100%; padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); text-decoration: none; color: var(--ink); }
-    .tiles a:hover { border-color: var(--accent); }
-    .tiles b { font-size: 1.05rem; } .tiles span { color: var(--muted); font-size: .9rem; line-height: 1.4; }
-    .areas { display: grid; gap: 8px; }
-    .area { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 0 16px; }
-    .area summary { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 12px 0; cursor: pointer; font-weight: 700; list-style: none; }
-    .an { display: grid; } .an .small { font-weight: 500; font-size: .85rem; }
+    .home-heading { padding: 12px 0 0; }
+    h1 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); max-width: 24ch; margin: 10px 0 14px; font-weight: 700; }
+    .lead { font-size: 1rem; max-width: 62ch; }
+    .home-reference { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 14px; }
+    .home-reference a { display: inline-flex; gap: 16px; align-items: center; min-height: 44px; font-weight: 600; font-size: .92rem; color: var(--ink); text-decoration: none; }
+    .home-reference a:hover { text-decoration: underline; }
+    .practice-row { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--line); }
+    .practice-row section { padding: 28px 28px 28px 0; min-width: 0; }
+    .practice-row section + section { border-left: 1px solid var(--line); padding-left: 28px; padding-right: 0; }
+    .practice-row h2 { margin: 5px 0 10px; font-size: 1.25rem; }
+    .practice-row p:not(.eyebrow) { color: var(--muted); margin: 10px 0 16px; }
+    .practice-row .small { min-height: 2.8em; }
+    .telegram-link, .roadmap-link { display: block; font-size: .82rem; margin-top: 12px; min-height: 32px; }
+    .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 32px 0 14px; }
+    .section-heading h2 { margin: 0; font-size: 1.3rem; }
+    .section-heading > a { font-size: .84rem; min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
+    .library-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .library-list a { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding: 16px 4px; color: var(--ink); text-decoration: none; }
+    .library-list a:hover { background: var(--hover); }
+    .library-list b { font-size: .97rem; font-weight: 600; }
+    .library-list small, .area small { display: block; color: var(--muted); font-size: .84rem; margin-top: 3px; }
+    .areas { border-top: 1px solid var(--line); }
+    .area { padding: 0 4px; border-bottom: 1px solid var(--line); }
+    .area summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 0; cursor: pointer; list-style: none; font-weight: 600; }
     .area summary::-webkit-details-marker { display: none; }
-    .area summary::after { content: "+"; font-weight: 800; font-size: 1.3rem; color: var(--accent); }
-    .area[open] summary::after { content: "−"; }
-    .area .chips { padding-bottom: 6px; } .area p { margin: 10px 0 14px; font-weight: 600; }
-    .facts { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); }
-    @media (max-width: 480px) { .sheet { gap: 5px; } .today { padding: 18px 16px; } }
+    .area summary::after { content: '+'; color: var(--muted); }
+    .area[open] summary::after { content: '−'; }
+    .area .chips { padding-top: 8px; }
+    .home-about { margin-top: 32px; font-size: .85rem; color: var(--muted); max-width: 76ch; }
+    @media (max-width: 540px) {
+      .practice-row { grid-template-columns: minmax(0, 1fr); }
+      .practice-row section { padding: 24px 0; }
+      .practice-row section + section { padding: 24px 0; border-left: 0; border-top: 1px solid var(--line); }
+      .practice-row .small { min-height: 0; }
+      .home-heading { padding-top: 4px; }
+    }
   </style>
 </Base>
