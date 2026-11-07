@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.237595+00:00",
+      "sha256": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560",
+      "file": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing insurgency",
+      "excerpt": "s region: there are pending border and water sharing disputes between the states of the region. Besides, there are conflicts arising out of insurgency, ethnic strife and resource sharing. This makes the region very turbulent. At the same time, many people in South Asia recognise the fact that this region can develop and prosper if the states of the region cooperate with each other. In this chapter, we try to understand the nature of conflict and cooperation among different countries of the region. Since much of this is roote"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing insurgency",
+      "excerpt": "acher  Link the villages to nations and connect to the problems of security (threat to geographical territory/ access to natural resources/insurgency, and so on).  Talk about the observations made during the negotiation and explain how similarly the nations behave while negotiating on related issues.  The activity could be concluded by making reference to some of the current security issues between and among nations. Reprint 2026-27 Chapter 5.indd 78 14 September 2022 11:04:00"
+    }
+  ]
+}

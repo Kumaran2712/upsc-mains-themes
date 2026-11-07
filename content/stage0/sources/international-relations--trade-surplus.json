@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Trade surplus",
+      "excerpt": "OT. It is also known as Trade Balance. BOT is said to be in balance when exports of goods are equal to the imports of goods. Surplus BOT or Trade surplus will arise if country exports more goods than what it imports. Whereas, Deficit BOT or Trade deficit will arise if a country imports more goods than what it exports. Net Invisibles is the difference between the value of exports and value Reprint 2026-27"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing arms control",
+      "excerpt": "not want to give up the third type of weapons of mass destruction, namely, nuclear weapons, so they to deploy a very limited number pursued arms control. of defensive systems, it stopped them from large-scale production Arms control regulates the of those systems. acquisition or development of weapons. The Anti-ballistic The US and Soviet Union Missile (ABM) Treaty in 1972 signed a number of other arms tried to stop the United States and control treaties including the Soviet Union from using ballistic Strategic Arms Limitation"
+    },
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Arms control",
+      "excerpt": " well as social and cultural rights. This includes, for example, the freedom from any form of discrimination and the freedom of expression. Arms control, disarmament and non-proliferation Global disarmament, arms control and non-proliferation are central in preventing conflict and in building and sustaining peace. Since its foundation, the UN has been helping countries in the process of reducing and eventually eliminating weapons, including nuclear, biological and chemical weapons, as well as halting the proliferation of landm"
+    }
+  ]
+}

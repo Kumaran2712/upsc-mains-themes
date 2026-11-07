@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.238445+00:00",
+      "sha256": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158",
+      "file": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing nation",
+      "excerpt": " characteristics such as race or descent. Identify any patriotic song in your language. What then constitutes a nation? A How is the nation nation is to a great extent an ‘imagined’ described in this song? community, held together by the Identify and watch collective beliefs, aspirations and any patriotic films imaginations of its members. It is based in your language. How has nationalism been on certain assumptions which people portrayed and its make about the collective whole with complexities worked which they identif"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing nation",
+      "excerpt": "t is in balance when receipts on current account are equal to the payments on the current account. A surplus current account means that the nation is a lender to other countries and a deficit current account means that the nation is a borrower from other countries. 87 Open Economy Current Account Balanced Current Current Account Surplus Account Deficit Macroeconomics Receipts > Payments Receipts = Payments Receipts < Payments Balance on Current Account has two components: • ·Balance of Trade or Trade Balance • ·Balance o"
+    }
+  ]
+}

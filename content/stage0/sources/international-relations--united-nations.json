@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing United Nations",
+      "excerpt": "l cooperation in the United Nations framework has been through ups and downs, being constantly influenced by various global challenges. The United Nations is a reflection of its Member States and is as efficient, or ineffective, as its Member States make it. During the Cold War, the UN provided a successful channel of communication and achieved the first peacekeeping operations, as well as the adoption of agreements in the field of arms control and for the protection of human rights. The decolonization process had a significant "
+    },
+    {
+      "title": "NCERT Political Theory, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.207508+00:00",
+      "sha256": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079",
+      "file": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing United Nations",
+      "excerpt": "he victims of the tsunami which affected a number of countries in South Asia in 2004. o International networks link terrorists today. o The United Nations is working with different states to try and prevent the spread of bird flu and the possible emergence of a human viral pandemic. What is common to the statements given above? What do they tell us about the world in which we live today? We live today in an interconnected world. New means of communication such as the internet, and television, and cell phones, have brought a majo"
+    }
+  ]
+}

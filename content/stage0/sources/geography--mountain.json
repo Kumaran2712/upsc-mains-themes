@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy206.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.302220+00:00",
+      "sha256": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3",
+      "file": "ef6da4383b4f29743c127ac3417dd164d2e390ef0f6df150f37f049f1927fda3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing mountain",
+      "excerpt": "ckwasting. So, through parallel wind action and action of sheet floods. retreat of slopes, the pediments extend backwards at the expense of mountain front, and gradually, the mountain gets reduced Depositional Landforms leaving an inselberg which is a remnant of the Wind is a good sorting agent. Depending upon mountain. That’s how the high relief in desert the velocity of wind, different sizes of grains are areas is reduced to low featureless plains called moved along the floors by rolling or saltation pediplains. and carr"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.029033+00:00",
+      "sha256": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee",
+      "file": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing mountain",
+      "excerpt": "to have Mid-Oceanic Ridges remarkable similarities both in terms of their This forms an interconnected chain of constituents and their age. mountain system within the ocean. It is the longest mountain-chain on the surface of the Ocean Floor Configuration earth though submerged under the oceanic In this section we shall note a few things related waters. It is characterised by a central rift to the ocean floor configuration that help us in system at the crest, a fractionated plateau and the understanding of the distribution "
+    }
+  ]
+}

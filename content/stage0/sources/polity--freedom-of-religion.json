@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing Freedom of religion",
+      "excerpt": " religion or may choose not to follow any religion. Freedom of religion includes the freedom to profess, follow and propagate any religion. Freedom of religion is subject to certain limitations. The government can impose restrictions on the practice of freedom of religion in order to protect public order, morality and health. This means that the freedom of religion is not an unlimited right. The government can interfere in religious matters for rooting out certain social evils. For example in the past, the government has taken steps "
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.959891+00:00",
+      "sha256": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9",
+      "file": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing Freedom of religion",
+      "excerpt": " Indian Constitution grants rights to all religious communities such as the right to establish and maintain their educational institutions. Freedom of religion in India means the freedom of religion of both individuals and communities. ± State’s Power of Intervention Second, separation in India could not mean mutual exclusion. Why is it so? Because, religiously sanctioned customs such as untouchability deprived individuals of the most basic dignity and self-respect. Such customs were so deeply rooted and pervasive I would like to kno"
+    }
+  ]
+}

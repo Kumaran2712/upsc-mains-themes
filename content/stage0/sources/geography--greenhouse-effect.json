@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy207.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.374573+00:00",
+      "sha256": "09c9ff985345ff7dc23f78a0e52ea9791e7305d3e0d4f7c143f4cf2a8d636ec7",
+      "file": "09c9ff985345ff7dc23f78a0e52ea9791e7305d3e0d4f7c143f4cf2a8d636ec7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing greenhouse effect",
+      "excerpt": "ration; condensation — dew, frost, fog, mist and cloud; rainfall — types and world distributon • World climates — classification (Koeppen), greenhouse effect, global warming and climatic changes Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing greenhouse effect",
+      "excerpt": "eir growth. So, processes that warm the atmosphere are often deforestation due to changes in land use, also collectively referred to as the greenhouse effect. increases the concentration of Co2. The time taken for atmospheric CO2 to adjust to changes The term greenhouse is derived from the analogy to a greenhouse used in cold in sources to sinks is 20-50 years. It is rising areas for preserving heat. A greenhouse at about 0.5 per cent annually. Doubling of is made up of glass. The glass which is concentration of CO2 over pre-indust"
+    }
+  ]
+}

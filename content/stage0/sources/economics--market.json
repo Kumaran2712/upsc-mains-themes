@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing market",
+      "excerpt": "hich national currencies are traded for one another is known as the foreign exchange market. The major participants in the foreign exchange market are commercial banks, foreign exchange brokers and other authorised dealers and monetary authorities. It is important to note that although participants themselves may have their own trading centres , the market itself is world-wide. There is a close and continuous contact between the trading centres and the participants deal in more than one market. 6.2.1 Foreign Exchange Rat"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.772812+00:00",
+      "sha256": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa",
+      "file": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing market",
+      "excerpt": ".e., the product of one firm cannot be differentiated from the product of any other firm. 3. Entry into the market as well as exit from the market are free for firms. 4. Information is perfect. The existence of a large number of buyers and sellers means that each individual buyer and seller is very small compared to the size of the market. This means that no individual buyer or seller can influence the market by their size. Homogenous products further mean that the product of each firm is identical. So a buyer can choose"
+    }
+  ]
+}

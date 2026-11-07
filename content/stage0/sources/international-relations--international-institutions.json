@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing international institutions",
+      "excerpt": "ia’s security strategy has been different communities and groups to strengthen international norms of people to freely articulate their and international institutions grievances and share political to protect its security interests. power. India’s first Prime Minister, Jawaharlal Nehru, supported Finally, there has been an the cause of Asian solidarity, attempt in India to develop its decolonisation, disarmament, economy in a way that the vast and the UN as a forum in which mass of citizens are lifted out international conflicts could be of"
+    },
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing international institutions",
+      "excerpt": "er of conventions, the United Nations Educational, Social, and Cultural Organisation (UNESCO) has been working for over 30 years with other international institutions to coordinate efforts to recognize educational credentials and provide an efficient framework for the recognition of degrees worldwide, allowing and protecting the exchange of foreign students and young professionals. After 8 years of work in November 2019, around 150 Member States adopted the Global Convention on the Recognition of Higher Education Qualifications. The convent"
+    }
+  ]
+}

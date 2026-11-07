@@ -1,0 +1,24 @@
+{
+  "candidateOnly": true,
+  "selectionNote": "Contextual passages on strategic resources and national interests. Independent review must verify the exact lesson claims; lexical overlap alone is insufficient.",
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+      "locator": "PDF page 13, passage containing strategic resources",
+      "excerpt": "ent and Natural Resources 93 deployment of military forces near exploitation sites and along sea-lanes of communication, the stockpiling of strategic resources, efforts to prop up friendly governments in producing countries, as well as support to multinational companies and favourable international agreements. Traditional Western strategic thinking remained concerned with access to supplies, which might be threatened by the Soviet Union. A particular concern was Western control of oil in the Gulf and strategic minerals © Andy Singer, Cagle Cartoons Inc. in Southern and Central Africa",
+      "retrievedAt": "2026-11-07T08:20:37.548335+00:00",
+      "sha256": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7",
+      "file": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7.txt"
+    },
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "locator": "PDF page 8, passage containing national interest in every",
+      "excerpt": "ia is poised to become an economic superpower in the coming times, it always has and in future too will take necessary steps to further its national interest in every respect i.e. political, strategic and economic terms. 284",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt"
+    }
+  ]
+}

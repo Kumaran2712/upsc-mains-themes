@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps103.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.361831+00:00",
+      "sha256": "7d8a5c00ae1b3ae08d3094a0c99f5c61146c6c855530a3ea689362ce0e42552f",
+      "file": "7d8a5c00ae1b3ae08d3094a0c99f5c61146c6c855530a3ea689362ce0e42552f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing Socialism",
+      "excerpt": "Equality Equality SOCIALISM Political Theory Socialism refers to a set of political ideas that emerged as a response to the inequalities present in, and reproduced by, the industrial capitalist economy. The main concern of Socialism is how to minimise existing inequality and distribute resources justly. Although advocates of socialism are not entirely opposed to the market, they favour some kind of government regulation, planning "
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 108, passage containing Socialist",
+      "excerpt": "PART I “The edifice of our Constitution is built upon the concepts crystallised in the Preamble. We resolved to constitute ourselves into a Socialist State which carried with it the obligation to secure to our people justice – social, economic and political. We, therefore, put Part IV into our Constitution containing directive principles of State policy which specify the socialistic goal to be achieved. We promised to our people a democratic polity which carries with it the obligation of securing to the people liberty of th"
+    }
+  ]
+}

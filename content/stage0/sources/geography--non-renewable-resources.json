@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing non-renewable resource",
+      "excerpt": "tally and vertically to find the hidden answers. (i) Natural endowments in the form of land, water, vegetation and minerals. (ii) A type of non-renewable resource. (iii) Soil with high water retaining capacity. (iv) Intensively leached soils of the monsoon climate. RESOURCES AND DEVELOPMENT 11 Reprint 2026-27"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.276900+00:00",
+      "sha256": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b",
+      "file": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing Non-renewable Resources",
+      "excerpt": "ng from the given options. (i) Which one of the following types describes water as a resource? (a) Abiotic resource (c) Biotic Resource (b) Non-renewable Resources (d) Non-cyclic Resource (ii) Which one of the following south Indian states has the highest groundwater utilisation (in per cent) of its total ground water potential? (a) Tamil Nadu (c) Andhra Pradesh (b) Karnataka (d) Kerala Water Resources 51 Reprint 2026-27"
+    }
+  ]
+}

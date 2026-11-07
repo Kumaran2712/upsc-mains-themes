@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing nuclear weapons",
+      "excerpt": "s 26.3 1. India has always stood for (a) a nuclear weapons free world (b) a world where every country has nuclear weapons (c) a world where nuclear weapons are selectively held by few countries 2. What do the following abbreviations stand for? (a) CTBT (b) NPT 282"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing nuclear weapons",
+      "excerpt": "h countries The Nuclear Non-Proliferation Treaty (NPT) of 1968 was an arms control treaty in the sense that it regulated the acquisition of nuclear weapons: those countries that had tested and manufactured nuclear weapons How funny! First they before 1967 were allowed to keep make deadly and their weapons; and those that had expensive weapons. not done so were to give up the Then they make right to acquire them. The NPT complicated treaties did not abolish nuclear weapons; to save themselves from these weapons. rather, it limited"
+    }
+  ]
+}

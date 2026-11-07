@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing money",
+      "excerpt": " feature. payments in money and then exchange the money for things that In contrast, in an economy where they want. Take the case of a shoe money is in use, money by providing manufacturer. He wants to sell shoes the crucial intermediate step in the market and buy wheat. The eliminates the need for double shoe manufacturer will first exchange coincidence of wants. It is no longer shoes that he has produced for necessary for the shoe manufacturer money, and then exchange the money to look for a farmer who will buy his fo"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Money",
+      "excerpt": "Money and Banking Money is the commonly accepted medium of exchange. In an economy which consists of only one individual there cannot be any exchange of commodities and hence there is no role for money. Even if there is more than one individual but these individuals do not take part in market transactions, example: family living on an isolated island, money has no function for them. However, as soon "
+    }
+  ]
+}

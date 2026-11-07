@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Multilateralism",
+      "excerpt": "sm ‍ and its role in our daily lives Multi-what? A short guide on multilateralism and its role in our daily lives Introduction: Multi-what? Multilateralism is a term one often hears in the context of international relations particularly today. It is said to be under attack. However, do we really understand what it means? Multilateralism is important for creating and maintaining peace, improving the quality of our lives and promoting human rights. Multilateralism is also crucial for tackling complex global challenges like climate "
+    }
+  ]
+}

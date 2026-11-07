@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing Disarmament",
+      "excerpt": "N has contributed to world peace is by taking up the cause of disarmament India has also contributed immensely to UN’s disarmament efforts. Disarmament is limitation, reduction and possible elimination of dangerous (like nuclear) weapons. 281"
+    },
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing disarmament",
+      "excerpt": "ns, as well as halting the proliferation of landmines, small arms and light weapons. In this context, the UN Secretary-General’s agenda for disarmament aims to reinvigorate dialogue and negotiations around international disarmament. The Non-Proliferation Treaty (NPT), negotiated by the United Nations between 1965 and 1968, represents to date the only binding commitment towards disarmament by nuclear-weapon States. With 191 States having joined the treaty, the NPT is the most ratified arms limitation and disarmament agreement "
+    }
+  ]
+}

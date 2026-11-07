@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing international trade",
+      "excerpt": "same dictionary carries a definition of “multilateralism” which is often forgotten in the political discourse, but is a basis of the modern international trade and financial system: “freedom of international trade and currency transfers so as to achieve for each country a trading balance with the total trading area but not necessarily with any one particular country”. The dictionary contrasts it with “bilateralism”. — In a multilateral system, the costs and benefits of international cooperation cannot be judged on a single interactio"
+    },
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing international trade",
+      "excerpt": "6 Much of the literature to date has examined barriers to trade in goods, though there is a growing emphasis on the impact of protection on international trade 35 Jaffee (2006) 36 The focus of this paper is on trade barriers for goods. See European Commission (2010) for an overview of current services and investment barriers. 11"
+    }
+  ]
+}

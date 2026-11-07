@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy208.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.706090+00:00",
+      "sha256": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1",
+      "file": "9cbcf4afb43923d3bce5edc1c32f1288028a8864edbe49bd62758fc361da57e1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing sea",
+      "excerpt": "d, the sea gets heated slowly and loses heat slowly. Land heats up and cools down quickly. Therefore, the variation in temperature over the sea is less compared to land. The places situated near the sea come under the moderating influence of the sea and land breezes which moderate the temperature. Figure 8.3 : Latitudinal variation in net Air-mass and Ocean currents : Like the land radiation balance and sea breezes, the passage of air masses also affects the temperature. The places, Temperature which come under the in"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing sea",
+      "excerpt": " type of warm wind occurs on the leeward side giving rise to a low pressure area, whereas the of the mountain ranges. The moisture in these sea is relatively cool and the pressure over sea winds, while crossing the mountain ranges is relatively high. Thus, pressure gradient from condense and precipitate. When it descends sea to land is created and the wind blows from down the leeward side of the slope the dry air the sea to the land as the sea breeze. In the night gets warmed up by adiabatic process. This dry the reve"
+    }
+  ]
+}

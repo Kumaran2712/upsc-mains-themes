@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps205.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.185916+00:00",
+      "sha256": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261",
+      "file": "9c76ef379e3dcb9d4445ab840e233e5423e06655ed9a2c407b52b2e6104ec261.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing Bill",
+      "excerpt": "sed in accept the the House itself. report Bill Introduction Detailed in either discussion House in of bill in case of House non-money bill Bill is accepted or rejected Bill becomes Sent to the Law Other House President approves or Other House sends approves or gives back for recommendations reconsideration Joint Session of Parliament (if required) Reprint 2026-27"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 153, passage containing Bill",
+      "excerpt": "oint sitting of both Houses in certain cases.— (1) If after a Bill has been passed by one House and transmitted to the other House— (a) the Bill is rejected by the other House; or (b) the Houses have finally disagreed as to the amendments to be made in the Bill; or (c) more than six months elapse from the date of the reception of the Bill by the other House without the Bill being passed by it,"
+    }
+  ]
+}

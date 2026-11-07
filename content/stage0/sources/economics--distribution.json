@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.058916+00:00",
+      "sha256": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc",
+      "file": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing distribution",
+      "excerpt": "n also find include agro-processing industries, employment in the livestock sector. food processing industries, leather Chart 5.1 shows the distribution of industry, tourism, etc. Those sectors livestock in India. Poultry accounts for which have the potential but seriously the largest share with 61 per cent lack infrastructure and other Chart 5.1: Distribution of Poultry and support include traditional Livestock in India, 2019 home-based industries like pottery, crafts, handlooms etc. Majority of rural women find employment in"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing distribution",
+      "excerpt": "ry sector expansion. This shift can be which includes (i) and (ii), (b) understood by looking at the secondary sector which includes (iii), distribution of workers by industry. (iv) and (v) and (c) service sector which Generally, we divide all economic includes divisions (vi), (vii) and (viii). activities into eight different industrial Table 6.2 shows the distribution of divisions. They are (i) Agriculture (ii) working persons in different industries Mining and Quarrying (iii) during the year 2023-24. Secondary Manufacturing "
+    }
+  ]
+}

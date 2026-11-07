@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.500008+00:00",
+      "sha256": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0",
+      "file": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Savings",
+      "excerpt": "ns that if income goes up by Rs. 100 in Imagenia, consumption will go up by Rs. 80. Let us also look at another dimension of this, savings. Savings is that part of income that is not consumed. In other words, S Y  C We define the marginal propensity to save (MPS) as the rate of change in savings as income increases. S MPS  s Y Since, S Y  C ,  (Y  C ) s Y Y C   Y Y  1 c 55 Determination of Income Some Definitions and Employment Marginal propensity to consume (MPC): it is the change in consumption per u"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing savings",
+      "excerpt": "cial markets as the government claims an increasing share of the economy’s total savings. However, one must note that the economy’s flow of savings is not really Reprint 2026-27"
+    }
+  ]
+}

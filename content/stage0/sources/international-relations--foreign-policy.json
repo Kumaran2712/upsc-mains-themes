@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Foreign policy",
+      "excerpt": "gn Policy MODULE - 6 India and the World 26 INDIA’S FOREIGN POLICY Notes Every sovereign country has its foreign policy. India too has one. Foreign policy refers to the sum total of principles, interests and objectives which a country promotes while interacting with other countries. Even though there are certain basic features of a foreign policy it is not a fixed concept. The thrust of foreign policy keeps on changing according to changing international conditions. India’s foreign policy is shaped by several factors including i"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing foreign policy",
+      "excerpt": " trading and organisation that carries out investment partner to the growing coordination of security and Asian economies such as India and foreign policy. Who China, makes this an attractive are the ASEAN was and still proposition. During the Cold War members remains principally an economic years Indian foreign policy did not of the association. While the ASEAN pay adequate attention to ASEAN. ASEAN region as a whole is a much But in recent years, India has tried Regional smaller economy compared to to make amends. It signed tr"
+    }
+  ]
+}

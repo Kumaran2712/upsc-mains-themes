@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 47, passage containing notification",
+      "excerpt": "Central Government, as that Government may, by notification in the Official Gazette, specify in this behalf, provided that till such time a notification is issued, all officers of the said corporations, companies, societies and local authorities shall be deemed to be the persons referred to in this clause. (e) To review the progress of applications pending with the competent authorities for sanction of prosecution under the PC Act; (f) To review the progress of investigations conducted by the DSPE into offences alleged to have"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 547, passage containing notification",
+      "excerpt": "said clause. * See the Adaptation of Laws Order, 1950, dated the 26th January, 1950, Gazette of India, Extraordinary, p. 449, as amended by notification No. S.R.O. 115, dated the 5th June, 1950, Gazette of India, Extraordinary, Part II, Section 3, p. 51, notification No. S.R.O. 870, dated the 4th November, 1950, Gazette of India, Extraordinary, Part II, Section 3, p. 903, notification No. S.R.O. 508, dated the 4th April, 1951, Gazette of India, Extraordinary, Part II, Section 3, p. 287, notification No. S.R.O. 1140B, dated the"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 194, passage containing Appeal",
+      "excerpt": "On Own Motion Or On Own Motion Or The Individual Other Wise Other Wise When Within 45 Days – Any Time After Time Any Time Authority May For Appeal Is Over Or Condone After Disposal Of Appeal Condition Not Appealable Or No New Material Appeal Made Detailed discussion of these three remedies is available in respective questions hereunder. 3. Is the right of Appeal available against all orders with which the employee feels aggrieved? No. Rule 22 and 23 of the CCA Rules provide what are the orders against which appeal lies a"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.257803+00:00",
+      "sha256": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd",
+      "file": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 23, passage containing appeal",
+      "excerpt": "ernment READ A CARTOON out of a special fund. ± Candidates with any criminal case should be barred from contesting elections, even if their appeal is pending before a court. ± There should be complete ban on the use of caste and religious appeals in the campaign. ± There should be a law to regulate the functioning of political parties and to ensure that they function in a transparent and democratic manner. These are but a few suggestions. There is no consensus about these suggestions. Even if there was a consensus, there"
+    }
+  ]
+}

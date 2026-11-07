@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing tertiary sector",
+      "excerpt": "tivities. Since these activities Secondary other sectors generate services rather than goods, agriculture, dairy, fishing, (Industrial) the tertiary sector is also called the forestry, this sector is also Sector called agriculture and related service sector. sector. Service sector also includes some The secondary sector covers essential services that may not directly activities in which natural products help in the production of goods. For are changed into other forms through example, we require teachers, doctors, ways of manufac"
+    }
+  ]
+}

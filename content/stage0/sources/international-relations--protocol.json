@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Office at Geneva: Multi-what?",
+      "url": "https://sites.ungeneva.org/multiwhat/",
+      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
+      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
+      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Protocol",
+      "excerpt": "hanks to safety systems and standards like the Automated Airborne Collision Avoidance System (ACAS)? The Vienna Convention and the Montreal Protocol are the first treaties in the history of the United Nations to have achieved universal ratification and have significantly contributed to reversing the problem of ozone depletion. The Future of Multilateralism Multilateralism and the global issues that it acts as a tool to solve have continued to change and evolve towards becoming more visible and relevant to people across the"
+    },
+    {
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:22:52.459341+00:00",
+      "sha256": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15",
+      "file": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Protocol",
+      "excerpt": "e following kinds of instruments: A Protocol of Signature is an instrument subsidiary to a treaty, and drawn up by the same parties. Such a Protocol deals with ancillary matters such as the interpretation of particular clauses of the treaty, those formal clauses not inserted in the treaty, or the regulation of technical matters. Ratification of the treaty will normally ipso facto involve ratification of such a Protocol. An Optional Protocol to a Treaty is an instrument that establishes additional rights and obligations to "
+    }
+  ]
+}

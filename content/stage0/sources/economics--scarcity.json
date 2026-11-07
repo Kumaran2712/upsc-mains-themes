@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing scarcity",
+      "excerpt": "d storing water and travelling long countries and regions around the globe suffer distances to get water. True, the availability from water scarcity? Why is it predicted that of water resources varies over space and time, by 2025, nearly two billion people will live in mainly due to the variations in seasonal and absolute water scarcity? annual precipitation, but water scarcity in Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.419378+00:00",
+      "sha256": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193",
+      "file": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing scarcity",
+      "excerpt": "water. We complain whenever the price of petrol increases and blame it on the government. But the increase in petrol price reflects greater scarcity and the price rise is a signal that less petrol is available— this provides an incentive to use less petrol or look for alternate fuels. Some economists point out that subsidies do not allow prices to indicate the supply of a good. When electricity and water are provided at a subsidised rate or free, they will be used wastefully without any concern for their scarcity. Farmers "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing War",
+      "excerpt": "nger. In responding to the threat of This is a clue to who might be a war, a government has three basic threat in the future. For instance, War is all about choices: to surrender; to prevent a neighbouring country may not insecurity, destruction the other side from attacking by say it is preparing for attack. and deaths. How can promising to raise the costs of war There may be no obvious reason a war make anyone secure? to an unacceptable level; and to for attack. But the fact that this defend itself when war actually"
+    },
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing war",
+      "excerpt": "member of the Security Council? (a) Russia (b) Great Britain (c) India (d) China Q. 2. Which of the following statements is false? (a) Cold war is over (b) Soviet Union has disintegrated (c) Globalisation is a reality (d) United Nations has been dissolved. What Have You Learnt India has followed certain basic principles in the conduct of its foreign policy from which it has not deviated much. In fact some of its basic features such as non-alignment still remain significant and relevant. The proof of the durability of "
+    }
+  ]
+}

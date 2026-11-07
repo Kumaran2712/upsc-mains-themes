@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 216, passage containing political rights",
+      "excerpt": "enables the citizens of a democratic polity to make informed decisions on basic issues which govern their rights. The theory that civil and political rights are subservient to socio-economic rights has been urged in the past and has been categorically rejected in the course of constitutional adjudication by this Court. 155 Civil and political rights and socio-economic rights do not exist in a state of antagonism. The conditions necessary for realising or fulfilling socio-economic rights do not postulate the subversion of political"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.198388+00:00",
+      "sha256": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f",
+      "file": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing Political rights",
+      "excerpt": "ch rights as the right to vote and elect representatives, the right to contest elections, the right to form political parties or join them. Political rights are supplemented by civil liberties. The latter refers to the right to a free and fair trial, the right to express one’s views freely, the right to protest and express dissent. Collectively, civil liberties and political rights form the basis of a democratic system of government. But, as was mentioned before, rights aim to protect the well-being of the individual. Political ri"
+    }
+  ]
+}

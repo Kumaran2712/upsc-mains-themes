@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.490992+00:00",
+      "sha256": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36",
+      "file": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing ecosystem",
+      "excerpt": " a greater chance of adapting to environmental change. In other words, the more the variety of species in an ecosystem, the more stable the ecosystem is likely to be. Economic Role of Biodiversity For all humans, biodiversity is an important resource in their day-to-day life. One important part of biodiversity is ‘crop diversity’, which is also called agro-biodiversity. Biodiversity is seen as a reservoir of resources to be drawn upon for the manufacture of food, pharmaceutical, and cosmetic products. This Figure 14.1 : Gra"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.685924+00:00",
+      "sha256": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70",
+      "file": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Ecosystem",
+      "excerpt": ") Field Survey Methods patterns and geographic characteristics of animals and their habitats. (d) Geo-informatics comprising (iii) Ecology /Ecosystem deals with the techniques such as Remote scientific study of the habitats Sensing, GIS, GPS, etc. characteristic of species. The above classification gives a (iv) Environmental Geography concerns comprehensive format of the branches of world over leading to the realisation of geography. Generally geography curricula is environmental problems such as land taught and learnt in t"
+    }
+  ]
+}

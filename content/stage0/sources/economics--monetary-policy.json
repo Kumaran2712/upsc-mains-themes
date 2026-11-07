@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Federal Reserve: inflation",
+      "url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+      "retrievedAt": "2026-11-07T08:20:38.676612+00:00",
+      "sha256": "05821ecab0b2f597a533cbe971bb6b28df6d5e1e38724340c1b722bea7f11082",
+      "file": "05821ecab0b2f597a533cbe971bb6b28df6d5e1e38724340c1b722bea7f11082.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Monetary Policy",
+      "excerpt": "n Fed Financial Statements Financial Innovation News & Events Press Releases Speeches & Testimony Calendar Videos Photo Gallery Conferences Monetary Policy Federal Open Market Committee About the FOMC Meeting calendars and information Transcripts and other historical materials FAQs Monetary Policy Principles and Practice Notes Policy Implementation Policy Normalization Policy Tools Reports Monetary Policy Report Beige Book Federal Reserve Balance Sheet Developments Review of Monetary Policy Strategy, Tools, and Communications Ove"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing monetary policy",
+      "excerpt": "and reverse repo operations at various maturities: overnight, 7-day, 14- day, etc. This type of operations have now become the main tool of monetary policy of the Reserve Bank of India. The RBI can influence money supply by changing the rate at which it gives loans to the commercial banks. This rate is called the Bank Rate in India. By increasing the bank rate, loans taken by commercial banks become more expensive; this reduces the reserves held by the commercial bank and hence decreases money supply. A fall in the bank rate can "
+    }
+  ]
+}

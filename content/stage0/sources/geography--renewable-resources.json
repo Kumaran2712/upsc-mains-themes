@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing renewable resource",
+      "excerpt": "es within the associate it with regions having low rainfall hydrological cycle ensuring that water is a or those that are drought prone. We renewable resource. instantaneously visualise the deserts of You might wonder that if three-fourth of Rajasthan and women balancing many the world is covered with water and water is ‘matkas’ (earthen pots) used for collecting a renewable resource, then how is it that and storing water and travelling long countries and regions around the globe suffer distances to get water. True, the availability"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing renewable resource",
+      "excerpt": "y and vertically to find the hidden answers. (i) Natural endowments in the form of land, water, vegetation and minerals. (ii) A type of non-renewable resource. (iii) Soil with high water retaining capacity. (iv) Intensively leached soils of the monsoon climate. RESOURCES AND DEVELOPMENT 11 Reprint 2026-27"
+    }
+  ]
+}

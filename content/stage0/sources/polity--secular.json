@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.202734+00:00",
+      "sha256": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f",
+      "file": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing secularism",
+      "excerpt": "ous chapter. In this chapter we will try and see how the concept of secularism may be applied to answer that concern. In India, the idea of secularism is ever present in public debates and discussions, yet there is something very perplexing about the state of secularism in India. On the one hand, almost every politician swears by it. Every political party professes to be secular. On the other hand, all kinds of anxieties and doubts beset secularism in India. Secularism is challenged not only by clerics and religious national"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/keps210.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.959891+00:00",
+      "sha256": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9",
+      "file": "2302ba956129ea302b66c9e5cfb5c5ad290f39da9a95e59ff4f245611acf25f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing secularism",
+      "excerpt": "ugh the term ‘secular’ was not initially mentioned, the Indian Constitution has always been secular. The mainstream, western conception, of secularism means mutual exclusion of state and religion in order to protect values such as individual freedom and citizenship rights of individuals. Again, this is something that you will learn more about in Political Theory. The term ‘mutual exclusion’ means this: Have they started teaching both religion and state must stay away from the internal us the Political Theory course? affairs "
+    }
+  ]
+}

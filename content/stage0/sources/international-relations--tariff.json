@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing tariff",
+      "excerpt": "se the special safeguard mechanism)  To counter the effects of ‘dutch disease’ 22 3. Tariff and non-tariff barriers to trade 3.1 Tariffs A tariff is simply a tax levied on imports (sometimes exports). Under WTO rules, tariffs must, with certain exceptions, be utilised be on a non- discriminatory, ‘most favoured nation’ (MFN) basis. 23 Tariffs may be set at their bound (maximum agreed) or applied level. A tariff has a number of short term effects: consumers pay more and buy fewer goods, while boosting producer incomes (d"
+    },
+    {
+      "title": "IMF Back to Basics: What Is Direct Investment?",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/basics/20_direct-invest.htm",
+      "retrievedAt": "2026-11-07T08:21:55.074085+00:00",
+      "sha256": "d4a008e9ccb4f3a3816054098cf5fca7f1daf44302a91e288eba48ec7aa15b8e",
+      "file": "d4a008e9ccb4f3a3816054098cf5fca7f1daf44302a91e288eba48ec7aa15b8e.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing tariff",
+      "excerpt": " find that setting up local operations allows it to circumvent the barriers. Even though trade taxes have been falling over the years, such tariff jumping is still a common way to enter markets where the greatest benefit of direct investment is access to the local market. Another factor driving horizontal direct investment, specifically between advanced economies, is access to a pool of skilled employees and technology. In contrast to vertical direct investment, horizontal direct investment is likely to compete directly "
+    }
+  ]
+}

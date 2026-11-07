@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing Rules",
+      "excerpt": "bove extract should not be misconstrued to mean that any penalty imposed on a defence civilian by following the procedure prescribed in CCA Rules is liable to be set aside for the simple reason that the above rules do not apply to defence Civilians. Unless a different rule is applicable for a defence civilian and unless the aggrieved person establishes that application of CCA Rules has caused prejudice to him, the application of the CCA Rules cannot be a ground for invalidating the penalty imposed. Hon’ble Supreme Court"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.238740+00:00",
+      "sha256": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385",
+      "file": "f75850d54f7e0635fbbe666bae3124d1ce505df7d73308e25d7ff979cccf2385.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing rules",
+      "excerpt": " citizens have no assurance that others will follow these rules, they will themselves have no reason to follow these rules. Saying that the rules are legally enforceable gives an assurance to everybody that others will follow these, for if they do not do so, they will be punished. The first function of a constitution is to provide a set of basic rules that allow for minimal coordination amongst members of a society. Activity Enact the thought experiment of this section in the classroom. The entire class should discuss a"
+    }
+  ]
+}

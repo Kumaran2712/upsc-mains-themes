@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.590648+00:00",
+      "sha256": "25395e3916407404394ee1d3036a2d6e1c95fee26dfb789c1b9c0663b5666a82",
+      "file": "25395e3916407404394ee1d3036a2d6e1c95fee26dfb789c1b9c0663b5666a82.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Conservation",
+      "excerpt": " example, Conservation of Forest and Wildlife in India the plants, animals and micro-organisms re-create the quality of the air we breathe, Conservation in the background of rapid the water we drink and the soil that decline in wildlife population and forestry has produces our food without which we become essential. But why do we need to cannot survive. Forests play a key role in conserve our forests and wildlife? the ecological system as these are also the Conservation preserves the ecological diversity primary producers on w"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 14",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy214.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.490992+00:00",
+      "sha256": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36",
+      "file": "03ce8908915dadee79fca8391fbea1e38435ee086094933661fb2e030784de36.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Conservation",
+      "excerpt": "BIODIVERSITY AND CONSERVATION 117 ecosystems of which we are also a species. This The International Union of Conservation of fact must be drawn upon every one of us so Nature and Natural Resources (IUCN) has that we live and let other species also live their classified the threatened species of plants and lives. animals into three categories for the purpose It is our ethical responsibility to consider of their conservation. that each and every species along with us have an intrinsic right to exis"
+    }
+  ]
+}

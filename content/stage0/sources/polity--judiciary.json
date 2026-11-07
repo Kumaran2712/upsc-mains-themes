@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Judiciary",
+      "excerpt": "urts are seen only as arbitrators in disputes between individuals or private parties. But judiciary performs some political functions also. Judiciary is an important organ of the government. The Supreme Court of India is in fact, one of the very powerful courts in the world. Right from 1950 the judiciary has played an important role in interpreting and in protecting the Constitution. In this chapter you will study the role and importance of the judiciary. In the chapter on fundamental rights you have already read that the j"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 208, passage containing judiciary",
+      "excerpt": " regime of the suspension of life and personal liberty in the not too distant past is a grim reminder of how tenuous liberty can be, if the judiciary is not vigilant. The interpretation of the Constitution cannot be frozen by its original understanding. The Constitution has evolved and must continuously evolve 208"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing cyclone",
+      "excerpt": "orm the land and sea. Whereas the tropical cyclones is shown in Figure 9.10. originate only over the seas and on reaching A mature tropical cyclone is characterised the land they dissipate. The extra tropical by the strong spirally circulating wind around cyclone affects a much larger area as the centre, called the eye. The diameter of the compared to the tropical cyclone. The wind circulating system can vary between 150 and velocity in a tropical cyclone is much higher 250 km. and it is more destructive. The extra tropic"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess104.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.174814+00:00",
+      "sha256": "674e63f2c3b76e8cfcde5d6a48a2df16ca19329ff547dfdc5953e3f6d2aa19ac",
+      "file": "674e63f2c3b76e8cfcde5d6a48a2df16ca19329ff547dfdc5953e3f6d2aa19ac.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing cyclone",
+      "excerpt": "echnological equipments used in agriculture reforms. Provision for crop insurance against Satyagraha as one of the foremost drought, flood, cyclone, fire and disease, satyagrahis. He was one of the votaries of establishment of Grameen banks, cooperative Gandhi’s concept of gram swarajya. After societies and banks for providing loan facilities Gandhiji’s martyrdom, Vinoba Bhave to the farmers at lower rates of interest were undertook padyatra to spread Gandhiji’s some important steps in this direction. message covered almo"
+    }
+  ]
+}

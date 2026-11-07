@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.419378+00:00",
+      "sha256": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193",
+      "file": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing subsidy",
+      "excerpt": "e meant to benefit the provided loans at a low interest rate farmers but a substantial amount of to small farmers and subsidised fertiliser subsidy also benefits the fertilisers so that small farmers could f e r t i l ise r i n d u s t r y ; a n d a m o n g also have access to the needed farmers, the subsidy largely benefits inputs. Since the small farmers could the farmers in the more prosperous obtain the required inputs, the regions. Therefore, it is argued that output on small farms equalled the there is no case for c"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.501718+00:00",
+      "sha256": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db",
+      "file": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing subsidy",
+      "excerpt": "e Out Ø In the previous chapter, you might have studied about subsidies in various sectors, including agriculture. Some scholars argue that subsidy in agriculture should be removed to make the sector internationally competitive. Do you agree? If so, how can it be done? Discuss in class. Ø Read the following passage and discuss in class. Groundnut is a major oilseed crop in Andhra Pradesh. Mahadeva, who was a farmer in Anantpur district of Andhra Pradesh, used to spend Rs. 10,000 for growing groundnut on his plot of half a"
+    }
+  ]
+}

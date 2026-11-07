@@ -28,8 +28,10 @@ The recorded 160 outputs used prompt version `stage0-tutor-2026-11-07-v1`. The c
 ## Remaining release conditions
 
 - Resolve disputed labels/judgements, regenerate mismatched references and repeat affected evaluations against v2.
-- Implement bounded model revision/adjudication scheduling with durable receipts and a separately approved full-curriculum currency budget.
+- Bounded revision/adjudication, cumulative currency accounting, per-output bound batch reviews and reviewer controls are now implemented and covered by synthetic tests. The v3 pipeline still requires real calibration and the full-curriculum currency budget choice before paid execution. See [publishing procedure](stage0-publishing.md).
 - Author, source-check and independently evaluate all 253 placements. Four content approvals alone do not meet the runtime gate.
 - Keep `content:complete` failing until every placement has the required publication evidence. At this checkpoint, **0/253 flagship placements are approved**, and the 12 existing pilots remain pilots.
+
+Source preparation now covers all 253 placements with captured provenance and candidate passages from 109 documents. This is source coverage, not claim approval; hashes and keyword matches do not establish correctness. The [source report](stage0-source-coverage.json) distinguishes packets from missing sources.
 
 Source provenance and limited excerpts are versioned beside the calibration artifacts; retrieved full texts remain local. Sources include the Federal Reserve inflation explainer, NOAA weather/climate explanation, the US State Department diplomacy encyclopedia and NCERT *Indian Constitution at Work*, chapter 1. Source hashes prove text integrity, not correctness; independent claim review remains necessary.

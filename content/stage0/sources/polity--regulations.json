@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 176, passage containing regulations",
+      "excerpt": " has notified the regulations known as Union Public Service Commission (Exemption from Consultation) regulations, 1958. A copy of the above regulations is annexed at the end of this chapter for ease of reference. Regulation 5 of the above regulations relates to disciplinary cases. It has been clarified in the CCA Rules that the above stated consultation applies to passing of orders in Appeal, Revision and Review as well. Proviso (i) to Rule 27 (2) 29(1) and proviso to Rule 29-A refer. In addition to the above, first proviso t"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 645, passage containing regulations",
+      "excerpt": "not less than three-fourths of the total membership of the District Council: Provided further that it shall not be competent under any such regulations to refuse the grant of a licence to a money-lender or a trader who has been carrying on business within the district since before the time of the making of such regulations. (3) All regulations made under this paragraph shall be submitted forthwith to the Governor and, until assented to by him, shall have no effect. * ************ 11. Publication of laws, rules and regulations"
+    }
+  ]
+}

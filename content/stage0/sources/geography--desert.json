@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing desert",
+      "excerpt": "is warm. areas often surrounded by mountains. Dry climates are divided into steppe or Mediterranean Climate (Cs) semi-arid climate (BS) and desert climate (BW). They are further subdivided as subtropical As the name suggests, Mediterranean climate steppe (BSh) and subtropical desert (BWh) at occurs around Mediterranean sea, along the latitudes from 15° - 35° and mid-latitude west coast of continents in subtropical latitudes steppe (BSk) and mid-latitude desert (BWk) at between 30° - 40° latitudes e.g. — Central latitudes"
+    },
+    {
+      "title": "NASA Earth Observatory: Mission Biomes",
+      "url": "https://earthobservatory.nasa.gov/biome/",
+      "retrievedAt": "2026-11-07T08:21:58.338767+00:00",
+      "sha256": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0",
+      "file": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Desert",
+      "excerpt": "arth Observatory) NASA Kids Home 🏠 Mission: Biomes 🌵 Missions Great Graph Match🕵️‍♀️ To Plant or Not to Plant 👨🏻‍🌾 Biomes Coniferous Forest Desert Grassland Rainforest Shrubland Temperate Deciduous Forest Tundra Resources Glossary Teacher Resources About Mission: Biomes Mission: Biomes Have you ever wondered what it would be like to live in a different part of the world? What would the weather be like? What kinds of animals would you see? Which plants live there? By investigating these questions, you are learning about b"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy201.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.685924+00:00",
+      "sha256": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70",
+      "file": "bfe41758f80bc48a423faef3d2a8bba033679a55cbf9d3268bfa227464999e70.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing earth",
+      "excerpt": " like physical environment of the earth, human to ask is — What is geography? You know that activities and their interactive relationships. earth is our home. It is also the home of many Therefore, a pertinent question you can ask at other creatures, big and small, which live on this stage is — Why should we study the earth and sustain. The earth’s surface is geography? We live on the surface of the earth. not uniform. It has variations in its physical Our lives are affected by our surroundings in features. There are mo"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy203.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.936671+00:00",
+      "sha256": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3",
+      "file": "0bc4f9e82d347cf529be82c21f4263af27db406fc6eff7c8c3867835cb9beec3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing earth",
+      "excerpt": "ergence of hot molten lava, dust, smoke, fire Most of our knowledge about the interior of and magma flowing out of the volcanic crater? the earth is largely based on estimates and The interior of the earth can be understood only inferences. Yet, a part of the information is obtained through direct observations and by indirect evidences as neither any one has nor analysis of materials. any one can reach the interior of the earth. The configuration of the surface of the earth Direct Sources is largely a product of the pro"
+    }
+  ]
+}

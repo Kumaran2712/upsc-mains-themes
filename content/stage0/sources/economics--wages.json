@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing wages",
+      "excerpt": "ounding off 41.1) are workers in water and fuelwood and participate in India. In urban areas, the proportion farm labour. They are not paid wages is about 38, whereas in rural India, in cash or in the form of grains; at the ratio is about 42. Why is there times they are not paid at all. For this such a difference? People in rural areas reason, these women are not have limited resources to earn a higher categorised as workers. Economists income and participate more in the argue that these women should also employment mar"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.757611+00:00",
+      "sha256": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729",
+      "file": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing wages",
+      "excerpt": "labour which is sold and purchased against wages is referred to as wage labour). If we apply the above mentioned four criteria to the countries of the world we would find that capitalist countries have come into being only during the last three to four hundred years. Moreover, strictly speaking, even at present, a handful of countries in North America, Europe and Asia will qualify as capitalist countries. In many underdevelo"
+    }
+  ]
+}

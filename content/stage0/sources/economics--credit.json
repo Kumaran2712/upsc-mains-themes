@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing credit",
+      "excerpt": "poor have to depend on in the rural areas, so that the the informal sources. It is important dependence on informal sources that the formal credit is distributed of credit reduces. more equally so that the poor can benefit from the cheaper loans. LET’S WORK THESE OUT 1. What are the differences between formal and informal sources of credit? 2. Why should credit at reasonable rates be available for all? 3. Should there be a supervisor, such as the Reserve Bank of India, that looks into the loan activities of informal lend"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.058916+00:00",
+      "sha256": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc",
+      "file": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing credit",
+      "excerpt": "y a minimum multi-agency institutions, namely, contribution from each member. From commercial banks, regional rural banks the pooled money, credit is given to the (RRBs), cooperatives and land needy members to be repayable in development banks. They are expected small instalments at reasonable interest to dispense adequate credit at cheaper rates. By May 2019, nearly 6 crore Work These Out Ø In your locality/neighbourhood, you might notice self-help groups providing credit. Attend few meetings of such self-help groups. W"
+    }
+  ]
+}

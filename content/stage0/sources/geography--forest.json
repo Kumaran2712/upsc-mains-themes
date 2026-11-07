@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess102.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.590648+00:00",
+      "sha256": "25395e3916407404394ee1d3036a2d6e1c95fee26dfb789c1b9c0663b5666a82",
+      "file": "25395e3916407404394ee1d3036a2d6e1c95fee26dfb789c1b9c0663b5666a82.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing forest",
+      "excerpt": "are reserved forests. Reserved forests are some of the tiger reserves of India. regarded as the most valuable as far as the conservation of forest and wildlife resources are concerned. The conservation projects are now focusing on biodiversity rather than on a few of its (ii) Protected Forests: Almost one-third of the components. There is now a more intensive total forest area is protected forest, as search for different conservation measures. declared by the Forest Department. This Increasingly, even insects are beginni"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/legy203.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.159813+00:00",
+      "sha256": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1",
+      "file": "2633beea45d9789bb9a2d295f0537fb52f02731006560c3283ac051799a456d1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing forest",
+      "excerpt": "land-use categories as maintained in the Land Revenue Records are as follows : (i) Forests : It is important to note that area under actual forest cover is different from area classified as forest. The latter is the area which the Government has identified and demarcated for forest growth. The land revenue records are consistent with the latter definition. Thus, there may be an increase in this category without any increase in the actual forest cover. (ii) Barren and Wastelands : The land which may be classified as a was"
+    }
+  ]
+}

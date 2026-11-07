@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keps101.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.293487+00:00",
+      "sha256": "f01413fe72f84623efb057e30057c701b0cbc718a3b319e76a9c8087c4c07f2d",
+      "file": "f01413fe72f84623efb057e30057c701b0cbc718a3b319e76a9c8087c4c07f2d.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing dialogue",
+      "excerpt": "n his book ‘The Republic’, he created the character Socrates and through him examined the question – what is justice? The book opens with a dialogue between Socrates and Cephalus. In the course of this dialogue Cephalus and his friends come to recognise that their understanding of justice is inadequate and unacceptable. The important thing in this is that Socrates uses reason to reveal the limitations and inconsistencies in a given point of view. His adversaries eventually admit that the views they had held and lived by co"
+    },
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing dialogue",
+      "excerpt": "er several economic issues. The NAM remains a very relevant forum for third world countries to engage the developed nations in a productive dialogue.Moreover, the NAM can prove to be powerful instrument for South-South cooperation. Such a thing is essential if the third world countries are to increase their bargaining power vis-a-vis the developed world. India continues to take active part in the non-aligned movement even after the end of cold war. Finally, the developing countries united under the forum of NAM have to fig"
+    }
+  ]
+}

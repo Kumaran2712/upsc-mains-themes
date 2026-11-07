@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.830187+00:00",
+      "sha256": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392",
+      "file": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing precipitation",
+      "excerpt": "snowfall. Moisture is released in the form of hexagonal crystals. These crystals form flakes of snow. Besides rain and snow, other forms of precipitation are sleet and hail, Figure 10.1 though the latter are limited in occurrence and are sporadic in both time and space. Sleet is frozen raindrops and refrozen melted snow-water. When a layer of air with the temperature above freezing point overlies a subfreezing layer near the ground, precipitation takes place in the form of sleet. Raindrops, which leave the warmer air, encounter"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing precipitation",
+      "excerpt": " a year. from the Mediterranean climate on the west Precipitation occurs in summer. The annual coast of the continents. The main areas are: precipitation is low from 12-15 cm. Northwestern Europe, west coast of North America, north of California, southern Chile, Polar Climates (E) southeastern Australia and New Zealand. Due to marine influence, the temperature is Polar climates exist poleward beyond 70° moderate and in winter, it is warmer than for latitude. Polar climates consist of two types: its latitude. The mean temperatur"
+    }
+  ]
+}

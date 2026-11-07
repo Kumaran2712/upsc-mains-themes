@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.419378+00:00",
+      "sha256": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193",
+      "file": "4c5585fec8089aea46654ba528a27f4502e8b1660c974605a6dd9fd62b0d6193.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing inequality",
+      "excerpt": "y needs such as food, a decent house, was considered a necessity in order to education and health care and reduce our dependence on foreign inequality in the distribution of wealth countries, especially for food. It is should be reduced. understandable that people who were Let us now see how the first seven recently freed from foreign domination five year plans, covering the period should give importance to self- 1950-1990, attempted to attain these reliance. Further, it was feared that four goals and the extent to which dep"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.603611+00:00",
+      "sha256": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c",
+      "file": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 17, passage containing inequality",
+      "excerpt": " effective utilisation of human resources. 11. How does investment in human capital contribute to growth? 12. ‘There is a downward trend in inequality world-wide with a rise in the average education levels’. Comment. 13. Examine the role of education in the economic development of a nation. 14. Explain how investment in education stimulates economic growth. 15. Bring out the need for on-the-job-training for a person. 16. Trace the relationship between human capital and economic growth. 17. Discuss the need for promoting wome"
+    }
+  ]
+}

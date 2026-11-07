@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.552223+00:00",
+      "sha256": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7",
+      "file": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing population",
+      "excerpt": "the last stage, both fertility and families are some of the measures which can mortality decline considerably. The help population control. population is either stable or grows slowly. Thomas Malthus in his theory (1798) The population becomes urbanised, literate stated that the number of people would and has high technical know- how and increase faster than the food supply. Any deliberately controls the family size. further increase would result in a population This shows that human beings are crash caused by famine, diseas"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/legy201.pdf",
+      "retrievedAt": "2026-11-07T08:22:00.440446+00:00",
+      "sha256": "fb2d9bee8181bdea544750799792eb6a64cf67eeb116982d314b001b9e1f31dd",
+      "file": "fb2d9bee8181bdea544750799792eb6a64cf67eeb116982d314b001b9e1f31dd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing population",
+      "excerpt": "ry. India is the second most populous Chapter 1 country after China in the world with its total population of 1,210 million (2011). India’s population is larger than the total population of North America, South America and Australia put together. More often, it is argued that such a large population invariably puts pressure on its limited resources and is also responsible for many socio-economic problems in the country. How do you perceive the idea of India? Is POPULATION it simply a territory? Does this signify an amalgam o"
+    }
+  ]
+}

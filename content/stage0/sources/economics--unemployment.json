@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing unemployment",
+      "excerpt": "variety of unemployment prevailing in our country. Do we have different types of unemployment in our Fig. 6.6 Sugar cane cutters: disguised unemployment is common economy? The situation in farm works described in the first employment exchanges and register paragraph of this section is called open themselves for vacancies notified through unemployment. Economists call employment exchanges. The National unemployment prevailing in Indian farms Statistical Office (Previously it was known as disguised unemployment. What is as Natio"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.603611+00:00",
+      "sha256": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c",
+      "file": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing Unemployment",
+      "excerpt": "intervention during illness), social medicine (spread of health literacy) and provision of clean drinking water and good sanitation places. Unemployment is the reason for are the various forms of health the rural-urban migration in India. expenditures. Health expenditure Technically qualified persons, like directly increases the supply of healthy engineers and doctors, migrate to other labour force and is, thus, a source of countries because of higher salaries human capital that they may get in such countries. formation. Migra"
+    }
+  ]
+}

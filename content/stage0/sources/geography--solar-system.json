@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.340325+00:00",
+      "sha256": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a",
+      "file": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing solar system",
+      "excerpt": " depends on it. Next to otherwise we all would have no existence. Water air, water is the most important element is a rare commodity in our solar system. There required for the existence of life on earth. The is no water on the sun or anywhere else in the distribution of water on earth is quite uneven. solar system. The earth, fortunately has an Many locations have plenty of water while abundant supply of water on its surface. Hence, others have very limited quantity. The our planet is called the ‘Blue Planet’. hydrological cy"
+    },
+    {
+      "title": "NASA Earth Observatory: Mission Biomes",
+      "url": "https://earthobservatory.nasa.gov/biome/",
+      "retrievedAt": "2026-11-07T08:21:58.338767+00:00",
+      "sha256": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0",
+      "file": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Solar System",
+      "excerpt": "delines NASA+ Search Suggested Searches Artemis ISS Roman Webb Quesst Moon Base View All Topics A-Z Home Missions Humans in Space Earth The Solar System The Universe Science Aeronautics Technology Learning Resources About NASA Español News & Events Multimedia NASA+ Highlights 5 min read NASA’s Twin ESCAPADE Spacecraft to Slingshot Past Earth on Way to Mars article 5 days ago 2 min read NASA Announces X-70 Experimental Aircraft to Advance Flight Research article 2 days ago 4 min read What’s Up: November 2026 Skywatching Tips fr"
+    }
+  ]
+}

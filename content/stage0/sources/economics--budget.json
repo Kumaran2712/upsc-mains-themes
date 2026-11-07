@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing budget",
+      "excerpt": "to raise the amount through taxes in order to keep the budget balanced. When tax collection exceeds the required expenditure, the budget is said to be in surplus. However, the most common feature is the situation when expenditure exceeds revenue. This is when the government runs a budget deficit. 5.2.1 Measures of Government Deficit When a government spends more than it collects by way of revenue, it incurs a budget deficit 6. There are various measures that capture government deficit and they have their own im"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec202.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.486639+00:00",
+      "sha256": "d13dbdc198e29b5690d662e7e9f10bc945f10a01a39baf5787724e36d38c5826",
+      "file": "d13dbdc198e29b5690d662e7e9f10bc945f10a01a39baf5787724e36d38c5826.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing budget",
+      "excerpt": "If both the goods are perfectly divisible6, the consumer’s budget set would consist of all bundles (x1, x2) such that x1 and x2 are any numbers greater than or equal to 0 and p1x1 + p 2x 2 ≤ M. The budget set can be represented in a diagram as in Figure 2.9. All bundles in the positive quadrant which are on or below the line are included in the budget set. The equation of the line is Budget Set. Quantity of bananas is measured p1x1 + p2x2 = "
+    }
+  ]
+}

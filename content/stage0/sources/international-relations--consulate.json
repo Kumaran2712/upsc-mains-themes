@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
+      "url": "https://diplomacy.state.gov/education/diplomatic-encyclopedia/",
+      "retrievedAt": "2026-11-07T08:20:38.210894+00:00",
+      "sha256": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba",
+      "file": "71f7b10ae5a282e1d693e8d224e755b74efee708225464059b9f3999307162ba.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing consulate",
+      "excerpt": ". Term American Presence Posts (APP) A special purpose overseas diplomatic post with limited staffing and responsibilities established as a consulate under the Vienna Convention. APPs are located in cities outside the capital that are important but do not host a U.S. consulate. Typically, these posts do not have any consular services on site, so the APP’s activities are limited or narrowly focused on priorities such as public outreach, business facilitation, and issue advocacy. Examples of American Presence Posts include Bo"
+    }
+  ]
+}

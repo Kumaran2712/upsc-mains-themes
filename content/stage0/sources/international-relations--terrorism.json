@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Terrorism",
+      "excerpt": "ecause these kill far will discuss some of these threats more people than war, genocide in the section below. and terrorism combined. Human Terrorism refers to political security policy, they argue, violence that targets civilians should protect people from these threats as well as from violence. deliberately and indiscriminately. In its broadest formulation, the International terrorism involves human security agenda also the citizens or territory of more encompasses economic security than one country. Terrorist and ‘threat"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing terrorism",
+      "excerpt": "going to flood our has increased from $338 million in UN against India’s move to market? But where in 1992 to more than $84 billion counter terrorism are some of the are they? in 2017. More recently, both factors for it. Reprint 2026-27 Chapter 2.indd 26 15-03-2024 11:47:18"
+    }
+  ]
+}

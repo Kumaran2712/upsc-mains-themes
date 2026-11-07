@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing economic development",
+      "excerpt": "RESOURCES Sustainable development Resources are vital for human survival as well as for maintaining the quality of life. It was Sustainable economic development means believed that resources are free gifts of nature. ‘development should take place without As a result, human beings used them damaging the environment, and development indiscriminately and this has led to the in the present should not compromise with the following major problems. needs of the future generations.’ • Depletion of resources for satisfying the greed of a few "
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.501718+00:00",
+      "sha256": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db",
+      "file": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing economic development",
+      "excerpt": "There is a consensus in the world today that economic development is not all and the GDP is not necessarily a measure of progress of a society. K.R. Narayanan, Former President of India 3.1 I NTRODUCTION policy measures which changed the direction of our developmental You have studied in the previous strategies. In this chapter, we will chapter that, since independence, look at the background of the crisis, India followed the mixed economy m"
+    }
+  ]
+}

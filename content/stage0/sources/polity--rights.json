@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 35, passage containing rights",
+      "excerpt": "drafters, to ignore, to forget or to depreciate the rights of man are the sole causes of public misfortune and government corruption. These rights are natural rights, inalienable and sacred, the National Assembly recognizes and proclaims them-it does not grant, concede or establish them-and their conservation is the reason for all political communities; within these rights figures resistance to oppression”. (emphasis supplied) 42 In 1921, Roscoe Pound, in his work titled “The Spirit of the Common Law”, explained the mean"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.198388+00:00",
+      "sha256": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f",
+      "file": "fef39a2bc8073fb65587514c91e5a41ae6f52c548610124c097a727a40f9995f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Rights",
+      "excerpt": "ople today are also making new demands for rights such as the right to information, right to clean air or the right to safe drinking water. Rights are claimed not only in relation to our political and public lives but also in relation to our social and personal relationships. Moreover, rights may be claimed not only for adult human beings but also for children, unborn foetuses, and even animals. The notion of rights is thus invoked in a variety of different ways by different people. In this chapter we will explore: o Wha"
+    }
+  ]
+}

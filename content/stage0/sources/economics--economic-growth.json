@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.603611+00:00",
+      "sha256": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c",
+      "file": "cac07b40e7bf853f85eeca7f2de0628751a3300a79e194a9b4aad21250b6648c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing Economic growth",
+      "excerpt": "rson is more than that of an uneducated person and that the former generates more income than the latter. uninterrupted labour supply for a Economic growth means the increase longer period of time, then health is in real national income of a country; also an important factor for economic naturally, the contribution of the growth. Thus, both education and educated person to economic growth health, along with many other factors is more than that of an illiterate person. like on-the-job training, job market If a healthy person could"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.181748+00:00",
+      "sha256": "2d1327ec56d40c0abbdbb325d724598b291fb6ec7757b6948471a313cfe16690",
+      "file": "2d1327ec56d40c0abbdbb325d724598b291fb6ec7757b6948471a313cfe16690.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing economic growth",
+      "excerpt": ", industrial effluents, packaging, salts Although industries contribute significantly to and garbage renders the soil useless. Rain India’s economic growth and development, the water percolates to the soil carrying the increase in pollution of land, water, air, noise pollutants to the ground and the ground water and resulting degradation of environment that also gets contaminated. they have caused, cannot be overlooked. Noise pollution not only results in irritation Industries are responsible for four types of and anger, it can a"
+    }
+  ]
+}

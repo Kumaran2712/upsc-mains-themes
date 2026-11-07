@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Protectionism",
+      "excerpt": "ek to support domestic industries. Protectionism can thus take many forms, including measures such as subsidies, standards and procurement. Protectionism is used for a number of reasons, some of which are outlined here, but is generally acknowledged to be ineffective and harmful to a country’s economic interests in the longer term. This is because it prevents the mutual gains from trade being realised, and, by restricting competition, limits the incentives for firms to improve their efficiency. 3"
+    }
+  ]
+}

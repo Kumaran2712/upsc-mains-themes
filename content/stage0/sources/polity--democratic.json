@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.257803+00:00",
+      "sha256": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd",
+      "file": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing democracy",
+      "excerpt": "s have today become the most visible symbol of the democratic process. We often distinguish between direct and indirect democracy. A direct democracy is one where the citizens directly participate in the day-to-day decision- 17 February 1957 making and in the running of They say elections are carnival of the government. The ancient democracy. But this cartoon depicts chaos instead. Is this true of elections always? Is city-states in Greece were it good for democracy? considered examples of direct democracy. Many would 52 co"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 450, passage containing democracy",
+      "excerpt": "said to reflect core constitutional values. The core value of the nation being democratic, for example, would be hollow unless persons in a democracy are able to develop fully in order to make informed choices for themselves which affect their daily lives and their choice of how they are to be governed. 83. In his well-known thesis “On Liberty”, John Stuart Mill, as far back as in 1859, had this to say: “…. the sole end for which mankind are warranted, individually or collectively, in interfering with the liberty of action "
+    }
+  ]
+}

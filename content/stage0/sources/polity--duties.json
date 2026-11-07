@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 361, passage containing duties",
+      "excerpt": "uties 2*** as are mentioned in the Union List shall be levied by the Government of India but shall be collected— (a) in the case where such duties are leviable within any 3[Union territory], by the Government of India, and (b) in other cases, by the States within which such duties are respectively leviable. (2) The proceeds in any financial year of any such duty leviable within any State shall not form part of the Consolidated Fund of India, but shall be assigned to that State. 4268A. [Service tax levied by Union and col"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.293523+00:00",
+      "sha256": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab",
+      "file": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing duties",
+      "excerpt": "justice concerns our life in society, the way in which public life is ordered and the principles according to which social goods and social duties are distributed among different members of society. As such, questions of justice are of central importance for politics. After going through this chapter you should be able to: o Identify some of the principles of justice which have been put forward in different societies and at different periods of time. o Explain what is meant by distributive justice. o Discuss John Rawls’ "
+    }
+  ]
+}

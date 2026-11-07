@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec104.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.500008+00:00",
+      "sha256": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0",
+      "file": "92fea8a90bb02632aede6e378abcad3e312c53137318ef843a44d9bb19e28de0.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing consumption",
+      "excerpt": "on changes at a constant rate as income changes. Of course, even if income is zero, some consumption still takes place. Since this level of consumption is independent of income, it is called autonomous consumption. We can describe this function as: C = C + cY (4.1) The above equation is called the consumption function. Here C is 54 the consumption expenditure by households. This consists of two Introductory Macroeconomics components autonomous consumption and induced consumption ( cY ). Autonomous consumption is denoted by C "
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.757611+00:00",
+      "sha256": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729",
+      "file": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing consumption",
+      "excerpt": "d we mean a single individual who takes decisions relating to her own consumption, or a group of individuals for whom decisions relating to consumption are jointly determined. Households also save and pay taxes. How do they get the money for these activities? We must remember that the households consist of people. These people work in firms as workers and earn wages. They are the ones who work in the government departments and earn salaries, or they are the owners of firms and earn profits. Indeed the market in which the firm"
+    }
+  ]
+}

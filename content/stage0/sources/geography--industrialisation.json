@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing industrialisation",
+      "excerpt": " people. of the people, much of it may be polluted by Post-independent India witnessed domestic and industrial wastes, chemicals, intensive industrialisation and urbanisation, pesticides and fertilisers used in agriculture, creating vast opportunities for us. Today, large thus, making it hazardous for human use. industrial houses are as commonplace as the Government of India has accorded highest industrial units of many MNCs (Multinational priority to improve the quality of life and Corporations). The ever-increasing number of enha"
+    },
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy102.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.552223+00:00",
+      "sha256": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7",
+      "file": "3a2c7d7e0fb097d8ba63ab04b19ef6b68c03b10c0682c5f11bf141b92c0065f7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Industrialisation",
+      "excerpt": "pment of some of the unpleasant aspects of city life. transport network and hence initially do not favour agricultural and industrial (iii) Industrialisation: Industrial belts provide development. So, these areas tend to be job opportunities and attract large less populated. The Ganga plains are numbers of people. These include not just among the most densely populated factory workers but also transport areas of the world while the mountains operators, shopkeepers, bank employees, zones in the Himalayas are scarcely doctors, teache"
+    }
+  ]
+}

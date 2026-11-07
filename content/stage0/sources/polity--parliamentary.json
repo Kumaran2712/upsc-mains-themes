@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 38, passage containing parliamentary",
+      "excerpt": " because they understand that acting independently would not accomplish their objectives. Generally speaking, a coalition is a political or parliamentary alliance that is less permanent than a party, organization, or interest group. 3.2.1 FORMS OF COALITION GOVERNMENT Coalition politics are determined by the nation's electoral system and constitutional structure.They are divided into three categories: government, electoral, and parliamentary. If no Indian party receives more than a majority, a parliamentary coalition may be for"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps204.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.417319+00:00",
+      "sha256": "d192215feeecb4abcde9d5f9359f93d2e946a036e6d9212f573fcac2f6973479",
+      "file": "d192215feeecb4abcde9d5f9359f93d2e946a036e6d9212f573fcac2f6973479.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing parliamentary",
+      "excerpt": "t. Japan has a parliamentary system with the Emperor as the head of the state and the prime minister as the head of government. Italy has a parliamentary system with the president as the formal head of state and the prime minister as the head of government. Russia has a semi-presidential system where president is the head of state and prime minister, who is appointed by the president, is the head of government. Germany has a parliamentary system in which president is the ceremonial head of state and the chancellor is the head o"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing commercial bank",
+      "excerpt": "s of money supply in India? 5. What is a ‘legal tender’? What is ‘fiat money’? 6. What is High Powered Money? 7. Explain the functions of a commercial bank. 8. What is money multiplier? What determines the value of this multiplier? 50 9. What are the instruments of monetary policy of RBI? Introductory Macroeconomics 10. Do you consider a commercial bank ‘creator of money’ in the economy? 11. What role of RBI is known as ‘lender of last resort’? Suggested Readings 1. Dornbusch, R. and S. Fischer. 1990. Macroeconomics, (fifth editi"
+    }
+  ]
+}

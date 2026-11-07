@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 17, passage containing indirect tax",
+      "excerpt": " handed to the FRBM Review Committee. Box 5.3: GST: One Nation, One Tax, One Market Goods and Service Tax (GST) is the single comprehensive indirect tax, operational from 1 July 2017, on supply of goods and services, right from the manufacturer/ service provider to the consumer. It is a destination based consumption tax with facility of Input Tax Credit in the supply chain. It is applicable throughout the country with one rate for one type of goods/service. It has amalgamated a large number of Central and State taxes and cesse"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 204, passage containing Public Administration",
+      "excerpt": " emergency or in the interests of public safety or tranquillity… 322 B. Shiva Rao, The Framing of India’s Constitution, Indian Institute of Public Administration (1967), Vol. 2, at page 75 323 Ibid, at page 87 324 Ibid, at page 139 204"
+    },
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 34, passage containing Public Administration",
+      "excerpt": "Nandedkar, V. G. (1987) ‘Voluntary associations: a strategy for development’, IndianJournal of Public Administration, 23(3): 460–480. Electoral Politics in India 3 UNIT-III: ELECTORAL POLITICS IN INDIA Notes Structure 3.0 Objectives 3.1Social and Ideological bases: National and Regional Parties 3.1.1 The national parties 3.1.2 Regional parties 3.2 Coalition Politics 3.2.1Form of coalition government 3.2.2Characteristics of a coalition government 3.2.3Formation of coalition government of Indi"
+    }
+  ]
+}

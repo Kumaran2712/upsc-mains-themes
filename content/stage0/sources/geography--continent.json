@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/legy107.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.731630+00:00",
+      "sha256": "a78d1c202798a1d3ae58104745d59bbde14e761ef74269fb7c7107d1d5f17a7c",
+      "file": "a78d1c202798a1d3ae58104745d59bbde14e761ef74269fb7c7107d1d5f17a7c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing continent",
+      "excerpt": "ll over the sparsely gold, diamond and copper mining activities. populated areas. The transcontinental railways The important routes of the continent are: (i) carry the bulk of wheat and coal tonnage. the Benguela Railway through Angola to Australia has about 40,000 km of Katanga-Zambia Copper Belt; (ii) the Tanzania railways, of which 25 per cent are found in New Railway from the Zambian Copper Belt to South Wales alone. The west-east Australian Dar-es-Salaam on the coast; (iii) the Railway National Railway line runs acros"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.029033+00:00",
+      "sha256": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee",
+      "file": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing continent",
+      "excerpt": " the ocean floor. (v) Which one of the following is the type of plate boundary of the Indian plate along the Himalayan mountains? (a) Ocean-continent convergence (b) Divergent boundary (c) Transform boundary (d) Continent-continent convergence 2. Answer the following questions in about 30 words. (i) What were the forces suggested by Wegener for the movement of the continents? (ii) How are the convectional currents in the mantle initiated and maintained? (iii) What is the major difference between the transform boundary and t"
+    }
+  ]
+}

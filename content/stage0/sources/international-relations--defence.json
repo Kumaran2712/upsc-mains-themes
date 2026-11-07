@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing defence",
+      "excerpt": "in and Portugal join the EEC. armed forces are the second largest in the world. Its total 1990 October: Unification of Germany. spending on defence is second 1992 February 7: The Treaty of Maastricht was signed after the US. One EU member establishing the European Union (EU). state, France, also has nuclear 1993 January: European Economic Community (EEC) was arsenals of approximately renamed the European Community (EC). 335 nuclear warheads. It is 1995 January: Austria, Finland and Sweden join the EU. also the world’s sec"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing defence",
+      "excerpt": "government. The main items of non-plan expenditure are interest payments, defence services, subsidies, salaries and pensions. Interest payments on market loans, external loans and from various reserve funds constitute the single largest component of non-plan revenue expenditure. Defence expenditure, is committed expenditure in the sense that given the national security concerns, there exists little scope for drastic reduction. Subsidies are an important pol"
+    }
+  ]
+}

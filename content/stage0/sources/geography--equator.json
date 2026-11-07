@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.097361+00:00",
+      "sha256": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731",
+      "file": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing equator",
+      "excerpt": "ian of that place as an angle from the centre of the earth. Lines joining places with the same latitudes are called parallels. The value of equator is 0° and the latitude of the poles are 90°N and 90°S (Fig. 3.1 on the next page). If parallels of latitude are drawn at an interval of one degree, there will be 89 parallels in the northern and the southern hemispheres each. The total number of parallels thus drawn, including the equator, will be 179. Depending upon the location of a feature or a place north or south of the e"
+    },
+    {
+      "title": "NCERT Practical Work in Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy304.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.255712+00:00",
+      "sha256": "6c309c1412da8021614058365ac892eee508e72dbe1acc58d2e2b4758f076096",
+      "file": "6c309c1412da8021614058365ac892eee508e72dbe1acc58d2e2b4758f076096.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing equator",
+      "excerpt": "t they are longer than the corresponding meridian on the globe. 4. Spacing between parallels increases towards the pole. 5. Scale along the equator is correct as it is equal to the length of the equator on the globe; but other parallels are longer than the corresponding parallel on the globe; hence the scale is not correct along them. For example, the 30º parallel is 1.154 times longer than the corresponding parallel on the globe. 6. Shape of the area is maintained, but at the higher latitudes distortion takes place. 7. T"
+    }
+  ]
+}

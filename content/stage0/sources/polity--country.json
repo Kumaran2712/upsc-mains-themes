@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keps203.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.257803+00:00",
+      "sha256": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd",
+      "file": "26e480e5763e30bb17af5e4c0f1080d931eec5d7bff09e0e5a111b15aa9af2fd.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing country",
+      "excerpt": " 12 Akali Dal 1.0 7 AGP 1.0 7 This happened because in our country we follow a special method of elections. Under this system: ± The entire country is divided into 543 constituencies; 56 ± Each constituency elects one representative; and ± The candidate who secures the highest number of votes in that constituency is declared elected. It is important to note that in this system whoever has Reprint 2026-27"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 130, passage containing country",
+      "excerpt": " of privacy in other jurisdictions from a comparative law perspective. The Court is conscious of the limits of a comparative approach. Each country is governed by its own constitutional and legal structure. Constitutional structures have an abiding connection with the history, culture, political doctrine and values which a society considers as its founding principles. Foreign judgments must hence be read with circumspection ensuring that the text is not read isolated from its context. The countries which have been dealt w"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing direct taxes",
+      "excerpt": ". They are divided into tax and non-tax revenues. Tax revenues, an important component of revenue receipts, have for long been divided into direct taxes (personal income tax) and firms (corporation tax), and indirect taxes like excise taxes (duties levied on goods produced within the country), customs duties (taxes imposed on goods imported into and exported out of India) and service tax1. Other direct taxes like wealth tax, gift tax and estate duty (now abolished) have never brought in large amount of revenue and thus have be"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.501718+00:00",
+      "sha256": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db",
+      "file": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing Direct taxes",
+      "excerpt": "licy. This led to an increase in the inflow of There are two types of taxes: direct and foreign exchange. It also set the tone to indirect. Direct taxes consist of taxes free the determination of rupee value on incomes of individuals, as well as, in the foreign exchange market from profits of business enterprises. Since government control. Now, more often 1991, there has been a continuous than not, markets determine exchange reduction in the taxes on individual rates based on the demand and supply incomes as it was felt that h"
+    }
+  ]
+}

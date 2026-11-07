@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing right to life",
+      "excerpt": "ic interest.’ The residents of the slum localities have responded by saying that this will encroach on their right to life. They argue that right to life is more central to ‘public interest’ than the right to a clean city. Imagine that you are the judge. Write a judgement deciding if the PIL involves ‘public interest’. JUDICIARY AND RIGHTS We have already seen that the judiciary is entrusted with the task of protecting rights of individuals. The Constitution provides two ways in which the Supreme Court can remedy the violation "
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 84, passage containing Right to life",
+      "excerpt": "21, the Court noted: “Article 21 is the heart and soul of the Indian Constitution, which speaks of the rights to life and personal liberty. Right to life is one of the basic fundamental rights and not even the State has the authority to violate or take away that right. Article 21 takes all those aspects of life which go to make a person's life meaningful. Article 21 protects the dignity of human life, one's personal autonomy, one's right to privacy, etc. Right to dignity has been recognised to be an essential part of the right "
+    }
+  ]
+}

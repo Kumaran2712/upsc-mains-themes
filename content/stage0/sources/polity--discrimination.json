@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing discrimination",
+      "excerpt": "Indian Constitution at Work These are examples of clear discrimination. In one instance the discrimination is based on caste and in another it is based on gender. Do you think that such discrimination is justified? Right to equality tries to do away with such and other discriminations. It provides for equal access to public places like shops, hotels, places of entertainment, wells, bathing ghats and places of worship. There cannot be any discrimination in this access on the grounds"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps108.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.202734+00:00",
+      "sha256": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f",
+      "file": "49e4cb9649b1bf799600a28cb2b9a0a9e80065d611e79b513785d476e8b8a33f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing discrimination",
+      "excerpt": "d to the ideal of secularism should relate to religion and religious communities. 8.2 SECULAR STATE Perhaps one way of preventing religious discrimination is to work together for mutual enlightenment. Education is one way of helping to change the mindset of people. Individual examples of sharing and mutual help can also contribute towards reducing prejudice and suspicion between communities. It is always inspiring to read stories of Hindus saving Muslims or Muslims saving Hindus in the midst of a deadly communal riot. But it is "
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Bank",
+      "excerpt": "actions started by using bank-to-bank Statistical Office (NSO). The information and transfer through the internet or mobile data on Grameen Bank is taken from phones, cheques, ATM cards, credit cards, newspaper reports and websites. In order Point of Sale (POS) swipe machines, and to get the details of bank-related statistics QR codes through UPI system at shops. This or a particular detail of a bank, you can log is promoted to reduce the requirement of cash on to the websites of the Reserve Bank of for transactions an"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.389618+00:00",
+      "sha256": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775",
+      "file": "f207f3e1e72e14f04d76b1352b9cc4010fa9e020525de071c2feb1e598012775.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing Bank",
+      "excerpt": "eated by a system comprising two types of institutions: central bank of the economy and the commercial banking system. Central bank Central Bank is a very important institution in a modern economy. Almost every country has one central bank. India got its central bank in 1935. Its name is the ‘Reserve Bank of India’. Central bank has several important functions. It issues the currency of the country. It controls money supply of the country through various methods, like bank rate, open market operations and variations in"
+    }
+  ]
+}

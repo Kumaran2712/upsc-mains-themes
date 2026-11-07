@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "UK Department for Business: Protectionism",
+      "url": "https://assets.publishing.service.gov.uk/media/5a74f08540f0b65c0e845b84/11-718-protectionism.pdf",
+      "retrievedAt": "2026-11-07T08:21:56.366038+00:00",
+      "sha256": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9",
+      "file": "49749096c5c85da74aed1773134e69954078340a6ebe9f1fec4835fe17dfaea9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing World Bank",
+      "excerpt": "uantifying the Trade and Economic Effects of Non-Tariff Measures Pack and Saggi (2006) ‘The case for industrial policy: a critical survey’, World Bank Research paper Rodrik (1994) ‘Political economy of trade’ Tokarick, S (2006) ‘Does Import Protection Discourage Exports?’ IMF WTO, OECD, & UNCTAD (2010) ‘Reports on G20 Trade and Investment Measures’, May 2010 – October 2010 World Bank (1993) ‘The East Asian Miracle, Economic growth and public policy’ 20"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "retrievedAt": "2026-11-07T08:21:57.304231+00:00",
+      "sha256": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb",
+      "file": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing World Bank",
+      "excerpt": "ely, what is the income of the fourth family? (i) Rs 7500 (ii) Rs 3000 (iii) Rs 2000 (iv) Rs 6000 4. What is the main criterion used by the World Bank in classifying different countries? What are the limitations of this criterion, if any? 5. In what respects is the criterion used by the UNDP for measuring development different from the one used by the World Bank? 6. Why do we use averages? Are there any limitations to their use? Illustrate with your own examples related to development. 7. Kerala, with lower per capita income"
+    }
+  ]
+}

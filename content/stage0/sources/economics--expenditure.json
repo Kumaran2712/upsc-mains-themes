@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing expenditure",
+      "excerpt": "omy by expenditure method will be calculated in the following way. In this method we add the final expenditures that each firm makes. Final expenditure is that part of expenditure which is undertaken not for intermediate purposes. The Rs 50 worth of wheat which the bakers buy from the farmers counts as intermediate goods, hence it does not fall under the category of final expenditure. Therefore the aggregate value of output of the economy is Rs 200 (final expenditure received by the baker) + Rs 50 (final expenditure received "
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Expenditure",
+      "excerpt": "e receipts can be debt creating or non-debt creating. 5.1.3. Classification of Expenditure Revenue Expenditure 69 Government Budget Revenue Expenditure is expenditure incurred for purposes other than the creation of physical or financial assets of the central government. It relates to those expenses incurred for the normal functioning of the government departments and various services, interest payments on and the Economy debt incurred by the government, and grants given to state governments and other parties (even though som"
+    }
+  ]
+}

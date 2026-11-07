@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing currency",
+      "excerpt": "and coins. currency for their day-to-day needs. Unlike the things that were used as For instance, workers who receive money earlier, modern currency is not their salaries at the end of each month made of precious metal such as gold, have extra cash at the beginning of Tughlaq silver and copper. And unlike grain the month. What do people do with coin and cattle, they are neither of this extra cash? They deposit it with everyday use. The modern currency the banks by opening a bank Gold is without any use of its own. account "
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing currency",
+      "excerpt": " her in Indian rupees. That is, she will need to know the price of dollar in terms of rupees. The price of one currency in terms of another currency is known as the foreign exchange rate or simply the exchange rate. We will discuss this in detail in section 6.2. 6.1 THE BALANCE OF PAYMENTS 86 The balance of payments (BoP) record the transactions in goods, services and assets Introductory Macroeconomics between residents of a country with the rest of the world for a specified time period typically a year. There are two main"
+    }
+  ]
+}

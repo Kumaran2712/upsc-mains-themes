@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.830187+00:00",
+      "sha256": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392",
+      "file": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing rainfall",
+      "excerpt": "ea of the mountains along the western coasts in situated on the leeward side, which gets less the cool temperate zone and the coastal areas rainfall is known as the rain-shadow area. It of the monsoon land receive heavy rainfall of is also known as the relief rain. over 200 cm per annum. Interior continental areas receive moderate rainfall varying from Cyclonic Rain 100 - 200 cm per annum. The coastal areas of the continents receive moderate amount of You have already read about extra tropical rainfall. The central parts o"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 11",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy211.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.172358+00:00",
+      "sha256": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061",
+      "file": "c238874ec16705e7a8927788dcf2b7c6745b80b9d4f5fe8d93789b716743e061.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing rainfall",
+      "excerpt": " dry. The detailed climatic account of this Annual range of temperature is very low and climatic type is given in the book on India: annual rainfall is high. The tropical group is Physical Environment. divided into three types, namely (i) Af- Tropical wet climate; (ii) Am - Tropical monsoon climate; Tropical Wet and Dry Climate (Aw) (iii) Aw- Tropical wet and dry climate. Tropical wet and dry climate occurs north and south of Af type climate regions. It borders with Tropical Wet Climate (Af) dry climate on the western part"
+    }
+  ]
+}

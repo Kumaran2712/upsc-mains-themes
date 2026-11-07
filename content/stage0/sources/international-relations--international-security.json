@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "retrievedAt": "2026-11-07T08:27:22.627Z",
+      "sha256": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397",
+      "file": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397.txt",
+      "retrievalMethod": "web-tool-text-extract",
+      "locator": "Passage containing international peace and security",
+      "excerpt": "Click the Fact Sheet above for more information: The Security Council can take action to maintain or restore international peace and security under Chapter VII of the United Nations Charter. Sanctions measures, under Article 41, encompass a broad range of enforcement options that do not involve the use of armed force. Since 1966, the Security Council has established 31 sanctions regimes, in Southern Rhodesia, South Africa, the Former Yugoslavia (2), Haiti (2), Angola, Liberia (3), Eritrea/Ethiopia, Rwanda, Sierra Le"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.312181+00:00",
+      "sha256": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca",
+      "file": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing international peace and security",
+      "excerpt": "is a vital own interests. The developing countries often WTO precondition for the maintenance complain of non-transparent procedures and of international peace and security. being pushed around by big powers. One of India’s major concerns has been the composition of the Security Council, which has India supports an increase in remained largely static while the the number of both permanent UN General Assembly member- and non-permanent members. ship has expanded considerably. Its representatives have argued India considers that this has that the ac"
+    }
+  ]
+}

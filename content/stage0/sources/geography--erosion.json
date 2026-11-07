@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy205.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.195898+00:00",
+      "sha256": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65",
+      "file": "0ead44849ea116efa53127e1336a0ae763aaaa40197e7035b92c995260191e65.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing erosion",
+      "excerpt": "is not a pre-condition for erosion to rockslide which affects materials up to a take place. Weathering, mass-wasting and substantial depth. erosion are degradational processes. It is erosion that is largely responsible for Between mass wasting and mass continuous changes that the earth’s surface movements, which term do you feel is is undergoing. As indicated in Figure 6.1, most appropriate? Why? Can solifluction denudational processes like erosion and be included under rapid flow movements? transportation are controlled "
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing erosion",
+      "excerpt": "lat or the clayey soils and makes deep channels as sloping land known as wind erosion. Soil gullies. The land becomes unfit for cultivation erosion is also caused due to defective methods and is known as bad land. In the Chambal of farming. Ploughing in a wrong way i.e. up basin such lands are called ravines. and down the slope form channels for the Sometimes water flows as a sheet over large quick flow of water leading to soil erosion. areas down a slope. In such cases the top Ploughing along the contour lines can decele"
+    }
+  ]
+}

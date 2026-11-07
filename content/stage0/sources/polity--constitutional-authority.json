@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 279, passage containing Constitutional authority",
+      "excerpt": "ness Kesavananda Bharati Sripadagalvaru v. State of Kerala & Another, (1973) 4 SCC 225 18 Citizens and non-citizens who are amenable to the Constitutional authority of the State 13"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 24, passage containing Constitutional Authority",
+      "excerpt": "mittee or withdraw from it leaving it to the appointing authority to nominate another person in his place, need not be applied in case of a Constitutional Authority like the Public Service Commission, whether Central or State. If a member of a Public Service Commission was to withdraw altogether from the selection process on the ground that a close relative of his is appearing for selection, no other person save a member can be substituted in his place. And it may sometimes happen that no other member is available to take the place of suc"
+    }
+  ]
+}

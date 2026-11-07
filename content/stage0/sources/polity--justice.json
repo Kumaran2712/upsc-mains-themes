@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.293523+00:00",
+      "sha256": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab",
+      "file": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing justice",
+      "excerpt": " shades of meaning, we also have an intuitive understanding of justice even though we may not be able to define it precisely. In that sense justice is a lot like love. In addition, both love and justice evoke passionate responses from their advocates. And as with love, no one hates justice, everyone wants justice for oneself and to some extent for others also. But unlike love, which is an aspect of our relationships with a few people whom we know well, justice concerns our life in society, the way in which public life is "
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 261, passage containing Justice",
+      "excerpt": "by order fix.] 223. Appointment of acting Chief Justice.— When the office of Chief Justice of a High Court is vacant or when any such Chief Justice is, by reason of absence or otherwise, unable to perform the duties of his office, the duties of the office shall be performed by such one of the other Judges of the Court as the President may appoint for the purpose. 1 Subs. by the Constitution (Ninety-ninth Amendment) Act, 2014, s. 7, for \"after consultation with the Chief Justice of India\" (w.e.f. 13-4-2015). This amendment"
+    }
+  ]
+}

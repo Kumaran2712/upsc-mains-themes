@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing resources",
+      "excerpt": "to accelerate their Everything available in our environment economic development. which can be used to satisfy our needs, Do you think that resources are free provided, it is technologically accessible, gifts of nature as is assumed by many? economically feasible and culturally They are not. Resources are a function of acceptable can be termed as ‘Resource’. human activities. Human beings themselves are essential components of resources. They transform material available in our environment into resources and use them. These"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "retrievedAt": "2026-11-07T08:21:57.304231+00:00",
+      "sha256": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb",
+      "file": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing resources",
+      "excerpt": "Groundwater is an example of Non-renewable resources are those renewable resources. These resources which will get exhausted after a few are replenished by nature as in the years of use. We have a fixed stock on case of crops and plants. However, earth which cannot be replenished. We even these resources may be do discover new resources that we did overused. For example, in the case of not know of earlier. New sources in groundw"
+    }
+  ]
+}

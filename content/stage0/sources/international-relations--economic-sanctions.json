@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "retrievedAt": "2026-11-07T08:27:22.627Z",
+      "sha256": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397",
+      "file": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397.txt",
+      "retrievalMethod": "web-tool-text-extract",
+      "locator": "Passage containing economic and trade sanctions",
+      "excerpt": "ity Council sanctions have taken a number of different forms, in pursuit of a variety of goals. The measures have ranged from comprehensive economic and trade sanctions to more targeted measures such as arms embargoes, travel bans, and financial or commodity restrictions. The Security Council has applied sanctions to support peaceful transitions, deter non-constitutional changes of government, constrain terrorism, protect human rights and promote non-proliferation. Sanctions do not operate, succeed or fail in a vacuum. The measures are most e"
+    }
+  ]
+}

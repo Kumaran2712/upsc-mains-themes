@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/jess106.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.181748+00:00",
+      "sha256": "2d1327ec56d40c0abbdbb325d724598b291fb6ec7757b6948471a313cfe16690",
+      "file": "2d1327ec56d40c0abbdbb325d724598b291fb6ec7757b6948471a313cfe16690.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing secondary sector",
+      "excerpt": " with raw materials and sell their products such as manufacturing industries which fall in the irrigation pumps, fertilisers, insecticides, secondary sector. pesticides, plastic and PVC pipes, machines The economic strength of a country is and tools, etc. to the farmers. Thus, measured by the development of development and competitiveness of manufacturing industries. 58 CONTEMPORARY INDIA – II Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/jess202.pdf",
+      "retrievedAt": "2026-11-07T08:21:58.261138+00:00",
+      "sha256": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e",
+      "file": "5a7b42bce741aaf295ad1490e05c5f0501d8526df13abfcc4003a345442a3f7e.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing secondary sector",
+      "excerpt": "alled the forestry, this sector is also Sector called agriculture and related service sector. sector. Service sector also includes some The secondary sector covers essential services that may not directly activities in which natural products help in the production of goods. For are changed into other forms through example, we require teachers, doctors, ways of manufacturing that we and those who provide personal associate with industrial activity. It is services such as washermen, barbers, the next step after primary. The cobblers"
+    }
+  ]
+}

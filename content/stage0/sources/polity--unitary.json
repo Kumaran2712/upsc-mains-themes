@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps207.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.240732+00:00",
+      "sha256": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010",
+      "file": "af6c70ca4d87d32c772c7e5d2534253ecc3bbd7760ee7859d74dc7d926722010.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing unitary",
+      "excerpt": "stitutions has been towards the centre... because of circumstances that have now come into being that the States have become, ...federal or unitary, welfare states from being Police States and the ultimate responsibility as for the economic well-being of the country has become the paramount responsibility of the centre.” T.T. Krishnamachari, CAD, Vol. XI, p. 955-956, 25 November 1949 Besides the concern for unity, the makers of the Constitution also believed that the socio-economic problems of the country needed to be han"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 8",
+      "url": "https://ncert.nic.in/textbook/pdf/keps208.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.539499+00:00",
+      "sha256": "4bf418d295440cd03b81f3d247b028a9673e8392a58823666287ec864cce032c",
+      "file": "4bf418d295440cd03b81f3d247b028a9673e8392a58823666287ec864cce032c.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing unitary",
+      "excerpt": "titution. Do you know why this happened? A few reasons can be advanced here. Firstly, the turmoil due to the Partition resulted in a strong unitary inclination in the Constitution. Nehru himself looked upon extreme localism as a threat to unity and integration of the nation. Secondly, there was a powerful voice in the Constituent Assembly led by Dr. B.R. Ambedkar which felt that the faction and caste-ridden nature of rural society would defeat the noble purpose of local government at the rural level. 180 However, nobody d"
+    }
+  ]
+}

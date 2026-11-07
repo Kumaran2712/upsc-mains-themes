@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing government expenditure",
+      "excerpt": "= 0.8 × 0.75) for every unit increase in income instead of the earlier 0.80. Thus, consumption will increase by less than before. The 1 1 1 government expenditure multiplier will be 1 – c (1 – t ) = = = 2.5 1 – 0.6 0.4 which is smaller than that obtained with lump-sum taxes. If government expenditure rises by 100, output will rise by the multiplier times the rise in government expenditure, that is, by 2.5 × 100 = 250. This is smaller than the increase in output with lump-sum taxes. 77 Government Budget The proportional income tax, thus,"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/keec103.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.501718+00:00",
+      "sha256": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db",
+      "file": "eb7ee7d5716ee313941b8d9f6135ce1abec9b18c71ff198ceb087a69dabe21db.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing government expenditure",
+      "excerpt": "roject. Recently, groundnut crop in Anantpur is facing problems due to crop disease. Research and extension work has gone down due to lower government expenditure. Mahadeva and his friends brought this matter repeatedly to the notice of the government officials entrusted with this responsibility, but failed. Subsidy was reduced on material (seeds, fertilisers) which increased Mahadeva’s cost of cultivation. Moreover, the local markets were flooded with cheap imported edible oils, which was a result of removal of restriction on imports. "
+    }
+  ]
+}

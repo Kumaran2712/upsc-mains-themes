@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing humidity",
+      "excerpt": ". The homogenous regions can be the vast ocean surface or vast plains. The air with distinctive characteristics in terms of temperature and humidity is called an airmass. It is defined as a large body of air having little horizontal variation in temperature and moisture. The homogenous surfaces, over which air masses form, are called the source regions. The air masses are classified according to the source regions. There are five major source regions. These are: (i) Warm tropical and subtropical oceans; (ii) The subtropica"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 10",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy210.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.830187+00:00",
+      "sha256": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392",
+      "file": "8625f45ea38cc50d2b4403da8ef79304434bc5e637ce1b9784d9bab464f3c392.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing humidity",
+      "excerpt": "ticles of dust, smoke the capacity to retain moisture increases or and salt from the ocean are particularly good decreases and the relative humidity is also nuclei because they absorb water. affected. It is greater over the oceans and least over the continents. Condensation also takes place when the moist The air containing moisture to its full air comes in contact with some colder object and capacity at a given temperature is said to be it may also take place when the temperature is saturated. It means that the air at the"
+    }
+  ]
+}

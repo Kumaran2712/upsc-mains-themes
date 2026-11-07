@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.010854+00:00",
+      "sha256": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f",
+      "file": "bf6deb850df41db05fb86b4045e66f37ec64fffe47ccd9dfde721c24dbd5999f.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing imports",
+      "excerpt": "l be fixed. From the point of view of our country, foreign income, and therefore exports, are considered exogenous (X = X ). The demand for imports is thus assumed to depend on income and have an autonomous component M = M + mY, where M > 0 is the autonomous component, 0 < m < 1. (6.5) Here m is the marginal propensity to import, the fraction of an extra rupee of income spent on imports, a concept analogous to the marginal propensity to consume. The equilibrium income would be Y = C + c(Y – T ) + I + G + X – M – mY (6.6) "
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing imports",
+      "excerpt": "rmance of producers within the Indian toy-makers will prosper. country since they would have to improve their quality. This decision Tax on imports is an example of was supported by powerful trade barrier. It is called a barrier international organisations. because some restriction has been set up. Governments can use trade Thus, barriers on foreign trade and barriers to increase or decrease foreign investment were removed to a (regulate) foreign trade and to decide large extent. This meant that goods what kinds of goods "
+    }
+  ]
+}

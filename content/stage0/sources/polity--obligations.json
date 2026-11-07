@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.238445+00:00",
+      "sha256": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158",
+      "file": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing obligations",
+      "excerpt": "d when its people acknowledge and accept their obligations to their fellow members. We might even say that recognition of this framework of obligations is the strongest test of loyalty to the nation. Common Political Identity Many people believe that a shared political vision about the state and society we wish to create is not enough to bind individuals together as a nation. They seek instead a shared cultural identity, such as a common language, or common descent. There is no doubt that speaking the same language makes it e"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.207508+00:00",
+      "sha256": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079",
+      "file": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing obligations",
+      "excerpt": " more than the relationship between states and their members. It is also about citizen-citizen relations and involves Think of some certain obligations of citizens to each other and to examples of activities the society. These would include not just the legal of citizens in your area obligations imposed by states but also a moral intended to help obligation to participate in, and contribute to, the others, or improve the area, or protect the shared life of the community. Citizens are also envir onment. List considered to be t"
+    }
+  ]
+}

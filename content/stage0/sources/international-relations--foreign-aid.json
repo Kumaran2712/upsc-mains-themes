@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "OECD: Official Development Assistance",
+      "url": "https://www.oecd.org/en/topics/official-development-assistance-oda.html",
+      "retrievedAt": "2026-11-07T08:27:22.639Z",
+      "sha256": "767f8e121eac65b7976c007ee0bf0acf5ab1838140402ba31635944bc9b326c5",
+      "file": "767f8e121eac65b7976c007ee0bf0acf5ab1838140402ba31635944bc9b326c5.txt",
+      "retrievalMethod": "web-tool-text-extract",
+      "locator": "Passage containing foreign aid",
+      "excerpt": "source of financing for development aid since it was adopted by the OECD’s Development Assistance Committee (DAC) as the “gold standard” of foreign aid in 1969. The OECD is the only official source of reliable, comparable, and complete statistics on ODA. Policy issue * 【409†ODA methodologies and guidance】 * 【410†A historic decline in foreign aid: Preliminary 2025 ODA data】 【411†Image】 Available in: English * English * 【412†français】 * 【413†español】 #### Select a language Close [Input] English [Input] français [Input] español "
+    }
+  ]
+}

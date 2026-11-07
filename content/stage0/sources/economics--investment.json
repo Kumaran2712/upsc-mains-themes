@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing investment",
+      "excerpt": "assets such as land, building, machines and other equipment is called investment. Investment made by MNCs is called foreign investment. Any investment is made with the hope that these assets will earn profits. G LOBALISATION AND THE I NDIAN E CONOMY 57 Reprint 2026-27"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing investment",
+      "excerpt": "in the value of inventories of a firm over a year which is treated as investment expenditure undertaken by the firm. The second category of investment is the fixed business investment, which is defined as the addition to the machinery, factory buildings and equipment employed by the firms. The last category of investment is the residential investment, which refers to the addition of housing facilities. Change in inventories may be planned or unplanned. In case of an unexpected fall in sales, the firm will have unsold stock o"
+    }
+  ]
+}

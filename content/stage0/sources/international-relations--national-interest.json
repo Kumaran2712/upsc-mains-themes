@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing national interests",
+      "excerpt": "Inc. the threat. Countries form alliances to increase their effective power relative to another country or alliance. Alliances are based on national interests and can change when national interests change. For example, the US backed the Islamic militants in Afghanistan against the Soviet Union in the 1980s, but later attacked them when Al Qaeda—a group of How do the big powers react when new countries claim nuclear Islamic militants led by Osama status? On what basis can we say that some countries can be bin Laden—launched terrorist"
+    },
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing national interest",
+      "excerpt": " keeping and its claim for a permanent seat in the Security Council. 26.1 Basic Objectives and Principles of Foreign Policy Preservation of national interest, achievement of world peace, disarmament, independence for Afro-Asian nations have been important objectives of India’s foreign policy. These objectives are sought to be achieved through some principles viz. Panchsheel; non- alignment; anti-colonialism, anti-imperialism, anti-racism, and strengthening the UN. It would be befitting to expand these principles. 26.1.1 Panchsheel "
+    }
+  ]
+}

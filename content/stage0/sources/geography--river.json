@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy305.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.212264+00:00",
+      "sha256": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358",
+      "file": "11fec351bd2abf83c86ac3dbe64bf8b354a536e8fa47276a00c79a5f24224358.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing river",
+      "excerpt": "Work in Geography Gorge Spur In high altitudes, gorges form in the A tongue of land, projecting from 58 areas where the vertical erosion by river is more prominent than the higher ground into the lower is called a spur. It is also represented by V- lateral erosion. They are deep and shaped contours but in the reverse narrow river valleys with very steep manner. The arms of the V point to sides. A gorge is represented by very the higher ground and the apex of ‘V’ closely-spaced contour lines on a map to the lower ones. w"
+    },
+    {
+      "title": "NCERT India: People and Economy, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/legy204.pdf",
+      "retrievedAt": "2026-11-07T08:22:01.276900+00:00",
+      "sha256": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b",
+      "file": "675653222f981ccc18602d6ef047ff7eade292a46a45108c25fd893d136ccc3b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing river",
+      "excerpt": "w that organic and bacterial contamination continues Prevention of Water Pollution to be the main source of pollution in rivers. The Yamuna river is the most polluted river in the Available water resources are degrading country between Delhi and Etawah. Other rapidly. The major rivers of the country severely polluted rivers are: the Sabarmati at generally retain better water quality in less Ahmedabad, the Gomti at Lucknow, the Kali, densely populated upper stretches in hilly the Adyar, the Cooum (entire stretches), the "
+    }
+  ]
+}

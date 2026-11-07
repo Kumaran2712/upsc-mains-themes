@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 17, passage containing globalisation",
+      "excerpt": "me other hand, there are many people strong enough to compete. If who have not shared the benefits. necessary, the government can use Since globalisation is now a trade and investment barriers. It can reality, the question is how to negotiate at the WTO for ‘fairer rules’. make globalisation more ‘fair’? It can also align with other developing Fair globalisation would create countries with similar interests to opportunities for all, and also ensure fight against the domination of that the benefits of globalisation are developed"
+    },
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Globalisation",
+      "excerpt": "t Britain (c) India (d) China Q. 2. Which of the following statements is false? (a) Cold war is over (b) Soviet Union has disintegrated (c) Globalisation is a reality (d) United Nations has been dissolved. What Have You Learnt India has followed certain basic principles in the conduct of its foreign policy from which it has not deviated much. In fact some of its basic features such as non-alignment still remain significant and relevant. The proof of the durability of some decades old principles lie in the efforts of India and C"
+    }
+  ]
+}

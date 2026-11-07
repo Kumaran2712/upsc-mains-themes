@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing lake",
+      "excerpt": "(Odisha), Nagarjunakonda (Andhra obstructs, directs or retards the flow, often Pradesh), Bennur (Karnataka), Kolhapur creating a reservoir, lake or impoundment. (Maharashtra), etc. “Dam” refers to the reservoir rather than the • In the 11th Century, Bhopal Lake, one of the structure. Most dams have a section called a largest artificial lakes of its time was built. spillway or weir over which or through which it is intended that water will flow either • In the 13th–14th Century, the tank in Hauz intermittently or contin"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.340325+00:00",
+      "sha256": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a",
+      "file": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing Lake",
+      "excerpt": "ern and southern an area. hemisphere are around 19° C and 16° C Highest salinity in water bodies respectively. This variation is due to the Lake Van in Turkey (330 o/oo), unequal distribution of land and water in Dead Sea (238 o/oo), the northern and southern hemispheres. Great Salt Lake (220 o/oo) Reprint 2026-27"
+    }
+  ]
+}

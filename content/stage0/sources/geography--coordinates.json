@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy303.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.097361+00:00",
+      "sha256": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731",
+      "file": "94cf69b121ec5586ae8315a288f8dea7172bce2b8e09c3d440be8b11baea6731.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing coordinates",
+      "excerpt": "Latitude, Longitude and Time The latitudes and longitudes are commonly referred to as geographical coordinates as they provide systematic network of lines upon which the position of various surface features of the earth, can be represented. With the help of these coordinates, location, distance and direction of various points can be easily determined. Although an infinite number of parallels and meridians may be drawn on a globe, only a selected number of them are usually drawn on a ma"
+    },
+    {
+      "title": "NCERT Practical Work in Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.252554+00:00",
+      "sha256": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1",
+      "file": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing coordinates",
+      "excerpt": "hers laid the foundation of modern cartography. The measurement of the circumference of the Earth and the use of the system of geographical coordinates in map-making are some of the significant contributions of the Greeks and the Arabs. The art and science of map 2026-27"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.996897+00:00",
+      "sha256": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a",
+      "file": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing opportunity cost",
+      "excerpt": "er words, one of the central problems of the economy is to choose from one of the many production possibilities. a Note that the concept of opportunity cost is applicable to the individual as well as the society. The concept is very important and is widely used in economics. Because of its importance in economics, sometimes, opportunity cost is also called the economic cost. 1.3 ORGANISATION OF ECONOMIC ACTIVITIES Basic problems can be solved either by the free interaction of the individuals pursuing their own objectives as is don"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.772812+00:00",
+      "sha256": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa",
+      "file": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Opportunity cost",
+      "excerpt": "f minimum average cost at which the supply curve cuts the LRAC curve (in short run, SAC curve) is therefore the break-even point of a firm. Opportunity cost In economics, one often encounters the concept of opportunity cost. Opportunity cost of some activity is the gain foregone from the second best activity. Suppose you have Rs 1,000 which you decide to invest in your family business. What is the opportunity cost of your action? If you do not invest Reprint 2026-27"
+    }
+  ]
+}

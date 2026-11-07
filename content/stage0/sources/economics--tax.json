@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.671787+00:00",
+      "sha256": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1",
+      "file": "af9a0ebc7b4cb2506936818bec9763785b310656f0e08990df6f631805245bc1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing tax",
+      "excerpt": "Credit (ITC). The total value included taxes paid on intermediate goods/services. This amounted to cascading of tax. Under GST, the tax is discharged at every stage of supply and the credit of tax paid at the previous stage is available for set off at the next stage of supply of goods and/or services. It is thus effectively a tax on value addition at each stage of supply. In view of our large and fast growing economy, it addresses to establish parity in taxation across the country, and extend principles of ‘va"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leec204.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.772812+00:00",
+      "sha256": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa",
+      "file": "685abc1ac50ee680178e934b4e13eda186d004af1da5ce85735c48f5fff50caa.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 10, passage containing tax",
+      "excerpt": "s to the left: at any given market price, the firm now Microeconomics supplies fewer units of output. Impact of a unit tax on supply A unit tax is a tax that the government imposes per unit sale of output. For example, suppose that the unit tax imposed by the government is Rs 2. Then, if the firm produces and sells 10 units of the good, the total tax that the firm must pay to the government is 10 × Rs 2 = Rs 20. How does the long run supply curve of a firm change when a unit tax is imposed? Let us turn to figure 4.11."
+    }
+  ]
+}

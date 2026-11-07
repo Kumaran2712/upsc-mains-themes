@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Practical Work in Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy301.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.252554+00:00",
+      "sha256": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1",
+      "file": "931518769c57601304dd22640b5fa96a98a8a79b868ba52fa56fd93fbbdb8ab1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing map",
+      "excerpt": "tem of map projections (see Chapter 4). As it is impossible to represent all features of the earth’s surface in their true size and form, a map is drawn at a reduced scale. Imagine your school campus. If a plan/map of your school is to be drawn in its actual size, it will be as large as the campus itself. Hence, maps are drawn at a scale and projection so that each point 1 on the paper corresponds to the actual ground position. Besides, the representation of different features is also simplified using symbols, colours"
+    },
+    {
+      "title": "NCERT Practical Work in Geography, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy302.pdf",
+      "retrievedAt": "2026-11-07T08:20:29.098413+00:00",
+      "sha256": "3a80d2d80728515f05b8c6901c57b6a8d03d09dbfa66ec8a98e0e9c2042ebbc0",
+      "file": "3a80d2d80728515f05b8c6901c57b6a8d03d09dbfa66ec8a98e0e9c2042ebbc0.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing map",
+      "excerpt": "use for only those who can understand it. However, unlike the statement of the scale method, the graphical scale stands valid even when the map is reduced or enlarged. This is the unique advantage of the graphical method of the map scale. Figure 2.1 3. Representative Fraction ( R. F. ): The third type of scale is R. F. It shows the relationship between the map distance and the corresponding ground distance in units of length. The use of units to express the scale makes it the most versatile method. 19 R. F. is general"
+    }
+  ]
+}

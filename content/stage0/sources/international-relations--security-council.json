@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing Security Council",
+      "excerpt": "ty Council but the Council has suffered in this regard due to its outdated, unchanged membership. Presently the permanent membership of the Security Council is confined to US, Russia, Great Britain, France and China. However, such composition of the Security Council does not take into account the current global power configuration which has changed since the days when these countries were inducted as Notes permanent members. Since India has emerged as the fourth fastest growing economy and also because of the leadership it has pro"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.312181+00:00",
+      "sha256": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca",
+      "file": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing Security Council",
+      "excerpt": " international organisations to cope with various new challenges including the rise of US power. The potential reform of the United Nations Security Council is an interesting case of the reform process and its difficulties. We then turn to India’s involvement in the UN and its view of Security Council reforms. The chapter closes by asking if the UN can play This is the United Nations’ logo. The emblem has a world map with olive branches around it, signifying world peace. any role in dealing with a world Credit : www.un.org dominat"
+    }
+  ]
+}

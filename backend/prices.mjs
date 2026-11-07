@@ -5,6 +5,7 @@ export const prices = Object.freeze({
   'gpt-4.1-mini': { input: 0.4, output: 1.6, source: 'https://developers.openai.com/api/docs/models/gpt-4.1-mini' },
   'gpt-5.4-mini': { input: 0.75, output: 4.5, source: 'https://developers.openai.com/api/docs/models/gpt-5.4-mini' },
   'gpt-5.4': { input: 2.5, output: 15, source: 'https://developers.openai.com/api/docs/models/gpt-5.4' },
+  'gpt-5.2': { input: 1.75, output: 14, source: 'https://developers.openai.com/api/docs/models/gpt-5.2' },
 });
 export function modelPrice(model) {
   const alias = Object.keys(prices).find((key) => model === key || new RegExp('^' + key.replaceAll('.', '\\.') + '-\\d{4}-\\d{2}-\\d{2}$').test(model));

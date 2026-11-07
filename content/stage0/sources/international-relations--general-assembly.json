@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/leps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.312181+00:00",
+      "sha256": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca",
+      "file": "2a4ed86be1993b66e935d161d50b35a12c22e9ee5d4f9003929383347cd7a1ca.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing General Assembly",
+      "excerpt": "s the globe. c. Having consensus among the five permanent members on security issues is vital for its implementation. d. The members of the General Assembly are automatically the members of all other principal organs and specialised agencies of the UN. Reprint 2026-27 Chapter 4.indd 60 14 September 2022 11:03:29"
+    },
+    {
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:22:52.459341+00:00",
+      "sha256": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15",
+      "file": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing General Assembly",
+      "excerpt": "reaty\" and \"international agreement\", referred to in Article 102 of the Charter, the broadest range of instruments is covered. Although the General Assembly of the UN has never laid down a precise definition for both terms and never clarified their mutual relationship, Art.1 of the General Assembly Regulations to Give Effect to Article 102 of the Charter of the United Nations provides that the obligation to register applies to every treaty or international agreement \"whatever its form and descriptive name\". In the practice of the "
+    }
+  ]
+}

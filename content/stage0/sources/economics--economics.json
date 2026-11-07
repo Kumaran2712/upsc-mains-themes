@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing economics",
+      "excerpt": "But one has to be cautious not to simplify the matters in such a way that misrepresents the essential nature of the economy. The subject of economics is full of models, many of which will be presented in this book. One task of an economist is to figure out which model is applicable to which real life situation. If we change our simple model described above and introduce savings, will it change the principal conclusion that the aggregate estimate of the income of the economy will remain the same whether we decide to calculat"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec201.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.996897+00:00",
+      "sha256": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a",
+      "file": "67578f14b9982e078c01a1bad26f5c771b89612847b1ef5bd823f1993a4ef35a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing economics",
+      "excerpt": "economic agents can freely exchange their endowments or products with each other. It is important to note that the term ‘market’ as used in economics is quite different from the common sense understanding of a market. In particular, it has nothing as such to do with the marketplace as you might tend to think of. For buying and selling commodities, individuals may or may not meet each other in an actual physical location. Interaction between buyers and sellers can take place in a variety of situations such as a village- chow"
+    }
+  ]
+}

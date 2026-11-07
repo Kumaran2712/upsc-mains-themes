@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 464, passage containing petition",
+      "excerpt": "ct of the suspension of the right to move any court for the enforcement of the right conferred by Article 21, in my opinion, is that when a petition is filed in a court, the court would have to proceed upon the basis that no reliance can be placed upon that article for obtaining relief from the court during the period of emergency. Question then arises as to whether the rule that no one shall be deprived of his life or personal liberty without the authority of law still survives during the period of emergency despite the P"
+    },
+    {
+      "title": "Supreme Court of India: Constitution and legal system",
+      "url": "https://www.sci.gov.in/constitution/",
+      "retrievedAt": "2026-11-07T08:21:54.443376+00:00",
+      "sha256": "66eb3e6cd04449875d38c9803deb69b1b91981fb317a158f4526d694e6aa6fd9",
+      "file": "66eb3e6cd04449875d38c9803deb69b1b91981fb317a158f4526d694e6aa6fd9.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing petition",
+      "excerpt": "ter on behalf of a party in the Supreme Court but they are not entitled to file any document or matter before the Court. AMICUS CURIAE If a petition is received from the jail or in any other criminal matter where the accused is unrepresented, then an Advocate is appointed as amicus curiae by the Court to defend and argue the case of the accused. In civil matters, the Court can appoint an Advocate as amicus curiae if it thinks it necessary in case of an unrepresented party. Courts can also appoint amicus curiae in any matte"
+    }
+  ]
+}

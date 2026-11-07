@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "IMF: Portfolio investment assets and their distinction from direct investment",
+      "url": "https://www.imf.org/en/Blogs/Articles/2023/03/20/global-portfolio-asset-holdings-decrease-amid-elevated-uncertainty",
+      "retrievedAt": "2026-11-07T08:22:53.001320+00:00",
+      "sha256": "997182583b3a4d2dd9eca2c12f0ed222399ac22fddbe59d6b073f1d1b45b65a2",
+      "file": "997182583b3a4d2dd9eca2c12f0ed222399ac22fddbe59d6b073f1d1b45b65a2.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing portfolio investment",
+      "excerpt": " United States and United Kingdom), Japan (mainly in the United States). By contrast, the Cayman Islands recorded a 6.2 percent increase in portfolio investment holdings driven by investments in the United States and Japan. About the Coordinated Portfolio Investment Survey (CPIS) The IMF’s CPIS collects data on portfolio investment assets from more than 80 countries. It is the only global bi-annual survey of cross-border portfolio holdings by counterpart economy and by sector of holders and nonresident issuers. The CPIS shows: which c"
+    },
+    {
+      "title": "NCERT Understanding Economic Development, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess204.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.591270+00:00",
+      "sha256": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3",
+      "file": "712719d3e0cda43fec57308de1a753b49d3eea7ce82a0be40dd031ec8222c5a3.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing portfolio investment",
+      "excerpt": "what India was like in the corporations (MNCs). As you will notice, the more pre-liberalisation era. A role-play could be complex issues of portfolio investment have been conceived to compare and contrast the pre and left out. post-liberalisation era. Similarly, international negotiations under WTO and the uneven If we look at the past thirty years or so, we balances in power are interesting subjects that find that MNCs have been a major force in the can be covered in a discussion mode rather than globalisation process connecting dist"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 27, passage containing civil rights",
+      "excerpt": "aking of a “struggle between liberty and authority” 29, Mill posited that the tyranny of the majority could be reined by the recognition of civil rights such as the individual right to privacy, free speech, assembly and expression. 27 Ibid, at page 262 28 John Stuart Mill, On Liberty, Batoche Books (1859), at page 13 29 Ibid, at page 6 27"
+    },
+    {
+      "title": "Fakir Mohan University: Political Processes in India, self-learning material",
+      "url": "https://fmuniversity.nic.in/getdata?dir=deptnotice&rid=notice1859_261020241729940169340.pdf",
+      "retrievedAt": "2026-11-07T08:24:30.470953+00:00",
+      "sha256": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31",
+      "file": "a11a21c5e92a810de23f788522f0427c738a890065657155e47305b38db55e31.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 20, passage containing civil rights",
+      "excerpt": " movements, identity politics, naxalite rebellions, cultural movements, women movements, environmental movements, political movements, and, civil rights movements, etc. In this context, it is pertinent to initiate a semantic debate on the use of the terms social and political movements. Are political and social movements the same thing? Some regard these two as similar. All social movements are having political implications. But some make a distinction between the two. Social movements never fight for state or political power,"
+    }
+  ]
+}

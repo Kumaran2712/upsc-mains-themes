@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/keec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:25.207907+00:00",
+      "sha256": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf",
+      "file": "78f35b6d00ec2a8a468892247feed00bf58d9b326aa0f6460149cbdc112f1cbf.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 15, passage containing standard of living",
+      "excerpt": "ompare it with the consumption pattern of such goods and services by the people today. Highlight the perceptible difference in the people’s standard of living. 2. Find pictures of towns/villages, in your vicinity, of the pre- independence period and compare these with their present scenario. What changes can you mark? Are such changes for better or for worse? Discuss. 3. Rally around your teacher and organise a group discussion on ‘Has the zamindari system really been abolished in India’? If the consensus is negative, then what meas"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keec106.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.157929+00:00",
+      "sha256": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26",
+      "file": "367b6b3c1f40081846f7ff5a9e6ba6d3c72b7438b405258f9aa7b1bfef4eeb26.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 12, passage containing standard of living",
+      "excerpt": "would bring surplus workers sector establishments which employ from agriculture to industry with better 10 hired workers or more are called standard of living as in developed formal sector establishments and those countries. We have seen in the preceding who work in such establishments are section, that even after 70 years of formal sector workers. All other planned development, more than half enterprises and workers working in those of the Indian workforce depends on enterprises form the informal sector. farming as the major source"
+    }
+  ]
+}

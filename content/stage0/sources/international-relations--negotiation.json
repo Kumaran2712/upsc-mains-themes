@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing negotiation",
+      "excerpt": "ts and counter arguments. The result could be: an amicable agreement accommodating the demands of all, which seldom happens; or, the entire negotiation/discussion ends without achieving the purpose. Ideas for the Teacher  Link the villages to nations and connect to the problems of security (threat to geographical territory/ access to natural resources/insurgency, and so on).  Talk about the observations made during the negotiation and explain how similarly the nations behave while negotiating on related issues.  The activi"
+    },
+    {
+      "title": "NCERT Political Theory, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/keps104.pdf",
+      "retrievedAt": "2026-11-07T08:20:19.293523+00:00",
+      "sha256": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab",
+      "file": "b52e9582d69261b7c6bee91b4b8b7f56052891e9a32455a75f516ab8470600ab.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 13, passage containing negotiation",
+      "excerpt": "table and even healthy because they force us to examine different points of view and rationally defend our own views. Politics is about the negotiation of such disagreements through debate. In our own country many kinds of social and economic inequalities exist and much remains to be done if they are to be reduced. Studying the different principles of justice should help us to discuss the issues involved and come to an agreement regarding the best way of pursuing justice. Justice implies something which it is not only right t"
+    }
+  ]
+}

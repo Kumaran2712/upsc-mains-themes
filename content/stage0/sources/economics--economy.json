@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leec101.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.757611+00:00",
+      "sha256": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729",
+      "file": "430bf684061718a8e1df13b38ddd2dec511617bf27c58d46a2b1f304bd19c729.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 1, passage containing economy",
+      "excerpt": "ntry as a whole, or of some sectors of the economy, getting better or is it worsening? What would be reasonable indicators to show that the economy is better or worse? What steps, if any, can the State take, or the people ask for, in order to improve the state of the economy? These are the kind of questions that make us think about the health of the country’s economy as a whole. These questions are dealt within macroeconomics at different levels of complexity. In this book you will be introduced to some of the basic princ"
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing economy",
+      "excerpt": "tion of an economy is admittedly a simplified one. Such a story which describes the functioning of an imaginary Introductory Macroeconomics economy is called a macroeconomic model. It is clear that a model does not describe an actual economy in detail. For example, our model assumes that households do not save, there is no government, no trade with other countries. However models do not want to capture an economy in its every minute detail – their purpose is to highlight some essential features of the functioning of an ec"
+    }
+  ]
+}

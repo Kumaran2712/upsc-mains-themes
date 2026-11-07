@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 14, passage containing regional organisations",
+      "excerpt": "nomic Cooperation in 1948. e. ___________ is the organisation of ASEAN that deals with security. 5. What are the objectives of establishing regional organisations? 6. How does geographical proximity influence the formation of regional organisations? 7. What are the components of the ASEAN Vision 2020? 8. Name the pillars and the objectives of the ASEAN Community. 9. In what ways does the present Chinese economy differs from its command economy? 10. How did the European countries resolve their post-Second World War problem? Briefly outli"
+    }
+  ]
+}

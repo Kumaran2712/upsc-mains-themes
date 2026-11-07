@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 21, passage containing right to property",
+      "excerpt": "de it clear that property could be taken away by the government for public welfare. Since 1950, government made many laws that limited this right to property. This right was at the centre of the long debate over the relationship between rights and directive principles. Finally, in 1973, the Supreme Court gave a decision that the right to property was not part of the basic structure of the Constitution and therefore, parliament had power to abridge this right by an amendment. In 1978, the 44th amendment to the Constitution removed t"
+    },
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/keps206.pdf",
+      "retrievedAt": "2026-11-07T08:20:22.220890+00:00",
+      "sha256": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5",
+      "file": "91ae3facebed358c28ddcf4284795b02580fddd8625412a5fb6ca92de6f7baf5.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing right to property",
+      "excerpt": " a recurrent theme in Indian politics. We have already mentioned the differences that emerged between the Parliament and the judiciary over right to property and the Parliament’s power to amend the Constitution. Let us recapitulate that briefly: Immediately after the implementation of the Constitution began, a controversy arose over the Parliament’s power to restrict right to property. The Parliament wanted to put some restrictions on the right to hold property so that land reforms could be implemented. The Court held that the Parl"
+    }
+  ]
+}

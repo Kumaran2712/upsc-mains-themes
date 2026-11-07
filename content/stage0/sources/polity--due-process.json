@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 377, passage containing due process",
+      "excerpt": "al liberty except according to fair, just and reasonable procedure established by valid law.” The wheel has turned full circle. Substantive due process is now to be applied to the fundamental right to life and liberty.”5 5 Shri Rakesh Dwivedi has argued before us that in Maneka Gandhi (supra), Chandrachud, J. had, in paragraph 55 of the judgment, clearly stated that substantive due process is no part of the Constitution of India. He further argued that Krishna Iyer, J.’s statement in Sunil Batra (supra) that a due process cla"
+    },
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 93, passage containing due process",
+      "excerpt": "nt cases, they may request CVC to appoint their CDI as IO. The CVC may also maintain a panel of IOs/POs from amongst retired officers after due process of screening and empanelment. These officers could also be engaged on advice of the CVC. The remuneration etc. for these IOs and POs may be fixed, keeping in mind the recommendations of the Hota Committee.” Formal instructions in this matter are yet to be issued at the time of publication of this handbook] 7. When are the IO and PO appointed? IO and PO are to be appointed if t"
+    }
+  ]
+}

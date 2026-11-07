@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Indian Constitution at Work, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/keps202.pdf",
+      "retrievedAt": "2026-11-07T08:20:21.269766+00:00",
+      "sha256": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845",
+      "file": "7c5d93b33844592557ce14c758c12396dfffb6f298edbce54dc34780de4c4845.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 16, passage containing writ",
+      "excerpt": " finds that a particular office holder is not doing legal duty and thereby is infringing on the right of an individual. ± Prohibition: This writ is issued by a higher court (High Court or Supreme Court) when a lower court has considered a case going beyond its jurisdiction. ± Quo Warranto: If the court finds that a person is holding office but is not entitled to hold that office, it issues the writ of quo warranto and restricts that person from acting as an office holder. ± Certiorari: Under this writ, the court orders"
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 267, passage containing WRIT",
+      "excerpt": "Reportable IN THE SUPREME COURT OF INDIA CIVIL ORIGINAL JURISDICTION WRIT PETITION (CIVIL) NO.494 OF 2012 Justice K.S. Puttaswamy (Retd.) & Another … Petitioners Versus Union of India & Others … Respondents WITH TRANSFERRED CASE (CIVIL) NO.151 OF 2013 TRANSFERRED CASE (CIVIL) NO.152 OF 2013 WRIT PETITION (CIVIL) NO. 833 OF 2013 WRIT PETITION (CIVIL) NO. 829 OF 2013 WRIT PETITION (CIVIL) NO. 932 OF 2013 CONTEMPT PETITION (CIVIL) NO. 144 OF 2014 IN WR"
+    }
+  ]
+}

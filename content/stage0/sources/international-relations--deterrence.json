@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/leps105.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.301720+00:00",
+      "sha256": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1",
+      "file": "70e99c4b5e497e713d7e635d4cf72436d0deeb27818c64fb637292ff4d35bba1.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing deterrence",
+      "excerpt": " values of security policy is concer ned sovereignty, independence and with preventing war, which is territorial integrity. Military called deterrence, and with action also endangers the lives limiting or ending war, which is of ordinary citizens. It is unlikely called defence. that in a war only soldiers will Traditional security policy has be hurt or killed. Quite often, a third component called balance ordinary men and women are of power. When countries look made targets of war, to break their around them, they see that s"
+    }
+  ]
+}

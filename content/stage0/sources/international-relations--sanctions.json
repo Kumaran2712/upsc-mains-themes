@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Security Council: Sanctions",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "retrievedAt": "2026-11-07T08:27:22.627Z",
+      "sha256": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397",
+      "file": "10e37024a3fd5f7d2667d51f24872895198b305328bcefd8e2b65c2431bc3397.txt",
+      "retrievalMethod": "web-tool-text-extract",
+      "locator": "Passage containing sanctions",
+      "excerpt": " when applied as part of a comprehensive strategy encompassing peacekeeping, peacebuilding and peacemaking. Contrary to the assumption that sanctions are punitive, many regimes are designed to support governments and regions working towards peaceful transition. The Libyan and Guinea-Bissau sanctions regimes all exemplify this approach. Today, there are 15 sanctions regimes which focus on supporting political settlement of conflicts, nuclear non-proliferation, and counter-terrorism. Each regime is administered by a sanctions"
+    }
+  ]
+}

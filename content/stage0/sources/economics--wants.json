@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing wants",
+      "excerpt": " are directly exchange it for any commodity or exchanged without the use of money, service that he or she might want. double coincidence of wants is an Thus everyone prefers to receive essential feature. payments in money and then exchange the money for things that In contrast, in an economy where they want. Take the case of a shoe money is in use, money by providing manufacturer. He wants to sell shoes the crucial intermediate step in the market and buy wheat. The eliminates the need for double shoe manufacturer will f"
+    },
+    {
+      "title": "NCERT Introductory Microeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec202.pdf",
+      "retrievedAt": "2026-11-07T08:20:24.486639+00:00",
+      "sha256": "d13dbdc198e29b5690d662e7e9f10bc945f10a01a39baf5787724e36d38c5826",
+      "file": "d13dbdc198e29b5690d662e7e9f10bc945f10a01a39baf5787724e36d38c5826.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing wants",
+      "excerpt": " and Budget Line Suppose the income of the consumer is M and the prices of bananas and mangoes are p1 and p2 respectively5. If the consumer wants to buy x1 quantities of bananas, she will have to spend p1x1 amount of money. Similarly, if the consumer wants to buy x2 quantities of mangoes, she will have to spend p2x2 amount of money. Therefore, if the consumer wants to buy the bundle consisting of x1 quantities of bananas and x2 quantities of mangoes, she will have to spend p1x1 + p2x2 amount of money. She can buy this b"
+    }
+  ]
+}

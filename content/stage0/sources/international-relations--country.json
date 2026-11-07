@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess201.pdf",
+      "retrievedAt": "2026-11-07T08:21:57.304231+00:00",
+      "sha256": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb",
+      "file": "f550c70f8e1d3aad304c8b818199849a159c48767fa3850d91214a2e1c3c57eb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 7, passage containing country",
+      "excerpt": "w, what is the income of a students in the class itself. How do country? Intuitively, the income of the we compare different students? They country is the income of all the differ in their height, health, talents residents of the country. This gives and interests. The healthiest student us the total income of the country. may not be the most studious one. However, for comparison between The most intelligent student may not countries, total income is not such an be the friendliest one. So, how do we useful measure. Since, "
+    },
+    {
+      "title": "NCERT Introductory Macroeconomics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leec102.pdf",
+      "retrievedAt": "2026-11-07T08:20:23.400777+00:00",
+      "sha256": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9",
+      "file": "8df212f62a7e4e56e11c2fa1e45d519142f1353259b9d881a7ade9be11e3aaf9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 19, passage containing country",
+      "excerpt": "ows policy-makers to Product at Market estimate how much the country has to Prices (NDPMP) spend just to maintain their current GDP. If the country is not able to replace the capital stock lost through depreciation, then GDP will fall. NDPMP = GDPMP − Dep. 4. NDP at Factor Cost • NDP at factor cost is the income earned by the factors in the form of wages, profits, (NDPFC) rent, interest, etc., within the domestic territory of a country. NDPFC = NDPMP - Net Product Taxes - Net ProductionTaxes 5 Following the System of Nati"
+    }
+  ]
+}

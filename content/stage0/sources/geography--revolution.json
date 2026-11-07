@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary India II, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/jess104.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.174814+00:00",
+      "sha256": "674e63f2c3b76e8cfcde5d6a48a2df16ca19329ff547dfdc5953e3f6d2aa19ac",
+      "file": "674e63f2c3b76e8cfcde5d6a48a2df16ca19329ff547dfdc5953e3f6d2aa19ac.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 9, passage containing Revolution",
+      "excerpt": "arm. The Government of India embarked upon introducing agricultural reforms to improve Indian agriculture in the 1960s and 1970s. The Green Revolution based on the use of package technology and the White Revolution (Operation Flood) were some of the strategies initiated to improve the lot of Indian agriculture. But, this too led to the concentration of development in few selected areas. Therefore, in the 1980s and 1990s, a comprehensive land development programme was initiated, which Fig. 4.14: Cotton Cultivation included bo"
+    },
+    {
+      "title": "NCERT Fundamentals of Human Geography, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/legy101.pdf",
+      "retrievedAt": "2026-11-07T08:20:30.367920+00:00",
+      "sha256": "21b89e7428f257a00e0de33155ce3de27c9fad2c42cea5f3edc2ad0ffba9ec46",
+      "file": "21b89e7428f257a00e0de33155ce3de27c9fad2c42cea5f3edc2ad0ffba9ec46.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing revolution",
+      "excerpt": "late 1960s statistical tools. Laws of physics were often applied to map and analyse human phenomena. This phase was called the quantitative revolution. The main objective was to identify mappable patterns for different human activities. 1970s Emergence of Discontentment with the quantitative revolution and humanistic, radical its dehumanised manner of doing geography led to and behavioural the emergence of three new schools of thought of schools human geography in the 1970s. Human geography was made more relevant to the soci"
+    }
+  ]
+}

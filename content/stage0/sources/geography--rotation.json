@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 9",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy209.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.938224+00:00",
+      "sha256": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2",
+      "file": "8ccc34eb346c707ebc091b7d7334e0b3aa70e470b18408bd57dc8629a828d0c2.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing rotation",
+      "excerpt": "face and its influence generally extends wind at the surface experiences friction. In upto an elevation of 1 - 3 km. Over the sea addition, rotation of the earth also affects the surface the friction is minimal. wind movement. The force exerted by the rotation of the earth is known as the Coriolis Coriolis Force force. Thus, the horizontal winds near the earth surface respond to the combined effect The rotation of the earth about its axis affects of three forces – the pressure gradient force, the direction of the wind. Thi"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.029033+00:00",
+      "sha256": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee",
+      "file": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing rotation",
+      "excerpt": " South was caused by pole-fleeing force and tidal force. America and Africa are of the Jurassic age. The polar-fleeing force relates to the rotation This suggests that the ocean did not exist prior of the earth. You are aware of the fact that the to that time. earth is not a perfect sphere; it has a bulge at the equator. This bulge is due to the rotation Tillite of the earth. The second force that was It is the sedimentary rock formed out of suggested by Wegener — the tidal force — is deposits of glaciers. The Gondawana sy"
+    }
+  ]
+}

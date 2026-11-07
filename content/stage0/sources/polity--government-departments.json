@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Government of Odisha: General Administration Department functions",
+      "url": "https://ga.odisha.gov.in/en/about-us/about-department",
+      "retrievedAt": "2026-11-07T08:29:55.002346+00:00",
+      "sha256": "b2655c8b1b639b41a2d5f6d132bf7b0a10e27d3b501a6b6182aa442a456ee45b",
+      "file": "b2655c8b1b639b41a2d5f6d132bf7b0a10e27d3b501a6b6182aa442a456ee45b.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Government Departments",
+      "excerpt": "istrative Reforms, Pension and Public Grievances, Maintaining CCRs of Senior Group-A Officers, Rules of Business of Government and advising Government Departments on common service rules / conditions. There are key public institutions working within the ambit of the Department such as Odisha Public Service Commission, Odisha Staff Selection Commission, Odisha Sub-ordinate Staff Selection Commission assigned with the task of recruitment and Gopabandhu Academy of Administration assigned with the task of training and capacity building. Bes"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
+      "url": "https://nalcoindia.com/wp-content/uploads/2019/10/Vigilance-Handbook-by-ISTM.pdf",
+      "retrievedAt": "2026-11-07T08:24:28.753341+00:00",
+      "sha256": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc",
+      "file": "aeeefc6cb9bbfc84343870ef76b4d402f7f12471184c203dc4352e9ff0b4bbdc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 36, passage containing public interest",
+      "excerpt": "gence; recklessness in decision making; blatant violations of systems and procedures; exercise of discretion in excess, where no ostensible public interest is evident; failure to keep the controlling authority/superiors informed in time – these are some of the irregularities where the disciplinary authority with the help of the CVO should carefully study the case and weigh the circumstances to come to a conclusion whether there is reasonable ground to doubt the integrity of the officer concerned. 4. What are the two parts of the "
+    },
+    {
+      "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
+      "url": "https://api.sci.gov.in/supremecourt/2012/35071/35071_2012_Judgement_24-Aug-2017.pdf",
+      "retrievedAt": "2026-11-07T08:24:32.333780+00:00",
+      "sha256": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec",
+      "file": "6e3f5b69f1d1970281f88c796563966c930a7c520d309abe617b734db48c3cec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 542, passage containing public interest",
+      "excerpt": "46 “130… It is not simply a matter of personal privacy versus the public interest. The modern perception is that there is a public interest in respecting personal privacy. It is thus a question of taking account of conflicting public interest considerations and evaluating them according to increasingly well recognized criteria. 131. When the courts identify an infringement of a person’s Article 8 rights, and in particular in the context of his freedom to co"
+    }
+  ]
+}

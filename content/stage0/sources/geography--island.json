@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NASA Earth Observatory: Mission Biomes",
+      "url": "https://earthobservatory.nasa.gov/biome/",
+      "retrievedAt": "2026-11-07T08:21:58.338767+00:00",
+      "sha256": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0",
+      "file": "9b7de924111d86f2395c62f6b5890969259cffeeef642a18206d3c5ac5d2a0c0.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing Island",
+      "excerpt": "Supercomputing Tech Demo Schedule article 16 hours ago 3 min read Taking a Gander at Utah’s Goosenecks article 1 day ago 4 min read Cyprus: Island of Snakes, Cats, and Ophiolites article 2 days ago Highlights 4 min read What’s Up: November 2026 Skywatching Tips from NASA article 5 days ago 2 min read November’s Night Sky Notes: Light-Day Away article 1 week ago 1 min read Slice of Martian Meteorite Teghaza 001 article 1 week ago Highlights 3 min read Hubble Learns Galactic History From Stars article 2 days ago 5 min read"
+    },
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 4",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy204.pdf",
+      "retrievedAt": "2026-11-07T08:20:27.029033+00:00",
+      "sha256": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee",
+      "file": "5a610be61563989125279c8de58cd454671c4b3022ab9344e079f1c4090cd3ee.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing Island",
+      "excerpt": "olars considered these prolonged glaciation. Counterparts of this forces to be totally inadequate. succession are found in Africa, Falkland Island, Post-drift Studies Madagascar, Antarctica and Australia. Overall resemblance of the Gondawana-type sediments It is interesting to note that for continental drift, clearly demonstrates that these landmasses most of the evidence was collected from the had remarkably similar histories. The glacial continental areas in the form of distribution of tillite provides unambiguous evid"
+    }
+  ]
+}

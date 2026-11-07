@@ -1,0 +1,15 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/leps101.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.090154+00:00",
+      "sha256": "958889d2d022174591ba6344eb4f104c730fa05e922215c87fe25745d564eb09",
+      "file": "958889d2d022174591ba6344eb4f104c730fa05e922215c87fe25745d564eb09.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 11, passage containing embassy",
+      "excerpt": "inisters or cabinet ministers - India and Post-communist during our conversation it is always mentioned,” says Ashok Shamer from the Indian embassy in Tashkent. “This shows Countries that Indian films, culture, songs and especially Raj Kapoor have been household names here. Most of them can sing India has maintained good some Hindi songs, they may not know the meaning but their relations with all the post- pronunciation is correct and they know the music,” he says. communist countries. But the “I have found out that almos"
+    }
+  ]
+}

@@ -1,0 +1,1409 @@
+{
+  "recordedAt": "2026-11-07T09:23:11.298960+00:00",
+  "note": "Lexical candidates establish provenance only. Independent model review must verify support for the exact subject-specific claims before publication.",
+  "retrievedDocuments": 109,
+  "unavailableSources": [
+    {
+      "id": "leec206",
+      "url": "https://ncert.nic.in/textbook/pdf/leec206.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "kegy215",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy215.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "kegy216",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy216.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "leps107",
+      "url": "https://ncert.nic.in/textbook/pdf/leps107.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "leps108",
+      "url": "https://ncert.nic.in/textbook/pdf/leps108.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "iess401",
+      "url": "https://ncert.nic.in/textbook/pdf/iess401.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "iess402",
+      "url": "https://ncert.nic.in/textbook/pdf/iess402.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "iess403",
+      "url": "https://ncert.nic.in/textbook/pdf/iess403.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "iess404",
+      "url": "https://ncert.nic.in/textbook/pdf/iess404.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "iess405",
+      "url": "https://ncert.nic.in/textbook/pdf/iess405.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "un-charter",
+      "url": "https://www.un.org/en/about-us/un-charter/full-text",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "wto-glossary",
+      "url": "https://www.wto.org/english/thewto_e/glossary_e/glossary_e.htm",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "ignou-public-administration",
+      "url": "https://www.egyankosh.ac.in/bitstream/123456789/25454/1/Unit-1.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "ignou-administration",
+      "url": "https://egyankosh.ac.in/bitstream/123456789/25454/1/Unit-1.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "ignou-law",
+      "url": "https://egyankosh.ac.in/bitstream/123456789/60208/1/Unit-2.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "mea-foreign-policy",
+      "url": "https://www.mea.gov.in/indian-foreign-policy.htm",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "un-sanctions",
+      "url": "https://main.un.org/securitycouncil/sanctions",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "oecd-aid",
+      "url": "https://www.oecd.org/en/topics/official-development-assistance-oda.html",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "dor-direct-tax",
+      "url": "https://www.dor.gov.in/index.php/direct-tax",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "un-multilateralism",
+      "url": "https://www.un.org/en/observances/multilateralism-for-peace-day",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "eci-role",
+      "url": "https://www.eci.gov.in/about-eci",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "un-sanctions-canonical",
+      "url": "https://main.un.org/securitycouncil/en/sanctions/information",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "nacin-natural-justice",
+      "url": "https://nacin.gov.in/resources/file/e-books/Principles%20of%20natural%20justice.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "ignou-administration-new",
+      "url": "https://www.egyankosh.ac.in/bitstream/123456789/53762/1/Unit-1.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "mea-foreign-relations",
+      "url": "https://fsi.mea.gov.in/Images/pdf/Indias_Foreign_Relations_2009.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "oecd-oda-definition",
+      "url": "https://web-archive.oecd.org/2021-05-07/154009-What-is-ODA.pdf",
+      "error": "No local capture; offline mode made no network request"
+    },
+    {
+      "id": "un-multilateral-system",
+      "url": "https://www.un.org/en/global-issues/multilateral-system",
+      "error": "No local capture; offline mode made no network request"
+    }
+  ],
+  "placements": [
+    {
+      "id": "polity/law",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/legal-system",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/justice",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/rights",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/duties",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/obligations",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/rules",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/regulations",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/offence",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/punishment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/courts",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/legal-authority",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "polity/state",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/government",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/citizen",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/citizenship",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/country",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/nation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/territory",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/sovereignty",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/public-authority",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/public-administration",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/constitution",
+      "status": "existing-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/preamble",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/legislature",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/executive",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/judiciary",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/parliament",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/government-departments",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "polity/public-institutions",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/elections",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/voting",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/representation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/accountability",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/human-rights",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/fundamental-rights",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/civil-rights",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/political-rights",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/equality",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/liberty",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/freedom-of-expression",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/freedom-of-religion",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/right-to-life",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/right-to-property",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/discrimination",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/act",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/bill",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/amendment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/ordinance",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/notification",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/order",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/petition",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/writ",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/appeal",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/jurisdiction",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/due-process",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/natural-justice",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/public-interest",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/democratic",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/republic",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/secular",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/socialist",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/federal",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/unitary",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/parliamentary",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/constitutional",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/constitutional-authority",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "polity/constitutional-body",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/economy",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/economics",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/goods",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/services",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/needs",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/wants",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/resources",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/scarcity",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/choice",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/opportunity-cost",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/production",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/consumption",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/distribution",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/exchange",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/market",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/money",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/currency",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/barter-system",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/bank",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/central-bank",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/commercial-bank",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/credit",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/loan",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/interest",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/deposit",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/inflation",
+      "status": "existing-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/deflation",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/purchasing-power",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/income",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/wealth",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/savings",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/investment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/expenditure",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/employment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/unemployment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/wages",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/salary",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/poverty",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/inequality",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/standard-of-living",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/tax",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/direct-tax",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/indirect-tax",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/government-revenue",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/government-expenditure",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/budget",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/subsidy",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/public-debt",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/fiscal-policy",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/monetary-policy",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/gdp",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/gnp",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/per-capita-income",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/economic-growth",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/economic-development",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/primary-sector",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/secondary-sector",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/tertiary-sector",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "economics/imports",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "economics/exports",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/earth",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/solar-system",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/planet",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/rotation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/revolution",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/axis",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/equator",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/latitude",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/longitude",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/hemisphere",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/globe",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/map",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/scale",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/coordinates",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/time-zone",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "geography/continent",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/ocean",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/sea",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/island",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/peninsula",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/mountain",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/plateau",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/plain",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/valley",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/desert",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/river",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/lake",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/glacier",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/volcano",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "geography/earthquake",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/atmosphere",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/weather",
+      "status": "existing-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/climate",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/temperature",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/air-pressure",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/wind",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/humidity",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/rainfall",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/precipitation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/monsoon",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/cyclone",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/anticyclone",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "geography/greenhouse-effect",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/global-warming",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/ecosystem",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/biome",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "geography/biodiversity",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/natural-resources",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/renewable-resources",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/non-renewable-resources",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/forest",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/soil",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/water-cycle",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/erosion",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/conservation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/population",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/population-density",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/birth-rate",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/death-rate",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/migration",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/urbanisation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/rural-settlement",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "geography/agriculture",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/irrigation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "geography/industrialisation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/country",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/nation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/state",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/sovereignty",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/territory",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/border",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/national-interest",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/foreign-policy",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/diplomacy",
+      "status": "existing-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/international-relations",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/bilateral-relations",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/multilateral-relations",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/globalisation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/geopolitics",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/strategic-interest",
+      "status": "existing-packet",
+      "candidateSources": 0
+    },
+    {
+      "id": "international-relations/united-nations",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/security-council",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/general-assembly",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/world-bank",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/international-monetary-fund",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/world-trade-organization",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/international-court-of-justice",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/regional-organisations",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/international-institutions",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/treaty",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/ambassador",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/high-commissioner",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/embassy",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/consulate",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/diplomatic-mission",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/summit",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/dialogue",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/negotiation",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/mediation",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/agreement",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/memorandum-of-understanding",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/protocol",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/sanctions",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/national-security",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/international-security",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/defence",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/military-alliance",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/war",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/conflict",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/terrorism",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/insurgency",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/nuclear-weapons",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/arms-control",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/disarmament",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/deterrence",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/international-trade",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/free-trade",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/protectionism",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/tariff",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/trade-deficit",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/trade-surplus",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/foreign-direct-investment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/foreign-portfolio-investment",
+      "status": "candidate-packet",
+      "candidateSources": 2
+    },
+    {
+      "id": "international-relations/foreign-aid",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    },
+    {
+      "id": "international-relations/economic-sanctions",
+      "status": "candidate-packet",
+      "candidateSources": 1
+    }
+  ]
+}

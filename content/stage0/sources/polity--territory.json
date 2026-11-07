@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Political Theory, chapter 7",
+      "url": "https://ncert.nic.in/textbook/pdf/keps107.pdf",
+      "retrievedAt": "2026-11-07T08:20:20.238445+00:00",
+      "sha256": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158",
+      "file": "fc6672ee70918c4164ebe39b7b150b046e0834ecf1b6faf7dde901f51f3f4158.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 6, passage containing Territory",
+      "excerpt": "was that tremendous impress of oneness, which held all of us together in ages past, whatever political fate or misfortune had befallen us”. Territory Third, nations identify with a particular territory. Sharing a common past and living together on a particular territory over a long period of time gives people a sense of their collective identity. It helps them to imagine themselves as one people. It is therefore not surprising that people who see themselves as a nation speak of a homeland. The territory they occupied and th"
+    },
+    {
+      "title": "Legislative Department: Constitution of India, English",
+      "url": "https://www.legislative.gov.in/static/uploads/2025/07/359f70a69695affb9d72f8393102bd2e.pdf",
+      "retrievedAt": "2026-11-07T08:22:53.232052+00:00",
+      "sha256": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb",
+      "file": "2d0cca5dc3faa6a4bcac007122a4c21f54b03d72f1d32d5e95141a477a2feaeb.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 63, passage containing territory",
+      "excerpt": "low and the period so specified or allowed has expired.] 3[Explanation I.— In this article, in clauses (a) to (e), “State” includes a Union territory, but in the proviso, “State” does not include a Union territory. Explanation II.— The power conferred on Parliament by clause (a) includes the power to form a new State or Union territory by uniting a part of any State or Union territory to any other State or Union territory.] 4. Laws made under articles 2 and 3 to provide for the amendment of the First and the Fourth Schedule"
+    }
+  ]
+}

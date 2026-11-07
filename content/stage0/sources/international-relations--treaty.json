@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "United Nations Treaty Collection: Definitions",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/definition/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:22:52.459341+00:00",
+      "sha256": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15",
+      "file": "2636cea2507a7c8b7ff0393c1327068ab45f2e4e0dfc080b678a9118f81ddc15.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing treaty",
+      "excerpt": "e designated term might give a general indication of such intent. A particular treaty term might indicate that the desired objective of the treaty is a higher degree of cooperation than ordinarily aimed for in such instruments. Other terms might indicate that the parties sought to regulate only technical matters. Finally, treaty terminology might be indicative of the relationship of the treaty with a previously or subsequently concluded agreement. Agreements The term \"agreement\" can have a generic and a specific meaning."
+    },
+    {
+      "title": "United Nations Treaty Collection glossary",
+      "url": "https://treaties.un.org/Pages/Overview.aspx?path=overview/glossary/page1_en.xml",
+      "retrievedAt": "2026-11-07T08:20:39.209461+00:00",
+      "sha256": "80366e77e6b2cce3a0fe66a19a6d9f89521e34370ef52073528fdf1769456503",
+      "file": "80366e77e6b2cce3a0fe66a19a6d9f89521e34370ef52073528fdf1769456503.txt",
+      "retrievalMethod": "direct-https-html-text-extraction",
+      "locator": "Passage containing treaty",
+      "excerpt": "t.40, Vienna Convention of the Law of Treaties 1969] Authentication The term \"authentication\" refers to the procedure whereby the text of a treaty is established as authentic and definitive. Once a treaty has been authenticated, states cannot unilaterally change its provisions. If states which negotiated a given treaty do not agree on specific procedures for authentication, a treaty will usually be authenticated by signature, signature ad referendum or the initialling by the representatives of those states. [Art.10, Vien"
+    }
+  ]
+}

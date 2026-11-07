@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NIOS: India’s Foreign Policy, lesson 26",
+      "url": "https://digital.nios.ac.in/content/317en/317EL26.pdf",
+      "retrievedAt": "2026-11-07T08:29:52.579054+00:00",
+      "sha256": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398",
+      "file": "500f9bb3eeb34f74c762049f234866129aef6b0a0e6853d037170fe2c3e91398.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing International relations",
+      "excerpt": "ighbouring countries in South Asia, China and the South East Asian counties. Intext Questions 26.2 Q. 1. Tick (ü) the correcct answer : (a) International relations in the post cold war period is based upon the bipolar model. (True/False) (b) Kashmir issue became the biggest foreign policy problem for India in 1990s. (True/False) (c) India’s foreign policy after cold war wants to neglect Arab countries and embrace Israel. (True/False) (d) India is trying to forge a coalition of countries to counter terrorism. (True/False) 26.3 India and t"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/leps102.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.084621+00:00",
+      "sha256": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec",
+      "file": "8225f9c9000f923e7624d31cc9335db4d978fa5e873303faa617fb989238c6ec.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing international relations",
+      "excerpt": "n political and institutions that would cooperation. The process of contribute to a positive conception economic integration of European of international relations? The capitalist countries proceeded Second World War shattered many step by step (see Timeline of of the assumptions and structures European Integration) leading to on which the European states had the formation of the European based their relations. In 1945, the Economic Community in 1957. European states confronted the This process acquired a political ruin of their economie"
+    }
+  ]
+}

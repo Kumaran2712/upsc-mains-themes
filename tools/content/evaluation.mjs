@@ -1,3 +1,6 @@
+import { createHash } from 'node:crypto';
+
+export const outputBinding = (entry) => createHash('sha256').update(JSON.stringify({ scenario: entry.scenario, repeat: entry.repeat, runId: entry.output.runId, output: entry.output.output })).digest('hex');
 export const dimensions = ['accuracy', 'beginnerClarity', 'concreteTeaching', 'responsiveness', 'scopeAndPacing', 'respectAndAccessibility', 'evidenceAndUncertainty', 'assessmentIntegrity'];
 
 export const teachingCategories = ['explanation', 'confusion', 'misconception', 'ambiguity', 'application'];

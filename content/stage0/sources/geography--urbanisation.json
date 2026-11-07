@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT India: People and Economy, chapter 2",
+      "url": "https://ncert.nic.in/textbook/pdf/legy202.pdf",
+      "retrievedAt": "2026-11-07T08:22:00.162296+00:00",
+      "sha256": "f7c36fece58e30c82071edba22c99a4acdde9514f49b5eff84a532d96b3f4267",
+      "file": "f7c36fece58e30c82071edba22c99a4acdde9514f49b5eff84a532d96b3f4267.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing urbanisation",
+      "excerpt": "trative towns, such Urbanisation in India as Chandigarh, New Delhi, Bhopal, Shillong, Guwahati, Imphal, Srinagar, Gandhinagar, The level of urbanisation is measured in Jaipur, Chennai, etc. terms of percentage of urban population to total population. The level of urbanisation in Industrial towns India in 2011 was 31.16 per cent, which is quite low in comparison to developed Industries constitute prime motive force of these countries. Total urban population has cities, such as Mumbai, Salem, Coimbatore, increased eleven-fold du"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess103.pdf",
+      "retrievedAt": "2026-11-07T08:20:35.159190+00:00",
+      "sha256": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a",
+      "file": "8931fc685a1b2cfe5825fd0efa521254829b2e54c7f3aa9e226bd4a57722ef1a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 3, passage containing urbanisation",
+      "excerpt": ", much of it may be polluted by Post-independent India witnessed domestic and industrial wastes, chemicals, intensive industrialisation and urbanisation, pesticides and fertilisers used in agriculture, creating vast opportunities for us. Today, large thus, making it hazardous for human use. industrial houses are as commonplace as the Government of India has accorded highest industrial units of many MNCs (Multinational priority to improve the quality of life and Corporations). The ever-increasing number of enhance ease of livin"
+    }
+  ]
+}

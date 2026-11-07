@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Contemporary World Politics, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/leps103.pdf",
+      "retrievedAt": "2026-11-07T08:20:36.237595+00:00",
+      "sha256": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560",
+      "file": "0dacd4eba2b1a74e1eb8d004a3bdbd8caeabeb0692f92a39f3784dae670d9560.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 4, passage containing Summit",
+      "excerpt": "ocratic government June-July: Kargil conflict between India and Pakistan was established once again in 2001 July: Vajpayee - Musharraf Agra Summit unsuccessful 1988 under the leadership of 2004 January: SAFTA signed at the 12th SAARC Summit in Benazir Bhutto. In the period Islamabad that followed, Pakistani politics 2007: Afghanistan joins SAARC centred around the competition 2014 November: The 18th SAARC Summit in Kathmandu, between her party, the Pakistan Nepal People’s Party, and the Muslim Reprint 2026-27 Chapter 3.i"
+    },
+    {
+      "title": "NCERT Contemporary World Politics, chapter 6",
+      "url": "https://ncert.nic.in/textbook/pdf/leps106.pdf",
+      "retrievedAt": "2026-11-07T08:20:37.548335+00:00",
+      "sha256": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7",
+      "file": "c1048942749802401d71e933f522a17f7194948afc54ee3d3c6ba865f7079df7.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 18, passage containing Summit",
+      "excerpt": " dangerous level. d. None of the above. E x e r c i s e s 2. Mark correct or wrong against each of the following statements about the Earth Summit: a. It was attended by 170 countries, thousands of NGOs and many MNCs. b. The summit was held under the aegis of the UN. c. For the first time, global environmental issues were firmly consolidated at the political level. d. It was a summit meeting. 3. Which among the following are TRUE about the global commons? a. The Earth’s atmosphere, Antarctica, ocean floor and outer space"
+    }
+  ]
+}

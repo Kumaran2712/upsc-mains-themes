@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Understanding Economic Development, chapter 3",
+      "url": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "retrievedAt": "2026-11-07T08:21:59.569411+00:00",
+      "sha256": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9",
+      "file": "255bac0f72a04d6249fc3b7d2544c2f326b145232916f6c673230b2bf0f165f9.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 8, passage containing loan",
+      "excerpt": "A House Loan Megha has taken a loan of Rs 5 lakhs from the bank to purchase a house. The annual interest rate on the loan is 12 per cent and the loan is to be repaid in 10 years in monthly instalments. Megha had to submit to the bank, documents showing her employment records and salary before the bank agreed to give her the loan. The bank retained as collateral the papers of the new house, which will be returned to Megha only when she repays the entire loan with interest. Fill the following detai"
+    },
+    {
+      "title": "NCERT Indian Economic Development, chapter 5",
+      "url": "https://ncert.nic.in/textbook/pdf/keec105.pdf",
+      "retrievedAt": "2026-11-07T08:20:26.058916+00:00",
+      "sha256": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc",
+      "file": "10cbcc6a0562a8ab4ac5bdb84c7f32f989c259fd90567cecb0b28d512885effc.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 5, passage containing loan",
+      "excerpt": " up self employement for lending to worthwhile borrowers and income generation. Such credit provisions effective loan recovery. Agriculture loan are generally referred to as micro-credit default rates have been chronically programmes. SHGs have helped in the high. Why farmers failed to pay back empowerment of women. It is alleged that loans? It is alleged that farmers are the borrowings are mainly confined to deliberately refusing to pay back loans. consumption purposes. Why are What could be the reasons? borrowers not"
+    }
+  ]
+}

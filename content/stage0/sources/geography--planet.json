@@ -1,0 +1,25 @@
+{
+  "candidateOnly": true,
+  "sources": [
+    {
+      "title": "NCERT Fundamentals of Physical Geography, chapter 12",
+      "url": "https://ncert.nic.in/textbook/pdf/kegy212.pdf",
+      "retrievedAt": "2026-11-07T08:20:28.340325+00:00",
+      "sha256": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a",
+      "file": "ff6090dcccf682738ef3666803ef5c74160b13c86fd94b4e475c8810290a4b4a.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing planet",
+      "excerpt": "has an Many locations have plenty of water while abundant supply of water on its surface. Hence, others have very limited quantity. The our planet is called the ‘Blue Planet’. hydrological cycle, is the circulation of water within the earth’s hydrosphere in different HYDROLOGICAL CYCLE forms i.e. the liquid, solid and the gaseous Water is a cyclic resource. It can be used and phases. It also refers to the continuous re-used. Water also undergoes a cycle from exchange of water between the oceans, Figure 12.1 : Hydrologica"
+    },
+    {
+      "title": "NCERT Contemporary India II, chapter 1",
+      "url": "https://ncert.nic.in/textbook/pdf/jess101.pdf",
+      "retrievedAt": "2026-11-07T08:20:33.431451+00:00",
+      "sha256": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b",
+      "file": "31928ba873cbae20752b3ac8bb34ced2b554e8c15fc30468176a3cf76788856b.txt",
+      "retrievalMethod": "direct-https-pdf-text-extraction",
+      "locator": "PDF page 2, passage containing planet",
+      "excerpt": " global peace. If the present trend of resource depletion by a few individuals and RESOURCE PLANNING countries continues, the future of our planet is in danger. Planning is the widely accepted strategy for Therefore, resource planning is essential for judicious use of resources. It has importance in a country like India, which has enormous sustainable existence of all forms of life. diversity in the availability of resources. There Sustainable existence is a component of are regions which are rich in certain types of sus"
+    }
+  ]
+}
