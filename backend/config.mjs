@@ -19,8 +19,12 @@ export function readConfig(env = process.env) {
   if (production && secret.startsWith('development-')) throw new Error('Development secret cannot be used in production');
   const endpoint = new URL(env.OPENAI_BASE_URL || 'https://api.openai.com/v1/');
   if (!['http:', 'https:'].includes(endpoint.protocol) || (production && endpoint.protocol !== 'https:')) throw new Error('The AI endpoint must use HTTPS in production');
+  const dailyBudgetUsd = Number(env.DAILY_AI_BUDGET_USD ?? '5');
+  if (!Number.isFinite(dailyBudgetUsd) || dailyBudgetUsd <= 0 || dailyBudgetUsd > 1000) throw new Error('Invalid DAILY_AI_BUDGET_USD');
+  if (production && endpoint.hostname !== 'api.openai.com') throw new Error('Configure a verified provider price book before using a different production AI endpoint');
   return {
-    production, secret, origins, endpoint: endpoint.href.replace(/\/?$/, '/'),
+    dailyBudgetMicrousd: Math.floor(dailyBudgetUsd * 1e6),
+    production, secret, origins, databaseUrl: env.DATABASE_URL || '', endpoint: endpoint.href.replace(/\/?$/, '/'),
     apiKey: env.OPENAI_API_KEY || '', model: env.OPENAI_MODEL || 'gpt-4.1-mini',
     host: env.HOST || '127.0.0.1', port: integer('PORT', 8787, 0, 65535),
     dbPath: env.DATABASE_PATH === ':memory:' ? ':memory:' : resolve(env.DATABASE_PATH || 'backend/var/stage0.sqlite'),
@@ -29,6 +33,7 @@ export function readConfig(env = process.env) {
     globalDailyCalls: integer('GLOBAL_DAILY_CALLS', 500), userDailyTokens: integer('USER_DAILY_TOKENS', 150_000),
     globalDailyTokens: integer('GLOBAL_DAILY_TOKENS', 2_000_000),
     signupDailyLimit: integer('SIGNUP_DAILY_LIMIT', 3), authHourlyLimit: integer('AUTH_HOURLY_LIMIT', 20),
+    maxConcurrentAI: integer('MAX_CONCURRENT_AI', 10, 1, 100),
     maxOutputTokens: integer('MAX_OUTPUT_TOKENS', 1000, 128, 4096),
     timeoutMs: integer('AI_TIMEOUT_MS', 45_000, 1000, 120_000),
     sessionSeconds: integer('SESSION_SECONDS', 604_800, 300, 2_592_000),

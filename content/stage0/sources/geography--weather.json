@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "title": "NOAA: Climate vs. Weather",
+      "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+      "locator": "Weather describes",
+      "excerpt": "Weather describes the atmospheric conditions at a specific point in time. It can be measured hourly, daily, weekly, monthly, or yearly. Climate is the average or typical weather over a long period of time – a few years or more. Understanding climate can help us see patterns in the weather, such as what time of year or what locations different types of storm systems occur or what seasonal changes are typical. Unlike weather, climate changes slowly over years, centuries, or millenia. Daily weather reports will often compare the daily observed maximum and minimum temperatures with the average for that day or week. These averages are the \"climate normals\". The National Centers for Environmental Information (NCEI, formally NCDC) explains, \"the climatic normal is simply the arithmetic average of the values over a 30-year period (generally, three consecutive decades).\" In other words, for a giv",
+      "retrievedAt": "2026-11-07T05:06:09.711753+00:00",
+      "sha256": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b",
+      "file": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b.txt"
+    }
+  ]
+}

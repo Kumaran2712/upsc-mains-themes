@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-07",
+  "runtimePromptVersionEvaluated": "stage0-tutor-2026-11-07-v1",
+  "replacementPromptVersion": "stage0-tutor-2026-11-07-v2",
+  "replacementEvaluated": false,
+  "contentApprovals": 4,
+  "runtimeOutputs": 160,
+  "budgetId": "calibration-v1",
+  "budgetUsd": 1,
+  "actualChargedUsd": 0.78209,
+  "publishedFlagshipPlacements": 0,
+  "lessons": [
+    {
+      "lessonId": "polity/constitution",
+      "reviewReceipt": "semantic-judge-constitution-v2.json",
+      "reviewRunId": "resp_07bcf48eeff3b26f016aeec4100d1087d2a6a9243d89e5f454",
+      "reviewModel": "gpt-5.4-2026-03-05",
+      "outputsReviewed": 40,
+      "flaggedOutputs": 8,
+      "status": "requires-revision-and-adjudication",
+      "flaggedStages": [
+        "calibration-runtime-polity/constitution-9-0-v2",
+        "calibration-runtime-polity/constitution-11-1-v2",
+        "calibration-runtime-polity/constitution-15-0-v2",
+        "calibration-runtime-polity/constitution-15-1-v2",
+        "calibration-runtime-polity/constitution-16-0-v2",
+        "calibration-runtime-polity/constitution-16-1-v2",
+        "calibration-runtime-polity/constitution-18-0-v2",
+        "calibration-runtime-polity/constitution-18-1-v2"
+      ]
+    },
+    {
+      "lessonId": "international-relations/diplomacy",
+      "reviewReceipt": "semantic-judge-diplomacy-v2.json",
+      "reviewRunId": "resp_03a986956202b07a016aeeba5ec9a487d2b578aa71884cef08",
+      "reviewModel": "gpt-5.4-2026-03-05",
+      "outputsReviewed": 40,
+      "flaggedOutputs": 5,
+      "status": "requires-revision-and-adjudication",
+      "flaggedStages": [
+        "calibration-runtime-international-relations/diplomacy-2-1-v2",
+        "calibration-runtime-international-relations/diplomacy-6-0-v2",
+        "calibration-runtime-international-relations/diplomacy-13-0-v2",
+        "calibration-runtime-international-relations/diplomacy-16-0-v2",
+        "calibration-runtime-international-relations/diplomacy-16-1-v2"
+      ]
+    },
+    {
+      "lessonId": "economics/inflation",
+      "reviewReceipt": "semantic-judge-inflation-v2.json",
+      "reviewRunId": "resp_087e41f66bdc2f28016aeeb7945be887d2a38873b6c5e0323a",
+      "reviewModel": "gpt-5.4-2026-03-05",
+      "outputsReviewed": 40,
+      "flaggedOutputs": 5,
+      "status": "requires-revision-and-adjudication",
+      "flaggedStages": [
+        "calibration-runtime-economics/inflation-4-1-v2",
+        "calibration-runtime-economics/inflation-11-0-v2",
+        "calibration-runtime-economics/inflation-11-1-v2",
+        "calibration-runtime-economics/inflation-15-0-v2",
+        "calibration-runtime-economics/inflation-15-1-v2"
+      ]
+    },
+    {
+      "lessonId": "geography/weather",
+      "reviewReceipt": "semantic-judge-weather-v2.json",
+      "reviewRunId": "resp_04e9ff0ad716ed71016aeeba0c4c8c87d294cbb9593c893e7a",
+      "reviewModel": "gpt-5.4-2026-03-05",
+      "outputsReviewed": 40,
+      "flaggedOutputs": 1,
+      "status": "requires-revision-and-adjudication",
+      "flaggedStages": [
+        "calibration-runtime-geography/weather-3-0-v2"
+      ]
+    }
+  ],
+  "limitations": [
+    "Flag counts are model judgements, not validated accuracy measurements.",
+    "Several judge booleans contradict their rationale; independent adjudication is required.",
+    "Some reference learner inputs answered a different application scenario from the bound question.",
+    "The revised prompt and bound-case pipeline require new real-output evaluation."
+  ]
+}

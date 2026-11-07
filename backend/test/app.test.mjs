@@ -8,6 +8,21 @@ import { fixture, client, chat, goodPassword, origin } from './helpers.mjs';
 import { Store, dayKey } from '../store.mjs';
 import { readConfig } from '../config.mjs';
 import { cookie } from '../auth.mjs';
+import { lessons } from '../lessons.mjs';
+
+test('assessment history paginates tied timestamps without losing attempts or leaking anchors', async (t) => {
+  const f = await fixture(); t.after(() => f.close());
+  const learner = client(f.base); await learner.signup('history_learner');
+  const user = await f.app.store.userByName('history_learner');
+  const recordedAt = Date.now() - 1000;
+  for (let i = 0; i < 52; i++) await f.app.store.recordAssessment(user.id, 'polity/sovereignty', { id: crypto.randomUUID(), recordedAt, answers: [], questions: [{ question: 'Question?', expected: 'PRIVATE_ANCHOR' }], lessonVersion: 'test-v1' });
+  const first = (await learner.json('/history/assessments?conceptId=polity%2Fsovereignty')).body;
+  assert.equal(first.entries.length, 50); assert.equal(first.hasMore, true);
+  const second = (await learner.json('/history/assessments?conceptId=polity%2Fsovereignty&' + new URLSearchParams(first.nextCursor))).body;
+  assert.equal(second.entries.length, 2); assert.equal(second.hasMore, false); assert.equal(second.nextCursor, null);
+  assert.equal(new Set([...first.entries, ...second.entries].map((entry) => entry.id)).size, 52);
+  assert(!JSON.stringify([first, second]).includes('PRIVATE_ANCHOR'));
+});
 
 test('accounts, real protocol streaming, ownership, assessment evidence, bookmarks and recovery', async (t) => {
   const f = await fixture(); t.after(() => f.close());
@@ -47,17 +62,26 @@ test('accounts, real protocol streaming, ownership, assessment evidence, bookmar
   const failed = await alice.json('/assessment/answer', { conceptId: state.conceptId, revision: state.revision, assessmentId: state.assessment.id, answer: 'bad-evidence', requestId: crypto.randomUUID() });
   assert.equal(failed.status, 502);
   assert.equal((await alice.json('/conversation?conceptId=polity%2Fsovereignty')).body.conversation.assessment.index, 0);
+  const originalLesson = lessons.get(state.conceptId);
+  t.after(() => lessons.set('polity/sovereignty', originalLesson));
+  lessons.set(state.conceptId, { ...originalLesson, version: 'changed-after-check-start', core: 'UNRELATED_CHANGED_LESSON' });
   for (let index = 0; index < 3; index++) {
     const checked = await alice.json('/assessment/answer', { conceptId: state.conceptId, revision: state.revision, assessmentId: state.assessment.id, answer: `Independent correct reasoning ${index}.`, requestId: crypto.randomUUID(), status: 'Understood' });
     assert.equal(checked.status, 200); state = checked.body.conversation;
     assert.equal(state.assessment.draft, '');
     assert.equal(state.status, index === 2 ? 'Understood' : 'Exploring');
+    assert(!f.model.calls.at(-1).instructions.includes('UNRELATED_CHANGED_LESSON'));
   }
+  lessons.set(state.conceptId, originalLesson);
   assert.equal(state.assessment.complete, true);
   const saved = await alice.json('/conversation/bookmark', { conceptId: state.conceptId, revision: state.revision, revisit: true });
   state = saved.body.conversation; assert.equal(state.status, 'Understood'); assert.equal(state.revisit, true);
   const restartCheck = await alice.json('/assessment/start', { conceptId: state.conceptId, revision: state.revision });
   state = restartCheck.body.conversation;
+  const history = (await alice.json('/history/assessments?conceptId=polity%2Fsovereignty')).body.entries;
+  assert.equal(history.length, 2); assert(history.some((check) => check.complete && check.answers.length === 3));
+  assert(!JSON.stringify(history).includes('lessonSnapshot')); assert(!JSON.stringify(history).includes('expected'));
+  assert.equal((await bob.json('/history/assessments?conceptId=polity%2Fsovereignty')).body.entries.length, 0);
   const incorrect = await alice.json('/assessment/answer', { conceptId: state.conceptId, revision: state.revision, assessmentId: state.assessment.id, answer: 'wrong: a sovereign government has no limits', requestId: crypto.randomUUID() });
   assert.equal(incorrect.body.conversation.status, 'Developing');
   assert.equal(incorrect.body.conversation.revisit, true);
@@ -72,9 +96,24 @@ test('accounts, real protocol streaming, ownership, assessment evidence, bookmar
   assert.equal((await bob.json('/account/delete', { password: 'wrong' })).status, 401);
   assert.equal((await bob.json('/account/delete', { password: goodPassword + '-new' })).status, 200);
   assert.equal((await bob.json('/progress')).status, 401);
-  assert.equal(f.app.store.userByName('alice_one'), undefined);
-  assert.equal(f.app.store.db.prepare('SELECT count(*) AS n FROM conversations').get().n, 0);
+  assert.equal(await f.app.store.userByName('alice_one'), undefined);
+  assert.equal((await f.app.store.db.prepare('SELECT count(*) AS n FROM conversations').get()).n, 0);
   assert(!JSON.stringify(f.logs).includes('private-test-password'));
+});
+
+test('a completed receipt discovered during reservation never dispatches a second provider call', async (t) => {
+  const f = await fixture(); t.after(() => f.close());
+  const learner = client(f.base); await learner.signup('receipt_race');
+  const id = crypto.randomUUID(), first = await chat(learner, 0, 'Explain sovereignty.', id);
+  const original = f.app.store.operation.bind(f.app.store);
+  let missed = false;
+  f.app.store.operation = async (userId, operationId) => {
+    if (operationId === id && !missed) { missed = true; return undefined; }
+    return original(userId, operationId);
+  };
+  const replay = await chat(learner, 0, 'Explain sovereignty.', id);
+  assert.deepEqual(replay.done, first.done);
+  assert.equal(f.model.calls.length, 1);
 });
 
 test('daily limits are atomic, idempotent retries are free, and failures preserve bounded spend', async (t) => {
@@ -82,20 +121,37 @@ test('daily limits are atomic, idempotent retries are free, and failures preserv
   const user = client(f.base); await user.signup('quota_user');
   const id = crypto.randomUUID();
   assert((await chat(user, 0, 'Explain sovereignty.', id)).done);
-  const userId = f.app.store.userByName('quota_user').id;
-  assert.equal(f.app.store.counter(`user:${userId}`, dayKey()).tokens, 30);
-  const receipt = f.app.store.operation(userId, id);
+  const userId = (await f.app.store.userByName('quota_user')).id;
+  assert.equal((await f.app.store.counter(`user:${userId}`, dayKey())).tokens, 30);
+  const receipt = await f.app.store.operation(userId, id);
+  assert(receipt.lesson_version); assert(receipt.lease_expires > receipt.created);
   assert.equal(receipt.model, 'gpt-4.1-mini'); assert(receipt.prompt_version);
   assert.deepEqual(JSON.parse(receipt.provider_usage), { input_tokens: 10, output_tokens: 20 });
   assert((await chat(user, 0, 'Explain sovereignty.', id)).done);
   assert.equal((await chat(user, 1, 'incomplete-reply')).error.code, 'incomplete_reply');
-  assert(f.app.store.counter(`user:${userId}`, dayKey()).tokens > 30);
+  assert((await f.app.store.counter(`user:${userId}`, dayKey())).tokens > 30);
   const limited = await chat(user, 1); assert.equal(limited.status, 429); assert.equal(limited.error.error.code, 'daily_limit');
   assert.equal((await user.json('/conversation?conceptId=polity%2Fsovereignty')).body.conversation.messages.length, 2);
   const usage = (await user.json('/progress')).body.usage; assert.equal(usage.used, 2); assert.equal(usage.remaining, 0);
   assert.equal((await user.json('/conversation/bookmark', { conceptId: 'geography/erosion', revision: 0, revisit: true })).status, 200);
   assert.equal(dayKey(Date.parse('2026-11-07T18:29:59Z')), '2026-11-07');
   assert.equal(dayKey(Date.parse('2026-11-07T18:30:00Z')), '2026-11-08');
+});
+
+test('monetary ceiling and unknown pricing prevent dispatch; actual spend reconciles once', async (t) => {
+  const capped = await fixture({ DAILY_AI_BUDGET_USD: '0.000001' }); t.after(() => capped.close());
+  const learner = client(capped.base); await learner.signup('money_cap');
+  assert.equal((await chat(learner, 0)).status, 429); assert.equal(capped.model.calls.length, 0);
+  const unknown = await fixture({ OPENAI_MODEL: 'unpriced-model' }); t.after(() => unknown.close());
+  const other = client(unknown.base); await other.signup('unknown_price');
+  assert.equal((await chat(other, 0)).status, 503); assert.equal(unknown.model.calls.length, 0);
+  const measured = await fixture(); t.after(() => measured.close());
+  const account = client(measured.base); await account.signup('measured_spend');
+  const id = crypto.randomUUID(); await chat(account, 0, 'Explain sovereignty.', id);
+  const row = await measured.app.store.db.prepare('SELECT microusd FROM ai_spend WHERE period=?').get(dayKey());
+  assert.equal(row.microusd, 36);
+  await chat(account, 0, 'Explain sovereignty.', id);
+  assert.equal((await measured.app.store.db.prepare('SELECT microusd FROM ai_spend WHERE period=?').get(dayKey())).microusd, 36);
 });
 
 test('concurrent requests cannot race quota, reset, or logout; partial streams are never saved', async (t) => {
@@ -152,7 +208,7 @@ test('database upgrades preserve accounts while adding usage receipts atomically
   const directory = mkdtempSync(join(tmpdir(), 'stage0-migration-test-')), path = join(directory, 'old.sqlite');
   const legacy = new DatabaseSync(path);
   const oldSchema = readFileSync(new URL('../schema.sql', import.meta.url), 'utf8')
-    .replace(', model TEXT, prompt_version TEXT, provider_usage TEXT', '').replace('user_version = 2', 'user_version = 1');
+    .replace(', model TEXT, prompt_version TEXT, provider_usage TEXT', '').replace(', lesson_version TEXT, lease_expires INTEGER', '').replace('user_version = 5', 'user_version = 1');
   legacy.exec(oldSchema);
   legacy.prepare('INSERT INTO users VALUES(?,?,?,?,?)').run('old-account', 'old_learner', 'hash', 'recovery-hash', 1);
   legacy.close();
@@ -160,7 +216,7 @@ test('database upgrades preserve accounts while adding usage receipts atomically
   try {
     store = new Store(path);
     assert.equal(store.userByName('old_learner').id, 'old-account');
-    assert.equal(store.db.prepare('PRAGMA user_version').get().user_version, 2);
+    assert.equal(store.db.prepare('PRAGMA user_version').get().user_version, 5);
     const columns = store.db.prepare('PRAGMA table_info(operations)').all().map((c) => c.name);
     assert(columns.includes('model') && columns.includes('prompt_version') && columns.includes('provider_usage'));
   } finally { store?.close(); rmSync(directory, { recursive: true, force: true }); }

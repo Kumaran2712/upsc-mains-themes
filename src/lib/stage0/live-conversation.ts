@@ -37,6 +37,7 @@ export function initialiseLiveConversation() {
     find<HTMLButtonElement>('[data-live-sign-in]')!.hidden = Boolean(auth.user);
     find<HTMLButtonElement>('[data-live-stop]')?.toggleAttribute('hidden', !busy);
     log?.setAttribute('aria-busy', String(busy));
+    const older = find<HTMLButtonElement>('[data-live-older]'); if (older) { older.hidden = !auth.user || !entry?.hasOlderMessages; older.disabled = !enabled; }
     if (answerInput) answerInput.disabled = !enabled || !auth.ready;
   }
   function renderCheck() {
@@ -136,7 +137,19 @@ export function initialiseLiveConversation() {
   input?.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); void send(input.value); } });
   const questions: Record<string, string> = { meaning: 'What does this concept mean?', example: 'Can you give me an everyday example?', different: 'I still do not understand. Please explain it differently.', distinction: 'What is this often confused with?' };
   root.querySelectorAll<HTMLButtonElement>('[data-live-question]').forEach((button) => button.addEventListener('click', () => void send(questions[button.dataset.liveQuestion!])));
-  find<HTMLButtonElement>('[data-live-stop]')?.addEventListener('click', () => controller?.abort());
+  find<HTMLButtonElement>('[data-live-older]')?.addEventListener('click', async () => {
+    if (!entry?.messages.length || !auth.user || busy) return;
+    const current = generation, user = auth.user.username, first = entry.messages[0].id;
+    const button = find<HTMLButtonElement>('[data-live-older]')!; button.disabled = true;
+    try {
+      const result = await api<{ entries: LiveEntry['messages']; hasMore: boolean }>(`/history/messages?conceptId=${encodeURIComponent(id)}&before=${first}`);
+      if (current !== generation || auth.user?.username !== user || !entry) return;
+      entry.messages = [...result.entries, ...entry.messages]; entry.hasOlderMessages = result.hasMore;
+      render(); if (log) log.scrollTop = 0; setHint('Earlier messages loaded.');
+    } catch { if (current === generation && auth.user?.username === user) setHint('Earlier messages could not load. Try Load earlier messages again.'); }
+    finally { if (current === generation) controls(); }
+  });
+  find<HTMLButtonElement>('[data-live-stop]')?.addEventListener('click', () => { const operationId = pending?.requestId || assessmentPending?.requestId; controller?.abort(); if (operationId && auth.user) void api('/operation/cancel', { id: operationId }).catch(() => {}); });
   find<HTMLButtonElement>('[data-live-sign-in]')!.addEventListener('click', () => window.dispatchEvent(new Event('stage0-sign-in')));
   find<HTMLButtonElement>('[data-live-refresh]')!.addEventListener('click', () => void refresh());
   async function mutate(path: string, body: Record<string, unknown>) {

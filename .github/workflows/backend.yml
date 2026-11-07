@@ -2,14 +2,29 @@ name: Check Stage 0 backend
 on:
   push:
     branches: [main]
-    paths: ['backend/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
   pull_request:
-    paths: ['backend/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
 permissions:
   contents: read
 jobs:
   check:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: flagship_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U test -d flagship_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgres://test:test@localhost:5432/flagship_test
+      PG_DUMP_BIN: ${{ github.workspace }}/tests/support/pg_dump
+      PG_RESTORE_BIN: ${{ github.workspace }}/tests/support/pg_restore
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,12 +32,36 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run content:compile
       - run: npm run check:stage0
+      - run: chmod +x tests/support/pg_dump tests/support/pg_restore
       - run: npm run test:backend
       - run: npm run build
         env:
           SITE_URL: https://upscthemes.live
           PUBLIC_STAGE0_API_URL: /api
+      - name: Browser journeys with a local provider fixture
+        run: |
+          google-chrome --headless=new --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222 --user-data-dir="$RUNNER_TEMP/flagship-chrome" about:blank > "$RUNNER_TEMP/chrome.log" 2>&1 &
+          CHROME_PID=$!
+          node backend/test/fixture-server.mjs > "$RUNNER_TEMP/fixture.log" 2>&1 &
+          FIXTURE_PID=$!
+          trap 'kill "$CHROME_PID" "$FIXTURE_PID" 2>/dev/null || true' EXIT
+          node --input-type=module <<'JS'
+          for (const url of ['http://127.0.0.1:9222/json/version', 'http://127.0.0.1:8787/api/health']) {
+            let ready = false;
+            for (let i = 0; i < 60; i++) {
+              try { if ((await fetch(url)).ok) { ready = true; break; } } catch {}
+              await new Promise(resolve => setTimeout(resolve, 500));
+            }
+            if (!ready) throw new Error('Browser fixture not ready: ' + url);
+          }
+          JS
+          node tests/browser/flagship.mjs
+          node tests/browser/activities.mjs
+          node tests/browser/tutor.mjs
+      - name: Synthetic launch load and provider cancellation
+        run: node tests/load/flagship.mjs
       - name: Build backend container
         run: docker build --tag stage0-backend:ci .
       - name: Start backend container without a provider key

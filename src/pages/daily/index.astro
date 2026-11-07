@@ -46,7 +46,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     function nice(d) { return new Date(d * DAY).toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }); }
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
     function load() { try { return JSON.parse(localStorage.getItem('upscthemes-daily') || '{}'); } catch (x) { return {}; } }
-    function save(s) { try { localStorage.setItem('upscthemes-daily', JSON.stringify(s)); } catch (x) {} }
+    function save(s) { try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem('upscthemes-daily', JSON.stringify(s)); } catch (x) {} }
     function track(n, d) { if (window.__track) window.__track(n, d); }
 
     var store = load(), day = dayFromParam(), set = null, picks = [], checked = false;
@@ -86,6 +86,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
         [].forEach.call(li.querySelectorAll('.opt'), function (b) {
           var k = b.getAttribute('data-k');
           b.classList.toggle('pick', picks[i] === k);
+          b.setAttribute('aria-pressed', String(picks[i] === k));
           b.classList.toggle('ok', checked && k === q.a);
           b.classList.toggle('no', checked && picks[i] === k && k !== q.a);
           b.disabled = checked;
@@ -108,14 +109,16 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
         document.getElementById('pretry').onclick = function () { checked = false; picks = []; persist(false); pscore.hidden = true; paint(); };
       } else pscore.hidden = true;
     }
-    function persist(done) { store[iso(day)] = { p: picks, done: done || (store[iso(day)] && store[iso(day)].done) || false }; save(store); dstreak.textContent = streak() ? 'Streak: ' + streak() + ' day' + (streak() > 1 ? 's' : '') : ''; }
+    function persist(done) { store[iso(day)] = { p: picks, checked: checked, done: done || (store[iso(day)] && store[iso(day)].done) || false }; save(store); dstreak.textContent = streak() ? 'Streak: ' + streak() + ' day' + (streak() > 1 ? 's' : '') : ''; }
     plist.addEventListener('click', function (ev) {
       var b = ev.target.closest('.opt'); if (!b || checked) return;
       var i = +b.closest('.pqi').getAttribute('data-i'), k = b.getAttribute('data-k');
       picks[i] = picks[i] === k ? undefined : k; persist(false); paint();
     });
     pcheck.addEventListener('click', function () {
+      if (window.__activityScope === 'pending') return;
       checked = true; store[iso(day)] = { p: picks, checked: true, done: true }; save(store); persist(true); paint();
+      window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'practice', value: { day: iso(day), answers: picks.map(function (p) { return p || null; }) } } }));
       var c = 0; set.forEach(function (q, i) { if (picks[i] === q.a) c++; });
       track('daily-check', { correct: c, attempted: picks.filter(Boolean).length });
       pscore.scrollIntoView({ block: 'center', behavior: 'smooth' });
@@ -168,6 +171,8 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     }
     dprev.onclick = function () { show(day - 1); track('daily-nav', { dir: 'prev' }); };
     dnext.onclick = function () { show(day + 1); };
+    window.addEventListener('activity-snapshot', function (event) { store = event.detail.daily; show(day); });
+    if (window.__activitySnapshot) store = window.__activitySnapshot.daily;
     show(day);
   })();
   </script>
@@ -200,7 +205,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'WebPage', name: 'UPSC 
     .mqi .qt { font-size: 1.05rem; font-weight: 600; margin: 8px 0; }
     .cover { border-top: 1px solid var(--line); margin-top: 12px; padding-top: 4px; }
     .cover h3 { font-size: .98rem; margin: 12px 0 4px; } .cover p, .cover ul { margin: 0; font-size: .95rem; } .cover ul { padding-left: 18px; }
-    .tgrow { display: flex; flex-wrap: wrap; gap: 8px; } .tg { background: #229ed9; border-color: #229ed9; color: #fff; } .tg:hover { color: #fff; filter: brightness(1.06); }
+    .tgrow { display: flex; flex-wrap: wrap; gap: 8px; } .tg { background: #147da9; border-color: #147da9; color: #fff; } .tg:hover { color: #fff; filter: brightness(1.06); }
     h2 .small { font-weight: 600; font-size: .9rem; margin-left: 6px; }
   </style>
 </Base>

@@ -38,9 +38,11 @@ const { compact = false } = Astro.props;
       </div>
       <p class="s0-footnote">Choose a username; no email is needed. When you create an account, save your recovery code somewhere private. It is the way to reset a forgotten password.</p>
       <form data-account-form>
-        <label>Username<input name="username" autocomplete="username" pattern="[a-zA-Z0-9_]{3,32}" minlength="3" maxlength="32" required /></label>
+        <label>Username<input name="username" autocomplete="username" aria-describedby="s0-username-help" pattern="[a-zA-Z0-9_]{3,32}" minlength="3" maxlength="32" required /></label>
+        <p id="s0-username-help" class="s0-footnote">3–32 letters, numbers or underscores.</p>
         <label data-recovery-field hidden>Recovery code<input name="recoveryCode" autocomplete="off" minlength="43" maxlength="43" /></label>
-        <label><span data-password-label>Password</span><input name="password" type="password" autocomplete="current-password" minlength="12" maxlength="128" required /></label>
+        <label><span data-password-label>Password</span><input name="password" type="password" autocomplete="current-password" aria-describedby="s0-password-help" minlength="12" maxlength="128" required /></label>
+        <p id="s0-password-help" class="s0-footnote">Use 12–128 characters. Save your recovery code when creating an account.</p>
         <button type="submit" class="s0-button s0-button-primary" data-auth-submit>Sign in</button>
       </form>
       <p class="s0-footnote">Your questions and checks are saved to your account and sent to our AI provider when you use the tutor. The concept list and reusable prompts are free to read without an account. You can export your learning data or delete your account. <a href={u('/about/#stage0-privacy')}>How learning data is handled</a></p>

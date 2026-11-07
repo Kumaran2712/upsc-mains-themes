@@ -60,6 +60,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
   <p class="lead">More lab questions arrive as each map module is built.</p>
 
   <style is:global>
+    .lab-work[hidden] { display: none; }
     .lab-work { margin: 14px 0 20px; display: grid; gap: 6px; }
     .lab-work h2 { font-size: 1.15rem; margin: 0; font-family: var(--f-body); font-weight: 600; line-height: 1.45; }
     .lab-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -92,7 +93,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       var byId = {}; cards.forEach(function (c) { byId[c.id] = c; });
       var KEY = 'upscthemes-lab';
       var store = {}; try { store = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) {}
-      function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+      function save() { try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
       function track(n, d) { if (window.__track) window.__track(n, d); }
       function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
       function bestOf(id) { var a = store[id] || []; return a.reduce(function (b, x) { return Math.max(b, x.s / x.n); }, -1); }
@@ -113,7 +114,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
         if (!loading[b]) loading[b] = fetch(baseUrl + b + '/').then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (html) {
           var doc = new DOMParser().parseFromString(html, 'text/html'), svg = doc.querySelector('svg');
           svg = document.importNode(svg, true); svg.classList.add('labonly'); svgs[b] = svg; return svg;
-        });
+        }).catch(function (error) { delete loading[b]; throw error; });
         return loading[b];
       }
       function showBase(b) {
@@ -200,11 +201,15 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
         document.getElementById('result').hidden = false;
         track('lab-reveal', { id: cur.id, seconds: started ? Math.round((Date.now() - started) / 1000) : 0 });
       });
+      window.addEventListener('activity-snapshot', function (event) { store = event.detail.maps; paintBest(); if (cur) paintHist(); });
+      if (window.__activitySnapshot) { store = window.__activitySnapshot.maps; paintBest(); }
       document.getElementById('b-save').addEventListener('click', function () {
-        if (!cur) return;
+        if (!cur || window.__activityScope === 'pending') return;
         var boxes = document.querySelectorAll('#check input'), s = 0; boxes.forEach(function (b) { if (b.checked) s++; });
         (store[cur.id] = store[cur.id] || []).push({ t: Date.now(), s: s, n: boxes.length, sec: started ? Math.min(999, Math.round((Date.now() - started) / 1000)) : null });
         save(); paintBest(); paintHist();
+        var attempt = store[cur.id][store[cur.id].length - 1];
+        window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'maps', value: { mapId: cur.id, score: attempt.s, seconds: attempt.sec } } }));
         document.getElementById('saved').textContent = 'Saved: ' + s + '/' + boxes.length + '. Try another, or Start again.';
         track('lab-save', { id: cur.id, score: s + '/' + boxes.length });
       });

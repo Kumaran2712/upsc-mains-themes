@@ -6,6 +6,7 @@ import PreviewNotice from '../../components/stage0/PreviewNotice.astro';
 import BeginnerGuide from '../../components/stage0/BeginnerGuide.astro';
 import AccountControls from '../../components/stage0/AccountControls.astro';
 import { subjects, concepts, conceptsFor, conceptPath, subjectPath, uniqueConceptCount } from '../../lib/stage0/curriculum';
+import { tutorPlacements, availableFor } from '../../lib/stage0/publication';
 import { u } from '../../lib/data';
 const first = concepts.find((c) => c.id === 'polity/sovereignty')!;
 const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
@@ -22,23 +23,28 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
     <section class="s0-hero" aria-labelledby="s0-title">
       <div class="s0-hero-copy">
         <p class="s0-kicker">Before the books, a little understanding.</p>
-        <h1 id="s0-title">Make the unfamiliar<br /><em>feel familiar.</em></h1>
-        <p>Sovereignty. Inflation. Geopolitics. Big words become small steps when someone helps you make sense of them.</p>
-        <p>Explore the ideas behind the words. Bring your curiosity. You don’t need any prior knowledge.</p>
+        <h1 id="s0-title">Understand the foundations.</h1>
+        <p>Explore the language of Polity, Economics, Geography and International Relations. Start with one unfamiliar idea; no prior knowledge is needed.</p>
         <div class="s0-hero-actions">
           <a class="s0-button s0-button-primary" id="s0-continue" href={u(conceptPath(first))}>{live ? 'Explore Sovereignty' : 'Try a sample lesson'} <span aria-hidden="true">↗</span></a>
           <span>Free to explore · No memorising</span>
         </div>
         <p class="s0-footnote" id="s0-continue-caption">Start with Sovereignty. There’s no wrong place to begin.</p>
       </div>
-      <div class="s0-orbit" aria-hidden="true">
-        <span class="s0-orbit-core"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 41V23M24 28C8 29 6 17 7 10c12-1 20 5 17 18ZM24 34c15 0 19-10 18-18-11-1-19 5-18 18Z" /></svg></span>
-        <span class="s0-orbit-label">“Why do prices rise?”</span>
-        <span class="s0-orbit-label">“Who makes the rules?”</span>
-        <span class="s0-orbit-label">“What does that mean?”</span>
-        <span class="s0-orbit-label">“Oh, I get it now.”</span>
+
+    </section>
+
+    <section class="s0-section" aria-labelledby="s0-subjects">
+      <div class="s0-section-head"><h2 id="s0-subjects">Four windows into the world</h2><p>Pick a subject. Follow your curiosity.</p></div>
+      <div class="s0-subject-grid">
+        {subjects.map((s) => <a class="s0-card s0-subject-card" href={u(subjectPath(s))} data-subject-progress={s.id}>
+          <div class="s0-subject-card-head"><span class="s0-subject-icon" data-subject={s.id}><SubjectIcon kind={s.icon} /></span><span class="s0-tag">{conceptsFor(s.id).length} concepts</span></div>
+          <div><h3>{s.name} <span aria-hidden="true">↗</span></h3><p>{s.description}</p></div>
+          <div><div class="s0-subject-card-foot"><span data-count>0 of {live ? availableFor(s.id) : conceptsFor(s.id).length} available checks understood</span><span data-subject-state>Ready when you are</span></div><div class="s0-meter" style="margin-top:10px"><span data-fill></span></div></div>
+        </a>)}
       </div>
     </section>
+
 
     <section class="s0-summary" aria-label={live ? 'Your learning progress' : 'Your sample learning progress'}>
       <div><div><strong>Your starting point</strong><span id="s0-progress-caption">A little more familiar, one idea at a time.</span></div><div class="s0-meter"><span id="s0-overall-fill"></span></div></div>
@@ -47,19 +53,9 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
       <div><strong id="s0-revisit">0</strong><span>saved to revisit</span></div>
     </section>
 
+
+
     <BeginnerGuide />
-
-    <section class="s0-section" aria-labelledby="s0-subjects">
-      <div class="s0-section-head"><h2 id="s0-subjects">Four windows into the world</h2><p>Pick a subject. Follow your curiosity.</p></div>
-      <div class="s0-subject-grid">
-        {subjects.map((s) => <a class="s0-card s0-subject-card" href={u(subjectPath(s))} data-subject-progress={s.id}>
-          <div class="s0-subject-card-head"><span class="s0-subject-icon" data-subject={s.id}><SubjectIcon kind={s.icon} /></span><span class="s0-tag">{conceptsFor(s.id).length} concepts</span></div>
-          <div><h3>{s.name} <span aria-hidden="true">↗</span></h3><p>{s.description}</p></div>
-          <div><div class="s0-subject-card-foot"><span data-count>0 of {conceptsFor(s.id).length} understood</span><span data-subject-state>Ready when you are</span></div><div class="s0-meter" style="margin-top:10px"><span data-fill></span></div></div>
-        </a>)}
-      </div>
-    </section>
-
     <div class="s0-bottom-grid s0-section">
       <section class="s0-card" aria-labelledby="s0-journey-title">
         <p class="s0-kicker">A gentle guide</p>
@@ -77,7 +73,7 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
         <ul class="s0-recent-list" id="s0-recent-list"></ul>
       </section>
     </div>
-    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; their progress is separate. {live ? 'The live tutor starts with twelve pilot concepts. The full catalogue and reusable learning prompts remain free to read.' : 'All progress shown here is prototype data.'}</p>
+    <p class="s0-footnote">{uniqueConceptCount} distinct terms in {concepts.length} subject placements. Five terms appear in both Polity and International Relations; their progress is separate. {live ? `${tutorPlacements.size} tutor lessons are currently available. The full catalogue and reusable learning prompts remain free to read.` : 'All progress shown here is prototype data.'}</p>
     <noscript><p class="s0-footnote">You can browse every subject and concept without JavaScript. Enable JavaScript to try sample conversations and save preview progress.</p></noscript>
   </div>
   <script>

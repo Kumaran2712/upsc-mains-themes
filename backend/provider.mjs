@@ -65,13 +65,23 @@ export class OpenAIProvider {
 }
 
 export function validateAssessment(value, answer) {
+  // Models sometimes add quotation marks or change ASCII casing around a real
+  // excerpt. Resolve only an exact, source-verifiable span; never invent evidence.
+  let evidence = typeof value?.evidence === 'string' ? value.evidence : null;
+  if (evidence && !answer.includes(evidence)) {
+    const quoted = /^(?:"([\s\S]*)"|“([\s\S]*)”)$/.exec(evidence.trim());
+    const candidate = quoted ? quoted[1] ?? quoted[2] : evidence;
+    const fold = (text) => text.replace(/[A-Z]/g, (letter) => letter.toLowerCase());
+    const position = candidate ? fold(answer).indexOf(fold(candidate)) : -1;
+    if (position >= 0) evidence = answer.slice(position, position + candidate.length);
+  }
   if (!value || ![0, 1, 2].includes(value.score) || typeof value.misconception !== 'boolean' ||
     !['evidence', 'gap', 'feedback'].every((k) => typeof value[k] === 'string' && value[k].length <= 2400) || !value.feedback.trim() ||
-    (value.evidence && !answer.includes(value.evidence)) || (value.score === 2 && (!value.evidence.trim() || value.misconception || value.gap.trim())) ||
+    (evidence && !answer.includes(evidence)) || (value.score === 2 && (!evidence?.trim() || value.misconception || value.gap.trim())) ||
     (value.score < 2 && !value.gap.trim())) {
     throw new HttpError(502, 'invalid_assessment', 'The feedback did not contain reliable evidence. Your answer has not been graded; please retry.');
   }
-  return { score: value.score, misconception: value.misconception, evidence: value.evidence, gap: value.gap, feedback: value.feedback };
+  return { score: value.score, misconception: value.misconception, evidence, gap: value.gap, feedback: value.feedback };
 }
 
 // UTF-8 byte length plus a framing allowance is a conservative preflight token bound.

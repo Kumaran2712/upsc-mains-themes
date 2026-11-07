@@ -24,8 +24,8 @@ CREATE INDEX IF NOT EXISTS messages_conversation ON messages(user_id, concept_id
 CREATE TABLE IF NOT EXISTS operations (
   user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE, id TEXT NOT NULL,
   concept_id TEXT NOT NULL, fingerprint TEXT NOT NULL, kind TEXT NOT NULL,
-  state TEXT NOT NULL CHECK(state IN ('running','completed','failed')),
-  result TEXT, created INTEGER NOT NULL, model TEXT, prompt_version TEXT, provider_usage TEXT,
+  state TEXT NOT NULL CHECK(state IN ('running','completed','failed','cancelled','indeterminate')),
+  result TEXT, created INTEGER NOT NULL, model TEXT, prompt_version TEXT, provider_usage TEXT, lesson_version TEXT, lease_expires INTEGER, reserved_cost INTEGER, actual_cost INTEGER, price_version TEXT, lease_owner TEXT, generation INTEGER NOT NULL DEFAULT 1, cancelled_at INTEGER,
   PRIMARY KEY(user_id, id)
 );
 CREATE UNIQUE INDEX IF NOT EXISTS one_running_operation ON operations(user_id) WHERE state = 'running';
@@ -33,4 +33,5 @@ CREATE TABLE IF NOT EXISTS counters (
   bucket TEXT NOT NULL, period TEXT NOT NULL, calls INTEGER NOT NULL DEFAULT 0,
   tokens INTEGER NOT NULL DEFAULT 0, PRIMARY KEY(bucket,period)
 );
-PRAGMA user_version = 2;
+CREATE TABLE IF NOT EXISTS ai_spend (period TEXT PRIMARY KEY, microusd INTEGER NOT NULL DEFAULT 0 CHECK(microusd>=0));
+PRAGMA user_version = 5;

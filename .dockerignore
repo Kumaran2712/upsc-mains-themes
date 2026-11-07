@@ -10,4 +10,13 @@ backend/test
 *.sqlite*
 data/*
 !data/prelims.json
-tools
+tools/*
+!tools/content
+!tools/content/**
+
+**/.env
+**/.env.*
+!**/.env.example
+content/stage0/sources/*.txt
+content/stage0/runs
+content/stage0/calibration

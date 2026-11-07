@@ -1,4 +1,7 @@
 ---
+import ActivityProgress from '../components/ActivityProgress.astro';
+import AccountControls from '../components/stage0/AccountControls.astro';
+import LearningStyles from '../components/stage0/Styles.astro';
 import { u, issueUrl } from '../lib/data';
 interface Props {
   title: string;            // page-specific part of the <title>
@@ -30,15 +33,15 @@ const crumbLd = crumbs.length
 const ld = [...crumbLd, ...jsonld];
 // Navigation: a short top menu on wide screens, a bottom tab bar on phones.
 const path = Astro.url.pathname;
-const active = (href: string) => { const h = u(href); return h === u('/') ? path === h : path.startsWith(h); };
+const active = (href: string) => { const h = u(href); if (href === '/learn/') return ['/learn/', '/stage-0/', '/roadmap/'].some((x) => path.startsWith(u(x))); if (href === '/questions/') return ['/questions/', '/prelims/', '/mains/', '/papers/'].some((x) => path.startsWith(u(x))); return h === u('/') ? path === h : path.startsWith(h); };
 const NAV = [
-  { label: 'Today', href: '/daily/' }, { label: 'Prelims', href: '/prelims/' }, { label: 'Roadmap', href: '/roadmap/' },
+  { label: 'Today', href: '/daily/' }, { label: 'Learn', href: '/learn/' }, { label: 'Questions', href: '/questions/' },
   { label: 'Themes', href: '/themes/' }, { label: 'Maps', href: '/maps/' },
 ];
 const TABS = [
   { label: 'Today', href: '/daily/', icon: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5" class="fill"/>' },
-  { label: 'Prelims', href: '/prelims/', icon: '<circle cx="6.5" cy="7" r="2.5"/><circle cx="6.5" cy="17" r="2.5" class="fill"/><path d="M12 7h8M12 17h8"/>' },
-  { label: 'Roadmap', href: '/roadmap/', icon: '<path d="M5 19c0-6 14-4 14-10"/><circle cx="5" cy="19" r="1.8" class="fill"/><circle cx="19" cy="5" r="1.8"/>' },
+  { label: 'Learn', href: '/learn/', icon: '<circle cx="6.5" cy="7" r="2.5"/><circle cx="6.5" cy="17" r="2.5" class="fill"/><path d="M12 7h8M12 17h8"/>' },
+  { label: 'Questions', href: '/questions/', icon: '<path d="M5 19c0-6 14-4 14-10"/><circle cx="5" cy="19" r="1.8" class="fill"/><circle cx="19" cy="5" r="1.8"/>' },
   { label: 'Themes', href: '/themes/', icon: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>' },
   { label: 'Maps', href: '/maps/', icon: '<path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z"/><path d="M9 4v14M15 6v14"/>' },
 ];
@@ -94,6 +97,8 @@ const TABS = [
         </>)}
       </nav>
     )}
+    {!path.includes('/stage-0/') && <div class="s0"><LearningStyles /><AccountControls compact /></div>}
+    {!path.includes('/stage-0/') && <ActivityProgress />}
     <slot />
   </main>
   <footer class="foot">
@@ -231,7 +236,7 @@ const TABS = [
   .chip { font-size: .9rem; font-weight: 600; color: var(--accent); background: var(--surface); border: 1px solid var(--line); text-decoration: none; padding: 5px 12px; border-radius: 999px; }
   .chip:hover { border-color: var(--accent); background: var(--accent-soft); }
   .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 18px; }
-  .btn { font: inherit; font-size: .92rem; font-weight: 700; min-height: 40px; padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--line-strong);
+  .btn { font: inherit; font-size: .92rem; font-weight: 700; min-height: 44px; padding: 8px 16px; border-radius: var(--r-sm); border: 1.5px solid var(--line-strong);
     background: var(--surface); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
   .btn:hover { border-color: var(--accent); color: var(--accent); }
   .btn.primary, .bigbtn { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }

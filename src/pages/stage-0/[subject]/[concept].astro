@@ -6,15 +6,19 @@ import TutorPrompt from '../../../components/stage0/TutorPrompt.astro';
 import AccountControls from '../../../components/stage0/AccountControls.astro';
 import LiveWorkspace from '../../../components/stage0/LiveWorkspace.astro';
 import { concepts, conceptsFor, conceptPath, subjectPath, type Concept } from '../../../lib/stage0/curriculum';
+import { publicLessons, tutorPlacements } from '../../../lib/stage0/publication';
 import { previews, featured } from '../../../lib/stage0/previews';
 import { u } from '../../../lib/data';
 export function getStaticPaths() { return concepts.map((c) => ({ params: { subject: c.subject.id, concept: c.slug }, props: { concept: c } })); }
 const { concept: c } = Astro.props as { concept: Concept };
-const lesson = previews[c.slug];
+const published = publicLessons.get(c.id);
+const lesson = featured[c.subject.id].includes(c.slug) ? previews[c.slug] : undefined;
+const reading = published || lesson;
 const sampleList = featured[c.subject.id].map((slug) => conceptsFor(c.subject.id).find((x) => x.slug === slug)!);
-const next = sampleList[(sampleList.findIndex((x) => x.id === c.id) + 1) % sampleList.length];
+const nextList = import.meta.env.PUBLIC_STAGE0_API_URL ? conceptsFor(c.subject.id) : sampleList;
+const next = nextList[(nextList.findIndex((x) => x.id === c.id) + 1) % nextList.length];
 const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
-const available = featured[c.subject.id].includes(c.slug);
+const available = tutorPlacements.has(c.id);
 ---
 <Base title={`${c.name} — Concept Explorer`} description={lesson?.objective || c.objective} noindex focusMode crumbs={[{ name: 'Stage 0', href: u('/stage-0/') }, { name: c.subject.name, href: u(subjectPath(c.subject)) }, { name: c.category.name, href: `${u(subjectPath(c.subject))}#${c.category.id}` }]}>
   <Styles />
@@ -23,6 +27,12 @@ const available = featured[c.subject.id].includes(c.slug);
     <AccountControls compact />
     <PreviewNotice compact />
     <header class="s0-concept-heading"><div><h1>{c.name}</h1><p>{lesson?.objective || c.objective}</p></div><span class="s0-status" id="s0-current-status" data-status="Not started">Not started</span></header>
+    {reading && <section class="s0-lesson" aria-label={`Introduction to ${c.name}`}>
+      <h2>The central idea</h2>{reading.explanation.split('\n\n').map((paragraph) => <p>{paragraph}</p>)}
+      <h2>An example</h2><p>{reading.example}</p>
+      <h2>A useful distinction</h2><p>{published?.confusion || lesson?.distinction}</p>
+      {published && <><h2>Sources</h2><ul>{published.sources.map((source) => <li><a href={source.url}>{source.title}</a> — {source.locator}</li>)}</ul></>}
+    </section>}
     {live ? <LiveWorkspace name={c.name} available={available} /> : <div class="s0-conversation-layout">
       <section class="s0-chat" aria-label={`Learning conversation about ${c.name}`}>
         <div class="s0-chat-header"><div class="s0-tutor-identity"><span class="s0-tutor-avatar" aria-hidden="true">✳</span><div><strong>Your concept companion</strong><small>{lesson ? 'Prepared sample conversation' : 'Concept workspace preview'}</small></div></div>{lesson && <button type="button" class="s0-text-button" id="s0-restart">Start fresh ↺</button>}</div>

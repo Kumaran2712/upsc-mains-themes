@@ -11,3 +11,7 @@ backend/var/
 *.sqlite-wal
 __pycache__/
 node_modules
+
+# Retrieved full source texts stay local; lesson provenance and limited excerpts are versioned.
+content/stage0/sources/*.txt
+content/stage0/runs/

@@ -74,22 +74,31 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'ItemList', name: 'UPSC
     (function () {
       var done = [];
       try { done = JSON.parse(localStorage.getItem('upscthemes-done') || '[]'); } catch (e) {}
+      function paint(done) {
       var set = {}; done.forEach(function (n) { set[n] = true; });
       document.querySelectorAll('.rm-step').forEach(function (li) {
+        li.classList.remove('done'); li.querySelector('.rm-done-tag').hidden = true;
         if (set[li.dataset.n]) { li.classList.add('done'); li.querySelector('.rm-done-tag').hidden = false; }
       });
       document.querySelectorAll('.rm-count').forEach(function (c) {
         var sec = c.closest('.rm-stage'), d = sec.querySelectorAll('.rm-step.done').length;
+        c.textContent = c.dataset.total + ' themes';
         if (d) c.textContent = d + ' of ' + c.dataset.total + ' done';
       });
       var count = order.filter(function (o) { return set[o.n]; }).length;
+      document.getElementById('rm-fill').style.width = '0%';
+      document.getElementById('rm-status').textContent = '0 of ' + order.length + ' themes done.';
+      document.getElementById('rm-continue').href = order[0].url; document.getElementById('rm-continue').textContent = 'Start with step 1: ' + order[0].title;
       if (!count) return;
       var next = order.find(function (o) { return !set[o.n]; });
       document.getElementById('rm-fill').style.width = Math.round(count / order.length * 100) + '%';
-      document.getElementById('rm-status').textContent = count + ' of ' + order.length + ' themes done (' + Math.round(count / order.length * 100) + '%). Saved on this device.';
+      document.getElementById('rm-status').textContent = count + ' of ' + order.length + ' themes done (' + Math.round(count / order.length * 100) + '%).' + (window.__activityScope === 'account' ? ' Saved to your account.' : ' Saved on this device.');
       var a = document.getElementById('rm-continue');
       if (next) { a.href = next.url; a.textContent = 'Continue with step ' + next.step + ': ' + next.title; }
       else { a.textContent = 'All steps done. Revise from step 1'; }
+      }
+      window.addEventListener('activity-snapshot', function (event) { paint(event.detail.roadmap); });
+      paint(window.__activitySnapshot ? window.__activitySnapshot.roadmap : done);
     })();
   </script>
 </Base>

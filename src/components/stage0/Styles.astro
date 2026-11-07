@@ -1,5 +1,5 @@
 <style is:global>
-  .s0 { --s0-green: #286954; --s0-soft: #e6efe8; --s0-warm: #f5f1e8; --s0-purple: #7162a2; --s0-orange: #a76b36; --s0-blue: #4274a0; }
+  .s0 { --s0-green: var(--accent); --s0-soft: var(--accent-soft); --s0-success: #286954; --s0-warm: #f5f1e8; --s0-purple: #7162a2; --s0-orange: #875226; --s0-blue: #4274a0; }
   .s0 [hidden] { display: none !important; }
   .s0 button, .s0 textarea, .s0 input, .s0 select { font: inherit; }
   .s0 button, .s0 a { -webkit-tap-highlight-color: transparent; }
@@ -21,10 +21,10 @@
   .s0-preview-label::before { content: ''; width: 6px; height: 6px; background: currentColor; border-radius: 50%; }
   .s0 .s0-storage-note { border-left: 3px solid var(--omr); padding: 8px 12px; font-size: .82rem; }
   .s0-muted { color: var(--muted); font-size: .88rem; }
-  .s0-button { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); border-radius: 10px; min-height: 44px; padding: 10px 16px; font-size: .86rem !important; font-weight: 700 !important; display: inline-flex; align-items: center; justify-content: center; gap: 12px; transition: background .15s; }
+  .s0-button { border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); border-radius: var(--r-sm); min-height: 44px; padding: 10px 16px; font-size: .92rem !important; font-weight: 700 !important; display: inline-flex; align-items: center; justify-content: center; gap: 12px; transition: background .15s; }
   .s0-button:hover { background: var(--bg); border-color: var(--s0-green); }
-  .s0-button-primary { background: var(--s0-green); color: white; border-color: var(--s0-green); }
-  .s0-button-primary:hover { background: #205743; color: white; }
+  .s0-button-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .s0-button-primary:hover { background: var(--accent); color: var(--accent-ink); filter: brightness(1.08); }
   .s0-text-button { background: transparent; border: 0; color: var(--s0-green); padding: 8px 0; font-size: .84rem !important; font-weight: 700 !important; min-height: 44px; }
   .s0-section { margin-top: 32px; }
   .s0-section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 18px; margin-bottom: 15px; }
@@ -70,7 +70,7 @@
   .s0-status::before { content: ''; height: 6px; width: 6px; border-radius: 50%; background: var(--line-strong); flex: none; }
   .s0-status[data-status="Exploring"] { color: var(--s0-blue); }
   .s0-status[data-status="Developing"] { color: var(--s0-orange); }
-  .s0-status[data-status="Understood"] { color: var(--s0-green); }
+  .s0-status[data-status="Understood"] { color: var(--s0-success); }
   .s0-status[data-status="Revisit"] { color: var(--s0-purple); }
   .s0-status[data-status]:not([data-status="Not started"])::before { background: currentColor; }
   .s0-meter { height: 5px; border-radius: 8px; background: var(--bg); overflow: hidden; }
@@ -80,7 +80,7 @@
   .s0-subject-icon[data-subject="geography"] { color: var(--s0-blue); background: #e8eff7; }
   .s0-subject-icon[data-subject="international-relations"] { color: var(--s0-purple); background: #eeeaf6; }
   .s0-tag { font-size: .65rem; border: 1px solid var(--line); border-radius: 5px; padding: 2px 6px; font-weight: 600; color: var(--muted); }
-  .s0-hero { display: grid; grid-template-columns: 1.65fr 1fr; border: 1px solid #e4e7da; background: linear-gradient(115deg, #f4f5ed, #edf3ed); border-radius: 22px; overflow: hidden; }
+  .s0-hero { display: grid; grid-template-columns: 1fr; border: 1px solid #e4e7da; background: var(--surface); border-radius: 22px; overflow: hidden; }
   .s0-hero-copy { padding: 34px; }
   .s0-hero h1 { font-size: clamp(2rem, 4.7vw, 3.35rem); margin: 14px 0 18px; line-height: 1.07; letter-spacing: -.045em; }
   .s0-hero h1 em { font-style: normal; color: var(--s0-green); }
@@ -178,7 +178,7 @@
   .s0-composer:focus-within { outline: 2px solid var(--s0-green); outline-offset: 2px; }
   .s0-composer textarea { resize: none; min-height: 46px; max-height: 130px; width: 100%; border: 0; background: transparent; color: var(--ink); padding: 9px; font-size: .86rem; line-height: 1.5; }
   .s0-composer textarea:focus { outline: 0; }
-  .s0-composer button { background: var(--s0-green); border: 0; color: white; border-radius: 8px; height: 44px; width: 44px; display: grid; place-items: center; flex: none; }
+  .s0-composer button { background: var(--accent); border: 0; color: var(--accent-ink); border-radius: var(--r-sm); height: 44px; width: 44px; display: grid; place-items: center; flex: none; }
   .s0-composer button svg { width: 19px; height: 19px; }
   .s0 .s0-composer-hint { color: var(--muted); font-size: .66rem; margin: 9px 0 0; }
   .s0-chat-aside { display: grid; gap: 14px; }
@@ -208,12 +208,10 @@
   .s0-dialog p { font-size: .85rem; }
   .s0-dialog-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
   @media (prefers-color-scheme: dark) {
-    .s0 { --s0-green: #9bceb5; --s0-soft: #20392e; --s0-purple: #c5b5ed; --s0-orange: #e2b782; --s0-blue: #a6c7ed; }
+    .s0 { --s0-success: #9bceb5; --s0-purple: #c5b5ed; --s0-orange: #e2b782; --s0-blue: #a6c7ed; }
     .s0-hero { background: linear-gradient(115deg, #202c28, #1e302a); border-color: #34443c; }
     .s0-orbit::before, .s0-orbit::after { border-color: #40594a; }
     .s0-orbit-core { background: #263e31; border-color: #40594a; }
-    .s0-button-primary, .s0-composer button { color: #14261c; }
-    .s0-button-primary:hover { color: #14261c; background: #afdcc5; }
     .s0-subject-icon[data-subject="economics"] { background: #3d3020; }
     .s0-subject-icon[data-subject="geography"] { background: #213247; }
     .s0-subject-icon[data-subject="international-relations"] { background: #312844; }
@@ -266,4 +264,10 @@
     .s0-chat-aside { grid-template-columns: minmax(0, 1fr); }
     .s0-assessment { padding: 18px 15px; }
   }
+  .s0 input, .s0 textarea, .s0 select { font-size: 1rem !important; }
+  .s0-lesson { max-width: 72ch; margin: 24px 0; }
+  .s0-lesson p { font-size: 1.0625rem; line-height: 1.75; }
+  .s0-lesson h2 { margin-top: 24px; }
+  .s0-lesson ul { padding-left: 22px; }
+  .s0 [aria-busy="true"] { opacity: .7; }
 </style>

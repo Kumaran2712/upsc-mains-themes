@@ -12,11 +12,16 @@
     "check:stage0": "tsc -p tsconfig.stage0.json",
     "test:backend": "node --test backend/test/*.test.mjs",
     "backup:backend": "node --env-file-if-exists=backend/.env backend/backup.mjs",
-    "eval:tutor": "node --env-file-if-exists=backend/.env backend/evaluate.mjs"
+    "eval:tutor": "node --env-file-if-exists=backend/.env backend/evaluate.mjs",
+    "content:compile": "node tools/content/compile.mjs",
+    "content:complete": "node tools/content/compile.mjs --require-complete",
+    "content:run": "node --env-file-if-exists=backend/.env tools/content/run.mjs",
+    "backup:postgres": "node --env-file-if-exists=backend/.env backend/pg-backup.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.4"
+    "astro": "^7.4.4",
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "typescript": "^7.0.2"

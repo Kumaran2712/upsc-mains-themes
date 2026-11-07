@@ -1,0 +1,20 @@
+---
+const enabled = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
+---
+{enabled && <aside class="activity-progress" aria-label="Saved activities">
+  <p data-activity-status role="status">Loading saved activities…</p>
+  <button class="btn" data-activity-retry type="button" hidden>Retry saving</button>
+  <button class="btn" data-activity-import type="button" hidden>Import this device's guest work</button>
+  <dialog data-activity-import-dialog aria-labelledby="activity-import-title">
+    <h2 id="activity-import-title">Import guest work into this account?</h2>
+    <p data-activity-import-summary></p>
+    <p>This device may contain someone else's work. Import only entries that are yours. Saved account theme decisions take precedence; practice scores are recalculated.</p>
+    <button class="btn primary" data-activity-import-confirm type="button">Import my guest work</button>
+    <form method="dialog"><button class="btn">Cancel</button></form>
+  </dialog>
+</aside>}
+<style>.activity-progress { border-bottom: 1px solid var(--line); padding: 8px 0; margin-bottom: 16px; font-size: .9rem; } p { margin: 4px 0; } button { margin: 5px 8px 5px 0; } dialog { color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; width: min(32rem, calc(100% - 32px)); } dialog::backdrop { background: #0007; }</style>
+<script>
+  import { initialiseActivities } from '../lib/client/activities';
+  initialiseActivities();
+</script>
