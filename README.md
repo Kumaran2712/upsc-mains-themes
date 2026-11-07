@@ -4,27 +4,26 @@ A free, non-commercial site that regroups 810 UPSC GS1–GS3 Mains PYQs (2013–
 
 Static site built with [Astro](https://astro.build). 291 pages: home, a beginner roadmap, 171 theme pages, 18 area pages, paper and paper-year pages, 52 syllabus-line pages, search, about.
 
-## Launch checklist
+## Deployment
 
-Live address: **https://upscthemes.live/** (custom domain on GitHub Pages; the old `kumaran2712.github.io/upsc-mains-themes/` links forward there). The site has its own data and does not depend on any other repo.
+The public application address is **https://upscthemes.live/**. The Railway container serves the Astro build and the Node 24 API together, with `PUBLIC_STAGE0_API_URL=/api` and `SITE_URL=https://upscthemes.live`. Accounts, activity progress and tutoring use the same origin. DNS cutover status and rollback records are in [the domain cutover record](docs/upscthemes-domain-cutover.md).
 
-1. **Repo.** This repo, `Kumaran2712/upsc-mains-themes`.
-2. **Turn on Pages.** Settings → Pages → Source: **GitHub Actions**.
-3. **Variables (optional now).** The workflow already defaults to this repo's address, so the site deploys without any variables. Add these under Settings → Secrets and variables → Actions → **Variables** only to override them or to switch on analytics and Search Console:
-   | Name | Value |
-   | --- | --- |
-   | `SITE_URL` | defaults to `https://upscthemes.live` in the workflow |
-   | `BASE_PATH` | defaults to `/` (only needed for a github.io project address) |
-   | `PUBLIC_REPO_URL` | `https://github.com/Kumaran2712/upsc-mains-themes` — where "Report a typo" opens issues; leave unset to hide those links |
-   | `PUBLIC_UMAMI_WEBSITE_ID` | from step 5 |
-   | `PUBLIC_GOOGLE_SITE_VERIFICATION` | from step 6 |
-4. **Deploy.** Actions → "Deploy to GitHub Pages" → Run workflow. Every push to `main` redeploys.
-5. **Analytics (visits, views, clicks).** Sign up at [Umami Cloud](https://cloud.umami.is) (free Hobby plan), add the website, copy its Website ID into `PUBLIC_UMAMI_WEBSITE_ID`, redeploy.
-6. **SEO dashboard.** In [Google Search Console](https://search.google.com/search-console), add the site as a URL-prefix property, choose the HTML tag method, put the `content` value in `PUBLIC_GOOGLE_SITE_VERIFICATION`, redeploy, click Verify, then submit `sitemap-index.xml`. Do the same in [Bing Webmaster Tools](https://www.bing.com/webmasters) (it can import from Search Console).
+Deploy an explicitly verified commit to Railway's `intuitive-analysis / production / upsc-mains-themes` service. Preserve its `/data` volume, persistent `SESSION_SECRET` and server-only provider key. The learner store remains SQLite until the separately verified PostgreSQL migration; do not set `DATABASE_URL` to an empty database as a deployment shortcut. Deployment, backups and recovery are described in [the operations runbook](docs/flagship-operations.md).
 
-### Custom domain (recommended for SEO)
+GitHub Actions runs the backend/type/build/browser/PostgreSQL/load/container checks. Automatic Pages publishing is retired at domain cutover; **Manual GitHub Pages fallback** remains available through `workflow_dispatch` for a deliberate rollback. Publishing Pages alone cannot run the account/tutor API.
 
-A domain of your own builds search ranking you keep if you ever move hosts. Buy one, add it under Settings → Pages → Custom domain, set `SITE_URL` to it, delete `BASE_PATH`, redeploy.
+Build-time public configuration:
+
+| Name | Value |
+| --- | --- |
+| `SITE_URL` | `https://upscthemes.live` |
+| `BASE_PATH` | `/` |
+| `PUBLIC_STAGE0_API_URL` | `/api` |
+| `PUBLIC_REPO_URL` | `https://github.com/Kumaran2712/upsc-mains-themes` |
+| `PUBLIC_UMAMI_WEBSITE_ID` | The site's Umami website ID |
+| `PUBLIC_GOOGLE_SITE_VERIFICATION` | Search Console verification value(s) |
+
+Keep analytics and verification values in the Railway build environment when deploying the container. Submit `sitemap-index.xml` to Search Console after verifying the public-host cutover. Secrets such as `OPENAI_API_KEY` and `SESSION_SECRET` must never use the `PUBLIC_` prefix.
 
 ## What the dashboards show
 
@@ -55,8 +54,8 @@ Search terms with zero results tell you which themes or words to add.
 
 The concept catalogue and prompts remain free. An opt-in Node 24 service adds
 accounts, saved learning, streamed AI conversations, understanding checks and
-server-enforced free usage limits. The existing GitHub Pages site keeps its sample
-preview until a backend is deployed and `PUBLIC_STAGE0_API_URL` is configured.
+server-enforced free usage limits. The deployed pilot enables twelve placements;
+the remaining curriculum and independent model evaluation are still in progress.
 See [backend setup and deployment](docs/stage0-backend.md) and the
 [teaching rubric](docs/stage0-teaching-rubric.md).
 
@@ -91,7 +90,7 @@ The script stops and names the IDs if any question is in no theme, in two themes
 - **Boundary guard:** the build stops if the simplified outline fails any of 14 checks (PoK, Gilgit-Baltistan, Aksai Chin, Shaksgam, Siachen, Arunachal Pradesh and the island groups must be inside India; neighbouring capitals outside). Neighbouring countries are clipped so they never overlap India.
 - `tools/maps_points.json` — neighbours (MHA border lengths) and chokepoints, with the themes each links to.
 - `src/data/maps_lab.json` — sketch-lab questions: PYQ ID, the states or chokepoints to reveal, and the self-check list. The site build fails on an unknown PYQ ID, state or chokepoint name.
-- Lab scores and quiz bests are saved in the visitor's browser only.
+- Guest lab scores and quiz bests stay on the device. Signed-in activity attempts are saved to the account, with explicit guest import.
 
 ## Question and Prelims pages
 
@@ -105,7 +104,7 @@ The script stops and names the IDs if any question is in no theme, in two themes
 
 - `data/prelims.json` — 1,380 Prelims questions (2013–2026): question, options, answer letter, subject, and whether UPSC dropped it. Built by `tools/extract_prelims.py <pdf> data/prelims.json` from a topic-wise solved-papers PDF (not stored here); only questions and answer letters are kept. `tools/prelims_fixes.py` holds hand corrections for tables the PDF layout scrambled.
 - `tools/build_daily.py` — writes `src/data/daily.json`: a fixed, seeded schedule. Prelims sets mix subjects (questions without a year, without an answer, or dropped by UPSC are left out); the two Mains questions come from different papers. Day 0 is 2026-11-01; after the last set the cycle repeats.
-- Each day's questions are served as small JSON files (`/daily/p/<n>.json`, `/daily/m/<n>.json`). Answers and streaks are saved in the visitor's browser only.
+- Each day's questions are served as small JSON files (`/daily/p/<n>.json`, `/daily/m/<n>.json`). Guest work stays on the device; signed-in submitted practice is saved to the account.
 - When UPSC publishes the official 2026 Prelims key, update the answers, then set `OFFICIAL_KEY_UPTO` in `src/lib/daily.ts` to 2026.
 
 ## Licence
