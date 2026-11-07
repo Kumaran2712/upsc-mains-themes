@@ -1,6 +1,6 @@
 # Flagship operations and promotion
 
-The flagship feature remains a draft. This runbook describes promotion requirements; it does not authorize bypassing the content gate or claim that backup scheduling/alerts are active.
+The tested foundation shipped as a limited pilot on 7 November 2026. Content review continues asynchronously; the full 253-placement curriculum is incomplete. This runbook describes flagship promotion requirements and does not claim that backup scheduling/alerts are active. Public-host progress is recorded in [the domain cutover record](upscthemes-domain-cutover.md).
 
 ## Current resource boundary
 
