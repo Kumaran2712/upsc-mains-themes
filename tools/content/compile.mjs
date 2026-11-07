@@ -28,11 +28,27 @@ export async function compile(root = resolve('content/stage0')) {
   await walk(resolve(root, 'lessons'));
   published.sort((a, b) => a.id.localeCompare(b.id));
   const current = JSON.parse(await readFile('src/lib/stage0/release.json', 'utf8'));
-  const release = { version: digest(published), pilotPlacements: current.pilotPlacements.filter((id) => !published.some((l) => l.id === id)), published };
+  const pilotPlacements = current.pilotPlacements.filter((id) => !published.some(l => l.id === id));
+  const guided = [], guidedPrivate = [];
+  for (const placement of catalogue.values()) {
+    if (pilotPlacements.includes(placement.id) || published.some(l => l.id === placement.id)) continue;
+    const packet = JSON.parse(await readFile(resolve(root, 'sources', placement.id.replace('/', '--') + '.json'), 'utf8'));
+    if (!packet.sources?.length) throw new Error('Source packet required for guided tutoring: ' + placement.id);
+    for (const source of packet.sources) {
+      if (!source.excerpt?.trim() || !/^[a-f0-9]{64}$/.test(source.sha256 || '') || new URL(source.url).protocol !== 'https:') throw new Error('Invalid guided source: ' + placement.id);
+    }
+    const context = { id: placement.id, name: placement.name, subject: placement.subject.name, category: placement.category.name, objective: placement.objective, kind: 'source-guided', assessmentAvailable: false,
+      sources: packet.sources.map(({ title, url, locator, excerpt, sha256 }) => ({ title, url, locator, excerpt, sha256 })) };
+    context.version = 'guided-' + digest(context);
+    guidedPrivate.push(context);
+    guided.push({ id: context.id, version: context.version, sources: context.sources.map(({ title, url, locator }) => ({ title, url, locator })) });
+  }
+  const release = { version: digest({ published, pilotPlacements, guided }), pilotPlacements, guided, published };
   if (process.argv.includes('--require-complete') && published.length !== catalogue.size) throw new Error(`Incomplete curriculum: ${published.length}/${catalogue.size}`);
   await mkdir('content/stage0/generated', { recursive: true });
   await writeFile('src/lib/stage0/release.json', JSON.stringify(release, null, 2) + '\n');
   await writeFile('content/stage0/generated/lessons.json', JSON.stringify(privateLessons, null, 2) + '\n');
-  console.log(`Content release compiled: ${published.length}/${catalogue.size} approved; ${release.pilotPlacements.length} legacy pilots retained.`);
+  await writeFile('content/stage0/generated/guided.json', JSON.stringify(guidedPrivate, null, 2) + '\n');
+  console.log(`Content release compiled: ${published.length}/${catalogue.size} approved; ${pilotPlacements.length} legacy pilots; ${guided.length} source-guided tutors.`);
 }
 if (process.argv[1] === new URL(import.meta.url).pathname) await compile();

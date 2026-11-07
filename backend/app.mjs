@@ -134,7 +134,7 @@ export function createApplication(config, dependencies = {}) {
         await store.db.prepare('SELECT 1 AS ready').get(); json(res, 200, { ready: true }); return;
       }
       if (path === '/api/capabilities' && req.method === 'GET') {
-        json(res, 200, { tutorConfigured: provider.ready, placements: [...lessons.keys()], promptVersion: PROMPT_VERSION }); return;
+        json(res, 200, { tutorConfigured: provider.ready, placements: [...lessons.keys()], assessmentPlacements: [...lessons.values()].filter(l => l.assessmentAvailable !== false).map(l => l.id), promptVersion: PROMPT_VERSION }); return;
       }
       if (path === '/api/health' && req.method === 'GET') {
         json(res, 200, { service: 'stage0', ready: provider.ready, pilotConcepts: [...lessons.keys()], promptVersion: PROMPT_VERSION }); return;
@@ -250,6 +250,7 @@ export function createApplication(config, dependencies = {}) {
       }
       if (path === '/api/assessment/start' && req.method === 'POST') {
         const value = await body(req), lesson = lessonFor(value.conceptId), rev = revision(value.revision);
+        if (lesson.assessmentAvailable === false) fail(409, 'assessment_not_ready', 'You can explore this concept with the tutor and save your conversation. Its understanding check is still being prepared.');
         requireAI();
         const result = (await store.transaction(async () => {
           (await store.assertIdle(userId)); (await store.checkRevision(userId, lesson.id, rev)); const row = (await store.ensure(userId, lesson.id));

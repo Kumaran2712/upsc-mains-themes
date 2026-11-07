@@ -1,8 +1,8 @@
 ---
-interface Props { name: string; available: boolean }
-const { name, available } = Astro.props;
+interface Props { name: string; available: boolean; assessmentAvailable?: boolean }
+const { name, available, assessmentAvailable = available } = Astro.props;
 ---
-<div class="s0-conversation-layout" data-live-workspace data-lesson-available={String(available)}>
+<div class="s0-conversation-layout" data-live-workspace data-lesson-available={String(available)} data-assessment-available={String(assessmentAvailable)}>
   <section class="s0-chat" aria-label={`Learning conversation about ${name}`}>
     <div class="s0-chat-header"><div class="s0-tutor-identity"><span class="s0-tutor-avatar" aria-hidden="true">✳</span><div><strong>Your concept companion</strong><small>{available ? 'AI tutor · check important facts' : 'Free concept workspace'}</small></div></div>{available && <button type="button" class="s0-text-button" data-live-restart disabled>Start fresh ↺</button>}</div>
     {available ? <>
@@ -10,7 +10,7 @@ const { name, available } = Astro.props;
       <div class="s0-messages" id="s0-live-messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions" tabindex="0"></div>
       <div class="s0-chat-shortcuts" aria-label="Questions to explore"><button type="button" data-live-question="meaning" disabled>What does it mean?</button><button type="button" data-live-question="example" disabled>Give me an example</button><button type="button" data-live-question="different" disabled>Explain differently</button><button type="button" data-live-question="distinction" disabled>What is it often confused with?</button></div>
       <div class="s0-composer-wrap"><form class="s0-composer" data-live-form><label class="s0-sr" for="s0-live-input">Ask about {name}</label><textarea id="s0-live-input" placeholder={`Ask about ${name.toLowerCase()}…`} rows="2" maxlength="1200" enterkeyhint="send" required disabled></textarea><button type="submit" data-live-send aria-label="Send message" disabled>↑</button></form><div class="s0-assessment-actions"><p class="s0-composer-hint" data-live-hint role="status">Sign in to begin a learning conversation.</p><button type="button" class="s0-text-button" data-live-stop hidden>Stop reply</button></div></div>
-      <section class="s0-assessment" data-live-check hidden aria-labelledby="s0-live-check-title">
+      {assessmentAvailable && <section class="s0-assessment" data-live-check hidden aria-labelledby="s0-live-check-title">
         <p class="s0-kicker">A moment to connect the dots</p><h2 id="s0-live-check-title" tabindex="-1">How would you explain it?</h2>
         <p>One question at a time. Feedback is based on your reasoning, not your English. AI feedback can be mistaken; you can explore again and try a fresh check.</p>
         <ol class="s0-check-history" data-live-check-history></ol>
@@ -18,13 +18,13 @@ const { name, available } = Astro.props;
         <p data-live-check-complete hidden></p>
         <p role="status" aria-live="polite" data-live-check-message></p>
         <button type="button" class="s0-text-button" data-live-check-again hidden>Try a fresh check →</button>
-      </section>
+      </section>}
       <noscript><p class="s0-card">Enable JavaScript to sign in and use the AI tutor. You can read and reuse the learning prompt below without JavaScript.</p></noscript>
     </> : <div class="s0-placeholder"><p class="s0-kicker">A place for your first questions</p><h2>Explore {name.toLowerCase()} at your pace.</h2><p>This concept’s live lesson is still being prepared. You can use the free learning prompt below in an LLM you already use, and save this concept to revisit.</p></div>}
   </section>
   <aside class="s0-chat-aside" aria-label="Learning guidance">
     <section class="s0-card"><p class="s0-kicker">Just enough to begin</p><h2>Curiosity is the only prerequisite.</h2><p>Ask again. Ask differently. Everyday examples are welcome here.</p><ul class="s0-boundaries"><li>One idea at a time</li><li>Simple, familiar examples</li><li>No definitions to memorise</li></ul></section>
-    <section class="s0-card"><p class="s0-kicker">Your learning</p><h2>Return whenever you need to.</h2>{available && <><p>When you feel ready, try a short check of meaning, distinction and application.</p><button type="button" class="s0-button" data-live-open-check disabled>Check understanding →</button><p class="s0-footnote">Progress reflects your latest check. If a new doubt comes up, explore it and try a fresh check.</p></>}<button type="button" class="s0-text-button" data-live-revisit style="width:100%;margin-top:5px" disabled>Save to revisit</button><p class="s0-footnote">Saving a reminder keeps your understanding-check result.</p><button type="button" class="s0-text-button" data-live-sign-in>Sign in to learn</button><button type="button" class="s0-text-button" data-live-refresh>Refresh saved progress</button></section>
+    <section class="s0-card"><p class="s0-kicker">Your learning</p><h2>Return whenever you need to.</h2>{assessmentAvailable ? <><p>When you feel ready, try a short check of meaning, distinction and application.</p><button type="button" class="s0-button" data-live-open-check disabled>Check understanding →</button><p class="s0-footnote">Progress reflects your latest check. If a new doubt comes up, explore it and try a fresh check.</p></> : <p>Ask questions, explore examples and return to your saved conversation. This concept’s understanding check is still being prepared.</p>}<button type="button" class="s0-text-button" data-live-revisit style="width:100%;margin-top:5px" disabled>Save to revisit</button><p class="s0-footnote">{assessmentAvailable ? 'Saving a reminder keeps your understanding-check result.' : 'Save a reminder to return to this concept.'}</p><button type="button" class="s0-text-button" data-live-sign-in>Sign in to learn</button><button type="button" class="s0-text-button" data-live-refresh>Refresh saved progress</button></section>
   </aside>
   <dialog class="s0-dialog" data-live-restart-dialog aria-labelledby="s0-live-restart-title"><h2 id="s0-live-restart-title">Start this concept afresh?</h2><p>This permanently clears this concept’s saved conversation, check and revisit reminder in your account. Your other concepts stay saved.</p><form method="dialog" class="s0-dialog-actions"><button class="s0-button" value="cancel">Keep exploring</button><button class="s0-button s0-button-primary" value="restart">Start fresh</button></form></dialog>
 </div>

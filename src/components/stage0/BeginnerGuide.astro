@@ -19,7 +19,7 @@ const live = Boolean(import.meta.env.PUBLIC_STAGE0_API_URL);
   </details>
   <details class="s0-guide-detail">
     <summary>How our tutor should help you learn</summary>
-    <p>{live ? 'Start here with Concept Explorer. Our free AI tutor begins with twelve pilot concepts, with saved conversations and short understanding checks. The teaching approach is simple:' : 'Start here with Concept Explorer. We’re building a free AI tutor around this approach; today’s preview uses prepared sample conversations. The teaching approach is simple:'}</p>
+    <p>{live ? 'Start here with Concept Explorer. Our free AI tutor covers all 253 concepts with saved conversations. Short understanding checks are available for selected concepts. The teaching approach is simple:' : 'Start here with Concept Explorer. We’re building a free AI tutor around this approach; today’s preview uses prepared sample conversations. The teaching approach is simple:'}</p>
     <ol class="s0-teaching-steps">{teachingSteps.map((step) => <li><strong>{step.title}.</strong> {step.text}</li>)}</ol>
     <p>Ask again whenever you need to. Understanding means you can explain an idea in your own words, distinguish it from a similar idea and use it in a new situation. {live ? 'The tutor checks those three kinds of evidence. Its feedback is a learning signal, and you can revisit an explanation or try a fresh check.' : 'Our preview lets you inspect example feedback; it does not evaluate your answers yet.'}</p>
   </details>

@@ -48,7 +48,7 @@ test('accounts, real protocol streaming, ownership, assessment evidence, bookmar
   assert.equal((await chat(alice, 0)).status, 409);
   assert.equal((await bob.json('/conversation?conceptId=polity%2Fsovereignty')).body.conversation.messages.length, 0);
   assert.equal((await bob.json('/operation?id=' + id)).status, 404);
-  assert.equal((await alice.json('/chat', { conceptId: 'geography/erosion', revision: 0, message: 'Explain.', requestId: crypto.randomUUID() })).status, 409);
+  assert.equal((await alice.json('/chat', { conceptId: 'geography/not-a-concept', revision: 0, message: 'Explain.', requestId: crypto.randomUUID() })).status, 404);
 
   let start = await alice.json('/assessment/start', { conceptId: 'polity/sovereignty', revision: 1 });
   assert.equal(start.status, 200); let state = start.body.conversation;

@@ -25,10 +25,15 @@ test('assessment validation rejects ungrounded evidence and contradictory perfec
 });
 test('published and pilot placements have bounded subject contexts and fresh applications', () => {
   const release = JSON.parse(readFileSync(new URL('../../src/lib/stage0/release.json', import.meta.url), 'utf8'));
-  assert.equal(lessons.size, new Set([...release.pilotPlacements, ...release.published.map((lesson) => lesson.id)]).size);
+  assert.equal(lessons.size, new Set([...release.pilotPlacements, ...release.published.map(lesson => lesson.id), ...release.guided.map(c => c.id)]).size);
+  assert.equal(lessons.size, 253);
   assert.equal(lessons.get('polity/state').subject, 'Polity');
   if (lessons.has('international-relations/state')) assert.equal(lessons.get('international-relations/state').subject, 'International Relations');
   for (const lesson of lessons.values()) {
+    if (lesson.kind === 'source-guided') {
+      assert.equal(lesson.assessmentAvailable, false); assert(lesson.sources.every(s => s.excerpt && s.sha256 && s.url.startsWith('https://')));
+      assert.throws(() => questionsFor(lesson, 12345), /not available/); continue;
+    }
     assert(lesson.core && lesson.distinction && lesson.sources.length);
     const questions = questionsFor(lesson, 12345); assert.equal(questions.length, 3);
     assert(questions.every((q) => q.question && q.expected));
