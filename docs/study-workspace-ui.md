@@ -1,0 +1,15 @@
+# Study workspace UI
+
+Implements the user's MCPMarket light/dark screenshot reference within the existing Astro app. This supersedes the five-item-only navigation proposal in `flagship-architecture.md`: Syllabus and Good Reads are now first-class destinations, as explicitly requested.
+
+The shared shell provides a persistent desktop sidebar, compact search toolbar, a theme switch that respects system settings until a preference is chosen, and a native mobile navigation dialog. On phones, Home, Today and Learn remain within reach; More exposes the full catalogue. Lesson pages retain navigation in the top toolbar while leaving the bottom free for the tutor composer. Existing routes and metadata remain intact. A no-JavaScript mobile navigation fallback keeps every study destination available.
+
+The minimal design system keeps Figtree and semantic subject/feedback colors, with neutral surfaces, one restrained teal link/focus color, monochrome primary actions, thin dividers, 6–10px standard corners, and visible keyboard focus. No new animation, decorative background or metric dashboard is introduced. Explicit light preference also controls Stage 0 styling under a dark operating system.
+
+Home brings Syllabus and Good Reads above the learning section and repeats them with descriptions in the study library. Learners can start a concept, resume their latest account conversation, continue actual roadmap progress or today's practice. Progress is loaded from existing account APIs; guest practice stays device-scoped. Account changes clear private resume content before new results arrive. Failed progress loads expose a retry and preserve access to anonymous reading. Existing Umami `home-cta` events distinguish learning starts and resumes without attaching usernames or conversation content.
+
+Visual QA also identified that `.btn` display styles overrode native `hidden` on inactive retry/import controls. The global hidden rule now preserves that attribute. The redundant guest activity banner is suppressed; account saving, import and failure controls remain available in the relevant account state.
+
+Validation: type checking; production build; exact introductory reading on all 253 pages; existing browser journeys for practice, accounts, recovery, persistence, maps and live tutoring; and `tests/browser/workspace.mjs`. The new browser suite checks 48 light/dark layouts at 1360, 768, 390 and 320px, visible home references, theme persistence/OS override, native keyboard menu focus and Escape recovery, resize recovery, one account dialog per page, private resume isolation and progress-error retry. AI interactions use the local provider fixture. The CI workflow also runs backend, load and Docker packaging checks.
+
+Retention improvement remains a hypothesis. During the first 100-learner launch, observe find-a-concept, find-the-syllabus, choose-a-source and resume tasks, then compare return usage and successful task completion. These implementation and browser checks are not a claim of user research, a full assistive-technology audit or improved retention already measured.

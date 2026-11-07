@@ -1,4 +1,5 @@
 ---
+import Navigation from '../components/workspace/Navigation.astro';
 import ActivityProgress from '../components/ActivityProgress.astro';
 import AccountControls from '../components/stage0/AccountControls.astro';
 import LearningStyles from '../components/stage0/Styles.astro';
@@ -31,20 +32,9 @@ const crumbLd = crumbs.length
     }]
   : [];
 const ld = [...crumbLd, ...jsonld];
-// Navigation: a short top menu on wide screens, a bottom tab bar on phones.
 const path = Astro.url.pathname;
-const active = (href: string) => { const h = u(href); if (href === '/learn/') return ['/learn/', '/stage-0/', '/roadmap/'].some((x) => path.startsWith(u(x))); if (href === '/questions/') return ['/questions/', '/prelims/', '/mains/', '/papers/'].some((x) => path.startsWith(u(x))); return h === u('/') ? path === h : path.startsWith(h); };
-const NAV = [
-  { label: 'Today', href: '/daily/' }, { label: 'Learn', href: '/learn/' }, { label: 'Questions', href: '/questions/' },
-  { label: 'Themes', href: '/themes/' }, { label: 'Maps', href: '/maps/' },
-];
-const TABS = [
-  { label: 'Today', href: '/daily/', icon: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5" class="fill"/>' },
-  { label: 'Learn', href: '/learn/', icon: '<circle cx="6.5" cy="7" r="2.5"/><circle cx="6.5" cy="17" r="2.5" class="fill"/><path d="M12 7h8M12 17h8"/>' },
-  { label: 'Questions', href: '/questions/', icon: '<path d="M5 19c0-6 14-4 14-10"/><circle cx="5" cy="19" r="1.8" class="fill"/><circle cx="19" cy="5" r="1.8"/>' },
-  { label: 'Themes', href: '/themes/', icon: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>' },
-  { label: 'Maps', href: '/maps/', icon: '<path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z"/><path d="M9 4v14M15 6v14"/>' },
-];
+const section = path.includes('/stage-0/') ? 'Learn / Foundations' : path.includes('/roadmap/') ? 'Learn / Roadmap' : path.includes('/sources/') ? 'Good Reads' : path.includes('/syllabus/') ? 'Syllabus' : path.includes('/daily/') ? 'Today' : path.includes('/learn/') ? 'Learn' : path.includes('/themes/') ? 'Themes' : path.includes('/maps/') ? 'Maps' : path.includes('/search/') ? 'Search' : /^\/(questions|prelims|mains|papers)\//.test(path) ? 'Questions' : path === u('/') ? 'Home' : 'UPSC Themes';
+
 ---
 <!doctype html>
 <html lang="en-IN">
@@ -64,7 +54,16 @@ const TABS = [
   <meta property="og:image" content={ogImage} />
   <meta property="og:locale" content="en_IN" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#2b3f8f" />
+  <meta name="theme-color" content="#fafaf9" />
+  <script is:inline>
+    (function () {
+      var preference;
+      try { preference = localStorage.getItem('upscthemes-theme'); } catch (e) {}
+      var theme = preference === 'light' || preference === 'dark' ? preference : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#121210' : '#fafaf9';
+    })();
+  </script>
   <link rel="icon" href={u('/favicon.svg')} type="image/svg+xml" />
   <link rel="sitemap" href={u('/sitemap-index.xml')} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,19 +74,36 @@ const TABS = [
 </head>
 <body class:list={{ 'focus-mode': focusMode }}>
   <a class="skip" href="#main">Skip to content</a>
+  <aside class="workspace-sidebar" aria-label="Study workspace">
+    <a class="brand" href={u('/')}><span class="brand-symbol" aria-hidden="true">U</span>UPSC Themes</a>
+    <Navigation label="Main" />
+    <div class="sidebar-foot"><a href={u('/about/')}>About & sources</a><span>Free to learn. At your pace.</span></div>
+  </aside>
   <header class="top">
-    <div class="wrap topin">
-      <a class="brand" href={u('/')} aria-label="UPSC Themes home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>UPSC Themes</a>
-      <nav class="mainnav" aria-label="Main">
-        {NAV.map((n) => <a href={u(n.href)} aria-current={active(n.href) ? 'page' : undefined}>{n.label}</a>)}
-      </nav>
-      <a class="searchbtn" href={u('/search/')} aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg><span>Search</span></a>
+    <div class="topin">
+      <button type="button" class="icon-button mobile-menu" data-menu-open aria-label="Open navigation" aria-haspopup="dialog" aria-controls="workspace-menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <a class="toolbar-home" href={u('/')} aria-label="UPSC Themes home">UPSC Themes</a>
+      <span class="toolbar-section">{section}</span>
+      <a class="searchbtn" href={u('/search/')} aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg><span>Search anything</span></a>
+      <button type="button" class="icon-button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false"><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5a8.5 8.5 0 1 0 9.5 9.5Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
     </div>
   </header>
+  <dialog id="workspace-menu" class="workspace-menu" aria-labelledby="workspace-menu-title">
+    <div class="menu-heading"><h2 id="workspace-menu-title">UPSC Themes</h2><button type="button" class="icon-button" data-menu-close aria-label="Close navigation">×</button></div>
+    <Navigation label="Mobile navigation" />
+    <a class="menu-about" href={u('/about/')}>About & sources</a>
+  </dialog>
   <nav class="tabbar" aria-label="Sections">
-    {TABS.map((n) => <a href={u(n.href)} aria-current={active(n.href) ? 'page' : undefined}><svg viewBox="0 0 24 24" aria-hidden="true" set:html={n.icon} /><span>{n.label}</span></a>)}
+    <a href={u('/')} aria-current={path === u('/') ? 'page' : undefined}>Home</a>
+    <a href={u('/daily/')} aria-current={path.startsWith(u('/daily/')) ? 'page' : undefined}>Today</a>
+    <a href={u('/learn/')} aria-current={['/learn/', '/stage-0/', '/roadmap/'].some((h) => path.startsWith(u(h))) ? 'page' : undefined}>Learn</a>
+    <button type="button" data-menu-open aria-label="More navigation" aria-haspopup="dialog" aria-controls="workspace-menu">More <span aria-hidden="true">☰</span></button>
   </nav>
-  <main id="main" class="wrap">
+  <noscript>
+    <div class="workspace-no-script"><Navigation label="Navigation without JavaScript" /></div>
+    <style is:inline>.mobile-menu, [data-theme-toggle], .tabbar button, .s0-account, .activity-progress { display: none !important; } .tabbar { grid-template-columns: repeat(3, 1fr); }</style>
+  </noscript>
+  <main id="main" class="wrap" tabindex="-1">
     {crumbs.length > 0 && (
       <nav class="crumbs" aria-label="Breadcrumb">
         <a href={u('/')}>Home</a>
@@ -108,6 +124,10 @@ const TABS = [
       <p><a href={u('/about/')}>Privacy</a>{issueUrl() && <> · <a href={issueUrl()} rel="noopener" data-umami-event="report-error" data-umami-event-where="footer">Report an error</a></>}</p>
     </div>
   </footer>
+  <script>
+    import { initialiseWorkspace } from '../lib/client/workspace';
+    initialiseWorkspace();
+  </script>
   <script is:inline>
     // Tracked actions that need script (copy, share). Umami's `umami` global is absent until it loads or if blocked.
     (function () {
@@ -142,26 +162,24 @@ const TABS = [
 </html>
 
 <style is:global>
-  /* UPSC Themes — a study app built around the exam's own objects: the OMR answer sheet (ballpoint-blue
-     ink, rose dropout-ink bubbles) and GS paper colours (GS1 teal / GS2 violet / GS3 amber). */
+  /* Shared workspace tokens. Subject and feedback colors retain their semantic meaning. */
   :root {
-    --bg: #f1f3f8; --surface: #ffffff; --ink: #141a33; --muted: #46506a; --line: #d9dfea; --line-strong: #b9c2d4;
-    --accent: #2340b5; --accent-ink: #ffffff; --accent-soft: #e6ebfb; --omr: #d2457a; --omr-soft: #fbe7ef;
+    --bg: #fafaf9; --surface: #ffffff; --ink: #20211f; --muted: #61645e; --line: #e3e4df; --line-strong: #b9bdb5; --hover: #eeefeb;
+    --accent: #29616a; --accent-ink: #ffffff; --accent-soft: #eaf1f1; --omr: #655c73; --omr-soft: #f0edf3; --action: #242522; --action-ink: #ffffff;
     --ok: #0f7a55; --ok-soft: #e1f4ec; --no: #bf3329; --no-soft: #fbe6e4;
     --gs1: #0b7666; --gs1-bg: #dff2ee; --gs2: #6236c4; --gs2-bg: #ece6fb; --gs3: #a15c00; --gs3-bg: #fbeedb; --hl: #fff1a8;
     --f-display: "Figtree", system-ui, sans-serif; --f-body: "Figtree", system-ui, sans-serif; --f-mono: ui-monospace, "SF Mono", Menlo, monospace;
-    --r-sm: 8px; --r-md: 12px; --r-lg: 20px;
+    --r-sm: 6px; --r-md: 8px; --r-lg: 10px;
     color-scheme: light;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1324; --surface: #171c31; --ink: #eef1fa; --muted: #a9b2cb; --line: #2a3150; --line-strong: #3b4468;
-      --accent: #8ea6ff; --accent-ink: #0f1324; --accent-soft: #232c55; --omr: #f07aa6; --omr-soft: #3a1f2d;
+  :root[data-theme="dark"] {
+      --bg: #121210; --surface: #181816; --ink: #efefea; --muted: #aaa9a1; --line: #32332d; --line-strong: #62645a; --hover: #272822;
+      --accent: #a5cbd0; --accent-ink: #121210; --accent-soft: #203234; --omr: #c7bdd4; --omr-soft: #302a38; --action: #efefea; --action-ink: #171816;
       --ok: #5fd3a4; --ok-soft: #123326; --no: #ff8a80; --no-soft: #3a1c1a;
       --gs1: #5fd1bf; --gs1-bg: #12302b; --gs2: #b9a2ff; --gs2-bg: #2a2150; --gs3: #f0b764; --gs3-bg: #33260f; --hl: #4a4113; color-scheme: dark;
-    }
   }
   *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   html { -webkit-text-size-adjust: 100%; }
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   img { max-width: 100%; }
@@ -169,37 +187,62 @@ const TABS = [
   .wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
   .skip { position: absolute; left: -999px; } .skip:focus { left: 16px; top: 8px; background: var(--surface); padding: 8px; z-index: 30; }
 
-  /* Header + navigation */
-  .top { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
-  .topin { display: flex; align-items: center; gap: 12px 28px; min-height: 60px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.12rem; letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
-  .mark { display: inline-grid; grid-template-columns: repeat(3, 9px); gap: 3px; }
-  .mark i { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--omr); }
-  .mark i:nth-child(2) { background: var(--accent); border-color: var(--accent); }
-  .mainnav { display: flex; gap: 4px; margin-left: 8px; }
-  .mainnav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem; padding: 7px 12px; border-radius: 999px; }
-  .mainnav a:hover { color: var(--ink); background: var(--bg); }
-  .mainnav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
-  .searchbtn { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem;
-    border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px 6px 10px; }
+  /* Shared workspace: sidebar, toolbar and mobile navigation. */
+  .workspace-sidebar { position: fixed; inset: 0 auto 0 0; width: 232px; padding: 28px 16px 18px; border-right: 1px solid var(--line); background: var(--bg); display: flex; flex-direction: column; overflow-y: auto; z-index: 21; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 750; font-size: 1.12rem; text-decoration: none; margin: 0 10px 38px; }
+  .brand-symbol { display: grid; place-items: center; height: 28px; width: 28px; border: 1px solid var(--line-strong); border-radius: 6px; font-size: .9rem; }
+  .sidebar-foot { margin-top: auto; padding: 20px 12px 0; border-top: 1px solid var(--line); display: grid; gap: 8px; font-size: .82rem; }
+  .sidebar-foot a { color: var(--ink); text-decoration: none; min-height: 44px; display: flex; align-items: center; }
+  .sidebar-foot span { color: var(--muted); font-size: .75rem; }
+  .top, main.wrap, .foot { margin-left: 232px; }
+  .top { background: var(--bg); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
+  .topin { display: flex; align-items: center; gap: 12px; min-height: 72px; padding: 10px 32px; }
+  .toolbar-section { font-weight: 600; font-size: .94rem; }
+  .toolbar-home, .mobile-menu { display: none !important; }
+  .searchbtn { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--muted); text-decoration: none; font-size: .84rem; border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; }
   .searchbtn:hover { color: var(--ink); border-color: var(--line-strong); }
-  .searchbtn svg, .tabbar svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-  .tabbar svg .fill { fill: currentColor; }
-  .tabbar { display: none; }
+  .icon-button { display: inline-grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: var(--ink); cursor: pointer; font: inherit; font-size: 1.5rem; }
+  .icon-button:hover { background: var(--hover); }
+  .searchbtn svg, .icon-button svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .theme-sun { display: none; }
+  :root[data-theme="dark"] .theme-sun { display: block; }
+  :root[data-theme="dark"] .theme-moon { display: none; }
+  .tabbar, .workspace-no-script { display: none; }
+  .workspace-menu { background: var(--bg); color: var(--ink); border: 0; border-right: 1px solid var(--line); padding: 20px 16px; margin: 0; height: 100dvh; max-height: 100dvh; width: min(320px, 100%); max-width: 100%; overflow-y: auto; }
+  .workspace-menu::backdrop { background: #0006; }
+  .menu-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 28px; }
+  .menu-heading h2 { font-size: 1.1rem; margin: 0; }
+  .menu-about { display: inline-flex; min-height: 44px; align-items: center; margin-left: 12px; color: var(--muted); }
+  html:has(.workspace-menu[open]) { overflow: hidden; }
+  main.wrap { max-width: 1232px; padding-inline: 40px; min-height: 65vh; }
+  .foot .wrap { max-width: 1232px; padding-inline: 40px; }
+  .skip:focus { z-index: 50; }
+  @media (max-width: 1000px) and (min-width: 761px) {
+    .workspace-sidebar { width: 208px; padding-inline: 12px; }
+    .top, main.wrap, .foot { margin-left: 208px; }
+    main.wrap, .foot .wrap { padding-inline: 24px; }
+    .topin { padding-inline: 24px; }
+  }
   @media (max-width: 760px) {
-    .mainnav { display: none; }
-    .searchbtn { padding: 8px; } .searchbtn span { display: none; }
-    .tabbar { display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 25;
-      background: var(--surface); border-top: 1px solid var(--line); padding: 6px 4px calc(6px + env(safe-area-inset-bottom, 0px)); }
-    .tabbar a { display: grid; justify-items: center; gap: 2px; padding: 4px 0; font-size: .72rem; font-weight: 600; color: var(--muted); text-decoration: none; }
-    .tabbar a[aria-current="page"] { color: var(--accent); }
-    body { padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
+    .workspace-sidebar { display: none; }
+    .workspace-no-script { display: block; padding: 20px 16px 0; }
+    .top, main.wrap, .foot { margin-left: 0; }
+    .topin { min-height: 64px; padding: 8px 16px; gap: 8px; }
+    .mobile-menu { display: inline-grid !important; }
+    .toolbar-home { display: block !important; color: var(--ink); text-decoration: none; font-size: .94rem; font-weight: 700; }
+    .toolbar-section { display: none; }
+    .searchbtn { padding: 10px; min-height: 44px; } .searchbtn span { display: none; }
+    .tabbar { display: grid; grid-template-columns: repeat(4, 1fr); position: fixed; inset: auto 0 0; z-index: 20; background: var(--bg); border-top: 1px solid var(--line); padding: 4px 8px calc(4px + env(safe-area-inset-bottom, 0px)); }
+    .tabbar a, .tabbar button { font: inherit; font-size: .78rem; font-weight: 600; min-height: 48px; display: flex; align-items: center; justify-content: center; gap: 6px; background: transparent; color: var(--muted); border: 0; text-decoration: none; cursor: pointer; }
+    .tabbar [aria-current] { color: var(--ink); box-shadow: inset 0 -2px var(--accent); }
+    body { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
     body.focus-mode { padding-bottom: 0; }
-    .focus-mode .top, .focus-mode .tabbar { display: none; }
+    .focus-mode .tabbar { display: none; }
+    main.wrap, .foot .wrap { padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
   }
 
   /* Type */
-  main.wrap { padding-block: 22px 64px; }
+  main.wrap { padding-block: 28px 64px; }
   .crumbs { font-size: .86rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
   .crumbs a { color: var(--muted); }
   h1 { font-weight: 800; font-size: clamp(1.75rem, 4.2vw, 2.6rem); line-height: 1.12; letter-spacing: -.025em; margin: 4px 0 12px; text-wrap: balance; max-width: 26ch; }
@@ -239,8 +282,8 @@ const TABS = [
   .btn { font: inherit; font-size: .92rem; font-weight: 700; min-height: 44px; padding: 8px 16px; border-radius: var(--r-sm); border: 1.5px solid var(--line-strong);
     background: var(--surface); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
   .btn:hover { border-color: var(--accent); color: var(--accent); }
-  .btn.primary, .bigbtn { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-  .btn.primary:hover, .bigbtn:hover { filter: brightness(1.08); color: var(--accent-ink); }
+  .btn.primary, .bigbtn { background: var(--action); border-color: var(--action); color: var(--action-ink); }
+  .btn.primary:hover, .bigbtn:hover { filter: brightness(1.08); color: var(--action-ink); }
   .btn:disabled { opacity: .45; cursor: default; }
   a.btn { text-decoration: none; }
 

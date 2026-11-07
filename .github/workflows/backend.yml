@@ -2,9 +2,9 @@ name: Check Stage 0 backend
 on:
   push:
     branches: [main]
-    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/components/workspace/**', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
   pull_request:
-    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
+    paths: ['Dockerfile', '.dockerignore', 'tests/**', 'tools/migrate-sqlite-to-postgres.mjs', 'src/layouts/**', 'src/lib/client/**', 'src/components/ActivityProgress.astro', 'src/components/workspace/**', 'src/pages/**', 'backend/**', 'tools/content/**', 'content/**', 'src/lib/stage0/**', 'src/components/stage0/**', 'src/pages/stage-0/**', 'package*.json', 'tsconfig.stage0.json', '.github/workflows/backend.yml']
 permissions:
   contents: read
 jobs:
@@ -62,6 +62,7 @@ jobs:
           node tests/browser/flagship.mjs
           node tests/browser/activities.mjs
           node tests/browser/tutor.mjs
+          node tests/browser/workspace.mjs
       - name: Synthetic launch load and provider cancellation
         run: node tests/load/flagship.mjs
       - name: Build backend container

@@ -21,6 +21,7 @@ export function initialiseActivities() {
   }
   async function refresh() {
     const current = ++generation; owner = auth.user?.username; server = undefined; importButton.hidden = true;
+    status.closest<HTMLElement>('.activity-progress')!.dataset.scope = owner ? 'account' : 'guest';
     window.__activityScope = owner ? 'pending' : 'guest'; publish(owner ? empty() : guest());
     pending.splice(0); retry.hidden = true;
     if (!owner) { status.textContent = 'Guest activities stay on this device. Sign in to save across devices.'; return; }
