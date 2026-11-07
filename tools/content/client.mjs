@@ -3,6 +3,10 @@ import { resolve } from 'node:path';
 import { digest } from './contract.mjs';
 import { modelPrice, actualCost, PRICE_VERSION } from '../../backend/prices.mjs';
 
+// Full prompts stay in the private working receipt for reconciliation. Release
+// evidence needs provider output and attribution, not forty repeated requests.
+const exportReceipt = ({ request, ...receipt }) => receipt;
+
 export async function atomicJson(path, value) {
   const temporary = path + '.tmp';
   await writeFile(temporary, JSON.stringify(value, null, 2) + '\n', { mode: 0o600 });
@@ -54,7 +58,7 @@ export async function createContentClient({ directory, budgetUsd, maxCalls, apiK
         await atomicJson(path, { state: 'dispatched', model, stage, executedAt: new Date().toISOString(), promptVersion: 'content-pipeline-v3', requestHash, reservedMicrousd: reserved, request });
         return null;
       });
-      if (cached) return cached;
+      if (cached) return exportReceipt(cached);
       // Never replay a request after timeout, incomplete response or lost receipt.
       const response = await fetcher(url, { method: 'POST', headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(request), signal: AbortSignal.timeout(120000) });
       if (!response.ok) throw new Error(`Provider HTTP ${response.status}; dispatch retained for reconciliation`);
@@ -70,7 +74,7 @@ export async function createContentClient({ directory, budgetUsd, maxCalls, apiK
         // uncertain request's reservation or allows the same call to run twice.
         ledger.chargedMicrousd += charged - reserved;
         await atomicJson(ledgerPath, ledger);
-        return receipt;
+        return exportReceipt(receipt);
       });
     },
     budget: () => ({ ...ledger, callsThisInvocation: calls }),

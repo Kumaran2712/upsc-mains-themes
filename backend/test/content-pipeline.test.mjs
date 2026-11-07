@@ -31,12 +31,14 @@ test('completed content receipts reconcile real usage once and reject model or b
   const client = await createContentClient({ directory, budgetUsd: 1, maxCalls: 1, apiKey: 'synthetic', fetcher });
   const first = await client.call('gpt-5.4-mini', 'one', 'test', 'test');
   assert.equal(first.chargedMicrousd, 98);
+  assert.equal(first.request, undefined);
   assert.deepEqual(await client.call('gpt-5.4-mini', 'one', 'test', 'test'), first); assert.equal(dispatched, 1);
   await assert.rejects(client.call('gpt-5.4-mini', 'two', 'test', 'test'), /budget/);
   await assert.rejects(client.call('unknown-model', 'one', '', ''), /Unknown model/);
   await assert.rejects(client.call('gpt-5.4-mini', 'one', '', '', { model: 'gpt-5.4' }), /Unsupported/);
   assert.equal(JSON.parse(await readFile(join(directory, 'budget.json'))).chargedMicrousd, 98);
-  const files = await readdir(directory); assert(files.some(f => /^[a-f0-9]{64}\.json$/.test(f))); await client.close();
+  const files = await readdir(directory), receiptFile = files.find(f => /^[a-f0-9]{64}\.json$/.test(f)); assert(receiptFile);
+  assert.equal(JSON.parse(await readFile(join(directory, receiptFile))).request.instructions, 'test'); await client.close();
 });
 
 const scores = () => Object.fromEntries(dimensions.map(d => [d, 2]));
