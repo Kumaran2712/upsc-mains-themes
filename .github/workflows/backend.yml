@@ -40,6 +40,8 @@ jobs:
         env:
           SITE_URL: https://upscthemes.live
           PUBLIC_STAGE0_API_URL: /api
+      - name: Verify introductory reading on all 253 concept pages
+        run: node tests/content-introductions.mjs
       - name: Browser journeys with a local provider fixture
         run: |
           google-chrome --headless=new --no-sandbox --disable-dev-shm-usage --remote-debugging-port=9222 --user-data-dir="$RUNNER_TEMP/flagship-chrome" about:blank > "$RUNNER_TEMP/chrome.log" 2>&1 &

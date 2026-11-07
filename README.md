@@ -54,7 +54,8 @@ Search terms with zero results tell you which themes or words to add.
 
 The concept catalogue and prompts remain free. An opt-in Node 24 service adds
 accounts, saved learning, streamed AI conversations, understanding checks and
-server-enforced free usage limits. Live tutoring covers all 253 placements;
+server-enforced free usage limits. All 253 concepts include an introductory guide
+with a central idea, example and distinction, alongside live tutoring;
 twelve concepts include automated understanding checks. The full reviewed authored
 curriculum remains in progress. See the [live tutoring rollout](docs/stage0-live-rollout.md).
 See [backend setup and deployment](docs/stage0-backend.md) and the

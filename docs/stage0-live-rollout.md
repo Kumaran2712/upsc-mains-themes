@@ -27,3 +27,9 @@ All 26 backend checks pass against PostgreSQL 18, including new concepts in all 
 - This browser run used the ordinary public-host resolver with certificate verification and QUIC disabled in the QA browser. One live learner-style model request was made for the deployment smoke test; no offline batch generation was run.
 
 No learner schema migration is part of this release. Rollback uses the previous healthy Railway deployment `6d5435b5-c7ef-4d71-a07b-2b181283c153` and retains the existing persistent volume. That previous artifact supports only the twelve original pilots, so rollback reduces tutoring availability and should be reported as degraded service.
+
+## Introductory reading for every concept
+
+The next update addresses the separate reading gap: all 253 concepts now have an authored central idea, example and useful distinction before the chat workspace, including for anonymous readers. Four versioned subject files under `content/stage0/introductions/` contain the actual text. The twelve existing pilot introductions are preserved. New guides are AI-assisted editorial drafts; they do not claim independent model-review approval and do not create private assessment anchors or mastery results.
+
+The compiler requires complete, non-duplicated coverage, and CI verifies the actual three text sections on every generated concept page. The same guide is supplied to the source-guided tutor so follow-ups can refer to what the learner has read. The diplomatic High Commissioner reference was corrected to the Australian foreign affairs department's explanation, replacing unrelated UN-office passages. No offline provider generation batch is needed for this directly authored reading update. Deployment verification will follow CI.

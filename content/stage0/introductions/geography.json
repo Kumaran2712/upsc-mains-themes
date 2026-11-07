@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "independent-review-pending",
+  "entries": [
+    {
+      "id": "geography/agriculture",
+      "explanation": "Agriculture involves cultivating plants and raising animals for food, materials or other uses. Its forms depend on environmental conditions, resources, markets and farming practices.",
+      "example": "Growing rice and keeping dairy cattle are both agricultural activities, although they require different inputs, skills and environmental conditions.",
+      "distinction": "Agriculture is broader than crop cultivation alone. Its output is also different from the later processing and distribution that occur elsewhere in a food supply chain.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/air-pressure",
+      "explanation": "Air pressure is the force per unit area exerted by the atmosphere. Differences in pressure contribute to the movement of air and the development of weather systems.",
+      "example": "Suppose one area has higher pressure than a nearby area at a comparable level. The difference helps drive air movement, modified by rotation and friction.",
+      "distinction": "High pressure does not mean high temperature, and low pressure does not mean low temperature. Pressure and temperature interact, but they are different measurements.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/anticyclone",
+      "explanation": "An anticyclone is a large-scale circulation associated with high atmospheric pressure. Sinking air often limits cloud development, although actual conditions depend on the season and location.",
+      "example": "An anticyclone can contribute to a period of settled weather. In some settings, light winds can also allow pollution to accumulate near the ground.",
+      "distinction": "An anticyclone is not simply a weak cyclone. Its pressure pattern and general circulation differ, and it does not guarantee pleasant weather in every situation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/atmosphere",
+      "explanation": "The atmosphere is the layer of gases surrounding Earth, held by gravity. It supports life, helps regulate temperature and contains the conditions in which most weather occurs.",
+      "example": "Clouds and winds form within the atmosphere. Changes in heat, moisture and pressure help explain many weather patterns.",
+      "distinction": "The atmosphere is not empty space. Its gases, particles and water vary with height and location, rather than forming one uniform layer.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/axis",
+      "explanation": "An axis is an imaginary line around which a body rotates. Earth's axis passes through the North and South Poles and is tilted relative to the perpendicular to its orbital plane.",
+      "example": "A classroom globe turns around a line through its two poles. The line represents Earth's rotational axis rather than a physical rod inside the real planet.",
+      "distinction": "The axis and the Equator are different. The axis runs through the poles; the Equator is an imaginary circle around Earth's surface halfway between them.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/biodiversity",
+      "explanation": "Biodiversity is the variety of life, including diversity within species, between species and across ecosystems. It concerns variation and relationships, not only a count of large or familiar animals.",
+      "example": "A region may contain several forest types, many species and genetic variation within its crop varieties. Each contributes a different dimension of biodiversity.",
+      "distinction": "Species richness counts how many species are present. Biodiversity is broader and also includes genetic and ecosystem variation, as well as how life is distributed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/biome",
+      "explanation": "A biome is a broad ecological region characterised by patterns of climate and major types of vegetation and organisms. Its boundaries are general rather than perfectly sharp.",
+      "example": "Tropical rainforests and tundra are examples of different biomes, with very different temperature, moisture and vegetation patterns.",
+      "distinction": "A biome is a broad category spanning many places. A particular forest, pond or grassland can be studied as a more local ecosystem within that wider setting.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/birth-rate",
+      "explanation": "The crude birth rate is the number of live births during a year per thousand people in the population. It is one measure used to understand demographic change.",
+      "example": "In a simplified population of 10,000 people with 200 live births in a year, the crude birth rate is 20 per thousand.",
+      "distinction": "Birth rate is different from total fertility rate, which concerns births per woman under a specified pattern of age-specific fertility. The measures have different denominators and meanings.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/climate",
+      "explanation": "Climate describes the long-term patterns of weather in a place: typical temperatures, rainfall, seasons and their variation. These patterns are usually studied over decades.",
+      "example": "Describing a place as having hot summers and a rainy monsoon is a statement about its climate. Saying it will rain tomorrow is about weather.",
+      "distinction": "Weather is what is happening over a short time. Climate is the long-term pattern. A changing climate can shift the odds of particular weather, but one event alone does not describe the whole pattern.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "geography/conservation",
+      "explanation": "Conservation is the protection and careful management of natural systems, species or resources so their important values can persist. It can involve reducing damage, restoring conditions and regulating use.",
+      "example": "Protecting a wetland's water flows and limiting destructive activity can help conserve its habitats and the services it provides to nearby communities.",
+      "distinction": "Conservation does not always mean excluding every human use. The appropriate approach depends on the resource, ecological needs, rights and the purposes of protection.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/continent",
+      "explanation": "A continent is one of Earth's major land divisions, identified through a combination of physical geography and geographic convention. The exact continent-counting scheme can differ.",
+      "example": "Europe and Asia are often treated as separate continents even though they form one connected landmass. This shows the role of convention in the classification.",
+      "distinction": "A continent is not a country or a tectonic plate. Political borders and plate boundaries do not neatly match the conventional divisions between continents.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/coordinates",
+      "explanation": "Coordinates are values used within a reference system to identify a location. Latitude and longitude are a common geographic coordinate pair, while other systems use grid-based values.",
+      "example": "A rescue team given both a location's latitude and longitude can identify a position more precisely than if it receives only a broad place name.",
+      "distinction": "Coordinates only make sense with their reference system and units. A pair of grid distances should not be read as latitude and longitude in degrees.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/cyclone",
+      "explanation": "A cyclone is a large-scale circulation of air around a region of low pressure. Cyclones differ by setting and structure, including tropical cyclones and systems outside the tropics.",
+      "example": "A tropical cyclone over warm ocean water can develop strong winds and heavy rain, with coastal flooding risk when it approaches land.",
+      "distinction": "Not every low-pressure area becomes a severe tropical cyclone. Tropical and mid-latitude cyclones also have different formation processes and structures.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/death-rate",
+      "explanation": "The crude death rate is the number of deaths during a year per thousand people in a population. It is influenced by age structure as well as health and living conditions.",
+      "example": "In a simplified population of 10,000 people with 80 deaths in a year, the crude death rate is eight per thousand.",
+      "distinction": "A higher crude death rate does not automatically prove worse healthcare. An older population can have more deaths relative to its total size even with good health services.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/desert",
+      "explanation": "A desert is a region with very little precipitation relative to its dry conditions. Deserts can be hot or cold and support plants and animals adapted to limited available water.",
+      "example": "A cold polar region can qualify as a desert if it receives very little precipitation, despite having ice on the ground.",
+      "distinction": "Desert does not simply mean a hot place covered in sand. Dryness is central, while temperature, surface materials and vegetation vary.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/earth",
+      "explanation": "Earth is the planet on which we live, with interacting land, water, air and living systems. Its shape is approximately spherical, with a slight flattening at the poles rather than a perfect mathematical sphere.",
+      "example": "When sunlight reaches one side of Earth, that side experiences daylight while the opposite side is in darkness. Earth's rotation changes which places face the Sun.",
+      "distinction": "Earth as a planet is different from a flat map of its surface. Every flat world map changes some combination of shapes, areas, distances or directions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/earthquake",
+      "explanation": "An earthquake is shaking caused by a sudden release of energy within Earth, commonly when rocks move along a fault. Seismic waves carry that energy through the ground.",
+      "example": "Stress can build along a fault until rocks slip, sending waves outward and causing shaking in nearby places.",
+      "distinction": "Earthquake magnitude describes the event's size, while intensity describes shaking effects at a particular location. The same earthquake can produce different intensities in different places.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/ecosystem",
+      "explanation": "An ecosystem consists of living organisms interacting with one another and with their physical environment. Energy flows and the cycling of materials connect its different parts.",
+      "example": "A pond contains plants, animals, microbes, water and sediment. Changes in one part, such as nutrient supply, can affect other parts of the system.",
+      "distinction": "An ecosystem includes non-living conditions as well as organisms. A list of species alone does not describe all the interactions that make up the system.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/equator",
+      "explanation": "The Equator is an imaginary circle around Earth halfway between the poles. It is assigned zero degrees latitude and separates the Northern and Southern Hemispheres.",
+      "example": "A place labelled 10°N lies north of the Equator. A place labelled 10°S is the same angular distance to its south.",
+      "distinction": "The Equator is a reference for latitude. The prime meridian is a reference for longitude, so they answer different location questions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/erosion",
+      "explanation": "Erosion is the removal and transport of soil, rock or other surface material by agents such as flowing water, wind, ice or gravity. It can shape landscapes and affect land productivity.",
+      "example": "After heavy rain, runoff can carry exposed soil from a bare slope into a stream. Ground cover can help reduce that movement in suitable conditions.",
+      "distinction": "Weathering breaks material down where it is. Erosion involves its removal and movement; deposition occurs when transported material is laid down elsewhere.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/forest",
+      "explanation": "A forest is a land ecosystem dominated by trees and their associated plants, animals, microbes and physical conditions. Forests vary greatly in species, structure and climate.",
+      "example": "A forest can influence local water movement, support habitats and provide livelihoods. Removing its tree cover can affect more than the supply of timber.",
+      "distinction": "A forest is not simply any group of identical planted trees. Natural forests and plantations can differ greatly in biodiversity, structure and ecological functions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/glacier",
+      "explanation": "A glacier is a persistent mass of land ice formed from accumulated snow that moves under its own weight. Its movement can erode and reshape the ground beneath it.",
+      "example": "Snow accumulating over many years in a suitable mountain setting can compact into ice and contribute to a slowly moving glacier.",
+      "distinction": "A glacier is different from floating sea ice. Glaciers form on land, although pieces can break off into water as icebergs.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/global-warming",
+      "explanation": "Global warming is the long-term increase in Earth's average surface temperature. The current sustained warming is primarily driven by human-caused increases in greenhouse gases.",
+      "example": "A long-term warming trend can coexist with a cold week in one city, because a local short event and a global average describe different things.",
+      "distinction": "Global warming is one part of climate change. Climate change also includes shifts in rainfall, extremes, ice and other features beyond average temperature.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/globe",
+      "explanation": "A globe is a three-dimensional, scaled representation of Earth. Its rounded surface helps show the overall arrangement of continents, oceans and location lines without flattening the planet.",
+      "example": "Turning a globe makes it easier to see how a route can cross the Pacific even when a flat world map shows places near opposite edges.",
+      "distinction": "A globe represents Earth's shape well but cannot conveniently show every local detail. Flat maps are easier to carry and enlarge, but involve projection distortions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/greenhouse-effect",
+      "explanation": "The greenhouse effect is the warming influence of gases that absorb and emit some of the infrared radiation leaving Earth's surface. The natural effect helps keep Earth warmer than it would otherwise be.",
+      "example": "Water vapour and carbon dioxide affect how energy moves through the atmosphere. Adding long-lived greenhouse gases can strengthen the warming influence.",
+      "distinction": "The greenhouse effect is different from the ozone hole. It concerns Earth's energy balance, while ozone depletion concerns changes in protective stratospheric ozone.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/hemisphere",
+      "explanation": "A hemisphere is one half of a sphere. In geography, the Equator defines the Northern and Southern Hemispheres, while a meridian-based division can define eastern and western halves.",
+      "example": "A place south of the Equator is in the Southern Hemisphere regardless of whether its longitude is east or west.",
+      "distinction": "A hemisphere is a broad half of Earth, not a continent. One continent can extend across the dividing line between hemispheres.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/humidity",
+      "explanation": "Humidity describes water vapour in the air. Different measures express either how much vapour is present or how close the air is to saturation at a given temperature.",
+      "example": "Air with the same amount of water vapour can have a higher relative humidity after it cools, because saturation conditions depend on temperature.",
+      "distinction": "High relative humidity does not necessarily mean the air contains more water vapour than warmer air with a lower relative humidity. The temperature and measure both matter.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/industrialisation",
+      "explanation": "Industrialisation is a process in which industrial production and related organisation become more important in an economy. It often involves new technologies, investment and changes in work and settlement patterns.",
+      "example": "A region developing manufacturing clusters and associated transport and services may experience industrialisation, with changes in jobs and demand for skills.",
+      "distinction": "Industrialisation is different from urbanisation. They can reinforce each other, but cities also grow through services, administration and other activities that are not manufacturing.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/irrigation",
+      "explanation": "Irrigation is the deliberate supply of water to crops or agricultural land, supplementing or replacing rainfall. Its suitability depends on water availability, soils, crops and management.",
+      "example": "A farmer using drip lines to deliver water near plant roots is irrigating. The water may come from a canal, reservoir or groundwater source.",
+      "distinction": "Irrigation is not the same as rainfall. More irrigation is not automatically better: excessive or poorly managed supply can waste water or damage soil conditions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/island",
+      "explanation": "An island is land surrounded by water. Islands differ greatly in size, origin and location, and can occur in rivers, lakes or seas.",
+      "example": "A land area surrounded by the water of a lake is an island even though it is far from the ocean.",
+      "distinction": "An island is surrounded by water, while a peninsula remains connected to a larger land area. An island is not automatically an independent country.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/lake",
+      "explanation": "A lake is an inland body of standing water occupying a basin. Lakes vary in size, depth, salinity and origin, and may have rivers flowing into or out of them.",
+      "example": "Rainfall, groundwater and incoming streams can supply a lake. Evaporation and outflow affect how much water remains.",
+      "distinction": "Lakes are not all freshwater, and standing water does not mean their water never circulates. Salinity depends on the lake's water and dissolved-material balance.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/latitude",
+      "explanation": "Latitude describes how far north or south a place is from the Equator, measured as an angle in degrees. The Equator is 0°. The poles are 90° north and 90° south.",
+      "example": "Delhi lies at about 29° north latitude. That tells us it is north of the Equator. A latitude alone does not give its full location, because many places share that latitude.",
+      "distinction": "Latitude tells us north or south of the Equator. Longitude tells us east or west of the prime meridian, an agreed reference line. Together they help locate a place.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "geography/longitude",
+      "explanation": "Longitude measures a place's angular position east or west of the prime meridian. Lines joining places of the same longitude run from one pole to the other.",
+      "example": "A location labelled 75°E lies east of the prime meridian. Its longitude alone does not say whether it is north or south of the Equator.",
+      "distinction": "Longitude measures east-west position; latitude measures north-south position. Both are usually needed to locate a place precisely.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/map",
+      "explanation": "A map is a representation of selected features of an area, usually on a flat surface. It uses choices such as scale, symbols and projection to make information understandable.",
+      "example": "A transport map highlights routes and stations, while a relief map highlights landforms. Each shows selected information rather than everything present in the area.",
+      "distinction": "A map is not a neutral miniature copy of the world. Its purpose and design determine what it includes, simplifies or leaves out.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/migration",
+      "explanation": "Migration is a change in a person's usual place of residence, within a country or across borders. Definitions differ in the distance and duration required for a move to be counted.",
+      "example": "A person moving from a village to a city for sustained work can be an internal migrant. Moving to reside in another country is international migration.",
+      "distinction": "Migration is different from every short trip or daily commute. The change in usual residence, along with the definition being used, matters.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/monsoon",
+      "explanation": "A monsoon is a seasonal change in large-scale winds associated with shifting heating and circulation patterns. In many regions it produces strong seasonal differences in rainfall.",
+      "example": "Much of India receives a major share of its rainfall during the summer monsoon season, though the timing and distribution differ across regions.",
+      "distinction": "Monsoon is not simply another word for heavy rain. It describes a seasonal circulation system, and a monsoon can include dry spells and uneven rainfall.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/mountain",
+      "explanation": "A mountain is a prominent elevation rising above the surrounding land, usually with substantial slopes and relief. Mountains can form through processes such as tectonic movement or volcanic activity.",
+      "example": "The Himalayas illustrate how movement and collision of tectonic plates can build major mountain systems over long periods.",
+      "distinction": "Mountains and hills do not have one universally applied height boundary. Relief, slope and local convention also influence the names used.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/natural-resources",
+      "explanation": "Natural resources are materials, living systems or environmental features that people can use or value. Water, minerals, forests and sunlight are familiar examples.",
+      "example": "A community may use a river for drinking water, irrigation and fishing. The same resource can support several purposes that need to be balanced.",
+      "distinction": "A resource's usefulness depends partly on knowledge, technology and social needs. Being natural also does not mean that its supply is unlimited or freely accessible.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/non-renewable-resources",
+      "explanation": "Non-renewable resources exist in stocks that are not replenished on human timescales at a rate comparable to use. Many minerals and fossil fuels fall into this category.",
+      "example": "Coal formed through geological processes over very long periods. Burning a stock of coal does not replace it within an ordinary planning horizon.",
+      "distinction": "Non-renewable does not always mean usable only once. Some metals can be recycled, although recycling has limits and does not make the original mineral deposit renewable.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/ocean",
+      "explanation": "An ocean is a major division of Earth's interconnected body of salt water. Oceans influence climate, support living systems and connect distant regions through water circulation and human activity.",
+      "example": "Water can circulate between the Indian and other oceans because the ocean system is connected, even though maps assign different names to major regions.",
+      "distinction": "Ocean names divide a connected global system. The boundary between two named oceans is not a physical wall that prevents water or marine life from moving.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/peninsula",
+      "explanation": "A peninsula is an area of land projecting into water while remaining connected to a larger land area. It is commonly described as being bordered by water on three sides.",
+      "example": "The Indian peninsula projects southward between major surrounding water bodies while remaining connected to the rest of the Asian landmass.",
+      "distinction": "A peninsula is not an island because its land connection remains. Its identity is a landform description rather than a statement about political borders.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/plain",
+      "explanation": "A plain is a broad area of relatively low relief, with gentle changes in elevation. Plains can form through deposition, erosion or other geological processes.",
+      "example": "A river can deposit sediment across a wide area, gradually helping build a floodplain with relatively gentle terrain.",
+      "distinction": "A plain need not be at sea level or covered entirely by fertile farmland. Its defining feature is low relief rather than a particular use or exact altitude.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/planet",
+      "explanation": "A planet is a large astronomical body orbiting a star, with a definition that also depends on its physical and orbital characteristics. The Solar System's formal classification distinguishes planets from dwarf planets and smaller bodies.",
+      "example": "Earth and Mars are planets orbiting the Sun. They reflect sunlight rather than producing their visible light through the same process as a star.",
+      "distinction": "A planet and a star are different kinds of objects. A planet's moon is usually described as a natural satellite rather than another planet simply because it appears round.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/plateau",
+      "explanation": "A plateau is an elevated area with a relatively broad, level or gently uneven surface. Its edges can be steep, while rivers and other processes may cut valleys into it.",
+      "example": "The Deccan Plateau is an extensive elevated region rather than one narrow peak. Its surface is not perfectly flat everywhere.",
+      "distinction": "A plateau differs from a mountain peak in its broad upper surface. It differs from a plain mainly in its elevation and relationship to surrounding terrain, not simply in flatness.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/population",
+      "explanation": "Population is the number of people in a defined area or group at a particular time. Its size changes through births, deaths and migration.",
+      "example": "A town's population can rise because more children are born, because people move in, or because both occur. Boundary changes also affect comparisons.",
+      "distinction": "Population size and population growth rate are different. A large population need not be growing quickly, while a small place can have a high growth rate.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/population-density",
+      "explanation": "Population density relates the number of people to a unit of area, commonly people per square kilometre. It helps compare how population is distributed across places of different sizes.",
+      "example": "If 10,000 people live in a 20-square-kilometre area, the average density is 500 people per square kilometre under those boundaries.",
+      "distinction": "An average density does not show exactly where everyone lives. A district can contain a crowded town and sparsely populated countryside despite having one overall figure.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/precipitation",
+      "explanation": "Precipitation is water released from clouds that reaches the surface in liquid or solid form. It includes rain, snow, sleet and hail.",
+      "example": "A mountain area can receive snow while a lower nearby area receives rain. Both receive precipitation, but in different forms.",
+      "distinction": "Cloud formation alone does not guarantee precipitation reaches the ground. Water droplets or ice particles must develop and survive the journey to the surface.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/rainfall",
+      "explanation": "Rainfall is precipitation reaching the surface as liquid water drops. Its amount and timing affect water supplies, agriculture, rivers and flood conditions.",
+      "example": "A rain gauge recording 20 millimetres indicates a depth of rainwater over a level collecting area, rather than the height of puddles everywhere nearby.",
+      "distinction": "Rainfall is one form of precipitation. Snow, hail and other forms are precipitation too, even though they are not liquid rain when they reach the surface.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/renewable-resources",
+      "explanation": "Renewable resources can be replenished through natural processes on timescales relevant to their use. Whether use is sustainable depends on replenishment, demand and environmental conditions.",
+      "example": "A forest can regrow, but harvesting trees faster than they regenerate can reduce the forest even though timber is usually classified as renewable.",
+      "distinction": "Renewable does not mean inexhaustible or impact-free. A renewable resource can still be depleted locally, damaged or used faster than it recovers.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/revolution",
+      "explanation": "Revolution is the movement of a body around another body along an orbit. Earth's revolution around the Sun provides the basis for a year.",
+      "example": "As Earth moves around the Sun, its tilted axis changes how sunlight is distributed between the hemispheres during the year. This combination helps produce seasons.",
+      "distinction": "Revolution alone does not explain the seasons. Earth's axial tilt is crucial; seasons are not simply caused by Earth moving nearer to or farther from the Sun.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/river",
+      "explanation": "A river is a natural flow of water moving through a channel, usually toward another river, a lake or the sea. Its water can come from rainfall, snowmelt, groundwater and other sources.",
+      "example": "After rain falls across a drainage basin, some water enters connected streams and contributes to a larger river's flow.",
+      "distinction": "A river is different from its drainage basin. The river is the flowing channel system; the basin is the area from which water drains into it.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/rotation",
+      "explanation": "Rotation is the spinning of a body around its own axis. Earth's rotation is responsible for the regular change between day and night as different places turn toward or away from the Sun.",
+      "example": "Imagine marking a point on a spinning globe. The point repeatedly turns into and out of a lamp's light, illustrating the basic day-and-night relationship.",
+      "distinction": "Rotation is spinning around an axis; revolution is movement around another body. Earth does both, but the two motions are different.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/rural-settlement",
+      "explanation": "A rural settlement is a place of residence classified as rural, often associated with lower settlement density or stronger connections to primary activities. Official definitions differ across countries.",
+      "example": "A village with homes, farms, workshops and local services can be a rural settlement. Its residents need not all work in agriculture.",
+      "distinction": "Rural does not simply mean backward or without services. Rural settlements vary greatly in livelihoods, infrastructure, size and connections to nearby towns.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/scale",
+      "explanation": "Map scale expresses the relationship between a distance on a map and the corresponding distance on the ground. It can be shown as a ratio, statement or scale bar.",
+      "example": "At a scale of 1:100,000, one centimetre on the map represents one kilometre on the ground, assuming the map's stated scale applies there.",
+      "distinction": "A large-scale map usually shows a smaller area in greater detail. The term refers to the ratio, not simply to how large the paper is.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/sea",
+      "explanation": "A sea is commonly a named region of salt water, often smaller than an ocean and partly bordered by land. Geographic naming is not completely uniform.",
+      "example": "The Arabian Sea is connected to the wider Indian Ocean. Its regional name helps describe a particular part of that ocean system.",
+      "distinction": "Seas are not always completely enclosed, and names alone do not determine physical classification. The Caspian Sea, for example, is a landlocked inland water body.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/soil",
+      "explanation": "Soil is the surface material formed through interactions among minerals, organic matter, water, air and organisms. It develops over time and supports many forms of terrestrial life and cultivation.",
+      "example": "Leaves decomposing on the ground can contribute organic matter, while weathered rock supplies mineral material. Roots and organisms interact with both.",
+      "distinction": "Soil is not merely crushed rock. Its structure, living organisms and organic components help determine water movement, fertility and the conditions for plant growth.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/solar-system",
+      "explanation": "The Solar System consists of the Sun and the objects held in orbit around it by gravity. These include planets, their moons, dwarf planets, asteroids, comets and smaller material.",
+      "example": "Earth orbits the Sun, while the Moon orbits Earth. Both are part of the Solar System, despite having different immediate orbital relationships.",
+      "distinction": "The Solar System is not the whole universe or even the whole Milky Way. The Sun is one star within a much larger galaxy.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/temperature",
+      "explanation": "Temperature describes how hot or cold something is. In weather and climate, air temperature helps explain differences between places and changes over time.",
+      "example": "The same town can have a cooler night and a warmer afternoon as its surface gains and loses energy through the daily cycle.",
+      "distinction": "Temperature is different from heat, which concerns energy transfer due to a temperature difference. A temperature reading alone also does not describe all weather conditions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/time-zone",
+      "explanation": "A time zone is an area using a specified standard time relative to a reference such as UTC. Earth's rotation explains differences in local solar time, while official zone boundaries also reflect administrative choices.",
+      "example": "Two places at different longitudes can use the same official clock time if their government assigns them to one time zone.",
+      "distinction": "Local solar time and official standard time are different. Time-zone boundaries do not have to follow meridians exactly, and clock rules can change by law.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/urbanisation",
+      "explanation": "Urbanisation is an increase in the share of a population living in places classified as urban. It can result from migration, natural population change and the reclassification of settlements.",
+      "example": "Suppose a growing proportion of a region's residents live in towns and cities. That change illustrates urbanisation, even if some rural areas are also growing.",
+      "distinction": "Urbanisation is not identical to the growth of one city. A city's population can increase while the national urban share changes little, depending on changes elsewhere.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/valley",
+      "explanation": "A valley is an elongated low area between higher ground. Many valleys are shaped by rivers or glaciers, although their form reflects several interacting processes.",
+      "example": "A river cutting into a landscape can deepen a valley over time. A glacier can shape a wider valley with a different cross-section.",
+      "distinction": "A valley is a landform; the river that may occupy it is a moving body of water. A valley can remain even when its original shaping process has changed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/volcano",
+      "explanation": "A volcano is an opening or volcanic structure through which material from Earth's interior can reach the surface. Eruptions can release lava, ash and gases, with very different styles and effects.",
+      "example": "When molten material reaches the surface, it is called lava. Repeated eruptions can build a volcanic cone or other landform.",
+      "distinction": "Magma is molten material below the surface; lava is magma that has emerged. Not every mountain is a volcano, and not every volcano has a steep cone.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/water-cycle",
+      "explanation": "The water cycle is the continuous movement of water between the atmosphere, surface and subsurface. Processes include evaporation, condensation, precipitation, infiltration and the movement of water through rivers and groundwater.",
+      "example": "Rain may soak into soil, enter groundwater and later feed a stream. Some water returns to the atmosphere through evaporation and plant transpiration.",
+      "distinction": "The water cycle does not mean every place always has enough usable water. Water can be stored, polluted or distributed unevenly across locations and seasons.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "geography/weather",
+      "explanation": "Weather is the condition of the atmosphere at a particular place and time: temperature, rain, wind and other conditions. It can change within hours or days.",
+      "example": "A rainy afternoon in Delhi is weather. Whether you need an umbrella today depends on today’s weather, even if the season is usually dry.",
+      "distinction": "Weather describes short-term conditions. Climate describes the patterns and typical range of those conditions over many years. One unusually cold day does not by itself show that the climate has changed.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "geography/wind",
+      "explanation": "Wind is the movement of air, commonly described by its horizontal direction and speed. Pressure differences help drive it, while Earth's rotation, friction and local terrain influence its path.",
+      "example": "A sea breeze can develop when land and nearby water heat differently, producing local pressure differences and an onshore flow of air.",
+      "distinction": "Winds are named for the direction they come from. A northerly wind comes from the north rather than travelling toward it.",
+      "origin": "AI-assisted-editorial-draft"
+    }
+  ]
+}
