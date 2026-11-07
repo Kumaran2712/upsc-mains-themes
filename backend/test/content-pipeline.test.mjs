@@ -161,3 +161,30 @@ test('the compiler cannot publish a newly reviewed lesson without independent re
   await writeFile(join(root, 'reviews', 'polity--state.json'), JSON.stringify(result.approval));
   await assert.rejects(compile(root), /original public guide required/);
 });
+
+test('guide edits invalidate publication evidence even when the earlier model review and runtime receipts remain valid', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'guide-staleness-')); t.after(() => rm(root, { recursive: true, force: true }));
+  const originals = JSON.parse(await readFile('content/stage0/introductions/polity.json', 'utf8'));
+  const { id, explanation, example, distinction } = originals.entries.find(e => e.id === 'polity/state');
+  const options = fixture(); options.originalGuide = { id, explanation, example, distinction };
+  const call = options.call;
+  options.call = async (...args) => {
+    const receipt = await call(...args);
+    if (args[1].includes(':content-review')) {
+      const response = JSON.parse(receipt.output);
+      response.guideReview = { binding: args[3].guideReviewInput.binding, originalDecision: 'approved', proposedApproved: true, rationale: 'Synthetic review for staleness test', findings: [] };
+      receipt.output = JSON.stringify(response);
+    }
+    return receipt;
+  };
+  const result = await executePlacement(options);
+  await mkdir(join(root, 'introductions'), { recursive: true }); await mkdir(join(root, 'lessons', 'polity'), { recursive: true }); await mkdir(join(root, 'reviews'), { recursive: true });
+  for (const subject of ['polity', 'economics', 'geography', 'international-relations']) await writeFile(join(root, 'introductions', subject + '.json'), await readFile('content/stage0/introductions/' + subject + '.json'));
+  await writeFile(join(root, 'lessons', 'polity', 'state.json'), JSON.stringify(result.lesson));
+  await writeFile(join(root, 'reviews', 'polity--state.json'), JSON.stringify(result.approval));
+  // An exact guide passes its binding checks and still needs real calibration controls.
+  await assert.rejects(compile(root), error => error.code === 'ENOENT' && error.path.endsWith('current-controls.json'));
+  originals.entries.find(e => e.id === id).explanation += ' An additional unreviewed claim.';
+  await writeFile(join(root, 'introductions', 'polity.json'), JSON.stringify(originals));
+  await assert.rejects(compile(root), /Original public guide changed/);
+});
