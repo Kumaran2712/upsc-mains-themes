@@ -122,6 +122,24 @@ try {
   await click('.mobile-menu');
   await command('Emulation.setDeviceMetricsOverride',{width:1360,height:1000,deviceScaleFactor:1,mobile:false},session);
   await wait("!document.querySelector('#workspace-menu').open");
+  await navigate('/daily/');
+  await wait("window.__activityScope==='guest' && document.querySelector('.pqi .opt')");
+  if (await evalJS("!document.querySelector('#pscore').hidden")) await click('#pretry');
+  await click('.pqi .opt'); await click('#pcheck');
+  const correct = await evalJS("[...document.querySelectorAll('.pqi')].map(li=>li.querySelector('.opt.ok').dataset.k)");
+  await click('#pretry');
+  await evalJS(`{ const questions = document.querySelectorAll('.pqi'), correct = ${JSON.stringify(correct)}; questions[0].querySelector('[data-k="'+correct[0]+'"]').click(); [...questions[1].querySelectorAll('.opt')].find(b=>b.dataset.k!==correct[1]).click(); }`);
+  await click('#pcheck');
+  assert(await evalJS("!!document.querySelector('.opt.no b') && !!document.querySelector('.opt.ok b')"));
+  for (const theme of ['light','dark']) {
+    if (await evalJS('document.documentElement.dataset.theme')!==theme) await click('[data-theme-toggle]');
+    const contrasts = await evalJS(`(() => {
+      function luminance(value) { const rgb=value.match(/\\d+/g).slice(0,3).map(Number).map(n=>{n/=255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4}); return .2126*rgb[0]+.7152*rgb[1]+.0722*rgb[2]; }
+      return [...document.querySelectorAll('.opt.ok b,.opt.no b')].map(el=>{const s=getComputedStyle(el),a=luminance(s.color),b=luminance(s.backgroundColor);return (Math.max(a,b)+.05)/(Math.min(a,b)+.05)});
+    })()`);
+    assert(contrasts.every(ratio=>ratio>=4.5),'Practice answer labels need 4.5:1 contrast in '+theme+': '+contrasts);
+  }
+  console.log('PASS: real correct/incorrect practice feedback meets 4.5:1 text contrast in both themes');
   await command('Emulation.setScriptExecutionDisabled',{value:true},session);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true},session);
   await command('Page.navigate',{url:origin+'/'},session);
