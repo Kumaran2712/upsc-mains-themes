@@ -32,8 +32,8 @@ const otherHistory = lm.slug === 'india-history';
   <p class="lead">{lm.lead}</p>
   {otherHistory && <p><a class="chip" href={u('/maps/history/')}>See world history on the map</a></p>}
 
-  <div class="maptools" role="tablist" aria-label="Map layers">
-    {layers.map((l: any, i: number) => <button class="tog lt" type="button" role="tab" data-layer={l.id} aria-pressed={i === 0 ? 'true' : 'false'}>{l.name}</button>)}
+  <div class="maptools" role="group" aria-label="Map layers">
+    {layers.map((l: any, i: number) => <button class="tog lt" type="button" data-layer={l.id} aria-pressed={i === 0 ? 'true' : 'false'}>{l.name}</button>)}
   </div>
   <div class="panel lnote" id="lnote" aria-live="polite"></div>
   {hasPlaces && <p class="maptools"><button class="tog" type="button" id="names" aria-pressed="false">Names</button></p>}
@@ -113,7 +113,16 @@ const otherHistory = lm.slug === 'india-history';
         layers.forEach(function (l) { if (l.kind !== 'states') return; l.groups.forEach(function (g) { if (g.items.indexOf(name) > -1) out.push({ l: l, g: g }); }); });
         return out;
       }
-      var round = null;
+      var round = null, advanceTimer = null;
+      window.addEventListener('activity-snapshot', function (event) { best = event.detail.quizzes[KEY.slice('upscthemes-quiz-'.length)] || 0; if (round) { clearTimeout(advanceTimer); round = null; ask.textContent = 'Tap Start for a new round.'; fb.textContent = ''; start.textContent = 'Start again'; svg.classList.remove('quiz-all', 'quizzing'); show(active); } showBest(); });
+      svg.querySelectorAll('[data-name]').forEach(function (el) {
+        if (el.tagName.toLowerCase() === 'text') return;
+        el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button');
+        el.setAttribute('aria-label', el.getAttribute('data-name'));
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); }
+        });
+      });
       svg.addEventListener('click', function (e) {
         var el = e.target.closest('[data-name]'); if (!el) return;
         var n = el.getAttribute('data-name');
@@ -148,10 +157,13 @@ const otherHistory = lm.slug === 'india-history';
         return p.slice(0, 8);
       }
       function next() {
+        if (!round) return;
+        round.locked = false;
         if (round.i >= round.list.length) {
           ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
           fb.className = 'fb ' + (round.score >= 6 ? 'ok' : 'no'); fb.textContent = 'Tap Start for a new round.';
-          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (round.score > best) { best = round.score; try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'maps', value: { mode: 'quiz', mapId: KEY.slice('upscthemes-quiz-'.length), score: round.score, seconds: null } } }));
           if (window.__track) window.__track('map-quiz-done', { quiz: slug, score: round.score });
           round = null; svg.classList.remove('quiz-all', 'quizzing'); show(active); start.textContent = 'Start again'; return;
         }
@@ -159,6 +171,8 @@ const otherHistory = lm.slug === 'india-history';
         ask.textContent = (c.type === 'place' ? 'Find: ' + c.name : 'Tap a state: ' + c.clue) + ' (' + (round.i + 1) + '/' + round.list.length + ')';
       }
       function answer(n, el) {
+        if (!round || round.locked) return;
+        round.locked = true;
         var c = round.list[round.i], ok;
         if (c.type === 'place') {
           ok = n === c.name;
@@ -170,9 +184,10 @@ const otherHistory = lm.slug === 'india-history';
           fb.textContent = ok ? 'Correct: ' + n : n + ' is not one. The right states are highlighted in green.';
         }
         fb.className = 'fb ' + (ok ? 'ok' : 'no'); if (ok) round.score++;
-        round.i++; setTimeout(next, ok ? 500 : 1400);
+        round.i++; advanceTimer = setTimeout(next, ok ? 500 : 1400);
       }
       start.addEventListener('click', function () {
+        clearTimeout(advanceTimer);
         q('.sel').forEach(function (x) { x.classList.remove('sel'); }); q('text.show').forEach(function (t) { t.classList.remove('show'); });
         q('.act').forEach(function (e) { e.classList.remove('act'); }); q('.st.g1, .st.g2').forEach(function (e) { e.classList.remove('g1', 'g2'); });
         round = { list: pool(), i: 0, score: 0 }; fb.textContent = '';

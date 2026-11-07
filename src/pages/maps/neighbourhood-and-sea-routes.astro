@@ -68,7 +68,13 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       var B = document.getElementById('m10b'); B.classList.add('compact');
       var ckCard = document.getElementById('ck-card'), labBtn = document.getElementById('w-lab');
       labBtn.addEventListener('click', function () { var on = labBtn.getAttribute('aria-pressed') !== 'true'; labBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); B.classList.toggle('hide-lab', !on); });
-      var round = null;
+      document.querySelectorAll('#m10a [data-name], #m10b .pt').forEach(function (el) {
+        if (el.tagName.toLowerCase() === 'text') return;
+        el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button'); el.setAttribute('aria-label', el.dataset.name);
+        el.addEventListener('keydown', function (event) { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); } });
+      });
+      var round = null, advanceTimer = null;
+      window.addEventListener('activity-snapshot', function (event) { best = event.detail.quizzes[KEY.slice('upscthemes-quiz-'.length)] || 0; if (round) { clearTimeout(advanceTimer); round = null; ask.textContent = 'Tap Start for a new round.'; fb.textContent = ''; start.textContent = 'Start again'; B.classList.remove('hide-lab'); labBtn.setAttribute('aria-pressed', 'true'); } showBest(); });
       B.addEventListener('click', function (e) {
         var g = e.target.closest('.pt'); if (!g) return;
         var n = g.dataset.name;
@@ -85,24 +91,30 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
       function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/8' : ''; } showBest();
       function next() {
+        if (!round) return;
+        round.locked = false;
         if (round.i >= round.list.length) {
           ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
           fb.className = 'fb ' + (round.score >= 6 ? 'ok' : 'no'); fb.textContent = 'Tap Start for a new round.';
-          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (round.score > best) { best = round.score; try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'maps', value: { mode: 'quiz', mapId: KEY.slice('upscthemes-quiz-'.length), score: round.score, seconds: null } } }));
           if (window.__track) window.__track('map-quiz-done', { quiz: 'chokepoints', score: round.score });
           round = null; B.classList.remove('hide-lab'); labBtn.setAttribute('aria-pressed', 'true'); start.textContent = 'Start again'; return;
         }
         ask.textContent = 'Tap: ' + round.list[round.i] + ' (' + (round.i + 1) + '/' + round.list.length + ')';
       }
       function answer(got) {
+        if (!round || round.locked) return;
+        round.locked = true;
         var want = round.list[round.i], ok = got === want;
         var dot = B.querySelector('.pt[data-name="' + CSS.escape(want) + '"]'); dot.classList.add('on1');
         setTimeout(function () { dot.classList.remove('on1'); }, 1200);
         fb.textContent = ok ? 'Correct: ' + want : 'That was ' + got + '. ' + want + ' is highlighted in green.';
         fb.className = 'fb ' + (ok ? 'ok' : 'no'); if (ok) round.score++;
-        round.i++; setTimeout(next, ok ? 500 : 1300);
+        round.i++; advanceTimer = setTimeout(next, ok ? 500 : 1300);
       }
       start.addEventListener('click', function () {
+        clearTimeout(advanceTimer);
         var pool = Object.keys(ckData); for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
         round = { list: pool.slice(0, 8), i: 0, score: 0 }; fb.textContent = '';
         B.classList.add('hide-lab'); labBtn.setAttribute('aria-pressed', 'false'); next();

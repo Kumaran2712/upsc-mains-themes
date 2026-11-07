@@ -15,7 +15,7 @@ export class Store {
     if (path !== ':memory:') chmodSync(path, 0o600);
     this.db.exec('PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000; PRAGMA synchronous=FULL; PRAGMA foreign_keys=ON;');
     const version = this.db.prepare('PRAGMA user_version').get().user_version;
-    if (version > 2) throw new Error('This database needs a newer server version');
+    if (version > 5) throw new Error('This database needs a newer server version');
     this.transaction(() => {
       if (version === 1) {
         const columns = new Set(this.db.prepare('PRAGMA table_info(operations)').all().map((c) => c.name));
@@ -23,7 +23,31 @@ export class Store {
           if (!columns.has(column)) this.db.exec(`ALTER TABLE operations ADD COLUMN ${column} TEXT`);
         }
       }
+      if (version >= 1 && version < 3) {
+        const columns = new Set(this.db.prepare('PRAGMA table_info(operations)').all().map((c) => c.name));
+        for (const column of ['lesson_version TEXT', 'lease_expires INTEGER']) {
+          if (!columns.has(column.split(' ')[0])) this.db.exec(`ALTER TABLE operations ADD COLUMN ${column}`);
+        }
+        this.db.prepare('UPDATE operations SET lease_expires=created+180000 WHERE lease_expires IS NULL').run();
+      }
+      if (version >= 1 && version < 4) {
+        const columns = new Set(this.db.prepare('PRAGMA table_info(operations)').all().map((c) => c.name));
+        for (const column of ['reserved_cost INTEGER', 'actual_cost INTEGER', 'price_version TEXT']) {
+          if (!columns.has(column.split(' ')[0])) this.db.exec(`ALTER TABLE operations ADD COLUMN ${column}`);
+        }
+      }
+      if (version >= 1 && version < 5) {
+        const sql = readFileSync(new URL('./schema.sql', import.meta.url), 'utf8');
+        this.db.exec('DROP INDEX IF EXISTS one_running_operation');
+        this.db.exec('ALTER TABLE operations RENAME TO operations_legacy');
+        this.db.exec(sql.match(/CREATE TABLE IF NOT EXISTS operations \([\s\S]+?\n\);/)[0]);
+        const columns = this.db.prepare('PRAGMA table_info(operations_legacy)').all().map((c) => c.name).join(',');
+        this.db.exec(`INSERT INTO operations(${columns}) SELECT ${columns} FROM operations_legacy`);
+        this.db.exec('DROP TABLE operations_legacy');
+      }
       this.db.exec(readFileSync(new URL('./schema.sql', import.meta.url), 'utf8'));
+      this.db.exec(readFileSync(new URL('./modules/activity/schema.sql', import.meta.url), 'utf8'));
+      this.db.exec(readFileSync(new URL('./modules/learning/schema.sql', import.meta.url), 'utf8'));
     });
     this.cleanup();
   }
@@ -94,7 +118,6 @@ export class Store {
   }
   addMessage(userId, conceptId, role, text) {
     this.db.prepare('INSERT INTO messages(user_id,concept_id,role,text,created) VALUES(?,?,?,?,?)').run(userId, conceptId, role, text, this.now());
-    this.db.prepare('DELETE FROM messages WHERE user_id=? AND concept_id=? AND id NOT IN (SELECT id FROM messages WHERE user_id=? AND concept_id=? ORDER BY id DESC LIMIT 60)').run(userId, conceptId, userId, conceptId);
   }
   state(userId, conceptId) {
     const row = this.row(userId, conceptId);

@@ -1,17 +1,29 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { themes, themeUrl, yearSpan, u } from '../../lib/data';
-const desc = `All ${themes.length} cross-paper themes for UPSC GS Mains with PYQ counts by paper, years asked and recent frequency. Filter by GS1, GS2, GS3.`;
 ---
-<Base title="All themes" description={desc} crumbs={[{ name: 'Themes', href: u('/themes/') }]}>
-  <h1>All {themes.length} themes</h1>
-  <p class="lead">Sort by PYQ count to see what UPSC asks most. "Cross-paper" themes pull questions from more than one GS paper.</p>
-  <div class="tablewrap">
-    <table>
-      <thead><tr><th>#</th><th>Theme</th><th>Area</th><th class="num">Mains</th><th class="num">Prelims</th><th class="num">GS1</th><th class="num">GS2</th><th class="num">GS3</th><th class="num">2024–26</th><th>Years</th></tr></thead>
-      <tbody>{themes.map((t) => <tr>
-        <td class="num">T{t.n}</td><td><a href={themeUrl(t)}>{t.title}</a>{t.cross && <> <span class="xp">Cross-paper</span></>}</td>
-        <td>{t.cluster}</td><td class="num">{t.count || ''}</td><td class="num">{t.pre.length || ''}</td><td class="num">{t.papers.GS1 || ''}</td><td class="num">{t.papers.GS2 || ''}</td><td class="num">{t.papers.GS3 || ''}</td><td class="num">{t.recent || ''}</td><td>{yearSpan(t)}</td></tr>)}</tbody>
-    </table>
-  </div>
+<Base title="All themes" description="Find UPSC Mains themes by keyword and paper, sorted by question count or name." crumbs={[{ name: 'Themes', href: u('/themes/') }]}>
+  <h1>All {themes.length} themes</h1><p class="lead">Choose a theme to see related questions, what to cover and how to practise.</p>
+  <form id="filters" role="search"><label>Find a theme<input name="q" type="search" placeholder="Theme or area" /></label><label>Paper<select name="paper"><option value="all">All papers</option><option>GS1</option><option>GS2</option><option>GS3</option></select></label><label>Sort by<select name="sort"><option value="count">Most Mains questions</option><option value="recent">Most recent questions</option><option value="name">Name</option></select></label><button class="btn" type="reset">Reset filters</button></form>
+  <p id="theme-count" role="status">{themes.length} themes</p>
+  <ul id="theme-list">{themes.map((t) => <li data-name={t.title} data-area={t.cluster} data-count={t.count} data-recent={t.recent} data-papers={Object.keys(t.papers).filter((p) => t.papers[p] > 0).join(' ')}>
+    <h2><a href={themeUrl(t)}>T{t.n} · {t.title}</a></h2><p>{t.cluster}{t.cross && ' · Cross-paper'} · {t.count} Mains · {t.pre.length} Prelims</p>
+    <details><summary>Question distribution</summary><p>GS1: {t.papers.GS1 || 0} · GS2: {t.papers.GS2 || 0} · GS3: {t.papers.GS3 || 0} · 2024–26: {t.recent || 0} · Years: {yearSpan(t)}</p></details>
+  </li>)}</ul>
+  <noscript><p>All themes are available below. Enable JavaScript to filter and sort.</p></noscript>
+  <style>form { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; } label { display: grid; gap: 5px; } input, select { font: inherit; min-height: 44px; padding: 8px; color: var(--ink); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 6px; max-width: 100%; } ul { list-style: none; padding: 0; } li { border-bottom: 1px solid var(--line); padding: 16px 0; } li h2 { margin: 0; font-size: 1.1rem; } li p { color: var(--muted); margin: 7px 0; } summary { cursor: pointer; } li[hidden] { display: none; }</style>
+  <script>
+    const form = document.getElementById('filters') as HTMLFormElement, list = document.getElementById('theme-list')!;
+    const rows = [...list.querySelectorAll<HTMLElement>('li')];
+    const query = form.elements.namedItem('q') as HTMLInputElement, paper = form.elements.namedItem('paper') as HTMLSelectElement, sort = form.elements.namedItem('sort') as HTMLSelectElement;
+    function paint() {
+      let visible = 0;
+      rows.sort((a, b) => sort.value === 'name' ? a.dataset.name!.localeCompare(b.dataset.name!) : Number(b.dataset[sort.value]) - Number(a.dataset[sort.value]));
+      rows.forEach((row) => { row.hidden = !`${row.dataset.name} ${row.dataset.area}`.toLowerCase().includes(query.value.trim().toLowerCase()) || (paper.value !== 'all' && !row.dataset.papers!.includes(paper.value)); if (!row.hidden) visible++; list.append(row); });
+      document.getElementById('theme-count')!.textContent = visible ? `${visible} themes` : 'No themes match. Try another term or reset the filters.';
+      const url = new URL(location.href); for (const [key, value] of [['q', query.value], ['paper', paper.value], ['sort', sort.value]]) url.searchParams.set(key, value); history.replaceState(null, '', url);
+    }
+    const params = new URLSearchParams(location.search); query.value = params.get('q') || ''; if (['all', 'GS1', 'GS2', 'GS3'].includes(params.get('paper') || '')) paper.value = params.get('paper')!; if (['count', 'recent', 'name'].includes(params.get('sort') || '')) sort.value = params.get('sort')!;
+    form.addEventListener('input', paint); form.addEventListener('submit', (e) => e.preventDefault()); form.addEventListener('reset', () => setTimeout(paint, 0)); paint();
+  </script>
 </Base>

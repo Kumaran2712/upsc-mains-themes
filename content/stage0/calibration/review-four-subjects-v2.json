@@ -1,0 +1,21 @@
+{
+  "id": "2b158723c172e172f8066565392e45a7e3aaf2e5fb271bccd3a11511793b19de",
+  "stage": "calibration-independent-review-four-subjects-v2",
+  "providerRunId": "resp_0ed1c5307ed7b387016aeeb38f6c9487d2b1e2fb45c8cc7df0",
+  "model": "gpt-5.4-2026-03-05",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 3506,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 807,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4313
+  },
+  "executedAt": "2026-11-07T05:13:58.194Z",
+  "output": "{\"reviews\":[{\"caseId\":\"73dfde3a-fc0c-49c7-a1f6-5ecc00e998dc\",\"lessonId\":\"economics/inflation\",\"decision\":\"approved\",\"scores\":{\"accuracy\":2,\"beginnerClarity\":2,\"concreteTeaching\":2,\"responsiveness\":2,\"scopeAndPacing\":2,\"respectAndAccessibility\":2,\"evidenceAndUncertainty\":2,\"assessmentIntegrity\":2},\"sourceChecks\":[{\"sha256\":\"b9da09a28b7c4ff866d47da01a39341cdc6b9ca024a518a6174aa1dd96d2d40e\",\"supportsClaims\":true,\"rationale\":\"The source explicitly defines inflation as an increase in prices of goods and services over time and says it is a general increase in the overall price level, not the cost of one product or even several products. The lesson’s core, distinction, explanation, confusion correction, and checks align with this.\"}],\"issues\":[]},{\"caseId\":\"9a7609ec-264d-4f34-8f96-b60443f8f5e9\",\"lessonId\":\"geography/weather\",\"decision\":\"approved\",\"scores\":{\"accuracy\":2,\"beginnerClarity\":2,\"concreteTeaching\":2,\"responsiveness\":2,\"scopeAndPacing\":2,\"respectAndAccessibility\":2,\"evidenceAndUncertainty\":2,\"assessmentIntegrity\":2},\"sourceChecks\":[{\"sha256\":\"4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b\",\"supportsClaims\":true,\"rationale\":\"The source states that weather describes atmospheric conditions at a specific point in time and that climate is average or typical weather over a long period. The lesson’s definition, distinction, examples, and ordered checks match this accurately at beginner level.\"}],\"issues\":[]},{\"caseId\":\"e0354c88-8972-4f1a-9f30-385ac4068892\",\"lessonId\":\"international-relations/diplomacy\",\"decision\":\"approved\",\"scores\":{\"accuracy\":2,\"beginnerClarity\":2,\"concreteTeaching\":2,\"responsiveness\":2,\"scopeAndPacing\":2,\"respectAndAccessibility\":2,\"evidenceAndUncertainty\":2,\"assessmentIntegrity\":2},\"sourceChecks\":[{\"sha256\":\"bb1f1c9057e351076311bfa4d34234665fdc63a791803f13d746d6e120a0801d\",\"supportsClaims\":true,\"rationale\":\"The source defines diplomacy as the art and practice of conducting negotiations and maintaining relations between nations. The lesson’s use of states/governments is an appropriate political-science framing consistent with the source, and the distinction from force is a reasonable beginner-level elaboration without conflicting with the excerpt.\"}],\"issues\":[]},{\"caseId\":\"c4431775-d026-4b62-a4c7-c2474d52a62a\",\"lessonId\":\"polity/constitution\",\"decision\":\"approved\",\"scores\":{\"accuracy\":2,\"beginnerClarity\":2,\"concreteTeaching\":2,\"responsiveness\":2,\"scopeAndPacing\":2,\"respectAndAccessibility\":2,\"evidenceAndUncertainty\":2,\"assessmentIntegrity\":2},\"sourceChecks\":[{\"sha256\":\"295c7f59a49e306723faa2de579576ed19d7845fe5d5b26e20af878fb8ac17af\",\"supportsClaims\":true,\"rationale\":\"The source defines a constitution as a body of fundamental principles according to which a state is constituted or governed. The lesson’s core, explanation, and distinction from the current government are faithful beginner-level paraphrases and extensions consistent with standard constitutional understanding.\"}],\"issues\":[]}]}"
+}

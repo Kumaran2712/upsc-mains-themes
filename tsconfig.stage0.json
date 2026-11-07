@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src/lib/stage0/**/*.ts"]
+  "include": ["src/lib/stage0/**/*.ts", "src/lib/client/**/*.ts"]
 }

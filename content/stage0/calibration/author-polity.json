@@ -1,0 +1,21 @@
+{
+  "id": "a679949d118d9cadb63eedceee6e1fe7de146f7c438dd3b90e3048395b1fb7ca",
+  "stage": "calibration-author-polity-v1",
+  "providerRunId": "resp_02717f4b6fdb839a016aeeb2b6054887d2acabdc737a56771a",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 3469,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 1920
+    },
+    "output_tokens": 724,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 4193
+  },
+  "executedAt": "2026-11-07T05:10:18.078Z",
+  "output": "{\"lessons\":[{\"id\":\"polity/constitution\",\"schemaVersion\":1,\"version\":\"stage0-authored-2026-11-07-v1\",\"objective\":\"Help a beginner understand what a constitution is and why it matters in Polity.\",\"core\":\"A constitution is the basic set of rules and principles that defines how a state is governed.\",\"distinction\":\"A constitution is not the same as the current government; the government can change while the constitution continues to guide authority.\",\"application\":\"Use the idea to explain why a law, court decision, or government action must fit the constitution’s rules and limits.\",\"explanation\":\"In simple terms, the constitution is the foundation of a country’s political system. It says who gets authority, how institutions work, what rights people have, and what limits exist on power.\",\"example\":\"Hypothetical example: if a city school starts collecting fines from students, the question is not only whether the rule is useful, but whether the rule is allowed by the higher rules that govern the institution.\",\"differently\":\"Another way to understand it is to think of the constitution as the main rulebook for the state. It does not list every small action, but it sets the basic framework that other laws and decisions must follow.\",\"confusion\":\"A common confusion is to think the constitution is just one ordinary law. It is more basic than ordinary laws, because ordinary laws should work within its framework.\",\"analogyLimit\":\"The rulebook analogy helps with the idea of structure, but it has limits: a constitution is not just a private agreement and it usually has special authority, amendment procedures, and public significance.\",\"prerequisites\":{\"term\":\"state\",\"plain explanation\":\"The state is the political authority and institutions that govern a territory and people. It is broader and more lasting than any one government.\"},\"questions\":[\"What is a constitution in your own words?\",\"How is a constitution different from the current government?\"],\"scenarios\":[{\"question\":\"A new elected government changes, but the basic system of courts and rights stays in place. How does the constitution help explain that?\",\"expected\":\"The constitution provides the continuing framework, while governments can change within it.\"},{\"question\":\"A law passed by the legislature seems to limit a right. What should a student ask next, using the idea of the constitution?\",\"expected\":\"Whether the law is consistent with the constitution and its limits on power.\"},{\"question\":\"A friend says the constitution is only a symbolic document and does not affect daily life. How would you respond?\",\"expected\":\"Explain that it shapes authority, rights, institutions, and legal limits, so it affects daily life through laws and governance.\"}],\"sources\":[{\"title\":\"NCERT: Indian Constitution at Work, Chapter 1\",\"url\":\"https://ncert.nic.in/textbook/pdf/keps201.pdf\",\"locator\":\"Chapter 1, Constitution: Why and How?, definition of a constitution\",\"excerpt\":\"A constitution is a body of fundamental principles according to which a state is constituted or governed. But what should these fundamental rules be?\",\"retrievedAt\":\"2026-11-07T05:10:09.700Z\",\"sha256\":\"295c7f59a49e306723faa2de579576ed19d7845fe5d5b26e20af878fb8ac17af\",\"file\":\"295c7f59a49e306723faa2de579576ed19d7845fe5d5b26e20af878fb8ac17af.txt\"}]}]}"
+}

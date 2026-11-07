@@ -1,43 +1,49 @@
 ---
 import Base from '../layouts/Base.astro';
-import { u, totalQuestions } from '../lib/data';
+import { u } from '../lib/data';
 ---
-<Base title="Search UPSC GS Mains PYQs and themes" description={`Search ${totalQuestions} UPSC GS Mains questions (2013–2026) and their cross-paper themes by keyword.`} crumbs={[{ name: 'Search', href: u('/search/') }]}>
+<Base title="Search" description="Find concepts, themes, questions, maps and syllabus topics." crumbs={[{ name: 'Search', href: u('/search/') }]}>
   <h1>Search</h1>
-  <form id="f" role="search" class="panel" style="display:flex;gap:8px;flex-wrap:wrap">
-    <label for="sq" class="eyebrow" style="width:100%">Search themes and question text</label>
-    <input id="sq" name="q" type="search" autocomplete="off" placeholder="e.g. federalism, groundwater, women" style="flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);min-width:0" />
-    <button class="btn" type="submit">Search</button>
+  <form id="search-form" role="search">
+    <label for="query">What would you like to find?</label><input id="query" name="q" type="search" placeholder="e.g. sovereignty, GDP, groundwater" autocomplete="off" />
+    <label for="kind">Search in</label><select id="kind" name="type"><option value="all">Everything</option><option value="concepts">Foundations</option><option value="themes">Themes</option><option value="mains">Mains questions</option><option value="prelims">Prelims questions</option><option value="maps">Maps</option><option value="syllabus">Syllabus</option></select>
+    <button class="btn primary" type="submit">Search</button>
   </form>
-  <p id="st" class="lead" aria-live="polite" style="margin-top:12px">Type at least 3 letters.</p>
-  <div id="res"></div>
-  <script is:inline define:vars={{ idx: u('/search-index.json') }}>
-    (function () {
-      var data = null, sq = document.getElementById('sq'), st = document.getElementById('st'), res = document.getElementById('res'), timer = null, lastTracked = '';
-      function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
-      function mark(s, w) { var i = s.toLowerCase().indexOf(w); return i < 0 ? esc(s) : esc(s.slice(0, i)) + '<mark>' + esc(s.slice(i, i + w.length)) + '</mark>' + esc(s.slice(i + w.length)); }
-      function run(track) {
-        var w = sq.value.trim().toLowerCase();
-        if (w.length < 3 || !data) { res.innerHTML = ''; st.textContent = data ? 'Type at least 3 letters.' : 'Loading…'; return; }
-        var out = [], qn = 0;
-        data.forEach(function (t) {
-          var hitT = t.t.toLowerCase().indexOf(w) > -1;
-          var hq = t.q.filter(function (q) { return q[3].toLowerCase().indexOf(w) > -1; });
-          if (!hitT && !hq.length) return;
-          qn += hq.length;
-          out.push('<section class="panel" style="margin-bottom:10px"><h3 style="margin:0 0 6px"><a href="' + t.u + '">T' + t.n + ' ' + mark(t.t, w) + '</a></h3>' +
-            '<p class="eyebrow">' + t.c + ' PYQs in theme' + (hq.length ? ' · ' + hq.length + ' match' : '') + '</p>' +
-            hq.slice(0, 4).map(function (q) { return '<p style="margin:6px 0"><span class="pc ' + q[1].toLowerCase() + '">' + q[1] + '</span> <b>' + q[2] + '</b> ' + mark(q[3], w) + '</p>'; }).join('') +
-            (hq.length > 4 ? '<p><a href="' + t.u + '">See all ' + hq.length + ' matching questions</a></p>' : '') + '</section>');
-        });
-        res.innerHTML = out.join('');
-        st.textContent = out.length ? out.length + ' themes · ' + qn + ' questions match "' + sq.value.trim() + '"' : 'No match for "' + sq.value.trim() + '". Try a shorter word.';
-        if (track && w !== lastTracked && window.__track) { lastTracked = w; window.__track('search', { term: w.slice(0, 40), results: out.length }); }
-      }
-      sq.addEventListener('input', function () { run(false); clearTimeout(timer); timer = setTimeout(function () { run(true); }, 1500); });
-      document.getElementById('f').addEventListener('submit', function (e) { e.preventDefault(); run(true); });
-      var q0 = new URLSearchParams(location.search).get('q'); if (q0) sq.value = q0;
-      fetch(idx).then(function (r) { return r.json(); }).then(function (d) { data = d; run(!!q0); }).catch(function () { st.textContent = 'Search could not load. Refresh the page.'; });
-    })();
+  <p id="status" role="status">Enter at least two characters.</p><button id="retry" class="btn" type="button" hidden>Retry search</button><div id="results"></div>
+  <style>form { display: grid; gap: 10px; max-width: 48rem; } input, select { font: inherit; min-height: 44px; padding: 10px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--surface); color: var(--ink); } form button { justify-self: start; } :global(#results li) { padding: 12px 0; border-bottom: 1px solid var(--line); } :global(#results p) { margin: 5px 0; } :global(#results ul) { list-style: none; padding: 0; }</style>
+  <script>
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+    const labels: Record<string, string> = { concepts: 'Foundations', themes: 'Themes', mains: 'Mains questions', prelims: 'Prelims questions', maps: 'Maps', syllabus: 'Syllabus' };
+    type Entry = { title: string; text: string; url: string; aliases?: string };
+    const cache = new Map<string, Promise<Entry[]>>();
+    const input = document.getElementById('query') as HTMLInputElement, kind = document.getElementById('kind') as HTMLSelectElement;
+    const status = document.getElementById('status')!, results = document.getElementById('results')!, retry = document.getElementById('retry')!;
+    let generation = 0, timer: ReturnType<typeof setTimeout>;
+    function load(key: string) {
+      if (!cache.has(key)) cache.set(key, fetch(`${base}/discovery/${key}.json`).then((r) => { if (!r.ok) throw new Error('Unavailable'); return r.json(); }).catch((error) => { cache.delete(key); throw error; }));
+      return cache.get(key)!;
+    }
+    async function search(updateUrl = true) {
+      const current = ++generation, query = input.value.trim().toLowerCase(); retry.hidden = true; results.replaceChildren();
+      if (updateUrl) { const url = new URL(location.href); url.searchParams.set('q', input.value.trim()); url.searchParams.set('type', kind.value); history.replaceState(null, '', url); }
+      if (query.length < 2) { status.textContent = 'Enter at least two characters.'; return; }
+      status.textContent = 'Searching…'; const keys = kind.value === 'all' ? Object.keys(labels) : [kind.value];
+      const shards = await Promise.allSettled(keys.map(load)); if (current !== generation) return;
+      let total = 0, failures = 0;
+      shards.forEach((shard, i) => {
+        if (shard.status === 'rejected') { failures++; return; }
+        const hits = shard.value.filter((entry) => `${entry.title} ${entry.text} ${entry.aliases || ''}`.toLowerCase().includes(query));
+        total += hits.length; if (!hits.length) return;
+        const section = document.createElement('section'), heading = document.createElement('h2'), list = document.createElement('ul'); heading.textContent = `${labels[keys[i]]} (${hits.length})`;
+        hits.slice(0, 20).forEach((entry) => { const li = document.createElement('li'), link = document.createElement('a'), text = document.createElement('p'); link.href = entry.url; link.textContent = entry.title; text.textContent = entry.text.slice(0, 300); li.append(link, text); list.append(li); });
+        section.append(heading, list);
+        if (hits.length > 20) { const hint = document.createElement('p'); hint.textContent = 'Showing the first 20. Add a more specific term to narrow your search.'; section.append(hint); } results.append(section);
+      });
+      status.textContent = `${total} results for “${input.value.trim()}”.` + (failures ? ' Some sections could not load.' : total ? '' : ' Try a related term.'); retry.hidden = failures === 0;
+    }
+    function restore() { const params = new URLSearchParams(location.search); input.value = params.get('q') || ''; const type = params.get('type'); kind.value = type && labels[type] ? type : 'all'; void search(false); }
+    document.getElementById('search-form')!.addEventListener('submit', (event) => { event.preventDefault(); void search(); });
+    input.addEventListener('input', () => { clearTimeout(timer); generation++; timer = setTimeout(() => void search(), 250); });
+    kind.addEventListener('change', () => void search()); retry.addEventListener('click', () => void search()); window.addEventListener('popstate', restore); restore();
   </script>
 </Base>

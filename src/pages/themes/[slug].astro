@@ -143,11 +143,15 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       var n = Number(b.dataset.n), done = [];
       try { done = JSON.parse(localStorage.getItem('upscthemes-done') || '[]'); } catch (e) {}
       function paint() { var on = done.indexOf(n) > -1; b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? 'Done ✓' : 'Mark as done'; }
+      window.addEventListener('activity-snapshot', function (event) { done = event.detail.roadmap; paint(); });
+      if (window.__activitySnapshot) done = window.__activitySnapshot.roadmap;
       paint();
       b.addEventListener('click', function () {
+        if (window.__activityScope === 'pending') return;
         var i = done.indexOf(n); if (i > -1) done.splice(i, 1); else done.push(n);
-        try { localStorage.setItem('upscthemes-done', JSON.stringify(done)); } catch (e) {}
+        try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem('upscthemes-done', JSON.stringify(done)); } catch (e) {}
         paint();
+        window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'roadmap', value: { themeId: n, completed: done.indexOf(n) > -1 } } }));
         if (window.__track) window.__track(i > -1 ? 'roadmap-undone' : 'roadmap-done', { theme: 'T' + n });
       });
     })();

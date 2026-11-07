@@ -1,0 +1,189 @@
+{
+  "lessons": [
+    {
+      "id": "economics/inflation",
+      "schemaVersion": 1,
+      "version": "stage0-authored-2026-11-07-v2",
+      "objective": "Understand inflation as a general rise in the overall price level over time, not just a change in one price.",
+      "core": "Inflation means prices of goods and services in the economy rise over time on average.",
+      "distinction": "Inflation is different from the price of one item going up or down; a single product does not by itself show inflation.",
+      "application": "If many everyday items become costlier across months, that can indicate inflation even if one item becomes cheaper.",
+      "explanation": "Inflation is the broad rise in prices in an economy over time. It is about the overall price level, not one product.",
+      "example": "Hypothetical: if a basket of groceries costs ₹100 in January and ₹108 in March, that suggests prices have risen overall.",
+      "differently": "Another way to say it: inflation is when money buys a little less than before because many prices have gone up.",
+      "confusion": "A common confusion is thinking any price rise is inflation. The correction is that one product becoming costlier is not enough; inflation is a general increase in prices.",
+      "analogyLimit": "A family noticing higher monthly expenses can help you picture rising costs, but a household budget is not the same thing as the whole economy.",
+      "prerequisites": {
+        "price level": "the average level of prices across many goods and services"
+      },
+      "questions": [
+        "In your own words, what is inflation?",
+        "How is inflation different from one shop increasing the price of only one item?"
+      ],
+      "scenarios": [
+        {
+          "question": "A bus fare rises, but food, rent and fuel prices stay the same. Is that enough to say there is inflation?",
+          "expected": "No. One price rise alone is not enough; inflation is a general rise in the overall price level."
+        },
+        {
+          "question": "A basket of common items costs ₹500 this year and ₹540 next year. What does that suggest?",
+          "expected": "It suggests the overall price level has risen, so inflation may be present."
+        },
+        {
+          "question": "If one fruit becomes cheaper while most other items become costlier, can inflation still be happening?",
+          "expected": "Yes. Inflation concerns the general price level, so one cheaper item does not rule it out."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Federal Reserve: meaning of inflation",
+          "url": "https://www.federalreserve.gov/faqs/economy_14419.htm",
+          "locator": "Inflation is",
+          "excerpt": "Inflation is the increase in the prices of goods and services over time. Inflation cannot be measured by an increase in the cost of one product or service, or even several products or services. Rather, inflation is a general increase in the overall price level of the goods and services in the economy. Federal Reserve policymakers evaluate changes in inflation by monitoring several different price indexes. A price index measures changes in the price of a group of goods and services. The Fed considers several price indexes because different indexes track different products and services and because indexes are calculated differently. Therefore, various indexes can send diverse signals about inflation.",
+          "retrievedAt": "2026-11-07T05:06:08.996191+00:00",
+          "sha256": "b9da09a28b7c4ff866d47da01a39341cdc6b9ca024a518a6174aa1dd96d2d40e",
+          "file": "b9da09a28b7c4ff866d47da01a39341cdc6b9ca024a518a6174aa1dd96d2d40e.txt"
+        }
+      ]
+    },
+    {
+      "id": "geography/weather",
+      "schemaVersion": 1,
+      "version": "stage0-authored-2026-11-07-v2",
+      "objective": "Understand weather as the atmospheric condition at a specific time and place, and distinguish it from climate.",
+      "core": "Weather is the condition of the atmosphere at a particular time.",
+      "distinction": "Weather changes quickly; climate is the average or typical weather over a long period.",
+      "application": "A rainy afternoon in one city is weather, while that city’s usual monsoon pattern is climate.",
+      "explanation": "Weather is what the atmosphere is like now or over a short period. It can change from hour to hour or day to day.",
+      "example": "Hypothetical: if it is cloudy and windy this morning but sunny by evening, that is a change in weather.",
+      "differently": "Another way to say it: weather is today’s condition; climate is the long-term pattern.",
+      "confusion": "A common confusion is treating climate and weather as the same. The correction is that climate describes long-term averages, not a single day’s conditions.",
+      "analogyLimit": "Today’s outfit choice can help you picture weather, but one day’s conditions cannot define a long-term climate pattern.",
+      "prerequisites": {
+        "atmosphere": "the layer of air around the Earth"
+      },
+      "questions": [
+        "What is weather in simple words?",
+        "How is weather different from climate?"
+      ],
+      "scenarios": [
+        {
+          "question": "It rains heavily in your town today, but next week is sunny. Which word fits today’s condition?",
+          "expected": "Weather, because it describes the atmosphere at a specific time."
+        },
+        {
+          "question": "A place is usually hot and dry in summer over many years. Is that weather or climate?",
+          "expected": "Climate, because it describes a long-term pattern."
+        },
+        {
+          "question": "A news report says tomorrow will be colder than today. Is that about weather or climate?",
+          "expected": "Weather, because it refers to a short-term atmospheric condition."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NOAA: Climate vs. Weather",
+          "url": "https://www.noaa.gov/jetstream/global/climate-vs-weather",
+          "locator": "Weather describes",
+          "excerpt": "Weather describes the atmospheric conditions at a specific point in time. It can be measured hourly, daily, weekly, monthly, or yearly. Climate is the average or typical weather over a long period of time – a few years or more. Understanding climate can help us see patterns in the weather, such as what time of year or what locations different types of storm systems occur or what seasonal changes are typical. Unlike weather, climate changes slowly over years, centuries, or millenia.",
+          "retrievedAt": "2026-11-07T05:06:09.711753+00:00",
+          "sha256": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b",
+          "file": "4363acc5d542d2e196c9532164902542a0effefee5be80c9b37de2106401984b.txt"
+        }
+      ]
+    },
+    {
+      "id": "international-relations/diplomacy",
+      "schemaVersion": 1,
+      "version": "stage0-authored-2026-11-07-v2",
+      "objective": "Understand diplomacy as the peaceful management of relations and negotiations between states or governments.",
+      "core": "Diplomacy is the practice of conducting negotiations and maintaining relations between states.",
+      "distinction": "Diplomacy is different from war or coercion; it uses discussion, negotiation and relationship-building instead of force.",
+      "application": "States may use diplomacy to solve a border dispute, sign a trade deal or calm tensions after an incident.",
+      "explanation": "Diplomacy is how states talk, negotiate and maintain relations. It helps manage disagreements peacefully and keep communication open.",
+      "example": "Hypothetical: two governments meet to agree on shared river water use instead of escalating the dispute.",
+      "differently": "Another way to say it: diplomacy is problem-solving between states through dialogue rather than force.",
+      "confusion": "A common confusion is thinking diplomacy means being weak or always agreeing. The correction is that a state can defend its interests while still using negotiation.",
+      "analogyLimit": "A respectful conversation can help you picture diplomacy, but states also negotiate through laws, institutions and national interests, not just politeness.",
+      "prerequisites": {
+        "state": "the political authority and institutions that govern a territory and people; it is broader and more lasting than any one government",
+        "government": "the team or system of people currently making decisions and running the state"
+      },
+      "questions": [
+        "What is diplomacy in simple words?",
+        "How is diplomacy different from using force or fighting?"
+      ],
+      "scenarios": [
+        {
+          "question": "Two countries meet to negotiate a fishing-rights agreement after a disagreement at sea. What is that an example of?",
+          "expected": "Diplomacy, because they are negotiating and maintaining relations."
+        },
+        {
+          "question": "A state sends envoys to discuss a trade deal with another state. Is this diplomacy?",
+          "expected": "Yes, because it involves negotiation between states."
+        },
+        {
+          "question": "A border issue is resolved through talks rather than threats. Which concept fits best?",
+          "expected": "Diplomacy, because the issue is handled through discussion and negotiation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Museum of American Diplomacy: Diplomacy",
+          "url": "https://diplomacy.state.gov/encyclopedia/diplomacy/",
+          "locator": "The art and practice",
+          "excerpt": "The art and practice of conducting negotiations and maintaining relations between nations; skill in handling affairs without arousing hostility.",
+          "retrievedAt": "2026-11-07T05:06:09.808867+00:00",
+          "sha256": "bb1f1c9057e351076311bfa4d34234665fdc63a791803f13d746d6e120a0801d",
+          "file": "bb1f1c9057e351076311bfa4d34234665fdc63a791803f13d746d6e120a0801d.txt"
+        }
+      ]
+    },
+    {
+      "id": "polity/constitution",
+      "schemaVersion": 1,
+      "version": "stage0-authored-2026-11-07-v2",
+      "objective": "Help a beginner understand what a constitution is and why it matters in Polity.",
+      "core": "A constitution is the basic set of rules and principles that defines how a state is governed.",
+      "distinction": "A constitution is not the same as the current government; the government can change while the constitution continues to guide authority.",
+      "application": "Use the idea to explain why a law, court decision, or government action must fit the constitution’s rules and limits.",
+      "explanation": "In simple terms, the constitution is the foundation of a country’s political system. It says who gets authority, how institutions work, what rights people have, and what limits exist on power.",
+      "example": "Hypothetical example: if a school starts collecting fines from students, the question is not only whether the rule is useful, but whether the rule is allowed by the higher rules that govern the institution.",
+      "differently": "Another way to understand it is to think of the constitution as the main rulebook for the state. It does not list every small action, but it sets the basic framework that other laws and decisions must follow.",
+      "confusion": "A common confusion is to think the constitution is just one ordinary law. It is more basic than ordinary laws, because ordinary laws should work within its framework.",
+      "analogyLimit": "The rulebook analogy helps with the idea of structure, but it has limits: a constitution is not just a private agreement and it usually has special authority, amendment procedures, and public significance.",
+      "prerequisites": {
+        "state": "the political authority and institutions that govern a territory and people; it is broader and more lasting than any one government"
+      },
+      "questions": [
+        "What is a constitution in your own words?",
+        "How is a constitution different from the current government?"
+      ],
+      "scenarios": [
+        {
+          "question": "A new elected government changes, but the basic system of courts and rights stays in place. How does the constitution help explain that?",
+          "expected": "The constitution provides the continuing framework, while governments can change within it."
+        },
+        {
+          "question": "A law passed by the legislature seems to limit a right. What should a student ask next, using the idea of the constitution?",
+          "expected": "Whether the law is consistent with the constitution and its limits on power."
+        },
+        {
+          "question": "A friend says the constitution is only a symbolic document and does not affect daily life. How would you respond?",
+          "expected": "Explain that it shapes authority, rights, institutions, and legal limits, so it affects daily life through laws and governance."
+        }
+      ],
+      "sources": [
+        {
+          "title": "NCERT: Indian Constitution at Work, Chapter 1",
+          "url": "https://ncert.nic.in/textbook/pdf/keps201.pdf",
+          "locator": "Chapter 1, Constitution: Why and How?, definition of a constitution",
+          "excerpt": "A constitution is a body of fundamental principles according to which a state is constituted or governed. But what should these fundamental rules be?",
+          "retrievedAt": "2026-11-07T05:10:09.700Z",
+          "sha256": "295c7f59a49e306723faa2de579576ed19d7845fe5d5b26e20af878fb8ac17af",
+          "file": "295c7f59a49e306723faa2de579576ed19d7845fe5d5b26e20af878fb8ac17af.txt"
+        }
+      ]
+    }
+  ]
+}

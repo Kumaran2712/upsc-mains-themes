@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/data';
+---
+<Base title="Questions" description="Find UPSC Prelims and Mains past questions and practise at your own pace." crumbs={[{ name: 'Questions', href: u('/questions/') }]}>
+  <h1>Questions</h1><p class="lead">Find a past question or practise a small set today.</p>
+  <section><h2><a href={u('/prelims/')}>Prelims →</a></h2><p>Browse objective questions by year and subject, then check the answers.</p></section>
+  <section><h2><a href={u('/papers/gs1/')}>Mains →</a></h2><p>Explore written questions and the themes they connect to.</p></section>
+  <section><h2><a href={u('/daily/')}>Today's practice →</a></h2><p>Work through a manageable mix of Prelims and Mains questions.</p></section>
+</Base>

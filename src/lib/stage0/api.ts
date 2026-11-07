@@ -6,6 +6,7 @@ export type LiveAssessment = { id: string; index: number; complete: boolean; que
 export type LiveEntry = {
   conceptId: string; status: 'Not started' | 'Exploring' | 'Developing' | 'Understood';
   revisit: boolean; revision: number; updated: number;
+  hasOlderMessages?: boolean;
   messages: { id: number; role: 'student' | 'tutor'; text: string; created: number }[];
   assessment: LiveAssessment | null;
 };

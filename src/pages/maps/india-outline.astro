@@ -74,25 +74,35 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
       try { best = Number(localStorage.getItem(KEY) || 0); } catch (e) {}
       function showBest() { bestEl.textContent = best ? 'Best: ' + best + '/10' : ''; }
       showBest();
-      var round = null;
+      var round = null, advanceTimer = null;
+      window.addEventListener('activity-snapshot', function (event) { best = event.detail.quizzes[KEY.slice('upscthemes-quiz-'.length)] || 0; if (round) { clearTimeout(advanceTimer); round = null; ask.textContent = 'Tap Start for a new round.'; fb.textContent = ''; start.textContent = 'Start again'; } showBest(); });
       function next() {
+        if (!round) return;
+        round.locked = false;
         if (round.i >= round.list.length) {
           ask.textContent = 'Done: ' + round.score + ' of ' + round.list.length + ' correct.';
           fb.textContent = round.score === round.list.length ? 'Perfect round.' : 'Tap Start for a new round.';
           fb.className = 'fb ' + (round.score >= 8 ? 'ok' : 'no');
-          if (round.score > best) { best = round.score; try { localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          if (round.score > best) { best = round.score; try { if (!window.__activityScope || window.__activityScope === 'guest') localStorage.setItem(KEY, String(best)); } catch (e) {} showBest(); }
+          window.dispatchEvent(new CustomEvent('activity-change', { detail: { kind: 'maps', value: { mode: 'quiz', mapId: KEY.slice('upscthemes-quiz-'.length), score: round.score, seconds: null } } }));
           if (window.__track) window.__track('map-quiz-done', { quiz: 'india-states', score: round.score });
           round = null; start.textContent = 'Start again'; return;
         }
         ask.textContent = 'Tap: ' + round.list[round.i] + ' (' + (round.i + 1) + '/' + round.list.length + ')';
       }
       start.addEventListener('click', function () {
+        clearTimeout(advanceTimer);
         var pool = quizStates.slice(); for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = pool[i]; pool[i] = pool[j]; pool[j] = t; }
         round = { list: pool.slice(0, 10), i: 0, score: 0 }; fb.textContent = ''; next();
         svg.scrollIntoView({ block: 'center', behavior: 'smooth' });
       });
+      svg.querySelectorAll('.st').forEach(function (el) {
+        el.setAttribute('tabindex', '0'); el.setAttribute('role', 'button'); el.setAttribute('aria-label', el.dataset.name);
+        el.addEventListener('keydown', function (event) { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); el.dispatchEvent(new MouseEvent('click', { bubbles: true })); } });
+      });
       svg.addEventListener('click', function (e) {
-        var p = e.target.closest('.st'); if (!p || !round) return;
+        var p = e.target.closest('.st'); if (!p || !round || round.locked) return;
+        round.locked = true;
         var want = round.list[round.i], got = p.dataset.name, ok = got === want;
         var target = svg.querySelector('.st[data-name="' + CSS.escape(want) + '"]');
         target.classList.add(ok ? 'right' : 'wrong');
@@ -100,7 +110,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'LearningResource', nam
         fb.textContent = ok ? 'Correct: ' + want : 'That was ' + got + '. ' + want + ' is shown in orange.';
         fb.className = 'fb ' + (ok ? 'ok' : 'no');
         if (ok) round.score++;
-        round.i++; setTimeout(next, ok ? 500 : 1200);
+        round.i++; advanceTimer = setTimeout(next, ok ? 500 : 1200);
       });
     })();
   </script>

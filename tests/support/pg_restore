@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+exec docker run --rm --network host --volume /tmp:/tmp \
+  --env PGHOST --env PGPORT --env PGDATABASE --env PGUSER --env PGPASSWORD --env PGSSLMODE --env PGOPTIONS \
+  postgres:18 pg_restore "$@"

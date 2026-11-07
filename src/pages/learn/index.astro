@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/data';
+---
+<Base title="Learn" description="Build your foundations, then follow a practical UPSC preparation roadmap." crumbs={[{ name: 'Learn', href: u('/learn/') }]}>
+  <h1>Learn</h1>
+  <p class="lead">Start with an unfamiliar idea, or choose your next step in preparation.</p>
+  <section><h2><a href={u('/stage-0/')}>Foundations — Stage 0 →</a></h2><p>Explore Polity, Economics, Geography and International Relations. Read an explanation, ask a follow-up, and check your understanding when ready.</p></section>
+  <section><h2><a href={u('/roadmap/')}>Preparation roadmap →</a></h2><p>Connect the syllabus, core sources and practice. Begin structured study whenever you feel ready; foundations remain available to revisit.</p></section>
+</Base>
