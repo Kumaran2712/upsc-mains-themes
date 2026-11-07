@@ -19,4 +19,5 @@ tools/*
 !**/.env.example
 content/stage0/sources/*.txt
 content/stage0/runs
-content/stage0/calibration
+content/stage0/calibration/*
+!content/stage0/calibration/current-controls.json
