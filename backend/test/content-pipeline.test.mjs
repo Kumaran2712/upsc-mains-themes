@@ -1,9 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, rm, readFile, readdir } from 'node:fs/promises';
+import { mkdtemp, rm, readFile, readdir, mkdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createContentClient } from '../../tools/content/client.mjs';
+import { compile } from '../../tools/content/compile.mjs';
 import { executePlacement, mapBounded } from '../../tools/content/pipeline.mjs';
 import { digest, validateApproval } from '../../tools/content/contract.mjs';
 import { dimensions, teachingCategories, assessmentCategories } from '../../tools/content/evaluation.mjs';
@@ -109,4 +110,54 @@ test('reviewer calibration rejects an always-approving judge and binds genuine c
   assert.throws(() => validateReviewControls(report, { lesson: { ...lesson, core: 'Changed' }, reviewerModel: 'synthetic-reviewer', rubric }), /bound/);
   assert.throws(() => validateReviewControls(report, { lesson, reviewerModel: 'other-model', rubric }), /receipt/);
   assert.throws(() => validateReviewControls(report, { lesson, reviewerModel: 'synthetic-reviewer', rubric: 'Changed' }), /bound/);
+});
+
+test('new lesson reviews bind the exact live guide and proposed public reading before runtime evaluation', async () => {
+  const options = fixture();
+  options.originalGuide = { id: options.id, explanation: 'Synthetic test text', example: 'Synthetic test text', distinction: 'Synthetic test text' };
+  const call = options.call; let authorGuide, reviewedGuide;
+  options.call = async (model, stage, instructions, input, settings) => {
+    if (stage.includes(':author:')) authorGuide = input.existingPublicGuide;
+    const receipt = await call(model, stage, instructions, input, settings);
+    if (stage.includes(':content-review')) {
+      reviewedGuide = input.guideReviewInput;
+      const response = JSON.parse(receipt.output);
+      response.guideReview = { binding: input.guideReviewInput.binding, originalDecision: 'approved', proposedApproved: true, rationale: 'Synthetic independent guide review', findings: [] };
+      receipt.output = JSON.stringify(response);
+    }
+    return receipt;
+  };
+  const result = await executePlacement(options);
+  assert.deepEqual(authorGuide, options.originalGuide);
+  assert.deepEqual(reviewedGuide.originalGuide, options.originalGuide);
+  assert.deepEqual(reviewedGuide.proposedGuide, { explanation: result.lesson.explanation, example: result.lesson.example, distinction: result.lesson.confusion });
+  assert.deepEqual(result.approval.originalGuide, options.originalGuide);
+  validateApproval(result.lesson, result.approval);
+  const changedGuide = structuredClone(result.approval); changedGuide.originalGuide.explanation = 'An unreviewed replacement';
+  assert.throws(() => validateApproval(result.lesson, changedGuide), /guide review/);
+  const forgedReview = structuredClone(result.approval), response = JSON.parse(forgedReview.reviewer.output); response.guideReview.binding = 'different guide'; forgedReview.reviewer.output = JSON.stringify(response);
+  assert.throws(() => validateApproval(result.lesson, forgedReview), /guide review/);
+  const missingApproval = structuredClone(result.approval), missing = JSON.parse(missingApproval.reviewer.output); delete missing.guideReview; missingApproval.reviewer.output = JSON.stringify(missing);
+  assert.throws(() => validateApproval(result.lesson, missingApproval), /guide review/);
+});
+
+test('an unresolved public guide blocks paid runtime cases even when lesson and reference reviews otherwise pass', async () => {
+  const options = fixture(); options.originalGuide = { id: options.id, explanation: 'Original central idea', example: 'Original example', distinction: 'Original distinction' };
+  const result = await executePlacement(options); // The synthetic reviewer deliberately omits the requested guide verdict.
+  assert.equal(result.held, true);
+  assert.equal(result.reason, 'content-review');
+  assert.equal(options.stages.filter(stage => stage.includes(':runtime:')).length, 0);
+});
+
+
+test('the compiler cannot publish a newly reviewed lesson without independent review of its original public guide', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'guide-publication-')); t.after(() => rm(root, { recursive: true, force: true }));
+  const result = await executePlacement(fixture());
+  await mkdir(join(root, 'introductions'), { recursive: true });
+  await mkdir(join(root, 'lessons', 'polity'), { recursive: true });
+  await mkdir(join(root, 'reviews'), { recursive: true });
+  for (const subject of ['polity', 'economics', 'geography', 'international-relations']) await writeFile(join(root, 'introductions', subject + '.json'), await readFile('content/stage0/introductions/' + subject + '.json'));
+  await writeFile(join(root, 'lessons', 'polity', 'state.json'), JSON.stringify(result.lesson));
+  await writeFile(join(root, 'reviews', 'polity--state.json'), JSON.stringify(result.approval));
+  await assert.rejects(compile(root), /original public guide required/);
 });

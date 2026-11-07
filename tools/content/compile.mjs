@@ -4,7 +4,7 @@ import { catalogue, validateLesson, validateApproval, toPublicLesson, digest } f
 import { validateReviewControls } from './calibration.mjs';
 
 export async function compile(root = resolve('content/stage0')) {
-  const published = [], privateLessons = [];
+  const published = [], privateLessons = [], guideReviews = [];
   const introductions = new Map();
   for (const subject of new Set([...catalogue.values()].map(c => c.subject.id))) {
     const file = JSON.parse(await readFile(resolve(root, 'introductions', subject + '.json'), 'utf8'));
@@ -23,6 +23,10 @@ export async function compile(root = resolve('content/stage0')) {
         const lesson = validateLesson(JSON.parse(await readFile(path, 'utf8')));
         const review = JSON.parse(await readFile(resolve(root, 'reviews', lesson.id.replace('/', '--') + '.json'), 'utf8'));
         validateApproval(lesson, review);
+        if (!review.originalGuide) throw new Error('Independent review of the original public guide required: ' + lesson.id);
+        const { explanation, example, distinction } = review.originalGuide;
+        if (digest({ explanation, example, distinction }) !== digest(introductions.get(lesson.id))) throw new Error('Original public guide changed; independent review required: ' + lesson.id);
+        guideReviews.push(lesson.id);
         if (review.schemaVersion === 2) {
           const controls = JSON.parse(await readFile(resolve(root, 'calibration', 'current-controls.json'), 'utf8'));
           const inflation = JSON.parse(await readFile(resolve(root, 'lessons', 'economics/inflation.json'), 'utf8'));
@@ -53,6 +57,7 @@ export async function compile(root = resolve('content/stage0')) {
     guided.push({ id: context.id, version: context.version, sources: context.sources.map(({ title, url, locator }) => ({ title, url, locator })) });
   }
   const release = { version: digest({ published, pilotPlacements, guided }), pilotPlacements, guided, published };
+  if (process.argv.includes('--require-complete') && guideReviews.length !== catalogue.size) throw new Error(`Independent guide reviews incomplete: ${guideReviews.length}/${catalogue.size}`);
   if (process.argv.includes('--require-complete') && published.length !== catalogue.size) throw new Error(`Incomplete curriculum: ${published.length}/${catalogue.size}`);
   await mkdir('content/stage0/generated', { recursive: true });
   await writeFile('src/lib/stage0/release.json', JSON.stringify(release, null, 2) + '\n');

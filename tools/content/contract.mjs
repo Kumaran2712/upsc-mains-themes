@@ -7,6 +7,20 @@ export { dimensions };
 
 export const catalogue = new Map(concepts.map((c) => [c.id, c]));
 export const digest = (value) => createHash('sha256').update(JSON.stringify(value)).digest('hex');
+/** Bind the review to both the exact guide already live and its proposed public replacement. */
+export function guideBinding(lesson, originalGuide) {
+  return digest({ id: lesson.id, originalGuide, proposedGuide: { explanation: lesson.explanation, example: lesson.example, distinction: lesson.confusion }, sources: lesson.sources.map(s => s.sha256) });
+}
+export function validateGuideReview(lesson, originalGuide, decision) {
+  if (originalGuide?.id !== lesson.id || !['explanation', 'example', 'distinction'].every(key => typeof originalGuide[key] === 'string' && originalGuide[key].trim())) throw new Error('Exact original introductory guide required');
+  if (decision?.binding !== guideBinding(lesson, originalGuide) || !['approved', 'corrections-needed'].includes(decision.originalDecision) || decision.proposedApproved !== true || !decision.rationale?.trim() || !Array.isArray(decision.findings)) throw new Error('Bound independent introductory guide review required');
+  for (const finding of decision.findings) {
+    if (!['explanation', 'example', 'distinction'].includes(finding.field) || !finding.issue?.trim() || !finding.resolution?.trim()) throw new Error('Guide finding requires a specific issue and resolution');
+  }
+  if (decision.originalDecision === 'corrections-needed' && (!decision.findings.length || digest({ explanation: originalGuide.explanation, example: originalGuide.example, distinction: originalGuide.distinction }) === digest({ explanation: lesson.explanation, example: lesson.example, distinction: lesson.confusion }))) throw new Error('Guide corrections must be resolved in the proposed public text');
+  return decision;
+}
+
 export function validateLesson(lesson) {
   const errors = [], requireText = (value, field) => {
     if (typeof value !== 'string' || !value.trim()) errors.push(`${field}: required text`);
@@ -53,6 +67,7 @@ export function validateApproval(lesson, review) {
     return JSON.parse(receipt.output.replace(/^```json\s*|\s*```$/g, ''));
   };
   const originalReview = parse(review.reviewer);
+  if (review.originalGuide) validateGuideReview(lesson, review.originalGuide, originalReview.guideReview);
   if (digest(parse(review.author).lesson) !== digest(lesson)) throw new Error('Author receipt does not match lesson');
   if (review.author.resolvedModel === review.reviewer.resolvedModel) throw new Error('Resolved author and reviewer models must differ');
   if (originalReview.decision !== 'approved' || !dimensions.every((d) => originalReview.scores?.[d] === 2)) throw new Error('Provider review does not approve content');

@@ -16,6 +16,15 @@ const selected = [...catalogue.values()].filter(p => values.all || (values.calib
 if (!selected.length) throw new Error('Unknown placement or subject');
 const authorModel = process.env.CONTENT_AUTHOR_MODEL, reviewerModel = process.env.CONTENT_REVIEWER_MODEL, tutorModel = process.env.CONTENT_TUTOR_MODEL || process.env.OPENAI_MODEL;
 const root = resolve('content/stage0'), ready = [], missing = [], alreadyApproved = [];
+const guides = new Map();
+for (const subject of new Set([...catalogue.values()].map(c => c.subject.id))) {
+  const file = JSON.parse(await readFile(resolve(root, 'introductions', subject + '.json'), 'utf8'));
+  for (const { id, explanation, example, distinction } of file.entries) {
+    if (guides.has(id)) throw new Error('Duplicate introductory guide: ' + id);
+    guides.set(id, { id, explanation, example, distinction });
+  }
+}
+if (guides.size !== catalogue.size || [...catalogue.keys()].some(id => !guides.has(id))) throw new Error('Every placement requires its existing introductory guide');
 for (const placement of selected) {
   const id = placement.id, key = id.replace('/', '--');
   let packet;
@@ -36,7 +45,7 @@ for (const placement of selected) {
     try { validateApproval(lesson, approval); }
     catch (error) { if (!error.message.includes('Runtime prompt changed')) throw error; stalePrompt = true; }
     const modelsMatch = (!tutorModel || approval.tutorModel === tutorModel) && (!authorModel || approval.author.resolvedModel === authorModel) && (!reviewerModel || approval.reviewer.resolvedModel === reviewerModel);
-    if (!stalePrompt && modelsMatch && (!values.live || approval.schemaVersion === 2)) { alreadyApproved.push(id); continue; }
+    if (!stalePrompt && modelsMatch && approval.originalGuide && digest(approval.originalGuide) === digest(guides.get(id)) && (!values.live || approval.schemaVersion === 2)) { alreadyApproved.push(id); continue; }
     previous = { lesson, approval };
   } catch (error) { if (error.code !== 'ENOENT') throw error; }
   ready.push({ id, packet, previous });
@@ -54,7 +63,7 @@ if (values.all || values.subject) {
       const lesson = JSON.parse(await readFile(resolve(root, 'lessons', id + '.json'), 'utf8'));
       const approval = JSON.parse(await readFile(resolve(root, 'reviews', id.replace('/', '--') + '.json'), 'utf8'));
       validateApproval(lesson, approval);
-      if (approval.schemaVersion !== 2 || approval.tutorModel !== tutorModel || approval.author.resolvedModel !== authorModel || approval.reviewer.resolvedModel !== reviewerModel) throw new Error('Model or pipeline changed');
+      if (approval.schemaVersion !== 2 || !approval.originalGuide || digest(approval.originalGuide) !== digest(guides.get(id)) || approval.tutorModel !== tutorModel || approval.author.resolvedModel !== authorModel || approval.reviewer.resolvedModel !== reviewerModel) throw new Error('Model or pipeline changed');
     } catch { throw new Error('Bulk generation requires current-model calibration approval for ' + id + '; run --calibration first using pinned snapshots'); }
   }
   const controls = JSON.parse(await readFile(resolve(root, 'calibration', 'current-controls.json'), 'utf8'));
@@ -67,7 +76,7 @@ try {
   const results = await mapBounded(ready, concurrency, async ({ id, packet, previous }) => {
     const key = id.replace('/', '--');
     try {
-      const result = await executePlacement({ id, packet, call: client.call, rubric, authorModel, reviewerModel, tutorModel, adjudicatorModel: process.env.CONTENT_ADJUDICATOR_MODEL, maxRevisions, concurrency: 2,
+      const result = await executePlacement({ id, packet, originalGuide: guides.get(id), call: client.call, rubric, authorModel, reviewerModel, tutorModel, adjudicatorModel: process.env.CONTENT_ADJUDICATOR_MODEL, maxRevisions, concurrency: 2,
         checkpoint: async state => { await atomicJson(resolve(directory, key + '-state.json'), state); console.log(JSON.stringify({ event: 'content_state', id, state: state.state, cycle: state.cycle })); },
       });
       if (!result.held) {
