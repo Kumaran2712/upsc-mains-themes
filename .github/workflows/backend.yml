@@ -60,6 +60,8 @@ jobs:
           node tests/browser/flagship.mjs
           node tests/browser/activities.mjs
           node tests/browser/tutor.mjs
+      - name: Synthetic launch load and provider cancellation
+        run: node tests/load/flagship.mjs
       - name: Build backend container
         run: docker build --tag stage0-backend:ci .
       - name: Start backend container without a provider key

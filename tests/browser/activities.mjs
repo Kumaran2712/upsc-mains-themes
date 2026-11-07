@@ -1,4 +1,6 @@
 import fs from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import assert from 'node:assert/strict';
 
 const origin = process.env.BROWSER_TEST_ORIGIN || 'http://127.0.0.1:8787';
@@ -57,7 +59,7 @@ async function send(text) {
 }
 async function screenshot(name) {
   const {data} = await command('Page.captureScreenshot',{format:'png',captureBeyondViewport:false},session);
-  await fs.writeFile('/private/tmp/'+name+'.png',Buffer.from(data,'base64'));
+  await fs.writeFile(join(tmpdir(), name + '.png'),Buffer.from(data,'base64'));
 }
 async function assertLayout(path,width,height) {
   await command('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:width<600},session);
