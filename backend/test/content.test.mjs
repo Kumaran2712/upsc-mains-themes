@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { catalogue, digest, dimensions, validateLesson, validateApproval, toPublicLesson } from '../../tools/content/contract.mjs';
 import { bindCases, evaluationPassed, teachingCategories, assessmentCategories } from '../../tools/content/evaluation.mjs';
+import { PROMPT_VERSION } from '../../src/lib/stage0/version.ts';
 
 test('evaluation binds the exact application question and rejects missing, duplicate or invalid test labels', () => {
   const lesson = { core: 'Meaning anchor', distinction: 'Distinction anchor', questions: ['Meaning?', 'Distinction?'], scenarios: [{ question: 'First scenario?', expected: 'First anchor' }, { question: 'Different scenario?', expected: 'Different anchor' }] };
@@ -26,13 +27,23 @@ test('publication blocks missing evidence, same-model review, stale reviews and 
   const lesson = { id: 'polity/state', schemaVersion: 1, version: 'v1', prerequisites: {}, questions: ['Meaning?', 'Distinction?'], scenarios: [1, 2, 3].map((n) => ({ question: 'Case ' + n, expected: 'private anchor ' + n })), sources: [source] };
   for (const key of ['objective', 'core', 'distinction', 'application', 'explanation', 'example', 'differently', 'confusion', 'analogyLimit']) lesson[key] = 'Specific authored text';
   validateLesson(lesson);
-  const receipt = { runId: 'actual-provider-id', executedAt: '2026-11-07', promptVersion: 'v1' };
-  const review = { tutorModel: 'runtime-tutor', lessonHash: digest(lesson), authorModel: 'author', reviewerModel: 'reviewer', sourceVerified: true, evaluationPassed: true, decision: 'approved', author: receipt, reviewer: receipt, evaluation: receipt, scores: Object.fromEntries(dimensions.map((d) => [d, 2])), sourceChecks: [{ sha256: source.sha256, excerptMatched: true, supportsClaims: true }] };
+  // Synthetic receipts exercise the release gate, never serve as content approval.
+  const scores = Object.fromEntries(dimensions.map((d) => [d, 2]));
+  const tests = bindCases(lesson, [...teachingCategories.map((category) => ({ kind: 'teaching', category, input: 'Explain this idea' })), ...[0, 1, 2].flatMap((dimension) => assessmentCategories.map((category) => ({ kind: 'assessment', category, dimension, scenarioIndex: 1, input: 'Learner evidence' })))]);
+  const receipt = (runId, resolvedModel, output) => ({ state: 'completed', runId, resolvedModel, output: JSON.stringify(output), executedAt: '2026-11-07', promptVersion: 'content-pipeline-v2' });
+  const evidence = tests.flatMap((scenario, index) => [0, 1].map((repeat) => ({ scenario, repeat, output: receipt('synthetic-output-' + index + '-' + repeat, 'runtime-tutor', 'Actual output placeholder'), evaluation: receipt('synthetic-judge-' + index + '-' + repeat, 'reviewer-snapshot', { pass: true, labelValid: true, scores, rationale: 'Synthetic approved judgement' }) })));
+  const review = { tutorModel: 'runtime-tutor', lessonHash: digest(lesson), authorModel: 'author', reviewerModel: 'reviewer', sourceVerified: true, evaluationPassed: true, decision: 'approved', author: receipt('synthetic-author', 'author-snapshot', { lesson }), reviewer: receipt('synthetic-reviewer', 'reviewer-snapshot', { decision: 'approved', scores, caseLabels: tests.map((_, index) => ({ index, valid: true })) }), evaluation: { runId: digest(evidence), promptVersion: PROMPT_VERSION, executedAt: '2026-11-07', cases: 40, evidence }, scores, sourceChecks: [{ sha256: source.sha256, excerptMatched: true, supportsClaims: true }] };
   validateApproval(lesson, review);
   assert.throws(() => validateApproval(lesson, { ...review, reviewerModel: 'author' }));
   assert.throws(() => validateApproval({ ...lesson, core: 'Changed claim' }, review));
   assert.throws(() => validateApproval(lesson, { ...review, scores: { ...review.scores, accuracy: 1 } }));
   assert.throws(() => validateApproval(lesson, { ...review, evaluationPassed: false }));
+  assert.throws(() => validateApproval(lesson, { ...review, evaluation: { ...review.evaluation, evidence: [] } }), /Forty/);
+  assert.throws(() => validateApproval(lesson, { ...review, evaluation: { ...review.evaluation, promptVersion: 'stale-prompt' } }), /reevaluation/);
+  const reused = structuredClone(evidence); reused[1].output.runId = reused[0].output.runId;
+  assert.throws(() => validateApproval(lesson, { ...review, evaluation: { ...review.evaluation, runId: digest(reused), evidence: reused } }), /Distinct/);
+  const mismatched = structuredClone(evidence); mismatched[30].scenario.question = lesson.scenarios[0];
+  assert.throws(() => validateApproval(lesson, { ...review, evaluation: { ...review.evaluation, runId: digest(mismatched), evidence: mismatched } }), /question/);
   assert.throws(() => validateLesson({ ...lesson, scenarios: [lesson.scenarios[0]] }));
   const publicJson = JSON.stringify(toPublicLesson(lesson));
   assert(!publicJson.includes('private anchor')); assert(!publicJson.includes('expected')); assert(!publicJson.includes('core'));

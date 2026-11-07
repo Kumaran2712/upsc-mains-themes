@@ -1,9 +1,11 @@
 import { createHash } from 'node:crypto';
 import { concepts } from '../../src/lib/stage0/curriculum.ts';
+import { PROMPT_VERSION } from '../../src/lib/stage0/version.ts';
+import { dimensions, bindCases, evaluationPassed } from './evaluation.mjs';
+export { dimensions };
 
 export const catalogue = new Map(concepts.map((c) => [c.id, c]));
 export const digest = (value) => createHash('sha256').update(JSON.stringify(value)).digest('hex');
-export const dimensions = ['accuracy', 'beginnerClarity', 'concreteTeaching', 'responsiveness', 'scopeAndPacing', 'respectAndAccessibility', 'evidenceAndUncertainty', 'assessmentIntegrity'];
 export function validateLesson(lesson) {
   const errors = [], requireText = (value, field) => {
     if (typeof value !== 'string' || !value.trim()) errors.push(`${field}: required text`);
@@ -41,6 +43,36 @@ export function validateApproval(lesson, review) {
   }
   if (!dimensions.every((d) => review.scores?.[d] === 2)) throw new Error('Every applicable rubric dimension must score 2');
   if (!Array.isArray(review.sourceChecks) || review.sourceChecks.length !== lesson.sources.length || !review.sourceChecks.every((c, i) => c.sha256 === lesson.sources[i].sha256 && c.excerptMatched && c.supportsClaims)) throw new Error('Source evidence incomplete');
+  if (review.evaluation.promptVersion !== PROMPT_VERSION) throw new Error('Runtime prompt changed; reevaluation required');
+  const evidence = review.evaluation.evidence;
+  if (!Array.isArray(evidence) || evidence.length !== 40 || review.evaluation.cases !== 40 || review.evaluation.runId !== digest(evidence)) throw new Error('Forty repeated actual-output evaluations required');
+  const parse = (receipt) => {
+    if (receipt?.state !== 'completed' || !receipt.runId || !receipt.resolvedModel || typeof receipt.output !== 'string' || !Number.isFinite(Date.parse(receipt.executedAt))) throw new Error('Completed provider receipt required');
+    return JSON.parse(receipt.output.replace(/^```json\s*|\s*```$/g, ''));
+  };
+  const originalReview = parse(review.reviewer);
+  if (digest(parse(review.author).lesson) !== digest(lesson)) throw new Error('Author receipt does not match lesson');
+  if (review.author.resolvedModel === review.reviewer.resolvedModel) throw new Error('Resolved author and reviewer models must differ');
+  if (originalReview.decision !== 'approved' || !dimensions.every((d) => originalReview.scores?.[d] === 2)) throw new Error('Provider review does not approve content');
+  const firstRuns = evidence.filter((entry) => entry.repeat === 0);
+  const bound = bindCases(lesson, firstRuns.map((entry) => entry.scenario));
+  if (!Array.isArray(originalReview.caseLabels) || originalReview.caseLabels.length !== bound.length || !bound.every((_, index) => originalReview.caseLabels.filter((label) => label.index === index && label.valid === true).length === 1)) throw new Error('Independent reference-label review required');
+  if (firstRuns.some((entry, i) => digest(entry.scenario.question) !== digest(bound[i].question))) throw new Error('Evaluation question does not match lesson');
+  const receipts = new Set([review.author.runId, review.reviewer.runId]);
+  for (const scenario of bound) {
+    const repeats = evidence.filter((entry) => digest(entry.scenario) === digest(scenario));
+    if (repeats.length !== 2 || ![0, 1].every((repeat) => repeats.some((entry) => entry.repeat === repeat))) throw new Error('Every case requires two independent runs');
+    for (const entry of repeats) {
+      const verdict = parse(entry.evaluation);
+      if (!evaluationPassed(verdict)) throw new Error('Actual output evaluation failed');
+      if (entry.output?.state !== 'completed' || entry.output.resolvedModel !== review.tutorModel || !entry.output.output?.trim() || !Number.isFinite(Date.parse(entry.output.executedAt))) throw new Error('Runtime model/receipt mismatch');
+      if (entry.evaluation.resolvedModel !== review.reviewer.resolvedModel) throw new Error('Runtime evaluation reviewer mismatch');
+      for (const receipt of [entry.output, entry.evaluation]) {
+        if (!receipt.runId || receipts.has(receipt.runId)) throw new Error('Distinct provider runs required');
+        receipts.add(receipt.runId);
+      }
+    }
+  }
   return review;
 }
 

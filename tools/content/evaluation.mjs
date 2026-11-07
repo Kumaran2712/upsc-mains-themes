@@ -1,4 +1,4 @@
-import { dimensions } from './contract.mjs';
+export const dimensions = ['accuracy', 'beginnerClarity', 'concreteTeaching', 'responsiveness', 'scopeAndPacing', 'respectAndAccessibility', 'evidenceAndUncertainty', 'assessmentIntegrity'];
 
 export const teachingCategories = ['explanation', 'confusion', 'misconception', 'ambiguity', 'application'];
 export const assessmentCategories = ['correct', 'partial', 'incorrect', 'informal', 'manipulation'];
@@ -30,6 +30,7 @@ export function bindCases(lesson, tests) {
 export function evaluationPassed(decision) {
   return decision?.pass === true && decision?.labelValid === true &&
     typeof decision.rationale === 'string' && Boolean(decision.rationale.trim()) &&
+    dimensions.filter((dimension) => !['concreteTeaching', 'assessmentIntegrity'].includes(dimension)).every((dimension) => decision.scores?.[dimension] === 2) &&
     dimensions.every((dimension) => decision.scores?.[dimension] === 2 ||
       (typeof decision.scores?.[dimension]?.notApplicable === 'string' && Boolean(decision.scores[dimension].notApplicable.trim())));
 }

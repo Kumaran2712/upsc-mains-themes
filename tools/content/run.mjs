@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { catalogue, digest, dimensions, validateLesson } from './contract.mjs';
+import { catalogue, digest, dimensions, validateLesson, validateApproval } from './contract.mjs';
 import { tutorInstructions, assessorInstructions, assessmentSchema, PROMPT_VERSION } from '../../backend/lessons.mjs';
 import { validateAssessment } from '../../backend/provider.mjs';
 import { bindCases, evaluationPassed } from './evaluation.mjs';
@@ -82,7 +82,10 @@ for (let index = 0; index < tests.length; index++) for (let repeat = 0; repeat <
 }
 await mkdir(resolve(root, 'lessons', placement.subject.id), { recursive: true });
 await mkdir(resolve(root, 'reviews'), { recursive: true });
-const approval = { tutorModel, lessonHash: digest(lesson), authorModel, reviewerModel, decision: 'approved', scores: judgement.scores, sourceVerified: true, evaluationPassed: true, sourceChecks: sourceChecks.map((c, i) => ({ ...c, supportsClaims: judgement.sourceChecks[i].supportsClaims })), author, reviewer: review, evaluation: { runId: digest(evidence), executedAt: new Date().toISOString(), promptVersion: PROMPT_VERSION, cases: evidence.length, evidence } };
+const evaluatedModels = new Set(evidence.map((entry) => entry.output.resolvedModel));
+if (evaluatedModels.size !== 1) throw new Error('Runtime model changed during evaluation; pin a model snapshot before publication');
+const approval = { tutorModel: [...evaluatedModels][0], lessonHash: digest(lesson), authorModel, reviewerModel, decision: 'approved', scores: judgement.scores, sourceVerified: true, evaluationPassed: true, sourceChecks: sourceChecks.map((c, i) => ({ ...c, supportsClaims: judgement.sourceChecks[i].supportsClaims })), author, reviewer: review, evaluation: { runId: digest(evidence), executedAt: new Date().toISOString(), promptVersion: PROMPT_VERSION, cases: evidence.length, evidence } };
+validateApproval(lesson, approval);
 await writeFile(resolve(root, 'lessons', placement.subject.id, placement.slug + '.json'), JSON.stringify(lesson, null, 2) + '\n');
 await writeFile(resolve(root, 'reviews', key + '.json'), JSON.stringify(approval, null, 2) + '\n');
 console.log(`${id}: approved with ${evidence.length} evaluated outputs; run content:compile to publish.`);

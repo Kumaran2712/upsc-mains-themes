@@ -3,7 +3,8 @@ import { concepts } from '../src/lib/stage0/curriculum.ts';
 import { previews, featured } from '../src/lib/stage0/previews.ts';
 import { buildTutorPrompt } from '../src/lib/stage0/teaching.ts';
 
-export const PROMPT_VERSION = 'stage0-tutor-2026-11-07-v2';
+import { PROMPT_VERSION } from '../src/lib/stage0/version.ts';
+export { PROMPT_VERSION };
 export const LESSON_VERSION = 'stage0-pilot-2026-11-07-v1';
 const criteria = {
   sovereignty: ['Final governing authority without another country having the right to rule the state; government remains constitutionally limited.', 'Independence emphasises freedom from outside rule; sovereignty concerns governing authority.', 'Signing a voluntary agreement does not automatically transfer the right to rule.', 'A country freely signs an agreement to cooperate on river protection. Must it have lost sovereignty? Explain.', 'No. Choosing a commitment is an exercise of governing authority, not automatic outside rule.'],
