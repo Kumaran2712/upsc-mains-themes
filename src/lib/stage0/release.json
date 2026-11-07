@@ -1,5 +1,5 @@
 {
-  "version": "e15e4b14694b9f1db99e9d0ee62602d2a8f072a7e8bceed3c69b8a5ed9f4db7f",
+  "version": "96f84f8638c3e8b5bd853fb1858f51fd4d2ac5458a75a3663c131c43243db909",
   "pilotPlacements": [
     "polity/sovereignty",
     "polity/state",
@@ -17,7 +17,7 @@
   "guided": [
     {
       "id": "polity/law",
-      "version": "guided-1a39cbe88c0abfa94abbac5669175df4cc90cfad44857a388014aa77b1820a56",
+      "version": "guided-eb5ca68cf36bee0818e9b9917e6286dab9a078ab4b5d928a2ea344e31166d55a",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -33,7 +33,7 @@
     },
     {
       "id": "polity/legal-system",
-      "version": "guided-836c1a77c23498b1fd736abe76ca573396077f7a8ff658e14c2a8236c293d884",
+      "version": "guided-868ef58186933f0d349226143d68edcaad2308a1663e6275040a8b7b295b7c0d",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -49,7 +49,7 @@
     },
     {
       "id": "polity/justice",
-      "version": "guided-b3324b293d7e1160e1d7998440a40e0161c821fec66c9819016b1b1687af7f4e",
+      "version": "guided-2c0e613449dfb813025bb06b267c4fd62b0961865ba25f5a0c30aa38e3e2d0ec",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 4",
@@ -65,7 +65,7 @@
     },
     {
       "id": "polity/rights",
-      "version": "guided-d77cf220297f328ad14c54397cd99a6d23a0bb00599e6e2c8291f70ddf0d6351",
+      "version": "guided-b6666f228e6bb2d1ce13dcab7cf7c8ddff8faf13329cdc845f61c65786f157da",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -81,7 +81,7 @@
     },
     {
       "id": "polity/duties",
-      "version": "guided-62782c3b31f21eb2c184a9c13d894f6ae5c916f442e8fa23e61b3f1558f0c366",
+      "version": "guided-e92d7a1e0b0e19baf50c25fa380a6b782c472eb9aff87850eca726497309df9d",
       "sources": [
         {
           "title": "Legislative Department: Constitution of India, English",
@@ -97,7 +97,7 @@
     },
     {
       "id": "polity/obligations",
-      "version": "guided-78d7f5cb15437808a1fa7f2a435130335dcc860ae37ea213bb61adee872c9c22",
+      "version": "guided-01c5cb8612abaa9493711d0e0c52a11ecd419e7a669ee51e113bba8e74fcfecf",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 7",
@@ -113,7 +113,7 @@
     },
     {
       "id": "polity/rules",
-      "version": "guided-ad6e6cb7dfb860a2054675bd2cc69042d40ce682634c64a46e3fec69743bbc7e",
+      "version": "guided-d270c6ee0e3b34491c9998170ae9dba3d377fe78d33e0f76cb88fd4c1bc0ee5f",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -129,7 +129,7 @@
     },
     {
       "id": "polity/regulations",
-      "version": "guided-15e7b181c1e18203b90e536fa917e5341395e4098a64c289b5f5dd7a9a5733a1",
+      "version": "guided-cc773cb3c9c149a4b2806a19baabfb8a1452fee3ccf662bdc49991b8804ae8ae",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -145,7 +145,7 @@
     },
     {
       "id": "polity/offence",
-      "version": "guided-98a9a103cd4d6600849410ef37921272133f50c32e7b7f697196e4e35f844956",
+      "version": "guided-6ef1eb9817b94442d1630a5d785c8af33f8b3370ddd5c7c957cfcf1a864ec9cc",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 2",
@@ -161,7 +161,7 @@
     },
     {
       "id": "polity/punishment",
-      "version": "guided-b01403adbda32600948a4deeee0b2dd9bebd4ffad57bcacd35a835e7818ba21d",
+      "version": "guided-0b8fb3ec892c3f925d0a16a12bdd1969e47583deb2bf75487ffe7fd244a2317f",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -177,7 +177,7 @@
     },
     {
       "id": "polity/courts",
-      "version": "guided-c0a19e1ba995106e63c363471ade051e924172f2cdfa2e09403e59391c67ac93",
+      "version": "guided-74dadc64ef74f3b8cf6b4eb72bd831c0c75e1ee626d165b3d97e5a51c792ecaa",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -193,7 +193,7 @@
     },
     {
       "id": "polity/legal-authority",
-      "version": "guided-494a05bfee5d2f0e4c936580680df2af0144b1eccd956486bc87980ce4b56f0f",
+      "version": "guided-6745e417756276079d059eebcd521a1d0fd85b913115c92d5993372fdc67be2b",
       "sources": [
         {
           "title": "Supreme Court of India: Constitution and legal system",
@@ -204,7 +204,7 @@
     },
     {
       "id": "polity/government",
-      "version": "guided-a2b6ad3da2a114e32c3d3118444acd780979fccd3c2f831ec4f25a170ed2dd76",
+      "version": "guided-e88675ac0863082f07cf91b5d7d44d4487f642b10196a2bfaf9cd2da300f8069",
       "sources": [
         {
           "title": "Fakir Mohan University: Political Processes in India, self-learning material",
@@ -220,7 +220,7 @@
     },
     {
       "id": "polity/citizen",
-      "version": "guided-637d3ed7d78d5d29ac77a09dc73f4cc21d494b5518b91990cc740edcf65fd3cc",
+      "version": "guided-092acf85f318b1344914376da5d3a3ed4d46563ee2070541e1b4c0db10472ab5",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -236,7 +236,7 @@
     },
     {
       "id": "polity/citizenship",
-      "version": "guided-34fb9c42197b593672f2c36d22fa9a6233d23ff7631c744bf56116c5b8ae10a5",
+      "version": "guided-7d370b196158f5d86f12823d2036a791159f076f9a71f0a9487bc670282def7e",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 6",
@@ -252,7 +252,7 @@
     },
     {
       "id": "polity/country",
-      "version": "guided-5731eaf7a72448b9495dc886812306ee88b6783be7f7dc2c8514db6d36223f7b",
+      "version": "guided-c2d15581d0d7adccec25999b165704fa663987857ccfaf706c4f64676341e81e",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 3",
@@ -268,7 +268,7 @@
     },
     {
       "id": "polity/nation",
-      "version": "guided-3bfa0bcc6be2788bec355f706ffe3127340066e25b2d4550fdffffbd78ada305",
+      "version": "guided-787443b8a9accb4e8b14d939b2fa44d1d081f317ce277a05209dc469d012634f",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 7",
@@ -284,7 +284,7 @@
     },
     {
       "id": "polity/territory",
-      "version": "guided-9c8701002458093e7d862f07740e635d328046ce960610cb758894ef4e8978e8",
+      "version": "guided-3fb527e776be0157d0ad78d26395aac9b1b78cc8faaecbf50ea9c2a278afd4b6",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 7",
@@ -300,7 +300,7 @@
     },
     {
       "id": "polity/public-authority",
-      "version": "guided-e88b94c8ee7bda1c3e1e9e3b0fe71538f54e5e0475eec216d78ab3a276e071d9",
+      "version": "guided-130bdc000371e7dac059844ce4970ee1aeb7dd93356cbf8e5baf3361be890b8d",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -316,7 +316,7 @@
     },
     {
       "id": "polity/public-administration",
-      "version": "guided-5b2b3b9c491b243082b21a9d2f9fe67d38fc8ddb6e7bbe22878e26e0249f360d",
+      "version": "guided-8fa320eba8d07903ad22f07a23cec27ae4dfede84aea057e4eff7cae425626a7",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -332,7 +332,7 @@
     },
     {
       "id": "polity/preamble",
-      "version": "guided-8c2211ad28fa93233e0334718459fc09db85b0bba4b4817ad36004d577dc0c84",
+      "version": "guided-fb348c038f2a6551dad20d55a86f349bbebba1ff9e419ca5d6890b8421c03d6b",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -348,7 +348,7 @@
     },
     {
       "id": "polity/legislature",
-      "version": "guided-2383aee8cca9210b1aaf6e90ab96948518cee6556ab0f53988daad26c07a03b9",
+      "version": "guided-bfb6aa7fdc5d16d52e5cff7ea8a8920d97390be84edaef0890d4c1086477d97c",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -364,7 +364,7 @@
     },
     {
       "id": "polity/executive",
-      "version": "guided-53600448d734e6987fc90b9f757c25052a1198e7721e61ecff5e5d65da9f7249",
+      "version": "guided-7c3c332c93ef0688fb0629dc0df701e5095ec68f1d8d1b66383d568307347e1c",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 4",
@@ -380,7 +380,7 @@
     },
     {
       "id": "polity/judiciary",
-      "version": "guided-f02fc9072493d9effb2b05a773e3d5ecd3d011ab76b8151cbb2afdca2d5678c3",
+      "version": "guided-1339bef423c25b2eb5e5d2bd958ddb2b99e56e6bd235080a572a594b1a7ff2bf",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 6",
@@ -396,7 +396,7 @@
     },
     {
       "id": "polity/parliament",
-      "version": "guided-9c38f36652165b97658e2692e3031749dc6a5409dc0ceb52b6479f064be06fc5",
+      "version": "guided-ec830c1020f4fd7dd76b09a4b3070fa26148d4883ed70d6160328f3c311c198c",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 5",
@@ -412,7 +412,7 @@
     },
     {
       "id": "polity/government-departments",
-      "version": "guided-6c4a11c0886808f715913b93bbfb6118bc5f18602961b4500ae0889680237aa8",
+      "version": "guided-b71cc8fe755896438f019c7a36f507c5c655923b80143d058b3be9f2bd584b97",
       "sources": [
         {
           "title": "Government of Odisha: General Administration Department functions",
@@ -423,7 +423,7 @@
     },
     {
       "id": "polity/public-institutions",
-      "version": "guided-28d23b9133299466db412a77e57ecd7f8248021870c766a2ffd6501c6ca7af4c",
+      "version": "guided-7697c7b2a111a5d9fe12e0f06acde99f7ecf06effc2812a31430f1031885df18",
       "sources": [
         {
           "title": "Government of Odisha: General Administration Department functions",
@@ -439,7 +439,7 @@
     },
     {
       "id": "polity/elections",
-      "version": "guided-cc60d2943bd3a3eb81512734fc65720d7b64d62f467b87e507e9d92ddd41ce99",
+      "version": "guided-9917eed67e2d6ac1e5f3218f367546deb1493afad13effa2202cded3682ff124",
       "sources": [
         {
           "title": "Fakir Mohan University: Political Processes in India, self-learning material",
@@ -455,7 +455,7 @@
     },
     {
       "id": "polity/voting",
-      "version": "guided-d9bcbb6e3c30e78dda5186ad77990e46cfca262535b9ec7675724b96cc7df08f",
+      "version": "guided-de72b6081843077e7bea6961c41b5ec79a3e1d940b52c241d65ff11b6051200a",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 9",
@@ -471,7 +471,7 @@
     },
     {
       "id": "polity/representation",
-      "version": "guided-95596643c8b171f0eb5276c263d2abb406b998fd3d71dc4b3c21000cb8573fe1",
+      "version": "guided-1c0152bfb45759e7dfaaa364aee4d8ce2a1745f68d5c80d9d3d1df99fdf0af9a",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 7",
@@ -487,7 +487,7 @@
     },
     {
       "id": "polity/accountability",
-      "version": "guided-2cfdbe051ef8756cb82cc59a119557b622d3f7e9cb36421aba4a23bb8c4f73a8",
+      "version": "guided-0bb84109e2345512d3dc8c11f594916e85aeabc61245d02fac6ef3afe923741d",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 5",
@@ -503,7 +503,7 @@
     },
     {
       "id": "polity/human-rights",
-      "version": "guided-5f3764e2eccd33ccb6f94c4c0e471a276d675c800b9b1ab2533134026f9ef918",
+      "version": "guided-80da029be9fe45eca564ddc976bc63ac55df235bc8f214353ae2c1b57050e80e",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -519,7 +519,7 @@
     },
     {
       "id": "polity/fundamental-rights",
-      "version": "guided-83cee6c59310eb0b5eaf1d4d46d179c2be5c5177c28335697a160e8c9449e1d0",
+      "version": "guided-636bbcbe9e2b90885bdbd75358fdd8997764b76331d40ef50d8a7574489ddb93",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -535,7 +535,7 @@
     },
     {
       "id": "polity/civil-rights",
-      "version": "guided-2d966ea8f9903180420004940b704bcefb84838d71182eb99f427c4599b5bb68",
+      "version": "guided-1420c44c523cd7b26f3f07837b677ccc1aed8ad8986d514dcb1897378b2be706",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -551,7 +551,7 @@
     },
     {
       "id": "polity/political-rights",
-      "version": "guided-be30fa36b7649146a053d72b8fa5320d4fb6935a348c36f261437cff8e2bb35d",
+      "version": "guided-61ce309ec1212e6e2585098691e850d9510e5f460c9b62dd09f04e1d2d885793",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -567,7 +567,7 @@
     },
     {
       "id": "polity/equality",
-      "version": "guided-c3a753fda63a145317f1feb853b6dafcfe75a78d66827d507f73a285f6e01f12",
+      "version": "guided-c4a94ab142ed0d7f9eb19e30de58cdb4ae7597298970a6716b7d3b12ca5da3bd",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 3",
@@ -583,7 +583,7 @@
     },
     {
       "id": "polity/liberty",
-      "version": "guided-230a7a0c77616ac5b592ad0f9eb73179304a049ac0c9204a42a9ec71e11da649",
+      "version": "guided-8e93a72b18eec102672e908dab41468932b5ce5699e0990438c40d5f1df6871f",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -599,7 +599,7 @@
     },
     {
       "id": "polity/freedom-of-expression",
-      "version": "guided-9618b5210aa9aff5114a16ce19688e01b09f569dd331ad432b002fd7130b295b",
+      "version": "guided-5c06bc98cb4e9fcfd69791d369409fc8fb60dd79b468ff00882871e52023791f",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 2",
@@ -615,7 +615,7 @@
     },
     {
       "id": "polity/freedom-of-religion",
-      "version": "guided-cc44b8167725cf2c07833d5f46f2d00a084c0a9f5c55df5a7a82f14b9b522be0",
+      "version": "guided-a99e80bc3e80841efac5873c3243a561feb2057e6dabda596233217b8430ea45",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 2",
@@ -631,7 +631,7 @@
     },
     {
       "id": "polity/right-to-life",
-      "version": "guided-3f9996d0887d5d2fc7c9bcb2724b54ff478c4d8436733e7b2ca3ede7fbd551e6",
+      "version": "guided-6dccf6edeb44edde7738b994189d2e42db256a25a88571e8c856ba11345e6b60",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 6",
@@ -647,7 +647,7 @@
     },
     {
       "id": "polity/right-to-property",
-      "version": "guided-90c2056ed42b74739390da6a5de5292af0a75a2fc93f72af4825a3a299283ba3",
+      "version": "guided-9b66e131a438dd591d94550c9a1047530033fe488a52289013f149ee4b31bd0b",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 2",
@@ -663,7 +663,7 @@
     },
     {
       "id": "polity/discrimination",
-      "version": "guided-76633e2d242e272e666211409f3cdf66013e761757fd7cbf7ce62c01cea0be67",
+      "version": "guided-68f251d8da7d41605ecc545620076d7dde461a62d56cc32ce32ea18ff06e0c00",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 2",
@@ -679,7 +679,7 @@
     },
     {
       "id": "polity/act",
-      "version": "guided-4d09ca658218d4ca47e59aaff20d19e628cde57f7215bef10600e0efbc401547",
+      "version": "guided-8940574ffbd8fe8b46f8f543d5325b77401bfdc5a218aa4e681afc34dd16c906",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -695,7 +695,7 @@
     },
     {
       "id": "polity/bill",
-      "version": "guided-3414899f874fc911cb5179e08f1f4d0b3d145f649777119c49b9a9224cb10955",
+      "version": "guided-72385937593e96e74f024481d09182ddcff258e47123074f98cb24e42d6a3be6",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 5",
@@ -711,7 +711,7 @@
     },
     {
       "id": "polity/amendment",
-      "version": "guided-2fb6f1cce8b27fa195e96d8b52c0c712406f9ff9500f15a26009f8fa23bb6c07",
+      "version": "guided-9ce7db75320ed9b0a498e4473ad2a79c16da28fd3677b445188440f35a76b63a",
       "sources": [
         {
           "title": "Legislative Department: Constitution of India, English",
@@ -727,7 +727,7 @@
     },
     {
       "id": "polity/ordinance",
-      "version": "guided-507a37ff15d52c9958756dbb7bc9e9f66aff4264b4f80b78ae835663e5dadb3c",
+      "version": "guided-4d829a965daa8c1d9a4f90a1db97c749fa3f44bac12e661308dcc5f5cc280448",
       "sources": [
         {
           "title": "Legislative Department: Constitution of India, English",
@@ -743,7 +743,7 @@
     },
     {
       "id": "polity/notification",
-      "version": "guided-a3d6dde8506486e76da109a64feb78ac618fe2b62bf3e7ec900b6a77a36dcc24",
+      "version": "guided-3757a9aa2a1fb8ff5be647b8385b7bb72b8e49399c95c3edb7a2a9db26e133f2",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -759,7 +759,7 @@
     },
     {
       "id": "polity/order",
-      "version": "guided-5f37a50258f56a0a39eec9985a87bf04d69a6a6cf555d45313d0842b30be370e",
+      "version": "guided-aa91f99f347be53d2640d40569530cdb027bb96d726ad5faa00ba8c3f9f8a9e8",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -775,7 +775,7 @@
     },
     {
       "id": "polity/petition",
-      "version": "guided-a878780675eb86b30407025939af4f81d5c45d386e0a46693780f7d4e1b8474c",
+      "version": "guided-adaf0123af240bfd8f9d008377b636746008e77dd958abef9b5ff10c27d18e3d",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -791,7 +791,7 @@
     },
     {
       "id": "polity/writ",
-      "version": "guided-2cd9f9d4e1330c78fc8040306aac982b9626232bee65aed6b0ae926c43f6a01c",
+      "version": "guided-c5332c93b88de6d9ad9f41246ae5804f0d7f155112faf7487ec98c20f6c0d9b9",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 2",
@@ -807,7 +807,7 @@
     },
     {
       "id": "polity/appeal",
-      "version": "guided-053735ba3449fc35cd847e95a76cfb28e5779f9bb66e200101ba4523906b3563",
+      "version": "guided-cef20e5883e63f5437ac3e2ecce02a99586745342f39d61b71271d76cdd3754b",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -823,7 +823,7 @@
     },
     {
       "id": "polity/jurisdiction",
-      "version": "guided-52d5891c4b1917237907a15d931dac0425f8cdbd05e6bd2f23fef416fddad8d2",
+      "version": "guided-ddc5077610ac991bd07ce1d90d7069ea617ac18601d88d04f1d9d97acbf8ac06",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 6",
@@ -839,7 +839,7 @@
     },
     {
       "id": "polity/due-process",
-      "version": "guided-447ce6fbe5bb4412bd2eb5f109a1b73d374947a54ed569892e4d0063ded04ebd",
+      "version": "guided-cddf1bc58a21b70ca333b967ec4e9a55ccc7362bef12fea96a257db349773ef9",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -855,7 +855,7 @@
     },
     {
       "id": "polity/natural-justice",
-      "version": "guided-b4007720e988c4d600f795f676132f1c2be2cdb8c5c423132248d3a7b68442f8",
+      "version": "guided-1c0d47a7bbb58a04162bbfaa6db10bc25c01632086d11aebdc4d01a57bc5400a",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -871,7 +871,7 @@
     },
     {
       "id": "polity/public-interest",
-      "version": "guided-cae1b86c1afadcabb5dc485e76b27438eb9066b6bb55e93f0b4e436a5f7a514a",
+      "version": "guided-b14b7e3fd714a5e0f087d5199bccb5d2b18f1cb8dae39e87c5db228e72b784d3",
       "sources": [
         {
           "title": "Institute of Secretariat Training and Management: Vigilance Handbook",
@@ -887,7 +887,7 @@
     },
     {
       "id": "polity/democratic",
-      "version": "guided-2c027c2c9a651c0336b2569b13168d3e1e879456ea6f049f31390f65e025ddc4",
+      "version": "guided-92d09f2857a02b3f6bfc12272f7efb536841d9d22b3270d351a1797b08a780ef",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 3",
@@ -903,7 +903,7 @@
     },
     {
       "id": "polity/republic",
-      "version": "guided-6d2a3211b32d1fa620d2e644cda4d3db992c53826730bc4f40cf947b48e82782",
+      "version": "guided-f6ad3ccf29ba7956e33ed58eb01a5a4287fad232f0e1db7cb4911be6a1fd34c8",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 9",
@@ -919,7 +919,7 @@
     },
     {
       "id": "polity/secular",
-      "version": "guided-1ad431f749ee11f00d30f66e478641487e55c0d03b3bd6967c2b799f917d066b",
+      "version": "guided-e0e1c63074abc1f27bf82ae1f8c51ddee3eb1126b914f6e0185b16722066bbc5",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 8",
@@ -935,7 +935,7 @@
     },
     {
       "id": "polity/socialist",
-      "version": "guided-f0d3229638c95b8d74d09794c8c067248c7c424d4fc15ee18d94f9a92a23fc3c",
+      "version": "guided-6f818538fb4b82fb8274fef819eedd36c8603e098bfcacde67e7939c206a2482",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 3",
@@ -951,7 +951,7 @@
     },
     {
       "id": "polity/federal",
-      "version": "guided-45f2866592196eee78e26beda510c8478b3b5c8424d738311a56bbbc59ae4428",
+      "version": "guided-fc790f1988f314a47d981de499d3578d23a0bdf8fafd87732dfe414b6c5a6ad7",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 7",
@@ -967,7 +967,7 @@
     },
     {
       "id": "polity/unitary",
-      "version": "guided-0917ece57066900e4f38df6e88b16611475abd9ddfd8097c8b2fd22e41a88867",
+      "version": "guided-14ef453beef506c29f69fb98b8352ee5ccc7b112b5cc3b758e83fb422a2623f9",
       "sources": [
         {
           "title": "NCERT Indian Constitution at Work, chapter 7",
@@ -983,7 +983,7 @@
     },
     {
       "id": "polity/parliamentary",
-      "version": "guided-758f50bcd225e66086d9882d96d0031e0d80e74416bcab1f17f49927c4478460",
+      "version": "guided-ab67d1dc73a04b9d4279f13ac88ac69f15d41dbbc7ddd5328026241964fbdc48",
       "sources": [
         {
           "title": "Fakir Mohan University: Political Processes in India, self-learning material",
@@ -999,7 +999,7 @@
     },
     {
       "id": "polity/constitutional",
-      "version": "guided-beb6afe0ee749a8144f525e2e7e70d2baeae9306566b8033553b30ad2b384e6c",
+      "version": "guided-de70ae42181b069a0ac66afe66e1c763fa96e2ee7e789c12571ed00dc1dad8b6",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -1015,7 +1015,7 @@
     },
     {
       "id": "polity/constitutional-authority",
-      "version": "guided-d27d15d7515a46c91ae0b2439cb63bdedc78dcdd43e7ebedefed6e0af19a490a",
+      "version": "guided-3be0ed8c591aa619987af77e9ee2b9dbb9ff9f2cccd706b22137209b4dafb175",
       "sources": [
         {
           "title": "Supreme Court of India: Puttaswamy privacy judgment, 24 August 2017",
@@ -1031,7 +1031,7 @@
     },
     {
       "id": "polity/constitutional-body",
-      "version": "guided-f1c2277820ddffa550b6e89a181632423ed45a857a416a0c1a659a32dd527d95",
+      "version": "guided-5d66d69846cd0d3c1249199af33b180ec460c16161188150adc3c5fcd1790f05",
       "sources": [
         {
           "title": "Fakir Mohan University: Political Processes in India, self-learning material",
@@ -1042,7 +1042,7 @@
     },
     {
       "id": "economics/economy",
-      "version": "guided-362698e1a55e08b9058475e4b07289a625a68f80b30d7bc18593cf17c64c6533",
+      "version": "guided-5fdd78253fef98206e9ce72f85189b4043100b234170b77a8bf37123f75d1fbc",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 1",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "economics/economics",
-      "version": "guided-a5bc40b1d75d35689e4dd0ba7c59c5d0ed26c41efef7f78e9ee95172062062ec",
+      "version": "guided-e34691b4254575701333b36a8ec12e82b14799a742795996ced88e44f2414db3",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 2",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": "economics/goods",
-      "version": "guided-bfcf75c8c12a43087377fc3bd51a2fc2be5083db13a8aa0f85925042d933e545",
+      "version": "guided-7ac65aacbb1aabc348a3d3546af3658a53a56a7a5ec2886fd4c0fe8a7f0ab2ff",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 2",
@@ -1090,7 +1090,7 @@
     },
     {
       "id": "economics/services",
-      "version": "guided-6d4fd71e09cf15184fcf684f05ebbf1a046f81d61108b22939a4cab148196ff3",
+      "version": "guided-e5cba5fc5147a8ea80198c19f57f0a46f9162c0b033465b77c4e77a0ed74079c",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 2",
@@ -1106,7 +1106,7 @@
     },
     {
       "id": "economics/needs",
-      "version": "guided-887d7b1f24d9058e1d5dfb9a4bfc74af3ba6094c99adc344d8f340699793b0eb",
+      "version": "guided-ee7ec08120bc1e2e9dc56d0e85689082aed684049166f9058a27e62bd6a48d1d",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1122,7 +1122,7 @@
     },
     {
       "id": "economics/wants",
-      "version": "guided-98a29759dc19445b5d16bb5142f50962ce01ccd3180b815969f5c96a00b604d3",
+      "version": "guided-c395c2009428deffe6a5d6d4a77cabd46f24f8f52c2e67518cfa56b96e8811b9",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1138,7 +1138,7 @@
     },
     {
       "id": "economics/resources",
-      "version": "guided-0cd8257d4327375a39bbe6d81f965c0b4529945fe063f6413d90f5d22db9f620",
+      "version": "guided-815a74002ecf8ea4475c16342134cfdc9da6b29093af53d0ac4cd3be6203ff40",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 1",
@@ -1154,7 +1154,7 @@
     },
     {
       "id": "economics/scarcity",
-      "version": "guided-94bbd40c2215dbad0805d95e356f002ea9b773c91abcf61e011ce77090aad766",
+      "version": "guided-c45b1349f8dbd6b1900a935c0d819948476738598d6cb8f1a1090069b12b2006",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 3",
@@ -1170,7 +1170,7 @@
     },
     {
       "id": "economics/choice",
-      "version": "guided-de9a1cc6609d60a127531fec5ffdb9d5adb875d9302dd0e267562f8964a8c834",
+      "version": "guided-bc9878e852ea65cb61b8c816b123be4a51d7d5bd538ae13525557015acd94fcc",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 5",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": "economics/production",
-      "version": "guided-414698e5fbec5eecfb1a6760285e9555093c884e271b61aadfb16d6a2c1d1d82",
+      "version": "guided-b46e48d62d306b0d00ab7d33d43455661f3b60031423828a6d65380b2dfa8e76",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 4",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "economics/consumption",
-      "version": "guided-3fce3d77009c2e50ce24bf5805e9a2b4940c2cffd2bdb70ea2283ae5ea737d1b",
+      "version": "guided-1dc56322459ea38767d4d13660d0af19a212e929eb5a45ea7fd133297706b2df",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 4",
@@ -1218,7 +1218,7 @@
     },
     {
       "id": "economics/distribution",
-      "version": "guided-baea3011f590c58bbed7e49f6c2b652bb9e41e817eae10e4774c218b9427b9f8",
+      "version": "guided-77deae7e326fbbacf7ce4f5c8cf3d85cfc92ed2a30dac38b64e0e49ea3b39446",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 5",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": "economics/exchange",
-      "version": "guided-5c0cbfcc7c49057c51af1882bea19dc26d74303e48c1fd1968796ea899fb4740",
+      "version": "guided-29ee6d043f42aca04d66707096ecb68d36eb07120e26602bec1e6b7e153db251",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 8",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": "economics/market",
-      "version": "guided-06ae19e2b5752889e4a8ed37f7b528367317c0d1c5f05678c89fbf32ad879655",
+      "version": "guided-4d14dc97a9fe945759b7983cb6ae47a4acb94a126b6d77f05b21ba9fcdca9a88",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 6",
@@ -1266,7 +1266,7 @@
     },
     {
       "id": "economics/money",
-      "version": "guided-03294c9b2c6385efa1725c155cbdf5b111b1c8a0b3cc4eac82d3853e1d2f11c4",
+      "version": "guided-f109a7cc2d04268131e4f93e87a512ee0d33721aa7fda6bf55877e66fc3d40d7",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1282,7 +1282,7 @@
     },
     {
       "id": "economics/currency",
-      "version": "guided-32285a0c7dfc8cf3df0bfcd6f79e4b84adf47cb524098a5d62cc975fb7674939",
+      "version": "guided-0512ef651c361f157505cb17b828b28d6ab2be188c61e23dd0d61231d6bd0a31",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": "economics/barter-system",
-      "version": "guided-860da0f946b6d39fd5d30df4a79fd48076d0c2bbab486edb5f7da58de9351afc",
+      "version": "guided-58572f7ea32ff9c32f0d5124609ed338e73b0baf8e8491c3af2b892ffb900a66",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "economics/bank",
-      "version": "guided-8ee85afc6831fee008bf3045f05559ebf342d8c1d36398f91a7193b93314c445",
+      "version": "guided-3b7f775ea58363462518cba74a56ba1dd6b169c92baa74e19420b71ae066e273",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1325,7 +1325,7 @@
     },
     {
       "id": "economics/central-bank",
-      "version": "guided-1bc7349559fcabcf775e82d67ed9da414715f6c9a09e3272a3f05ad6d61f06df",
+      "version": "guided-e85ebf01985fabc6e068d05567bcad56014c86a2855e3be71e9004e8719d31f7",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": "economics/commercial-bank",
-      "version": "guided-f49b7868a6c4d89e95805d9ec8be1052fd70674356379910aacf9a9dab210cb4",
+      "version": "guided-882b493db6ca5f6f2834a67e6e43c975c3b22e18689fc2e314abca4cf828d211",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -1352,7 +1352,7 @@
     },
     {
       "id": "economics/credit",
-      "version": "guided-d1fd2c485cb2361e949c93bf2ef39aef27b5f3b2b2c1e7befd59054c71b12b6d",
+      "version": "guided-5c94bdaaadacb32160dd14f36cbd71136aa6f7e3145770b3fb455d2eedfa357b",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1368,7 +1368,7 @@
     },
     {
       "id": "economics/loan",
-      "version": "guided-5f8ecf7a9b6c07623ce847d7367578d50f4dadd2b087f9dbec1ba88a35f8fccc",
+      "version": "guided-b44a8fc3db4474548e6c76e398d3f90f6b7947fa0fa7f24dfac63c4acb5c349e",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 3",
@@ -1384,7 +1384,7 @@
     },
     {
       "id": "economics/interest",
-      "version": "guided-14df8780e3606fe977c745fc5203c2ddd4240c8c1f32836fc0e65f1418a900ed",
+      "version": "guided-f0ecc586e5889b4a4e7d831fbf11a4b6a567a7b5158d6bcedaa7aa61f2632868",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": "economics/deposit",
-      "version": "guided-61048ea822444ebf0a22065572b39486550e93e329c27f5c91ea6ab14b4537b6",
+      "version": "guided-1bebedf8df412a0c6f62512244153497a0ff987323eb43fbf8a27cc21ff3313f",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -1416,7 +1416,7 @@
     },
     {
       "id": "economics/deflation",
-      "version": "guided-a5e5be50502d69f48f27698b9f45003c8286951668b2789a7a69625db23df54f",
+      "version": "guided-1a96393ec151ad27b7bd1417cd0df656b5bc492b82c23a99a10798fd74c05402",
       "sources": [
         {
           "title": "IMF Back to Basics: What Is Money?",
@@ -1427,7 +1427,7 @@
     },
     {
       "id": "economics/purchasing-power",
-      "version": "guided-3e9ed454c1722ec84e14be7b13f985ae6d22a22fe03a8dca2315f49e34d6a523",
+      "version": "guided-4042d485f9ee4de5d9a350e516771437c8d457e3b2426edb24b91ca215840869",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 2",
@@ -1443,7 +1443,7 @@
     },
     {
       "id": "economics/income",
-      "version": "guided-ef6a90092f3dfa2d7f070b143f119b5a704c9dbd3213ebf09d37220e145cf720",
+      "version": "guided-1f7f5cf0e77b4e518b8de2f9a1a57a355d92e4ee6ecd824b8c36602cf3a17f9f",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 1",
@@ -1459,7 +1459,7 @@
     },
     {
       "id": "economics/wealth",
-      "version": "guided-659c39562a087c334c7a3447ae61e7c63e6502987ba5580090b15f08f546b592",
+      "version": "guided-904eb5b4fa7bfa985daf7c54fc399dd33ab5da8cb7853e92602054382cf86017",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 2",
@@ -1475,7 +1475,7 @@
     },
     {
       "id": "economics/savings",
-      "version": "guided-52efdde05cb8cbb15fbc715c8facdb0174a72308b30518dd17cc0397b37f00ac",
+      "version": "guided-90d2bae66abfc8505157f50c7858be014a1ab74cd2d3fc068ceeb509f1bb67b4",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 4",
@@ -1491,7 +1491,7 @@
     },
     {
       "id": "economics/investment",
-      "version": "guided-b5d7a77320972041b8ab0c6deece844512a2e958c10b38b19e3f0f536e6e65ee",
+      "version": "guided-e11743d1cf6da7af10881c2190e69e5a4520c9ff75067fb22389306e855abf14",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 4",
@@ -1507,7 +1507,7 @@
     },
     {
       "id": "economics/expenditure",
-      "version": "guided-c02cdcf69c4770e137f08ae17e47e8cc7e15f70117c80bd0ad3b824688152330",
+      "version": "guided-b66610853e1e8871ad526582e6847cd80cc57453917dfd06dd02d7b24cbdeaa8",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 2",
@@ -1523,7 +1523,7 @@
     },
     {
       "id": "economics/employment",
-      "version": "guided-d382b4b82e1bed9cb7b4a794bd3c319a255c4314948707d6671229f589fc8a84",
+      "version": "guided-c4d2e2cef55e84e45ed1e9a375473f1dd9e46612a872a9388e4f5df3af4c214e",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 2",
@@ -1539,7 +1539,7 @@
     },
     {
       "id": "economics/unemployment",
-      "version": "guided-c99cbc0fc24ead23c1e749b3b30a12fb5a554a38905b98a2feb913e1774c76f5",
+      "version": "guided-363888a4e80fb5a74d65d7089c510a595929880dfa8233d03d6eab706a4a2acd",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 6",
@@ -1555,7 +1555,7 @@
     },
     {
       "id": "economics/wages",
-      "version": "guided-9f66e61d681da02c1bb1e2feae940682bbc700ccecaafc7e03c579f94a13e1ff",
+      "version": "guided-171f47794a9f3136cde732ed772f005533696babf89131d5b3871b961d48c8d1",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 6",
@@ -1571,7 +1571,7 @@
     },
     {
       "id": "economics/salary",
-      "version": "guided-29a034e9dc544e9540c1072f298540bd355c541deb4c7386cfde08c1dc32569d",
+      "version": "guided-db633a28cdd8a3d2219cd573e76a932361386beb6247e5f07996596184982ee8",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 2",
@@ -1587,7 +1587,7 @@
     },
     {
       "id": "economics/poverty",
-      "version": "guided-a19e56036df63a5b509f90f662e6500a636dee51d4a1cca8706990b8d2b54a16",
+      "version": "guided-0e4e987a986631488358f52739d33b73675064f7c9644df3d396ff322141e3a2",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 1",
@@ -1603,7 +1603,7 @@
     },
     {
       "id": "economics/inequality",
-      "version": "guided-678fe2c1d4c37a6836e02586dbc201be44cef6627f22c308f4f75ed035438228",
+      "version": "guided-a733304e607ae0505e13996b0a8a328579f42b6905410cf32732234e14c704f3",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 2",
@@ -1619,7 +1619,7 @@
     },
     {
       "id": "economics/standard-of-living",
-      "version": "guided-5eef5d7b90980a932b84583e717ae701274359171c2b26bf0a2b65e9fa188a26",
+      "version": "guided-298a53c5ef75986c4768146e442b577758d3a2eb9b90933db85c7f6034d2ef88",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 1",
@@ -1635,7 +1635,7 @@
     },
     {
       "id": "economics/tax",
-      "version": "guided-03bfe49fcc6be648ad47324dfb1aa0025e8bca2f64f0444a4112267e4b924d38",
+      "version": "guided-1d011140b4bba87880256415c7069bbb358df52c8b117c8766d4363edf0d570b",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1651,7 +1651,7 @@
     },
     {
       "id": "economics/direct-tax",
-      "version": "guided-c5dbf010b6c13dd66b694dfc348074b6db179cdd1752f818b960e212df87deca",
+      "version": "guided-a4519da0f489c9d38c526dfd1d0df90a6be074483782116b0bbf6c45a3f098eb",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1667,7 +1667,7 @@
     },
     {
       "id": "economics/indirect-tax",
-      "version": "guided-39e742541f148e37ad5e464d6b84d38bc507772e252d1e5c4c3a3445e308d9fc",
+      "version": "guided-bd94d661267b06efe0423573c126634d61f6fa80a6dceb1854372a4adcf80b30",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1678,7 +1678,7 @@
     },
     {
       "id": "economics/government-revenue",
-      "version": "guided-06997ee8ed4032093ba9d9c2824ce34aa3ab0e081b134d6ca46601c9c51c726a",
+      "version": "guided-f4b7530586d2dd45e77298a02d26483644f16453d2d2990b6fb3f8f5b226c7a2",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1689,7 +1689,7 @@
     },
     {
       "id": "economics/government-expenditure",
-      "version": "guided-8378ce7e811f9ea08825ff5883b8160d84ff2358e0ce3c55f89be5df0de162ba",
+      "version": "guided-652f95a65907895f09e7a5959edbb7121a66475d28ecbbfa114bef09e34b2512",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1705,7 +1705,7 @@
     },
     {
       "id": "economics/budget",
-      "version": "guided-f5438fc7f175073231cd5b4071ec69453a195e9b8223d6441faa3ddb384d986e",
+      "version": "guided-7188626b6a83bafbd0f3b5397d261c5c96fbe7ef067ecb089c2467f7cc2f6bfb",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1721,7 +1721,7 @@
     },
     {
       "id": "economics/subsidy",
-      "version": "guided-f3e034b9f5810ea1b4b743ddc6863d8f712a014b83802d99ea6b2e69f2d05b5f",
+      "version": "guided-6538ac9f28e30492336317442f29093ac9ce17f2eb78c0e9b468935276909373",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 2",
@@ -1737,7 +1737,7 @@
     },
     {
       "id": "economics/public-debt",
-      "version": "guided-e83cfe67628c4fcc4c2badb878539ce2eeb0cd41907f66b13588ac638960939c",
+      "version": "guided-58a301c13be766d99eb6eb90f4eb5a586518a163baa8db6bf39f67ad543d4d30",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1753,7 +1753,7 @@
     },
     {
       "id": "economics/fiscal-policy",
-      "version": "guided-8a6d43a4d1baccb2dfeff0053de8eb389947e3a9ba5be8a1c82f892332b414a2",
+      "version": "guided-59e5818bb50258361e99a3fb167ecd382ed99f0b966f5f9381915644cc930798",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 5",
@@ -1769,7 +1769,7 @@
     },
     {
       "id": "economics/monetary-policy",
-      "version": "guided-85361f3b0a787bd92e709369e6ff6ab056d81cd58ab63fc7291a8c8cca1dc741",
+      "version": "guided-14401e7d1d9c021551f0bf4dc4775ef9dc20c3d900793ca1add0efae96a70c44",
       "sources": [
         {
           "title": "Federal Reserve: inflation",
@@ -1785,7 +1785,7 @@
     },
     {
       "id": "economics/gnp",
-      "version": "guided-1711d0791a622d62e0c44f82e25148cd63122c3dbf21e334867313aba68bd7ba",
+      "version": "guided-334db2b88075ef3c874b3673dbf34a1f2adbf98b5b48b74db606111508fc8222",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 2",
@@ -1801,7 +1801,7 @@
     },
     {
       "id": "economics/per-capita-income",
-      "version": "guided-8059cf9acc4d8d0fbe16c49e4841fd3d8604996c082dcc050e23ea57e8e62eb7",
+      "version": "guided-3b7824b66b5b314b6f5821d3c1668a7a5ae2a284efc6ee1c9f1ce22949de5bc5",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 1",
@@ -1817,7 +1817,7 @@
     },
     {
       "id": "economics/economic-growth",
-      "version": "guided-61d51d1df06a92c8257dc1d86dae9e1d3d49679ba9ee0eac70452b3174bd288c",
+      "version": "guided-b0e5231e64ada2172a10cd5c2e505c446a52b4d99bfd29b632104d3f23db03da",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 4",
@@ -1833,7 +1833,7 @@
     },
     {
       "id": "economics/economic-development",
-      "version": "guided-174d28b7aecbc5e36643208ce90378bf86511d7cb79d5c0c240b909c92bb018a",
+      "version": "guided-b46a6bb2db737555437b1fa9f691a1ef2e211b5172a8e7fa97d7eb7cca0ed8f9",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 1",
@@ -1849,7 +1849,7 @@
     },
     {
       "id": "economics/primary-sector",
-      "version": "guided-ca502a46632e263203d45d0628b79b4ddbc284eb0c4d712ee9e0928bb6459d8c",
+      "version": "guided-ec15df250f96852613ae222d4ec2f0f96b47b88bf8e17ab0f67b9380f30c52af",
       "sources": [
         {
           "title": "NCERT Indian Economic Development, chapter 6",
@@ -1865,7 +1865,7 @@
     },
     {
       "id": "economics/secondary-sector",
-      "version": "guided-399211dc13affb44fc2fb4a297178112d0028dac2e2054b6d30d40dd02453424",
+      "version": "guided-3f2965fb08ec084fd1c23fd67e07e39083feb1876c3beccbe5ae0557ac8a6024",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 6",
@@ -1881,7 +1881,7 @@
     },
     {
       "id": "economics/tertiary-sector",
-      "version": "guided-0343515135c5fcb87f1635d1d5f9c2c0d084b0c3cd963f86bad263b236c70c0c",
+      "version": "guided-043fc19aceaedce04097be23ff48940c55b717fa903e16abfbaac0a5666f18e3",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 2",
@@ -1892,7 +1892,7 @@
     },
     {
       "id": "economics/imports",
-      "version": "guided-eb8cd644b1ed7c36280bb4f819a548b3f6d7e1e07c265646dad96835c6bde226",
+      "version": "guided-98e1c396dc719574793a505babeba077d7917b929763e6f64627700831deaa77",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 6",
@@ -1908,7 +1908,7 @@
     },
     {
       "id": "economics/exports",
-      "version": "guided-87fdea567c2bd021922fa2a0beb9bdbc2ba779507a095d3742911e453c41b528",
+      "version": "guided-aea1a3fb956fb948fdb7c9e150261157f82563a6ec685f904daa78a43a7e5de8",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 6",
@@ -1924,7 +1924,7 @@
     },
     {
       "id": "geography/earth",
-      "version": "guided-bacb9f82f7b0a867e33bf94522617c99785d4c6d8c6bf1e9d342c9fea7920215",
+      "version": "guided-c7c9a97f4b6d5c217cdacf0b9b85801bd17e1b849990f938b84f8f322a6282cb",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 1",
@@ -1940,7 +1940,7 @@
     },
     {
       "id": "geography/solar-system",
-      "version": "guided-3b2d1a65da3fff39554f50f9be747bb618690870bb996822d6c9cc2b219330fa",
+      "version": "guided-4b5abe12cdafb8292864f30a71e729c273ff6ba77cd59f6882cd1f1ff1983801",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 12",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "geography/planet",
-      "version": "guided-a076ace42d01917330ae16a37e525216c7a5c5fa1c1eb65daf5366dff38ed84c",
+      "version": "guided-1271718f419210954edb4d9fc79458dadc0908dc5db32aeac0ae1c310d06021a",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 12",
@@ -1972,7 +1972,7 @@
     },
     {
       "id": "geography/rotation",
-      "version": "guided-3ed6b3487ddc4530d88737e2672d580de89ac758a516ae38f405c7d73a18a5e7",
+      "version": "guided-8f883b41f05394fd55aba30fda572f4c5b686a189dec4be5f9e0522d149d68c1",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -1988,7 +1988,7 @@
     },
     {
       "id": "geography/revolution",
-      "version": "guided-39c2baa043fcca4f800c07dba9dd71842e1940311c8b42aa2d1851f07efe37ba",
+      "version": "guided-2b9228daa324e1891a531425da15f49feb4be7925ee81a7b2861dd53b4f978f8",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 4",
@@ -2004,7 +2004,7 @@
     },
     {
       "id": "geography/axis",
-      "version": "guided-e446fdc57e3e5cfd4173e0618fd4aed48135fc5069c2b98438a2ec37ccd11fe4",
+      "version": "guided-aaa1a47715fe440eca07c1ac37b6a93b3531b8a6a3fb978f2489a3c880cb24af",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 3",
@@ -2020,7 +2020,7 @@
     },
     {
       "id": "geography/equator",
-      "version": "guided-b9822e7a3c0f2a6def3444138e41715e6c3bf06a8a516fc3549a7100c7fd28e0",
+      "version": "guided-856272aae12a38100bc2eeabb802419fe3af115d844c7e472997b17314f1e1ba",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 3",
@@ -2036,7 +2036,7 @@
     },
     {
       "id": "geography/longitude",
-      "version": "guided-fcda5be9a9656d3551b978d8214869eb222362100c34e10670379867512297c3",
+      "version": "guided-904825cc9fb2d2998874ee01c60ce1d8592249266d797bd792f2160cf9349ce2",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 3",
@@ -2052,7 +2052,7 @@
     },
     {
       "id": "geography/hemisphere",
-      "version": "guided-d404563015498f8e8448d848b219970c9f32dfd83ef6c3f74f4c9a3cdf532a8a",
+      "version": "guided-19f6fadca42147cd0167cd3ee0542406b1a3f135013c11e12329f95a80516d36",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -2068,7 +2068,7 @@
     },
     {
       "id": "geography/globe",
-      "version": "guided-c0d2340f7714fb90d145b29448e40b8c4c15990c7f00fd10696420f6f238b76f",
+      "version": "guided-9e777694f72a2fefd79c72f01090d7718300b21678de40d56525b62974ef5308",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 4",
@@ -2084,7 +2084,7 @@
     },
     {
       "id": "geography/map",
-      "version": "guided-83800213620421a111d2fa0c72d50315ce910b05a14dd4d9bdf6b49ee089f2e4",
+      "version": "guided-e672a28525eb0ecc7776c4fbd95d3ad7a2b84a44acad6aefff55954d1492162a",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 1",
@@ -2100,7 +2100,7 @@
     },
     {
       "id": "geography/scale",
-      "version": "guided-1f5138874fda622c1f1c1a7e6a2b0cbadc9ec8098bc5ff26311ce234497c1f8e",
+      "version": "guided-4ce14ad1ba9029394aa81b05fd21ba86572b231aba9bd44524434715693036de",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 3",
@@ -2116,7 +2116,7 @@
     },
     {
       "id": "geography/coordinates",
-      "version": "guided-bd29e549a4bcd4dd98a1ac8ca06042efb54747bb6c4da77741ae721648aac7e1",
+      "version": "guided-06762f90ac3ae9ca8a59ad21de66c6031cfc8b4c6ef7bf5b2079b791f9cb5a9f",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 3",
@@ -2132,7 +2132,7 @@
     },
     {
       "id": "geography/time-zone",
-      "version": "guided-ae9be3ab89b93b3bcd91578bc1f82c0a385f035cbd78cd3255714a3bec3342de",
+      "version": "guided-7e1ed246f7b80db6b8d752c8664dd2b148eaa3ec4197702855b47d83d4ed43f1",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 3",
@@ -2143,7 +2143,7 @@
     },
     {
       "id": "geography/continent",
-      "version": "guided-e6227f38887fccb2daffc6b2c4f98b4209dc4b3a6713edfdbede6277f0b15829",
+      "version": "guided-13633e5f601405b97beb511f26ff46c398b909be17d16279d4ed9b0ef4acfa43",
       "sources": [
         {
           "title": "NCERT Fundamentals of Human Geography, chapter 7",
@@ -2159,7 +2159,7 @@
     },
     {
       "id": "geography/ocean",
-      "version": "guided-6197cf0a1fec825c376af5cb7f33db4f3b8e606364353ba49461f262a3981866",
+      "version": "guided-308639cd4984d9e444949a00ee18e17a98c56d14c1ded18a328fd2cb4d45726f",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 8",
@@ -2175,7 +2175,7 @@
     },
     {
       "id": "geography/sea",
-      "version": "guided-83ececdced25867a4a48ea2e46a27e7cd9c9437de1c2d128612cccbf0a10d535",
+      "version": "guided-0e1c05cd8737c24a78aea1dd5756569eb31faa913fdb072475b6502188449c9b",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 8",
@@ -2191,7 +2191,7 @@
     },
     {
       "id": "geography/island",
-      "version": "guided-7403dc29f259b423b130704bf3b271b60c00308ed8cefe23f21c650606647059",
+      "version": "guided-66b9d8cc57fc9e4d11a5ca9f9fe452368f90b2b66abae07b73a46366f399d137",
       "sources": [
         {
           "title": "NASA Earth Observatory: Mission Biomes",
@@ -2207,7 +2207,7 @@
     },
     {
       "id": "geography/peninsula",
-      "version": "guided-fd971379b7530779eee84520272794da3508fe5248a21f058736366a143b9d88",
+      "version": "guided-5ffde874e6d7ea3096b93126b7439b48b05959b1292c7fd44263ba9a033547a5",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 5",
@@ -2223,7 +2223,7 @@
     },
     {
       "id": "geography/mountain",
-      "version": "guided-e49978cbde54f54d5a78260957520d37c92902e4950e2fb089e13fe42dd886b2",
+      "version": "guided-0a233f6aa4bf70dc175c838a6dff890ae6db4f2420307d80fd05c80a6d704c2f",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 6",
@@ -2239,7 +2239,7 @@
     },
     {
       "id": "geography/plateau",
-      "version": "guided-dfa5ede5217833c9d168dc07e7a9f00047b46dd4b2159ace08c947dfcbef1cd7",
+      "version": "guided-95f8b2f035cd8796f7d23ca334e7903692fb4d645d7141d7564532551b8ad6e2",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 5",
@@ -2255,7 +2255,7 @@
     },
     {
       "id": "geography/plain",
-      "version": "guided-d91f39fbd7020460b686a9679ea30f291084d9b0aec8420f73c4cb799c2c2901",
+      "version": "guided-c2e55e097cdb4d7f8673d3e7111f373cf508c3001e394167d021522867c7b603",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 6",
@@ -2271,7 +2271,7 @@
     },
     {
       "id": "geography/valley",
-      "version": "guided-f0d40cc73f65e5de3aa7312114cc20846fd7afd0c1231727941b360e313bef49",
+      "version": "guided-30675ab88a5d650e9dc4d817fed24b911b07491f911150b28d0347a91008acc7",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 5",
@@ -2287,7 +2287,7 @@
     },
     {
       "id": "geography/desert",
-      "version": "guided-4e685e7c66c8e5edca747c2a97688928a20269bfb2b6dac7a901dd32d2bec56d",
+      "version": "guided-21a25321a292877f02acf4038cf4fb9f4f9783930d2b89f21292cb6fbec1f480",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 11",
@@ -2303,7 +2303,7 @@
     },
     {
       "id": "geography/river",
-      "version": "guided-0567e7b5a2a74b710de1dd599176ddfba26a9592a3f430dc5f3b682e71478af6",
+      "version": "guided-9a3df61bd14f7302c0fc7315e069203f2ce161c90839099972396cf4adb21a18",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 5",
@@ -2319,7 +2319,7 @@
     },
     {
       "id": "geography/lake",
-      "version": "guided-fac29f504330187c7a96c141cd523ede32b07501d5a629b262333970b308cf08",
+      "version": "guided-27d62d1a07704bf07ef5679f3d815c8ad3066eb5584e7b829ad0664aa093519a",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 3",
@@ -2335,7 +2335,7 @@
     },
     {
       "id": "geography/glacier",
-      "version": "guided-0a60ac97756fbe829559eeed7aadd5f920129283590da6045b41bca2a215e01e",
+      "version": "guided-a8d8620ad9a72b3047b9e86aa62eaedc591678fec9ba76da184e784bfc17e3d0",
       "sources": [
         {
           "title": "NCERT Practical Work in Geography, chapter 5",
@@ -2351,7 +2351,7 @@
     },
     {
       "id": "geography/volcano",
-      "version": "guided-2afdbb6e8ef20ca847977f06f347631feb354cc801105f4dd960f95d918b3ddd",
+      "version": "guided-3ca3b44bce3fcfe7608c6127964fbd51d41f517569434ebd200665945e417ff3",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 3",
@@ -2362,7 +2362,7 @@
     },
     {
       "id": "geography/earthquake",
-      "version": "guided-bea14f81295890379ec300f5ecc8517a98c164f51fad82423bea9239c025dbd9",
+      "version": "guided-71f3b6e49aae8ae4fde1533f0bb07a187a1d9e8a278257b46f2dd1556cc812e1",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 3",
@@ -2378,7 +2378,7 @@
     },
     {
       "id": "geography/atmosphere",
-      "version": "guided-4b2633f78684cb49e16f3cc31a5a3ae964ee7af687cbd4c950f58ff16282572a",
+      "version": "guided-ea428b4a8f7428210a3cf7ce92a65cac47bdc75a2d6c6e87231665a7759b5227",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 8",
@@ -2394,7 +2394,7 @@
     },
     {
       "id": "geography/temperature",
-      "version": "guided-91f93d52d79f0eeb98a6de65ec56bf79e71f94bf8369d55990ae6c5932a676af",
+      "version": "guided-9df9ac0c3c05bfc5bc8b85ed2a1e78ff97a7a4a2b603ad08d7ea8d09d2c6aa06",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 8",
@@ -2410,7 +2410,7 @@
     },
     {
       "id": "geography/air-pressure",
-      "version": "guided-399f8d0a7f3c5729171a1344efa98381daccda1c5a21071d98aabc2d8361ccd0",
+      "version": "guided-05530ff091b8a819bfe7d1f54190c867525f97b97f16c5bed67c67eabc38930c",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -2426,7 +2426,7 @@
     },
     {
       "id": "geography/wind",
-      "version": "guided-a534966389c8a7c587cecc67e7ef841168665b95d7bbd598098bc64adaccd368",
+      "version": "guided-4b1b95ed7ad9f207a2637a98ec06788bf8824a72c5d10ab4b851d5f1585f734c",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 6",
@@ -2442,7 +2442,7 @@
     },
     {
       "id": "geography/humidity",
-      "version": "guided-3193eeec7ff824029ccc1c01486fc1ac9da92d2a5bddbd218125216b21fae67c",
+      "version": "guided-9da90acc441baec18bcc9c893c90bf6d577b1301fc0c153faa1a36cb8a177d71",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -2458,7 +2458,7 @@
     },
     {
       "id": "geography/rainfall",
-      "version": "guided-a2f86c0759b4da50d6f734dc302799ca5d992504f25e367e06cd2af092c64981",
+      "version": "guided-9993cf404deae9732d0be798758649df29be973051c4e0c5946503467ba0472a",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 10",
@@ -2474,7 +2474,7 @@
     },
     {
       "id": "geography/precipitation",
-      "version": "guided-84c5570be35908a31e48307863cbdbf879515ab4b131d372579298dc3636622a",
+      "version": "guided-bdaab2e0edf403506b70479b6406ac33d47289ce2970e21a532c4a4eaf200b8d",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 10",
@@ -2490,7 +2490,7 @@
     },
     {
       "id": "geography/monsoon",
-      "version": "guided-92c8f559d806a6aa60189ee2a408b41968a9633559322ef53912ae17e96a5006",
+      "version": "guided-f244ac98d8ca72a47b2a716deb4fe13acf6ba6d6715afd737165d925920c9ed1",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 11",
@@ -2506,7 +2506,7 @@
     },
     {
       "id": "geography/cyclone",
-      "version": "guided-e8160b29c9feb2a737768c14d1bd14a05fa159f639c4fd972d3ee7eddf7332db",
+      "version": "guided-26e40de5dfb8740dc4486abee36ad28e5285299ce930cae654fa2a6c0b7aac4e",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -2522,7 +2522,7 @@
     },
     {
       "id": "geography/anticyclone",
-      "version": "guided-736185532b4b1ca5475c96472ad647da645282c4e30fc9f7dd4f952aec263003",
+      "version": "guided-eb5f991c9dcd9a125bfc333c4bdd77c056fb27a5885e308be6dd27a9d34dadd2",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 9",
@@ -2533,7 +2533,7 @@
     },
     {
       "id": "geography/greenhouse-effect",
-      "version": "guided-4057a909d398dd6551924f78c9faaf500186c066b3fa56ac1e0cd46a007b32fc",
+      "version": "guided-c058291367652043ef2a58cf112bad38df3caa54f0d546844fdaf3f446104191",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 7",
@@ -2549,7 +2549,7 @@
     },
     {
       "id": "geography/global-warming",
-      "version": "guided-f61d0f73da62d29c29cdb6a931895271e905bfa1ba69de79411d852794fd719f",
+      "version": "guided-86c7892ac5418622eace3f15ab8897e2808691cc20727e42d6986c46c4e2b043",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 11",
@@ -2565,7 +2565,7 @@
     },
     {
       "id": "geography/ecosystem",
-      "version": "guided-38996244856b3dd01a72809a90608170e2510231d047f9e6c6c8af4a778c0bfe",
+      "version": "guided-54974a8c60ccc942436992e06eda2a385fa9f6a31da69f0334817f727678309b",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 14",
@@ -2581,7 +2581,7 @@
     },
     {
       "id": "geography/biome",
-      "version": "guided-9d8f3bd652c24df571c1e7b33f6cd3d778297f4ad9242bcf452013d0f0afb1d9",
+      "version": "guided-fa64983a6a045e90b1e1d35444a4283a53929b3c60650383a224485a8f6d4574",
       "sources": [
         {
           "title": "NASA Earth Observatory: Mission Biomes",
@@ -2592,7 +2592,7 @@
     },
     {
       "id": "geography/biodiversity",
-      "version": "guided-a95df80c4fb7be276158097b1fc7d61011a33e77d448bd404b2a71f1c6610bb2",
+      "version": "guided-a250136b7d5466d83d73826274e9737c6e49027b8eeb33559b414bf5828170fd",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 14",
@@ -2608,7 +2608,7 @@
     },
     {
       "id": "geography/natural-resources",
-      "version": "guided-94f84c27332ec0f33b9b26dc5fdbd5f6e947ee83907d4fca56fe9e47b22cff8e",
+      "version": "guided-69ad93dc878398914f2498c17a1b44716f90c3aebc8c553efd4b64ebb11cd315",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 1",
@@ -2624,7 +2624,7 @@
     },
     {
       "id": "geography/renewable-resources",
-      "version": "guided-7b7ef8ab5e1b67238d9b685bdf4684b6d4bb6a2b47ab8e885d9e4e1d161cc330",
+      "version": "guided-5da1c57a95693a86f7d1b55cb2f1749c9bbb861adc779cb24e847ded14c19e42",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 3",
@@ -2640,7 +2640,7 @@
     },
     {
       "id": "geography/non-renewable-resources",
-      "version": "guided-8a4d30760a73a4ec40b8270fdff8aa9008eb55dcc113766f8ff8d48ae5d15667",
+      "version": "guided-b5998188c90beabca372226473deb3fcd0ab2d0168601ae86812e0a7e247a716",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 1",
@@ -2656,7 +2656,7 @@
     },
     {
       "id": "geography/forest",
-      "version": "guided-0e6f1abd1ef5c3aab8495fad06cc362ab60fcfdec42eecc71db337f557fe6293",
+      "version": "guided-55ab0a44e61c9e7f837164fda70c4f1e14074b9758df8954cf0be66619f09ef0",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 2",
@@ -2672,7 +2672,7 @@
     },
     {
       "id": "geography/soil",
-      "version": "guided-6f77e8da078317bcf409fb1e8e69619156ce71df3effaed49f26afa05bf7cb2c",
+      "version": "guided-403831a926e28225b868c29bdd3b51fcf49e8c9e483aa3d6137246ba9401766b",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 1",
@@ -2688,7 +2688,7 @@
     },
     {
       "id": "geography/water-cycle",
-      "version": "guided-554712c8ecc01c0a5091cd75a37670cb924423991a7f38557049b7742714b33c",
+      "version": "guided-bf96959b53633c9d3e0ef5f6bad6554622c607ceac4f1b0083c71b164bc2fa3f",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 3",
@@ -2704,7 +2704,7 @@
     },
     {
       "id": "geography/erosion",
-      "version": "guided-b410343ea961195a04eddb4b546f5259879eb4d841c1345d69f05cef07a07b07",
+      "version": "guided-cbde72df2ffcccd0187b87f043e3f3806ea4b75dcb04173b1ba6e971e67e1a3c",
       "sources": [
         {
           "title": "NCERT Fundamentals of Physical Geography, chapter 5",
@@ -2720,7 +2720,7 @@
     },
     {
       "id": "geography/conservation",
-      "version": "guided-0b0fe2a5f2f8b678f5edae786b6b9f4211a50431ecafad465536b4bbd0ff5b5f",
+      "version": "guided-c0b95adbe61c0a1fdb92c82ca33bc77330f5af7bee2aaaf95eba3ac0f028d148",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 2",
@@ -2736,7 +2736,7 @@
     },
     {
       "id": "geography/population",
-      "version": "guided-2baf3072ad41ae93a492dfc228717e488169f0160a01efe67658d749f75cd6a3",
+      "version": "guided-38bc9d919063d592350ab38da431c1ee528f1839e45ca1fa3f1f6461510f3d99",
       "sources": [
         {
           "title": "NCERT Fundamentals of Human Geography, chapter 2",
@@ -2752,7 +2752,7 @@
     },
     {
       "id": "geography/population-density",
-      "version": "guided-63c76c8049fe57a179b9bc0af25191855937000974ad9cf2b1feb5bdb55fa334",
+      "version": "guided-225d93a948708e2effb085e608c1ec1e272215318b3c3baaf02595f01e7266b4",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 7",
@@ -2768,7 +2768,7 @@
     },
     {
       "id": "geography/birth-rate",
-      "version": "guided-8b21a698eea03ee3953a65e61643d6b2162b02cff4749fa7ce1909b8b6f0ce30",
+      "version": "guided-1993fa2378f923bdd36a9ed0eab81456d1f384bfa4099e0ab8410dd2fab0a9b1",
       "sources": [
         {
           "title": "NCERT Fundamentals of Human Geography, chapter 2",
@@ -2784,7 +2784,7 @@
     },
     {
       "id": "geography/death-rate",
-      "version": "guided-12e59939499b19e49b78184765b9c9b07daa80b61241a2a41604acf65ee989fc",
+      "version": "guided-daa50f0d528174b1883423b1d0cc08570b8979288d3b665623ec0e5b731a0ad5",
       "sources": [
         {
           "title": "NCERT Fundamentals of Human Geography, chapter 2",
@@ -2800,7 +2800,7 @@
     },
     {
       "id": "geography/migration",
-      "version": "guided-464752669b84327931622b96b5a099cee63d6cce2acf420ddfc550c330df3b30",
+      "version": "guided-4d1a379e9d5e48bd0ef646648929da0c8a1ec5e11174cd8c624fd7a757720c08",
       "sources": [
         {
           "title": "NCERT India: People and Economy, chapter 1",
@@ -2816,7 +2816,7 @@
     },
     {
       "id": "geography/urbanisation",
-      "version": "guided-88eb03d4fa107aaf62d3f25e39347b4d87a0df4f9c46954ca1c974fe2399383b",
+      "version": "guided-8eab38a329b43c7ff23555ea4d74090f1f49cf28bb7208daba41fe2f21bc0089",
       "sources": [
         {
           "title": "NCERT India: People and Economy, chapter 2",
@@ -2832,7 +2832,7 @@
     },
     {
       "id": "geography/rural-settlement",
-      "version": "guided-f6564304050939d9085e386b398c033a4e5a823ddeac03de19a0e10dcf2afc99",
+      "version": "guided-9470ba6035186563fedac44459b01163f9d145db8f1927492d96279413bfd711",
       "sources": [
         {
           "title": "NCERT India: People and Economy, chapter 2",
@@ -2843,7 +2843,7 @@
     },
     {
       "id": "geography/agriculture",
-      "version": "guided-c9d0d5b5fbdce695a29ccd7154559a97ceb353288bb0e299497db8cae02329d7",
+      "version": "guided-f56c481fa1f6098763c7e4ab12fba3768c26ba00826a9704b24d2358a6d38a36",
       "sources": [
         {
           "title": "NCERT Fundamentals of Human Geography, chapter 4",
@@ -2859,7 +2859,7 @@
     },
     {
       "id": "geography/irrigation",
-      "version": "guided-70c60da98e93b06adff347420f38bd6b5f40e12f2a9581914e489fa63a82ee0b",
+      "version": "guided-465e33b67765c650f390079e9ed6cdb2766932873999f772e3c821c5443f9e25",
       "sources": [
         {
           "title": "NCERT India: People and Economy, chapter 3",
@@ -2875,7 +2875,7 @@
     },
     {
       "id": "geography/industrialisation",
-      "version": "guided-93aa9b7ce75196a6b50826ebd82e8e309aa6c13336447760d923bf37d4348f46",
+      "version": "guided-664f73c3ce7191f31bd9c627dc6318e1f09aac98d97b18b3dc5a9692e2bc8043",
       "sources": [
         {
           "title": "NCERT Contemporary India II, chapter 3",
@@ -2891,7 +2891,7 @@
     },
     {
       "id": "international-relations/country",
-      "version": "guided-ed72ca11037838830a670711307e4ed3cf14c72caed8d908a5fd28a64f9a650a",
+      "version": "guided-9a91f4b97a4de864cbbfd041fb59f82a517ccc6a87ba8a4b2900019542cedda3",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 1",
@@ -2907,7 +2907,7 @@
     },
     {
       "id": "international-relations/nation",
-      "version": "guided-386e0ed0d526947d7e1e6360869ffb1c148acb96a46688997ae6011ab4e36cc4",
+      "version": "guided-82ce45a62792a44fb0ad00a437214a91111958b681c21687abe2e893cb15b701",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 7",
@@ -2923,7 +2923,7 @@
     },
     {
       "id": "international-relations/state",
-      "version": "guided-b3fcd669ac86f9c55fafdb4951e2098cdb9874c4acfabc43eeaedb38a7779616",
+      "version": "guided-e2aa9ad51ee5beda9e4dc6aa5bccb398e2620762d83e8a508a802f09e18e3d23",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 6",
@@ -2939,7 +2939,7 @@
     },
     {
       "id": "international-relations/sovereignty",
-      "version": "guided-a392b88a6d706c8f38dc82f303f355aa3b5fd2b26d1c048bfdb1be538a12aae9",
+      "version": "guided-db1ee2b97197ed9822657bb62d8782c443b54dac7a222fb749108cbd7a2d61ff",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 2",
@@ -2955,7 +2955,7 @@
     },
     {
       "id": "international-relations/territory",
-      "version": "guided-5a25b22233bb821c2611858bae7018e936aad4a93692c8cf9db1aa11b6a221e0",
+      "version": "guided-f0eb199fc4f477fd73fd1b2d9fe2d73f50d6fe3cbc23e0c7c405ec4137cf9e27",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 6",
@@ -2971,7 +2971,7 @@
     },
     {
       "id": "international-relations/border",
-      "version": "guided-1f29c201d54466b4f5f71502d99a427e648f31a3df063845711adb026141a648",
+      "version": "guided-54e24426c93db086049055f3e5947850072ea0ca8e5a854e65a87477563716dc",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 2",
@@ -2987,7 +2987,7 @@
     },
     {
       "id": "international-relations/national-interest",
-      "version": "guided-6b8f600c99cc1676e5b331801574a3c3132b9bc86508c1850c31740806730aca",
+      "version": "guided-a392b451d2b85ca69e1034532a618f8518ecd0656bb8284e34eb08b55cc88801",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3003,7 +3003,7 @@
     },
     {
       "id": "international-relations/foreign-policy",
-      "version": "guided-479bd99e5e3cd7b7601623d2a369836f6163640e698d3d800a3391aceddabbee",
+      "version": "guided-94cb7369fee12777b8fea58ce2067b94f2264180cf2dc6dcb04977852a809ea7",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3019,7 +3019,7 @@
     },
     {
       "id": "international-relations/international-relations",
-      "version": "guided-6850c118cb3eca33fe479ef062a187ca450630badb9d00693a98b94405f6cc5d",
+      "version": "guided-34581802b2c867bbc8877283ea378dfaaf66566f305b411d9293d9e8eb4e2437",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3035,7 +3035,7 @@
     },
     {
       "id": "international-relations/multilateral-relations",
-      "version": "guided-01156efc9547df2df636d567b57f266c069b73a7e295731048a2c931425978bd",
+      "version": "guided-9a903a0de84093be299cf5abac47225bc83a3da8bba61e8886ad120f4fac6901",
       "sources": [
         {
           "title": "United Nations Office at Geneva: Multi-what?",
@@ -3046,7 +3046,7 @@
     },
     {
       "id": "international-relations/globalisation",
-      "version": "guided-68a3a5cc9454c9c42d783c4daa8a2a0cd0546af0b778ed2ce4dad5d1993bc7f3",
+      "version": "guided-a1de58f9992b125a48a277fabe4ad335200ea81a413accfd111e768ea1bd19d4",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 4",
@@ -3062,7 +3062,7 @@
     },
     {
       "id": "international-relations/geopolitics",
-      "version": "guided-a0fdf595eb2c116753684bb38b4a05aed037e659b4ee1629e7c202ba3f12e5c4",
+      "version": "guided-5c77e0187e69d0e878c1ba47f2425525d39c6d58cb8148aed121272b8049528e",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 6",
@@ -3073,7 +3073,7 @@
     },
     {
       "id": "international-relations/strategic-interest",
-      "version": "guided-e4b180e6d3ac87350a427672cf9607aee4e5473b475fd51e63bd64a97d3f3d0d",
+      "version": "guided-80e158b9164aa4204c4fdca8b5da265d559cbf38216b1a2bf36e4905d891d8aa",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 6",
@@ -3089,7 +3089,7 @@
     },
     {
       "id": "international-relations/security-council",
-      "version": "guided-e0635ef470c50cea2ccc16eea2ff6937ac7cf94bf8f0ec00ce1e3de7d29d9cd5",
+      "version": "guided-e960c9a9103c790779576b48246086c04b01871f933c3d64eac9e68209530123",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3105,7 +3105,7 @@
     },
     {
       "id": "international-relations/general-assembly",
-      "version": "guided-ef627c32853c3df046d7cd530e17f053a03c01af557769fcbdd8a91f15633078",
+      "version": "guided-ea8f2aa1ce4b110fe009b06e680f2c70f4981899df7a770fad5abcd6ddd4e2ea",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 4",
@@ -3121,7 +3121,7 @@
     },
     {
       "id": "international-relations/world-bank",
-      "version": "guided-9c1a68d0d7bb655db68a79a9936a0d213c1486d4b032eb7ba665aa4214857b35",
+      "version": "guided-386e7f1993e879ab95da6b9d0a3bb90a32de0e215aeca18bf802cc2eb3b69fee",
       "sources": [
         {
           "title": "UK Department for Business: Protectionism",
@@ -3137,7 +3137,7 @@
     },
     {
       "id": "international-relations/international-monetary-fund",
-      "version": "guided-c62aab5370a156f9ae49cbf7d31ed44809f7aff6176fe2cf813b198e7c72f8bf",
+      "version": "guided-d0d254d1d361e2f7f315bfa90ab21a64c60658b188545c444450f1808a17a531",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 6",
@@ -3153,7 +3153,7 @@
     },
     {
       "id": "international-relations/world-trade-organization",
-      "version": "guided-10773d593864230e1b22c8828500b50b7aeaf5c4056f4e43546a7796b5e2784e",
+      "version": "guided-2a7cb0caf572564a26bd7d2e4f53f2fe60ce9c7781d543517c702a67ff3dc95a",
       "sources": [
         {
           "title": "NCERT Understanding Economic Development, chapter 4",
@@ -3169,7 +3169,7 @@
     },
     {
       "id": "international-relations/international-court-of-justice",
-      "version": "guided-d88d69bdf024e1159bedcaa821dc10954161c67a4a0fba92a56f64128686caa2",
+      "version": "guided-aa90f2334fa5d57bd70835be59a5dbf5019a0e6e93c6d30cdb3d8ef639fd943d",
       "sources": [
         {
           "title": "United Nations Treaty Collection: Definitions",
@@ -3185,7 +3185,7 @@
     },
     {
       "id": "international-relations/regional-organisations",
-      "version": "guided-e468b56799a3ffd2fc236ffc2efdd156a99d7dffe498092d91b0c86d600277db",
+      "version": "guided-8fb5c3ba72a03071e3d934d10becac977f52c3464843dd66d55c13b424d47ae9",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 2",
@@ -3196,7 +3196,7 @@
     },
     {
       "id": "international-relations/international-institutions",
-      "version": "guided-65c15e0b1752e043194a6e65527296b98cca312e94844087278cc8d1b45d2e10",
+      "version": "guided-a1dbb21c50e9f8260d15a03e357d26c7d6c0f263999e747c505b95f9901fdc09",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3212,7 +3212,7 @@
     },
     {
       "id": "international-relations/treaty",
-      "version": "guided-460f9073a1af129ab00285d83bef6ae6b66dd7eb5e2ee693cbdfb3da330c3ee1",
+      "version": "guided-b614b40ce8b3577de6c8874d209afee28e643eadf1a2d9c2e637d38741b5dd55",
       "sources": [
         {
           "title": "United Nations Treaty Collection: Definitions",
@@ -3228,7 +3228,7 @@
     },
     {
       "id": "international-relations/ambassador",
-      "version": "guided-6a6dcfd7d92311ddf5fdd070ea3d89c9a95860d4e55b248c525fed6a45760287",
+      "version": "guided-249d9fbcc1c26005d5ddaec09947036755901105dc5d2e6f6e408cde0f4f6188",
       "sources": [
         {
           "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
@@ -3244,23 +3244,18 @@
     },
     {
       "id": "international-relations/high-commissioner",
-      "version": "guided-880bbed12333cf6b1d321507df7a812e1886fed6100a54025f7c25e854436442",
+      "version": "guided-d80a6b4d4c9721fbeab0452f3b439f6709be097f0b965645742ff7f7b8d0a154",
       "sources": [
         {
-          "title": "United Nations Office at Geneva: Multi-what?",
-          "url": "https://sites.ungeneva.org/multiwhat/",
-          "locator": "Passage containing High Commissioner"
-        },
-        {
-          "title": "NCERT Political Theory, chapter 6",
-          "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
-          "locator": "PDF page 15, passage containing High Commissioner"
+          "title": "Australian Department of Foreign Affairs and Trade: Embassies, High Commissions and Consulates",
+          "url": "https://www.dfat.gov.au/about-us/department/Pages/roles-and-responsibilities-of-embassies-and-other-representative-offices",
+          "locator": "High Commission section"
         }
       ]
     },
     {
       "id": "international-relations/embassy",
-      "version": "guided-c9ce4d3cacf54859ca5091c84617446a0d39c39181e36842e8bef7feb415591b",
+      "version": "guided-5f76ce0598aa4fb280adbebe130a5d0cff5c2959a8d16476640308a47d04c25e",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 1",
@@ -3271,7 +3266,7 @@
     },
     {
       "id": "international-relations/consulate",
-      "version": "guided-58eea57b41f5e0d4048f2e76eb777fd1d9433c23e541ae51c71efc80ea09adf5",
+      "version": "guided-0d888e686febd407773d89b8d95e6421ec6a8c21a7094a38f946596138bd0f5d",
       "sources": [
         {
           "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
@@ -3282,7 +3277,7 @@
     },
     {
       "id": "international-relations/diplomatic-mission",
-      "version": "guided-751bf2e26ea744afbcfffe0da905c13d65618aef6c022b2dffb99bbb50cbdb75",
+      "version": "guided-2da2159e0f9f76d8de746abd582a738f14f805e45e30a508c09b4e889fc12bdc",
       "sources": [
         {
           "title": "US State Department National Museum of American Diplomacy: Diplomatic Encyclopedia",
@@ -3293,7 +3288,7 @@
     },
     {
       "id": "international-relations/summit",
-      "version": "guided-da313893094358b1d04483278d694a73ad52dd657f3ddf5f188c24ac0b303867",
+      "version": "guided-375423f2c4a36efed02a8e059310d1ee57af3e039db69b61282c551a8b674e40",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 3",
@@ -3309,7 +3304,7 @@
     },
     {
       "id": "international-relations/dialogue",
-      "version": "guided-8db544667133a520cda730192e629df46f1264bb763b9fee371a7120a7a5b307",
+      "version": "guided-9136c99d7ff52aa919768e82ff14f8fc1d0c7bafed49f20e34b015e67bdd8ded",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 1",
@@ -3325,7 +3320,7 @@
     },
     {
       "id": "international-relations/negotiation",
-      "version": "guided-9f8e41b23b12c5bc047867c872c78a865a700c7f9a6d07cec046729c295cfb70",
+      "version": "guided-a92707ccf71ddcb61b297e2aea90cfa309bf15ca7c8e4f1410a99a7dc8809d2a",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3341,7 +3336,7 @@
     },
     {
       "id": "international-relations/mediation",
-      "version": "guided-088d87cada955c8b5d829a8c536b4a3d42967d06acfd47c820cc58014ebc278c",
+      "version": "guided-a9615159b4246867d345be41cdd7381cc7ae9685592768a7aefad06c9bfd29e5",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -3352,7 +3347,7 @@
     },
     {
       "id": "international-relations/agreement",
-      "version": "guided-f1384f79fba774619161919de8fb9b1f1068c6268de939f80c59839384679363",
+      "version": "guided-ff47c23587d288f62aefb22fe2bede8770d8a96cc627a96ea565448b3acd8b04",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 3",
@@ -3368,7 +3363,7 @@
     },
     {
       "id": "international-relations/memorandum-of-understanding",
-      "version": "guided-fca61428e83549411dbea27e9656ba42c21cad0574c39d8c4263d9d15b5d9682",
+      "version": "guided-40e66ec03dac050a988a41cda4436c448a79463c492eee4ade0404dba5023aa6",
       "sources": [
         {
           "title": "United Nations Treaty Collection: Definitions",
@@ -3379,7 +3374,7 @@
     },
     {
       "id": "international-relations/protocol",
-      "version": "guided-1514bc0c72ccbacd2a8f435f1516bbf9359320014f6b8a45374630b33acaf109",
+      "version": "guided-4cc08a995a12e4c69582a236b1f120d90c8fd5efdf315014b9fef1f57a7fa9a6",
       "sources": [
         {
           "title": "United Nations Office at Geneva: Multi-what?",
@@ -3395,7 +3390,7 @@
     },
     {
       "id": "international-relations/sanctions",
-      "version": "guided-af5410ee8201b5f8d596096ffb42cf7a2d7273204e9413ff34132778898e04a3",
+      "version": "guided-c038d5a528199f45617062115cee79e614589c886d999dc0b9ff913f56e8edbf",
       "sources": [
         {
           "title": "United Nations Security Council: Sanctions",
@@ -3406,7 +3401,7 @@
     },
     {
       "id": "international-relations/national-security",
-      "version": "guided-83db75a18e7ff3a251c2e647ef5fc5f5a4f7705f5062938aab9b15bc8e247bf8",
+      "version": "guided-3ee4b9ac46f66359880e87c57ba767fdec6c3c002560678e63ca1871f88a3332",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 5",
@@ -3422,7 +3417,7 @@
     },
     {
       "id": "international-relations/international-security",
-      "version": "guided-a49d5d976cd11f05f668ab6e80e0496395f4a9a0b61c1529707c2499264b0ba6",
+      "version": "guided-d1cf4e8f9e910e23fb490abce8c101be8aa4a1d6c93412e8938fb52f67d03676",
       "sources": [
         {
           "title": "United Nations Security Council: Sanctions",
@@ -3438,7 +3433,7 @@
     },
     {
       "id": "international-relations/defence",
-      "version": "guided-9c73ff389d3939d6cc0f7c8f297e80fd79da86dbc607642d217e4d746508c2b2",
+      "version": "guided-e8bde71c41fb26b72981932d9302936a88786e8e31095b49f715de9852fb6b26",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 2",
@@ -3454,7 +3449,7 @@
     },
     {
       "id": "international-relations/military-alliance",
-      "version": "guided-108db1e96fb5a0a959ff9a7bffee4e640e21d2b74da89aeac36fd28a676281ee",
+      "version": "guided-4bc426fcf42a50646eac6ec9ac2c1078a71b705d76683ef41b9aebafecdbb9b2",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3470,7 +3465,7 @@
     },
     {
       "id": "international-relations/war",
-      "version": "guided-5810e6009e0e1dd1c8195369bc78d434f5c7e4be2e10439c8177f3c7722638c2",
+      "version": "guided-5325eca2fcb6f79bce16a5e3365230a51d4ef9ca14a6d3f814a28d4a703ffb9b",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3486,7 +3481,7 @@
     },
     {
       "id": "international-relations/conflict",
-      "version": "guided-63d2b6d6210ec656ada3ff08ec5e176fe0c308088f881d02c0a27ae9fe6b2efa",
+      "version": "guided-2a64381ab2e4350327a5dd1a2c25bf8f4ab77b55af334f404081a7aff7bae609",
       "sources": [
         {
           "title": "NCERT Political Theory, chapter 2",
@@ -3502,7 +3497,7 @@
     },
     {
       "id": "international-relations/terrorism",
-      "version": "guided-b8d7cd325912953fa9d1774eba6ea9716a8c2be958db8cee5dccbd03d7f2ccf5",
+      "version": "guided-59ec010091f990ab808078f96b773b4a18b356a3426111949f8b1460aeaafa2a",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3518,7 +3513,7 @@
     },
     {
       "id": "international-relations/insurgency",
-      "version": "guided-deae37b230fea6ccd4e5a4986b69f4eb4fb0a3db88b0dda6c8a4683728518052",
+      "version": "guided-b6df2a55c62ace6c2a115caa40cb01f96dfe5ef49c698054b6175111e2d2f699",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 3",
@@ -3534,7 +3529,7 @@
     },
     {
       "id": "international-relations/nuclear-weapons",
-      "version": "guided-d2db9901123861c8989b463d7c42e38780ac3428fe770eab21650b003f6f4422",
+      "version": "guided-a4e83d019c030ce0b764f254943994a5355f8d1aaf7d03c5f6fb457ae5aa6ea4",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3550,7 +3545,7 @@
     },
     {
       "id": "international-relations/arms-control",
-      "version": "guided-4e8f889e92c67bf12a57491868922b236293e592536a4d3b7a2d4fa52def23c9",
+      "version": "guided-e79636217d71c2aa4071f343d4403af69219ff1cda9a9c9e5ae54e5927cd9e38",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3566,7 +3561,7 @@
     },
     {
       "id": "international-relations/disarmament",
-      "version": "guided-66cb8ffa362eaa7a36bc73a1a9df2a9ac824327c29240e0236736405bb20a6cb",
+      "version": "guided-c64b7ead35a65764082acb820c15cc72a750a1d1ee551cdd5c117e2a71bcd0b6",
       "sources": [
         {
           "title": "NIOS: India’s Foreign Policy, lesson 26",
@@ -3582,7 +3577,7 @@
     },
     {
       "id": "international-relations/deterrence",
-      "version": "guided-e47d58982c54fbfbc8bf8f710dfa3bd731b0282dba2094a112beee0078e6fcf3",
+      "version": "guided-8e88d8b0483fcd80af6203744cef524598357c30dd9cd2edb5de5adb2efa324d",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 5",
@@ -3593,7 +3588,7 @@
     },
     {
       "id": "international-relations/international-trade",
-      "version": "guided-8a27ce0b31e2f0a937a3265767f83b878745931371288037569b7c450077c459",
+      "version": "guided-af317becd1b48e9f2c1d19e2051224aef6327edf9119c5e790393081de6635e7",
       "sources": [
         {
           "title": "United Nations Office at Geneva: Multi-what?",
@@ -3609,7 +3604,7 @@
     },
     {
       "id": "international-relations/free-trade",
-      "version": "guided-c02e81446ad41db1536de0726d16c74a06fea3af876165e2f32bb2126aea1b63",
+      "version": "guided-4db60b0ce0c2040a4b920b32f8c07c143cdd36a85299df35baa32a0c3302cc39",
       "sources": [
         {
           "title": "NCERT Contemporary World Politics, chapter 3",
@@ -3625,7 +3620,7 @@
     },
     {
       "id": "international-relations/protectionism",
-      "version": "guided-77d67c48ef1f3bc4fd472a59abf1034f41e2c911db9d3e13847b380c7dfe5430",
+      "version": "guided-2e1c0dc8e5520c4bd1bbb878651ce3f88dad0b7e961f252530fa337e3aa162bb",
       "sources": [
         {
           "title": "UK Department for Business: Protectionism",
@@ -3636,7 +3631,7 @@
     },
     {
       "id": "international-relations/tariff",
-      "version": "guided-89d962d50863488f2e07945c6cbc4bd2c74752617c0966341a57bb5d47d87720",
+      "version": "guided-310cbcb7d510a138617c5b22b52a76747fcdb432e2c17c9dbd74e0a7bd1d8d3c",
       "sources": [
         {
           "title": "UK Department for Business: Protectionism",
@@ -3652,7 +3647,7 @@
     },
     {
       "id": "international-relations/trade-deficit",
-      "version": "guided-de23c4ca83af124773ff45698a36f9a8084ecfc31ef92fadb0c876699c2f5f03",
+      "version": "guided-fa2768a60ae2a8014ae148b5570ac1ebe44aa8be693201b64bbd92c23ae825dc",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 2",
@@ -3668,7 +3663,7 @@
     },
     {
       "id": "international-relations/trade-surplus",
-      "version": "guided-6bde924007d6dd881b38ceb67ded1abe5d116460f0fb3e1bc3b6f6643b3e1780",
+      "version": "guided-073087390373b95fb4cf3c67df7a30dfdde09f0c105ea426b2839a5d7998c442",
       "sources": [
         {
           "title": "NCERT Introductory Macroeconomics, chapter 6",
@@ -3679,7 +3674,7 @@
     },
     {
       "id": "international-relations/foreign-direct-investment",
-      "version": "guided-30a0c61d332e6d5accc182fd5598445ade0d01a76c3af2ffd077eb15119502e4",
+      "version": "guided-f3245f874c4ce946ed884ff9f35035373cf980a85aec744a746ca0f6e30239b8",
       "sources": [
         {
           "title": "IMF: Portfolio investment assets and their distinction from direct investment",
@@ -3695,7 +3690,7 @@
     },
     {
       "id": "international-relations/foreign-portfolio-investment",
-      "version": "guided-f201defd6ea0ded5eef04984d81d9b319209393de86627e0f7582c63a9a3d26a",
+      "version": "guided-2a28284f87d8ebfd297a6675bfacfed959bd204b15dd3a63282a623373ba088e",
       "sources": [
         {
           "title": "IMF: Portfolio investment assets and their distinction from direct investment",
@@ -3711,7 +3706,7 @@
     },
     {
       "id": "international-relations/foreign-aid",
-      "version": "guided-bd88152f46e726983be1ed49736ab91126b45064f450e3512926a3b73dca544e",
+      "version": "guided-1bb3261be834fd5105cc4f977f136cb2c8abe770724f91b319b9e074b424c5e1",
       "sources": [
         {
           "title": "OECD: Official Development Assistance",
@@ -3722,7 +3717,7 @@
     },
     {
       "id": "international-relations/economic-sanctions",
-      "version": "guided-b5485f8705bde054f99f9da676ea0beec3a1209bb8a6df9f1fb87857a64bb4c2",
+      "version": "guided-a353c23b9f05f60852cb7ce81bf7d1235a38a86c9f7e290b99a5e3996dbe3e07",
       "sources": [
         {
           "title": "United Nations Security Council: Sanctions",

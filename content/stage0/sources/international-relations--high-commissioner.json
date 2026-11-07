@@ -1,25 +1,16 @@
 {
   "candidateOnly": true,
+  "selectionNote": "Diplomatic High Commissioner, distinct from the UN office titles in the previous candidate packet.",
   "sources": [
     {
-      "title": "United Nations Office at Geneva: Multi-what?",
-      "url": "https://sites.ungeneva.org/multiwhat/",
-      "retrievedAt": "2026-11-07T08:29:53.585105+00:00",
-      "sha256": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465",
-      "file": "6ae8ca3ebc5d98459bb9a00bb0858fee096d25bf3deef602a8d29d061d60c465.txt",
-      "retrievalMethod": "direct-https-html-text-extraction",
-      "locator": "Passage containing High Commissioner",
-      "excerpt": " awarded several times to UN funds, programs and specialized agencies as well to other UN organizations. 1954: Office of the United Nations High Commissioner for Refugees (UNHCR) 1965: United Nations Children’s Fund (UNICEF) 1969: International Labour Organization (ILO) 1981: Office of the United Nations High Commissioner for Refugees (UNHCR) 1988: United Nations Peacekeeping Forces 2005: jointly to the International Atomic Energy Agency (IAEA) and its Director General Dr. Mohamed ElBaradei 2007: jointly to the Intergovernmental Pa"
-    },
-    {
-      "title": "NCERT Political Theory, chapter 6",
-      "url": "https://ncert.nic.in/textbook/pdf/keps106.pdf",
-      "retrievedAt": "2026-11-07T08:20:20.207508+00:00",
-      "sha256": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079",
-      "file": "12f0c806e719eefff3e5e8e32b92eb7a64ed9fdbfbb696d55351b6dafc1de079.txt",
-      "retrievalMethod": "direct-https-pdf-text-extraction",
-      "locator": "PDF page 15, passage containing High Commissioner",
-      "excerpt": "ants. Often they cannot legally work, or educate their children, or acquire property. The problem is so great that the U.N. has appointed a High Commissioner for Refugees to try to help them. Decisions regarding how many people can be absorbed as citizens in a country poses a difficult humanitarian and political problem for many states. Many countries have a policy of accepting those fleeing from persecution or war. But they may not want to accept unmanageable number of people or expose the country to security risks. India prides i"
+      "title": "Australian Department of Foreign Affairs and Trade: Embassies, High Commissions and Consulates",
+      "url": "https://www.dfat.gov.au/about-us/department/Pages/roles-and-responsibilities-of-embassies-and-other-representative-offices",
+      "locator": "High Commission section",
+      "excerpt": "This is the main representative office of a Commonwealth country (e.g. Australia, Canada) in the capital city of another Commonwealth country (e.g. India, the",
+      "retrievedAt": "2026-11-07T10:15:45.986Z",
+      "sha256": "f6b26ca1a9fc2614fce92bd483b82ba0d981a999cd5eab7ec3b26a3e9727c89a",
+      "file": "f6b26ca1a9fc2614fce92bd483b82ba0d981a999cd5eab7ec3b26a3e9727c89a.txt",
+      "retrievalMethod": "web-tool-text-extract"
     }
   ]
 }

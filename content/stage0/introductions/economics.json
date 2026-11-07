@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "independent-review-pending",
+  "entries": [
+    {
+      "id": "economics/bank",
+      "explanation": "A bank is a financial institution that accepts deposits and provides financial services, including payments and lending, under the relevant regulatory framework. It connects savers, borrowers and payment users.",
+      "example": "Imagine a shop keeping its receipts in a bank account and using that account to pay a supplier. Another customer may borrow from the bank to purchase equipment.",
+      "distinction": "A bank does not keep every deposited rupee unused in a separate box. Banking involves managing lending, liquidity and risks under applicable rules.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/barter-system",
+      "explanation": "Barter is the direct exchange of goods or services without using money as the intermediary. Each participant gives something the other is willing to accept.",
+      "example": "Imagine a farmer exchanging a sack of grain for a carpenter's repair work, without either person paying money.",
+      "distinction": "Barter often needs a double coincidence of wants: each side must want what the other offers. Money makes it easier to separate earning from purchasing.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/budget",
+      "explanation": "A budget is a plan or statement of expected receipts and expenditure for a specified period. A government budget also provides a framework for obtaining the required legislative authorisation.",
+      "example": "Imagine a government setting out expected tax receipts and proposed spending on health, transport and other areas for the next financial year.",
+      "distinction": "A budget is a plan, while actual receipts and spending may differ. It also includes different categories of receipts, so borrowing should not be confused with tax revenue.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/central-bank",
+      "explanation": "A central bank is the institution with major responsibilities for a country's or currency area's monetary and financial system. These commonly include monetary policy and roles in currency, payments and financial stability.",
+      "example": "The Reserve Bank of India performs central-banking functions in India. Its policy decisions can influence conditions facing commercial banks and borrowers.",
+      "distinction": "A central bank is not an ordinary retail bank for the general public. Its responsibilities concern the monetary system rather than simply providing household bank accounts.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/choice",
+      "explanation": "Choice is selecting among available alternatives when not all can be pursued. In economics, choices depend on preferences, constraints and the benefits or costs of different options.",
+      "example": "Imagine having one free afternoon and choosing between studying and taking a paid shift. Choosing one limits what can be done with that same time.",
+      "distinction": "A choice can be constrained rather than completely free. Recognising that someone selected an option does not mean they had every desirable alternative available.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/commercial-bank",
+      "explanation": "A commercial bank provides banking services to customers such as individuals and businesses. Its activities commonly include accepting deposits, enabling payments and extending credit.",
+      "example": "Imagine a small manufacturer using a bank account to receive sales payments and obtaining a loan to buy machinery. These are commercial-banking services.",
+      "distinction": "Commercial banks and the central bank have different roles. A commercial bank serves customers within the financial system; the central bank has system-wide monetary responsibilities.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/consumption",
+      "explanation": "Consumption is using goods and services to satisfy needs or wants. It includes activities such as eating a meal, using transport or receiving a haircut.",
+      "example": "When a household buys and eats bread, it is consuming the bread. The bakery's purchase of flour is instead an input into production.",
+      "distinction": "Buying something and consuming it need not happen at the same moment. A family may purchase rice today and use it over several weeks.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/credit",
+      "explanation": "Credit is an arrangement that allows someone to obtain purchasing power now while taking on an obligation to repay later. The terms determine repayment, interest and other conditions.",
+      "example": "Suppose a shop obtains goods from a wholesaler and agrees to pay next month. The wholesaler has extended trade credit.",
+      "distinction": "Credit provides resources today but does not make repayment disappear. It is different from income received without a corresponding obligation to repay.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/currency",
+      "explanation": "Currency commonly means the notes and coins issued for use as money, and it can also name a country's monetary unit. The meaning depends on whether the discussion concerns physical cash or units such as rupees.",
+      "example": "A ₹100 note is currency in physical form. A bank-account balance can also be used for payment without being a paper note in a wallet.",
+      "distinction": "Currency and all forms of money are not identical. Modern money includes bank deposits, while ordinary references to currency in circulation usually concern notes and coins.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/deflation",
+      "explanation": "Deflation is a fall in the general price level over time. The same amount of money can then buy more of the representative basket of goods and services, although effects differ across households and businesses.",
+      "example": "Suppose a broad basket costs ₹200 one year and ₹190 the next. If that reflects a general price decline, it illustrates deflation.",
+      "distinction": "Deflation is different from disinflation. With disinflation, prices can still be rising, but at a slower rate; one discounted product alone does not establish deflation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/deposit",
+      "explanation": "A bank deposit is money placed in an account with a bank, giving the account-holder a claim on the bank under the account's terms. Deposits differ in access, maturity and interest conditions.",
+      "example": "Imagine a household keeping spending money in a savings account and placing another amount in a fixed deposit for a specified term.",
+      "distinction": "A deposit is not the same as buying a bank's shares. Depositors and shareholders have different legal claims and face different kinds of risk.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/direct-tax",
+      "explanation": "A direct tax is generally assessed directly on a person's or organisation's income, profits or specified assets. The legally liable taxpayer pays it under the applicable tax framework.",
+      "example": "Income tax on a person's taxable income is a familiar example of a direct tax, although the actual liability depends on the relevant law.",
+      "distinction": "A direct tax is assessed on income, profits or specified assets; an indirect tax generally applies to transactions or consumption. The ultimate economic burden of either can still be affected by prices, wages and other adjustments.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/distribution",
+      "explanation": "Distribution concerns how goods, services or income are shared or reach different people. In economics, the word can refer both to moving products to users and to the division of income among groups.",
+      "example": "Imagine discussing both how grain reaches village shops and how the earnings from its production are divided among workers and owners.",
+      "distinction": "Producing more does not by itself explain who receives the benefits. Total production and its distribution answer different economic questions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/economic-development",
+      "explanation": "Economic development is a broader improvement in people's economic opportunities and living conditions. It can involve productivity, institutions, education, health and the distribution of benefits as well as output growth.",
+      "example": "Imagine a region where better transport, reliable water and education improve both livelihoods and access to opportunity. Its development involves more than a larger production total.",
+      "distinction": "Economic growth can contribute to development, but the two are not identical. Higher output does not automatically ensure that everyone benefits or that environmental damage is controlled.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/economic-growth",
+      "explanation": "Economic growth is an increase in an economy's output over time, commonly examined using changes in real GDP. Using real values helps separate output changes from price changes.",
+      "example": "Suppose an economy produces more goods and services this year than last year after adjusting for price changes. That illustrates economic growth.",
+      "distinction": "A rise in nominal GDP can partly reflect inflation. Economic growth is also different from a complete improvement in health, opportunity or environmental conditions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/economics",
+      "explanation": "Economics studies how people and institutions make choices when resources have alternative uses. It examines production, consumption, exchange and the consequences of different ways of organising these activities.",
+      "example": "Suppose a town has enough money for either a larger library or an additional clinic. Economics helps examine the trade-offs and effects of that choice.",
+      "distinction": "Economics is not only the study of money. Time, clean water and access to land can also be scarce resources that require choices.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/economy",
+      "explanation": "An economy is the connected set of activities through which people produce, exchange and use goods and services. Households, businesses, governments and other institutions make choices about limited resources within it.",
+      "example": "Imagine a farmer selling grain, a mill turning it into flour and a bakery making bread. Their activities connect production, trade, employment and consumption.",
+      "distinction": "An economy is the activity being studied. Economics is the subject that studies choices, incentives and interactions within economies.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/employment",
+      "explanation": "Employment involves working to produce goods or services in an economic role. It includes both paid work for an employer and self-employment, depending on the statistical definition being used.",
+      "example": "A shop assistant earning wages and a person running their own repair business can both be employed, even though their work arrangements differ.",
+      "distinction": "Employment is not limited to a formal salaried office job. Informal work and self-employment are important forms of employment too.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/exchange",
+      "explanation": "Exchange is giving something in return for something else, such as goods, services or money. It allows people to obtain things they value without producing everything themselves.",
+      "example": "Suppose a tailor repairs a shirt and receives payment. The customer exchanges money for a service, while the tailor can use the payment elsewhere.",
+      "distinction": "Exchange and production are different activities. Selling an existing item transfers it between people, but does not necessarily create a newly produced good.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/expenditure",
+      "explanation": "Expenditure is spending on goods, services, assets or other purposes during a period. What it represents depends on who spends and on the type of payment involved.",
+      "example": "Suppose a household pays for food and a business buys equipment during the same month. Both make expenditures, but the purchases serve different purposes.",
+      "distinction": "Expenditure is broader than consumption. Buying a productive machine is spending, while its economic classification differs from a household consuming a meal.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/exports",
+      "explanation": "Exports are goods and services supplied by an economy to the rest of the world. They can earn income from foreign customers and connect domestic producers to wider markets.",
+      "example": "A company selling software services to a customer abroad can export a service even when no box or container crosses a border.",
+      "distinction": "Exports include services as well as physical goods. Export earnings are also not identical to profit, because producing and supplying exports involves costs.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/fiscal-policy",
+      "explanation": "Fiscal policy concerns government choices about spending, taxation and related financing. These choices can influence economic activity, distribution and the provision of public services.",
+      "example": "Suppose a government increases infrastructure spending during a slowdown. That is a fiscal-policy choice, although its effects depend on financing and wider conditions.",
+      "distinction": "Fiscal policy is different from monetary policy. Government budgets and taxes are central to fiscal policy; central-bank policy rates are a monetary-policy tool.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/gdp",
+      "explanation": "Gross Domestic Product, or GDP, measures the value of final goods and services produced within a country during a period. “Final” helps avoid counting the same production twice.\n\nIt is a measure of production, not a complete measure of people’s wellbeing.",
+      "example": "A bakery produces bread and a salon provides haircuts in India. Both contribute to India’s production. We avoid adding the flour’s full value again when it is already included in the final bread.",
+      "distinction": "GDP focuses on production within the country. GNP starts with that and adjusts for income residents receive from abroad and income paid to non-residents. For now, remember “domestic” points to production inside the country.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "economics/gnp",
+      "explanation": "Gross national product starts with domestic production and adjusts for net factor income that residents receive from abroad. In the usual textbook relationship, GNP equals GDP plus factor income received from abroad minus factor income paid abroad.",
+      "example": "Suppose residents earn more factor income from abroad than non-residents earn from the domestic economy. Adding that positive net amount makes GNP higher than GDP in this simplified comparison.",
+      "distinction": "GDP focuses on production within the domestic economy. GNP adds the resident-income connection; it is not GDP plus exports, and residence is not simply citizenship.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/goods",
+      "explanation": "Goods are items produced or supplied to satisfy people's wants or needs. In a basic distinction, they are things such as food, clothing and equipment that can be used or exchanged.",
+      "example": "A notebook, a bicycle and a sack of rice are goods. They can serve very different purposes while all being products people use.",
+      "distinction": "Goods are usually contrasted with services, which involve activities performed for someone. A single purchase, such as a restaurant meal, can combine both.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/government-expenditure",
+      "explanation": "Government expenditure is public spending on services, administration, transfers, assets and other responsibilities. Different categories help show whether spending supports current operations or creates assets.",
+      "example": "Suppose a government pays teachers' salaries and builds a new school. Both are expenditure, but they have different accounting and economic characteristics.",
+      "distinction": "Government expenditure is not limited to buying goods for offices. It can include transfers to households, interest payments and investment in public infrastructure.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/government-revenue",
+      "explanation": "Government revenue is income received through taxes and non-tax sources, such as certain fees, dividends or other receipts. It helps finance public responsibilities.",
+      "example": "Imagine a government collecting taxes and receiving a dividend from a public enterprise. Both can contribute to revenue under the relevant accounts.",
+      "distinction": "Borrowing brings money into government accounts but is not ordinary revenue. It creates a repayment obligation and is treated separately in public-finance accounts.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/imports",
+      "explanation": "Imports are goods and services an economy obtains from abroad through transactions with the rest of the world. They can include both physical products and services delivered across borders.",
+      "example": "A business buying machinery from abroad imports goods. Purchasing an eligible service from a supplier abroad can also be an import.",
+      "distinction": "Imports are not automatically a sign of weakness. Their effects depend on what is imported, how it supports production or consumption, and how payments are financed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/income",
+      "explanation": "Income is a flow of money or other economic receipts received over a period. It can include wages, business earnings and other receipts, with the precise definition depending on the context.",
+      "example": "Suppose a teacher earns a salary each month and receives interest on savings during the year. Both can contribute to income over the relevant period.",
+      "distinction": "Income is a flow measured over time. Wealth is a stock of assets held at a point in time; receiving a high income and already having substantial wealth are different.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/indirect-tax",
+      "explanation": "An indirect tax is generally imposed on transactions, production or consumption rather than directly on a person's income. Businesses may collect and remit it, with some burden reflected in prices.",
+      "example": "Tax included in the sale of a taxable product can be an indirect tax. The customer pays the seller, who has obligations under the relevant system.",
+      "distinction": "The business remitting a tax and the person ultimately bearing its economic burden need not be the same. Indirect tax is also different from a tax assessed directly on income.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/inequality",
+      "explanation": "Inequality is an uneven distribution of resources, opportunities or outcomes between people or groups. It can concern income, wealth, education, health or other dimensions.",
+      "example": "Suppose two regions have very different access to quality schools and healthcare. The gap reflects inequality beyond differences in money income alone.",
+      "distinction": "An economy's average income does not show how income is shared. The average can rise while large gaps between groups persist.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/inflation",
+      "explanation": "Inflation is a rise in the general level of prices over time. With the same amount of money, you can buy less than before. That means purchasing power has fallen.\n\nOne expensive tomato purchase alone does not establish inflation across the economy.",
+      "example": "If food, transport and other household expenses rise while a family’s income stays the same, its budget becomes tighter. Prices can rise when production costs increase or demand grows faster than supply.",
+      "distinction": "Inflation means prices are generally rising. Deflation means they are generally falling.\n\nLower inflation usually means prices are rising more slowly—not that prices have fallen.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "economics/interest",
+      "explanation": "Interest is a payment associated with borrowing or lending money over time. A borrower may pay it to a lender, while a depositor may earn it on an eligible deposit.",
+      "example": "Suppose someone borrows ₹1,000 for one year at a simple annual interest rate of 10%. The interest for that year is ₹100 under those assumptions.",
+      "distinction": "An interest rate is a percentage applied over a stated period; the interest amount is the resulting money payment. Fees and compounding can make actual borrowing costs different.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/investment",
+      "explanation": "Investment uses resources now in the hope of future benefits. In discussions of economic production, it often means adding productive assets such as machinery, buildings or infrastructure.",
+      "example": "Imagine a bakery buying an additional oven so it can produce more bread in future. That purchase adds to its productive capacity.",
+      "distinction": "Buying existing shares is financial investment, but it does not by itself create a new machine or factory. Financial investment and capital formation are related but different ideas.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/loan",
+      "explanation": "A loan is a particular borrowing arrangement in which a lender provides money or another asset to be repaid on agreed terms. Those terms may include interest, repayment dates and security.",
+      "example": "Imagine a farmer borrowing money for an irrigation pump and agreeing to repay it over several instalments. The borrowed amount and repayment conditions form the loan arrangement.",
+      "distinction": "The principal is the amount borrowed; interest is a charge for using the funds. A loan's total cost can also include fees or other conditions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/market",
+      "explanation": "A market is an arrangement through which buyers and sellers interact and exchange goods, services or resources. It can operate in a physical place or through communication over a distance.",
+      "example": "An online platform connecting vegetable suppliers with restaurants can form a market even when the participants never meet at a single marketplace.",
+      "distinction": "A market is not only a building or a bazaar. The term also includes the wider interactions through which prices, quantities and trading conditions are established.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/monetary-policy",
+      "explanation": "Monetary policy is action by a central bank or monetary authority to influence financial conditions in pursuit of its mandate. Tools can affect interest rates, liquidity and the transmission of credit conditions.",
+      "example": "Imagine a central bank changing its policy rate to influence borrowing conditions and inflation pressures. Commercial lending rates may respond through the financial system.",
+      "distinction": "Monetary policy is not the same as government taxation or spending. Its effects also take time and are not a guaranteed immediate change in every price or loan rate.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/money",
+      "explanation": "Money is something widely accepted for making payments and settling obligations. It helps people exchange, express prices and carry purchasing power from one transaction to another.",
+      "example": "A baker can accept money for bread and later use it to pay for electricity, without finding an electricity supplier who wants bread.",
+      "distinction": "Money is not the same as wealth. A person can own valuable land or equipment without holding much money, and money's purchasing power can change.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/needs",
+      "explanation": "Needs are things considered necessary for basic life, well-being or participation in society. Food, shelter and essential care are familiar examples, though what adequate provision means depends on circumstances.",
+      "example": "Imagine a household first ensuring access to drinking water and essential food before deciding on an expensive entertainment purchase.",
+      "distinction": "Needs and wants are not separated by one perfectly fixed line. A phone may be optional in one setting but essential for work, safety or accessing services in another.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/opportunity-cost",
+      "explanation": "Opportunity cost is the value of the next-best alternative you give up when making a choice. It can involve time, money or other resources.\n\nIt is the best alternative you would otherwise choose, not the sum of every possible alternative.",
+      "example": "If your next-best use of an evening is a paid shift, spending that evening at a concert means giving up those earnings, as well as paying for the ticket.",
+      "distinction": "The price is what you pay. Opportunity cost includes the value of the next-best use you give up. Something with no money price can still have an opportunity cost in time.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "economics/per-capita-income",
+      "explanation": "Per capita income divides an economy's income measure by its population. It provides an average that can help compare material economic conditions, provided the income measure and price basis are clear.",
+      "example": "Suppose a community's annual income is ₹10 lakh and its population is 100. The simple average is ₹10,000 per person, even if actual incomes differ greatly.",
+      "distinction": "Per capita income is an average, not the amount every person receives. It does not by itself show inequality or capture every aspect of well-being.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/poverty",
+      "explanation": "Poverty is a condition of serious deprivation in resources or opportunities needed for an adequate life. It can be measured using income or consumption, and also through dimensions such as health, education and living conditions.",
+      "example": "Imagine a household that cannot consistently obtain adequate food, safe shelter and essential care. Several aspects of deprivation may reinforce each other.",
+      "distinction": "Poverty and inequality are different. Poverty concerns deprivation; inequality concerns differences in resources or outcomes, even in a society where average incomes are high.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/primary-sector",
+      "explanation": "The primary sector includes activities that obtain products directly from natural resources, such as agriculture, fishing, forestry and mining. The exact classification follows the statistical framework being used.",
+      "example": "Growing wheat and extracting iron ore are primary-sector activities because they obtain products directly from land or natural deposits.",
+      "distinction": "Primary does not mean unimportant or necessarily unskilled. It identifies the activity's relationship to natural resources, rather than its value or sophistication.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/production",
+      "explanation": "Production is the process of creating goods and services by combining inputs such as labour, materials and equipment. It can happen in farms, factories, offices and many other settings.",
+      "example": "A bakery combines flour, energy, equipment and workers' effort to produce bread. A teacher also produces a service through teaching.",
+      "distinction": "Production is wider than manufacturing. Growing food and providing transport are productive activities even though they do not take place on an industrial assembly line.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/public-debt",
+      "explanation": "Public debt is the stock of outstanding borrowing obligations of the relevant public authorities. It reflects borrowing accumulated over time, adjusted for repayments and other changes.",
+      "example": "Imagine a government borrowing to finance expenditure and repaying only part of its earlier loans. The remaining obligations contribute to its public debt.",
+      "distinction": "A deficit is a gap measured over a period. Debt is an outstanding stock at a point in time; a year's deficit and the total debt are not the same number.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/purchasing-power",
+      "explanation": "Purchasing power is the amount of goods and services that money can buy. It depends on prices as well as the amount of money available.",
+      "example": "Suppose a notebook's price rises from ₹20 to ₹25 while a student's budget stays ₹100. That budget buys four notebooks instead of five.",
+      "distinction": "A higher money income does not always mean greater purchasing power. If relevant prices rise faster than income, the person may be able to buy less.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/resources",
+      "explanation": "Resources are inputs that can be used to produce goods and services or achieve other purposes. They include natural materials, people's time and skills, and produced equipment.",
+      "example": "Imagine a workshop using timber, tools and carpenters' time to make furniture. Each is a resource with other possible uses.",
+      "distinction": "Money helps organise access to resources, but it is not the same as the real inputs themselves. Printing more money does not automatically create more skilled workers or timber.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/salary",
+      "explanation": "A salary is an agreed payment for employment, commonly expressed as a fixed amount over a regular period. Its terms can also include allowances, benefits or performance-related elements.",
+      "example": "Imagine an employee receiving a stated monthly payment for their role in an organisation. That regular payment is commonly described as a salary.",
+      "distinction": "A salary is not the same as the employee's total wealth or take-home pay. Deductions and benefits can make the amount received different from the headline salary.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/savings",
+      "explanation": "Saving is the part of income that is not used for current consumption. Accumulated savings can be held in different forms and used for future needs.",
+      "example": "Suppose a household receives ₹30,000 in a month and spends ₹27,000 on current consumption. The remaining ₹3,000 illustrates saving under this simplified example.",
+      "distinction": "Saving is not necessarily keeping physical cash at home. It can take several forms, and it is distinct from borrowing money to fund current spending.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/scarcity",
+      "explanation": "Scarcity means that resources are limited relative to their possible uses. Because people cannot do or obtain everything at once, choices involve giving up alternatives.",
+      "example": "Suppose a community has a limited supply of water that could support homes, farms and factories. Allocating it requires choices among competing uses.",
+      "distinction": "Scarcity is not identical to poverty or a temporary shortage. Even a wealthy person has limited time, while a shortage usually describes a more specific supply problem.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/secondary-sector",
+      "explanation": "The secondary sector transforms materials into manufactured products or creates built structures. Manufacturing and construction are familiar activities within it.",
+      "example": "Turning cotton into cloth and constructing a building are secondary-sector activities because they transform inputs or create structures.",
+      "distinction": "Secondary-sector production is different from extracting raw material and from providing a service such as transport. One business can still combine activities from several sectors.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/services",
+      "explanation": "Services are activities that provide value to people or organisations. Teaching, transport, repairs and medical consultations are examples of work whose useful result is not simply a separate physical object.",
+      "example": "When a mechanic repairs a bicycle, the repair work is a service even though it may also involve supplying a replacement part.",
+      "distinction": "A service can contribute to economic production just as a physical good can. Its less tangible form does not mean it has no economic value.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/standard-of-living",
+      "explanation": "Standard of living concerns the material conditions people can access, including income, housing, food and services. It is influenced by both private resources and public provision.",
+      "example": "Imagine two households with similar cash incomes, but one has reliable water, affordable transport and accessible healthcare. Their material living conditions can still differ.",
+      "distinction": "Standard of living is related to, but narrower than, overall quality of life. Safety, relationships and personal freedom also affect well-being beyond material consumption.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/subsidy",
+      "explanation": "A subsidy is public support that reduces a cost or supports an activity or group. It can take different forms, and its effects depend on its design and who actually benefits.",
+      "example": "Suppose a government pays part of the cost of a bus service so fares can be lower. That support can subsidise public transport.",
+      "distinction": "A subsidy is not simply any government expenditure. It is also not automatically cost-free: resources used for it have alternative public uses.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/tax",
+      "explanation": "A tax is a compulsory payment imposed by a public authority under law. It helps finance public activity and can also influence economic behaviour or distribution.",
+      "example": "Suppose a government collects income tax and uses public funds for roads and schools. The payment is legally required, rather than a voluntary donation.",
+      "distinction": "A tax is different from a price paid for a particular private purchase. Paying tax does not generally buy a matching individual quantity of a specific public service.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/tertiary-sector",
+      "explanation": "The tertiary sector provides services that support households, businesses and public life. It includes activities such as trade, transport, banking, education and healthcare.",
+      "example": "A bus operator, a teacher and a bank each provide services, even though their work and sources of funding differ.",
+      "distinction": "Services are part of economic production, not merely an addition after goods are made. A service can contribute value without producing a separate physical object.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/unemployment",
+      "explanation": "Unemployment generally describes people without work who are available for work and seeking it, under the applicable statistical definition. Measuring it requires specifying the population and reference period.",
+      "example": "Imagine someone who has lost a job, is available to start work and is applying for new positions. They may be counted as unemployed under a suitable definition.",
+      "distinction": "Everyone without a job is not automatically unemployed. Someone who is not seeking or available for work may instead be outside the measured labour force.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/wages",
+      "explanation": "Wages are payments for labour performed for an employer. They may be calculated by time worked, output produced or another agreed basis, subject to applicable labour rules.",
+      "example": "Suppose a worker is paid for each day worked at a construction site. That payment is a wage linked to the agreed work arrangement.",
+      "distinction": "Wages and salaries are both forms of labour income. The distinction often concerns the payment arrangement, rather than one category being inherently more valuable work.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/wants",
+      "explanation": "Wants are things people would like to have or experience. They are shaped by preferences and circumstances, and can extend beyond what available resources allow.",
+      "example": "Suppose a student would like a new phone, a holiday and more books but cannot afford all three. Their wants exceed their current budget.",
+      "distinction": "A want is not necessarily frivolous. Economics examines choices among competing wants without assuming that everyone values the same things.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "economics/wealth",
+      "explanation": "Wealth is a stock of valuable assets held at a point in time, such as savings, property or business assets. Net wealth subtracts relevant debts from those assets.",
+      "example": "Imagine someone owning a house worth ₹40 lakh with a remaining housing loan of ₹15 lakh. Their net housing wealth is ₹25 lakh under those valuations.",
+      "distinction": "Wealth is not the same as monthly earnings. A person can have valuable assets but little current income, or a high income with substantial debt.",
+      "origin": "AI-assisted-editorial-draft"
+    }
+  ]
+}

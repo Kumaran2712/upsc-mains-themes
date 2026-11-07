@@ -5,6 +5,15 @@ import { validateReviewControls } from './calibration.mjs';
 
 export async function compile(root = resolve('content/stage0')) {
   const published = [], privateLessons = [];
+  const introductions = new Map();
+  for (const subject of new Set([...catalogue.values()].map(c => c.subject.id))) {
+    const file = JSON.parse(await readFile(resolve(root, 'introductions', subject + '.json'), 'utf8'));
+    for (const entry of file.entries) {
+      if (!catalogue.has(entry.id) || introductions.has(entry.id) || ['explanation', 'example', 'distinction'].some(key => typeof entry[key] !== 'string' || entry[key].trim().length < 40)) throw new Error('Incomplete or duplicated introduction: ' + entry.id);
+      introductions.set(entry.id, { explanation: entry.explanation, example: entry.example, distinction: entry.distinction });
+    }
+  }
+  if (introductions.size !== catalogue.size) throw new Error('All 253 introductory guides are required');
   const walk = async (directory) => {
     const entries = await readdir(directory, { withFileTypes: true }).catch((error) => { if (error.code === 'ENOENT') return []; throw error; });
     for (const entry of entries) {
@@ -37,7 +46,7 @@ export async function compile(root = resolve('content/stage0')) {
     for (const source of packet.sources) {
       if (!source.excerpt?.trim() || !/^[a-f0-9]{64}$/.test(source.sha256 || '') || new URL(source.url).protocol !== 'https:') throw new Error('Invalid guided source: ' + placement.id);
     }
-    const context = { id: placement.id, name: placement.name, subject: placement.subject.name, category: placement.category.name, objective: placement.objective, kind: 'source-guided', assessmentAvailable: false,
+    const context = { id: placement.id, name: placement.name, subject: placement.subject.name, category: placement.category.name, objective: placement.objective, introduction: introductions.get(placement.id), kind: 'source-guided', assessmentAvailable: false,
       sources: packet.sources.map(({ title, url, locator, excerpt, sha256 }) => ({ title, url, locator, excerpt, sha256 })) };
     context.version = 'guided-' + digest(context);
     guidedPrivate.push(context);

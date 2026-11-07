@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "independent-review-pending",
+  "entries": [
+    {
+      "id": "polity/accountability",
+      "explanation": "Accountability means being required to explain and justify decisions and facing appropriate consequences when responsibilities are not met. It needs information, a forum for questioning and ways to respond to wrongdoing.",
+      "example": "Suppose a public agency must explain an unexplained cost increase to an audit body and correct irregularities. That process makes it answerable for its actions.",
+      "distinction": "Transparency makes information visible. Accountability goes further by requiring answers and providing a way to act on what the information reveals.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/act",
+      "explanation": "An Act is legislation that has completed the required enactment process. It can create rights, duties, institutions or procedures, and its provisions operate according to its legal terms.",
+      "example": "Imagine a bill on waste management completing the necessary legislative stages and receiving the required assent. It becomes an Act through that process.",
+      "distinction": "A bill is proposed legislation; an Act is enacted legislation. Enactment and the date every provision starts operating can also be different.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/amendment",
+      "explanation": "An amendment is a formal change to a legal text or proposal. Constitutional amendments and changes to ordinary laws can require different procedures because the texts have different legal status.",
+      "example": "Imagine a legislature changing a section of an existing education law. It amends that law rather than necessarily replacing the entire Act.",
+      "distinction": "Changing a policy under existing powers and amending the law that grants those powers are different actions. The relevant amendment procedure depends on the document being changed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/appeal",
+      "explanation": "An appeal is a request for a decision to be examined by a higher or designated appellate authority. The right to appeal, grounds available and procedure depend on the relevant law.",
+      "example": "Imagine a person challenging a trial court's decision before the court authorised to hear that appeal. The appellate court considers the matter within its legal powers.",
+      "distinction": "An appeal, a review and a fresh case are not interchangeable. Each follows a different legal route, and an appeal is not automatically available for every decision.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/bill",
+      "explanation": "A bill is a proposed law placed before a legislature for consideration. It can be debated, changed, passed or rejected through the applicable legislative procedure.",
+      "example": "Suppose representatives consider a proposal about road safety and suggest changes. While it is still being considered as proposed legislation, it is a bill.",
+      "distinction": "Announcing a policy idea is not the same as introducing or passing a bill. A proposal becomes law only after the required legal process is completed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/citizen",
+      "explanation": "A citizen is a person who has a legally recognised membership relationship with a state. That relationship brings particular rights and responsibilities, which differ across legal systems.",
+      "example": "Imagine a person who holds Indian citizenship but lives abroad. Living elsewhere does not by itself mean that the person is no longer an Indian citizen.",
+      "distinction": "Residence describes where someone lives. Citizenship describes a legal membership relationship, so a resident and a citizen are not necessarily the same.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/citizenship",
+      "explanation": "Citizenship is the legal status of membership in a state and the relationship of rights and responsibilities that accompanies it. Laws determine how it is acquired, recognised and lost.",
+      "example": "Suppose someone moves to another country for work. They may become a lawful resident without immediately acquiring that country's citizenship.",
+      "distinction": "Citizenship is a legal status; national identity can also involve culture, history or a sense of belonging. The two can overlap without being identical.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/civil-rights",
+      "explanation": "Civil rights protect people in civic life, including important interests such as equal legal treatment, personal liberty and protection against discrimination. Their precise legal form varies across countries.",
+      "example": "Suppose a public service unlawfully excludes people because of their community. Challenging that treatment can involve civil-rights protections.",
+      "distinction": "Civil rights and political rights overlap, but political rights focus more directly on participation in public power, such as voting or standing for office.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/constitution",
+      "explanation": "A constitution sets out the basic framework for governing a country: how institutions are organised, what powers they have, and the rights and limits they must respect.\n\nIndia’s Constitution also expresses important values and goals.",
+      "example": "A government cannot take away a protected freedom simply because it dislikes criticism. Its actions must fit the constitutional framework, and courts can examine whether they do.",
+      "distinction": "An ordinary law deals with a particular matter, such as road traffic. The Constitution provides the higher framework within which laws and government must work.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "polity/constitutional",
+      "explanation": "Constitutional means relating to, authorised by or consistent with a constitution, depending on the context. A constitutional framework sets out public institutions, their powers and limits.",
+      "example": "Suppose someone challenges whether a new law is consistent with constitutional rights. The issue is whether the law is constitutional in that sense.",
+      "distinction": "A measure can have been passed through ordinary law-making procedures and still face a constitutional challenge. Legal enactment does not by itself establish constitutional validity.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/constitutional-authority",
+      "explanation": "A constitutional authority is an office or institution whose role or powers are grounded in the Constitution. Its responsibilities must be understood from the relevant constitutional provisions.",
+      "example": "The Comptroller and Auditor General of India holds a constitutionally established office with public audit responsibilities.",
+      "distinction": "An important public authority is not necessarily a constitutional authority. Some offices and bodies instead derive their existence principally from legislation or executive decisions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/constitutional-body",
+      "explanation": "A constitutional body is an institution established or specifically provided for by the Constitution. Its basic status differs from a body created only through an ordinary law or executive decision.",
+      "example": "The Election Commission of India is provided for by the Constitution. Its constitutional basis helps explain its institutional position.",
+      "distinction": "Constitutional status does not mean unlimited authority. A constitutional body must still act within its assigned powers, while statutory bodies derive their basis from legislation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/country",
+      "explanation": "Country is an everyday term for a distinct political or geographical community, often associated with a territory and government. Its use can be less legally precise than the term sovereign state.",
+      "example": "India is commonly called a country. In a discussion of its government, territory and independent international role, it is also described as a state.",
+      "distinction": "A country and a nation are not interchangeable in every context. Nation often refers to a community with a shared identity, while country commonly refers to a territorial political unit.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/courts",
+      "explanation": "Courts are public institutions that decide legal disputes and other matters within their authority. They consider the applicable law, evidence and procedure before giving decisions or remedies.",
+      "example": "Imagine two neighbours disputing ownership of a strip of land. A competent court can examine documents and evidence and decide the legal dispute.",
+      "distinction": "A court decides legal questions; a legislature primarily makes laws. Courts interpret and apply law, but their powers and the cases they can hear have legal limits.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/democratic",
+      "explanation": "Democratic describes a system or practice in which people have a meaningful role in choosing or influencing public power. Elections, participation, accountability and protection of political freedoms are important elements.",
+      "example": "Imagine a council chosen through fair, competitive elections that remains open to public questioning between elections. Those features support democratic government.",
+      "distinction": "Majority support alone does not make every action democratic. Rights, lawful limits and the ability of minorities and opponents to participate also matter.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/discrimination",
+      "explanation": "Discrimination is disadvantageous treatment linked to a characteristic or group membership rather than a justified basis. Whether particular treatment is unlawful depends on the applicable rights, law and context.",
+      "example": "Suppose equally qualified job applicants are rejected solely because of their caste. The unequal treatment raises a discrimination issue.",
+      "distinction": "Every distinction is not automatically discrimination. A relevant qualification can justify different treatment, while a label unrelated to the task may not.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/due-process",
+      "explanation": "Due process is the idea that state action affecting important rights must meet requirements of legal fairness. It can concern both the fairness of procedures and, in some legal systems, the fairness of the law itself.",
+      "example": "Imagine a person facing a serious state restriction without a meaningful chance to respond. Asking whether the process is fair raises a due-process concern.",
+      "distinction": "Following a written procedure is not necessarily enough if the procedure is arbitrary or unfair. The expression's precise constitutional treatment differs between legal systems, including India and the United States.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/duties",
+      "explanation": "Duties are responsibilities that a person or institution is expected or required to fulfil. Some come from law, while others arise from a role, relationship or ethical commitment.",
+      "example": "Imagine an election official who must count votes impartially. Personal support for a candidate does not remove that official responsibility.",
+      "distinction": "Rights describe claims and protections; duties describe responsibilities. They often support each other, but a person's basic rights are not simply rewards for performing every duty.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/elections",
+      "explanation": "Elections are organised procedures through which eligible voters choose representatives or decide specified public questions. Rules determine eligibility, nominations, campaigning, voting and how results are established.",
+      "example": "Imagine voters choosing members of a local council from competing candidates. The election determines who will hold those representative offices.",
+      "distinction": "An election is an important part of democracy, but a fair democratic system also needs rights, meaningful competition, accountability and respect for lawful limits between elections.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/equality",
+      "explanation": "Equality means recognising people's equal worth and addressing unjustified unequal treatment. Depending on the context, it can concern legal status, access to opportunities or the effects of social disadvantage.",
+      "example": "Suppose a school provides accessible learning materials so students with disabilities can participate. Different support can help create more equal opportunity.",
+      "distinction": "Equality does not always require treating everyone identically. Relevant differences and existing disadvantages can justify measures aimed at making access fairer.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/executive",
+      "explanation": "The executive is the part of government responsible for carrying out laws and directing public administration. It includes political leadership and the administrative machinery working under the constitutional framework.",
+      "example": "Imagine ministers setting a health programme in motion while departments organise staff and supplies. Both political direction and administration form part of executive work.",
+      "distinction": "The political executive changes with political appointments or elections. The continuing administrative services have a different role, even though both operate within the executive structure.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/federal",
+      "explanation": "Federal describes a system in which a constitution distributes powers between a central government and constituent units. Each level has a constitutionally grounded role rather than merely operating as an office of the other.",
+      "example": "India's Union and state governments exercise powers under a constitutional distribution. A dispute about that distribution can raise a federal question.",
+      "distinction": "Federal does not mean that both levels have equal powers in every area. Different federations distribute authority differently and may give the centre important additional powers.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/freedom-of-expression",
+      "explanation": "Freedom of expression protects communicating ideas, opinions and information through speech, writing and other forms. Its constitutional scope and lawful restrictions depend on the relevant legal system.",
+      "example": "Suppose a resident publishes criticism of a public policy. Freedom of expression is relevant to their ability to contribute to public debate.",
+      "distinction": "Disagreeing with a statement is different from having lawful grounds to suppress it. The freedom also does not mean that every kind of expression is legally unrestricted.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/freedom-of-religion",
+      "explanation": "Freedom of religion concerns freedom of conscience and the ability to profess, practise or otherwise relate to religion within the applicable constitutional framework. It also protects important aspects of choice and belief.",
+      "example": "Imagine neighbours holding different religious beliefs, or no religious belief, while receiving equal treatment from public institutions.",
+      "distinction": "Freedom of belief and freedom to carry out every proposed practice are not identical. Religious practices can still be subject to relevant constitutional rights and lawful limitations.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/fundamental-rights",
+      "explanation": "Fundamental rights are rights given special constitutional protection. In India they are set out in Part III of the Constitution, with different provisions applying to citizens, persons or particular groups.",
+      "example": "Imagine someone challenging discriminatory state action using an applicable fundamental right. Constitutional remedies provide a route to seek protection.",
+      "distinction": "Not every important legal right is a fundamental right. Fundamental rights have a specific constitutional status, and their scope and permitted restrictions depend on the provision involved.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/government",
+      "explanation": "Government is the set of institutions and office-holders that make and carry out public decisions. It provides administration and services, enforces laws and acts within the governing constitutional framework.",
+      "example": "Imagine an election leading to a new council that changes a town's waste-collection policy. The people governing have changed, while the town's continuing public institutions remain.",
+      "distinction": "A government can change without a new state being created. The state is the continuing political community; a government exercises its authority for a period.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/government-departments",
+      "explanation": "Government departments are administrative units organised around particular areas of public work, such as health, education or revenue. They help develop and carry out policy within their assigned responsibilities.",
+      "example": "Suppose a state education department coordinates teacher appointments and school administration. A health department has a different area of responsibility.",
+      "distinction": "A department is an organisational unit, not a separate sovereign government. Ministries, departments and implementing agencies can have different structures and powers.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/human-rights",
+      "explanation": "Human rights are rights people have because they are human. They protect dignity and important freedoms and interests, and are recognised through international and domestic frameworks.",
+      "example": "A person's claim to protection against torture does not depend on whether they belong to a popular group or hold a particular citizenship.",
+      "distinction": "Human rights belong to people generally. Some political rights, such as voting in a particular national election, depend on citizenship and other lawful eligibility rules.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/judiciary",
+      "explanation": "The judiciary is the system of courts and judges responsible for deciding legal matters within their jurisdiction. It interprets and applies law and can provide remedies where legal rights or limits are breached.",
+      "example": "Suppose someone challenges an official decision as unlawful. A court can examine the claim through the applicable judicial procedure.",
+      "distinction": "Judicial independence means deciding according to law without improper pressure. It does not mean that judges have unlimited power or no duties of accountability.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/jurisdiction",
+      "explanation": "Jurisdiction is the legal authority of a court or other body to hear a matter or exercise a power. It can depend on the subject, territory, parties or the kind of decision involved.",
+      "example": "Suppose a dispute concerns a matter assigned by law to a specialised tribunal. That assignment affects which body has jurisdiction to hear it.",
+      "distinction": "A serious complaint does not give every court authority to decide it. Jurisdiction must exist before a body can validly exercise the relevant power.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/justice",
+      "explanation": "Justice concerns treating people fairly, protecting their rights and responding appropriately to wrongs. It also asks whether institutions and the distribution of opportunities or burdens are fair.",
+      "example": "Suppose two equally qualified applicants receive different treatment because one belongs to a disliked community. Asking whether that decision is fair is a question of justice.",
+      "distinction": "Equal treatment does not always mean identical treatment. Providing a wheelchair ramp can make access fairer even though not everyone needs that support.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/law",
+      "explanation": "Law is a system of rules recognised and enforced through public institutions. It sets out what people and organisations may do, what they must do, and how disputes or violations are addressed.",
+      "example": "Imagine a town introducing a traffic law that requires drivers to stop at a red signal. The rule applies even when a driver is in a hurry.",
+      "distinction": "A custom is a practice people commonly follow. It becomes a legal rule only when the legal system recognises it; popularity alone does not make something law.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/legal-authority",
+      "explanation": "Legal authority is power that a person or institution is entitled to exercise under law. The law determines its scope, purpose and limits, as well as how misuse can be challenged.",
+      "example": "Suppose an officer is authorised to inspect a licensed business. That power does not automatically authorise the officer to make unrelated demands.",
+      "distinction": "Having influence or physical power is different from having legal authority. A lawful office-holder must still act within the powers granted to that office.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/legal-system",
+      "explanation": "A legal system is the connected set of laws, institutions and procedures through which a society handles legal questions. It includes how rules are made, interpreted, enforced and challenged.",
+      "example": "Imagine a shopkeeper disputing a tax demand. The relevant law, the tax authority, the appeal procedure and the court all form parts of the legal system.",
+      "distinction": "A law is one rule or body of rules. The legal system is the wider arrangement that makes those rules work, including remedies when officials act unlawfully.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/legislature",
+      "explanation": "A legislature is a public institution whose central role is making laws. Depending on the constitutional system, it also debates public matters, authorises spending and scrutinises the executive.",
+      "example": "Suppose elected representatives debate and pass a proposal concerning public transport. They are acting through a legislative process.",
+      "distinction": "The legislature makes laws; the executive primarily carries them out. Their relationship varies across systems, and legislative oversight is different from managing each service directly.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/liberty",
+      "explanation": "Liberty is freedom to think, choose and act within a framework that also protects others. Political discussions ask both what interference should be limited and what conditions make freedom usable.",
+      "example": "Imagine someone choosing a profession without arbitrary official interference. Their practical ability to pursue it may also depend on access to education and opportunity.",
+      "distinction": "Liberty is not unlimited permission to harm others. Restrictions themselves need a defensible legal and public basis rather than simply reflecting an authority's preference.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/nation",
+      "explanation": "A nation is a community whose members understand themselves as sharing a collective identity. That identity may draw on history, culture, political aspirations or a sense of belonging; no single feature defines every nation.",
+      "example": "Imagine a community with a shared historical identity whose members live across several borders. Their sense of nationhood need not fit neatly within one state.",
+      "distinction": "A nation is a community of identity; a state is a political organisation with governing institutions and territory. One state can contain several national identities.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/natural-justice",
+      "explanation": "Natural justice concerns basic fairness in decision-making. Two central principles are that a decision-maker should be impartial and that someone affected should ordinarily have a fair opportunity to be heard.",
+      "example": "Suppose an official decides a complaint in which they have a personal financial interest. Their involvement raises a concern about bias.",
+      "distinction": "A fair hearing does not necessarily require a full courtroom trial in every situation. What fairness requires depends on the decision, context and applicable law.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/notification",
+      "explanation": "A notification is an official announcement issued through an authorised process, often to bring a legal provision into operation, set a rule or communicate a formal decision. Its effect depends on the authority and legal basis involved.",
+      "example": "Imagine an Act allowing the government to appoint its commencement date by notification. An authorised notification then specifies when the relevant provisions begin.",
+      "distinction": "A notification is not automatically a new Act. It often exercises powers already provided by a law, and cannot validly exceed those powers.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/obligations",
+      "explanation": "An obligation is a responsibility that binds someone to act, or to refrain from acting, on a particular basis. It may arise from a law, an agreement or a recognised relationship.",
+      "example": "Suppose a supplier agrees to deliver school desks by a specified date. The agreement creates an obligation to perform as promised, subject to its terms.",
+      "distinction": "An obligation is stronger than a casual preference. Its exact force depends on its basis: a legal obligation and a personal moral commitment need not have the same enforcement mechanism.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/offence",
+      "explanation": "An offence is conduct that a law defines as punishable. Whether an act or omission is an offence depends on the applicable legal definition and the facts that must be proved.",
+      "example": "Imagine someone deliberately taking another person's bicycle without permission. Whether a particular offence is established depends on the relevant law and evidence.",
+      "distinction": "Something can be rude or unfair without being a criminal offence. A legal offence requires a legal basis, rather than only social disapproval.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/order",
+      "explanation": "An order is a formal direction or decision issued by a court or an authority acting within its powers. Its scope depends on the case, the legal basis and the issuing body's jurisdiction.",
+      "example": "Suppose a court directs a public body to reconsider an unlawful decision. That direction is a judicial order in the particular matter.",
+      "distinction": "An order can apply to a specific situation, while a general rule may govern a wider class of situations. The label alone does not determine its legal effect.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/ordinance",
+      "explanation": "In India's constitutional system, an ordinance is a law-making measure available to the President or a Governor in specified circumstances when the relevant legislature is not in session. It has legal force but is subject to constitutional conditions and legislative oversight.",
+      "example": "Suppose urgent legislation is considered necessary while Parliament is not in session. An ordinance can be promulgated only through the constitutionally permitted route.",
+      "distinction": "An ordinance is not simply an administrative instruction or a permanent shortcut around a legislature. Its continuation and validity are subject to the applicable constitutional rules.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/parliament",
+      "explanation": "Parliament is India's national legislature, constitutionally consisting of the President and the two Houses: Lok Sabha and Rajya Sabha. Its work includes law-making, financial authorisation and scrutiny of the executive.",
+      "example": "When a proposed Union law is debated in the Houses, it moves through parliamentary procedures before it can become law through the applicable process.",
+      "distinction": "Parliament and government are not the same institution. The Union executive is accountable through the parliamentary system, but Parliament has a distinct law-making and oversight role.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/parliamentary",
+      "explanation": "Parliamentary describes a system in which the political executive depends on the confidence of the legislature's relevant chamber. The government is formed and held accountable through that relationship.",
+      "example": "In India, the Council of Ministers is collectively responsible to Lok Sabha. Losing the required confidence has consequences for the government's continuation.",
+      "distinction": "Having a parliament does not automatically make a system parliamentary. In a presidential system, the executive's political survival generally rests on a different constitutional arrangement.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/petition",
+      "explanation": "A petition is a formal request asking an authority, legislature or court to consider a matter or provide a remedy. What it must contain and how it is handled depend on the forum.",
+      "example": "Imagine residents submitting a formal request to a local authority about an unsafe public road. A court petition would follow a different set of requirements.",
+      "distinction": "Submitting a petition does not guarantee the requested outcome. The authority or court must consider whether the matter falls within its powers and satisfies the relevant requirements.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/political-rights",
+      "explanation": "Political rights enable people to participate in public decision-making and political life. They can include voting, contesting elections and taking part in lawful political activity, subject to the relevant framework.",
+      "example": "Imagine eligible citizens voting for representatives and joining public debate about government policy. They are participating in political life.",
+      "distinction": "A political right is not necessarily classified as a fundamental right in a particular constitution. Its legal basis and eligibility conditions must be checked separately.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/preamble",
+      "explanation": "A preamble is an introductory statement that explains the purposes or guiding commitments of a legal document. India's constitutional preamble expresses foundational commitments such as justice, liberty, equality and fraternity.",
+      "example": "A learner reading the Indian Constitution's preamble encounters its broad vision before studying the detailed rules governing institutions and rights.",
+      "distinction": "A preamble helps explain a constitution's aims. It does not replace the detailed provisions or by itself provide every power and procedure needed to govern.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/public-administration",
+      "explanation": "Public administration is the organisation and everyday work through which public policies and laws are carried out. It includes coordinating staff, managing resources, delivering services and handling public records or requests.",
+      "example": "Suppose a government announces a vaccination programme. Scheduling clinics, supplying vaccines and maintaining records are tasks of public administration.",
+      "distinction": "Policy sets goals and broad choices; administration puts them into operation. Administrators still make practical decisions, so implementation is not a purely mechanical activity.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/public-authority",
+      "explanation": "A public authority is a body or office that exercises public powers or performs public responsibilities under the relevant legal framework. Its decisions should be answerable to the legal duties that apply to it.",
+      "example": "Imagine a municipal body issuing building permissions. Its decisions affect residents and must follow the powers and procedures applicable to that body.",
+      "distinction": "Public authority refers to a legally grounded public role, not simply a powerful person. The precise legal definition can vary between statutes and contexts.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/public-institutions",
+      "explanation": "Public institutions are organised bodies established to perform public functions within a legal or administrative framework. They can include legislatures, courts, local bodies and public service organisations.",
+      "example": "A public university and a municipal council both serve public purposes, but they perform different functions and have different governing rules.",
+      "distinction": "An institution is more than the person currently leading it. Its responsibilities and procedures can continue when its office-holders change.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/public-interest",
+      "explanation": "Public interest concerns the welfare or legitimate shared interests of the wider community. It asks how a decision affects people beyond a particular individual or organisation.",
+      "example": "Imagine a proposal to protect a public water source used by several villages. Its benefits and burdens can be assessed in terms of public interest.",
+      "distinction": "Public interest is not automatically whatever is popular or whatever an official claims. It requires reasons, attention to rights and consideration of competing public needs.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/punishment",
+      "explanation": "Punishment is a penalty imposed for an established offence through a lawful process. It may aim to deter wrongdoing, protect society, express accountability or support rehabilitation.",
+      "example": "Suppose a court imposes a fine after a person is found guilty of an offence. The fine is a punishment imposed under the applicable legal framework.",
+      "distinction": "Punishment is not the same as compensation. Punishment penalises an offence; compensation seeks to repair loss or injury suffered by someone.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/regulations",
+      "explanation": "Regulations are detailed requirements used to put a legal or administrative framework into practice. Public bodies generally need legal authority to make regulations that bind people or organisations.",
+      "example": "Suppose a food-safety law is followed by detailed requirements for storage temperatures and inspections. Those requirements help turn the broad law into practical standards.",
+      "distinction": "A parent law establishes the legal framework. Regulations fill in authorised details; they cannot simply ignore limits imposed by the law that enables them.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/representation",
+      "explanation": "Representation means acting or speaking on behalf of others within an agreed or legally defined role. Political representatives are expected to consider the interests and concerns of the people they represent.",
+      "example": "Imagine a constituency asking its elected representative to raise problems with a local railway service. The representative brings those concerns into a wider decision-making forum.",
+      "distinction": "Representation does not necessarily mean following every individual instruction. Representatives also weigh competing interests, public responsibilities and constitutional limits.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/republic",
+      "explanation": "A republic is a political system in which the head of state is not a hereditary monarch and public authority is understood as a public office. The precise method of selecting that head varies.",
+      "example": "India is a republic with a President as head of state. The office does not pass from parent to child as a hereditary crown.",
+      "distinction": "Republic and democracy describe different features. A country can be called a republic without necessarily having meaningful democratic competition or strong political freedoms.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/right-to-life",
+      "explanation": "The right to life protects life and, in Indian constitutional interpretation, important dimensions of living with dignity and personal liberty. It requires more than merely allowing biological survival.",
+      "example": "Suppose a person challenges a state action that threatens life or personal liberty without a fair legal process. The right to life can be central to that challenge.",
+      "distinction": "The right to life is broad, but it is not a promise that every desired benefit automatically becomes an unlimited, immediately enforceable entitlement.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/right-to-property",
+      "explanation": "The right to property concerns legal protection for holding and using property. In India, Article 300A provides that a person cannot be deprived of property except by authority of law; it is not currently a fundamental right.",
+      "example": "Imagine a public authority seeking to take private land for a project. It needs an applicable legal basis and must follow the legal requirements involved.",
+      "distinction": "A constitutional right and a fundamental right are not identical categories. Property remains constitutionally protected even though its present status differs from the rights in Part III.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/rights",
+      "explanation": "Rights are recognised claims or freedoms that protect a person's interests or ability to act. They can place duties on others, including public authorities, to respect or protect those claims.",
+      "example": "Imagine a worker seeking wages that an employer is legally required to pay. The worker is asserting a right, rather than merely requesting a favour.",
+      "distinction": "A wish is something someone would like. A right is a claim supported by a relevant moral, legal or institutional basis; it does not disappear simply because another person finds it inconvenient.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/rules",
+      "explanation": "Rules guide conduct within a particular setting by stating what is allowed, required or prohibited. Their authority and consequences depend on who makes them and where they apply.",
+      "example": "Imagine a library requiring borrowed books to be returned within two weeks. That rule helps readers share a limited collection.",
+      "distinction": "Not every rule is a law. A classroom rule and a parliamentary rule may both guide behaviour, but they come from different authorities and apply in different settings.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/secular",
+      "explanation": "Secular describes approaches that distinguish public authority from religious domination and protect freedom of conscience. In India, secularism involves equal citizenship and a constitutional framework for relations between the state and religions.",
+      "example": "Imagine a public service treating applicants equally regardless of their religious beliefs. That illustrates one important secular commitment.",
+      "distinction": "Secularism is not simply hostility to religion, and it does not have one identical institutional form everywhere. State engagement with religion must be understood in its constitutional context.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/socialist",
+      "explanation": "Socialist refers to ideas that emphasise social ownership or control, reducing economic inequality and meeting collective needs. Different socialist traditions propose different roles for the state, markets and democratic institutions.",
+      "example": "Imagine a policy debate about public ownership of an essential service and how its benefits should be shared. It can involve socialist arguments.",
+      "distinction": "Socialist does not name one universally identical economic system. India's constitutional use of the term does not mean that every business must be state-owned.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/sovereignty",
+      "explanation": "Sovereignty means a state has the highest authority to govern itself, without another country having the right to rule it.\n\nIndia is sovereign. It makes its own laws and foreign-policy choices. Within India, the government exercises authority under the Constitution; sovereignty does not mean a government can do anything it likes.",
+      "example": "India can choose which countries to trade or cooperate with. Other countries can influence those choices, but they do not have the right to govern India.\n\nA country can also freely agree to a treaty. Accepting an agreement does not automatically mean giving up sovereignty.",
+      "distinction": "Independence means freedom from another country’s rule. Sovereignty describes the authority to govern and make decisions. They are closely related, but the first emphasises freedom from outside rule; the second emphasises final governing authority.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "polity/state",
+      "explanation": "In this context, a state is a political community with people, territory, a government and sovereignty—the authority to govern itself.\n\nA government is the group and institutions exercising that authority at a particular time. The state continues when governments change.",
+      "example": "When India elects a different national government, India continues as the same state. Its territory, citizens and continuing institutions are not replaced by the election.",
+      "distinction": "The state is the continuing political organisation; the government runs it.\n\n“State” also means a unit within India, such as Kerala. Here we are discussing the broader political meaning, not one of India’s states.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "polity/territory",
+      "explanation": "Territory is the geographical area over which a state or another authority exercises jurisdiction or claims authority. It can include land and legally defined maritime areas and airspace.",
+      "example": "Imagine two neighbouring countries agreeing where their boundary runs. They are clarifying the extent of their respective territories.",
+      "distinction": "Territory is the area itself; a boundary marks its limit. A government's authority over territory is also limited by applicable constitutional and international rules.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/unitary",
+      "explanation": "Unitary describes a system in which the central level holds the primary constitutional authority and can organise or delegate powers to lower levels. The amount of practical local autonomy can still vary considerably.",
+      "example": "Imagine a national government giving local councils responsibility for libraries under a law it can alter. That arrangement can exist in a unitary system.",
+      "distinction": "Having local governments does not by itself make a country federal. The question is also whether lower-level powers have an independent constitutional basis.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/voting",
+      "explanation": "Voting is a formal way of expressing a choice in a collective decision. In elections, eligible voters use it to choose among candidates or other options under the applicable rules.",
+      "example": "Suppose residents eligible for a council election each cast a ballot for a candidate. Their votes are counted according to the election's rules.",
+      "distinction": "Voting is one form of political participation. Discussing public issues, petitioning representatives and scrutinising decisions also matter, even when no election is taking place.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "polity/writ",
+      "explanation": "A writ is a formal order associated with a court's power to protect rights or supervise legality. India's constitutional courts can issue particular writs for purposes recognised by the Constitution and law.",
+      "example": "Suppose someone is allegedly detained unlawfully. A habeas corpus proceeding can require examination of the detention's legal basis.",
+      "distinction": "A writ is a specific legal remedy, not another word for every complaint. Different writs address different problems and have different conditions.",
+      "origin": "AI-assisted-editorial-draft"
+    }
+  ]
+}

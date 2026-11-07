@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "reviewStatus": "independent-review-pending",
+  "entries": [
+    {
+      "id": "international-relations/agreement",
+      "explanation": "An agreement is an arrangement reached through shared acceptance. In international affairs it can cover many subjects, but its legal force depends on its terms, intentions and applicable framework.",
+      "example": "Imagine two governments agreeing on a timetable for joint technical meetings. Another agreement might create binding obligations through international law.",
+      "distinction": "An agreement is not automatically a legally binding treaty merely because officials announce it. The document, intention and legal process need to be examined.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/ambassador",
+      "explanation": "An ambassador is a senior diplomatic representative, commonly the head of a state's diplomatic mission to another state. The role includes representing the sending state and managing official communication.",
+      "example": "An ambassador can convey their government's position to the host government and help maintain communication when relations become difficult.",
+      "distinction": "An ambassador represents a state abroad but does not govern the host country. An embassy's premises also do not simply become the sending state's sovereign territory.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/arms-control",
+      "explanation": "Arms control seeks to regulate weapons or military activities through agreed limits, rules or transparency measures. It can address numbers, types, deployment, testing or related behaviour.",
+      "example": "Imagine states agreeing to a ceiling on certain weapons and procedures for verifying compliance. That arrangement is a form of arms control.",
+      "distinction": "Arms control does not necessarily require eliminating every weapon. Disarmament more directly concerns reducing or removing weapons, while the two approaches can overlap.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/bilateral-relations",
+      "explanation": "Bilateral relations are the relationships and interactions between two countries. They can involve trade, culture, travel, security or disagreements.",
+      "example": "India and Nepal discussing a border crossing is a bilateral interaction. The relationship can include cooperation in one area and disagreement in another.",
+      "distinction": "Bilateral means involving two countries. Multilateral involves several countries working together, often through a shared meeting or organisation.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "international-relations/border",
+      "explanation": "A border marks or relates to the limit between political territories or jurisdictions. It can have a physical presence through crossing points and controls, while its legal location may be described in agreements or other instruments.",
+      "example": "Imagine two neighbouring countries operating a recognised crossing where travellers complete entry procedures. The crossing manages movement across their border.",
+      "distinction": "A border and a disputed claim are different things. A line shown on a map does not by itself settle which territorial claim is legally accepted.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/conflict",
+      "explanation": "Conflict is a situation of incompatible interests, goals or claims that produces disagreement or confrontation. It can be managed through peaceful processes or escalate into violence.",
+      "example": "Two countries disputing access to water can be in conflict over an issue while continuing negotiations and avoiding armed force.",
+      "distinction": "Conflict is broader than war. Recognising a conflict does not mean violence is inevitable or that every issue between the participants is hostile.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/consulate",
+      "explanation": "A consulate is an office that performs consular functions, which commonly include assisting nationals and handling specified documents or travel-related matters. Its functions operate within applicable international and domestic rules.",
+      "example": "A traveller who loses a passport abroad may seek help from their country's consular services, subject to the assistance available in that case.",
+      "distinction": "Consular assistance does not give someone immunity from the host country's law. A consulate also differs from the principal mission's broad diplomatic representation role.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/country",
+      "explanation": "Country is a common term for a distinct territorial or political community. In international affairs it often refers to a state, but everyday usage and legal status do not always match exactly.",
+      "example": "When discussing India's relations with Japan, both are commonly called countries. A more precise legal discussion may use the term states.",
+      "distinction": "Country, nation and state are related but different. Country commonly points to a territorial unit, nation to a community of identity, and state to a political and legal organisation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/defence",
+      "explanation": "Defence concerns preparing for and responding to threats, especially through measures intended to protect a state against armed attack. It includes organisation, capabilities, planning and relevant civil support.",
+      "example": "Training armed forces and maintaining equipment for protecting territory are defence activities. Their purposes and use remain subject to the relevant legal framework.",
+      "distinction": "Defence is one part of national security. Health-system resilience or financial stability can affect security without being the same as military defence.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/deterrence",
+      "explanation": "Deterrence is an attempt to discourage an action by influencing another actor's expectations about its costs or chances of success. It can work through threatened consequences or an ability to deny the desired result.",
+      "example": "Imagine a state strengthening defensive capability so an attacker expects an attempted invasion to fail. That can contribute to deterrence by denial.",
+      "distinction": "Deterrence aims to prevent an action, while compellence seeks to make an actor do something or stop an action already underway. Credibility and perceptions matter, so deterrence is not guaranteed.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/dialogue",
+      "explanation": "Dialogue is a process of communication intended to improve understanding, exchange views or address differences. It can continue even when participants disagree or are not ready to negotiate a final agreement.",
+      "example": "Imagine two governments maintaining regular talks about border concerns while their positions remain different. The communication can still be useful dialogue.",
+      "distinction": "Dialogue is not the same as agreement. It can create conditions for negotiation, but talking alone does not mean that either side has accepted the other's position.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/diplomacy",
+      "explanation": "Diplomacy is how countries manage relationships through communication, negotiation and representation. They use it to cooperate, explain their positions and work through disagreements.",
+      "example": "Representatives of India and another country might discuss travel arrangements or a shared river. The conversation can be diplomacy even if they do not reach an agreement immediately.",
+      "distinction": "Foreign policy is a country’s broad goals and approach towards other countries. Diplomacy is one important way it pursues those goals through relationships and communication.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "international-relations/diplomatic-mission",
+      "explanation": "A diplomatic mission is an official representation of a state to another state or an international organisation. It provides an organised, continuing channel for representation and communication.",
+      "example": "An embassy representing a state in another capital is a diplomatic mission. A permanent mission to an international organisation has a different setting.",
+      "distinction": "A diplomatic mission is not every visit by a government official. It has an established representational role and operates under the relevant diplomatic framework.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/disarmament",
+      "explanation": "Disarmament concerns reducing or eliminating weapons or armed capabilities. It can be partial or broad, unilateral or agreed among several participants.",
+      "example": "Imagine an agreement requiring parties to destroy an identified class of weapons. The reduction or elimination is a disarmament measure.",
+      "distinction": "Disarmament and arms control are related but different. A rule that improves transparency without reducing an arsenal can be arms control without itself constituting disarmament.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/economic-sanctions",
+      "explanation": "Economic sanctions are restrictions on economic activities used to influence conduct or respond to a situation. They can affect trade, financial transactions, access to assets or other specified activities.",
+      "example": "Imagine a measure freezing assets of designated entities or restricting specified exports. The exact reach depends on the rules and exceptions of that sanctions regime.",
+      "distinction": "Economic sanctions differ from ordinary trade protection aimed principally at domestic competition. Their consequences can extend beyond intended targets, and their legal basis must be considered separately.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/embassy",
+      "explanation": "An embassy is a state's principal diplomatic mission to another state, usually associated with its ambassador. It represents the sending state and supports official relations with the host government.",
+      "example": "Imagine a government delivering an official diplomatic message through its embassy in another country's capital. The mission provides a continuing channel of representation.",
+      "distinction": "An embassy and a consulate have related but different roles. Diplomatic premises have special protections, but they are not simply foreign sovereign territory inside the host state.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/foreign-aid",
+      "explanation": "Foreign aid is assistance provided across borders to support purposes such as development or humanitarian relief. It can involve money, supplies or expertise, and its terms and providers vary.",
+      "example": "Emergency medical supplies sent after a disaster and a development grant for water services can both be forms of international assistance.",
+      "distinction": "Foreign aid is not automatically the same as foreign investment, a commercial loan or every cross-border transfer. Official development assistance is also a specific statistical category within the wider aid discussion.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/foreign-direct-investment",
+      "explanation": "Foreign direct investment is cross-border investment associated with a lasting interest and a significant degree of influence in an enterprise. It can take several forms rather than only building a new factory.",
+      "example": "Imagine a company establishing a foreign subsidiary or acquiring a substantial interest that gives it significant influence over an overseas business.",
+      "distinction": "FDI differs from simply buying a small holding of foreign shares as a financial asset. The relationship of influence or control matters more than whether a physical factory is newly built.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/foreign-policy",
+      "explanation": "Foreign policy is a state's overall approach to its relationships with other states and international actors. It sets goals and guides choices about cooperation, disagreement, trade and security.",
+      "example": "Suppose a country decides to prioritise cooperation with neighbouring states on transport and energy. That direction forms part of its foreign policy.",
+      "distinction": "Foreign policy describes goals and approaches. Diplomacy is one important means of pursuing them through representation, communication and negotiation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/foreign-portfolio-investment",
+      "explanation": "Foreign portfolio investment is cross-border investment in financial securities such as shares and bonds without the direct-investment relationship of significant influence or control. It provides a different kind of financial connection.",
+      "example": "Imagine an investor buying a small holding of shares in several foreign companies through an investment fund. That is a familiar portfolio-investment setting.",
+      "distinction": "Portfolio investment is not defined solely by being short-term. It can be held for long periods, while the distinction from FDI concerns the investment relationship and degree of influence.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/free-trade",
+      "explanation": "Free trade is an approach that reduces or removes policy barriers to trade, such as tariffs or certain restrictions. Actual free-trade arrangements vary in coverage, exceptions and rules.",
+      "example": "Imagine two countries removing tariffs on specified goods under an agreement while retaining product-safety requirements. Their arrangement liberalises trade in those covered goods.",
+      "distinction": "Free trade does not mean trade has no transport costs or that every regulation disappears. An agreement's name also does not mean every product or service is covered identically.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/general-assembly",
+      "explanation": "The General Assembly is the UN's forum in which all member states are represented, each with one vote. It debates international issues and has important functions including budgetary and institutional decisions.",
+      "example": "A small member state and a large member state each have a vote in the General Assembly, even though their populations and economic sizes differ.",
+      "distinction": "Many General Assembly resolutions on external policy are recommendations. This does not mean the Assembly has no legal or institutional powers; its functions differ from those of the Security Council.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/geopolitics",
+      "explanation": "Geopolitics examines how geographical features relate to international power, interests and strategy. Location, access routes, resources and neighbouring territories can shape opportunities and constraints.",
+      "example": "A narrow sea passage used by important shipping routes can become strategically significant because disruption would affect access and trade.",
+      "distinction": "Geography influences political choices without completely determining them. Technology, institutions, economic relationships and leadership also affect how states respond to their location.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/globalisation",
+      "explanation": "Globalisation is the growing connection of activities, people and institutions across borders. It can involve trade, investment, information, migration and the movement of ideas, with uneven benefits and costs.",
+      "example": "A product designed in one country, assembled in another and sold through an international network illustrates connected production and exchange.",
+      "distinction": "Globalisation does not mean that borders disappear or that every place becomes equally connected. Integration can differ across sectors, regions and groups.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/high-commissioner",
+      "explanation": "In bilateral diplomacy, a high commissioner is the head of mission commonly exchanged between Commonwealth countries. The role is broadly comparable to that of an ambassador, with a different diplomatic title.",
+      "example": "India's principal diplomatic mission in the United Kingdom is called a High Commission rather than an embassy, reflecting that diplomatic convention.",
+      "distinction": "This use of high commissioner is different from titles such as the UN High Commissioner for Refugees. The same words can refer to different kinds of international office.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/insurgency",
+      "explanation": "An insurgency is an organised challenge to established political authority, commonly involving sustained armed activity and efforts to gain influence or control. Its forms and objectives can vary.",
+      "example": "Imagine an organised armed movement challenging state authority while seeking support and control in particular areas. That situation can involve an insurgency.",
+      "distinction": "Insurgency is different from peaceful dissent or an isolated crime. It can include terrorist tactics, but insurgency and terrorism describe different features and are not identical categories.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-court-of-justice",
+      "explanation": "The International Court of Justice is the UN's principal judicial organ. It settles legal disputes between states within its jurisdiction and gives advisory opinions when requested by authorised bodies.",
+      "example": "Imagine two states submitting a legal dispute through an applicable jurisdictional basis. The Court can examine the case under international law.",
+      "distinction": "The ICJ does not prosecute individuals for crimes. It differs from international criminal courts, and it does not have automatic jurisdiction over every dispute involving any state.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-institutions",
+      "explanation": "International institutions are arrangements that organise interaction across borders through rules, roles and expectations. The term can refer to formal organisations and, more broadly, to established systems of cooperation.",
+      "example": "A formal organisation with member governments and a treaty-based decision process is one kind of international institution.",
+      "distinction": "An international institution is not necessarily a world government. Its authority depends on its framework, and members can retain substantial independent powers.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-monetary-fund",
+      "explanation": "The International Monetary Fund is an international institution concerned with monetary cooperation and economic and financial stability. Its work includes economic monitoring, technical support and financing for members facing relevant external-payment difficulties.",
+      "example": "Imagine a country facing a serious shortage of foreign-currency financing for external payments. IMF support may be considered within its applicable programmes and conditions.",
+      "distinction": "The IMF and World Bank have different central roles, even though their work can overlap. IMF financing is not simply an unrestricted grant for any development project.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-relations",
+      "explanation": "International relations concerns interactions among states and other actors across borders. It includes cooperation, conflict, trade, institutions and shared problems such as environmental risks.",
+      "example": "An agreement on cross-border transport, a disagreement over territory and a joint public-health initiative are all international-relations issues.",
+      "distinction": "International relations is broader than foreign policy. Foreign policy concerns one actor's approach, while international relations examines the wider interactions and system in which actors operate.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-security",
+      "explanation": "International security concerns conditions and arrangements that reduce serious threats across borders and help maintain peace. It includes relationships among states and shared responses to wider threats.",
+      "example": "Imagine several countries cooperating to reduce the risk of armed conflict or the spread of dangerous weapons. Their cooperation addresses international security.",
+      "distinction": "A measure that one state sees as improving its security can make another feel less secure. National and international security interests do not always align automatically.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/international-trade",
+      "explanation": "International trade is the exchange of goods and services across economies. It connects producers and consumers through purchases and sales involving the rest of the world.",
+      "example": "A business exporting engineering services and a household buying an imported appliance both participate in international trade in different ways.",
+      "distinction": "International trade includes services as well as goods. Trade flows are also different from financial investment flows, even though payments and finance connect them.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/mediation",
+      "explanation": "Mediation is assistance by a third party that helps others communicate and seek a mutually acceptable settlement. The mediator's role and the process depend on the participants' agreement and the applicable setting.",
+      "example": "Imagine a neutral third country helping two governments discuss a dispute without deciding the outcome for them. That assistance can be mediation.",
+      "distinction": "Mediation is different from adjudication or binding arbitration. A mediator generally helps the parties reach their own settlement rather than imposing a judicial decision.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/memorandum-of-understanding",
+      "explanation": "A memorandum of understanding records a shared understanding or intended arrangement between participants. In international cooperation, it is often used for practical or less formal arrangements.",
+      "example": "Imagine two governments recording plans for research exchanges and identifying the offices responsible for coordination. An MoU can set out that shared approach.",
+      "distinction": "An MoU is not automatically binding or automatically non-binding in every situation. Its legal status depends on the wording, intentions and applicable framework, rather than the title alone.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/military-alliance",
+      "explanation": "A military alliance is an arrangement among states for cooperation on defence or military security. Commitments differ and may include consultation, support or collective defence under stated conditions.",
+      "example": "Imagine several states agreeing on how they would assist one another if a specified type of attack occurred. Their commitments depend on the alliance's terms.",
+      "distinction": "A military alliance is different from every friendly partnership or joint exercise. Membership does not necessarily require identical action in every international dispute.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/multilateral-relations",
+      "explanation": "Multilateral relations involve several countries interacting together in a shared process or arrangement. They help address questions that go beyond a direct relationship between just two countries.",
+      "example": "Imagine five countries negotiating common rules to protect a shared sea. Their joint negotiation is multilateral because several countries take part together.",
+      "distinction": "Bilateral relations involve two countries; multilateral relations involve several working in a common setting. A country having many separate bilateral relationships is not automatically one multilateral arrangement.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/nation",
+      "explanation": "A nation is a community whose members understand themselves as sharing a collective identity. A shared history, culture or political aspiration can contribute to that identity without creating one universal definition.",
+      "example": "Imagine a community with a strong shared identity whose members live in more than one state. Their identity can cross international borders.",
+      "distinction": "A nation does not always have its own sovereign state. Similarly, one state can contain several national identities rather than one completely uniform community.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/national-interest",
+      "explanation": "National interest refers to goals and conditions considered important for a state's security, prosperity and wider well-being. Governments and citizens can disagree about what those interests are and how to pursue them.",
+      "example": "Imagine a country debating whether a trade agreement improves livelihoods without creating unacceptable dependence. Different groups can assess its national-interest implications differently.",
+      "distinction": "National interest is not one permanently fixed list or simply the current government's preference. Claims about it need reasons and can involve competing priorities.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/national-security",
+      "explanation": "National security concerns protecting a state's people, institutions and important interests against serious threats. It can involve military dangers as well as other threats to essential public functioning.",
+      "example": "Imagine a country protecting both its borders and the systems supplying electricity to hospitals. Different kinds of disruption can raise national-security concerns.",
+      "distinction": "National security is not only military defence. Calling something a security issue also does not remove the need to consider rights, evidence and lawful limits.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/negotiation",
+      "explanation": "Negotiation is a process in which participants discuss their interests and proposals in an effort to reach an arrangement. It can involve compromise, clarification or finding shared gains.",
+      "example": "Imagine two countries proposing different fishing-access rules and working toward mutually acceptable conditions. They are negotiating an arrangement.",
+      "distinction": "Negotiation does not require agreement on everything or guarantee success. It also differs from simply announcing a position without engaging with the other participants' interests.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/nuclear-weapons",
+      "explanation": "Nuclear weapons release destructive energy through nuclear fission, fusion or a combination of the two. Their effects can include blast, intense heat and harmful radiation.",
+      "example": "A discussion about limiting nuclear arsenals concerns weapons with destructive effects very different in scale and character from ordinary explosives.",
+      "distinction": "Nuclear weapons are different from all uses of nuclear technology. Civilian electricity generation, medical applications and weapons involve different purposes and regulatory concerns.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/protectionism",
+      "explanation": "Protectionism is the use of policies intended to shield domestic producers from foreign competition. Measures can include tariffs, quotas or other forms of support and restriction.",
+      "example": "Imagine a government raising an import tariff to make competing foreign products more expensive in its market. That can serve a protectionist purpose.",
+      "distinction": "A measure can protect some producers while increasing costs for consumers or other businesses. Not every safety regulation is automatically protectionist merely because it affects trade.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/protocol",
+      "explanation": "Protocol can mean agreed diplomatic procedures or, in treaty practice, a particular international instrument. A treaty protocol may add details, amend an arrangement or establish additional commitments.",
+      "example": "The Montreal Protocol is an international environmental instrument. By contrast, arranging the order of official greetings concerns diplomatic protocol in a procedural sense.",
+      "distinction": "A protocol is not always mere etiquette or a non-binding note. The meaning and legal force depend on which use of the term is intended.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/regional-organisations",
+      "explanation": "Regional organisations bring together members associated with a geographical region or shared regional setting. Their purposes can include trade, political coordination, development or security.",
+      "example": "States may form a regional body to coordinate transport links and economic cooperation with nearby partners. Different regional bodies can have very different powers.",
+      "distinction": "A regional organisation is not automatically a military alliance or a single government. Membership, decision-making rules and the extent of integration must be examined separately.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/sanctions",
+      "explanation": "Sanctions are restrictive measures used to influence conduct or respond to a situation under a particular policy or legal framework. They can target states, organisations or individuals and take different forms.",
+      "example": "Restrictions on travel by designated individuals illustrate one form of sanctions. Limits on certain trade or financial transactions illustrate others.",
+      "distinction": "Sanctions are broader than economic sanctions alone. Their legality, authority and effects depend on the measures and framework involved; the label does not settle those questions.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/security-council",
+      "explanation": "The Security Council is the UN body with primary responsibility for maintaining international peace and security. It operates under Charter rules and can take decisions or measures within those powers.",
+      "example": "When the Council establishes a sanctions regime under the relevant Charter framework, it uses powers that differ from an ordinary discussion forum's recommendations.",
+      "distinction": "The Security Council is different from the General Assembly. Their membership, voting rules and powers differ, and not every statement or resolution has the same legal effect.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/sovereignty",
+      "explanation": "Sovereignty concerns a state's governing authority and independence from another state's right to rule it. In international relations, states are also subject to the international obligations that apply to them.",
+      "example": "Imagine two countries voluntarily agreeing on shared river management. Taking on an agreed obligation does not automatically mean that one has become ruled by the other.",
+      "distinction": "Sovereignty is not unlimited freedom to act without consequences or obligations. Cooperating, joining organisations and accepting treaty commitments can be exercises of sovereign authority.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/state",
+      "explanation": "In international relations, a state is a continuing political and legal organisation associated with a population, territory, government and sovereignty. The term here means a participant in international affairs, not a state within the Indian Union.",
+      "example": "A change of government after an election does not by itself replace the international state or erase all its existing obligations.",
+      "distinction": "The state and its current government are different. A nation describes an identity community, while a state concerns political authority and organisation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/strategic-interest",
+      "explanation": "A strategic interest is a longer-term interest considered important to an actor's security, influence or ability to pursue major goals. It can involve military matters, but also infrastructure, resources, technology and access.",
+      "example": "Imagine a country seeking reliable access to a shipping route because many essential imports depend on it. Protecting that access can be a strategic interest.",
+      "distinction": "Strategic interest is not simply every immediate commercial advantage. It concerns the wider consequences for important longer-term goals and can involve trade-offs between them.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/summit",
+      "explanation": "A summit is a high-level meeting, commonly involving heads of state or government or other top leaders. It can address major issues, signal priorities or advance negotiations.",
+      "example": "Imagine leaders from several countries meeting to discuss an energy-cooperation framework. Their meeting may be described as a summit.",
+      "distinction": "Holding a summit does not itself guarantee an agreement. The meeting, its public declaration and any legally binding commitments are different things.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/tariff",
+      "explanation": "A tariff is a tax or customs duty applied to goods crossing a border, commonly imports. Its effects depend on the rate, market conditions and how suppliers and buyers respond.",
+      "example": "Suppose an imported product valued at ₹1,000 faces a simple tariff of 10%. The duty is ₹100 under those assumptions, before other possible charges.",
+      "distinction": "A tariff is different from a quota, which limits quantity. The importer paying the duty does not mean that importer always bears the whole economic burden.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/territory",
+      "explanation": "Territory is the geographical area over which a state exercises or claims governing authority. It includes legally defined spaces, with different rules applying to land, airspace and maritime areas.",
+      "example": "Imagine neighbouring states agreeing on the location of their land boundary. The agreement clarifies the territorial extent of their authority in that area.",
+      "distinction": "A state's territory is not the same as every maritime zone in which it has particular rights. Rights over resources in some zones differ from full territorial sovereignty.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/terrorism",
+      "explanation": "Terrorism generally refers to violence or threats intended to intimidate a wider population or coerce political action, often through attacks on civilians. Precise legal definitions differ between jurisdictions and international instruments.",
+      "example": "An attack on civilians intended to frighten a wider public into accepting a political demand illustrates a central concern associated with terrorism.",
+      "distinction": "Terrorism is not simply another word for all protest, opposition or armed conflict. Applying a legal label requires attention to the acts, purpose and relevant legal definition.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/trade-deficit",
+      "explanation": "A trade deficit occurs when the value of imports exceeds exports over a stated period and scope. A discussion must specify whether it covers goods alone or both goods and services.",
+      "example": "If an economy imports goods worth 120 units and exports goods worth 100 units in a period, its goods trade deficit is 20 units.",
+      "distinction": "A trade deficit is not the same as the government's budget deficit or the entire current-account balance. Its meaning also depends on the category of trade being measured.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/trade-surplus",
+      "explanation": "A trade surplus occurs when the value of exports exceeds imports over a stated period and scope. It describes a balance of trade flows rather than a stock of national wealth.",
+      "example": "If exports of goods and services are 150 units and corresponding imports are 130 units, the surplus on that stated basis is 20 units.",
+      "distinction": "A trade surplus does not by itself prove that every household or business is better off. Its causes, distributional effects and relationship to other economic conditions matter.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/treaty",
+      "explanation": "A treaty is an international agreement governed by international law. Treaties can establish rights, obligations and procedures, and their legal effect depends on the agreement and applicable rules.",
+      "example": "Imagine two states entering an agreement setting out how a shared boundary will be managed. A treaty can provide a legally binding framework for that arrangement.",
+      "distinction": "A document's title alone does not determine whether it creates treaty obligations. Intention, terms and the legal framework matter, including the steps needed for it to bind a party.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/united-nations",
+      "explanation": "The United Nations, or UN, is an international organisation where member countries work together on peace, cooperation and shared problems. It has different bodies and programmes for different jobs.",
+      "example": "Countries can discuss international issues at the UN. UN bodies and agencies can also coordinate humanitarian work. Having a forum helps countries communicate, even when they disagree.",
+      "distinction": "The UN is not a world government. Member countries remain sovereign, and what the UN can do depends on its rules, the powers of its bodies and member cooperation.",
+      "origin": "existing-pilot-introduction"
+    },
+    {
+      "id": "international-relations/war",
+      "explanation": "War involves sustained armed conflict between organised political actors, although legal classifications depend on the circumstances and applicable rules. It brings consequences for combatants, civilians and international relations.",
+      "example": "Fighting between states using organised armed forces is a familiar example of interstate war. Other armed conflicts can occur within a state.",
+      "distinction": "War and every political disagreement are not the same. The use of the word in rhetoric does not itself determine the legal classification of a situation.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/world-bank",
+      "explanation": "The World Bank is an international development institution that supports countries through financing and knowledge. The term usually refers to IBRD and IDA, which are part of the wider World Bank Group.",
+      "example": "A development project supporting water systems or education can receive World Bank support under the relevant financing and project conditions.",
+      "distinction": "The World Bank is not a country's central bank or an ordinary bank account provider. Its development role also differs from the IMF's central focus on monetary and financial stability.",
+      "origin": "AI-assisted-editorial-draft"
+    },
+    {
+      "id": "international-relations/world-trade-organization",
+      "explanation": "The World Trade Organization provides an institutional framework for trade agreements among its members. Its work includes negotiations, monitoring trade rules and processes for handling disputes.",
+      "example": "If members disagree about whether a trade measure complies with an applicable WTO agreement, the organisation provides procedures for addressing that disagreement.",
+      "distinction": "The WTO does not set one identical tariff for every product and country. Its rules include negotiated commitments, exceptions and differing obligations under particular agreements.",
+      "origin": "AI-assisted-editorial-draft"
+    }
+  ]
+}
